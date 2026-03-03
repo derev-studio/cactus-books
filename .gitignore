@@ -1,0 +1,40 @@
+# Secrets and env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temp
+*.log
+tmp/
+temp/
+.cache/
+
+# Node (if used later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Python (book scripts)
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+
+# Build / output (if any)
+dist/
+build/
+*.min.js.map

@@ -1,0 +1,194 @@
+/**
+ * Общая тема сайта кактусов — по документу ИНТЕРФЕЙС-И-СТРАНИЦЫ
+ * Палитра: спокойный синий фон, светлые блоки, тёплый жёлтый/песочный акцент
+ */
+
+:root {
+  /* Фон — тёмно-синий, не чёрный: приятный спокойный тон */
+  --cactus-bg: #1a2744;
+  --cactus-bg-soft: #223050;
+  --cactus-surface: #faf9f6;
+  --cactus-surface-soft: #f5f4f0;
+
+  /* Текст */
+  --cactus-text: #1a1a2e;
+  --cactus-text-muted: #5a6476;
+  --cactus-text-on-dark: #e8ecf4;
+  --cactus-muted-on-dark: #8b949e;
+
+  /* Акцент — тёплый жёлтый/песочный, ассоциация с кактусами */
+  --cactus-accent: #d4a84b;
+  --cactus-accent-hover: #c4993a;
+  --cactus-accent-soft: rgba(212, 168, 75, 0.15);
+
+  /* Рамки и разделители */
+  --cactus-border: rgba(255, 255, 255, 0.12);
+  --cactus-border-light: rgba(0, 0, 0, 0.08);
+
+  /* Тени */
+  --cactus-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --cactus-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.12);
+
+  /* Лист для чтения — как книга/бумага, чтобы не резало глаза */
+  --cactus-reading-bg: #faf8f5;
+  --cactus-reading-bg-warm: #f5f0e8;
+  --cactus-reading-text: #1c1c1c;
+  --cactus-reading-muted: #444;
+  --cactus-reading-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.12);
+  --cactus-reading-radius: 12px;
+}
+
+/* Базовые кнопки — минимум 44px по высоте для касаний */
+.cactus-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.5rem 1.25rem;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.cactus-btn--primary {
+  background: var(--cactus-accent);
+  color: var(--cactus-text);
+  border-color: var(--cactus-accent);
+}
+
+.cactus-btn--primary:hover {
+  background: var(--cactus-accent-hover);
+  border-color: var(--cactus-accent-hover);
+  box-shadow: 0 2px 8px var(--cactus-accent-soft);
+}
+
+.cactus-btn--secondary {
+  background: transparent;
+  color: var(--cactus-accent);
+  border-color: var(--cactus-accent);
+}
+
+.cactus-btn--secondary:hover {
+  background: var(--cactus-accent-soft);
+}
+
+/* Карточки — светлый фон на тёмном или на светлом */
+.cactus-card {
+  background: var(--cactus-surface);
+  color: var(--cactus-text);
+  border-radius: 12px;
+  box-shadow: var(--cactus-shadow-card);
+  border: 1px solid var(--cactus-border-light);
+  padding: 1.25rem;
+}
+
+/* На тёмном фоне карточка чуть приглушённая */
+.cactus-card--on-dark {
+  background: rgba(250, 249, 246, 0.98);
+  border-color: var(--cactus-border-light);
+}
+
+/* Типографика */
+.cactus-heading {
+  color: var(--cactus-text);
+  font-weight: 700;
+  margin: 0 0 0.5em;
+  line-height: 1.25;
+}
+
+.cactus-heading--1 { font-size: clamp(1.5rem, 4vw, 2rem); }
+.cactus-heading--2 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+.cactus-heading--3 { font-size: clamp(1.1rem, 2.5vw, 1.25rem); }
+
+.cactus-text-muted {
+  color: var(--cactus-text-muted);
+  font-size: 0.95em;
+}
+
+/* Футер: одна аккуратная кнопка-ссылка, как в верхней панели — не выделяется */
+.site-footer {
+  padding: 0.5rem max(1rem, env(safe-area-inset-left)) max(0.75rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-right));
+  text-align: center;
+}
+.site-footer__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0.35rem 0.75rem;
+  color: var(--cactus-muted-on-dark);
+  text-decoration: none;
+  font-size: clamp(0.8rem, 1.1vw, 0.88rem);
+  font-weight: 500;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.site-footer__btn:hover {
+  color: var(--cactus-accent);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Блок «Источники» в футере: одна кнопка, по клику раскрывается список ссылок */
+.site-footer__sources {
+  margin-top: 0.5rem;
+  font-size: clamp(0.72rem, 1vw, 0.8rem);
+}
+.site-footer__sources summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.25rem 0.5rem;
+  color: var(--cactus-muted-on-dark);
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.site-footer__sources summary::-webkit-details-marker,
+.site-footer__sources summary::marker {
+  display: none;
+}
+.site-footer__sources summary:hover {
+  color: var(--cactus-accent);
+  background: rgba(255, 255, 255, 0.05);
+}
+.site-footer__sources summary::after {
+  content: " ▾";
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+.site-footer__sources[open] summary::after {
+  content: " ▴";
+}
+.site-footer__sources-panel {
+  margin-top: 0.4rem;
+  padding: 0.5rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.site-footer__sources-list {
+  margin: 0;
+  padding: 0;
+}
+.site-footer__sources-list a {
+  color: var(--cactus-muted-on-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.site-footer__sources-list a:hover {
+  color: var(--cactus-accent);
+}
+.site-footer__sources-sep {
+  color: var(--cactus-muted-on-dark);
+  pointer-events: none;
+  user-select: none;
+}

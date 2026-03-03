@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инструкция: ключ DeepL для перевода книги</title>
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 1rem; }
+    .page-main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2rem 1.75rem;
+      background: var(--cactus-reading-bg);
+      color: var(--cactus-reading-text);
+      box-shadow: var(--cactus-reading-shadow);
+      border-radius: var(--cactus-reading-radius);
+      font-size: 1.35rem;
+      line-height: 1.8;
+    }
+    .page-main h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
+    .page-main h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+    .page-main h2:first-of-type { margin-top: 0; }
+    .page-main p { margin: 0 0 1rem; }
+    .page-main ul { margin: 0 0 1rem; padding-left: 1.75rem; }
+    .page-main li { margin-bottom: 0.6rem; }
+    .page-main a { color: #165a9e; font-weight: 600; text-decoration: none; }
+    .page-main a:hover { text-decoration: underline; }
+    .step { background: rgba(0,0,0,0.04); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; }
+    .step-num { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <main class="page-main">
+    <p><a href="book.html" class="back-link">← Назад к Кактусологии</a></p>
+    <h1>Ключ DeepL для перевода книги на сайте</h1>
+    <p><strong>Файлы из папки на сайт добавлять не нужно</strong> — всё уже в коде. Нужно только войти в DeepL и один раз добавить ключ в воркер.</p>
+
+    <div class="step" style="background:#e8f4e8; border:2px solid #2a7a2a;">
+      <p class="step-num">«Попробовать бесплатно» — что это?</p>
+      <p>Это <strong>бесплатный тариф</strong> API: 500 000 символов в месяц. Платить не нужно, <strong>кредитную карту для бесплатного плана не просят</strong>.</p>
+    </div>
+
+    <div class="step" style="background:#fff3cd; border:2px solid #b8860b;">
+      <p class="step-num">Просят имя, фамилию и карту — что делать?</p>
+      <p><strong>Если форма требует кредитную карту</strong> — ты, скорее всего, на странице платного тарифа или пробной версии Pro. Для бесплатного API карта не нужна.</p>
+      <ul>
+        <li>Зайди на страницу <strong>планов/тарифов</strong> DeepL (часто это «Расценки» или «Pricing» в меню, или ссылка на бесплатный план). Выбери именно план <strong>«Free API»</strong> / «Бесплатный API» — регистрация по нему идёт без карты.</li>
+        <li><strong>Имя и фамилию</strong> лучше заполнять латиницей (как в загранпаспорте или по-английски), чтобы форма везде отображалась без сбоев. Можно и по-русски, если поле принимает.</li>
+        <li>Если нигде не нашли регистрацию без карты — можно не заводить API: на странице книги уже есть кнопка «Открыть в Google Translate» и подсказка про встроенный перевод в браузере. Книгу можно переводить и так.</li>
+      </ul>
+    </div>
+
+    <div class="step" style="background:#e6f0fa; border:2px solid #165a9e;">
+      <p class="step-num">Куда заходить (по шагам)</p>
+      <ul>
+        <li><strong>Если аккаунта DeepL ещё нет:</strong> открой страницу API (<a href="https://www.deepl.com/ru/pro-api" target="_blank" rel="noopener">deepl.com/ru/pro-api</a>), нажми синюю кнопку <strong>«Попробовать бесплатно»</strong>. Заполни регистрацию → после входа попадёшь в аккаунт. Там зайди в раздел <strong>«Ключи API»</strong> (или «Учётная запись» → «API-ключи»).</li>
+        <li><strong>Если аккаунт уже есть:</strong> зайди на <a href="https://www.deepl.com/ru/login" target="_blank" rel="noopener">deepl.com/ru/login</a>, введи email и пароль. Потом открой <a href="https://www.deepl.com/your-account/keys" target="_blank" rel="noopener">deepl.com/your-account/keys</a> (или в меню: Учётная запись → Ключи API). Создай ключ или скопируй уже существующий.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 0. Вход в DeepL</p>
+      <p>Отдельно регистрироваться под ключи не надо — ключ лежит в твоём обычном аккаунте DeepL.</p>
+      <ul>
+        <li>Страница входа: <a href="https://www.deepl.com/ru/login" target="_blank" rel="noopener">deepl.com/ru/login</a></li>
+        <li>Входа через Google там нет — только поля «Адрес электронной почты» и «Пароль». Введи email и пароль от того аккаунта, которым пользовался (и платил).</li>
+        <li>Если пароль не помнишь — нажми <strong>«Забыли пароль?»</strong>, на почту придёт ссылка.</li>
+        <li>API-ключ — это не вторая регистрация. После входа открой <strong>«Учётная запись»</strong> → вкладка <strong>«API-ключи»</strong> (или «Ключи API»). Или сразу: <a href="https://www.deepl.com/your-account/keys" target="_blank" rel="noopener">deepl.com/your-account/keys</a></li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 1. Получить ключ DeepL</p>
+      <ul>
+        <li>После входа зайди в раздел API/ключи (ссылка выше) или на <a href="https://www.deepl.com/pro-api" target="_blank" rel="noopener">deepl.com/pro-api</a></li>
+        <li>Free API: 500 000 символов в месяц бесплатно.</li>
+        <li>В «Учётная запись» → «API-ключи»: нажми <strong>«Создать ключ»</strong> или скопируй уже имеющийся.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 2. Добавить ключ в Cloudflare Worker</p>
+      <ul>
+        <li>Открой <a href="https://dash.cloudflare.com" target="_blank" rel="noopener">dash.cloudflare.com</a> → <strong>Workers & Pages</strong> → свой воркер (тот, куда залит cloudflare-worker.js).</li>
+        <li><strong>Settings</strong> → <strong>Variables and Secrets</strong> → <strong>Add variable</strong>.</li>
+        <li>Имя: <code style="background:rgba(0,0,0,0.08); padding:0.2em 0.5em; border-radius:4px;">DEEPL_API_KEY</code></li>
+        <li>Значение: вставь свой ключ DeepL, отметь <strong>Encrypt</strong> (Secret).</li>
+        <li><strong>Save and deploy</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 3. На странице книги</p>
+      <p>В <code>config.js</code> должен быть указан <strong>workerUrl</strong> (как для определителя и чата). Тогда кнопка «Перевести книгу» отправит текст в воркер, воркер вызовет DeepL и подставит перевод.</p>
+    </div>
+
+    <p style="margin-top:2rem; font-size:1.1rem; opacity:0.9;">Точность: DeepL даёт хороший машинный перевод; для идеальной точности терминов нужны профессиональные переводчики.</p>
+  </main>
+</body>
+</html>

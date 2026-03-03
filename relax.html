@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Комната отдыха — уют и медитация | Сайт кактусов</title>
+  <meta name="description" content="Комната отдыха: спокойные образы, уют, пауза. Место для души и медитации." />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%; overflow: hidden;
+      background: var(--cactus-bg); /* тёмно-синий фон сайта */
+      font-family: Georgia, serif;
+    }
+
+    /* ══════════════════════════════
+       ФОТО — целиком, без обрезки
+       ══════════════════════════════ */
+    .hut {
+      position: fixed; inset: 0; z-index: 2;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hut__img {
+      /* contain = видна вся картинка, без обрезки */
+      width: 100%; height: 100%;
+      object-fit: contain;
+      object-position: center center;
+      animation: hut-breathe 6s ease-in-out infinite;
+      opacity: 0;
+      transition: opacity 1.8s ease;
+    }
+    .hut__img.loaded { opacity: 1; }
+
+    /* Едва заметное дыхание всей сцены */
+    @keyframes hut-breathe {
+      0%, 100% { filter: brightness(0.96) saturate(1.02); }
+      50%       { filter: brightness(1.02) saturate(1.0);  }
+    }
+
+    /* ══════════════════════════════
+       ДЫХАНИЕ ФИГУР — тёплые оверлеи
+       ══════════════════════════════ */
+    .breath {
+      position: fixed; z-index: 4;
+      border-radius: 50%; pointer-events: none;
+    }
+    /* Самурай — левее центра */
+    .breath--samurai {
+      left: 30%; top: 22%; width: 18%; height: 55%;
+      background: radial-gradient(ellipse at 50% 40%, rgba(255,210,150,0.06) 0%, transparent 70%);
+      animation: breathe-person 5.5s ease-in-out infinite;
+    }
+    /* Дыхание — справа */
+    .breath--right {
+      right: 10%; top: 18%; width: 20%; height: 60%;
+      background: radial-gradient(ellipse at 50% 38%, rgba(255,200,160,0.06) 0%, transparent 70%);
+      animation: breathe-person 5.5s ease-in-out 0.5s infinite;
+    }
+    /* Котята */
+    .breath--cats {
+      left: 37%; top: 68%; width: 22%; height: 18%;
+      background: radial-gradient(ellipse, rgba(255,200,120,0.05) 0%, transparent 70%);
+      animation: breathe-cats 4s ease-in-out infinite;
+    }
+    @keyframes breathe-person {
+      0%, 100% { transform: scaleY(1);     opacity: 0.4; }
+      38%       { transform: scaleY(1.018); opacity: 1;   }
+      60%       { transform: scaleY(1.016); opacity: 0.8; }
+      85%       { transform: scaleY(0.997); opacity: 0.5; }
+    }
+    @keyframes breathe-cats {
+      0%, 100% { opacity: 0.2; }
+      50%       { opacity: 0.7; }
+    }
+
+    /* ══════════════════════════════
+       БЛЕСК ЧАЙНИКА
+       ══════════════════════════════ */
+    .teapot-shine {
+      position: fixed;
+      left: 7.5%; top: 60%;
+      width: 100px; height: 82px;
+      z-index: 5; pointer-events: none; border-radius: 50%;
+      background: radial-gradient(ellipse at 38% 32%,
+        rgba(255,255,255,0.42) 0%,
+        rgba(255,255,255,0.16) 25%,
+        transparent 62%
+      );
+      animation: teapot-glow 4.5s ease-in-out infinite;
+    }
+    @keyframes teapot-glow {
+      0%, 100% { opacity: 0.65; transform: scale(1); }
+      50%       { opacity: 1.0;  transform: scale(1.05); }
+    }
+
+    /* ══════════════════════════════
+       ПАР — натуральный белёсый
+       ══════════════════════════════ */
+    .steam {
+      position: fixed;
+      left: 9%; top: 50%;
+      z-index: 5; width: 60px; height: 110px;
+      pointer-events: none;
+    }
+    .steam__p {
+      position: absolute; bottom: 0; border-radius: 50%;
+      background: radial-gradient(ellipse,
+        rgba(255,255,255,0.6) 0%,
+        rgba(240,240,240,0.22) 45%,
+        transparent 100%
+      );
+      filter: blur(5px);
+      animation: steam-rise var(--d,3s) ease-out var(--dl,0s) infinite;
+    }
+    .steam__p:nth-child(1){width:24px;height:24px;left: 4px;--d:3.2s;--dl:0s;  --tx:-12px;--ty:-105px;}
+    .steam__p:nth-child(2){width:30px;height:30px;left:16px;--d:2.9s;--dl:1.0s;--tx: 15px;--ty:-98px;}
+    .steam__p:nth-child(3){width:22px;height:22px;left: 8px;--d:3.6s;--dl:1.9s;--tx:- 8px;--ty:-112px;}
+    .steam__p:nth-child(4){width:26px;height:26px;left:24px;--d:2.8s;--dl:2.7s;--tx: 11px;--ty:-95px;}
+    .steam__p:nth-child(5){width:20px;height:20px;left: 2px;--d:3.9s;--dl:0.6s;--tx:-16px;--ty:-118px;}
+    .steam__p:nth-child(6){width:28px;height:28px;left:20px;--d:3.1s;--dl:3.4s;--tx:  8px;--ty:-100px;}
+
+    @keyframes steam-rise {
+      0%  { transform:translate(0,0) scale(0.35) rotate(0deg); opacity:0; }
+      8%  { opacity:0.8; }
+      42% { opacity:0.5; transform:translate(calc(var(--tx)*0.45),calc(var(--ty)*0.42)) scale(1.3) rotate(6deg); }
+      78% { opacity:0.15; }
+      100%{ transform:translate(var(--tx),var(--ty)) scale(2.4) rotate(14deg); opacity:0; }
+    }
+
+    /* ══════════════════════════════
+       ЗВЁЗДЫ — мерцание поверх Млечного пути
+       (в зоне открытых дверей, верх-центр)
+       ══════════════════════════════ */
+    .img-star {
+      position: fixed;
+      z-index: 6; pointer-events: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      animation: star-twinkle var(--d,2s) ease-in-out var(--dl,0s) infinite alternate;
+    }
+    @keyframes star-twinkle {
+      0%   { opacity: 0.1; transform: scale(0.8); }
+      100% { opacity: 1.0; transform: scale(1.6);
+             box-shadow: 0 0 4px 2px rgba(200,220,255,0.7); }
+    }
+
+    /* Фонарики — мерцают */
+    .lantern-l, .lantern-r {
+      position: fixed; z-index: 5; pointer-events: none; border-radius: 50%;
+    }
+    .lantern-l {
+      left: 3%; top: 55%; width: 55px; height: 55px;
+      background: radial-gradient(ellipse, rgba(255,185,55,0.3) 0%, transparent 70%);
+      animation: lantern-flicker 3.1s ease-in-out infinite alternate;
+    }
+    .lantern-r {
+      right: 3%; top: 52%; width: 55px; height: 55px;
+      background: radial-gradient(ellipse, rgba(255,175,45,0.28) 0%, transparent 70%);
+      animation: lantern-flicker 2.8s ease-in-out 0.8s infinite alternate;
+    }
+    @keyframes lantern-flicker {
+      0%   { opacity: 0.55; transform: scale(0.95); }
+      60%  { opacity: 1.0;  transform: scale(1.12); }
+      100% { opacity: 0.7;  transform: scale(1.0);  }
+    }
+
+    /* ══════════════════════════════
+       UI — шапка и кнопки
+       ══════════════════════════════ */
+    .relax-ui {
+      position: fixed; inset: 0; z-index: 20; pointer-events: none;
+      display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+      padding: max(1rem, env(safe-area-inset-top)) 1.2rem max(1rem, env(safe-area-inset-bottom));
+    }
+    .relax-header {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      pointer-events: all; opacity: 0; transition: opacity 1.4s ease 2s;
+      padding-right: 6.5rem; /* место для глобуса и солнышка (языки + атмосфера) */
+    }
+    .relax-header.show { opacity: 1; }
+    .relax-back {
+      font-size: 0.8rem; color: rgba(200,175,130,0.55); text-decoration: none;
+      padding: 0.3rem 0.75rem; border-radius: 12px;
+      border: 1px solid rgba(185,138,50,0.15); backdrop-filter: blur(6px);
+      letter-spacing: 0.04em; transition: all 0.25s;
+    }
+    .relax-back:hover { color: rgba(225,200,155,0.95); border-color: rgba(185,138,50,0.35); }
+    .relax-title { font-size: 0.8rem; color: rgba(185,160,110,0.45); letter-spacing: 0.2em; }
+    .sound-btn {
+      background: rgba(10,5,2,0.55);
+      border: 1px solid rgba(185,138,50,0.2); border-radius: 14px;
+      padding: 0.3rem 0.85rem; color: rgba(200,175,130,0.65);
+      font-size: 0.78rem; cursor: pointer; letter-spacing: 0.04em;
+      backdrop-filter: blur(8px); font-family: Georgia, serif;
+      transition: all 0.25s; pointer-events: all;
+    }
+    .sound-btn:hover { border-color: rgba(185,138,50,0.5); color: rgba(225,200,155,0.95); }
+    .sound-btn.on { border-color: rgba(140,180,255,0.45); color: rgba(165,200,255,0.9); background: rgba(100,140,255,0.08); }
+
+    /* Дыхательный круг */
+    .breathe-wrap {
+      display: flex; flex-direction: column; align-items: center; gap: 0.8rem;
+      opacity: 0; transition: opacity 1.4s ease 2.5s; pointer-events: all;
+    }
+    .breathe-wrap.show { opacity: 1; }
+    .breathe-outer {
+      width: 105px; height: 105px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(120,165,255,0.2);
+      cursor: pointer; animation: b-outer 12s ease-in-out infinite;
+    }
+    @keyframes b-outer {
+      0%,100%{ transform:scale(1);    border-color:rgba(120,165,255,0.2); box-shadow:0 0 10px rgba(100,150,255,0.06); }
+      33%    { transform:scale(1.48); border-color:rgba(165,205,255,0.58); box-shadow:0 0 65px rgba(100,150,255,0.22); }
+      50%    { transform:scale(1.48); border-color:rgba(155,195,255,0.48); }
+      83%    { transform:scale(0.86); border-color:rgba(100,140,220,0.14); box-shadow:0 0 6px rgba(100,150,255,0.04); }
+    }
+    .breathe-ring {
+      width: 74px; height: 74px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(120,165,255,0.25);
+      background: radial-gradient(circle, rgba(100,145,255,0.12) 0%, transparent 70%);
+      animation: b-ring 12s ease-in-out infinite;
+    }
+    @keyframes b-ring {
+      0%,100%{ transform:scale(1); }
+      33%    { transform:scale(1.12); }
+      50%    { transform:scale(1.12); }
+      83%    { transform:scale(0.88); }
+    }
+    .breathe-dot {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(180,210,255,0.65) 0%, transparent 100%);
+      animation: b-dot 12s ease-in-out infinite;
+    }
+    @keyframes b-dot {
+      0%,100%{ transform:scale(1);    opacity:0.6; }
+      33%    { transform:scale(1.55); opacity:1; }
+      50%    { transform:scale(1.55); opacity:0.9; }
+      83%    { transform:scale(0.55); opacity:0.3; }
+    }
+    .breathe-label {
+      font-size: 0.74rem; color: rgba(155,185,245,0.52); letter-spacing: 0.14em;
+    }
+
+    /* Кнопки внизу */
+    .relax-bottom {
+      display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center;
+      pointer-events: all; opacity: 0; transition: opacity 1.4s ease 3s;
+    }
+    .relax-bottom.show { opacity: 1; }
+    .relax-btn {
+      padding: 0.4rem 1rem; border-radius: 16px;
+      border: 1px solid rgba(185,138,50,0.2); background: rgba(8,4,1,0.6);
+      color: rgba(200,175,130,0.65); font-size: 0.76rem; cursor: pointer;
+      backdrop-filter: blur(10px); letter-spacing: 0.04em; transition: all 0.25s;
+      font-family: Georgia, serif; text-decoration: none; display: inline-block;
+    }
+    .relax-btn:hover { border-color:rgba(185,138,50,0.45); color:rgba(220,195,150,0.95); }
+    .relax-btn.active { border-color:rgba(140,180,255,0.4); color:rgba(165,200,255,0.9); background:rgba(100,140,255,0.09); }
+
+    .timer-display {
+      position: fixed; left: 50%; transform: translateX(-50%); top: 8%;
+      z-index: 22; font-size: 1.6rem; color: rgba(160,195,255,0.3);
+      letter-spacing: 0.1em; pointer-events: none;
+      font-variant-numeric: tabular-nums; opacity: 0; transition: opacity 0.5s;
+    }
+    .timer-display.show { opacity: 1; }
+    .bell-msg {
+      position: fixed; top: 46%; left: 50%; transform: translateX(-50%);
+      z-index: 22; font-size: 1rem; color: rgba(200,220,255,0.88);
+      letter-spacing: 0.14em; text-align: center; pointer-events: none;
+      opacity: 0; transition: opacity 0.8s;
+    }
+    .bell-msg.show { opacity: 1; }
+
+    @media (max-width: 480px) {
+      .breathe-outer { width: 88px; height: 88px; }
+      .breathe-ring  { width: 62px; height: 62px; }
+      .relax-title   { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html">Рассказы</a>
+          <a href="relax.html" class="site-header__link--active">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+<!-- ══════════ ФОТО ЦЕЛИКОМ ══════════ -->
+<div class="hut">
+  <img id="hut-img" class="hut__img" src="relax-hut.jpg" alt="Комната отдыха">
+</div>
+
+<!-- ══════════ ДЫХАНИЕ ФИГУР ══════════ -->
+<div class="breath breath--samurai"></div>
+<div class="breath breath--right"></div>
+<div class="breath breath--cats"></div>
+
+<!-- ══════════ БЛЕСК ЧАЙНИКА ══════════ -->
+<div class="teapot-shine"></div>
+
+<!-- ══════════ ПАР ══════════ -->
+<div class="steam">
+  <div class="steam__p"></div>
+  <div class="steam__p"></div>
+  <div class="steam__p"></div>
+  <div class="steam__p"></div>
+  <div class="steam__p"></div>
+  <div class="steam__p"></div>
+</div>
+
+<!-- ══════════ ЗВЁЗДЫ — мерцание поверх Млечного пути ══════════ -->
+<!-- Звёзды расположены в зоне открытых дверей (примерно центр-верх экрана) -->
+<div class="img-star" style="width:2px;height:2px;left:37%;top:12%;--d:2.1s;--dl:0s"></div>
+<div class="img-star" style="width:3px;height:3px;left:41%;top: 8%;--d:1.8s;--dl:.6s"></div>
+<div class="img-star" style="width:2px;height:2px;left:44%;top:14%;--d:2.4s;--dl:1.2s"></div>
+<div class="img-star" style="width:3px;height:3px;left:48%;top: 7%;--d:1.6s;--dl:.3s"></div>
+<div class="img-star" style="width:2px;height:2px;left:52%;top:11%;--d:2.2s;--dl:1.8s"></div>
+<div class="img-star" style="width:2px;height:2px;left:55%;top:15%;--d:1.9s;--dl:.9s"></div>
+<div class="img-star" style="width:3px;height:3px;left:58%;top: 9%;--d:2.6s;--dl:2.1s"></div>
+<div class="img-star" style="width:2px;height:2px;left:62%;top:13%;--d:1.7s;--dl:.4s"></div>
+<div class="img-star" style="width:2px;height:2px;left:39%;top:18%;--d:2.3s;--dl:1.5s"></div>
+<div class="img-star" style="width:3px;height:3px;left:46%;top:20%;--d:2.0s;--dl:2.8s"></div>
+<div class="img-star" style="width:2px;height:2px;left:50%;top:17%;--d:1.5s;--dl:.7s"></div>
+<div class="img-star" style="width:2px;height:2px;left:54%;top:21%;--d:2.5s;--dl:3.2s"></div>
+<div class="img-star" style="width:3px;height:3px;left:60%;top:18%;--d:1.8s;--dl:1.1s"></div>
+<div class="img-star" style="width:2px;height:2px;left:35%;top:16%;--d:2.2s;--dl:2.5s"></div>
+<div class="img-star" style="width:2px;height:2px;left:43%;top:24%;--d:1.6s;--dl:.2s"></div>
+<div class="img-star" style="width:3px;height:3px;left:57%;top:25%;--d:2.8s;--dl:1.7s"></div>
+<div class="img-star" style="width:2px;height:2px;left:64%;top:22%;--d:1.9s;--dl:3.0s"></div>
+<div class="img-star" style="width:2px;height:2px;left:49%;top:28%;--d:2.1s;--dl:2.3s"></div>
+<div class="img-star" style="width:3px;height:3px;left:38%;top:10%;--d:1.7s;--dl:.8s"></div>
+<div class="img-star" style="width:2px;height:2px;left:53%;top: 6%;--d:2.3s;--dl:1.4s"></div>
+
+<!-- ══════════ ФОНАРИКИ ══════════ -->
+<div class="lantern-l"></div>
+<div class="lantern-r"></div>
+
+<!-- ══════════ UI ══════════ -->
+<div class="relax-ui">
+  <header class="relax-header" id="relax-header">
+    <span class="relax-title" data-i18n="relax_title">✦ Комната отдыха</span>
+    <button class="sound-btn" id="sound-btn" data-i18n="relax_sound">♪ Звук</button>
+  </header>
+
+  <div class="breathe-wrap" id="breathe-wrap">
+    <div class="breathe-outer" id="breathe-outer">
+      <div class="breathe-ring">
+        <div class="breathe-dot"></div>
+      </div>
+    </div>
+    <p class="breathe-label" id="breathe-label" data-i18n="relax_breathe_in">вдыхай...</p>
+  </div>
+
+  <div class="relax-bottom" id="relax-bottom">
+    <button class="relax-btn" id="btn-timer-5" data-i18n="relax_timer_5">⏱ 5 мин</button>
+    <button class="relax-btn" id="btn-timer-10" data-i18n="relax_timer_10">⏱ 10 мин</button>
+    <button class="relax-btn" id="btn-timer-15" data-i18n="relax_timer_15">⏱ 15 мин</button>
+  </div>
+</div>
+
+<div class="timer-display" id="timer-display"></div>
+<div class="bell-msg" id="bell-msg" data-i18n="relax_meditation_done">🔔 Медитация завершена</div>
+
+<script>
+/* ── Плавное появление после загрузки ── */
+var img = document.getElementById('hut-img');
+function onLoad() {
+  img.classList.add('loaded');
+  setTimeout(function() {
+    document.getElementById('relax-header').classList.add('show');
+    document.getElementById('breathe-wrap').classList.add('show');
+    document.getElementById('relax-bottom').classList.add('show');
+  }, 600);
+}
+if (img.complete) onLoad(); else img.addEventListener('load', onLoad);
+
+/* ── Дыхание (4 · 2 · 6 = 12 сек), ключи для перевода ── */
+var PHASES = [{key:'relax_breathe_in',ms:4000},{key:'relax_breathe_hold',ms:2000},{key:'relax_breathe_out',ms:6000}];
+var phaseIdx = 0, breatheOn = true;
+var breatheLabel = document.getElementById('breathe-label');
+var breatheOuter = document.getElementById('breathe-outer');
+var breatheTimer;
+function relaxT(key) { return window.I18n && window.I18n.t ? window.I18n.t(key) : key; }
+function nextPhase() {
+  if (!breatheOn) return;
+  var key = PHASES[phaseIdx].key;
+  breatheLabel.setAttribute('data-i18n', key);
+  breatheLabel.textContent = relaxT(key);
+  breatheTimer = setTimeout(nextPhase, PHASES[phaseIdx].ms);
+  phaseIdx = (phaseIdx + 1) % PHASES.length;
+}
+setTimeout(nextPhase, 3000);
+breatheOuter.addEventListener('click', function() {
+  breatheOn = !breatheOn;
+  var st = breatheOn ? 'running' : 'paused';
+  [this].concat(Array.from(this.querySelectorAll('*'))).forEach(function(el) {
+    el.style.animationPlayState = st;
+  });
+  if (breatheOn) { phaseIdx = 0; nextPhase(); }
+  else {
+    clearTimeout(breatheTimer);
+    breatheLabel.setAttribute('data-i18n', 'relax_pause');
+    breatheLabel.textContent = relaxT('relax_pause');
+  }
+});
+
+/* ── Медитативная музыка ── */
+var music = new Audio('./audio/fuji-1.mp3');
+music.loop = true; music.volume = 0;
+var soundOn = false, fadeInterval = null;
+function fadeMusic(to, ms) {
+  clearInterval(fadeInterval);
+  var from = music.volume, steps = 40, dt = ms / steps, step = 0;
+  fadeInterval = setInterval(function() {
+    step++;
+    music.volume = Math.max(0, Math.min(1, from + (to - from) * step / steps));
+    if (step >= steps) { clearInterval(fadeInterval); if (to === 0) music.pause(); }
+  }, dt);
+}
+document.getElementById('sound-btn').addEventListener('click', function() {
+  soundOn = !soundOn;
+  this.setAttribute('data-i18n', soundOn ? 'relax_silence' : 'relax_sound');
+  this.textContent = relaxT(soundOn ? 'relax_silence' : 'relax_sound');
+  this.classList.toggle('on', soundOn);
+  if (soundOn) { music.play().catch(function(){}); fadeMusic(0.55, 3000); }
+  else { fadeMusic(0, 2000); }
+});
+
+/* ── Таймер ── */
+var timerInterval = null;
+var timerEl = document.getElementById('timer-display');
+var bellEl  = document.getElementById('bell-msg');
+function ringBell() {
+  var ac = new (window.AudioContext || window.webkitAudioContext)();
+  [432, 528, 639].forEach(function(f, i) {
+    var o = ac.createOscillator(), g = ac.createGain();
+    o.type = 'sine'; o.frequency.value = f;
+    g.gain.setValueAtTime(0.28, ac.currentTime + i * 0.38);
+    g.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + i * 0.38 + 5);
+    o.connect(g); g.connect(ac.destination);
+    o.start(ac.currentTime + i * 0.38);
+    o.stop(ac.currentTime + i * 0.38 + 5);
+  });
+}
+function startTimer(min) {
+  clearInterval(timerInterval);
+  var end = Date.now() + min * 60000;
+  document.querySelectorAll('.relax-btn[id^="btn-timer"]').forEach(function(b) { b.classList.remove('active'); });
+  var btn = document.getElementById('btn-timer-' + min);
+  if (btn) btn.classList.add('active');
+  timerEl.classList.add('show'); bellEl.classList.remove('show');
+  timerInterval = setInterval(function() {
+    var rem = end - Date.now();
+    if (rem <= 0) {
+      clearInterval(timerInterval); timerEl.classList.remove('show');
+      ringBell(); bellEl.classList.add('show');
+      setTimeout(function() { bellEl.classList.remove('show'); }, 6000);
+      if (btn) { btn.textContent = relaxT('relax_done'); btn.classList.remove('active'); }
+      return;
+    }
+    var m = Math.floor(rem / 60000), s = Math.floor((rem % 60000) / 1000);
+    timerEl.textContent = m + ':' + String(s).padStart(2, '0');
+  }, 500);
+}
+document.getElementById('btn-timer-5').addEventListener('click',  function() { startTimer(5);  });
+document.getElementById('btn-timer-10').addEventListener('click', function() { startTimer(10); });
+document.getElementById('btn-timer-15').addEventListener('click', function() { startTimer(15); });
+</script>
+<footer class="site-footer">
+  <a href="derev-studio.html" class="site-footer__btn">Кактусярий ©</a>
+  <nav class="site-footer__sources" aria-label="Источники">
+    <details>
+      <summary>Источники</summary>
+      <div class="site-footer__sources-panel">
+        <p class="site-footer__sources-list">
+          <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+          <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+          <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
+          <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
+          <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
+          <a href="book.html">Кактусология</a>
+        </p>
+      </div>
+    </details>
+  </nav>
+</footer>
+<div id="globe-container" class="globe-fixed"></div>
+<div id="atmosphere-widget" class="atmosphere-widget" aria-label="Настройки атмосферы"></div>
+<script src="i18n.js" defer></script>
+<script src="atmosphere.js" defer></script>
+<script>
+(function () {
+  function init() {
+    if (!window.I18n) return;
+    var c = document.getElementById("globe-container");
+    if (c) window.I18n.init(c); else window.I18n.applyToPage();
+    setTimeout(function() { if (window.I18n) window.I18n.applyToPage(); }, 0);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+</body>
+</html>

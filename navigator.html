@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Навигатор по кактусам | Кактусярий</title>
+  <meta name="description" content="Поиск по кактусам: уход, ареал, систематика — всё сразу. Кактусярий." />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    .navigator-results { max-width: 36rem; margin: 0 auto; padding: 1.5rem 1rem; }
+    .navigator-results h1 { font-size: 1.35rem; margin: 0 0 0.5rem; color: var(--cactus-text-on-dark); }
+    .navigator-results .navigator-query { color: var(--cactus-accent); font-weight: 600; }
+    .navigator-results p.intro { color: var(--cactus-muted-on-dark); font-size: 0.95rem; margin: 0 0 1.5rem; }
+    .navigator-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+    .navigator-links a { display: block; padding: 0.85rem 1rem; background: var(--cactus-surface); color: var(--cactus-text); text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 16px rgba(0,0,0,0.12); transition: transform 0.2s, box-shadow 0.2s; }
+    .navigator-links a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+    .navigator-links .navigator-link-desc { font-weight: 400; font-size: 0.85rem; opacity: 0.9; margin-top: 0.2rem; }
+    .navigator-empty { color: var(--cactus-muted-on-dark); padding: 2rem 0; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html">Рассказы</a>
+          <a href="relax.html">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="globe-container" class="globe-fixed"></div>
+
+  <main class="page-main">
+    <div class="navigator-results">
+      <h1 id="navigator-title">Навигатор по кактусам</h1>
+      <p class="intro" id="navigator-intro">Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.</p>
+      <ul class="navigator-links" id="navigator-links" hidden>
+        <li><a href="" id="link-care" data-base="care.html">Здоровье кактуса</a><span class="navigator-link-desc" id="desc-care">Уход для этого вида</span></li>
+        <li><a href="" id="link-geography" data-base="geography.html">Места обитания</a><span class="navigator-link-desc" id="desc-geography">Ареал на карте</span></li>
+        <li><a href="" id="link-systematics" data-base="systematics.html">Происхождение видов</a><span class="navigator-link-desc" id="desc-systematics">Систематика, названия</span></li>
+        <li><a href="" id="link-identifier" data-base="identifier.html">Опознать кактус</a><span class="navigator-link-desc" id="desc-identifier">Определить по фото</span></li>
+        <li><a href="" id="link-guardian" data-base="guardian.html">Спросить ИИ</a><span class="navigator-link-desc" id="desc-guardian">Колючий Собеседник ответит на вопрос</span></li>
+      </ul>
+      <p class="navigator-empty" id="navigator-empty" hidden>Введите запрос в поле поиска в шапке и нажмите «Найти».</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="derev-studio.html" class="site-footer__btn">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="Источники">
+      <details>
+        <summary>Источники</summary>
+        <div class="site-footer__sources-panel">
+          <p class="site-footer__sources-list">
+            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
+            <a href="book.html">Кактусология</a>
+          </p>
+        </div>
+      </details>
+    </nav>
+  </footer>
+
+  <script src="i18n.js" defer></script>
+  <script>
+    (function () {
+      function init() {
+        if (!window.I18n) return;
+        var c = document.getElementById("globe-container");
+        if (c) window.I18n.init(c);
+        else window.I18n.applyToPage();
+      }
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+      else init();
+    })();
+  </script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var q = (params.get('q') || '').trim();
+      var titleEl = document.getElementById('navigator-title');
+      var introEl = document.getElementById('navigator-intro');
+      var linksEl = document.getElementById('navigator-links');
+      var emptyEl = document.getElementById('navigator-empty');
+      var searchInput = document.getElementById('nav-search');
+      if (searchInput) searchInput.value = q;
+
+      if (q) {
+        titleEl.innerHTML = 'Результаты по запросу <span class="navigator-query">«' + escapeHtml(q) + '»</span>';
+        introEl.textContent = 'Перейдите в нужный раздел — там будет учтён ваш запрос (разделы дорабатываются).';
+        var enc = encodeURIComponent(q);
+        document.getElementById('link-care').href = 'care.html?q=' + enc;
+        document.getElementById('link-geography').href = 'geography.html?q=' + enc;
+        document.getElementById('link-systematics').href = 'systematics.html?q=' + enc;
+        document.getElementById('link-identifier').href = 'identifier.html';
+        document.getElementById('link-guardian').href = 'guardian.html?q=' + enc;
+        linksEl.hidden = false;
+        emptyEl.hidden = true;
+      } else {
+        emptyEl.hidden = false;
+        linksEl.hidden = true;
+      }
+      function escapeHtml(s) {
+        var d = document.createElement('div');
+        d.textContent = s;
+        return d.innerHTML;
+      }
+    })();
+  </script>
+</body>
+</html>

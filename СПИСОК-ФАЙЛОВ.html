@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Список файлов по алфавиту — Кактусярий</title>
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: 2rem; }
+    .page-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem 1rem; background: var(--cactus-reading-bg); color: var(--cactus-reading-text); box-shadow: 0 12px 32px rgba(0,0,0,0.12); border-radius: 12px; }
+    .list-title { font-size: 1.35rem; font-weight: 700; margin: 0 0 1rem; color: var(--cactus-reading-text); }
+    .file-list { list-style: none; padding: 0; margin: 0; font-size: 1.15rem; line-height: 1.9; }
+    .file-list li { padding: 0.2rem 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .file-list a { color: #165a9e; text-decoration: none; }
+    .file-list a:hover { text-decoration: underline; }
+    .file-list .folder { font-weight: 600; }
+    .back { margin-bottom: 1rem; }
+    .back a { color: #165a9e; font-size: 1.05rem; }
+    .book-first { margin: 0 0 1.5rem; padding: 1.25rem; background: #1a4a2a; color: #fff; border-radius: 12px; text-align: center; }
+    .book-first a { color: #9fdc9f; font-size: 1.5rem; font-weight: 700; text-decoration: none; display: inline-block; margin-top: 0.5rem; }
+    .book-first a:hover { text-decoration: underline; }
+    .book-first .hint { font-size: 1rem; opacity: 0.9; margin-top: 0.5rem; }
+    .main-action { display: block; margin: 0 0 2rem; padding: 1.5rem; background: #1a5a3a; color: #fff; border-radius: 14px; text-align: center; text-decoration: none; font-size: 1.5rem; font-weight: 700; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    .main-action:hover { background: #227a4a; color: #fff; }
+    .main-action .sub { display: block; font-size: 1rem; font-weight: 400; margin-top: 0.5rem; opacity: 0.95; }
+    .group { margin: 1rem 0; border: 1px solid rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; }
+    .group summary { padding: 0.75rem 1rem; background: rgba(0,0,0,0.05); cursor: pointer; font-weight: 600; font-size: 1.1rem; }
+    .group[open] summary { border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .group .file-list { padding: 0.5rem 1rem 1rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html" class="site-header__link">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html">Рассказы</a>
+          <a href="relax.html">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="globe-container" class="globe-fixed"></div>
+
+  <main class="page-main">
+    <p class="back"><a href="home.html">← На главную</a></p>
+    <h1 class="list-title">Список файлов</h1>
+
+    <a href="ОБНОВИТЬ-САЙТ.html" class="main-action">
+      ОБНОВИТЬ САЙТ В ИНТЕРНЕТЕ — НАЖМИ СЮДА
+      <span class="sub">(загрузить правки на GitHub — три шага, только кнопки)</span>
+    </a>
+
+    <details class="group">
+      <summary>📖 Книга с картинками</summary>
+      <ul class="file-list">
+        <li><a href="ОТКРЫТЬ-КНИГУ-С-КАРТИНКАМИ.html">ОТКРЫТЬ КНИГУ</a></li>
+        <li><a href="book.html">book.html</a> — страница Кактусология</li>
+        <li><a href="книга-кактусология/book-read.html">book-read.html</a> (українською)</li>
+        <li><a href="книга-кактусология/book-read-ru.html">book-read-ru.html</a></li>
+        <li><a href="книга-кактусология/book-read-en.html">book-read-en.html</a></li>
+      </ul>
+    </details>
+
+    <details class="group">
+      <summary>📄 Другие инструкции</summary>
+      <ul class="file-list">
+        <li><a href="DEEPL-ИНСТРУКЦИЯ.html">Ключ DeepL</a></li>
+        <li><a href="книга-кактусология/ПОЛНЫЙ-ФАЙЛ-И-КАРТИНКИ.html">Картинки в книге</a></li>
+      </ul>
+    </details>
+
+    <details class="group">
+      <summary>📁 Все файлы по алфавиту (если нужно)</summary>
+      <ul class="file-list">
+        <li><a href="admin.html">admin.html</a></li>
+        <li><a href="book.html">book.html</a></li>
+        <li><a href="ОТКРЫТЬ-КНИГУ-С-КАРТИНКАМИ.html">ОТКРЫТЬ-КНИГУ-С-КАРТИНКАМИ.html</a></li>
+        <li><a href="care.html">care.html</a></li>
+        <li><a href="caution.html">caution.html</a></li>
+        <li><a href="config.js">config.js</a></li>
+        <li><a href="derev-studio.html">derev-studio.html</a></li>
+        <li><a href="draw.html">draw.html</a></li>
+        <li><a href="edible.html">edible.html</a></li>
+        <li><a href="facts.html">facts.html</a></li>
+        <li><a href="geography.html">geography.html</a></li>
+        <li><a href="great-cactus.html">great-cactus.html</a></li>
+        <li><a href="guardian.html">guardian.html</a></li>
+        <li><a href="home.html">home.html</a></li>
+        <li><a href="identifier.html">identifier.html</a></li>
+        <li><a href="index.html">index.html</a></li>
+        <li><a href="navigator.html">navigator.html</a></li>
+        <li><a href="relax.html">relax.html</a></li>
+        <li><a href="rarities.html">rarities.html</a></li>
+        <li><a href="stories.html">stories.html</a></li>
+        <li><a href="succulents.html">succulents.html</a></li>
+        <li><a href="systematics.html">systematics.html</a></li>
+        <li class="folder">книга-кактусология (папка)</li>
+      </ul>
+    </details>
+  </main>
+  <!-- Контекст: Кактусярий, репо derev-studio/cactus-books, GitHub веб-загрузка макс 100 файлов, книга книга-кактусология/media, воркер cactus-openrouter (DeepL+OpenRouter), config.js workerUrl -->
+  <script src="i18n.js" defer></script>
+  <script>
+    (function () {
+      function init() {
+        if (!window.I18n) return;
+        var c = document.getElementById("globe-container");
+        if (c) window.I18n.init(c);
+        else window.I18n.applyToPage();
+      }
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+      else init();
+    })();
+  </script>
+</body>
+</html>

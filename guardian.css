@@ -1,0 +1,339 @@
+/**
+ * Чат Хранитель — тёмно-синий фон, белый текст, жёлтые и красные акценты
+ */
+
+/* Фон: тёмно-синий, не чёрный */
+.samurai-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: var(--cactus-bg);
+}
+
+.samurai-bg__image,
+.samurai-bg__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.samurai-bg__overlay {
+  background: linear-gradient(180deg, transparent 0%, rgba(26, 39, 68, 0.4) 100%);
+  pointer-events: none;
+}
+
+/* Шапка уже задана в inline — дублируем для надёжности */
+.guardian-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  border-bottom: 1px solid var(--cactus-border);
+  background: var(--cactus-bg-soft);
+}
+
+.guardian-header__back,
+.guardian-header__link {
+  color: var(--cactus-muted-on-dark);
+  text-decoration: none;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.guardian-header__back:hover,
+.guardian-header__link:hover {
+  color: var(--cactus-accent);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.guardian-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* Имя самурая — белый текст */
+.samurai-identity {
+  position: fixed;
+  left: max(1rem, env(safe-area-inset-left));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.samurai-identity__kanji,
+.samurai-identity__ru,
+.samurai-identity__roles {
+  color: var(--cactus-text-on-dark);
+}
+
+.samurai-identity__roles {
+  color: var(--cactus-muted-on-dark);
+  font-size: 0.9rem;
+}
+
+/* Панель чата — тёмно-синий, белый текст */
+.samurai-chat-panel {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  padding: 1rem;
+  padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+.chat-inner {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Режимы — белый текст, активная кнопка жёлтая */
+.guardian-mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.guardian-mode__btn {
+  padding: 0.5rem 1rem;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid var(--cactus-border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--cactus-text-on-dark);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.guardian-mode__btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--cactus-accent);
+}
+
+.guardian-mode__btn--active {
+  background: var(--cactus-accent-soft);
+  color: var(--cactus-accent);
+  border-color: var(--cactus-accent);
+}
+
+/* «Ещё» — выпадающие режимы Психолог, Дуэт, Трио */
+.guardian-mode-more {
+  position: relative;
+  display: inline-block;
+}
+
+.guardian-mode-more summary.guardian-mode__btn--more {
+  list-style: none;
+  cursor: pointer;
+}
+
+.guardian-mode-more summary::-webkit-details-marker { display: none; }
+
+.guardian-mode-more__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  padding: 0.5rem;
+  background: var(--cactus-bg-soft);
+  border: 1px solid var(--cactus-border);
+  border-radius: 10px;
+}
+
+.guardian-mode-more[open] summary.guardian-mode__btn--more {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--cactus-accent);
+}
+
+/* Красный акцент для Психолог */
+.guardian-mode__btn--psychologist:hover,
+.guardian-mode__btn--psychologist.guardian-mode__btn--active {
+  color: #e8a0a0;
+  border-color: rgba(232, 160, 160, 0.5);
+}
+
+/* Сообщения — белый текст */
+.guardian-chat__messages {
+  margin-bottom: 1rem;
+}
+
+.guardian-msg {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.guardian-msg__avatar {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--cactus-accent-soft);
+  color: var(--cactus-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.guardian-msg__bubble {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: var(--cactus-bg-soft);
+  border: 1px solid var(--cactus-border);
+}
+
+.guardian-msg__text {
+  margin: 0;
+  color: var(--cactus-text-on-dark);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Поле ввода — тёмно-синий, белый текст */
+.guardian-chat__input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.guardian-chat__input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--cactus-border);
+  background: var(--cactus-bg-soft);
+  color: var(--cactus-text-on-dark);
+  font: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 56px;
+}
+
+.guardian-chat__input::placeholder {
+  color: var(--cactus-muted-on-dark);
+}
+
+/* Ряд кнопок: микрофон, отправить, опции */
+.guardian-chat__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.guardian-chat__send,
+.guardian-chat__mic {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--cactus-border);
+  background: var(--cactus-accent);
+  color: var(--cactus-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.guardian-chat__send:hover,
+.guardian-chat__mic:hover {
+  background: var(--cactus-accent-hover);
+}
+
+/* Опции (голос, картинки) в выпадающем меню */
+.guardian-chat__opts {
+  position: relative;
+}
+
+.guardian-chat__opts summary.guardian-chat__opts-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--cactus-border);
+  background: var(--cactus-bg-soft);
+  color: var(--cactus-text-on-dark);
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.guardian-chat__opts summary::-webkit-details-marker { display: none; }
+
+.guardian-chat__opts summary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--cactus-accent);
+}
+
+.guardian-chat__opts-menu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 0.35rem;
+  padding: 0.35rem;
+  background: var(--cactus-bg-soft);
+  border: 1px solid var(--cactus-border);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: var(--cactus-shadow-card);
+  z-index: 10;
+}
+
+.guardian-chat__opt-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--cactus-text-on-dark);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.guardian-chat__opt-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--cactus-accent);
+}
+
+.guardian-chat__hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--cactus-muted-on-dark);
+}
+
+/* Искры и огонь — не перекрывают контент */
+.sparks,
+.samurai-bg__fire-glow {
+  pointer-events: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Где полный файл книги и как показать картинки</title>
+  <link rel="stylesheet" href="../theme.css" />
+  <link rel="stylesheet" href="../page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 1rem; }
+    .page-main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 2rem 1.75rem;
+      background: var(--cactus-reading-bg);
+      color: var(--cactus-reading-text);
+      box-shadow: var(--cactus-reading-shadow);
+      border-radius: var(--cactus-reading-radius);
+      font-size: 1.35rem;
+      line-height: 1.8;
+    }
+    .page-main h1 { font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
+    .page-main h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 0.75rem; }
+    .page-main h2:first-of-type { margin-top: 0; }
+    .page-main p { margin: 0 0 1rem; }
+    .page-main ul { margin: 0 0 1rem; padding-left: 1.75rem; }
+    .page-main li { margin-bottom: 0.6rem; }
+    .page-main a { color: #165a9e; font-weight: 600; }
+    .page-main code { background: rgba(0,0,0,0.08); padding: 0.2em 0.5em; border-radius: 4px; font-size: 1.05em; }
+    .step { background: rgba(0,0,0,0.04); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; }
+    .step-num { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .back-link { display: inline-block; margin-bottom: 1.5rem; font-size: 1.2rem; }
+    .notice-box { background: #f5e6d3; border: 1px solid rgba(0,0,0,0.15); border-radius: 10px; padding: 1.25rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main class="page-main">
+    <p><a href="../book.html" class="back-link">← Назад к Кактусологии</a></p>
+    <h1>Где полный файл книги и как показать картинки на сайте</h1>
+
+    <h2>Проблема</h2>
+    <p>На странице книги нет картинок — потому что в этой папке нет папки <strong>media/</strong> с картинками. Картинки берутся из исходного Word-файла книги.</p>
+
+    <div class="step">
+      <p class="step-num">Шаг 1. Найти у себя полный файл книги с картинками</p>
+      <p>Файл называется: <strong>Кактусология_полная_с_картинками.docx</strong></p>
+      <p>Он может быть в Документах, на Рабочем столе, в Загрузках или там, где вы храните исходники книги.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 2. Скопировать этот файл в папку книги</p>
+      <p>Папка: <code>cactus/книга-кактусология/</code></p>
+      <p>Рядом с файлами <code>book-read.html</code> и <code>build_book_with_images.py</code> должен лежать файл <strong>Кактусология_полная_с_картинками.docx</strong>.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 3. Запустить скрипт</p>
+      <p>Откройте терминал, зайдите в папку <code>книга-кактусология</code> и выполните:</p>
+      <p><code>python3 build_book_with_images.py</code></p>
+      <p>Скрипт извлечёт все картинки из docx в папку <strong>media/</strong> и пересоберёт <strong>book-read.html</strong>.</p>
+    </div>
+
+    <div class="step">
+      <p class="step-num">Шаг 4. Открыть книгу в браузере</p>
+      <p>Файл: <code>книга-кактусология/book-read.html</code></p>
+      <p>Лучше открыть через браузер (Chrome/Safari): правый клик по <strong>book-read.html</strong> → «Открыть с помощью» → браузер.</p>
+    </div>
+
+    <div class="notice-box">
+      <h2 style="margin-top:0;">Если файла Кактусология_полная_с_картинками.docx нет</h2>
+      <p>Тогда картинки на сайте показать нельзя — они есть только внутри этого Word-документа. Нужно снова положить сюда полный docx и запустить <code>build_book_with_images.py</code>.</p>
+      <p>Полный путь к папке (куда класть docx): <code>.../Documents/cactus/книга-кактусология/</code></p>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "artworks": [
+    {
+      "id": "fuji",
+      "title": "Фудзияма в тумане",
+      "subtitle": "Галерея",
+      "imageUrl": "./01_fuji.png"
+    },
+    {
+      "id": "2",
+      "title": "Рисунок",
+      "subtitle": "",
+      "imageUrl": "./data/images/2.jpg"
+    }
+  ]
+}

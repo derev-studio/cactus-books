@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Рассказы | Сайт кактусов</title>
+  <meta name="description" content="Рассказы о кактусах, природе и увлечениях. Тёплые тексты для души." />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: max(1.5rem, env(safe-area-inset-top)) max(8.5rem, env(safe-area-inset-right)) max(3rem, env(safe-area-inset-bottom)) max(1.5rem, env(safe-area-inset-left));
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      line-height: 1.7;
+      color: var(--cactus-text-on-dark);
+      background: var(--cactus-bg);
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+    .stories-nav { display: flex; flex-wrap: wrap; gap: clamp(1rem, 4vw, 1.5rem); justify-content: center; margin: 2.5rem 0 2rem; padding: 0 1rem; }
+    .stories-nav__btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: clamp(0.65rem, 2vw, 0.85rem) clamp(1.25rem, 4vw, 1.75rem);
+      min-height: 48px; min-width: 44px;
+      border-radius: 8px; border: 1px solid rgba(0,0,0,0.12);
+      background: var(--cactus-surface); color: var(--cactus-text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(0.9rem, 1.8vw, 1.05rem); font-weight: 600;
+      letter-spacing: 0.04em; text-decoration: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .stories-nav__btn:hover { background: var(--cactus-surface-soft); transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    a.back {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: clamp(0.5rem, 1.2vw, 0.65rem) clamp(1rem, 2vw, 1.25rem);
+      min-height: 48px; min-width: 44px; margin-bottom: 1.5rem;
+      border-radius: 8px; border: 1px solid var(--cactus-border);
+      background: var(--cactus-surface); color: var(--cactus-text);
+      font-family: system-ui, sans-serif; font-size: clamp(0.9rem, 1.2vw, 1rem);
+      font-weight: 500; text-decoration: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      transition: background 0.2s ease, transform 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a.back:hover { background: var(--cactus-surface-soft); transform: translateY(-1px); }
+    article { max-width: 720px; margin: 0 auto 3rem; }
+    article:last-child { margin-bottom: 2rem; }
+    .story-cover { width: 100%; max-height: 60vh; object-fit: cover; border-radius: 12px; margin-bottom: 1.5rem; display: block; }
+    .story-title { font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 0 0 0.75em; font-weight: 600; color: var(--cactus-text-on-dark); }
+    .story-content { white-space: pre-wrap; word-wrap: break-word; }
+    .story-content a.story-link { color: #2563eb; text-decoration: underline; }
+    .story-content a.story-link:hover { color: #1d4ed8; }
+    .loading { text-align: center; padding: 3rem; color: var(--cactus-muted-on-dark); }
+    .error { color: #f0a0a0; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html" class="site-header__link--active">Рассказы</a>
+          <a href="relax.html">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="globe-container" class="globe-fixed"></div>
+  <div id="root">
+    <p class="loading" data-i18n="stories_loading">Загрузка рассказов…</p>
+  </div>
+  <nav class="stories-nav" aria-label="Быстрые ссылки">
+    <a class="stories-nav__btn" href="home.html" id="stories-btn-main" data-i18n="stories_nav_main">На главную</a>
+    <a class="stories-nav__btn" href="index.html" id="stories-btn-start" data-i18n="stories_nav_start">Стартовая</a>
+  </nav>
+  <footer class="site-footer">
+    <a href="derev-studio.html" class="site-footer__btn">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="Источники">
+      <details>
+        <summary>Источники</summary>
+        <div class="site-footer__sources-panel">
+          <p class="site-footer__sources-list">
+            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
+            <a href="book.html">Кактусология</a>
+          </p>
+        </div>
+      </details>
+    </nav>
+  </footer>
+  <div id="atmosphere-widget" class="atmosphere-widget" aria-label="Настройки атмосферы"></div>
+  <script src="i18n.js" defer></script>
+  <script src="atmosphere.js" defer></script>
+  <script>
+(function () {
+  function initGlobeAndTranslate() {
+    if (!window.I18n) return;
+    var container = document.getElementById("globe-container");
+    if (container) window.I18n.init(container);
+    else window.I18n.applyToPage();
+    setTimeout(function() { if (window.I18n) window.I18n.applyToPage(); }, 0);
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGlobeAndTranslate);
+  } else {
+    initGlobeAndTranslate();
+  }
+  const root = document.getElementById("root");
+  let loadedStories = [];
+  // Stories: title/content can be string (one lang) or { ru: "...", en: "...", ... } for translation.
+
+  function escapeHtml(s) {
+    const d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+  }
+  function escapeAttr(s) {
+    return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function linkify(text) {
+    var re = /(https?:\/\/[^\s<>"')\]]+)/g;
+    var parts = text.split(re);
+    var out = [];
+    for (var i = 0; i < parts.length; i++) {
+      if (i % 2 === 1) {
+        out.push("<a class=\"story-link\" href=\"" + escapeAttr(parts[i]) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + escapeHtml(parts[i]) + "</a>");
+      } else {
+        out.push(escapeHtml(parts[i]));
+      }
+    }
+    return out.join("");
+  }
+
+  function getStoryText(field) {
+    if (field == null) return "";
+    var lang = window.I18n ? window.I18n.getLang() : "ru";
+    if (typeof field === "object") {
+      return field[lang] != null ? field[lang] : (field.ru != null ? field.ru : (field.en != null ? field.en : (Object.values(field)[0] || "")));
+    }
+    return String(field);
+  }
+
+  function renderStories(stories) {
+    if (!stories || stories.length === 0) {
+      root.innerHTML = "<p class=\"loading\" data-i18n=\"stories_no\">" + (window.I18n ? window.I18n.t("stories_no") : "Пока нет рассказов.") + "</p>";
+      if (window.I18n) window.I18n.applyToPage();
+      return;
+    }
+    root.innerHTML = stories.map(function(s) {
+      var cover = s.coverUrl ? "<img class=\"story-cover\" src=\"" + escapeAttr(s.coverUrl) + "\" alt=\"\" loading=\"lazy\" />" : "";
+      var titleKey = "story_" + s.id + "_title";
+      var contentKey = "story_" + s.id + "_content";
+      var fallbackTitle = getStoryText(s.title);
+      var fallbackContent = getStoryText(s.content);
+      return "<article>" + cover + "<h1 class=\"story-title\" data-i18n=\"" + escapeAttr(titleKey) + "\">" + escapeHtml(fallbackTitle) + "</h1><div class=\"story-content\" data-i18n=\"" + escapeAttr(contentKey) + "\" data-i18n-linkify=\"true\">" + linkify(fallbackContent) + "</div></article>";
+    }).join("");
+    if (window.I18n) window.I18n.applyToPage();
+  }
+
+  function loadAndShowStories() {
+    fetch("./data/stories.json", { cache: "no-store" })
+      .then(function(r) { return r.ok ? r.text() : Promise.reject(new Error("Не удалось загрузить")); })
+      .then(function(text) {
+        var data = JSON.parse(text);
+        loadedStories = Array.isArray(data.stories) ? data.stories : [];
+        renderStories(loadedStories);
+      })
+      .catch(function() {
+        root.innerHTML = "<p class=\"error\" data-i18n=\"stories_error\">" + (window.I18n ? window.I18n.t("stories_error") : "Не удалось загрузить рассказы.") + "</p>";
+        if (window.I18n) window.I18n.applyToPage();
+      });
+  }
+
+  loadAndShowStories();
+  window.addEventListener("soulart-language-change", function() {
+    if (loadedStories.length) renderStories(loadedStories);
+  });
+
+  function playPapyrusClick(variant) {
+    try {
+      var C = window.AudioContext || window.webkitAudioContext;
+      if (!C) return;
+      var ctx = new C();
+      var duration = 0.055;
+      var buf = ctx.createBuffer(1, ctx.sampleRate * duration, ctx.sampleRate);
+      var ch = buf.getChannelData(0);
+      var decay = 0.012 + variant * 0.003;
+      var freq = 600 + variant * 120;
+      for (var i = 0; i < buf.length; i++) ch[i] = (Math.random() * 2 - 1) * Math.exp(-i / (ctx.sampleRate * decay));
+      var src = ctx.createBufferSource();
+      src.buffer = buf;
+      var filter = ctx.createBiquadFilter();
+      filter.type = "highpass";
+      filter.frequency.value = freq;
+      var gain = ctx.createGain();
+      gain.gain.setValueAtTime(0.12, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.045);
+      src.connect(filter); filter.connect(gain); gain.connect(ctx.destination);
+      src.start(0); src.stop(duration);
+    } catch (_) {}
+  }
+  var btnMain = document.getElementById("stories-btn-main");
+  var btnStart = document.getElementById("stories-btn-start");
+  var backTop = document.getElementById("stories-back-top");
+  if (btnMain) btnMain.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(4); setTimeout(function() { window.location.href = btnMain.getAttribute("href"); }, 120); });
+  if (btnStart) btnStart.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(5); setTimeout(function() { window.location.href = btnStart.getAttribute("href"); }, 120); });
+  if (backTop) backTop.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(4); setTimeout(function() { window.location.href = backTop.getAttribute("href"); }, 120); });
+})();
+  </script>
+</body>
+</html>

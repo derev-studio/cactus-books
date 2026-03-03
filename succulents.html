@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Суккуленты</title>
+  <meta name="description" content="Не кактусы: алоэ, хавортии, эхеверии и другие суккуленты." />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html">Рассказы</a>
+          <a href="relax.html">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html" class="site-header__link--active">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="globe-container" class="globe-fixed"></div>
+
+  <main class="page-main">
+    <h1>Суккуленты</h1>
+    <p class="page-intro">Алоэ, хавортии, эхеверии, крассулы и другие растения с запасающими тканями — не только кактусы.</p>
+    <section class="page-content">
+      <p class="notice">Раздел в разработке. Контент появится позже.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="derev-studio.html" class="site-footer__btn">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="Источники">
+      <details>
+        <summary>Источники</summary>
+        <div class="site-footer__sources-panel">
+          <p class="site-footer__sources-list">
+            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
+            <a href="book.html">Кактусология</a>
+          </p>
+        </div>
+      </details>
+    </nav>
+  </footer>
+  <script src="i18n.js" defer></script>
+  <script>
+    (function () {
+      function init() {
+        if (!window.I18n) return;
+        var c = document.getElementById("globe-container");
+        if (c) window.I18n.init(c);
+        else window.I18n.applyToPage();
+      }
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+      else init();
+    })();
+  </script>
+</body>
+</html>

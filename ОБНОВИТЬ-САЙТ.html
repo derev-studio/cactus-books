@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обновить сайт в интернете</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 1.5rem; font-size: 1.3rem; line-height: 1.65; background: #f0f4f8; color: #1a1a1a; }
+    h1 { font-size: 1.7rem; margin-bottom: 0.5rem; color: #0d3b66; }
+    .warn { background: #fff3cd; border: 2px solid #d4a017; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 10px; font-weight: 600; }
+    .step { background: #fff; border-left: 5px solid #165a9e; padding: 1.25rem 1.5rem; margin: 1.25rem 0; border-radius: 0 10px 10px 0; }
+    .step strong { display: block; margin-bottom: 0.5rem; font-size: 1.15em; }
+    a.big { display: inline-block; margin: 0.75rem 0; padding: 1rem 1.5rem; background: #165a9e; color: #fff !important; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1.2rem; }
+    a.big:hover { background: #134a82; }
+    .files { background: #e8eef4; padding: 0.6rem 1rem; border-radius: 8px; font-family: monospace; margin: 0.5rem 0; font-size: 1.1rem; }
+    .must { background: #d4edda; border: 2px solid #28a745; padding: 1rem; margin: 1rem 0; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Обновить сайт в интернете</h1>
+
+  <h2 style="font-size:1.35rem; margin-top:1.5rem; color:#0d3b66;">Способ 1: Через Cursor (синяя кнопка — без браузера)</h2>
+  <p>Если один раз настроишь — потом только копируешь файлы и жмёшь одну кнопку в Cursor.</p>
+
+  <div class="step">
+    <strong>Один раз:</strong> Склонировать репозиторий в Cursor.<br />
+    Нажми <strong>Ctrl+Shift+P</strong> (или Cmd+Shift+P на Mac) → введи <strong>Git: Clone</strong> → выбери эту команду. Вставь ссылку: <span class="files">https://github.com/derev-studio/cactus-books</span> → выбери папку (например Рабочий стол). Когда Cursor спросит логин и пароль: пароль — это твой <strong>токен GitHub (PAT)</strong>, который ты сохранял для кактуса. Логин можно оставить derev-studio.<br />
+    <strong>Если при Push пишет «нет разрешения» или другой аккаунт</strong> — заново клонируй, но вставь ссылку с токеном: <span class="files">https://ТВОЙ_ТОКЕН@github.com/derev-studio/cactus-books</span> (подставь свой PAT вместо ТВОЙ_ТОКЕН). Тогда Push будет от твоего аккаунта.
+  </div>
+  <div class="step">
+    <strong>Каждый раз при обновлении:</strong><br />
+    1) Скопируй из папки <strong>Документы → cactus</strong> всё нужное (или хотя бы <span class="files">site-header.css, styles.css, book.html</span>) в папку <strong>cactus-books → cactus</strong> (ту, что появилась после клонирования). Замени файлы.<br />
+    2) В Cursor открой эту папку: <strong>File → Open Folder</strong> → выбери <strong>cactus-books</strong>.<br />
+    3) Слева нажми иконку <strong>ветки</strong> (Source Control). Увидишь список изменённых файлов. Нажми <strong>+</strong> рядом с «Changes», чтобы добавить все. Внизу введи сообщение, например <strong>Update</strong>. Нажми синюю кнопку <strong>Sync</strong> или <strong>Push</strong>.
+  </div>
+  <div class="must">После Push подожди 1–2 минуты. Открой сайт и нажми <strong>Ctrl+Shift+R</strong> (Cmd+Shift+R на Mac) — появятся новые кнопки.</div>
+
+  <h2 style="font-size:1.35rem; margin-top:2rem; color:#0d3b66;">Способ 2: Через браузер (GitHub)</h2>
+  <div class="warn">⚠️ Одна только ссылка сайт не обновляет. Нужно загрузить файлы и нажать Commit.</div>
+  <div class="step">
+    <strong>Шаг 1.</strong> <a class="big" href="https://github.com/derev-studio/cactus-books/tree/main/cactus" target="_blank" rel="noopener">Открыть папку cactus на GitHub</a>
+  </div>
+  <div class="step">
+    <strong>Шаг 2.</strong> На странице GitHub нажми <strong>«Add file»</strong> → <strong>«Upload files»</strong>.
+  </div>
+  <div class="step">
+    <strong>Шаг 3.</strong> Из папки <strong>Документы → cactus</strong> перетащи в браузер три файла: <span class="files">site-header.css, styles.css, book.html</span> → внизу нажми <strong>«Commit changes»</strong>.
+  </div>
+  <div class="must">Через 1–2 минуты открой сайт и нажми <strong>Ctrl+Shift+R</strong> — тогда появятся новые кнопки.</div>
+</body>
+</html>

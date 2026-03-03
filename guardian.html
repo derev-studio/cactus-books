@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Колючий Собеседник | Кактусярий</title>
+  <meta name="description" content="Колючий Собеседник — Хранитель (ИИ): разговор, языки, рисование, душа. Вопросы о кактусах и не только." />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="guardian.css" />
+  <style>
+    body.guardian-page { background: var(--cactus-bg) !important; }
+  </style>
+</head>
+<body class="guardian-page">
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link">Места обитания</a>
+      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link site-header__link--active">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary>Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html">Главная</a>
+          <a href="navigator.html">Навигатор по кактусам</a>
+          <a href="book.html">Кактусология</a>
+          <a href="great-cactus.html">Великие кактусоводы</a>
+          <a href="index.html">Галерея</a>
+          <a href="stories.html">Рассказы</a>
+          <a href="relax.html">Отдых</a>
+          <a href="draw.html">Рисование</a>
+          <a href="succulents.html">Суккуленты</a>
+          <a href="edible.html">Съедобные кактусы</a>
+          <a href="rarities.html">Редкости</a>
+          <a href="facts.html">Интересные факты</a>
+          <a href="caution.html">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="globe-container" class="globe-fixed"></div>
+
+  <!-- Фон: самурай у костра -->
+  <div class="samurai-bg" aria-hidden="true">
+    <div class="samurai-bg__image"></div>
+    <div class="samurai-bg__overlay"></div>
+    <div class="samurai-bg__fire-glow"></div>
+    <!-- Искры над костром — стартуют с земли снизу слева где огонь -->
+    <div class="sparks" aria-hidden="true">
+      <div class="spark" style="--tx:-20px;--duration:2.2s;--delay:0.0s;left:16%"></div>
+      <div class="spark" style="--tx: 18px;--duration:1.9s;--delay:0.5s;left:20%"></div>
+      <div class="spark" style="--tx: -8px;--duration:2.6s;--delay:1.0s;left:14%"></div>
+      <div class="spark" style="--tx: 25px;--duration:1.7s;--delay:1.4s;left:22%"></div>
+      <div class="spark" style="--tx:-15px;--duration:2.4s;--delay:0.8s;left:17%"></div>
+      <div class="spark" style="--tx: 10px;--duration:2.1s;--delay:1.7s;left:13%"></div>
+      <div class="spark" style="--tx:-22px;--duration:1.8s;--delay:0.3s;left:19%"></div>
+      <div class="spark" style="--tx: 14px;--duration:2.3s;--delay:2.0s;left:15%"></div>
+      <div class="spark" style="--tx:-10px;--duration:2.8s;--delay:2.4s;left:21%"></div>
+      <div class="spark" style="--tx: 8px; --duration:1.6s;--delay:0.9s;left:18%"></div>
+    </div>
+  </div>
+
+  <!-- Имя самурая (левая сторона, видно на десктопе) -->
+  <div class="samurai-identity" aria-hidden="true">
+    <div class="samurai-identity__kanji">守護者</div>
+    <div class="samurai-identity__ru" data-i18n="guardian_title">Хранитель</div>
+    <div class="samurai-identity__roles">
+      <span data-i18n="guardian_role_lang">Языки</span>
+      <span class="samurai-identity__dot">·</span>
+      <span data-i18n="guardian_role_art">Рисование</span>
+      <span class="samurai-identity__dot">·</span>
+      <span data-i18n="guardian_role_soul">Душа</span>
+    </div>
+  </div>
+
+  <!-- Чат-панель -->
+  <div class="samurai-chat-panel">
+    <div class="chat-inner">
+
+      <!-- Режимы: основные на виду, остальные в «Ещё» -->
+      <div class="guardian-mode" role="group" aria-label="Режим разговора">
+        <button type="button" class="guardian-mode__btn guardian-mode__btn--active"
+          data-mode="assistant" data-i18n="guardian_mode_assistant">Разговор</button>
+        <button type="button" class="guardian-mode__btn"
+          data-mode="language" data-i18n="guardian_mode_language">Языки</button>
+        <button type="button" class="guardian-mode__btn"
+          data-mode="art" data-i18n="guardian_mode_art">Рисование</button>
+        <details class="guardian-mode-more">
+          <summary class="guardian-mode__btn guardian-mode__btn--more">Ещё</summary>
+          <div class="guardian-mode-more__list">
+            <button type="button" class="guardian-mode__btn guardian-mode__btn--psychologist"
+              data-mode="psychology">♥ Психолог</button>
+            <button type="button" class="guardian-mode__btn guardian-mode__btn--duo"
+              data-mode="duo">✦語 Дуэт</button>
+            <button type="button" class="guardian-mode__btn guardian-mode__btn--trio"
+              data-mode="trio">✦語♥ Трио</button>
+          </div>
+        </details>
+      </div>
+
+      <!-- Сообщения -->
+      <div class="guardian-chat__messages" id="guardian-messages" role="log" aria-live="polite">
+        <div class="guardian-msg guardian-msg--bot">
+          <div class="guardian-msg__avatar" aria-hidden="true">✦</div>
+          <div class="guardian-msg__bubble">
+            <p class="guardian-msg__text" data-i18n="guardian_welcome">Здравствуй. Я — Хранитель. Готов говорить о кактусах, языках, творчестве, о том, что на душе. Просто напиши — я здесь.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Поле ввода: текст, микрофон, отправить, опции (голос/картинки) -->
+      <div class="guardian-chat__input-wrap">
+        <textarea
+          id="guardian-input"
+          class="guardian-chat__input"
+          rows="3"
+          placeholder="Напиши или скажи Хранителю…"
+          data-i18n-placeholder="guardian_placeholder"
+          aria-label="Сообщение Хранителю"
+        ></textarea>
+        <div class="guardian-chat__actions">
+          <button type="button" id="guardian-mic" class="guardian-chat__mic" aria-label="Говорить голосом" title="Говорить голосом">🎤</button>
+          <button type="button" id="guardian-send" class="guardian-chat__send" aria-label="Отправить" title="Отправить">
+            <span aria-hidden="true">→</span>
+          </button>
+          <details class="guardian-chat__opts">
+            <summary class="guardian-chat__opts-btn" aria-label="Опции" title="Голос и картинки">⋯</summary>
+            <div class="guardian-chat__opts-menu">
+              <button type="button" id="guardian-voice-toggle" class="guardian-chat__opt-item" aria-label="Голос Хранителя" title="Включить / выключить голос в ответах">
+                <span class="voice-icon">🔊</span> Голос ответов
+              </button>
+              <button type="button" id="guardian-images-toggle" class="guardian-chat__opt-item" aria-label="Картинки" title="Картинки в ответах">
+                <span class="images-icon">🖼</span> Картинки
+              </button>
+            </div>
+          </details>
+        </div>
+      </div>
+      <p class="guardian-chat__hint" data-i18n="guardian_hint">🎤 голос · ⋯ опции (голос/картинки) · нарисуй [описание] · найди фото [тема]</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="derev-studio.html" class="site-footer__btn">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="Источники">
+      <details>
+        <summary>Источники</summary>
+        <div class="site-footer__sources-panel">
+          <p class="site-footer__sources-list">
+            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
+            <a href="book.html">Кактусология</a>
+          </p>
+        </div>
+      </details>
+    </nav>
+  </footer>
+
+  <div id="atmosphere-widget" class="atmosphere-widget" aria-label="Настройки атмосферы"></div>
+
+  <script src="config.js"></script>
+  <script src="i18n.js" defer></script>
+  <script src="atmosphere.js" defer></script>
+  <script src="guardian.js" defer></script>
+  <script>
+    (function () {
+      function init() {
+        if (!window.I18n) return;
+        var container = document.getElementById("globe-container");
+        if (container) window.I18n.init(container);
+        else window.I18n.applyToPage();
+        setTimeout(function () { if (window.I18n) window.I18n.applyToPage(); }, 0);
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>

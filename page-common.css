@@ -1,0 +1,117 @@
+/**
+ * Общие стили для контентных страниц — «лист для чтения»: бумажный фон, тень, крупный шрифт
+ */
+
+.page-main {
+  max-width: 52rem;
+  margin: 1.25rem auto 2rem;
+  padding: clamp(1.75rem, 5vw, 3rem) clamp(1.25rem, 4vw, 2.5rem);
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+  padding-bottom: clamp(2.5rem, 6vw, 3.5rem);
+
+  /* Лист как книга: светлый фон, тень, скруглённые углы */
+  background: var(--cactus-reading-bg);
+  color: var(--cactus-reading-text);
+  box-shadow: var(--cactus-reading-shadow);
+  border-radius: var(--cactus-reading-radius);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  /* Крупнее шрифт для удобного чтения */
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.page-main h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 0.85rem;
+  color: var(--cactus-reading-text);
+  line-height: 1.3;
+}
+
+.page-intro {
+  color: var(--cactus-reading-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+
+.page-content {
+  color: var(--cactus-reading-text);
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.page-content p {
+  margin: 0 0 1.1rem;
+}
+
+.page-content .notice {
+  background: var(--cactus-reading-bg-warm);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.15rem 1.35rem;
+  color: var(--cactus-reading-muted);
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+}
+
+.page-content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1.85rem 0 0.65rem;
+  color: var(--cactus-reading-text);
+}
+
+.page-content h2:first-child {
+  margin-top: 0;
+}
+
+.page-content ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.page-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* Ссылки на листе для чтения — контрастные и крупные */
+.page-content a {
+  color: #165a9e;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.page-content a:hover {
+  color: #0d3a6e;
+}
+
+/* Блок «Примеры» — крупные фото друг под другом, удобно смотреть */
+.page-content .caution-gallery {
+  margin: 1.75rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.page-content .caution-gallery figure {
+  margin: 0;
+  break-inside: avoid;
+}
+.page-content .caution-gallery img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.page-content .caution-gallery figcaption {
+  margin-top: 0.6rem;
+  font-size: 1.05rem;
+  color: var(--cactus-reading-muted);
+  line-height: 1.55;
+}
+.page-content .caution-gallery figcaption strong {
+  color: var(--cactus-reading-text);
+}

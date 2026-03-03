@@ -1,0 +1,65 @@
+/**
+ * Подключение темы кактусов к index.html:
+ * синий фон везде — и на стартовой (интро), и после нажатия «Сайт».
+ */
+
+/* Синий фон на всей странице index после нажатия «Сайт» */
+body {
+  background: var(--cactus-bg) !important;
+}
+
+/* Стартовая страница (интро): песчаный фон и фото в раме заданы в styles.css */
+
+/* Когда активен блок «Сайт» — фон уже синий, убираем фудзи */
+body:has(#app-shell.app-shell--active) {
+  background: var(--cactus-bg) !important;
+}
+
+body:has(#app-shell.app-shell--active)::before {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Шапка в стиле кактусов (тёмная полоса, светлый текст) */
+#app-shell.app-shell--active .top-nav {
+  background: var(--cactus-bg-soft);
+  border-bottom: 1px solid var(--cactus-border);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Бренд и кнопки — единый стиль из site-header.css */
+
+/* Ссылки навигации — рельефные кнопки из site-header.css, не переопределяем */
+
+/* Контент (Галерея, Обо мне) — светлый текст на синем */
+#app-shell.app-shell--active #app-content,
+#app-shell.app-shell--active .gallery-view__heading,
+#app-shell.app-shell--active .gallery-view__caption-title,
+#app-shell.app-shell--active .about-view__title,
+#app-shell.app-shell--active .about-view__text {
+  color: var(--cactus-text-on-dark);
+}
+
+#app-shell.app-shell--active .gallery-view__caption-subtitle,
+#app-shell.app-shell--active .gallery-view__caption-index {
+  color: var(--cactus-muted-on-dark);
+}
+
+#app-shell.app-shell--active .site-footer .site-footer__btn {
+  color: var(--cactus-muted-on-dark);
+}
+#app-shell.app-shell--active .site-footer .site-footer__btn:hover {
+  color: var(--cactus-accent);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Выпадающее «Ещё» в шапке index — как у site-header */
+#app-shell.app-shell--active .top-nav .site-header__more {
+  position: relative;
+}
+
+#app-shell.app-shell--active .top-nav .site-header__dropdown {
+  background: var(--cactus-bg-soft);
+  border: 1px solid var(--cactus-border);
+  color: var(--cactus-text-on-dark);
+}
