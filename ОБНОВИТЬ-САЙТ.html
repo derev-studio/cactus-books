@@ -8,6 +8,8 @@
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 1.5rem; font-size: 1.3rem; line-height: 1.65; background: #f0f4f8; color: #1a1a1a; }
     h1 { font-size: 1.7rem; margin-bottom: 0.5rem; color: #0d3b66; }
     .warn { background: #fff3cd; border: 2px solid #d4a017; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 10px; font-weight: 600; }
+    .own { background: #e7f3ff; border: 2px solid #165a9e; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 10px; }
+    .dasha { background: #f8e8ee; border: 2px solid #9e165a; padding: 1rem 1.25rem; margin: 1rem 0 1.5rem 0; border-radius: 10px; font-size: 0.95em; }
     .step { background: #fff; border-left: 5px solid #165a9e; padding: 1.25rem 1.5rem; margin: 1.25rem 0; border-radius: 0 10px 10px 0; }
     .step strong { display: block; margin-bottom: 0.5rem; font-size: 1.15em; }
     a.big { display: inline-block; margin: 0.75rem 0; padding: 1rem 1.5rem; background: #165a9e; color: #fff !important; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 1.2rem; }
@@ -19,7 +21,17 @@
 <body>
   <h1>Обновить сайт в интернете</h1>
 
-  <h2 style="font-size:1.35rem; margin-top:1.5rem; color:#0d3b66;">Способ 1: Через Cursor (синяя кнопка — без браузера)</h2>
+  <div class="own">
+    <strong>Это твой проект (Кактусярий).</strong> Обновляй свой репозиторий: в папке проекта открой терминал и выполни<br />
+    <span class="files">git add . && git commit -m "Update" && git push</span><br />
+    Сайт обновится через 1–2 минуты (GitHub Pages). Репозиторий Даши этим не затронут.
+  </div>
+
+  <div class="dasha">
+    <strong>Ниже — инструкция для проекта Даши</strong> (репозиторий derev-studio/cactus-books). Если ты обновляешь её сайт (копируешь файлы в её репо) — используй способы 1 или 2. Если работаешь только со своим сайтом — ими не пользуйся.
+  </div>
+
+  <h2 style="font-size:1.35rem; margin-top:1.5rem; color:#0d3b66;">Способ 1: Через Cursor (для обновления сайта Даши)</h2>
   <p>Если один раз настроишь — потом только копируешь файлы и жмёшь одну кнопку в Cursor.</p>
 
   <div class="step">
@@ -35,7 +47,7 @@
   </div>
   <div class="must">После Push подожди 1–2 минуты. Открой сайт и нажми <strong>Ctrl+Shift+R</strong> (Cmd+Shift+R на Mac) — появятся новые кнопки.</div>
 
-  <h2 style="font-size:1.35rem; margin-top:2rem; color:#0d3b66;">Способ 2: Через браузер (GitHub)</h2>
+  <h2 style="font-size:1.35rem; margin-top:2rem; color:#0d3b66;">Способ 2: Через браузер (для обновления сайта Даши)</h2>
   <div class="warn">⚠️ Одна только ссылка сайт не обновляет. Нужно загрузить файлы и нажать Commit.</div>
   <div class="step">
     <strong>Шаг 1.</strong> <a class="big" href="https://github.com/derev-studio/cactus-books/tree/main/cactus" target="_blank" rel="noopener">Открыть папку cactus на GitHub</a>

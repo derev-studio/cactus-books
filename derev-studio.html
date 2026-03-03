@@ -2,83 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="refresh" content="0; url=about.html" />
   <title>О сайте | Кактусярий</title>
-  <meta name="description" content="Почему сайт называется Кактусярий. О проекте и Derev Studio." />
-  <link rel="stylesheet" href="theme.css" />
-  <link rel="stylesheet" href="site-header.css" />
-  <link rel="stylesheet" href="page-common.css" />
-  <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
-    .about-block { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--cactus-border); }
-    .about-block p { margin: 0 0 0.75rem; }
-    .about-sign { margin-top: 1.25rem; font-style: italic; color: var(--cactus-muted-on-dark); }
-  </style>
+  <script>window.location.replace("about.html");</script>
 </head>
 <body>
-  <header class="site-header">
-    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
-    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
-      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
-      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
-      <button type="submit" class="site-header__navigator-btn">Найти</button>
-    </form>
-    <nav class="site-header__nav">
-      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
-      <a href="geography.html" class="site-header__link">Места обитания</a>
-      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
-      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
-      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
-      <details class="site-header__more">
-        <summary>Ещё</summary>
-        <div class="site-header__dropdown">
-          <a href="home.html">Главная</a>
-          <a href="navigator.html">Навигатор по кактусам</a>
-          <a href="book.html">Кактусология</a>
-          <a href="great-cactus.html">Великие кактусоводы</a>
-          <a href="index.html">Галерея</a>
-          <a href="stories.html">Рассказы</a>
-          <a href="relax.html">Отдых</a>
-          <a href="draw.html">Рисование</a>
-          <a href="succulents.html">Суккуленты</a>
-          <a href="edible.html">Съедобные кактусы</a>
-          <a href="rarities.html">Редкости</a>
-          <a href="facts.html">Интересные факты</a>
-          <a href="caution.html">Осторожно</a>
-        </div>
-      </details>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <h1>О сайте</h1>
-    <p class="page-intro">Почему «Кактусярий», кто сделал сайт и что здесь найдёте.</p>
-
-    <section class="page-content">
-      <p><span data-i18n="footer_why">Почему «Кактусярий»? В детстве у меня была коллекция кактусов, и мама называла её Кактусярий — мы ездили с ней по разным городам, в ботанические сады, к коллекционерам, общались, удивлялись и покупали кактусы.</span> <span data-i18n="footer_why_saved">Это название я сохранил для сайта.</span></p>
-
-      <div class="about-block">
-        <p data-i18n="derev_p1">Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается.</p>
-        <p data-i18n="derev_p2">Надеюсь, гостям здесь будет уютно. Заходите в галерею, почитайте заметки, отдохните в комнате отдыха или поболтайте с Хранителем.</p>
-        <p class="about-sign" data-i18n="derev_sign">С благодарностью и уважением,</p>
-        <p><a href="home.html" class="cactus-btn cactus-btn--secondary" style="margin-top: 0.5rem;" data-i18n="derev_back">На главную</a></p>
-      </div>
-
-      <div class="about-block">
-        <p><strong data-i18n="footer_derev">Сайт сделан в Derev Studio</strong></p>
-      </div>
-    </section>
-  </main>
-  <script src="i18n.js" defer></script>
-  <script>
-    (function () {
-      function init() {
-        if (!window.I18n || !window.I18n.applyToPage) return;
-        window.I18n.applyToPage();
-      }
-      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-      else init();
-    })();
-  </script>
+  <p><a href="about.html">О сайте — Кактусярий</a></p>
 </body>
 </html>

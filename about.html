@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Происхождение видов | Кактусярий</title>
-  <meta name="description" content="Классификация, семейства и роды кактусов. Происхождение видов." />
+  <title>О сайте | Кактусярий</title>
+  <meta name="description" content="Почему сайт называется Кактусярий. О проекте." />
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="site-header.css" />
-  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="page-common.css" />
   <style>
     body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    .about-block { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--cactus-border); }
+    .about-block p { margin: 0 0 0.75rem; }
+    .about-sign { margin-top: 1.25rem; font-style: italic; color: var(--cactus-muted-on-dark); }
   </style>
 </head>
 <body>
@@ -22,7 +24,7 @@
       <button type="submit" class="site-header__navigator-btn">Найти</button>
     </form>
     <nav class="site-header__nav">
-      <a href="systematics.html" class="site-header__link site-header__link--active">Происхождение видов</a>
+      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
       <a href="geography.html" class="site-header__link">Места обитания</a>
       <a href="care.html" class="site-header__link">Здоровье кактуса</a>
       <a href="identifier.html" class="site-header__link">Опознать кактус</a>
@@ -47,42 +49,32 @@
       </details>
     </nav>
   </header>
-  <div id="globe-container" class="globe-fixed"></div>
 
   <main class="page-main">
-    <h1>Происхождение видов</h1>
-    <p class="page-intro">Классификация семейства Cactaceae: подсемейства, роды и виды.</p>
+    <h1>О сайте</h1>
+    <p class="page-intro">Почему «Кактусярий», кто сделал сайт и что здесь найдёте.</p>
+
     <section class="page-content">
-      <p class="notice">Раздел в разработке. Контент появится позже.</p>
+      <p><span data-i18n="footer_why">Почему «Кактусярий»? В детстве у меня была коллекция кактусов, и мама называла её Кактусярий — мы ездили с ней по разным городам, в ботанические сады, к коллекционерам, общались, удивлялись и покупали кактусы.</span> <span data-i18n="footer_why_saved">Это название я сохранил для сайта.</span></p>
+
+      <div class="about-block">
+        <p data-i18n="derev_p1">Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается.</p>
+        <p data-i18n="derev_p2">Надеюсь, гостям здесь будет уютно. Заходите в галерею, почитайте заметки, отдохните в комнате отдыха или поболтайте с Хранителем.</p>
+        <p class="about-sign" data-i18n="derev_sign">С благодарностью и уважением,</p>
+        <p><a href="home.html" class="cactus-btn cactus-btn--secondary" style="margin-top: 0.5rem;" data-i18n="derev_back">На главную</a></p>
+      </div>
+
+      <div class="about-block">
+        <p><strong>Кактусярий</strong> — самостоятельный проект.</p>
+      </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="Источники">
-      <details>
-        <summary>Источники</summary>
-        <div class="site-footer__sources-panel">
-          <p class="site-footer__sources-list">
-            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="book.html">Кактусология</a>
-          </p>
-        </div>
-      </details>
-    </nav>
-  </footer>
   <script src="i18n.js" defer></script>
   <script>
     (function () {
       function init() {
-        if (!window.I18n) return;
-        var c = document.getElementById("globe-container");
-        if (c) window.I18n.init(c);
-        else window.I18n.applyToPage();
+        if (!window.I18n || !window.I18n.applyToPage) return;
+        window.I18n.applyToPage();
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();

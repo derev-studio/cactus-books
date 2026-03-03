@@ -7,7 +7,12 @@ const APP_STATES = {
   ADMIN: "ADMIN",
 };
 
-const GITHUB_REPO = { owner: "derev-studio", repo: "cactus-books" };
+var _ghOwner = (typeof window !== "undefined" && window.APP_CONFIG && window.APP_CONFIG.githubOwner) ? String(window.APP_CONFIG.githubOwner).trim() : "";
+var _ghRepo = (typeof window !== "undefined" && window.APP_CONFIG && window.APP_CONFIG.githubRepo) ? String(window.APP_CONFIG.githubRepo).trim() : "cactus";
+var GITHUB_REPO = _ghOwner ? { owner: _ghOwner, repo: _ghRepo } : null;
+var GALLERY_JSON = _ghOwner ? "https://raw.githubusercontent.com/" + _ghOwner + "/" + _ghRepo + "/main/data/gallery.json" : "./data/gallery.json";
+var ARTWORKS_JSON = _ghOwner ? "https://raw.githubusercontent.com/" + _ghOwner + "/" + _ghRepo + "/main/data/artworks.json" : "./data/artworks.json";
+var GALLERY_IMAGES_BASE = _ghOwner ? ("https://" + _ghOwner + ".github.io/" + _ghRepo) : "";
 const ADMIN_TOKEN_KEY = "cactusbooks_github_token";
 
 // Глобальный объект состояния. Через него можно добавлять новые режимы.
@@ -29,10 +34,7 @@ const AppState = {
 
 // ---------- ЗАГРУЗКА ДАННЫХ (из репозитория / Prose.io) ----------
 
-const GALLERY_JSON = "https://raw.githubusercontent.com/derev-studio/cactus-books/main/data/gallery.json";
-const ARTWORKS_JSON = "https://raw.githubusercontent.com/derev-studio/cactus-books/main/data/artworks.json";
-/** Базовый URL картинок галереи — один и тот же репозиторий, чтобы работало с file://, планшета и телефона. */
-const GALLERY_IMAGES_BASE = "https://derev-studio.github.io/cactus-books";
+/** GALLERY_JSON, ARTWORKS_JSON, GALLERY_IMAGES_BASE заданы выше из APP_CONFIG (твой репо). */
 
 /** При ошибке загрузки пробуем те же имена с расширениями .png, .jpg, .jpeg (золотой стандарт). */
 function imageFallbackUrls(url) {
@@ -41,12 +43,13 @@ function imageFallbackUrls(url) {
   return [base + ".png", base + ".jpg", base + ".jpeg"].filter(function (u) { return u !== url; });
 }
 
-/** Относительные пути к картинкам всегда грузим с GitHub Pages. Сегменты пути кодируем, чтобы буквы не ломали ссылку. */
+/** Относительные пути к картинкам: с твоего репо (если задан githubOwner) или с того же сайта. */
 function resolveGalleryImageUrl(url) {
   if (!url || typeof url !== "string") return url;
   var s = url.trim();
   if (s.indexOf("http://") === 0 || s.indexOf("https://") === 0) return s;
   var path = s.replace(/^\.\/?/, "").replace(/^\//, "");
+  if (!GALLERY_IMAGES_BASE) return (path.indexOf("./") === 0 ? path : "./" + path);
   var encoded = path.split("/").map(function (seg) { return encodeURIComponent(seg); }).join("/");
   return GALLERY_IMAGES_BASE + "/" + encoded;
 }
@@ -411,6 +414,7 @@ function setStoredToken(token) {
 }
 
 async function githubApi(path, options, token) {
+  if (!GITHUB_REPO) throw new Error("Укажи в config.js свой репозиторий: githubOwner и githubRepo (это твой проект, не репо Даши).");
   const url = "https://api.github.com/repos/" + GITHUB_REPO.owner + "/" + GITHUB_REPO.repo + "/contents/" + path;
   const res = await fetch(url, {
     ...options,
@@ -503,7 +507,7 @@ function renderAdmin() {
       gridEl.innerHTML = "";
       artworks.forEach((art) => {
         const rawUrl = art.imageUrl || "";
-        const cdnUrl = rawUrl.startsWith("./data/images/")
+        const cdnUrl = rawUrl.startsWith("./data/images/") && GITHUB_REPO
           ? "https://raw.githubusercontent.com/" + GITHUB_REPO.owner + "/" + GITHUB_REPO.repo + "/main/data/images/" + rawUrl.replace("./data/images/", "")
           : rawUrl;
 
