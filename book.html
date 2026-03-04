@@ -2,114 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кактусология | Кактусярий</title>
-  <meta name="description" content="Кактусология: главы, легенды, интерактивное чтение о кактусах." />
-  <link rel="stylesheet" href="theme.css" />
-  <link rel="stylesheet" href="site-header.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="page-common.css" />
-  <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
-    .book-entry__lead { font-size: 1.25rem; margin-bottom: 0.75rem; }
-    .book-entry__links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0; }
-    .book-entry__btn { display: inline-block; padding: 0.75rem 1.25rem; border-radius: 10px; font-weight: 700; text-decoration: none; background: rgba(255,255,255,0.15); color: inherit; border: 2px solid rgba(255,255,255,0.4); transition: background 0.2s, border-color 0.2s; }
-    .book-entry__btn:hover { background: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.6); }
-    .book-entry__btn--primary { background: linear-gradient(180deg, #b8d0e0 0%, #dce8f0 50%, #e8e4dc 100%); border-color: rgba(0,0,0,0.1); color: #2c3e50; }
-    .book-entry__btn--primary:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); border-color: rgba(0,0,0,0.15); color: #1a252f; }
-    .book-entry__hint { font-size: 0.95rem; opacity: 0.9; margin-top: 0.5rem; }
-    .book-entry__tech { margin-top: 2rem; font-size: 0.9rem; opacity: 0.85; }
-    .book-entry__tech summary { cursor: pointer; }
-  </style>
+  <meta http-equiv="refresh" content="0; url=книга-кактусология/book-read.html" />
+  <script>window.location.replace("книга-кактусология/book-read.html");</script>
 </head>
 <body>
-  <header class="site-header">
-    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
-    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
-      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
-      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
-      <button type="submit" class="site-header__navigator-btn">Найти</button>
-    </form>
-    <nav class="site-header__nav">
-      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
-      <a href="geography.html" class="site-header__link">Места обитания</a>
-      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
-      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
-      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
-      <details class="site-header__more">
-        <summary>Ещё</summary>
-        <div class="site-header__dropdown">
-          <a href="home.html">Главная</a>
-          <a href="navigator.html">Навигатор по кактусам</a>
-          <a href="book.html" class="site-header__link--active">Кактусология</a>
-          <a href="great-cactus.html">Великие кактусоводы</a>
-          <a href="index.html">Галерея</a>
-          <a href="stories.html">Рассказы</a>
-          <a href="relax.html">Отдых</a>
-          <a href="draw.html">Рисование</a>
-          <a href="succulents.html">Суккуленты</a>
-          <a href="edible.html">Съедобные кактусы</a>
-          <a href="rarities.html">Редкости</a>
-          <a href="facts.html">Интересные факты</a>
-          <a href="caution.html">Осторожно</a>
-          <a href="СПИСОК-ФАЙЛОВ.html">Список файлов (по алфавиту)</a>
-        </div>
-      </details>
-    </nav>
-  </header>
-  <div id="globe-container" class="globe-fixed"></div>
-
-  <main class="page-main">
-    <h1>Кактусология</h1>
-    <p class="page-intro">Книга о кактусах: главы, легенды, история. Одна книга — читайте на своём языке.</p>
-    <section class="page-content book-entry">
-      <p class="book-entry__lead"><strong>Открыть книгу</strong></p>
-      <p class="book-entry__links">
-        <a href="книга-кактусология/book-read.html" class="book-entry__btn book-entry__btn--primary">Читать книгу (украинский, с картинками)</a>
-        <a href="книга-кактусология/book-read-ru.html" class="book-entry__btn">По-русски</a>
-        <a href="книга-кактусология/book-read-en.html" class="book-entry__btn">In English</a>
-      </p>
-      <p class="book-entry__hint">На странице чтения можно переключить язык книги (украинский, русский, английский) и перевести текст на любой другой язык: грузинский, китайский, японский и др. — через DeepL или Google. Всё на одной странице, без лишних переходов.</p>
-      <details class="book-entry__tech">
-        <summary>Для разработчиков: как добавить картинки на сайт</summary>
-        <p>В папку <code>книга-кактусология/</code> положить файл <code>Кактусология_полная_с_картинками.docx</code> и запустить <code>python3 build_book_with_images.py</code>. Подробно — <a href="книга-кактусология/ПОЛНЫЙ-ФАЙЛ-И-КАРТИНКИ.html">инструкция (крупный шрифт)</a>.</p>
-      </details>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="Источники">
-      <details>
-        <summary>Источники</summary>
-        <div class="site-footer__sources-panel">
-          <p class="site-footer__sources-list">
-            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="book.html">Кактусология</a>
-          </p>
-        </div>
-      </details>
-    </nav>
-  </footer>
-  <script src="i18n.js" defer></script>
-  <script>
-    (function () {
-      function init() {
-        if (!window.I18n) return;
-        var c = document.getElementById("globe-container");
-        if (c) window.I18n.init(c);
-        else window.I18n.applyToPage();
-      }
-      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-      else init();
-    })();
-  </script>
+  <p>Книга открывается… <a href="книга-кактусология/book-read.html">Открыть книгу «Кактусология»</a></p>
 </body>
 </html>

@@ -407,6 +407,19 @@ body,
   filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.6));
 }
 
+/* На странице книги тёмный фон — глобус делаем ярким, чтобы было видно и удобно нажать */
+body.book-reader-page .globe-fixed .globe-btn {
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+body.book-reader-page .globe-fixed .globe-btn:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+body.book-reader-page .globe-fixed .globe-btn__icon {
+  filter: none;
+}
+
 /* Меню языков — крупные буквы, прокрутка, крупные флаги для удобства */
 .globe-menu {
   position: absolute;
