@@ -647,20 +647,24 @@
     scrollToBottom();
   }
 
-  /* ── Попытка через Cloudflare AI (flux-1-schnell), если в config.js указан workerUrl ── */
+  /* ── Попытка через воркер /v1/image (если есть), иначе сразу Pollinations ── */
   function generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, onFail) {
     if (!CF_IMAGE_URL) { onFail(); return; }
     caption.textContent = "Рисую… ✨";
+    var ctrl = new AbortController();
+    var to = setTimeout(function () { ctrl.abort(); }, 12000);
     fetch(CF_IMAGE_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ prompt: englishPrompt + ", beautiful art, detailed, soft light" })
+      body: JSON.stringify({ prompt: englishPrompt + ", beautiful art, detailed, soft light" }),
+      signal: ctrl.signal
     })
       .then(function (res) {
         if (!res.ok) { onFail(); return null; }
         return res.json();
       })
       .then(function (data) {
+        clearTimeout(to);
         if (!data || !data.image) { onFail(); return; }
         img.onload  = function () {
           caption.textContent = "✦ " + subject;
@@ -669,16 +673,18 @@
         img.onerror = function () { onFail(); };
         img.src = "data:image/png;base64," + data.image;
       })
-      .catch(function () { onFail(); });
+      .catch(function () { clearTimeout(to); onFail(); });
   }
 
-  /* ── Запасной вариант: Pollinations.ai через img.src (без CORS) ── */
+  /* ── Запасной вариант: Pollinations.ai через img.src (gen.pollinations.ai + image.pollinations.ai) ── */
   function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId) {
     var seed = Math.floor(Math.random() * 99999);
     var enc = encodeURIComponent(englishPrompt);
     var encFull = encodeURIComponent(englishPrompt + ", beautiful art, detailed, soft light");
 
     var urls = [
+      "https://gen.pollinations.ai/image/" + encFull + "?model=flux&width=768&height=512&seed=" + seed,
+      "https://gen.pollinations.ai/image/" + enc + "?model=flux&width=512&height=512&seed=" + seed,
       "https://image.pollinations.ai/prompt/" + encFull + "?width=768&height=512&seed=" + seed + "&nologo=true",
       "https://image.pollinations.ai/prompt/" + encFull + "?width=768&height=512&seed=" + seed + "&model=flux&nologo=true",
       "https://image.pollinations.ai/prompt/" + enc + "?width=512&height=512&seed=" + seed + "&model=turbo",
@@ -828,7 +834,7 @@
 
     /* Самурай рисует сам — только если картинки «по желанию» */
     if (imagesMode !== "auto") return;
-    var m = botText.replace(/\[ОТКРЫТЬ_МАСТЕРСКУЮ\]/g, "").match(/нарисуй\s+([^\n.!?]{4,80})/i);
+    var m = botText.replace(/\[ОТКРЫТЬ_МАСТЕРСКУЮ\]/g, "").match(/нарисуй\s+([^\n.!?]{2,80})/i);
     if (!m) return;
     var subject = m[1].trim().replace(/[«»"']+/g, "");
     if (!subject) return;
