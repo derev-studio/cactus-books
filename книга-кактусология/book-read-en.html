@@ -8,6 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Cactology — read (with pictures)</title>
 <link rel="stylesheet" href="../theme.css" />
+<link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="../page-common.css" />
 <style>
 body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 1rem; }
@@ -20,14 +21,17 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 </style>
 </head>
 <body>
+<div id="globe-container" class="globe-fixed" aria-label="Choose language"></div>
 <div class="page-main">
 <p class="book-back"><a href="../book.html">← Back to Cactology</a></p>
-<p class="book-lang" style="margin-bottom:1rem; font-size:1.1rem;"><strong>One book, three languages:</strong> <a href="book-read.html">Українська</a> · <a href="book-read-ru.html">Русский</a> · <span style="color:var(--cactus-reading-muted);">English</span></p>
-<div class="book-translate" style="margin-bottom:1.25rem; font-size:0.95rem; padding:0.75rem; background:rgba(0,0,0,0.04); border-radius:8px;">
-<p style="margin:0 0 0.5rem;"><strong>Translate the whole book (the site does the translation, no extensions):</strong></p>
+<p class="book-lang" style="margin-bottom:1rem; font-size:1.1rem;"><strong>Book language:</strong> <a href="book-read.html">Українська</a> · <a href="book-read-ru.html">Русский</a> · <span style="color:var(--cactus-reading-muted);">English</span></p>
+<div class="book-translate" style="margin-bottom:1.25rem; font-size:0.95rem; padding:1rem; background:rgba(0,0,0,0.05); border-radius:10px; border:1px solid rgba(0,0,0,0.08);">
+<p style="margin:0 0 0.75rem; font-weight:700;">Translate the book into your language</p>
+<p style="margin:0 0 0.5rem;"><strong>1. DeepL</strong> (translation stays on this page): choose language → click the button. The free API key gives ~500,000 characters per month (about 1–2 full book translations per month). Set the key once in your worker, see <a href="../DEEPL-ИНСТРУКЦИЯ.html" target="_blank" rel="noopener">instructions</a>.</p>
 <p style="margin:0 0 0.5rem;">Language: <select id="book-lang-select"><option value="EN">English</option><option value="RU">Русский</option><option value="UK">Українська</option><option value="DE">Deutsch</option><option value="FR">Français</option><option value="ES">Español</option><option value="IT">Italiano</option><option value="PL">Polski</option><option value="JA">日本語</option><option value="ZH">中文</option></select> <button type="button" id="book-translate-btn">Translate book</button> <span id="book-translate-status"></span></p>
-<p style="margin:0 0 0.35rem; font-size:0.9rem;">Add the DeepL API key to your worker once — see <a href="../DEEPL-ИНСТРУКЦИЯ.html" target="_blank" rel="noopener">instructions (large font)</a>. Then this button will translate via DeepL.</p>
-<p style="margin:0.35rem 0 0; font-size:0.85rem; opacity:0.9;">Or: Chrome Translate icon in the address bar; or <a href="" id="book-translate-link">open in Google Translate</a>.</p>
+<p style="margin:0.75rem 0 0.5rem;"><strong>2. If DeepL is unavailable</strong> (e.g. in some regions): <a href="" id="book-translate-link" target="_blank" rel="noopener">open this page in Google Translate</a> — it opens in a new tab; translate there. Buttons and menu stay here when you return.</p>
+<p style="margin:0.5rem 0 0;"><strong>3. Browser:</strong> In Chrome, a “Translate” icon may appear in the address bar — click it to translate the page here.</p>
+<p style="margin:0.75rem 0 0; font-size:0.9rem;">🌐 <strong>Language menu (globe)</strong> — in the corner: choose any language (e.g. Georgian) → click "Translate book" or "open in Google Translate".</p>
 </div>
 <div class="page-content">
 
@@ -675,7 +679,7 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <p>-Opuntia ficus-indica - known as Indian prickly pear, is widely cultivated for its sweet fruit (tuna).</p>
 <h2>-Oruntia stricta is a thorny species that has become invasive in Australia.</h2>
 <p>-Opuntia microdasys - &amp;quot;bunny ears&amp;quot;, one of the most spectacular species, has velvety-looking pads with glochidia, but it is dangerous to touch2</p>
-<h2>. Cylindrical prickly pears</h2>
+<h2>Cylindrical prickly pears</h2>
 <h2>Austrocylindropuntia subulata is a large, powerful cactus with long leaves.</h2>
 <h2>Opuntia rufida is similar to O. microdasys, but has reddish glochidia3.</h2>
 <p>Miniature and ground cover prickly pears.  Opuntia fragilis is very fragile, its segments separate even when touched lightly.</p>
@@ -1392,14 +1396,27 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 </div>
 </div>
 <script src="../config.js"></script>
+<script src="../i18n.js"></script>
 <script>
 (function () {
+  var globe = document.getElementById('globe-container');
+  if (globe && window.I18n) window.I18n.init(globe);
   var link = document.getElementById('book-translate-link');
-  if (link) link.href = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href);
+  var setGoogleLink = function (tl) {
+    if (!link) return;
+    link.href = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href) + (tl ? '&tl=' + encodeURIComponent(tl) : '');
+  };
+  setGoogleLink();
   var btn = document.getElementById('book-translate-btn');
   var select = document.getElementById('book-lang-select');
   var status = document.getElementById('book-translate-status');
   var workerUrl = (window.APP_CONFIG && window.APP_CONFIG.workerUrl) ? String(window.APP_CONFIG.workerUrl).replace(/\/$/, '') : '';
+  var globeToDeepL = { ru: 'RU', en: 'EN', uk: 'UK', de: 'DE', fr: 'FR', es: 'ES', it: 'IT', pl: 'PL', jp: 'JA', zh: 'ZH' };
+  window.addEventListener('soulart-language-change', function (e) {
+    var code = (e.detail && e.detail.lang) ? e.detail.lang : '';
+    if (globeToDeepL[code] && select) { select.value = globeToDeepL[code]; if (status) status.textContent = ' Language set. Click "Translate book".'; }
+    else if (code) { setGoogleLink(code); if (status) status.textContent = ' For this language click "open in Google Translate" above.'; }
+  });
   if (btn && select) {
     btn.addEventListener('click', function () {
       if (!workerUrl) { if (status) status.textContent = ' Set workerUrl in config.js'; return; }

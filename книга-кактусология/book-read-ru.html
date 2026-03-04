@@ -8,6 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Кактусология — читать (с картинками)</title>
 <link rel="stylesheet" href="../theme.css" />
+<link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="../page-common.css" />
 <style>
 body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 1rem; }
@@ -20,14 +21,17 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 </style>
 </head>
 <body>
+<div id="globe-container" class="globe-fixed" aria-label="Выбор языка"></div>
 <div class="page-main">
 <p class="book-back"><a href="../book.html">← Назад к Кактусологии</a></p>
-<p class="book-lang" style="margin-bottom:1rem; font-size:1.1rem;"><strong>Одна книга, три мови:</strong> <a href="book-read.html">Українська</a> · <span style="color:var(--cactus-reading-muted);">Русский</span> · <a href="book-read-en.html">English</a></p>
-<div class="book-translate" style="margin-bottom:1.25rem; font-size:0.95rem; padding:0.75rem; background:rgba(0,0,0,0.04); border-radius:8px;">
-<p style="margin:0 0 0.5rem;"><strong>Перевести всю книгу (перевод делает сайт, без расширений):</strong></p>
+<p class="book-lang" style="margin-bottom:1rem; font-size:1.1rem;"><strong>Язык книги:</strong> <a href="book-read.html">Українська</a> · <span style="color:var(--cactus-reading-muted);">Русский</span> · <a href="book-read-en.html">English</a></p>
+<div class="book-translate" style="margin-bottom:1.25rem; font-size:0.95rem; padding:1rem; background:rgba(0,0,0,0.05); border-radius:10px; border:1px solid rgba(0,0,0,0.08);">
+<p style="margin:0 0 0.75rem; font-weight:700;">Перевести книгу на свой язык</p>
+<p style="margin:0 0 0.5rem;"><strong>1. DeepL</strong> (перевод остаётся на этой странице): выберите язык → нажмите кнопку. Бесплатный ключ даёт ~500 000 символов в месяц — примерно 1–2 полных перевода книги в месяц, этого хватает надолго. Ключ один раз настраивается в воркере, см. <a href="../DEEPL-ИНСТРУКЦИЯ.html" target="_blank" rel="noopener">инструкцию</a>.</p>
 <p style="margin:0 0 0.5rem;">Язык: <select id="book-lang-select"><option value="RU">Русский</option><option value="EN">English</option><option value="UK">Українська</option><option value="DE">Deutsch</option><option value="FR">Français</option><option value="ES">Español</option><option value="IT">Italiano</option><option value="PL">Polski</option><option value="JA">日本語</option><option value="ZH">中文</option></select> <button type="button" id="book-translate-btn">Перевести книгу</button> <span id="book-translate-status"></span></p>
-<p style="margin:0 0 0.35rem; font-size:0.9rem;">Один раз добавьте ключ DeepL в настройки воркера — см. <a href="../DEEPL-ИНСТРУКЦИЯ.html" target="_blank" rel="noopener">инструкцию (крупный шрифт)</a>. Тогда кнопка будет переводить текст через DeepL.</p>
-<p style="margin:0.35rem 0 0; font-size:0.85rem; opacity:0.9;">Или: в Chrome — иконка «Перевести» в адресной строке; или <a href="" id="book-translate-link">открыть в Google Translate</a>.</p>
+<p style="margin:0.75rem 0 0.5rem;"><strong>2. Если DeepL недоступен</strong> (например, в некоторых регионах): <a href="" id="book-translate-link" target="_blank" rel="noopener">открыть эту страницу в Google Translate</a> — откроется в новой вкладке, переведёте там. Кнопки и меню останутся здесь, когда вернётесь.</p>
+<p style="margin:0.5rem 0 0;"><strong>3. Браузер:</strong> в Chrome в адресной строке может появиться иконка «Перевести» — нажмите, страница переведётся прямо здесь.</p>
+<p style="margin:0.75rem 0 0; font-size:0.9rem;">🌐 <strong>Меню языков (глобус)</strong> — в углу страницы: выберите язык (в т.ч. грузинский, любой) → для перевода нажмите «Перевести книгу» или «открыть в Google Translate».</p>
 </div>
 <div class="page-content">
 
@@ -87,8 +91,7 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <p>Ariocarpus kotschoubeyanus (описан в 1839 году Лемером): Назван в честь князя Кочубея.</p>
 <p>Вклад Карвинского: Сбор обширных ботанических коллекций.</p>
 <figure class="book-img"><img src="media/image6.jpeg" alt="" loading="lazy" /></figure>
-<p>.</p>
-<p>Наследие КарвинскогоПродолжим наше исследование жизни и деятельности Вильгельма Фридриха Карвинского фон Карвин, этого замечательного ботаника и путешественника.</p>
+<p>Наследие Карвинского. Продолжим наше исследование жизни и деятельности Вильгельма Фридриха Карвинского фон Карвин, этого замечательного ботаника и путешественника.</p>
 <p>Наследие Карвинского. Растения, носящие его имя, и значение его коллекций.</p>
 <p>Мы уже выяснили, что Карвинский не описывал Ariocarpus kotschoubeyanus, но его экспедиции, финансируемые князем Кочубеем, сыграли важную роль в изучении мексиканской флоры. Теперь давайте сосредоточимся на том, что же точно связано с именем Карвинского, а именно – на растениях, названных в его честь, и на значении его ботанических коллекций.</p>
 <p>Mammillaria karwinskiana: яркий пример.</p>
@@ -695,21 +698,33 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <p>И, конечно же, нельзя не вспомнить с улыбкой описание Карелом Чапеком увлеченных кактусоводах, готовых ради редкого экземпляра на многое, даже жить рядом с прачечной, вдыхая «сырую, гнусную, бельевую вонь». Но, как говорится, «у каждого свои кактусы»!</p>
 <p>В заключение хочется выразить огромную благодарность всем авторам, чьи цитаты украсили этот очерк. Благодаря их наблюдениям и размышлениям, мы смогли прикоснуться к удивительному миру кактусов. Особая благодарность Ирине Александровне Залетаевой, чей вклад в развитие кактусоводства в России невозможно переоценить. Её &quot;Книга о кактусах&quot; стала настоящим путеводителем для многих поколений любителей этих растений.</p>
 <p>И, конечно же, огромное спасибо вам, дорогие читатели, за ваше внимание и интерес к этой теме. Надеюсь, этот очерк помог вам по-новому взглянуть на эти удивительные растения и, возможно, даже вдохновил на создание собственной колючей коллекции. Помните: кактусы, как и хорошие книги, могут не только уколоть, но и подарить незабываемые впечатления. И, как говорил один мудрый кактусовод (а может, и не говорил, но это неважно): «Главное – не перелить!». ))</p>
-<p>.</p>
-<h2>.ИСТОРИЯ КАКТУСОВОДСТВА</h2>
+<h2>ИСТОРИЯ КАКТУСОВОДСТВА</h2>
 <figure class="book-img"><img src="media/image270.jpeg" alt="" loading="lazy" /></figure>
 
 </div>
 </div>
 <script src="../config.js"></script>
+<script src="../i18n.js"></script>
 <script>
 (function () {
+  var globe = document.getElementById('globe-container');
+  if (globe && window.I18n) window.I18n.init(globe);
   var link = document.getElementById('book-translate-link');
-  if (link) link.href = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href);
+  var setGoogleLink = function (tl) {
+    if (!link) return;
+    link.href = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href) + (tl ? '&tl=' + encodeURIComponent(tl) : '');
+  };
+  setGoogleLink();
   var btn = document.getElementById('book-translate-btn');
   var select = document.getElementById('book-lang-select');
   var status = document.getElementById('book-translate-status');
   var workerUrl = (window.APP_CONFIG && window.APP_CONFIG.workerUrl) ? String(window.APP_CONFIG.workerUrl).replace(/\/$/, '') : '';
+  var globeToDeepL = { ru: 'RU', en: 'EN', uk: 'UK', de: 'DE', fr: 'FR', es: 'ES', it: 'IT', pl: 'PL', jp: 'JA', zh: 'ZH' };
+  window.addEventListener('soulart-language-change', function (e) {
+    var code = (e.detail && e.detail.lang) ? e.detail.lang : '';
+    if (globeToDeepL[code] && select) { select.value = globeToDeepL[code]; if (status) status.textContent = ' Выбран язык. Нажмите «Перевести книгу».'; }
+    else if (code) { setGoogleLink(code); if (status) status.textContent = ' Для этого языка нажмите ссылку «открыть в Google Translate» выше.'; }
+  });
   if (btn && select) {
     btn.addEventListener('click', function () {
       if (!workerUrl) { if (status) status.textContent = ' Укажите workerUrl в config.js'; return; }
