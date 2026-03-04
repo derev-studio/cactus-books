@@ -109,7 +109,7 @@ export default {
         } catch (_) {}
       }
 
-      /* AI Horde — строгий формат: loras, seed, params по документации ── */
+      /* AI Horde — только поля из официальной доки (SDK): без steps/cfg_scale/seed ── */
       const base = "https://stablehorde.net/api/v2";
       const hordePayload = {
         prompt: prompt + ", фото, реалистично",
@@ -117,13 +117,11 @@ export default {
           width: 512,
           height: 512,
           n: 1,
-          steps: 20,
-          cfg_scale: 7,
           sampler_name: "k_euler_a",
-          seed: -1,
+          clip_skip: 1,
         },
         loras: [],
-        models: ["Deliberate_v2"],
+        models: ["Deliberate"],
         apikey: "0000000000",
       };
       const sub = await fetch(base + "/generate/async", {
