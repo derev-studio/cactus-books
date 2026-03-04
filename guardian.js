@@ -650,9 +650,9 @@
   /* ── Попытка через воркер /v1/image (если есть), иначе сразу Pollinations ── */
   function generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, onFail) {
     if (!CF_IMAGE_URL) { onFail(); return; }
-    caption.textContent = "Рисую… ✨";
+    caption.textContent = "Рисую… ✨ (подожди до минуты)";
     var ctrl = new AbortController();
-    var to = setTimeout(function () { ctrl.abort(); }, 12000);
+    var to = setTimeout(function () { ctrl.abort(); }, 60000);
     fetch(CF_IMAGE_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
