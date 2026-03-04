@@ -211,6 +211,17 @@
     } catch (_) {}
   }
 
+  /* При открытии с ?lang=ru (или другим кодом) — принудительно ставим этот язык и убираем параметр из URL */
+  try {
+    var params = new URLSearchParams(window.location.search);
+    var langParam = params.get("lang");
+    if (langParam && SUPPORTED.some(function (s) { return s.code === langParam; })) {
+      setStoredLang(langParam);
+      var cleanUrl = window.location.pathname + (window.location.hash || "");
+      if (window.history && window.history.replaceState) window.history.replaceState(null, "", cleanUrl);
+    }
+  } catch (_) {}
+
   let currentLang = getStoredLang();
 
   function t(key) {
