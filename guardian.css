@@ -239,20 +239,29 @@
 
 .guardian-chat__send,
 .guardian-chat__mic {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
   min-height: 44px;
   border-radius: 10px;
   border: 1px solid var(--cactus-border);
   background: var(--cactus-accent);
   color: var(--cactus-text);
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s, transform 0.2s;
+}
+
+.guardian-chat__mic {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  font-size: 1.2rem;
+}
+
+.guardian-chat__send {
+  padding: 0 0.75rem;
+  min-width: 6rem;
 }
 
 .guardian-chat__send:hover,
