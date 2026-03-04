@@ -25,34 +25,34 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
+    <a href="home.html" class="site-header__brand" data-i18n="brand">🌵 Кактусярий</a>
     <form class="site-header__navigator" action="navigator.html" method="get" role="search">
-      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
-      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
-      <button type="submit" class="site-header__navigator-btn">Найти</button>
+      <label for="nav-search" class="visually-hidden" data-i18n="nav_navigator">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" data-i18n="search_placeholder" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn" data-i18n="search_btn">Найти</button>
     </form>
     <nav class="site-header__nav">
-      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
-      <a href="geography.html" class="site-header__link">Места обитания</a>
-      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
-      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
-      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <a href="systematics.html" class="site-header__link" data-i18n="nav_systematics">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link" data-i18n="nav_geography">Места обитания</a>
+      <a href="care.html" class="site-header__link" data-i18n="nav_care">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link" data-i18n="nav_identify">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link" data-i18n="nav_guardian">Колючий Собеседник</a>
       <details class="site-header__more">
-        <summary>Ещё</summary>
+        <summary data-i18n="more_btn">Ещё</summary>
         <div class="site-header__dropdown">
-          <a href="home.html">Главная</a>
-          <a href="navigator.html">Навигатор по кактусам</a>
-          <a href="книга-кактусология/book-read.html">Кактусология</a>
-          <a href="great-cactus.html">Великие кактусоводы</a>
-          <a href="index.html">Галерея</a>
-          <a href="stories.html">Рассказы</a>
-          <a href="relax.html">Отдых</a>
-          <a href="draw.html">Рисование</a>
-          <a href="succulents.html">Суккуленты</a>
-          <a href="edible.html">Съедобные кактусы</a>
-          <a href="rarities.html">Редкости</a>
-          <a href="facts.html">Интересные факты</a>
-          <a href="caution.html">Осторожно</a>
+          <a href="home.html" data-i18n="nav_main">Главная</a>
+          <a href="navigator.html" data-i18n="nav_navigator">Навигатор по кактусам</a>
+          <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
+          <a href="great-cactus.html" data-i18n="nav_great">Великие кактусоводы</a>
+          <a href="index.html" data-i18n="nav_gallery">Галерея</a>
+          <a href="stories.html" data-i18n="nav_stories">Рассказы</a>
+          <a href="relax.html" data-i18n="nav_relax">Отдых</a>
+          <a href="draw.html" data-i18n="nav_draw">Рисование</a>
+          <a href="succulents.html" data-i18n="nav_succulents">Суккуленты</a>
+          <a href="edible.html" data-i18n="nav_edible">Съедобные кактусы</a>
+          <a href="rarities.html" data-i18n="nav_rarities">Редкости</a>
+          <a href="facts.html" data-i18n="nav_facts">Интересные факты</a>
+          <a href="caution.html" data-i18n="nav_caution">Осторожно</a>
         </div>
       </details>
     </nav>
@@ -61,8 +61,8 @@
 
   <main class="page-main">
     <div class="navigator-results">
-      <h1 id="navigator-title">Навигатор по кактусам</h1>
-      <p class="intro" id="navigator-intro">Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.</p>
+      <h1 id="navigator-title" data-i18n="navigator_title">Навигатор по кактусам</h1>
+      <p class="intro" id="navigator-intro" data-i18n="navigator_intro">Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.</p>
       <ul class="navigator-links" id="navigator-links" hidden>
         <li><a href="" id="link-care" data-base="care.html">Здоровье кактуса</a><span class="navigator-link-desc" id="desc-care">Уход для этого вида</span></li>
         <li><a href="" id="link-geography" data-base="geography.html">Места обитания</a><span class="navigator-link-desc" id="desc-geography">Ареал на карте</span></li>
