@@ -109,17 +109,27 @@ export default {
         } catch (_) {}
       }
 
-      /* AI Horde (Stable Horde) — бесплатно, apikey 0000000000 ── */
+      /* AI Horde — строгий формат: loras, seed, params по документации ── */
       const base = "https://stablehorde.net/api/v2";
+      const hordePayload = {
+        prompt: prompt + ", фото, реалистично",
+        params: {
+          width: 512,
+          height: 512,
+          n: 1,
+          steps: 20,
+          cfg_scale: 7,
+          sampler_name: "k_euler_a",
+          seed: -1,
+        },
+        loras: [],
+        models: ["Deliberate_v2"],
+        apikey: "0000000000",
+      };
       const sub = await fetch(base + "/generate/async", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          prompt: prompt + ", beautiful art, detailed",
-          params: { width: 512, height: 512, n: 1 },
-          models: ["Deliberate"],
-          apikey: "0000000000",
-        }),
+        body: JSON.stringify(hordePayload),
       });
       const subData = await sub.json().catch(() => ({}));
       if (!sub.ok) {
