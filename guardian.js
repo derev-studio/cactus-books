@@ -676,6 +676,49 @@
       .catch(function () { clearTimeout(to); onFail(); });
   }
 
+  /* ── AI Horde (Stable Horde) — бесплатно, без ключей, apikey 0000000000 ── */
+  function generateImageHorde(englishPrompt, img, caption, subject, downloadBtn, imageId, onFail) {
+    var base = "https://stablehorde.net/api/v2";
+    caption.textContent = "Рисую… очередь AI Horde ⏳";
+    fetch(base + "/generate/async", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        prompt: englishPrompt + ", beautiful art, detailed",
+        params: { width: 512, height: 512, steps: 20, n: 1 },
+        apikey: "0000000000"
+      })
+    })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || !data.id) { onFail(); return; }
+        var id = data.id;
+        var deadline = Date.now() + 120000;
+        function poll() {
+          if (Date.now() > deadline) { onFail(); return; }
+          caption.textContent = "Рисую… жду очередь ⏳";
+          fetch(base + "/generate/status/" + id)
+            .then(function (r) { return r.json(); })
+            .then(function (st) {
+              if (st.done && st.generations && st.generations[0] && st.generations[0].img) {
+                img.onload = function () {
+                  caption.textContent = "✦ " + subject;
+                  showDownloadBtn(downloadBtn, img, subject, imageId);
+                };
+                img.onerror = function () { onFail(); };
+                img.src = "data:image/png;base64," + st.generations[0].img;
+                return;
+              }
+              if (st.faulted || (st.is_possible === false)) { onFail(); return; }
+              setTimeout(poll, 4000);
+            })
+            .catch(function () { onFail(); });
+        }
+        setTimeout(poll, 3000);
+      })
+      .catch(function () { onFail(); });
+  }
+
   /* ── Запасной вариант: Pollinations.ai через img.src (gen.pollinations.ai + image.pollinations.ai) ── */
   function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId) {
     var seed = Math.floor(Math.random() * 99999);
@@ -711,14 +754,16 @@
     tryNext();
   }
 
-  /* ── Основная точка входа: CF AI → Pollinations.ai ── */
+  /* ── Основная точка входа: воркер → AI Horde (бесплатно) → Pollinations ── */
   function generateImage(englishPrompt, img, caption, subject, downloadBtn, imageId) {
     var cactusHint = " cactus succulent plant botanical illustration";
     if (!/cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert/i.test(englishPrompt)) {
       englishPrompt = (englishPrompt + cactusHint).trim();
     }
     generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, function () {
-      generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId);
+      generateImageHorde(englishPrompt, img, caption, subject, downloadBtn, imageId, function () {
+        generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId);
+      });
     });
   }
 
