@@ -24,27 +24,22 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 .book-toolbar__langs { font-size: 0.9rem; }
 .book-toolbar__langs a { color: #b8e0ff; text-decoration: none; }
 .book-toolbar__langs a:hover { text-decoration: underline; }
-.book-toolbar__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
-.book-toolbar__actions select { padding: 0.25rem 0.4rem; border-radius: 6px; font-size: 0.9rem; border: 1px solid rgba(0,0,0,0.15); background: #fff; color: #2c3e50; }
+.book-toolbar__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; }
 .book-toolbar .book-btn:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-.book-toolbar .book-btn--deepl { font-size: 0.85rem; }
-.book-toolbar .book-deepl-hint { font-size: 0.7rem; opacity: 0.9; margin-left: 0.2rem; font-weight: 400; color: var(--cactus-muted-on-dark); }
-.book-toolbar #book-translate-status { font-size: 0.8rem; margin-left: 0.25rem; opacity: 0.9; }
+/* Глобус в одной строке с меню — не фиксированный, всегда виден */
+.book-toolbar .globe-in-row { position: relative; right: auto; top: auto; display: flex; align-items: center; margin-left: 0.25rem; }
+.book-toolbar .globe-in-row .globe-btn { width: 40px; height: 40px; font-size: 1.25rem; background: #fff; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+.book-toolbar .globe-in-row .globe-btn:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
 </style>
 </head>
 <body class="book-reader-page">
-<div id="globe-container" class="globe-fixed" aria-label="Выбор языка"></div>
 <header class="book-header">
   <div class="book-toolbar">
     <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
     <h1 class="book-toolbar__title">Кактусология <span>— история открытий и великих учёных, от Колумба до наших дней.</span></h1>
     <span class="book-toolbar__langs"><span style="opacity:0.85;">Язык:</span> <span style="opacity:0.9;">UA</span> · <a href="book-read-ru.html">RU</a> · <a href="book-read-en.html">EN</a></span>
-    <div class="book-toolbar__actions">
-      <select id="book-lang-select" title="Язык перевода"><option value="RU">RU</option><option value="EN">EN</option><option value="UK">UK</option><option value="DE">DE</option><option value="FR">FR</option><option value="ES">ES</option><option value="IT">IT</option><option value="PL">PL</option><option value="JA">JA</option><option value="ZH">ZH</option></select>
-      <button type="button" id="book-translate-btn" class="book-btn book-btn--deepl" title="Идеально точный перевод">DeepL</button><span class="book-deepl-hint">точный перевод</span>
-      <span id="book-translate-status"></span>
-    </div>
+    <div id="globe-container" class="globe-fixed globe-in-row" aria-label="Выбор языка"></div>
   </div>
 </header>
 <div class="page-main">
@@ -1109,61 +1104,12 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
     return url;
   };
 
-  var btn = document.getElementById('book-translate-btn');
-  var select = document.getElementById('book-translate-select');
-  if (!select) select = document.getElementById('book-lang-select');
-  var status = document.getElementById('book-translate-status');
-  var workerUrl = (window.APP_CONFIG && window.APP_CONFIG.workerUrl) ? String(window.APP_CONFIG.workerUrl).replace(/\/$/, '') : '';
-
-  /* Глобус = перевод через Google (новая вкладка). Кнопка DeepL = точный перевод на этой странице. */
+  /* Глобус в шапке: выбор языка открывает страницу в Google Translate (новая вкладка). */
   window.addEventListener('soulart-language-change', function (e) {
     var code = (e.detail && e.detail.lang) ? e.detail.lang : '';
     if (!code) return;
     window.open(getGoogleTranslateUrl(code), '_blank');
-    if (status) status.textContent = ' Открыта вкладка Google Translate.';
   });
-
-  if (btn && select) {
-    btn.addEventListener('click', function () {
-      if (!workerUrl) { if (status) status.textContent = ' Укажите workerUrl в config.js'; return; }
-      var content = document.querySelector('.page-content');
-      if (!content) return;
-      var nodes = content.querySelectorAll('p, h2, h3');
-      var texts = Array.from(nodes).map(function (n) { return n.innerText || ''; });
-      if (texts.length === 0) { if (status) status.textContent = ' Нет текста'; return; }
-      var targetLang = select.value || 'EN';
-      if (status) status.textContent = ' Перевожу…';
-      btn.disabled = true;
-
-      var BATCH = 50;
-      var allTranslated = [];
-      var done = 0;
-      function runBatch(i) {
-        var batch = texts.slice(i, i + BATCH);
-        if (batch.length === 0) {
-          allTranslated.forEach(function (t, idx) { if (nodes[idx]) nodes[idx].innerText = t; });
-          if (status) status.textContent = ' Готово.';
-          btn.disabled = false;
-          return;
-        }
-        fetch(workerUrl + '/v1/translate', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ texts: batch, target_lang: targetLang })
-        }).then(function (r) { return r.json(); }).then(function (data) {
-          if (data.error) throw new Error(data.error);
-          (data.translations || []).forEach(function (t) { allTranslated.push(t); });
-          done += batch.length;
-          if (status) status.textContent = ' Перевожу… ' + Math.min(done, texts.length) + '/' + texts.length;
-          runBatch(i + BATCH);
-        }).catch(function (err) {
-          if (status) status.textContent = ' Ошибка: ' + (err.message || err);
-          btn.disabled = false;
-        });
-      }
-      runBatch(0);
-    });
-  }
 })();
 </script>
 </body>
