@@ -747,14 +747,17 @@
       if (attempt >= urls.length) {
         var baseMsg = "Сервис рисования сейчас недоступен. Попробуй позже.";
         caption.textContent = lastError ? baseMsg + " (" + lastError + ")" : baseMsg + " — он восстановится.";
+        caption.classList.add("guardian-msg__image-caption--error");
         return;
       }
       var url = urls[attempt++];
+      caption.classList.remove("guardian-msg__image-caption--error");
       caption.textContent = "Рисую… ⏳" + (attempt > 1 ? " (вариант " + attempt + ")" : "");
       img.src = url;
     }
 
     img.onload  = function () {
+      caption.classList.remove("guardian-msg__image-caption--error");
       caption.textContent = "✦ " + subject;
       showDownloadBtn(downloadBtn, img, subject, imageId);
     };

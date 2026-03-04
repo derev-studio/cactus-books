@@ -332,6 +332,38 @@
   color: var(--cactus-muted-on-dark);
 }
 
+/* Сообщение об ошибке — хорошо видно, не исчезает */
+.guardian-chat__error {
+  margin: 0.75rem 0;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  background: #fff3cd;
+  border: 1px solid #e6c200;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Подпись под картинкой в чате */
+.guardian-msg__image-caption {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: var(--cactus-text-on-dark);
+}
+
+/* Ошибка рисования — контрастно, чтобы было видно и можно скопировать */
+.guardian-msg__image-caption--error {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  background: #ffe0e0;
+  border: 1px solid #e57373;
+  border-radius: 8px;
+}
+
 /* Искры и огонь — не перекрывают контент */
 .sparks,
 .samurai-bg__fire-glow {
