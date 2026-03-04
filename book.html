@@ -4,8 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кактусология | Кактусярий</title>
-  <meta http-equiv="refresh" content="0; url=книга-кактусология/book-read.html" />
-  <script>window.location.replace("книга-кактусология/book-read.html");</script>
+  <script>
+  (function () {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
+    var base = 'книга-кактусология/';
+    if (lang === 'ru') window.location.replace(base + 'book-read-ru.html');
+    else if (lang === 'en') window.location.replace(base + 'book-read-en.html');
+    else window.location.replace(base + 'book-read.html');
+  })();
+  </script>
+  <meta http-equiv="refresh" content="1; url=книга-кактусология/book-read.html" />
 </head>
 <body>
   <p>Книга открывается… <a href="книга-кактусология/book-read.html">Открыть книгу «Кактусология»</a></p>
