@@ -41,7 +41,6 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
     <a href="../home.html" class="book-toolbar__back book-btn">← Back to main</a>
     <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="book-toolbar__back book-btn" title="Site without Google Translate">To site</a>
     <span class="book-toolbar__langs"><a href="book-read.html">UA</a> · <a href="book-read-ru.html">RU</a> · <span style="opacity:0.9;">EN</span></span>
-    <div id="globe-container" class="globe-fixed globe-in-row" aria-label="Choose language"></div>
   </div>
   <div class="book-title-block">
     <h1>Cactology</h1>
@@ -1415,9 +1414,7 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <script src="../i18n.js"></script>
 <script>
 (function () {
-  var globe = document.getElementById('globe-container');
-  if (globe && window.I18n) window.I18n.init(globe);
-  /* Globe on book page only switches UI language. No Google redirect. */
+  if (window.I18n) window.I18n.init();
 })();
 </script>
 </body>

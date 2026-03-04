@@ -238,20 +238,10 @@
     if (!SUPPORTED.some(function (s) { return s.code === code; })) return;
     currentLang = code;
     setStoredLang(code);
-
-    if (code === DEFAULT_LANG) {
-      if (window.top !== window && document.referrer.indexOf("translate.google") !== -1) {
-        window.top.location = window.location.href;
-        return;
-      }
-      applyToPage();
-      try {
-        window.dispatchEvent(new CustomEvent("soulart-language-change", { detail: { lang: code } }));
-      } catch (_) {}
-      return;
-    }
-    var tl = code === "jp" ? "ja" : code;
-    window.location = "https://translate.google.com/translate?sl=ru&tl=" + tl + "&u=" + encodeURIComponent(window.location.href);
+    applyToPage();
+    try {
+      window.dispatchEvent(new CustomEvent("soulart-language-change", { detail: { lang: code } }));
+    } catch (_) {}
   }
 
   function escapeHtml(s) {
@@ -298,80 +288,8 @@
     document.documentElement.lang = currentLang === "zh" ? "zh-Hans" : currentLang;
   }
 
-  function createGlobeWidget() {
-    const wrap = document.createElement("div");
-    wrap.className = "globe-wrap";
-    wrap.setAttribute("data-i18n", "globe_aria");
-    wrap.setAttribute("data-i18n-attr", "aria-label");
-    wrap.setAttribute("aria-label", t("globe_aria"));
-
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "globe-btn";
-    btn.setAttribute("data-i18n", "globe_aria");
-    btn.setAttribute("data-i18n-attr", "aria-label");
-    btn.setAttribute("aria-label", t("globe_aria"));
-    btn.setAttribute("aria-expanded", "false");
-    btn.innerHTML = "<span class=\"globe-btn__icon\" aria-hidden=\"true\">🌐</span>";
-    wrap.appendChild(btn);
-
-    const menu = document.createElement("div");
-    menu.className = "globe-menu globe-menu--papyrus";
-    menu.setAttribute("role", "menu");
-    menu.setAttribute("aria-hidden", "true");
-    menu.innerHTML = SUPPORTED.map(function (s) {
-      var f = s.flag ? "<span class=\"globe-menu__flag\" aria-hidden=\"true\">" + s.flag + "</span>" : "";
-      return "<button type=\"button\" class=\"globe-menu__item\" role=\"menuitem\" data-lang=\"" + s.code + "\">" + f + "<span class=\"globe-menu__label\">" + s.name + "</span></button>";
-    }).join("");
-    wrap.appendChild(menu);
-
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      const open = menu.getAttribute("aria-hidden") !== "true";
-      menu.setAttribute("aria-hidden", open ? "true" : "false");
-      menu.classList.toggle("globe-menu--open", !open);
-      btn.setAttribute("aria-expanded", !open);
-    });
-
-    function closeMenu() {
-      menu.setAttribute("aria-hidden", "true");
-      menu.classList.remove("globe-menu--open");
-      btn.setAttribute("aria-expanded", "false");
-    }
-
-    document.addEventListener("click", function (e) {
-      if (wrap.contains(e.target)) return;
-      closeMenu();
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && menu.getAttribute("aria-hidden") !== "true") closeMenu();
-    });
-
-    menu.addEventListener("click", function (e) {
-      const item = e.target.closest("[data-lang]");
-      if (!item) return;
-      e.stopPropagation();
-      const code = item.getAttribute("data-lang");
-      setLang(code);
-      closeMenu();
-    });
-
-    return wrap;
-  }
-
-  function init(container) {
+  function init() {
     applyToPage();
-    if (container && container.querySelector) {
-      var existing = container.querySelector(".globe-wrap");
-      if (existing) existing.remove();
-    }
-    const globe = createGlobeWidget();
-    if (container && container.appendChild) {
-      container.appendChild(globe);
-    } else {
-      document.body.appendChild(globe);
-    }
     setTimeout(function () { applyToPage(); }, 50);
   }
 

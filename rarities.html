@@ -47,8 +47,6 @@
         </div>
       </details>
     </nav>
-    <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="site-header__lang-link" title="Сайт на русском">Русский</a>
-    <div id="globe-container" class="site-header__globe" aria-label="Выбор языка"></div>
   </header>
 
   <main class="page-main">
@@ -82,9 +80,7 @@
     (function () {
       function init() {
         if (!window.I18n) return;
-        var c = document.getElementById("globe-container");
-        if (c) window.I18n.init(c);
-        else window.I18n.applyToPage();
+        window.I18n.init();
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();

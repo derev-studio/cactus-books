@@ -47,8 +47,6 @@
         </div>
       </details>
     </nav>
-    <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="site-header__lang-link" title="Сайт на русском">Русский</a>
-    <div id="globe-container" class="site-header__globe" aria-label="Выбор языка"></div>
   </header>
 
   <!-- Фон: самурай у костра -->
@@ -180,9 +178,7 @@
     (function () {
       function init() {
         if (!window.I18n) return;
-        var container = document.getElementById("globe-container");
-        if (container) window.I18n.init(container);
-        else window.I18n.applyToPage();
+        window.I18n.init();
         setTimeout(function () { if (window.I18n) window.I18n.applyToPage(); }, 0);
       }
       if (document.readyState === "loading") {

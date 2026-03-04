@@ -1296,8 +1296,7 @@ function setupTopNav() {
 
 window.addEventListener("DOMContentLoaded", () => {
   if (window.I18n) {
-    const globeContainer = document.getElementById("globe-container");
-    if (globeContainer) window.I18n.init(globeContainer);
+    window.I18n.init();
     window.addEventListener("soulart-language-change", () => { buildFujiMagicPanel(); });
   }
   setupIntroScene();

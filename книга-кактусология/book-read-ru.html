@@ -41,7 +41,6 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
     <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
     <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="book-toolbar__back book-btn" title="Сайт без перевода Google">На сайт</a>
     <span class="book-toolbar__langs"><a href="book-read.html">UA</a> · <span style="opacity:0.9;">RU</span> · <a href="book-read-en.html">EN</a></span>
-    <div id="globe-container" class="globe-fixed globe-in-row" aria-label="Выбор языка"></div>
   </div>
   <div class="book-title-block">
     <h1>Кактусология</h1>
@@ -723,9 +722,7 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <script src="../i18n.js"></script>
 <script>
 (function () {
-  var globe = document.getElementById('globe-container');
-  if (globe && window.I18n) window.I18n.init(globe);
-  /* Глобус на странице книги только переключает язык интерфейса. Google не открываем. */
+  if (window.I18n) window.I18n.init();
 })();
 </script>
 </body>

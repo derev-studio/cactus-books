@@ -284,8 +284,6 @@
         </div>
       </details>
     </nav>
-    <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="site-header__lang-link" title="Сайт на русском">Русский</a>
-    <div id="globe-container" class="site-header__globe" aria-label="Выбор языка"></div>
   </header>
   <div id="atmosphere-widget" class="atmosphere-widget" aria-label="Настройки атмосферы"></div>
 
@@ -542,11 +540,9 @@
       if ((e.ctrlKey || e.metaKey) && e.key === "z") { e.preventDefault(); undo(); }
     });
 
-    /* ── Globe / i18n ── */
+    /* ── i18n (подписи на странице) ── */
     function initI18n() {
-      if (!window.I18n) return;
-      var container = document.getElementById("globe-container");
-      if (container) window.I18n.init(container);
+      if (window.I18n) window.I18n.init();
     }
     if (document.readyState === "loading") {
       document.addEventListener("DOMContentLoaded", initI18n);
