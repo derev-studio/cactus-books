@@ -109,80 +109,138 @@ export default {
         } catch (_) {}
       }
 
-      /* AI Horde — apikey только в header; body = GenerationInputStable (prompt, params, models); loras только в params.loras; seed строка ── */
+      // ── AI Horde (Stable Horde) ──
       const base = "https://stablehorde.net/api/v2";
+      const hordeKey = "0000000000";
+
+      // Step A: minimal valid payload (do NOT add extra fields until this works)
       const hordePayload = {
-        prompt: prompt + ", фото, реалистично",
-        models: ["Deliberate"],
+        prompt: prompt + ", photo, realistic",
         params: {
           width: 512,
           height: 512,
-          n: 1,
           steps: 20,
           cfg_scale: 7.5,
-          sampler_name: "k_euler_a",
-          clip_skip: 1,
-          seed: "-1",
+          n: 1,
         },
       };
+
       const sub = await fetch(base + "/generate/async", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "apikey": "0000000000",
-          "Client-Agent": "cactus-openrouter:1.0:https://derev-studio.github.io/cactus-books/",
+          "apikey": hordeKey,
+          "Client-Agent": "cactus-openrouter:1.0",
         },
         body: JSON.stringify(hordePayload),
       });
-      const rawErr = await sub.text();
+
+      // Always read raw text for debug (Horde sometimes returns non-JSON on errors)
+      const subRaw = await sub.text();
       let subData = {};
-      try { subData = JSON.parse(rawErr); } catch (_) {}
+      try { subData = JSON.parse(subRaw); } catch { subData = { raw: subRaw }; }
+
       if (!sub.ok) {
-        const msg = subData.message || subData.err || (subData.detail ? JSON.stringify(subData.detail) : null) || String(sub.status);
         return new Response(JSON.stringify({
-          error: "Horde: " + (msg || "validation failed"),
+          error: "Horde submit failed",
           horde_status: sub.status,
           horde_body: subData,
-          horde_raw: rawErr,
+          horde_raw: subRaw,
+          sent_payload: hordePayload,
         }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
+
       const id = subData.id;
       if (!id) {
-        return new Response(JSON.stringify({ error: "Horde: no id" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        return new Response(JSON.stringify({
+          error: "Horde: missing id",
+          horde_status: sub.status,
+          horde_body: subData,
+          horde_raw: subRaw,
+        }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
+
+      // Poll
       const deadline = Date.now() + 50000;
       let lastErr = "timeout";
+
       while (Date.now() < deadline) {
         await new Promise((r) => setTimeout(r, 2500));
+
         const checkRes = await fetch(base + "/generate/check/" + id);
-        if (!checkRes.ok) { lastErr = "check " + checkRes.status; continue; }
-        const check = await checkRes.json().catch(() => ({}));
-        if (check.faulted || check.is_possible === false) {
-          return new Response(JSON.stringify({ error: "Horde: faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        const checkRaw = await checkRes.text();
+        let check = {};
+        try { check = JSON.parse(checkRaw); } catch { check = { raw: checkRaw }; }
+
+        if (!checkRes.ok) {
+          lastErr = "check " + checkRes.status;
+          continue;
         }
+
+        if (check.faulted || check.is_possible === false) {
+          return new Response(JSON.stringify({
+            error: "Horde: faulted or impossible",
+            check,
+            check_raw: checkRaw,
+          }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        }
+
         const done = check.done === true || check.done === 1;
         if (!done) continue;
+
         const stRes = await fetch(base + "/generate/status/" + id);
-        if (!stRes.ok) { lastErr = "status " + stRes.status; continue; }
-        const st = await stRes.json().catch(() => ({}));
+        const stRaw = await stRes.text();
+        let st = {};
+        try { st = JSON.parse(stRaw); } catch { st = { raw: stRaw }; }
+
+        if (!stRes.ok) {
+          lastErr = "status " + stRes.status;
+          continue;
+        }
+
         const gen = st.generations && st.generations[0];
         const imgData = gen && gen.img;
-        if (!imgData) { lastErr = "no image"; break; }
-        let b64 = imgData;
-        if (typeof imgData === "string" && imgData.startsWith("http")) {
-          try {
-            const imgRes = await fetch(imgData);
-            if (!imgRes.ok) { lastErr = "fetch img " + imgRes.status; break; }
-            const buf = await imgRes.arrayBuffer();
-            const bytes = new Uint8Array(buf);
-            let bin = "";
-            for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
-            b64 = btoa(bin);
-          } catch (e) { lastErr = "fetch img"; break; }
+
+        if (!imgData) {
+          return new Response(JSON.stringify({
+            error: "Horde: done but no image",
+            status: st,
+            status_raw: stRaw,
+          }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
         }
-        return new Response(JSON.stringify({ image: b64 }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+
+        // img may be base64 string or URL
+        let b64 = imgData;
+
+        if (typeof imgData === "string" && imgData.startsWith("http")) {
+          const imgRes = await fetch(imgData);
+          if (!imgRes.ok) {
+            return new Response(JSON.stringify({
+              error: "Horde: image url fetch failed",
+              img_status: imgRes.status,
+              img_url: imgData,
+            }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+          }
+          const buf = await imgRes.arrayBuffer();
+          const bytes = new Uint8Array(buf);
+          let bin = "";
+          for (let i = 0; i < bytes.length; i += 8192) {
+            bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
+          }
+          b64 = btoa(bin);
+        }
+
+        return new Response(JSON.stringify({ image: b64 }), {
+          status: 200,
+          headers: { "Content-Type": "application/json", ...CORS },
+        });
       }
-      return new Response(JSON.stringify({ error: "Horde: " + lastErr }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
+
+      return new Response(JSON.stringify({
+        error: "Horde: " + lastErr,
+        horde_status: sub.status,
+        horde_raw: subRaw,
+      }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
     }
 
     if (url.pathname !== "/v1/vision" || request.method !== "POST") {
