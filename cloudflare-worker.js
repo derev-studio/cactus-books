@@ -112,13 +112,15 @@ export default {
         return new Response(JSON.stringify({ error: "Send { texts: string[], target_lang: string } (1–50 segments)." }), { status: 400, headers: { "Content-Type": "application/json", ...cors } });
       }
       const form = new URLSearchParams();
-      form.set("auth_key", deeplKey);
       form.set("target_lang", targetLang);
       texts.forEach((t) => form.append("text", typeof t === "string" ? t : String(t)));
       try {
         const res = await fetch("https://api-free.deepl.com/v2/translate", {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "DeepL-Auth-Key " + deeplKey,
+          },
           body: form.toString(),
         });
         const data = await res.json();
