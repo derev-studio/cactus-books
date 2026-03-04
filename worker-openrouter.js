@@ -78,15 +78,8 @@ export default {
       }
     }
 
-    /* ── Генерация картинки для Колючего Собеседника (Hugging Face Inference) ── */
+    /* ── Генерация картинки: сначала HF (если есть токен), иначе AI Horde (бесплатно, без ключей) ── */
     if (url.pathname === "/v1/image" && request.method === "POST") {
-      const hfToken = env.HUGGINGFACE_TOKEN;
-      if (!hfToken) {
-        return new Response(
-          JSON.stringify({ error: "HUGGINGFACE_TOKEN not set. Add it in Worker Variables for drawing." }),
-          { status: 503, headers: { "Content-Type": "application/json", ...CORS } }
-        );
-      }
       let imgBody;
       try { imgBody = await request.json(); } catch {
         return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
@@ -95,37 +88,60 @@ export default {
       if (!prompt) {
         return new Response(JSON.stringify({ error: "Missing prompt" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      const model = "stabilityai/stable-diffusion-xl-base-1.0";
-      try {
-        const hfRes = await fetch("https://api-inference.huggingface.co/models/" + model, {
-          method: "POST",
-          headers: {
-            "Authorization": "Bearer " + hfToken,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ inputs: prompt }),
-        });
-        if (!hfRes.ok) {
-          const errText = await hfRes.text();
-          return new Response(
-            JSON.stringify({ error: "HF: " + (errText.slice(0, 200) || hfRes.statusText) }),
-            { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
-          );
-        }
-        const blob = await hfRes.arrayBuffer();
-        const bytes = new Uint8Array(blob);
-        let binary = "";
-        for (let i = 0; i < bytes.length; i += 8192) {
-          binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
-        }
-        const b64 = btoa(binary);
-        return new Response(JSON.stringify({ image: b64 }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
-      } catch (err) {
-        return new Response(
-          JSON.stringify({ error: "Image error: " + err.message }),
-          { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
-        );
+
+      const hfToken = env.HUGGINGFACE_TOKEN;
+      if (hfToken) {
+        try {
+          const hfRes = await fetch("https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0", {
+            method: "POST",
+            headers: { "Authorization": "Bearer " + hfToken, "Content-Type": "application/json" },
+            body: JSON.stringify({ inputs: prompt }),
+          });
+          if (hfRes.ok) {
+            const blob = await hfRes.arrayBuffer();
+            const bytes = new Uint8Array(blob);
+            let binary = "";
+            for (let i = 0; i < bytes.length; i += 8192) {
+              binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
+            }
+            return new Response(JSON.stringify({ image: btoa(binary) }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+          }
+        } catch (_) {}
       }
+
+      /* AI Horde (Stable Horde) — бесплатно, apikey 0000000000, без CORS-проблем ── */
+      const base = "https://stablehorde.net/api/v2";
+      const sub = await fetch(base + "/generate/async", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          prompt: prompt + ", beautiful art, detailed",
+          params: { width: 512, height: 512, steps: 20, n: 1 },
+          apikey: "0000000000",
+        }),
+      });
+      if (!sub.ok) {
+        return new Response(JSON.stringify({ error: "Horde submit failed" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const subData = await sub.json();
+      const id = subData.id;
+      if (!id) {
+        return new Response(JSON.stringify({ error: "Horde no id" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const deadline = Date.now() + 28000;
+      while (Date.now() < deadline) {
+        await new Promise((r) => setTimeout(r, 3000));
+        const stRes = await fetch(base + "/generate/status/" + id);
+        if (!stRes.ok) continue;
+        const st = await stRes.json();
+        if (st.faulted || st.is_possible === false) {
+          return new Response(JSON.stringify({ error: "Horde faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        }
+        if (st.done && st.generations && st.generations[0] && st.generations[0].img) {
+          return new Response(JSON.stringify({ image: st.generations[0].img }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+        }
+      }
+      return new Response(JSON.stringify({ error: "Horde timeout" }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
     }
 
     if (url.pathname !== "/v1/vision" || request.method !== "POST") {
