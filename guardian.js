@@ -31,7 +31,7 @@
     "Сайт для кактусоводов по всему миру. Обращайся нейтрально: «ты», «друг», «гость» или «уважаемый кактусовод». " +
     "Ты разбираешься в кактусах: можешь подсказать вид, регион произрастания, маршрут до места (предлагай ссылку на карту). " +
     "Для определения кактуса по фото гость может открыть раздел «Опознать кактус» — подскажи это, если спрашивают про фото. " +
-    "КАРТИНКИ: рисуй и предлагай ТОЛЬКО кактусы, суккуленты, природу кактусных регионов. Никогда не рисуй кошек, животных и прочее — только кактусная тема. " +
+    "КАРТИНКИ: чаще предлагай кактусы и суккуленты. Если гость просит нарисовать что-то другое (слон, гимнастка, человек, животное, пейзаж) — соглашайся и предлагай «нарисуй [то, что он просит]». " +
     "ЯЗЫК: отвечай на том же языке, на котором пишет собеседник (русский, украинский, английский и др.). " +
     "Ты немногословен, точен, тёпел. Отвечаешь по существу, с достоинством.";
 
@@ -67,7 +67,7 @@
       BASE +
       " РЕЖИМ — Свободный разговор о кактусах и не только. " +
       "Ты близкий собеседник: кактусы, книга Кактусология, ареалы, уход, маршруты. Поддерживаешь, вдохновляешь. " +
-      "Картинки: только кактусы и суккуленты. В конце ответа скажи «нарисуй [кактус/суккулент на русском]» — картина появится. " +
+      "Картинки: по желанию гостя — кактусы, суккуленты или что он просит (слон, человек, пейзаж). Предлагай «нарисуй [тема]». " +
       "Если речь о рисовании — можно «[ОТКРЫТЬ_МАСТЕРСКУЮ]».",
 
     language:
@@ -391,7 +391,7 @@
     imagesToggleBtn.classList.toggle("guardian-chat__images-btn--request-only", imagesMode === "request");
     imagesToggleBtn.title = imagesMode === "request"
       ? "Картинки только когда ты просишь (нарисуй…, найди фото…). Нажми — разрешить Собеседнику рисовать по желанию."
-      : "Собеседник может сам предлагать картинки (только кактусы). Нажми — только когда ты просишь.";
+      : "Собеседник может сам предлагать картинки (кактусы и по твоей просьбе — что угодно). Нажми — только когда ты просишь.";
   }
 
   if (imagesToggleBtn) {
@@ -814,16 +814,17 @@
   }
 
   /* ── Запасной вариант: Pollinations.ai через img.src (gen.pollinations.ai + image.pollinations.ai) ── */
-  function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, lastError) {
+  function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, lastError, isCactusTopic) {
     var seed = Math.floor(Math.random() * 99999);
     var enc = encodeURIComponent(englishPrompt);
     var encFull = encodeURIComponent(englishPrompt + ", beautiful art, detailed, soft light");
-
     var encCactus = encodeURIComponent(englishPrompt + ", botanical, realistic, not cartoon");
+    var encRealistic = encodeURIComponent(englishPrompt + ", realistic, detailed, quality");
+    var firstEnc = isCactusTopic ? encCactus : encRealistic;
     var urls = [
-      "https://gen.pollinations.ai/image/" + encCactus + "?model=flux&width=768&height=512&seed=" + seed,
+      "https://gen.pollinations.ai/image/" + firstEnc + "?model=flux&width=768&height=512&seed=" + seed,
       "https://gen.pollinations.ai/image/" + enc + "?model=flux&width=512&height=512&seed=" + seed,
-      "https://image.pollinations.ai/prompt/" + encCactus + "?width=768&height=512&seed=" + seed + "&nologo=true",
+      "https://image.pollinations.ai/prompt/" + firstEnc + "?width=768&height=512&seed=" + seed + "&nologo=true",
       "https://image.pollinations.ai/prompt/" + encFull + "?width=768&height=512&seed=" + seed + "&model=flux&nologo=true",
       "https://image.pollinations.ai/prompt/" + enc + "?width=512&height=512&seed=" + seed + "&model=turbo",
       "https://image.pollinations.ai/prompt/" + enc + "?width=512&height=512&seed=" + seed,
@@ -855,13 +856,16 @@
 
   /* ── Основная точка входа: воркер → AI Horde (бесплатно) → Pollinations ── */
   function generateImage(englishPrompt, img, caption, subject, downloadBtn, imageId) {
-    var cactusHint = " cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon";
-    if (!/cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert|spines|колюч/i.test(englishPrompt)) {
-      englishPrompt = (englishPrompt + cactusHint).trim();
+    var isCactusTopic = /cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert|spines|колюч|кактус|суккулент/i.test(englishPrompt);
+    var isOtherTopic = /elephant|gymnast|person|people|woman|man|child|dog|cat|animal|portrait|human|слон|гимнаст|человек|люди|животн|портрет/i.test(englishPrompt);
+    if (!isCactusTopic && !isOtherTopic) {
+      englishPrompt = (englishPrompt + " cactus succulent plant, green stem, spines, botanical illustration, realistic, not cartoon").trim();
+    } else if (isCactusTopic) {
+      englishPrompt = (englishPrompt + " cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon").trim();
     }
     generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, function (workerErr) {
       generateImageHorde(englishPrompt, img, caption, subject, downloadBtn, imageId, function (hordeErr) {
-        generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, workerErr || hordeErr);
+        generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, workerErr || hordeErr, isCactusTopic);
       });
     });
   }
@@ -881,7 +885,7 @@
   function startDrawing(subject) {
     var el = createImageBlock(subject);
     callAIWithPrompt(
-      "Translate to a short English image prompt (3-8 words). Theme: cactus, succulent, or desert plant. Return ONLY the prompt, no quotes.",
+      "Translate to a short English image prompt (3-8 words). Theme: whatever the user asked — cactus, animal, person, landscape, object. Return ONLY the prompt, no quotes.",
       subject, null,
       function (englishPrompt) {
         englishPrompt = englishPrompt.trim().replace(/^["']|["']$/g, "");

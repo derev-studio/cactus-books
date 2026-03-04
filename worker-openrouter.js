@@ -113,13 +113,19 @@ export default {
       const base = "https://stablehorde.net/api/v2";
       const hordeKey = "0000000000";
 
-      // Промпт для узнаваемого кактуса: ботаническая точность, колючки, не мультяшный стиль
-      const cactusPrompt =
-        (prompt.toLowerCase().includes("cactus") || prompt.toLowerCase().includes("кактус") || prompt.toLowerCase().includes("succulent"))
-          ? prompt + ", cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon"
-          : prompt + ", cactus or succulent plant, green stem, spines, botanical, realistic photograph";
+      const low = prompt.toLowerCase();
+      const isCactus = /cactus|кактус|succulent|суккулент|botanical|plant|cacti|mammillaria|opuntia|spines|колюч/.test(low);
+      const isPersonOrAnimal = /elephant|gymnast|person|people|woman|man|child|dog|cat|animal|portrait|human|слон|гимнаст|человек|люди|животн|портрет/.test(low);
+      let finalPrompt;
+      if (isPersonOrAnimal) {
+        finalPrompt = prompt + ", realistic, detailed, quality, good anatomy";
+      } else if (isCactus) {
+        finalPrompt = prompt + ", cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon";
+      } else {
+        finalPrompt = prompt + ", realistic, detailed, not cartoon";
+      }
       const hordePayload = {
-        prompt: cactusPrompt,
+        prompt: finalPrompt,
         params: {
           width: 512,
           height: 512,
