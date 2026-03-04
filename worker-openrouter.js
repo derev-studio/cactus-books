@@ -1,6 +1,7 @@
 /**
- * Worker для cactus-openrouter: определитель кактусов (OpenRouter) + перевод книги (DeepL).
- * В Cloudflare: Variables → OPENROUTER_API_KEY, DEEPL_API_KEY (оба Secret).
+ * Worker для cactus-openrouter: определитель кактусов (OpenRouter) + перевод книги (DeepL) + картинки (Hugging Face).
+ * В Cloudflare: Variables → OPENROUTER_API_KEY, DEEPL_API_KEY, HUGGINGFACE_TOKEN (все Secret).
+ * Рисование в Колючем Собеседнике: добавь HUGGINGFACE_TOKEN (бесплатный на huggingface.co/settings/tokens).
  */
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -74,6 +75,56 @@ export default {
         return new Response(JSON.stringify({ translations }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
       } catch (err) {
         return new Response(JSON.stringify({ error: "DeepL error: " + err.message }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+    }
+
+    /* ── Генерация картинки для Колючего Собеседника (Hugging Face Inference) ── */
+    if (url.pathname === "/v1/image" && request.method === "POST") {
+      const hfToken = env.HUGGINGFACE_TOKEN;
+      if (!hfToken) {
+        return new Response(
+          JSON.stringify({ error: "HUGGINGFACE_TOKEN not set. Add it in Worker Variables for drawing." }),
+          { status: 503, headers: { "Content-Type": "application/json", ...CORS } }
+        );
+      }
+      let imgBody;
+      try { imgBody = await request.json(); } catch {
+        return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const prompt = typeof imgBody.prompt === "string" ? imgBody.prompt.trim().slice(0, 500) : "";
+      if (!prompt) {
+        return new Response(JSON.stringify({ error: "Missing prompt" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const model = "stabilityai/stable-diffusion-xl-base-1.0";
+      try {
+        const hfRes = await fetch("https://api-inference.huggingface.co/models/" + model, {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer " + hfToken,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ inputs: prompt }),
+        });
+        if (!hfRes.ok) {
+          const errText = await hfRes.text();
+          return new Response(
+            JSON.stringify({ error: "HF: " + (errText.slice(0, 200) || hfRes.statusText) }),
+            { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
+          );
+        }
+        const blob = await hfRes.arrayBuffer();
+        const bytes = new Uint8Array(blob);
+        let binary = "";
+        for (let i = 0; i < bytes.length; i += 8192) {
+          binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
+        }
+        const b64 = btoa(binary);
+        return new Response(JSON.stringify({ image: b64 }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+      } catch (err) {
+        return new Response(
+          JSON.stringify({ error: "Image error: " + err.message }),
+          { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
+        );
       }
     }
 
