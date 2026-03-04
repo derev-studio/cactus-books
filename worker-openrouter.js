@@ -109,14 +109,11 @@ export default {
         } catch (_) {}
       }
 
-      /* AI Horde — схема: https://stablehorde.net/api/swagger.json
-       * apikey ОБЯЗАТЕЛЬНО в header (не в body). Тело = GenerationInputStable: prompt, params?, models?.
-       * Минимальный запрос: { "prompt": "cactus" } + header apikey.
-       * Полный: { "prompt": "...", "params": { "width":512,"height":512,"n":1,"steps":20,"cfg_scale":7.5,"sampler_name":"k_euler_a","clip_skip":1 }, "models":["Deliberate"] }.
-       */
+      /* AI Horde — apikey только в header; body = GenerationInputStable (prompt, params, models); loras только в params.loras; seed строка ── */
       const base = "https://stablehorde.net/api/v2";
       const hordePayload = {
         prompt: prompt + ", фото, реалистично",
+        models: ["Deliberate"],
         params: {
           width: 512,
           height: 512,
@@ -125,26 +122,28 @@ export default {
           cfg_scale: 7.5,
           sampler_name: "k_euler_a",
           clip_skip: 1,
+          seed: "-1",
         },
-        models: ["Deliberate"],
       };
       const sub = await fetch(base + "/generate/async", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           "apikey": "0000000000",
-          "Client-Agent": "cactus-books:1.0",
+          "Client-Agent": "cactus-openrouter:1.0:https://derev-studio.github.io/cactus-books/",
         },
         body: JSON.stringify(hordePayload),
       });
-      const subData = await sub.json().catch(() => ({}));
+      const rawErr = await sub.text();
+      let subData = {};
+      try { subData = JSON.parse(rawErr); } catch (_) {}
       if (!sub.ok) {
         const msg = subData.message || subData.err || (subData.detail ? JSON.stringify(subData.detail) : null) || String(sub.status);
-        const debug = subData.detail ? " " + JSON.stringify(subData.detail) : "";
         return new Response(JSON.stringify({
           error: "Horde: " + (msg || "validation failed"),
           horde_status: sub.status,
           horde_body: subData,
+          horde_raw: rawErr,
         }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
       const id = subData.id;
