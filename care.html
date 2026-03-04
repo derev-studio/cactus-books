@@ -79,10 +79,13 @@
   <script>
     (function () {
       function init() {
-        if (!window.I18n) return;
-        var c = document.getElementById("globe-container");
-        if (c) window.I18n.init(c);
-        else window.I18n.applyToPage();
+        if (window.I18n) {
+          var c = document.getElementById("globe-container");
+          if (c) window.I18n.init(c);
+          else window.I18n.applyToPage();
+        }
+        var navSearch = document.getElementById("nav-search");
+        if (navSearch) { var p = new URLSearchParams(window.location.search); var q = p.get("q"); if (q) navSearch.value = q; }
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();

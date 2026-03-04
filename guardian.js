@@ -99,6 +99,17 @@
 
   if (!messagesEl || !inputEl || !sendBtn) return;
 
+  /* Запрос из навигатора: подставить в поле ввода и в поиск шапки */
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var q = (params.get("q") || "").trim();
+    if (q) {
+      inputEl.value = q;
+      var navSearch = document.getElementById("nav-search");
+      if (navSearch) navSearch.value = q;
+    }
+  })();
+
   /* ═══════ УТИЛИТЫ ═══════ */
 
   function getMode() {
