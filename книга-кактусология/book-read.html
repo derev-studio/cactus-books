@@ -24,14 +24,14 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <div id="globe-container" class="globe-fixed" aria-label="Выбор языка"></div>
 <div class="page-main">
 <p class="book-back"><a href="../home.html">← На главную</a></p>
-<p class="book-lang" style="margin-bottom:1rem; font-size:1.1rem;"><strong>Язык книги:</strong> <span style="color:var(--cactus-reading-muted);">Українська</span> · <a href="book-read-ru.html">Русский</a> · <a href="book-read-en.html">English</a></p>
+<h1 class="book-title" style="margin:0 0 0.25rem; font-size:1.5rem;">Кактусология</h1>
+<p class="book-description" style="margin:0 0 1rem; font-size:0.95rem; opacity:0.95;">История открытий и великих учёных кактусологии — от Колумба до наших дней.</p>
+<p class="book-lang" style="margin-bottom:0.75rem; font-size:1rem;"><strong>Язык книги:</strong> <span style="color:var(--cactus-reading-muted);">Українська</span> · <a href="book-read-ru.html">Русский</a> · <a href="book-read-en.html">English</a></p>
 <div class="book-translate" style="margin-bottom:1.25rem; font-size:0.95rem; padding:1rem; background:rgba(0,0,0,0.05); border-radius:10px; border:1px solid rgba(0,0,0,0.08);">
-<p style="margin:0 0 0.75rem; font-weight:700;">Перевести книгу на свой язык</p>
-<p style="margin:0 0 0.5rem;"><strong>1. DeepL</strong> (перевод остаётся на этой странице): выберите язык → нажмите кнопку. Бесплатный ключ даёт ~500 000 символов в месяц — примерно 1–2 полных перевода книги в месяц, этого хватает надолго. Ключ один раз настраивается в воркере, см. <a href="../DEEPL-ИНСТРУКЦИЯ.html" target="_blank" rel="noopener">инструкцию</a>.</p>
-<p style="margin:0 0 0.5rem;">Язык: <select id="book-lang-select"><option value="RU">Русский</option><option value="EN">English</option><option value="UK">Українська</option><option value="DE">Deutsch</option><option value="FR">Français</option><option value="ES">Español</option><option value="IT">Italiano</option><option value="PL">Polski</option><option value="JA">日本語</option><option value="ZH">中文</option></select> <button type="button" id="book-translate-btn">Перевести книгу</button> <span id="book-translate-status"></span></p>
-<p style="margin:0.75rem 0 0.5rem;"><strong>2. Если DeepL недоступен</strong> (например, в некоторых регионах): <a href="" id="book-translate-link" target="_blank" rel="noopener">открыть эту страницу в Google Translate</a> — откроется в новой вкладке, переведёте там. Кнопки и меню останутся здесь, когда вернётесь.</p>
-<p style="margin:0.5rem 0 0;"><strong>3. Браузер:</strong> в Chrome в адресной строке может появиться иконка «Перевести» — нажмите, страница переведётся прямо здесь.</p>
-<p style="margin:0.75rem 0 0; font-size:0.9rem;">🌐 <strong>Меню языков (глобус)</strong> — в углу страницы: выберите язык (в т.ч. грузинский, любой) → для перевода книги нажмите «Перевести книгу» (если язык есть в списке DeepL) или «открыть в Google Translate» для остальных языков.</p>
+<p style="margin:0 0 0.5rem;"><strong>Перевести на другой язык</strong></p>
+<p style="margin:0 0 0.5rem;">Язык: <select id="book-lang-select"><option value="RU">Русский</option><option value="EN">English</option><option value="UK">Українська</option><option value="DE">Deutsch</option><option value="FR">Français</option><option value="ES">Español</option><option value="IT">Italiano</option><option value="PL">Polski</option><option value="JA">日本語</option><option value="ZH">中文</option></select> <button type="button" id="book-translate-btn">Перевести</button> <span id="book-translate-status"></span> <span style="font-size:0.85rem; opacity:0.9;">(DeepL)</span></p>
+<p style="margin:0.5rem 0 0;">Или <a href="" id="book-translate-link" target="_blank" rel="noopener">перевести страницу в Google Translate</a> — откроется в новой вкладке.</p>
+<p style="margin:0.5rem 0 0; font-size:0.88rem; opacity:0.9;">🌐 Глобус в углу — выберите язык (грузинский, любой): книга переведётся автоматически.</p>
 </div>
 <div class="page-content">
 <h2>Великі мандрівники, першовідкривачі та дослідники колючих знахідок</h2>
@@ -1106,12 +1106,15 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
   var globeToDeepL = { ru: 'RU', en: 'EN', uk: 'UK', de: 'DE', fr: 'FR', es: 'ES', it: 'IT', pl: 'PL', jp: 'JA', zh: 'ZH' };
   window.addEventListener('soulart-language-change', function (e) {
     var code = (e.detail && e.detail.lang) ? e.detail.lang : '';
-    if (globeToDeepL[code] && select) {
+    if (!code) return;
+    if (globeToDeepL[code] && select && btn && workerUrl) {
       select.value = globeToDeepL[code];
-      if (status) status.textContent = ' Выбран язык. Нажмите «Перевести книгу».';
-    } else if (code) {
+      if (status) status.textContent = ' Перевожу…';
+      btn.click();
+    } else {
       setGoogleLink(code);
-      if (status) status.textContent = ' Для этого языка: нажмите ссылку «открыть в Google Translate» выше.';
+      window.open(link ? link.href : '', '_blank');
+      if (status) status.textContent = ' Открыта вкладка Google Translate.';
     }
   });
 
