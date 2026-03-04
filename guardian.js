@@ -126,6 +126,43 @@
     if (attachInput) attachInput.value = "";
   }
 
+  /* Сжать фото перед отправкой (макс. 1024px, jpeg 0.85), чтобы ИИ его принял */
+  function compressImageForSend(dataUrl, done) {
+    var img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = function () {
+      var max = 1024;
+      var w = img.naturalWidth || img.width;
+      var h = img.naturalHeight || img.height;
+      if (w <= max && h <= max) {
+        var base64 = (dataUrl.indexOf("base64,") >= 0) ? (dataUrl.split("base64,")[1] || "").replace(/\s/g, "") : "";
+        done(dataUrl, base64, dataUrl.indexOf("image/png") >= 0 ? "image/png" : "image/jpeg");
+        return;
+      }
+      var scale = Math.min(max / w, max / h);
+      var c = document.createElement("canvas");
+      c.width = Math.round(w * scale);
+      c.height = Math.round(h * scale);
+      var ctx = c.getContext("2d");
+      ctx.drawImage(img, 0, 0, c.width, c.height);
+      c.toBlob(function (blob) {
+        if (!blob) { done(dataUrl, (dataUrl.split("base64,")[1] || "").replace(/\s/g, ""), "image/jpeg"); return; }
+        var reader = new FileReader();
+        reader.onload = function () {
+          var out = reader.result;
+          var b64 = (out.indexOf("base64,") >= 0) ? (out.split("base64,")[1] || "").replace(/\s/g, "") : "";
+          done(out, b64, "image/jpeg");
+        };
+        reader.readAsDataURL(blob);
+      }, "image/jpeg", 0.85);
+    };
+    img.onerror = function () {
+      var base64 = (dataUrl.indexOf("base64,") >= 0) ? (dataUrl.split("base64,")[1] || "").replace(/\s/g, "") : "";
+      done(dataUrl, base64, dataUrl.indexOf("image/png") >= 0 ? "image/png" : "image/jpeg");
+    };
+    img.src = dataUrl;
+  }
+
   if (attachBtn && attachInput && attachPreview) {
     attachBtn.addEventListener("click", function () { attachInput.click(); });
     attachInput.addEventListener("change", function () {
@@ -134,25 +171,21 @@
       var reader = new FileReader();
       reader.onload = function () {
         var dataUrl = reader.result;
-        var base64 = "";
-        var mime = "image/jpeg";
-        if (typeof dataUrl === "string" && dataUrl.indexOf("base64,") >= 0) {
-          base64 = dataUrl.split("base64,")[1] || "";
-          mime = dataUrl.indexOf("image/png") >= 0 ? "image/png" : "image/jpeg";
-        }
-        attachedImage = { dataUrl: dataUrl, base64: base64, mime: mime };
-        attachPreview.innerHTML = "";
-        var img = document.createElement("img");
-        img.src = dataUrl;
-        img.alt = "";
-        attachPreview.appendChild(img);
-        var removeBtn = document.createElement("button");
-        removeBtn.type = "button";
-        removeBtn.className = "guardian-chat__attach-remove";
-        removeBtn.textContent = "Убрать";
-        removeBtn.addEventListener("click", function () { clearAttachedImage(); });
-        attachPreview.appendChild(removeBtn);
-        attachPreview.classList.add("is-visible");
+        compressImageForSend(dataUrl, function (outUrl, base64, mime) {
+          attachedImage = { dataUrl: outUrl, base64: base64, mime: mime };
+          attachPreview.innerHTML = "";
+          var img = document.createElement("img");
+          img.src = outUrl;
+          img.alt = "";
+          attachPreview.appendChild(img);
+          var removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.className = "guardian-chat__attach-remove";
+          removeBtn.textContent = "Убрать";
+          removeBtn.addEventListener("click", function () { clearAttachedImage(); });
+          attachPreview.appendChild(removeBtn);
+          attachPreview.classList.add("is-visible");
+        });
       };
       reader.readAsDataURL(file);
     });
@@ -1110,11 +1143,17 @@
           mime: imgToSend.mime,
         }),
       })
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
+        .then(function (res) { return res.json().then(function (data) { return { res: res, data: data }; }); })
+        .then(function (o) {
           hideTyping();
           finishLoading();
-          var reply = (data && data.reply) ? data.reply : (data && data.error) ? data.error : "Не удалось получить ответ.";
+          var data = o.data;
+          var reply;
+          if (o.res.ok && data && data.reply) {
+            reply = data.reply;
+          } else {
+            reply = (data && data.error) ? ("Фото не дошло: " + data.error) : "Собеседник не увидел фото. Обнови воркер в Cloudflare и попробуй снова.";
+          }
           appendMessage("model", reply);
           history.push({ role: "model", text: reply });
           speak(reply);
@@ -1122,7 +1161,7 @@
         .catch(function () {
           hideTyping();
           finishLoading();
-          showError("Сервер не ответил. Попробуй ещё раз.");
+          showError("Сервер не ответил. Проверь, что воркер обновлён в Cloudflare (worker-openrouter.js), и попробуй снова.");
         });
       return;
     }

@@ -266,11 +266,12 @@ export default {
       try { chatBody = await request.json(); } catch {
         return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      const imageBase64 = chatBody.image;
+      let imageBase64 = chatBody.image;
       const message = typeof chatBody.message === "string" ? chatBody.message.trim().slice(0, 1000) : "";
       if (!imageBase64 || typeof imageBase64 !== "string") {
         return new Response(JSON.stringify({ error: "Missing image (base64)" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
       }
+      imageBase64 = String(imageBase64).replace(/\s/g, "");
       const mime = chatBody.mime === "image/png" ? "image/png" : "image/jpeg";
       const dataUrl = "data:" + mime + ";base64," + imageBase64;
       const chatSystemPrompt =
