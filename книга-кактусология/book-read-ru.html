@@ -12,40 +12,42 @@
 <link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="../page-common.css" />
 <style>
-body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 1rem; }
+body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 0 1rem 1rem; padding-top: 0; }
+.book-header { position: sticky; top: 0; z-index: 50; background: var(--cactus-bg-soft); border-bottom: 1px solid var(--cactus-border); box-shadow: 0 1px 0 rgba(0,0,0,0.15); padding: 0.75rem max(1rem, env(safe-area-inset-left)) 0.75rem max(1rem, env(safe-area-inset-right)); padding-top: max(0.75rem, env(safe-area-inset-top)); }
 .page-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem; background: var(--cactus-reading-bg); color: var(--cactus-reading-text); box-shadow: var(--cactus-reading-shadow); border-radius: var(--cactus-reading-radius); }
 .page-content .book-img { margin: 1rem 0; }
 .page-content .book-img img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
-.book-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(0,0,0,0.08); }
+.book-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; max-width: 52rem; margin: 0 auto; }
 .book-toolbar__back { margin-right: 0.5rem; }
-.book-toolbar__title { font-size: 1rem; font-weight: 700; margin: 0; flex: 1 1 auto; min-width: 0; }
+.book-toolbar__title { font-size: 1rem; font-weight: 700; margin: 0; flex: 1 1 auto; min-width: 0; color: var(--cactus-text-on-dark); }
 .book-toolbar__title span { font-weight: 400; opacity: 0.9; font-size: 0.9rem; }
 .book-toolbar__langs { font-size: 0.9rem; }
-.book-toolbar__langs a { color: #165a9e; text-decoration: none; }
+.book-toolbar__langs a { color: #b8e0ff; text-decoration: none; }
 .book-toolbar__langs a:hover { text-decoration: underline; }
 .book-toolbar__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
-.book-toolbar__actions select { padding: 0.25rem 0.4rem; border-radius: 6px; font-size: 0.9rem; border: 1px solid rgba(0,0,0,0.15); background: #fff; }
-.book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 32px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; }
+.book-toolbar__actions select { padding: 0.25rem 0.4rem; border-radius: 6px; font-size: 0.9rem; border: 1px solid rgba(0,0,0,0.15); background: #fff; color: #2c3e50; }
+.book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; }
 .book-toolbar .book-btn:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.book-toolbar .book-btn--deepl { font-size: 0.85rem; }
+.book-toolbar .book-deepl-hint { font-size: 0.7rem; opacity: 0.9; margin-left: 0.2rem; font-weight: 400; color: var(--cactus-muted-on-dark); }
 .book-toolbar #book-translate-status { font-size: 0.8rem; margin-left: 0.25rem; opacity: 0.9; }
-.book-toolbar__google-hint { font-size: 0.75rem; opacity: 0.8; margin-top: 0.25rem; }
 </style>
 </head>
 <body class="book-reader-page">
 <div id="globe-container" class="globe-fixed" aria-label="Выбор языка"></div>
-<div class="page-main">
-<header class="book-toolbar">
-  <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
-  <h1 class="book-toolbar__title">Кактусология <span>— история открытий и великих учёных, от Колумба до наших дней.</span></h1>
-  <span class="book-toolbar__langs"><span style="opacity:0.85;">Язык:</span> <a href="book-read.html">UA</a> · <span style="opacity:0.9;">RU</span> · <a href="book-read-en.html">EN</a></span>
-  <div class="book-toolbar__actions">
-    <select id="book-lang-select" title="Язык для DeepL"><option value="RU">RU</option><option value="EN">EN</option><option value="UK">UK</option><option value="DE">DE</option><option value="FR">FR</option><option value="ES">ES</option><option value="IT">IT</option><option value="PL">PL</option><option value="JA">JA</option><option value="ZH">ZH</option></select>
-    <button type="button" id="book-translate-btn" class="book-btn">DeepL</button>
-    <a href="" id="book-translate-link" class="book-btn" target="_blank" rel="noopener" title="Откроется в новой вкладке — вернуться: закройте вкладку или переключитесь на вкладку «Кактусярий»">Google</a>
-    <span id="book-translate-status"></span>
+<header class="book-header">
+  <div class="book-toolbar">
+    <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
+    <h1 class="book-toolbar__title">Кактусология <span>— история открытий и великих учёных, от Колумба до наших дней.</span></h1>
+    <span class="book-toolbar__langs"><span style="opacity:0.85;">Язык:</span> <a href="book-read.html">UA</a> · <span style="opacity:0.9;">RU</span> · <a href="book-read-en.html">EN</a></span>
+    <div class="book-toolbar__actions">
+      <select id="book-lang-select" title="Язык перевода"><option value="RU">RU</option><option value="EN">EN</option><option value="UK">UK</option><option value="DE">DE</option><option value="FR">FR</option><option value="ES">ES</option><option value="IT">IT</option><option value="PL">PL</option><option value="JA">JA</option><option value="ZH">ZH</option></select>
+      <button type="button" id="book-translate-btn" class="book-btn book-btn--deepl" title="Идеально точный перевод">DeepL</button><span class="book-deepl-hint">точный перевод</span>
+      <span id="book-translate-status"></span>
+    </div>
   </div>
 </header>
-<p class="book-toolbar__google-hint">Глобус в углу → выбор языка откроет Google в новой вкладке. Чтобы вернуться сюда — закройте вкладку Google или переключитесь на вкладку с сайтом.</p>
+<div class="page-main">
 <div class="page-content">
 
 <h2>Первые шаги – от любопытства к науке: Зарождение интереса к колючему миру</h2>
@@ -722,23 +724,20 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 (function () {
   var globe = document.getElementById('globe-container');
   if (globe && window.I18n) window.I18n.init(globe);
-  var link = document.getElementById('book-translate-link');
-  var setGoogleLink = function (tl) {
-    if (!link) return;
-    link.href = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href) + (tl ? '&tl=' + encodeURIComponent(tl) : '');
+  var getGoogleTranslateUrl = function (tl) {
+    var url = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href);
+    if (tl) url += '&tl=' + encodeURIComponent(tl);
+    return url;
   };
-  setGoogleLink();
   var btn = document.getElementById('book-translate-btn');
   var select = document.getElementById('book-lang-select');
   var status = document.getElementById('book-translate-status');
   var workerUrl = (window.APP_CONFIG && window.APP_CONFIG.workerUrl) ? String(window.APP_CONFIG.workerUrl).replace(/\/$/, '') : '';
-  /* Глобус — только Google Translate (новая вкладка). DeepL — только по кнопке «Перевести». */
   window.addEventListener('soulart-language-change', function (e) {
     var code = (e.detail && e.detail.lang) ? e.detail.lang : '';
     if (!code) return;
-    setGoogleLink(code);
-    if (link && link.href) window.open(link.href, '_blank');
-    if (status) status.textContent = ' Открыта вкладка Google Translate на выбранном языке.';
+    window.open(getGoogleTranslateUrl(code), '_blank');
+    if (status) status.textContent = ' Открыта вкладка Google Translate.';
   });
   if (btn && select) {
     btn.addEventListener('click', function () {
