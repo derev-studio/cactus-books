@@ -28,8 +28,8 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 .book-toolbar .globe-in-row .globe-btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.35); }
 .book-toolbar .globe-in-row .globe-btn__icon { font-size: 1.3rem; }
 .book-title-block { max-width: 52rem; margin: 0 auto; padding: 0.5rem max(1rem, env(safe-area-inset-left)) 0.75rem; }
-.book-title-block h1 { margin: 0 0 0.2rem; font-size: 1.6rem; font-weight: 700; color: var(--cactus-text-on-dark); line-height: 1.2; }
-.book-title-block .book-subtitle { margin: 0; font-size: 1rem; color: var(--cactus-muted-on-dark); line-height: 1.35; }
+.book-title-block h1 { margin: 0 0 0.35rem; font-size: 1.95rem; font-weight: 800; color: var(--cactus-text-on-dark); line-height: 1.2; letter-spacing: 0.01em; }
+.book-title-block .book-subtitle { margin: 0; font-size: 1.1rem; font-weight: 500; color: var(--cactus-text-on-dark); opacity: 0.95; line-height: 1.4; }
 .page-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem; background: var(--cactus-reading-bg); color: var(--cactus-reading-text); box-shadow: var(--cactus-reading-shadow); border-radius: var(--cactus-reading-radius); }
 .page-content .book-img { margin: 1rem 0; }
 .page-content .book-img img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
@@ -39,6 +39,7 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <header class="book-header">
   <div class="book-toolbar">
     <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
+    <a href="https://derev-studio.github.io/cactus-books/home.html" class="book-toolbar__back book-btn" title="Сайт без перевода Google">На сайт</a>
     <span class="book-toolbar__langs"><span style="opacity:0.9;">UA</span> · <a href="book-read-ru.html">RU</a> · <a href="book-read-en.html">EN</a></span>
     <div id="globe-container" class="globe-fixed globe-in-row" aria-label="Выбор языка"></div>
   </div>

@@ -48,6 +48,7 @@
         </div>
       </details>
     </nav>
+    <div id="globe-container" class="site-header__globe" aria-label="Выбор языка"></div>
   </header>
 
   <main class="page-main">
@@ -73,8 +74,10 @@
   <script>
     (function () {
       function init() {
-        if (!window.I18n || !window.I18n.applyToPage) return;
-        window.I18n.applyToPage();
+        if (!window.I18n) return;
+        var c = document.getElementById("globe-container");
+        if (c) window.I18n.init(c);
+        else window.I18n.applyToPage();
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();
