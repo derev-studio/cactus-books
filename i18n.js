@@ -238,10 +238,20 @@
     if (!SUPPORTED.some(function (s) { return s.code === code; })) return;
     currentLang = code;
     setStoredLang(code);
-    applyToPage();
-    try {
-      window.dispatchEvent(new CustomEvent("soulart-language-change", { detail: { lang: code } }));
-    } catch (_) {}
+
+    if (code === DEFAULT_LANG) {
+      if (window.top !== window && document.referrer.indexOf("translate.google") !== -1) {
+        window.top.location = window.location.href;
+        return;
+      }
+      applyToPage();
+      try {
+        window.dispatchEvent(new CustomEvent("soulart-language-change", { detail: { lang: code } }));
+      } catch (_) {}
+      return;
+    }
+    var tl = code === "jp" ? "ja" : code;
+    window.location = "https://translate.google.com/translate?sl=ru&tl=" + tl + "&u=" + encodeURIComponent(window.location.href);
   }
 
   function escapeHtml(s) {
