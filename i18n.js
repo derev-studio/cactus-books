@@ -323,10 +323,19 @@
       btn.setAttribute("aria-expanded", !open);
     });
 
-    document.addEventListener("click", function () {
+    function closeMenu() {
       menu.setAttribute("aria-hidden", "true");
       menu.classList.remove("globe-menu--open");
       btn.setAttribute("aria-expanded", "false");
+    }
+
+    document.addEventListener("click", function (e) {
+      if (wrap.contains(e.target)) return;
+      closeMenu();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.getAttribute("aria-hidden") !== "true") closeMenu();
     });
 
     menu.addEventListener("click", function (e) {
@@ -335,9 +344,7 @@
       e.stopPropagation();
       const code = item.getAttribute("data-lang");
       setLang(code);
-      menu.setAttribute("aria-hidden", "true");
-      menu.classList.remove("globe-menu--open");
-      btn.setAttribute("aria-expanded", "false");
+      closeMenu();
     });
 
     return wrap;
@@ -345,6 +352,10 @@
 
   function init(container) {
     applyToPage();
+    if (container && container.querySelector) {
+      var existing = container.querySelector(".globe-wrap");
+      if (existing) existing.remove();
+    }
     const globe = createGlobeWidget();
     if (container && container.appendChild) {
       container.appendChild(globe);
