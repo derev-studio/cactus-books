@@ -109,48 +109,61 @@ export default {
         } catch (_) {}
       }
 
-      /* AI Horde (Stable Horde) — бесплатно, apikey 0000000000, без CORS-проблем ── */
+      /* AI Horde (Stable Horde) — бесплатно, apikey 0000000000 ── */
       const base = "https://stablehorde.net/api/v2";
       const sub = await fetch(base + "/generate/async", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           prompt: prompt + ", beautiful art, detailed",
-          params: { width: 512, height: 512, steps: 20, n: 1 },
+          params: { width: 512, height: 512, steps: 20, n: 1, sampler_name: "k_euler" },
           models: ["Deliberate"],
+          nsfw: false,
           apikey: "0000000000",
         }),
       });
+      const subData = await sub.json().catch(() => ({}));
       if (!sub.ok) {
-        const errBody = await sub.json().catch(() => ({}));
-        const msg = errBody.message || errBody.err || "Horde submit failed";
-        return new Response(JSON.stringify({ error: msg }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        const msg = subData.message || subData.err || String(sub.status);
+        return new Response(JSON.stringify({ error: "Horde: " + msg }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      const subData = await sub.json();
       const id = subData.id;
       if (!id) {
-        return new Response(JSON.stringify({ error: "Horde no id" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        return new Response(JSON.stringify({ error: "Horde: no id" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      const deadline = Date.now() + 55000;
+      const deadline = Date.now() + 50000;
+      let lastErr = "timeout";
       while (Date.now() < deadline) {
-        await new Promise((r) => setTimeout(r, 2000));
+        await new Promise((r) => setTimeout(r, 2500));
         const checkRes = await fetch(base + "/generate/check/" + id);
-        if (!checkRes.ok) continue;
-        const check = await checkRes.json();
+        if (!checkRes.ok) { lastErr = "check " + checkRes.status; continue; }
+        const check = await checkRes.json().catch(() => ({}));
         if (check.faulted || check.is_possible === false) {
-          return new Response(JSON.stringify({ error: "Horde faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+          return new Response(JSON.stringify({ error: "Horde: faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
         }
         const done = check.done === true || check.done === 1;
         if (!done) continue;
         const stRes = await fetch(base + "/generate/status/" + id);
-        if (!stRes.ok) continue;
-        const st = await stRes.json();
-        if (st.generations && st.generations[0] && st.generations[0].img) {
-          return new Response(JSON.stringify({ image: st.generations[0].img }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+        if (!stRes.ok) { lastErr = "status " + stRes.status; continue; }
+        const st = await stRes.json().catch(() => ({}));
+        const gen = st.generations && st.generations[0];
+        const imgData = gen && gen.img;
+        if (!imgData) { lastErr = "no image"; break; }
+        let b64 = imgData;
+        if (typeof imgData === "string" && imgData.startsWith("http")) {
+          try {
+            const imgRes = await fetch(imgData);
+            if (!imgRes.ok) { lastErr = "fetch img " + imgRes.status; break; }
+            const buf = await imgRes.arrayBuffer();
+            const bytes = new Uint8Array(buf);
+            let bin = "";
+            for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 8192));
+            b64 = btoa(bin);
+          } catch (e) { lastErr = "fetch img"; break; }
         }
-        break;
+        return new Response(JSON.stringify({ image: b64 }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      return new Response(JSON.stringify({ error: "Horde timeout" }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
+      return new Response(JSON.stringify({ error: "Horde: " + lastErr }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
     }
 
     if (url.pathname !== "/v1/vision" || request.method !== "POST") {
