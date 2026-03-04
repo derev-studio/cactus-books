@@ -660,12 +660,19 @@
       signal: ctrl.signal
     })
       .then(function (res) {
-        if (!res.ok) { onFail(); return null; }
-        return res.json();
+        return res.json().then(function (data) {
+          if (!res.ok) {
+            var msg = (data && data.error) ? data.error : ("HTTP " + res.status);
+            onFail(msg);
+            return { _skip: true };
+          }
+          return data;
+        });
       })
       .then(function (data) {
         clearTimeout(to);
-        if (!data || !data.image) { onFail(); return; }
+        if (data && data._skip) return;
+        if (!data || !data.image) { onFail(data && data.error ? data.error : null); return; }
         img.onload  = function () {
           caption.textContent = "✦ " + subject;
           showDownloadBtn(downloadBtn, img, subject, imageId);
@@ -673,7 +680,7 @@
         img.onerror = function () { onFail(); };
         img.src = "data:image/png;base64," + data.image;
       })
-      .catch(function () { clearTimeout(to); onFail(); });
+      .catch(function (err) { clearTimeout(to); onFail(null); });
   }
 
   /* ── AI Horde (Stable Horde) — бесплатно, без ключей, apikey 0000000000 ── */
@@ -720,7 +727,7 @@
   }
 
   /* ── Запасной вариант: Pollinations.ai через img.src (gen.pollinations.ai + image.pollinations.ai) ── */
-  function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId) {
+  function generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, lastError) {
     var seed = Math.floor(Math.random() * 99999);
     var enc = encodeURIComponent(englishPrompt);
     var encFull = encodeURIComponent(englishPrompt + ", beautiful art, detailed, soft light");
@@ -738,7 +745,8 @@
     var attempt = 0;
     function tryNext() {
       if (attempt >= urls.length) {
-        caption.textContent = "Сервис рисования сейчас недоступен. Попробуй позже — он восстановится.";
+        var baseMsg = "Сервис рисования сейчас недоступен. Попробуй позже.";
+        caption.textContent = lastError ? baseMsg + " (" + lastError + ")" : baseMsg + " — он восстановится.";
         return;
       }
       var url = urls[attempt++];
@@ -760,9 +768,9 @@
     if (!/cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert/i.test(englishPrompt)) {
       englishPrompt = (englishPrompt + cactusHint).trim();
     }
-    generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, function () {
-      generateImageHorde(englishPrompt, img, caption, subject, downloadBtn, imageId, function () {
-        generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId);
+    generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, function (workerErr) {
+      generateImageHorde(englishPrompt, img, caption, subject, downloadBtn, imageId, function (hordeErr) {
+        generateImagePollinations(englishPrompt, img, caption, subject, downloadBtn, imageId, workerErr || hordeErr);
       });
     });
   }

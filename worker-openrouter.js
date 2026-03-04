@@ -1,7 +1,7 @@
 /**
- * Worker для cactus-openrouter: определитель кактусов (OpenRouter) + перевод книги (DeepL) + картинки (Hugging Face).
- * В Cloudflare: Variables → OPENROUTER_API_KEY, DEEPL_API_KEY, HUGGINGFACE_TOKEN (все Secret).
- * Рисование в Колючем Собеседнике: добавь HUGGINGFACE_TOKEN (бесплатный на huggingface.co/settings/tokens).
+ * Worker для cactus-openrouter: определитель кактусов (OpenRouter) + перевод книги (DeepL) + картинки (HF или AI Horde).
+ * В Cloudflare: Variables → OPENROUTER_API_KEY, DEEPL_API_KEY; опционально HUGGINGFACE_TOKEN.
+ * Рисование: без ключей через AI Horde (модель Deliberate); с HUGGINGFACE_TOKEN — через Hugging Face.
  */
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -117,29 +117,38 @@ export default {
         body: JSON.stringify({
           prompt: prompt + ", beautiful art, detailed",
           params: { width: 512, height: 512, steps: 20, n: 1 },
+          models: ["Deliberate"],
           apikey: "0000000000",
         }),
       });
       if (!sub.ok) {
-        return new Response(JSON.stringify({ error: "Horde submit failed" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        const errBody = await sub.json().catch(() => ({}));
+        const msg = errBody.message || errBody.err || "Horde submit failed";
+        return new Response(JSON.stringify({ error: msg }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
       const subData = await sub.json();
       const id = subData.id;
       if (!id) {
         return new Response(JSON.stringify({ error: "Horde no id" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
       }
-      const deadline = Date.now() + 28000;
+      const deadline = Date.now() + 55000;
       while (Date.now() < deadline) {
-        await new Promise((r) => setTimeout(r, 3000));
+        await new Promise((r) => setTimeout(r, 2000));
+        const checkRes = await fetch(base + "/generate/check/" + id);
+        if (!checkRes.ok) continue;
+        const check = await checkRes.json();
+        if (check.faulted || check.is_possible === false) {
+          return new Response(JSON.stringify({ error: "Horde faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
+        }
+        const done = check.done === true || check.done === 1;
+        if (!done) continue;
         const stRes = await fetch(base + "/generate/status/" + id);
         if (!stRes.ok) continue;
         const st = await stRes.json();
-        if (st.faulted || st.is_possible === false) {
-          return new Response(JSON.stringify({ error: "Horde faulted" }), { status: 502, headers: { "Content-Type": "application/json", ...CORS } });
-        }
-        if (st.done && st.generations && st.generations[0] && st.generations[0].img) {
+        if (st.generations && st.generations[0] && st.generations[0].img) {
           return new Response(JSON.stringify({ image: st.generations[0].img }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
         }
+        break;
       }
       return new Response(JSON.stringify({ error: "Horde timeout" }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
     }
