@@ -119,15 +119,18 @@
 
       <!-- Поле ввода: текст, микрофон, отправить, опции (голос/картинки) -->
       <div class="guardian-chat__input-wrap">
+        <div id="guardian-attach-preview" class="guardian-chat__attach-preview" aria-hidden="true"></div>
         <textarea
           id="guardian-input"
           class="guardian-chat__input"
           rows="3"
-          placeholder="Напиши или скажи Хранителю…"
+          placeholder="Напиши или скажи Хранителю… Можно прикрепить фото 📷"
           data-i18n-placeholder="guardian_placeholder"
           aria-label="Сообщение Хранителю"
         ></textarea>
+        <input type="file" id="guardian-attach-image" accept="image/*" class="guardian-chat__file-input" aria-hidden="true" />
         <div class="guardian-chat__actions">
+          <button type="button" id="guardian-attach-photo" class="guardian-chat__attach" aria-label="Прикрепить фото" title="Отправить фото Собеседнику">📷</button>
           <button type="button" id="guardian-mic" class="guardian-chat__mic" aria-label="Говорить голосом" title="Говорить голосом">🎤</button>
           <button type="button" id="guardian-send" class="guardian-chat__send" aria-label="Отправить сообщение" title="Отправить сообщение (рисование бесплатно)">
             <span aria-hidden="true">Отправить</span>
@@ -145,7 +148,7 @@
           </details>
         </div>
       </div>
-      <p class="guardian-chat__hint" data-i18n="guardian_hint">🎤 голос · ⋯ опции · нарисуй [описание] · найди фото [тема]. Рисование бесплатно.</p>
+      <p class="guardian-chat__hint" data-i18n="guardian_hint">📷 прикрепи фото · «найди фото из книги» · нарисуй [кактус]. Рисование бесплатно.</p>
     </div>
   </div>
 

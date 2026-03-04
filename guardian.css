@@ -202,6 +202,16 @@
   font-size: 1rem;
 }
 
+/* Фото, прикреплённое пользователем в сообщении */
+.guardian-msg__user-img {
+  display: block;
+  max-width: 200px;
+  max-height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
 /* Поле ввода — тёмно-синий, белый текст */
 .guardian-chat__input-wrap {
   display: flex;
@@ -229,7 +239,54 @@
   color: var(--cactus-muted-on-dark);
 }
 
-/* Ряд кнопок: микрофон, отправить, опции */
+/* Скрытый input для выбора фото */
+.guardian-chat__file-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Превью прикреплённого фото */
+.guardian-chat__attach-preview {
+  display: none;
+  margin-bottom: 0.35rem;
+  padding: 0.35rem;
+  background: var(--cactus-bg-soft);
+  border: 1px solid var(--cactus-border);
+  border-radius: 8px;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.guardian-chat__attach-preview.is-visible {
+  display: flex;
+}
+
+.guardian-chat__attach-preview img {
+  max-width: 80px;
+  max-height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.guardian-chat__attach-preview .guardian-chat__attach-remove {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--cactus-border);
+  background: transparent;
+  color: var(--cactus-text-on-dark);
+  cursor: pointer;
+}
+
+.guardian-chat__attach-preview .guardian-chat__attach-remove:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ряд кнопок: прикрепить фото, микрофон, отправить, опции */
 .guardian-chat__actions {
   display: flex;
   align-items: center;
@@ -237,6 +294,7 @@
   flex-shrink: 0;
 }
 
+.guardian-chat__attach,
 .guardian-chat__send,
 .guardian-chat__mic {
   min-height: 44px;
@@ -252,6 +310,7 @@
   transition: background 0.2s, transform 0.2s;
 }
 
+.guardian-chat__attach,
 .guardian-chat__mic {
   width: 44px;
   height: 44px;
@@ -264,6 +323,7 @@
   min-width: 6rem;
 }
 
+.guardian-chat__attach:hover,
 .guardian-chat__send:hover,
 .guardian-chat__mic:hover {
   background: var(--cactus-accent-hover);

@@ -96,6 +96,12 @@
   var messagesEl = document.getElementById("guardian-messages");
   var inputEl    = document.getElementById("guardian-input");
   var sendBtn    = document.getElementById("guardian-send");
+  var attachBtn  = document.getElementById("guardian-attach-photo");
+  var attachInput = document.getElementById("guardian-attach-image");
+  var attachPreview = document.getElementById("guardian-attach-preview");
+
+  /** Прикреплённое фото: { dataUrl, base64, mime } или null */
+  var attachedImage = null;
 
   if (!messagesEl || !inputEl || !sendBtn) return;
 
@@ -110,6 +116,48 @@
     }
   })();
 
+  /* ── Прикрепить фото для отправки Собеседнику ── */
+  function clearAttachedImage() {
+    attachedImage = null;
+    if (attachPreview) {
+      attachPreview.classList.remove("is-visible");
+      attachPreview.innerHTML = "";
+    }
+    if (attachInput) attachInput.value = "";
+  }
+
+  if (attachBtn && attachInput && attachPreview) {
+    attachBtn.addEventListener("click", function () { attachInput.click(); });
+    attachInput.addEventListener("change", function () {
+      var file = this.files && this.files[0];
+      if (!file || !file.type.startsWith("image/")) return;
+      var reader = new FileReader();
+      reader.onload = function () {
+        var dataUrl = reader.result;
+        var base64 = "";
+        var mime = "image/jpeg";
+        if (typeof dataUrl === "string" && dataUrl.indexOf("base64,") >= 0) {
+          base64 = dataUrl.split("base64,")[1] || "";
+          mime = dataUrl.indexOf("image/png") >= 0 ? "image/png" : "image/jpeg";
+        }
+        attachedImage = { dataUrl: dataUrl, base64: base64, mime: mime };
+        attachPreview.innerHTML = "";
+        var img = document.createElement("img");
+        img.src = dataUrl;
+        img.alt = "";
+        attachPreview.appendChild(img);
+        var removeBtn = document.createElement("button");
+        removeBtn.type = "button";
+        removeBtn.className = "guardian-chat__attach-remove";
+        removeBtn.textContent = "Убрать";
+        removeBtn.addEventListener("click", function () { clearAttachedImage(); });
+        attachPreview.appendChild(removeBtn);
+        attachPreview.classList.add("is-visible");
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
   /* ═══════ УТИЛИТЫ ═══════ */
 
   function getMode() {
@@ -121,7 +169,7 @@
     messagesEl.scrollTop = messagesEl.scrollHeight;
   }
 
-  function appendMessageStyled(role, text, extraClass, avatarSymbol) {
+  function appendMessageStyled(role, text, extraClass, avatarSymbol, userImageDataUrl) {
     var isUser = role === "user";
     var msg = document.createElement("div");
     msg.className = "guardian-msg guardian-msg--" + (isUser ? "user" : "bot") +
@@ -135,6 +183,14 @@
     var bubble = document.createElement("div");
     bubble.className = "guardian-msg__bubble";
 
+    if (userImageDataUrl && isUser) {
+      var img = document.createElement("img");
+      img.src = userImageDataUrl;
+      img.alt = "";
+      img.className = "guardian-msg__user-img";
+      bubble.appendChild(img);
+    }
+
     var p = document.createElement("p");
     p.className = "guardian-msg__text";
     p.textContent = text.replace(/\[ОТКРЫТЬ_МАСТЕРСКУЮ\]/g, "").trim();
@@ -147,8 +203,8 @@
     return msg;
   }
 
-  function appendMessage(role, text) {
-    return appendMessageStyled(role, text, null, role === "user" ? "✎" : "✦");
+  function appendMessage(role, text, userImageDataUrl) {
+    return appendMessageStyled(role, text, null, role === "user" ? "✎" : "✦", userImageDataUrl);
   }
 
   function showTyping(extraClass, symbol, label) {
@@ -396,9 +452,40 @@
 
   var IMG_RE    = /(?:^|\s)(нарисуй мне|нарисуй|покажи картину|покажи мне картину|изобрази|создай картину|нарисуй картину)\s+/i;
   var FIND_RE   = /(?:^|\s)(найди фото|найди картинку|найди картину|покажи фото|найди изображение|поищи фото|поищи картинку)\s+/i;
+  var BOOK_RE   = /(?:из книги|из книжки|картинк[ау] из книги|фото из книги|покажи из книги|найди в книге|покажи картинку из книги|иллюстраци[яи] из книги)/i;
   var MAP_RE    = /(?:^|\s)(найди карту|покажи карту|найди на карте|покажи на карте|где находится|карта)\s+/i;
   var ROUTE_RE  = /(?:маршрут|проложи|как добраться|как попасть|как доехать|как дойти|дорога|путь).*(?:из|от)\s+(.+?)\s+(?:в|до|к)\s+(.+?)(?:\s*[.!?]|$)/i;
   var CF_IMAGE_URL = workerBase ? workerBase + "/v1/image" : "";
+
+  /* Пути к иллюстрациям книги Кактусология (media/image1.jpeg … image100.jpeg; 21,26 — .jpg; 79 — .png) */
+  function getBookImagePath(n) {
+    var ext = (n === 21 || n === 26) ? ".jpg" : (n === 79) ? ".png" : ".jpeg";
+    return "книга-кактусология/media/image" + n + ext;
+  }
+
+  /* Показать картинки из книги Кактусология */
+  function startFindingFromBook() {
+    var indices = [];
+    for (var i = 1; i <= 100; i++) indices.push(i);
+    for (var j = indices.length - 1; j > 0; j--) {
+      var r = Math.floor(Math.random() * (j + 1));
+      var t = indices[j]; indices[j] = indices[r]; indices[r] = t;
+    }
+    var count = 3;
+    var baseUrl = "";
+    if (window.APP_CONFIG && window.APP_CONFIG.baseUrl) {
+      baseUrl = window.APP_CONFIG.baseUrl;
+    } else if (window.location.origin) {
+      var path = (window.location.pathname || "").replace(/\/[^/]*$/, "/");
+      baseUrl = window.location.origin + path;
+    }
+    for (var k = 0; k < count && k < indices.length; k++) {
+      var card = buildImageCard("Из книги Кактусология", baseUrl + getBookImagePath(indices[k]), "book_" + indices[k], true);
+      card.el.querySelector(".guardian-msg__image-delete").style.display = "none";
+      messagesEl.appendChild(card.el);
+    }
+    scrollToBottom();
+  }
 
   /* ── Поиск реальной фотографии через LoremFlickr (бесплатно, без ключей) ── */
   function findRealPhoto(subject, onSuccess, onFail) {
@@ -732,10 +819,11 @@
     var enc = encodeURIComponent(englishPrompt);
     var encFull = encodeURIComponent(englishPrompt + ", beautiful art, detailed, soft light");
 
+    var encCactus = encodeURIComponent(englishPrompt + ", botanical, realistic, not cartoon");
     var urls = [
-      "https://gen.pollinations.ai/image/" + encFull + "?model=flux&width=768&height=512&seed=" + seed,
+      "https://gen.pollinations.ai/image/" + encCactus + "?model=flux&width=768&height=512&seed=" + seed,
       "https://gen.pollinations.ai/image/" + enc + "?model=flux&width=512&height=512&seed=" + seed,
-      "https://image.pollinations.ai/prompt/" + encFull + "?width=768&height=512&seed=" + seed + "&nologo=true",
+      "https://image.pollinations.ai/prompt/" + encCactus + "?width=768&height=512&seed=" + seed + "&nologo=true",
       "https://image.pollinations.ai/prompt/" + encFull + "?width=768&height=512&seed=" + seed + "&model=flux&nologo=true",
       "https://image.pollinations.ai/prompt/" + enc + "?width=512&height=512&seed=" + seed + "&model=turbo",
       "https://image.pollinations.ai/prompt/" + enc + "?width=512&height=512&seed=" + seed,
@@ -767,8 +855,8 @@
 
   /* ── Основная точка входа: воркер → AI Horde (бесплатно) → Pollinations ── */
   function generateImage(englishPrompt, img, caption, subject, downloadBtn, imageId) {
-    var cactusHint = " cactus succulent plant botanical illustration";
-    if (!/cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert/i.test(englishPrompt)) {
+    var cactusHint = " cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon";
+    if (!/cactus|succulent|botanical|plant|cacti|mammillaria|opuntia|echinocactus|asclepiad|desert|spines|колюч/i.test(englishPrompt)) {
       englishPrompt = (englishPrompt + cactusHint).trim();
     }
     generateImageCF(englishPrompt, img, caption, subject, downloadBtn, imageId, function (workerErr) {
@@ -829,6 +917,12 @@
     if (mMap) {
       var place = userText.slice(userText.indexOf(mMap[0]) + mMap[0].length).trim();
       if (place) { startMap(place); return; }
+    }
+
+    /* Картинки из книги Кактусология */
+    if (BOOK_RE.test(userText)) {
+      startFindingFromBook();
+      return;
     }
 
     /* Поиск реального фото */
@@ -979,13 +1073,55 @@
   function sendMessage() {
     if (isLoading) return;
     var text = (inputEl.value || "").trim();
-    if (!text) return;
+    var hasImage = attachedImage && attachedImage.base64;
+
+    if (!text && !hasImage) return;
+
+    if (!text && hasImage) text = "Что на этом фото?";
 
     inputEl.value = "";
     inputEl.style.height = "auto";
     isLoading = true;
     sendBtn.disabled = true;
     setThinking(true);
+
+    /* Отправка с фото: только через воркер /v1/chat-image */
+    if (hasImage) {
+      if (!workerBase) {
+        finishLoading();
+        showError("Чтобы отправить фото Собеседнику, укажи воркер (workerUrl) в config.js.");
+        return;
+      }
+      var imgToSend = attachedImage;
+      clearAttachedImage();
+      appendMessage("user", text, imgToSend.dataUrl);
+      history.push({ role: "user", text: text });
+      showTyping();
+      fetch(workerBase + "/v1/chat-image", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: text,
+          image: imgToSend.base64,
+          mime: imgToSend.mime,
+        }),
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          hideTyping();
+          finishLoading();
+          var reply = (data && data.reply) ? data.reply : (data && data.error) ? data.error : "Не удалось получить ответ.";
+          appendMessage("model", reply);
+          history.push({ role: "model", text: reply });
+          speak(reply);
+        })
+        .catch(function () {
+          hideTyping();
+          finishLoading();
+          showError("Сервер не ответил. Попробуй ещё раз.");
+        });
+      return;
+    }
 
     appendMessage("user", text);
     history.push({ role: "user", text: text });

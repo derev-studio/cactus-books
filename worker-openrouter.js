@@ -113,9 +113,13 @@ export default {
       const base = "https://stablehorde.net/api/v2";
       const hordeKey = "0000000000";
 
-      // Step A: minimal valid payload (do NOT add extra fields until this works)
+      // Промпт для узнаваемого кактуса: ботаническая точность, колючки, не мультяшный стиль
+      const cactusPrompt =
+        (prompt.toLowerCase().includes("cactus") || prompt.toLowerCase().includes("кактус") || prompt.toLowerCase().includes("succulent"))
+          ? prompt + ", cactus succulent plant, green stem, spines, areoles, botanical illustration, realistic, not cartoon"
+          : prompt + ", cactus or succulent plant, green stem, spines, botanical, realistic photograph";
       const hordePayload = {
-        prompt: prompt + ", photo, realistic",
+        prompt: cactusPrompt,
         params: {
           width: 512,
           height: 512,
@@ -241,6 +245,73 @@ export default {
         horde_status: sub.status,
         horde_raw: subRaw,
       }), { status: 504, headers: { "Content-Type": "application/json", ...CORS } });
+    }
+
+    /* ── Чат с картинкой: Колючий Собеседник отвечает на сообщение + фото (OpenRouter vision) ── */
+    if (url.pathname === "/v1/chat-image" && request.method === "POST") {
+      const key = env.OPENROUTER_API_KEY;
+      if (!key) {
+        return new Response(
+          JSON.stringify({ error: "OPENROUTER_API_KEY not set" }),
+          { status: 503, headers: { "Content-Type": "application/json", ...CORS } }
+        );
+      }
+      let chatBody;
+      try { chatBody = await request.json(); } catch {
+        return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const imageBase64 = chatBody.image;
+      const message = typeof chatBody.message === "string" ? chatBody.message.trim().slice(0, 1000) : "";
+      if (!imageBase64 || typeof imageBase64 !== "string") {
+        return new Response(JSON.stringify({ error: "Missing image (base64)" }), { status: 400, headers: { "Content-Type": "application/json", ...CORS } });
+      }
+      const mime = chatBody.mime === "image/png" ? "image/png" : "image/jpeg";
+      const dataUrl = "data:" + mime + ";base64," + imageBase64;
+      const chatSystemPrompt =
+        "Ты — Колючий Собеседник (守護者), эксперт по кактусам и растениям. " +
+        "Пользователь отправил тебе фото и сообщение. Ответь разговором: что ты видишь на фото (растение, кактус, суккулент, пейзаж и т.д.), ответь на его вопрос. " +
+        "Будь кратким, дружелюбным, на том же языке, что и пользователь. Ответь только текстом, без JSON и без markdown.";
+      const model = "qwen/qwen-2.5-vl-72b-instruct";
+      try {
+        const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + key,
+            "HTTP-Referer": request.url || "https://cactus-openrouter.qerevv.workers.dev",
+          },
+          body: JSON.stringify({
+            model,
+            messages: [
+              { role: "system", content: chatSystemPrompt },
+              {
+                role: "user",
+                content: [
+                  { type: "text", text: message || "Что на этом фото? Ответь кратко." },
+                  { type: "image_url", image_url: { url: dataUrl } },
+                ],
+              },
+            ],
+            max_tokens: 600,
+            temperature: 0.5,
+          }),
+        });
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { data = {}; }
+        const reply = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content
+          ? String(data.choices[0].message.content).trim()
+          : "";
+        if (!reply && !res.ok) {
+          return new Response(JSON.stringify({ error: "Vision error", raw: text }), { status: res.status || 502, headers: { "Content-Type": "application/json", ...CORS } });
+        }
+        return new Response(JSON.stringify({ reply: reply || "Не удалось разобрать ответ." }), { status: 200, headers: { "Content-Type": "application/json", ...CORS } });
+      } catch (err) {
+        return new Response(
+          JSON.stringify({ error: "Chat image error: " + err.message }),
+          { status: 502, headers: { "Content-Type": "application/json", ...CORS } }
+        );
+      }
     }
 
     if (url.pathname !== "/v1/vision" || request.method !== "POST") {
