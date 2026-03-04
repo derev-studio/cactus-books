@@ -116,9 +116,8 @@ export default {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           prompt: prompt + ", beautiful art, detailed",
-          params: { width: 512, height: 512, steps: 20, n: 1, sampler_name: "k_euler" },
+          params: { width: 512, height: 512, n: 1, sampler_name: "k_euler_a", clip_skip: 1 },
           models: ["Deliberate"],
-          nsfw: false,
           apikey: "0000000000",
         }),
       });
