@@ -13,32 +13,37 @@
 <link rel="stylesheet" href="../page-common.css" />
 <style>
 body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 0 1rem 1rem; padding-top: 0; }
-.book-header { position: sticky; top: 0; z-index: 50; background: var(--cactus-bg-soft); border-bottom: 1px solid var(--cactus-border); box-shadow: 0 1px 0 rgba(0,0,0,0.15); padding: 0.75rem max(1rem, env(safe-area-inset-left)) 0.75rem max(1rem, env(safe-area-inset-right)); padding-top: max(0.75rem, env(safe-area-inset-top)); }
+.book-header { position: sticky; top: 0; z-index: 50; background: var(--cactus-bg-soft); border-bottom: 1px solid var(--cactus-border); box-shadow: 0 1px 0 rgba(0,0,0,0.15); padding: 0.6rem max(1rem, env(safe-area-inset-left)) 0.75rem max(1rem, env(safe-area-inset-right)); padding-top: max(0.6rem, env(safe-area-inset-top)); }
+.book-toolbar { display: flex; flex-wrap: nowrap; align-items: center; gap: 0.75rem 1rem; max-width: 52rem; margin: 0 auto; }
+.book-toolbar__back { flex-shrink: 0; }
+.book-toolbar__langs { flex-shrink: 0; font-size: 0.95rem; white-space: nowrap; }
+.book-toolbar__langs a { color: #b8e0ff; text-decoration: none; }
+.book-toolbar__langs a:hover { text-decoration: underline; }
+.book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 34px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; white-space: nowrap; }
+.book-toolbar .book-btn:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.book-toolbar .globe-in-row { position: relative; right: auto; top: auto; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-left: auto; }
+.book-toolbar .globe-in-row .globe-wrap { display: flex; align-items: center; }
+.book-toolbar .globe-in-row .globe-btn { width: 38px; height: 38px; min-width: 38px; min-height: 38px; border-radius: 50%; font-size: 1.3rem; line-height: 1; background: #fff; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 2px 10px rgba(0,0,0,0.3); animation: none !important; display: flex; align-items: center; justify-content: center; padding: 0; }
+.book-toolbar .globe-in-row .globe-btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.35); }
+.book-toolbar .globe-in-row .globe-btn__icon { font-size: 1.3rem; }
+.book-title-block { max-width: 52rem; margin: 0 auto; padding: 0.5rem max(1rem, env(safe-area-inset-left)) 0.75rem; }
+.book-title-block h1 { margin: 0 0 0.2rem; font-size: 1.6rem; font-weight: 700; color: var(--cactus-text-on-dark); line-height: 1.2; }
+.book-title-block .book-subtitle { margin: 0; font-size: 1rem; color: var(--cactus-muted-on-dark); line-height: 1.35; }
 .page-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem; background: var(--cactus-reading-bg); color: var(--cactus-reading-text); box-shadow: var(--cactus-reading-shadow); border-radius: var(--cactus-reading-radius); }
 .page-content .book-img { margin: 1rem 0; }
 .page-content .book-img img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
-.book-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; max-width: 52rem; margin: 0 auto; }
-.book-toolbar__back { margin-right: 0.5rem; }
-.book-toolbar__title { font-size: 1rem; font-weight: 700; margin: 0; flex: 1 1 auto; min-width: 0; color: var(--cactus-text-on-dark); }
-.book-toolbar__title span { font-weight: 400; opacity: 0.9; font-size: 0.9rem; }
-.book-toolbar__langs { font-size: 0.9rem; }
-.book-toolbar__langs a { color: #b8e0ff; text-decoration: none; }
-.book-toolbar__langs a:hover { text-decoration: underline; }
-.book-toolbar__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
-.book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; }
-.book-toolbar .book-btn:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-.book-toolbar .globe-in-row { position: relative; right: auto; top: auto; display: flex; align-items: center; margin-left: 0.25rem; }
-.book-toolbar .globe-in-row .globe-btn { width: 40px; height: 40px; font-size: 1.25rem; background: #fff; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-.book-toolbar .globe-in-row .globe-btn:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
 </style>
 </head>
 <body class="book-reader-page">
 <header class="book-header">
   <div class="book-toolbar">
     <a href="../home.html" class="book-toolbar__back book-btn">← Back to main</a>
-    <h1 class="book-toolbar__title">Cactology <span>— history of discoveries and great scholars, from Columbus to the present day.</span></h1>
-    <span class="book-toolbar__langs"><span style="opacity:0.85;">Lang:</span> <a href="book-read.html">UA</a> · <a href="book-read-ru.html">RU</a> · <span style="opacity:0.9;">EN</span></span>
+    <span class="book-toolbar__langs"><a href="book-read.html">UA</a> · <a href="book-read-ru.html">RU</a> · <span style="opacity:0.9;">EN</span></span>
     <div id="globe-container" class="globe-fixed globe-in-row" aria-label="Choose language"></div>
+  </div>
+  <div class="book-title-block">
+    <h1>Cactology</h1>
+    <p class="book-subtitle">History of discoveries and great scholars from Columbus to the present day</p>
   </div>
 </header>
 <div class="page-main">
@@ -1410,9 +1415,10 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 (function () {
   var globe = document.getElementById('globe-container');
   if (globe && window.I18n) window.I18n.init(globe);
+  var googleLang = function (code) { var map = { jp: 'ja' }; return map[code] || code; };
   var getGoogleTranslateUrl = function (tl) {
     var url = 'https://translate.google.com/translate?u=' + encodeURIComponent(window.location.href);
-    if (tl) url += '&tl=' + encodeURIComponent(tl);
+    if (tl) url += '&tl=' + encodeURIComponent(googleLang(tl));
     return url;
   };
   window.addEventListener('soulart-language-change', function (e) {
