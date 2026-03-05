@@ -182,13 +182,13 @@ body,
   z-index: 0;
 }
 
-/* Фото в раме по центру на общем фоне сайта: целиком видно, без обрезки */
+/* Фото в раме по центру: не доходит до низа, чтобы под ним оставалась полоса для кнопок */
 .intro__photo-frame {
   position: absolute;
-  left: 5%;
-  right: 5%;
+  left: 6%;
+  right: 6%;
   top: 5%;
-  bottom: 5%;
+  bottom: 22%;
   background-image: url("./intro-bg.jpg");
   background-size: contain;
   background-position: center;
@@ -206,10 +206,12 @@ body,
   bottom: 0;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
-  padding: clamp(1.25rem, 4vw, 2rem) max(5%, 2rem) max(clamp(3rem, 12vh, 5rem), env(safe-area-inset-bottom));
-  background: linear-gradient(to top, rgba(26, 39, 68, 0.92) 0%, rgba(26, 39, 68, 0.4) 50%, transparent 100%);
+  padding: clamp(1.5rem, 5vw, 2.5rem) max(6%, 1.5rem) max(clamp(3rem, 10vh, 5rem), env(safe-area-inset-bottom));
+  padding-left: max(6%, 1.5rem);
+  padding-right: max(6%, 1.5rem);
+  background: linear-gradient(to top, rgba(26, 39, 68, 0.96) 0%, rgba(26, 39, 68, 0.5) 60%, transparent 100%);
   transition: opacity 0.5s ease-out;
 }
 
@@ -220,10 +222,13 @@ body,
 
 .intro__buttons {
   display: flex;
-  gap: 1.5rem;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
 }
 
 .intro__buttons.intro__buttons--hidden {
@@ -284,6 +289,23 @@ body,
   border-color: rgba(0, 0, 0, 0.1);
   text-transform: none;
   letter-spacing: 0.04em;
+}
+
+@media (max-width: 480px) {
+  .intro__photo-frame {
+    bottom: 26%;
+    left: 4%;
+    right: 4%;
+  }
+  .intro__buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .intro__btn {
+    width: 100%;
+    min-height: 44px;
+    font-size: clamp(0.95rem, 4vw, 1.15rem);
+  }
 }
 
 .intro__video-wrap {
