@@ -208,7 +208,8 @@ body,
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: clamp(1rem, 3vw, 1.5rem) max(5%, 2rem) max(clamp(3rem, 12vh, 5rem), env(safe-area-inset-bottom));
+  padding: clamp(1.25rem, 4vw, 2rem) max(5%, 2rem) max(clamp(3rem, 12vh, 5rem), env(safe-area-inset-bottom));
+  background: linear-gradient(to top, rgba(26, 39, 68, 0.92) 0%, rgba(26, 39, 68, 0.4) 50%, transparent 100%);
   transition: opacity 0.5s ease-out;
 }
 
@@ -230,47 +231,57 @@ body,
   pointer-events: none;
 }
 
-/* Стартовые кнопки: тонкая белая рамка, прозрачный фон, свечение при наведении, крупный шрифт */
+/* Стартовые кнопки — в цвете остального сайта (как в шапке и на home) */
 .intro__btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.25rem;
   min-height: 48px;
   min-width: 0;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  background: transparent;
-  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%);
+  color: #2c3e50;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: clamp(1rem, 2.8vw, 1.35rem);
-  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-size: clamp(1rem, 2.8vw, 1.25rem);
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.22);
 }
 
 .intro__btn:hover,
 .intro__btn--primary:hover {
-  border-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 24px rgba(255, 255, 255, 0.35), 0 0 48px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 3px rgba(0, 0, 0, 0.1),
+    0 4px 14px rgba(0, 0, 0, 0.32);
   transform: translateY(-1px);
 }
 
 .intro__btn:active,
 .intro__btn--primary:active {
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  background: linear-gradient(180deg, #a8c0d4 0%, #c8d4dc 100%);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
   transform: translateY(0);
 }
 
 .intro__btn--primary {
-  background: transparent;
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%);
+  color: #2c3e50;
+  border-color: rgba(0, 0, 0, 0.1);
   text-transform: none;
   letter-spacing: 0.04em;
 }
