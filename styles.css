@@ -178,15 +178,17 @@ body,
   z-index: 0;
 }
 
-/* Сетка: кнопки слева и справа от картинки (десктоп), картинка не перекрывается */
+/* Сетка: узкие боковые колонки под кнопки, широкая центральная под картинку */
 .intro__hero-wrap {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 220px 1fr 220px;
+  grid-template-columns: minmax(120px, 1fr) minmax(600px, 1000px) minmax(120px, 1fr);
   align-items: end;
-  gap: 1rem;
+  gap: 20px;
   min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
   box-sizing: border-box;
 }
