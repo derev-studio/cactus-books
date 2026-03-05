@@ -15,16 +15,20 @@
   <body>
     <!-- Основной SPA-контейнер -->
     <main id="app-root">
-      <!-- Стартовая страница: рама start.png, надпись, кнопки Заставка / Сайт -->
+      <!-- Стартовая страница: сетка — кнопки слева/справа от картинки (десктоп), под картинкой (мобильный) -->
       <section id="intro-layer" class="intro intro--active">
         <div class="intro__bg" aria-hidden="true"></div>
-        <div class="intro__photo-frame" aria-hidden="true"></div>
 
-        <div id="intro-content" class="intro__content">
-          <div id="intro-buttons" class="intro__buttons">
+        <div id="intro-content" class="intro__hero-wrap">
+          <div class="intro__col intro__col--left">
             <button id="intro-btn-zastavka" class="intro__btn" type="button" aria-label="Смотреть заставку">
               СМОТРЕТЬ ЗАСТАВКУ
             </button>
+          </div>
+          <div class="intro__col intro__col--center">
+            <div class="intro__photo-frame" aria-hidden="true"></div>
+          </div>
+          <div class="intro__col intro__col--right">
             <a id="intro-btn-site" class="intro__btn intro__btn--primary" href="home.html" aria-label="Войти в Кактусярий">
               Войти в Кактусярий
             </a>

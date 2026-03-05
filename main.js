@@ -751,14 +751,13 @@ function playPapyrusClick(variant) {
 function setupIntroScene() {
   const intro = document.getElementById("intro-layer");
   const contentEl = document.getElementById("intro-content");
-  const buttonsWrap = document.getElementById("intro-buttons");
   const btnZastavka = document.getElementById("intro-btn-zastavka");
   const btnSite = document.getElementById("intro-btn-site");
   const videoWrap = document.getElementById("intro-video-wrap");
   const video = document.getElementById("intro-video");
   const appShell = document.getElementById("app-shell");
 
-  if (!intro || !contentEl || !buttonsWrap || !btnZastavka || !btnSite || !videoWrap || !video || !appShell) return;
+  if (!intro || !contentEl || !btnZastavka || !btnSite || !videoWrap || !video || !appShell) return;
 
   function goToMain() {
     intro.classList.remove("intro--active");
