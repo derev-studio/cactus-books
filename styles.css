@@ -178,19 +178,10 @@ body,
   z-index: 0;
 }
 
-/* Сетка: узкие боковые колонки под кнопки, широкая центральная под картинку */
+/* Картинка на всю ширину экрана */
 .intro__hero-wrap {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(600px, 1000px) minmax(120px, 1fr);
-  align-items: end;
-  gap: 20px;
-  min-height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
-  box-sizing: border-box;
 }
 
 .intro__hero-wrap.intro__content--hidden {
@@ -198,92 +189,41 @@ body,
   pointer-events: none;
 }
 
-.intro__col {
-  min-width: 0;
-}
-
-.intro__col--left,
-.intro__col--right {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: clamp(1rem, 3vh, 2rem);
-}
-
-.intro__col--center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 0;
-}
-
-/* Картинка в своей колонке: width 100%, не сжимается по контенту */
-.intro__photo-frame {
+.intro__image {
   width: 100%;
-  height: 100%;
-  min-height: 50vh;
-  background-image: url("./intro-bg.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  height: auto;
+  display: block;
+  vertical-align: middle;
 }
 
-/* Планшет и телефон: одна колонка, картинка сверху, кнопки снизу */
-@media (max-width: 900px) {
-  .intro__hero-wrap {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    align-items: stretch;
-  }
-  .intro__col--center {
-    grid-column: 1 / -1;
-    min-height: 60vh;
-  }
-  .intro__col--left,
-  .intro__col--right {
-    padding: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
+/* Кнопки поверх картинки (абсолютное позиционирование) */
+.intro__col--left {
+  position: absolute;
+  bottom: max(40px, env(safe-area-inset-bottom));
+  left: max(40px, env(safe-area-inset-left));
 }
 
-@media (max-width: 520px) {
-  .intro__hero-wrap {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto;
-  }
-  .intro__col--center {
-    grid-column: 1;
-    min-height: 50vh;
-  }
-  .intro__col--left {
-    order: 2;
-  }
-  .intro__col--right {
-    order: 3;
-  }
-  .intro__btn {
-    width: 100%;
-  }
+.intro__col--right {
+  position: absolute;
+  bottom: max(40px, env(safe-area-inset-bottom));
+  right: max(40px, env(safe-area-inset-right));
 }
 
-/* Стартовые кнопки — в цвете остального сайта (как в шапке и на home) */
+/* Полупрозрачные кнопки с размытием */
 .intro__btn {
   padding: 0.6rem 1.25rem;
   min-height: 48px;
   min-width: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: clamp(1rem, 2.8vw, 1.25rem);
   font-weight: 700;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   text-decoration: none;
@@ -292,37 +232,48 @@ body,
   justify-content: center;
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   -webkit-tap-highlight-color: transparent;
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.12),
-    0 2px 6px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .intro__btn:hover,
 .intro__btn--primary:hover {
-  background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%);
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 3px rgba(0, 0, 0, 0.1),
-    0 4px 14px rgba(0, 0, 0, 0.32);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
 }
 
 .intro__btn:active,
 .intro__btn--primary:active {
-  background: linear-gradient(180deg, #a8c0d4 0%, #c8d4dc 100%);
-  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25);
   transform: translateY(0);
 }
 
 .intro__btn--primary {
-  background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%);
+  background: rgba(255, 255, 255, 0.85);
   color: #2c3e50;
-  border-color: rgba(0, 0, 0, 0.1);
   text-transform: none;
   letter-spacing: 0.04em;
+}
+
+/* Мобильный: кнопки под картинкой, в колонку */
+@media (max-width: 768px) {
+  .intro__col--left,
+  .intro__col--right {
+    position: static;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .intro__hero-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__btn {
+    width: 100%;
+    max-width: 280px;
+  }
 }
 
 .intro__video-wrap {
