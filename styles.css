@@ -208,7 +208,7 @@ body,
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: clamp(1rem, 3vw, 1.5rem) max(5%, 2rem) max(2vh, env(safe-area-inset-bottom));
+  padding: clamp(1rem, 3vw, 1.5rem) max(5%, 2rem) max(clamp(3rem, 12vh, 5rem), env(safe-area-inset-bottom));
   transition: opacity 0.5s ease-out;
 }
 
@@ -271,6 +271,8 @@ body,
   background: transparent;
   color: #fff;
   border-color: rgba(255, 255, 255, 0.9);
+  text-transform: none;
+  letter-spacing: 0.04em;
 }
 
 .intro__video-wrap {
