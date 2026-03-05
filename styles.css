@@ -178,14 +178,12 @@ body,
   z-index: 0;
 }
 
-/* Hero: на десктопе — прокрутка вверх показывает верх кактуса; старт с кнопками внизу */
+/* Hero: прокручивается только блок с картинкой; кнопки вне его и зафиксированы внизу экрана */
 .intro__hero-wrap {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
   height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .intro__hero-wrap.intro__content--hidden {
@@ -193,8 +191,13 @@ body,
   pointer-events: none;
 }
 
+/* Прокрутка только у блока с картинкой — кнопки не внутри него */
 .intro__image-wrap {
-  display: block;
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .intro__image {
@@ -205,12 +208,13 @@ body,
   display: block;
 }
 
-/* Кнопки поверх картинки, чуть выше низа — всегда в зоне видимости */
+/* Кнопки — отдельно, фиксированы внизу экрана, не двигаются при скролле картинки */
 .intro__col--left,
 .intro__col--right {
-  position: absolute;
+  position: fixed;
   bottom: max(clamp(24px, 6vh, 72px), env(safe-area-inset-bottom));
-  z-index: 5;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .intro__col--left {
@@ -266,22 +270,12 @@ body,
   letter-spacing: 0.04em;
 }
 
-/* Мобильный: картинка 56vh, бока видны — можно двигать влево-вправо; кнопки под ней */
+/* Мобильный: картинка 56vh, бока видны — можно двигать влево-вправо; кнопки по-прежнему фиксированы внизу */
 @media (max-width: 700px) {
-  .intro__hero-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    height: auto;
-    overflow-y: visible;
-    overflow-x: hidden;
-  }
-
   .intro__image-wrap {
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
   }
 
   .intro__image {
@@ -294,11 +288,8 @@ body,
 
   .intro__col--left,
   .intro__col--right {
-    position: static;
-    width: min(92vw, 520px);
-    margin: 14px auto 0 auto;
-    display: block;
-    text-align: center;
+    width: auto;
+    max-width: min(92vw, 520px);
   }
 
   .intro__btn {

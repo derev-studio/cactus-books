@@ -759,14 +759,16 @@ function setupIntroScene() {
 
   if (!intro || !contentEl || !btnZastavka || !btnSite || !videoWrap || !video || !appShell) return;
 
-  // Старт с видными кнопками: на десктопе прокрутить hero вниз; на мобильном — картинку по центру
+  // Старт с видными кнопками: прокрутить блок с картинкой вниз; на мобильном — картинку по центру по горизонтали
   function scrollIntroToStart() {
-    if (contentEl.scrollHeight > contentEl.clientHeight) {
-      contentEl.scrollTop = contentEl.scrollHeight - contentEl.clientHeight;
-    }
     const imgWrap = contentEl.querySelector(".intro__image-wrap");
-    if (imgWrap && imgWrap.scrollWidth > imgWrap.clientWidth) {
-      imgWrap.scrollLeft = (imgWrap.scrollWidth - imgWrap.clientWidth) / 2;
+    if (imgWrap) {
+      if (imgWrap.scrollHeight > imgWrap.clientHeight) {
+        imgWrap.scrollTop = imgWrap.scrollHeight - imgWrap.clientHeight;
+      }
+      if (imgWrap.scrollWidth > imgWrap.clientWidth) {
+        imgWrap.scrollLeft = (imgWrap.scrollWidth - imgWrap.clientWidth) / 2;
+      }
     }
   }
   if (typeof requestAnimationFrame !== "undefined") {
