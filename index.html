@@ -22,17 +22,17 @@
 
         <div id="intro-content" class="intro__content">
           <div id="intro-buttons" class="intro__buttons">
-            <button id="intro-btn-zastavka" class="intro__btn" type="button" data-i18n="intro_aria_zastavka" data-i18n-attr="aria-label">
-              <span data-i18n="intro_btn_zastavka">Заставка</span>
+            <button id="intro-btn-zastavka" class="intro__btn" type="button" aria-label="Смотреть заставку">
+              СМОТРЕТЬ ЗАСТАВКУ
             </button>
-            <button id="intro-btn-site" class="intro__btn intro__btn--primary" type="button" data-i18n="intro_aria_site" data-i18n-attr="aria-label">
-              <span data-i18n="intro_btn_site">Сайт</span>
-            </button>
+            <a id="intro-btn-site" class="intro__btn intro__btn--primary" href="home.html" aria-label="Войти на сайт">
+              ВОЙТИ НА САЙТ
+            </a>
           </div>
         </div>
 
         <div id="intro-video-wrap" class="intro__video-wrap" aria-hidden="true">
-          <video id="intro-video" class="intro__video" src="./video.mp4" preload="auto" playsinline>
+          <video id="intro-video" class="intro__video" src="./video.mp4" preload="metadata" playsinline>
             <span data-i18n="video_not_supported">Ваш браузер не поддерживает воспроизведение видео.</span>
           </video>
         </div>

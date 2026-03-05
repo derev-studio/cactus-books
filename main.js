@@ -788,13 +788,10 @@ function setupIntroScene() {
     }
   }
 
-  function onSiteClick() {
-    playClickSound();
-    goToMain();
+  btnZastavka.addEventListener("click", onZastavkaClick);
+  if (btnSite && btnSite.tagName !== "A") {
+    btnSite.addEventListener("click", () => { playClickSound(); goToMain(); }, { once: true });
   }
-
-  btnZastavka.addEventListener("click", onZastavkaClick, { once: true });
-  btnSite.addEventListener("click", onSiteClick, { once: true });
 }
 
 // ---------- МАГИЯ САКУРЫ (лепестки при клике по меню) ----------

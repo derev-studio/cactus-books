@@ -51,6 +51,30 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* Кнопка «Стартовая» в левом углу (только на home и т.п.) */
+.site-header__start-link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0.35rem 0.6rem;
+  margin-right: 0.5rem;
+  color: var(--cactus-text-on-dark, #e8ecf4);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+}
+.site-header__start-link:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
 .site-header__nav {
   flex: 1;
   display: flex;
