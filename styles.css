@@ -178,11 +178,14 @@ body,
   z-index: 0;
 }
 
-/* Hero: full-screen на десктопе, без прокрутки */
+/* Hero: на десктопе — прокрутка вверх показывает верх кактуса; старт с кнопками внизу */
 .intro__hero-wrap {
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .intro__hero-wrap.intro__content--hidden {
@@ -190,10 +193,15 @@ body,
   pointer-events: none;
 }
 
+.intro__image-wrap {
+  display: block;
+}
+
 .intro__image {
   width: 100%;
-  height: 100vh;
+  height: 135vh;
   object-fit: cover;
+  object-position: center bottom;
   display: block;
 }
 
@@ -258,10 +266,30 @@ body,
   letter-spacing: 0.04em;
 }
 
-/* Мобильный: картинка 56vh, кнопки под ней — крупные, по центру, стопкой */
+/* Мобильный: картинка 56vh, бока видны — можно двигать влево-вправо; кнопки под ней */
 @media (max-width: 700px) {
+  .intro__hero-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  .intro__image-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
   .intro__image {
     height: 56vh;
+    width: 130vw;
+    max-width: none;
+    object-fit: cover;
+    object-position: center center;
   }
 
   .intro__col--left,
@@ -271,12 +299,6 @@ body,
     margin: 14px auto 0 auto;
     display: block;
     text-align: center;
-  }
-
-  .intro__hero-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
   }
 
   .intro__btn {

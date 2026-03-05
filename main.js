@@ -759,6 +759,22 @@ function setupIntroScene() {
 
   if (!intro || !contentEl || !btnZastavka || !btnSite || !videoWrap || !video || !appShell) return;
 
+  // Старт с видными кнопками: на десктопе прокрутить hero вниз; на мобильном — картинку по центру
+  function scrollIntroToStart() {
+    if (contentEl.scrollHeight > contentEl.clientHeight) {
+      contentEl.scrollTop = contentEl.scrollHeight - contentEl.clientHeight;
+    }
+    const imgWrap = contentEl.querySelector(".intro__image-wrap");
+    if (imgWrap && imgWrap.scrollWidth > imgWrap.clientWidth) {
+      imgWrap.scrollLeft = (imgWrap.scrollWidth - imgWrap.clientWidth) / 2;
+    }
+  }
+  if (typeof requestAnimationFrame !== "undefined") {
+    requestAnimationFrame(() => { requestAnimationFrame(scrollIntroToStart); });
+  } else {
+    setTimeout(scrollIntroToStart, 50);
+  }
+
   function goToMain() {
     intro.classList.remove("intro--active");
     intro.classList.add("intro--hidden");
