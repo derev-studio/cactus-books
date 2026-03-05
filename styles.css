@@ -178,10 +178,11 @@ body,
   z-index: 0;
 }
 
-/* Картинка на всю ширину экрана */
+/* Hero: full-screen на десктопе, без прокрутки */
 .intro__hero-wrap {
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 .intro__hero-wrap.intro__content--hidden {
@@ -191,34 +192,37 @@ body,
 
 .intro__image {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  object-fit: cover;
   display: block;
-  vertical-align: middle;
 }
 
-/* Кнопки поверх картинки (абсолютное позиционирование) */
-.intro__col--left {
+/* Кнопки поверх картинки, чуть выше низа — всегда в зоне видимости */
+.intro__col--left,
+.intro__col--right {
   position: absolute;
-  bottom: max(40px, env(safe-area-inset-bottom));
-  left: max(40px, env(safe-area-inset-left));
+  bottom: max(clamp(24px, 6vh, 72px), env(safe-area-inset-bottom));
+  z-index: 5;
+}
+
+.intro__col--left {
+  left: max(clamp(16px, 4vw, 64px), env(safe-area-inset-left));
 }
 
 .intro__col--right {
-  position: absolute;
-  bottom: max(40px, env(safe-area-inset-bottom));
-  right: max(40px, env(safe-area-inset-right));
+  right: max(clamp(16px, 4vw, 64px), env(safe-area-inset-right));
 }
 
-/* Полупрозрачные кнопки с размытием */
+/* Полупрозрачные кнопки (цвет/оформление без изменений) */
 .intro__btn {
   padding: 0.6rem 1.25rem;
   min-height: 48px;
   min-width: 0;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -232,7 +236,7 @@ body,
   justify-content: center;
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .intro__btn:hover,
@@ -248,31 +252,36 @@ body,
 }
 
 .intro__btn--primary {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.82);
   color: #2c3e50;
   text-transform: none;
   letter-spacing: 0.04em;
 }
 
-/* Мобильный: кнопки под картинкой, в колонку */
-@media (max-width: 768px) {
+/* Мобильный: картинка 56vh, кнопки под ней — крупные, по центру, стопкой */
+@media (max-width: 700px) {
+  .intro__image {
+    height: 56vh;
+  }
+
   .intro__col--left,
   .intro__col--right {
     position: static;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+    width: min(92vw, 520px);
+    margin: 14px auto 0 auto;
+    display: block;
+    text-align: center;
   }
+
   .intro__hero-wrap {
     display: flex;
     flex-direction: column;
+    min-height: auto;
   }
+
   .intro__btn {
     width: 100%;
-    max-width: 280px;
+    display: block;
   }
 }
 
