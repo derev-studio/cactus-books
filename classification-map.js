@@ -76,6 +76,7 @@
   /** Преобразование координат мыши (clientX/clientY) в координаты мира карты.
    *  Используем getBoundingClientRect() чтобы совпадать с видимым canvas. */
   function screenToWorld(sx, sy) {
+    if (!canvas || view.scale <= 0) return { x: 0, y: 0 };
     var r = canvas.getBoundingClientRect();
     var cx = sx - r.left;
     var cy = sy - r.top;
@@ -217,7 +218,7 @@
   }
 
   function fitToView() {
-    if (nodes.length === 0) return;
+    if (nodes.length === 0 || !canvas) return;
     var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
     nodes.forEach(function (n) {
       var hw = n.width / 2, hh = n.height / 2;
@@ -229,12 +230,18 @@
     var padding = 60;
     var contentW = maxX - minX + padding * 2;
     var contentH = maxY - minY + padding * 2;
-    var cssW = canvas.width / (window.devicePixelRatio || 1);
-    var cssH = canvas.height / (window.devicePixelRatio || 1);
+    var r = canvas.getBoundingClientRect();
+    var cssW = r.width > 0 ? r.width : canvas.width / (window.devicePixelRatio || 1);
+    var cssH = r.height > 0 ? r.height : canvas.height / (window.devicePixelRatio || 1);
+    if (cssW <= 0 || cssH <= 0) return;
     var scale = Math.min(cssW / contentW, cssH / contentH, 1.2);
     view.scale = Math.max(0.15, Math.min(2, scale));
-    view.offsetX = (cssW / 2) - (minX + maxX) / 2 * view.scale;
-    view.offsetY = (cssH / 2) - (minY + maxY) / 2 * view.scale;
+    var centerWorldX = (minX + maxX) / 2;
+    var centerWorldY = (minY + maxY) / 2;
+    var centerScreenX = cssW / 2;
+    var centerScreenY = cssH / 2;
+    view.offsetX = (centerScreenX - centerWorldX) * view.scale;
+    view.offsetY = (centerScreenY - centerWorldY) * view.scale;
     render();
   }
 
@@ -383,14 +390,17 @@
       if (pointerDownAt) {
         var dx = e.clientX - pointerDownAt.x;
         var dy = e.clientY - pointerDownAt.y;
-        if (dx * dx + dy * dy > 25) {
+        if (dx * dx + dy * dy > 100) {
           pointerDownAt = null;
           return;
         }
       }
       pointerDownAt = null;
       var hit = getNodeAt(e.clientX, e.clientY);
-      if (hit && isGenus(hit.node)) openPanel(hit.node);
+      if (hit && isGenus(hit.node)) {
+        e.preventDefault();
+        openPanel(hit.node);
+      }
     }
 
     function wheel(e) {
@@ -442,6 +452,15 @@
         setupCanvas();
         initPanel();
         fitToView();
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            fitToView();
+          });
+        });
+        window.addEventListener('load', function () {
+          window.dispatchEvent(new Event('resize'));
+          fitToView();
+        });
         if (genusSearch) genusSearch.addEventListener('input', onSearchInput);
       })
       .catch(function (err) {
