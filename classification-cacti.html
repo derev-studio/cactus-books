@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="google" content="notranslate" />
   <title>Классификация кактусов | Кактусярий</title>
-  <meta name="description" content="Систематика и классификация семейства кактусов (Cactaceae): подсемейства, роды, виды." />
+  <meta name="description" content="Систематика семейства Cactaceae: подсемейства, трибы, роды и виды. Раскрывающееся дерево." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="icon-180.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="site-header.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="page-common.css" />
-  <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
-  </style>
+  <link rel="stylesheet" href="classification-tree.css" />
 </head>
 <body>
   <header class="site-header">
@@ -53,12 +51,30 @@
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1>Классификация кактусов</h1>
-    <p class="page-intro">Систематика семейства Cactaceae: подсемейства, трибы, роды и виды.</p>
-    <section class="page-content">
-      <p class="notice">Раздел в разработке. Скоро здесь появится структура классификации кактусов. Пока можно посмотреть <a href="книга-кактусология/book-read-ru.html">систематику в книге «Кактусология»</a>.</p>
-    </section>
+  <main class="classification-wrap">
+    <div class="classification-header">
+      <h1>Классификация кактусов</h1>
+      <p class="classification-intro">Систематика семейства Cactaceae по Курту Бакебергу. Раскройте уровень по клику. Клик по роду открывает карточку и список видов.</p>
+    </div>
+    <div class="classification-body">
+      <nav class="tree-nav" aria-label="Дерево систематики">
+        <div id="tree-root" class="tree"></div>
+        <p id="tree-loading" class="tree-loading">Загрузка…</p>
+        <p id="tree-error" class="tree-error" hidden>Не удалось загрузить дерево. Проверьте наличие <code>data/taxonomy.json</code>.</p>
+      </nav>
+      <aside id="card-panel" class="card-panel" aria-label="Карточка рода или вида" hidden>
+        <div class="card-panel__inner">
+          <button type="button" class="card-panel__close" id="card-close" aria-label="Закрыть">×</button>
+          <h2 id="card-name" class="card-panel__name"></h2>
+          <p id="card-level" class="card-panel__level"></p>
+          <div id="card-desc" class="card-panel__desc"></div>
+          <div id="card-species-wrap" class="card-panel__species-wrap" hidden>
+            <h3 class="card-panel__species-title">Виды</h3>
+            <ul id="card-species-list" class="card-panel__species-list"></ul>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -78,6 +94,7 @@
     </nav>
   </footer>
   <script src="i18n.js" defer></script>
+  <script src="classification-tree.js" defer></script>
   <script>
     (function () {
       function init() {
