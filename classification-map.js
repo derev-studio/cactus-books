@@ -20,6 +20,7 @@
   var isPanning = false;
   var lastPointer = { x: 0, y: 0 };
   var lastPinchDist = 0;
+  var pointerDownAt = null; // для отличия клика от перетаскивания
   var speciesCache = {};
   var mapWrap, sidePanel, panelGenusName, panelGenusInfo, panelSpeciesList, panelSpeciesDetail, panelSpeciesName, panelSpeciesDesc, panelClose, genusSearch;
 
@@ -72,18 +73,16 @@
     nodes.forEach(function (n) { n.x -= shift; });
   }
 
+  /** Преобразование координат мыши (clientX/clientY) в координаты мира карты.
+   *  Используем getBoundingClientRect() чтобы совпадать с видимым canvas. */
   function screenToWorld(sx, sy) {
     var r = canvas.getBoundingClientRect();
     var cx = sx - r.left;
     var cy = sy - r.top;
-    var scale = view.scale;
-    var dpr = window.devicePixelRatio || 1;
-    var w = canvas.width;
-    var h = canvas.height;
-    var centerX = w / 2 / dpr;
-    var centerY = h / 2 / dpr;
-    var wx = (cx - centerX - view.offsetX) / scale + centerX;
-    var wy = (cy - centerY - view.offsetY) / scale + centerY;
+    var centerX = r.width / 2;
+    var centerY = r.height / 2;
+    var wx = (cx - centerX - view.offsetX) / view.scale + centerX;
+    var wy = (cy - centerY - view.offsetY) / view.scale + centerY;
     return { x: wx, y: wy };
   }
 
@@ -113,6 +112,7 @@
     var centerX = cssW / 2;
     var centerY = cssH / 2;
     ctx.save();
+    ctx.scale(dpr, dpr);
     ctx.translate(centerX + view.offsetX, centerY + view.offsetY);
     ctx.scale(view.scale, view.scale);
     ctx.translate(-centerX, -centerY);
@@ -179,9 +179,13 @@
 
   function drawEdges() {
     if (!ctx || !canvas || !taxonomy) return;
-    var centerX = (canvas.width / (window.devicePixelRatio || 1)) / 2;
-    var centerY = (canvas.height / (window.devicePixelRatio || 1)) / 2;
+    var dpr = window.devicePixelRatio || 1;
+    var cssW = canvas.width / dpr;
+    var cssH = canvas.height / dpr;
+    var centerX = cssW / 2;
+    var centerY = cssH / 2;
     ctx.save();
+    ctx.scale(dpr, dpr);
     ctx.translate(centerX + view.offsetX, centerY + view.offsetY);
     ctx.scale(view.scale, view.scale);
     ctx.translate(-centerX, -centerY);
@@ -330,11 +334,18 @@
     }
 
     function pointerDown(e) {
-      var x = (e.touches ? e.touches[0] : e).clientX;
-      var y = (e.touches ? e.touches[0] : e).clientY;
-      lastPointer.x = x;
-      lastPointer.y = y;
-      if (e.touches && e.touches.length >= 2) lastPinchDist = Math.hypot(e.touches[1].clientX - e.touches[0].clientX, e.touches[1].clientY - e.touches[0].clientY);
+      if (e.touches) {
+        var x = e.touches[0].clientX;
+        var y = e.touches[0].clientY;
+        lastPointer.x = x;
+        lastPointer.y = y;
+        if (e.touches.length >= 2) lastPinchDist = Math.hypot(e.touches[1].clientX - e.touches[0].clientX, e.touches[1].clientY - e.touches[0].clientY);
+        pointerDownAt = null;
+      } else {
+        lastPointer.x = e.clientX;
+        lastPointer.y = e.clientY;
+        pointerDownAt = { x: e.clientX, y: e.clientY };
+      }
       isPanning = true;
     }
 
@@ -369,6 +380,15 @@
 
     function click(e) {
       if (e.touches) return;
+      if (pointerDownAt) {
+        var dx = e.clientX - pointerDownAt.x;
+        var dy = e.clientY - pointerDownAt.y;
+        if (dx * dx + dy * dy > 25) {
+          pointerDownAt = null;
+          return;
+        }
+      }
+      pointerDownAt = null;
       var hit = getNodeAt(e.clientX, e.clientY);
       if (hit && isGenus(hit.node)) openPanel(hit.node);
     }
