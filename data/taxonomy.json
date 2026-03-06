@@ -1,0 +1,137 @@
+{
+  "id": "cactaceae",
+  "name": "Cactaceae",
+  "type": "family",
+  "info": "Семейство кактусовых — многолетние суккулентные растения с ареолами и (обычно) колючками. Классификация по Курту Бакебергу.",
+  "children": [
+    {
+      "id": "pereskioideae",
+      "name": "Pereskioideae",
+      "type": "subfamily",
+      "info": "Листовые кактусы с полноценными листьями.",
+      "children": [
+        {
+          "id": "pereskieae",
+          "name": "Pereskieae",
+          "type": "tribe",
+          "children": [
+            { "id": "pereskia", "name": "Pereskia", "type": "genus", "info": "Род листовых кактусов, близких к предковой форме семейства.", "speciesFile": "pereskia.json" },
+            { "id": "maihuenia", "name": "Maihuenia", "type": "genus", "info": "Небольшой род низкорослых кактусов с мелкими листьями.", "speciesFile": "maihuenia.json" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opuntioideae",
+      "name": "Opuntioideae",
+      "type": "subfamily",
+      "info": "Опунциевые — кактусы с глохидиями и часто членистыми стеблями.",
+      "children": [
+        {
+          "id": "opuntieae",
+          "name": "Opuntieae",
+          "type": "tribe",
+          "children": [
+            { "id": "opuntia", "name": "Opuntia", "type": "genus", "info": "Опунции — плоские или цилиндрические членики, съедобные плоды.", "speciesFile": "opuntia.json" },
+            { "id": "nopalea", "name": "Nopalea", "type": "genus", "info": "Близки к опунциям, характерны для Центральной Америки.", "speciesFile": "nopalea.json" }
+          ]
+        },
+        {
+          "id": "cylindropuntieae",
+          "name": "Cylindropuntieae",
+          "type": "tribe",
+          "children": [
+            { "id": "cylindropuntia", "name": "Cylindropuntia", "type": "genus", "info": "Цилиндрические членики, сильные колючки.", "speciesFile": "cylindropuntia.json" },
+            { "id": "grusonia", "name": "Grusonia", "type": "genus", "info": "Низкорослые кустящиеся опунциевые.", "speciesFile": "grusonia.json" }
+          ]
+        },
+        {
+          "id": "tephrocacteae",
+          "name": "Tephrocacteae",
+          "type": "tribe",
+          "children": [
+            { "id": "tephrocactus", "name": "Tephrocactus", "type": "genus", "info": "Шаровидные или овальные членики, высокогорные виды.", "speciesFile": "tephrocactus.json" },
+            { "id": "maihueniopsis", "name": "Maihueniopsis", "type": "genus", "info": "Мелкие членики, Южная Америка.", "speciesFile": "maihueniopsis.json" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cactoideae",
+      "name": "Cactoideae",
+      "type": "subfamily",
+      "info": "«Настоящие» кактусы — разнообразие форм от шаров до колонн и эпифитов.",
+      "children": [
+        {
+          "id": "cacteae",
+          "name": "Cacteae",
+          "type": "tribe",
+          "children": [
+            { "id": "mammillaria", "name": "Mammillaria", "type": "genus", "info": "Один из крупнейших родов: шаровидные или короткоцилиндрические, сосочки, венчик цветков.", "speciesFile": "mammillaria.json" },
+            { "id": "coryphantha", "name": "Coryphantha", "type": "genus", "info": "Близки к маммилляриям, бороздка на сосочке от ареолы к аксилле.", "speciesFile": "coryphantha.json" },
+            { "id": "escobaria", "name": "Escobaria", "type": "genus", "info": "Мелкие шаровидные кактусы с густыми колючками.", "speciesFile": "escobaria.json" },
+            { "id": "ferocactus", "name": "Ferocactus", "type": "genus", "info": "Крупные бочковидные кактусы с мощными колючками.", "speciesFile": "ferocactus.json" },
+            { "id": "echinocactus", "name": "Echinocactus", "type": "genus", "info": "Род с известной E. grusonii — «золотая бочка».", "speciesFile": "echinocactus.json" },
+            { "id": "thelocactus", "name": "Thelocactus", "type": "genus", "info": "Шаровидные или короткоцилиндрические, яркие цветки.", "speciesFile": "thelocactus.json" },
+            { "id": "gymnocalycium", "name": "Gymnocalycium", "type": "genus", "info": "Голые цветочные трубки, популярны в коллекциях.", "speciesFile": "gymnocalycium.json" },
+            { "id": "rebutia", "name": "Rebutia", "type": "genus", "info": "Небольшие шаровидные кактусы с яркими венчиками.", "speciesFile": "rebutia.json" },
+            { "id": "sulcorebutia", "name": "Sulcorebutia", "type": "genus", "info": "Близки к ребуциям, компактные, горные.", "speciesFile": "sulcorebutia.json" }
+          ]
+        },
+        {
+          "id": "trichocereeae",
+          "name": "Trichocereeae",
+          "type": "tribe",
+          "children": [
+            { "id": "echinopsis", "name": "Echinopsis", "type": "genus", "info": "Шаровидные и колонновидные, крупные воронковидные цветки.", "speciesFile": "echinopsis.json" },
+            { "id": "trichocereus", "name": "Trichocereus", "type": "genus", "info": "Крупные колонновидные кактусы, часто ночные цветки.", "speciesFile": "trichocereus.json" },
+            { "id": "lobivia", "name": "Lobivia", "type": "genus", "info": "Небольшие шаровидные с яркими цветками, часто объединяют с Echinopsis.", "speciesFile": "lobivia.json" },
+            { "id": "cleistocactus", "name": "Cleistocactus", "type": "genus", "info": "Тонкие колонны с трубчатыми цветками.", "speciesFile": "cleistocactus.json" },
+            { "id": "oreocereus", "name": "Oreocereus", "type": "genus", "info": "Колонновидные с густым опушением.", "speciesFile": "oreocereus.json" },
+            { "id": "espostoa", "name": "Espostoa", "type": "genus", "info": "Колонны с белым волосистым покровом.", "speciesFile": "espostoa.json" }
+          ]
+        },
+        {
+          "id": "rhipsalideae",
+          "name": "Rhipsalideae",
+          "type": "tribe",
+          "children": [
+            { "id": "rhipsalis", "name": "Rhipsalis", "type": "genus", "info": "Эпифитные кактусы с поникающими стеблями.", "speciesFile": "rhipsalis.json" },
+            { "id": "schlumbergera", "name": "Schlumbergera", "type": "genus", "info": "«Декабрист» — сегментированные стебли, зимнее цветение.", "speciesFile": "schlumbergera.json" },
+            { "id": "hatiora", "name": "Hatiora", "type": "genus", "info": "Эпифиты с членистыми стеблями, близки к шлюмбергерам.", "speciesFile": "hatiora.json" }
+          ]
+        },
+        {
+          "id": "hylocereeae",
+          "name": "Hylocereeae",
+          "type": "tribe",
+          "children": [
+            { "id": "selenicereus", "name": "Selenicereus", "type": "genus", "info": "«Царица ночи» — крупные ночные цветки.", "speciesFile": "selenicereus.json" },
+            { "id": "epiphyllum", "name": "Epiphyllum", "type": "genus", "info": "Эпифитные кактусы с листовидными стеблями.", "speciesFile": "epiphyllum.json" },
+            { "id": "disocactus", "name": "Disocactus", "type": "genus", "info": "Эпифиты с плоскими или трёхгранными стеблями.", "speciesFile": "disocactus.json" }
+          ]
+        },
+        {
+          "id": "browningieae",
+          "name": "Browningieae",
+          "type": "tribe",
+          "children": [
+            { "id": "browningia", "name": "Browningia", "type": "genus", "info": "Крупные колонновидные кактусы Южной Америки.", "speciesFile": "browningia.json" },
+            { "id": "armatocereus", "name": "Armatocereus", "type": "genus", "info": "Колонны с выраженными рёбрами и колючками.", "speciesFile": "armatocereus.json" }
+          ]
+        },
+        {
+          "id": "pachycereeae",
+          "name": "Pachycereeae",
+          "type": "tribe",
+          "children": [
+            { "id": "carnegiea", "name": "Carnegiea", "type": "genus", "info": "Сагуаро — символ пустыни Сонора.", "speciesFile": "carnegiea.json" },
+            { "id": "pachycereus", "name": "Pachycereus", "type": "genus", "info": "Крупные колонновидные кактусы Мексики.", "speciesFile": "pachycereus.json" },
+            { "id": "stenocereus", "name": "Stenocereus", "type": "genus", "info": "Колонны с рёбрами, съедобные плоды у части видов.", "speciesFile": "stenocereus.json" },
+            { "id": "myrtillocactus", "name": "Myrtillocactus", "type": "genus", "info": "Канделябровидные ветвящиеся кактусы.", "speciesFile": "myrtillocactus.json" }
+          ]
+        }
+      ]
+    }
+  ]
+}
