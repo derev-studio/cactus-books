@@ -65,7 +65,12 @@
       <aside id="card-panel" class="card-panel" aria-label="Карточка рода или вида" hidden>
         <div class="card-panel__inner">
           <button type="button" class="card-panel__close" id="card-close" aria-label="Закрыть">×</button>
-          <h2 id="card-name" class="card-panel__name"></h2>
+          <div class="card-panel__name-block">
+            <h2 id="card-name-backeberg" class="card-panel__name card-panel__name--backeberg"></h2>
+            <p id="card-name-modern" class="card-panel__name-modern"></p>
+            <p id="card-name-previously" class="card-panel__name-previously"></p>
+            <p id="card-name-synonyms" class="card-panel__name-synonyms"></p>
+          </div>
           <p id="card-level" class="card-panel__level"></p>
           <div id="card-desc" class="card-panel__desc"></div>
           <div id="card-species-wrap" class="card-panel__species-wrap" hidden>

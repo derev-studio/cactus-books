@@ -1,0 +1,541 @@
+{
+  "genera": {
+    "pereskia": {
+      "backeberg": "Pereskia",
+      "modern": "Pereskia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pereskia"
+      ]
+    },
+    "maihuenia": {
+      "backeberg": "Maihuenia",
+      "modern": "Maihuenia",
+      "synonyms": [
+        "Pereskia subgen. Maihuenia"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Maihuenia",
+        "Pereskia subgen. Maihuenia"
+      ]
+    },
+    "opuntia": {
+      "backeberg": "Opuntia",
+      "modern": "Opuntia",
+      "synonyms": [
+        "Nopalea"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia",
+        "Nopalea"
+      ]
+    },
+    "nopalea": {
+      "backeberg": "Nopalea",
+      "modern": "Opuntia",
+      "synonyms": [],
+      "previouslyCalled": "Nopalea",
+      "nameHistory": [
+        "Nopalea",
+        "Opuntia"
+      ]
+    },
+    "cylindropuntia": {
+      "backeberg": "Cylindropuntia",
+      "modern": "Cylindropuntia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia"
+      ]
+    },
+    "grusonia": {
+      "backeberg": "Grusonia",
+      "modern": "Grusonia",
+      "synonyms": [
+        "Corynopuntia"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia",
+        "Corynopuntia"
+      ]
+    },
+    "tephrocactus": {
+      "backeberg": "Tephrocactus",
+      "modern": "Tephrocactus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Tephrocactus"
+      ]
+    },
+    "maihueniopsis": {
+      "backeberg": "Maihueniopsis",
+      "modern": "Maihueniopsis",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Maihueniopsis"
+      ]
+    },
+    "mammillaria": {
+      "backeberg": "Mammillaria",
+      "modern": "Mammillaria",
+      "synonyms": [
+        "Cochemiea",
+        "Mammilloydia"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria",
+        "Cochemiea",
+        "Mammilloydia"
+      ]
+    },
+    "coryphantha": {
+      "backeberg": "Coryphantha",
+      "modern": "Coryphantha",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha"
+      ]
+    },
+    "escobaria": {
+      "backeberg": "Escobaria",
+      "modern": "Escobaria",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Escobaria"
+      ]
+    },
+    "ferocactus": {
+      "backeberg": "Ferocactus",
+      "modern": "Ferocactus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus"
+      ]
+    },
+    "echinocactus": {
+      "backeberg": "Echinocactus",
+      "modern": "Echinocactus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus"
+      ]
+    },
+    "thelocactus": {
+      "backeberg": "Thelocactus",
+      "modern": "Thelocactus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus"
+      ]
+    },
+    "gymnocalycium": {
+      "backeberg": "Gymnocalycium",
+      "modern": "Gymnocalycium",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Gymnocalycium"
+      ]
+    },
+    "rebutia": {
+      "backeberg": "Rebutia",
+      "modern": "Rebutia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Rebutia"
+      ]
+    },
+    "sulcorebutia": {
+      "backeberg": "Sulcorebutia",
+      "modern": "Sulcorebutia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Sulcorebutia"
+      ]
+    },
+    "echinopsis": {
+      "backeberg": "Echinopsis",
+      "modern": "Echinopsis",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinopsis"
+      ]
+    },
+    "trichocereus": {
+      "backeberg": "Trichocereus",
+      "modern": "Trichocereus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Trichocereus"
+      ]
+    },
+    "lobivia": {
+      "backeberg": "Lobivia",
+      "modern": "Lobivia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Lobivia"
+      ]
+    },
+    "cleistocactus": {
+      "backeberg": "Cleistocactus",
+      "modern": "Cleistocactus",
+      "synonyms": [
+        "Bolivicereus",
+        "Winterocereus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cleistocactus",
+        "Bolivicereus",
+        "Winterocereus"
+      ]
+    },
+    "oreocereus": {
+      "backeberg": "Oreocereus",
+      "modern": "Oreocereus",
+      "synonyms": [
+        "Cereus subgen. Oreocereus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Oreocereus",
+        "Cereus subgen. Oreocereus"
+      ]
+    },
+    "espostoa": {
+      "backeberg": "Espostoa",
+      "modern": "Espostoa",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Espostoa"
+      ]
+    },
+    "rhipsalis": {
+      "backeberg": "Rhipsalis",
+      "modern": "Rhipsalis",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Rhipsalis"
+      ]
+    },
+    "schlumbergera": {
+      "backeberg": "Schlumbergera",
+      "modern": "Schlumbergera",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Schlumbergera"
+      ]
+    },
+    "hatiora": {
+      "backeberg": "Hatiora",
+      "modern": "Hatiora",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hatiora"
+      ]
+    },
+    "selenicereus": {
+      "backeberg": "Selenicereus",
+      "modern": "Selenicereus",
+      "synonyms": [
+        "Cereus subgen. Hylocereus",
+        "Cereus subsect. Selenicereus",
+        "Hylocereus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus",
+        "Cereus subgen. Hylocereus",
+        "Cereus subsect. Selenicereus",
+        "Hylocereus"
+      ]
+    },
+    "epiphyllum": {
+      "backeberg": "Epiphyllum",
+      "modern": "Epiphyllum",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum"
+      ]
+    },
+    "disocactus": {
+      "backeberg": "Disocactus",
+      "modern": "Disocactus",
+      "synonyms": [
+        "Aporocactus",
+        "Heliocereus",
+        "Nopalxochia"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus",
+        "Aporocactus",
+        "Heliocereus",
+        "Nopalxochia"
+      ]
+    },
+    "browningia": {
+      "backeberg": "Browningia",
+      "modern": "Browningia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Browningia"
+      ]
+    },
+    "armatocereus": {
+      "backeberg": "Armatocereus",
+      "modern": "Armatocereus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Armatocereus"
+      ]
+    },
+    "carnegiea": {
+      "backeberg": "Carnegiea",
+      "modern": "Carnegiea",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Carnegiea"
+      ]
+    },
+    "pachycereus": {
+      "backeberg": "Pachycereus",
+      "modern": "Pachycereus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus"
+      ]
+    },
+    "stenocereus": {
+      "backeberg": "Stenocereus",
+      "modern": "Stenocereus",
+      "synonyms": [
+        "Isolatocereus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus",
+        "Isolatocereus"
+      ]
+    },
+    "myrtillocactus": {
+      "backeberg": "Myrtillocactus",
+      "modern": "Myrtillocactus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Myrtillocactus"
+      ]
+    }
+  },
+  "species": {
+    "echinopsis-oxygona": {
+      "backeberg": "Echinopsis oxygona",
+      "modern": "Echinopsis oxygona",
+      "synonyms": [
+        "Echinocactus oxygonus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinopsis oxygona",
+        "Echinocactus oxygonus"
+      ]
+    },
+    "echinopsis-subdenudata": {
+      "backeberg": "Echinopsis subdenudata",
+      "modern": "Echinopsis subdenudata",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinopsis subdenudata"
+      ]
+    },
+    "echinopsis-chamaecereus": {
+      "backeberg": "Echinopsis chamaecereus",
+      "modern": "Echinopsis chamaecereus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinopsis chamaecereus"
+      ]
+    },
+    "ferocactus-wislizeni": {
+      "backeberg": "Ferocactus wislizeni",
+      "modern": "Ferocactus wislizeni",
+      "synonyms": [
+        "Echinocactus wislizeni",
+        "Ferocactus wislizenii"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus wislizeni",
+        "Echinocactus wislizeni",
+        "Ferocactus wislizenii"
+      ]
+    },
+    "ferocactus-latispinus": {
+      "backeberg": "Ferocactus latispinus",
+      "modern": "Ferocactus latispinus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus latispinus"
+      ]
+    },
+    "mammillaria-hahniana": {
+      "backeberg": "Mammillaria hahniana",
+      "modern": "Mammillaria hahniana",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria hahniana"
+      ]
+    },
+    "mammillaria-elongata": {
+      "backeberg": "Mammillaria elongata",
+      "modern": "Mammillaria elongata",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria elongata"
+      ]
+    },
+    "mammillaria-bocasana": {
+      "backeberg": "Mammillaria bocasana",
+      "modern": "Mammillaria bocasana",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria bocasana"
+      ]
+    },
+    "mammillaria-zeilmanniana": {
+      "backeberg": "Mammillaria zeilmanniana",
+      "modern": "Mammillaria zeilmanniana",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria zeilmanniana"
+      ]
+    },
+    "mammillaria-geminispina": {
+      "backeberg": "Mammillaria geminispina",
+      "modern": "Mammillaria geminispina",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria geminispina"
+      ]
+    },
+    "opuntia-ficus-indica": {
+      "backeberg": "Opuntia ficus-indica",
+      "modern": "Opuntia ficus-indica",
+      "synonyms": [
+        "Cactus ficus-indica",
+        "Opuntia vulgaris Mill., non auct."
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia ficus-indica",
+        "Cactus ficus-indica",
+        "Opuntia vulgaris Mill., non auct."
+      ]
+    },
+    "opuntia-microdasys": {
+      "backeberg": "Opuntia microdasys",
+      "modern": "Opuntia microdasys",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia microdasys"
+      ]
+    },
+    "opuntia-robusta": {
+      "backeberg": "Opuntia robusta",
+      "modern": "Opuntia robusta",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia robusta"
+      ]
+    },
+    "opuntia-humifusa": {
+      "backeberg": "Opuntia humifusa",
+      "modern": "Opuntia humifusa",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia humifusa"
+      ]
+    },
+    "pereskia-grandifolia": {
+      "backeberg": "Pereskia grandifolia",
+      "modern": "Pereskia grandifolia",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pereskia grandifolia"
+      ]
+    },
+    "pereskia-aculeata": {
+      "backeberg": "Pereskia aculeata",
+      "modern": "Pereskia aculeata",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pereskia aculeata"
+      ]
+    },
+    "schlumbergera-truncata": {
+      "backeberg": "Schlumbergera truncata",
+      "modern": "Schlumbergera truncata",
+      "synonyms": [
+        "Epiphyllum truncatum",
+        "Zygocactus truncatus"
+      ],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Schlumbergera truncata",
+        "Epiphyllum truncatum",
+        "Zygocactus truncatus"
+      ]
+    },
+    "schlumbergera-buckleyi": {
+      "backeberg": "Schlumbergera × buckleyi",
+      "modern": "Schlumbergera × buckleyi",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Schlumbergera × buckleyi"
+      ]
+    }
+  }
+}

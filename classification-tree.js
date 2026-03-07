@@ -9,6 +9,7 @@
 
   var TAXONOMY_URL = 'data/taxonomy.json';
   var SPECIES_BASE = 'data/species/';
+  var BRIDGE_URL = 'data/synonyms_bridge.json';
 
   var LEVEL_LABELS = {
     family: 'семейство',
@@ -23,13 +24,17 @@
   var treeError = null;
   var cardPanel = null;
   var cardClose = null;
-  var cardName = null;
+  var cardNameBackeberg = null;
+  var cardNameModern = null;
+  var cardNamePreviously = null;
+  var cardNameSynonyms = null;
   var cardLevel = null;
   var cardDesc = null;
   var cardSpeciesWrap = null;
   var cardSpeciesList = null;
   var taxonomy = null;
   var speciesCache = {};
+  var synonymsBridge = null;
 
   function getChildren(node) {
     return node && node.children ? node.children : [];
@@ -158,10 +163,45 @@
       });
   }
 
+  function setCardNames(entry, fallbackName) {
+    var name = fallbackName || '—';
+    if (cardNameBackeberg) cardNameBackeberg.textContent = entry ? entry.backeberg : name;
+    if (cardNameModern) {
+      cardNameModern.textContent = entry && entry.modern ? entry.modern : '';
+      cardNameModern.style.display = entry && entry.modern ? '' : 'none';
+    }
+    if (cardNamePreviously) {
+      var prevText = '';
+      if (entry && entry.nameHistory && entry.nameHistory.length > 1) {
+        prevText = 'Ранее / синонимы: ' + entry.nameHistory.join(' → ');
+      } else if (entry && entry.previouslyCalled) {
+        prevText = 'Ранее назывался: ' + entry.previouslyCalled;
+      }
+      if (cardNamePreviously) {
+        cardNamePreviously.textContent = prevText;
+        cardNamePreviously.style.display = prevText ? '' : 'none';
+      }
+    }
+    if (cardNameSynonyms) {
+      var synText = '';
+      if (entry && entry.synonyms && entry.synonyms.length > 0 && !(entry.nameHistory && entry.nameHistory.length > 1)) {
+        synText = 'Синонимы / базионим: ' + entry.synonyms.join(', ');
+      } else if (entry && entry.synonyms && entry.synonyms.length > 0) {
+        synText = 'Синонимы: ' + entry.synonyms.join(', ');
+      }
+      if (cardNameSynonyms) {
+        cardNameSynonyms.textContent = synText;
+        cardNameSynonyms.style.display = synText ? '' : 'none';
+      }
+    }
+  }
+
   function openGenusCard(genusNode) {
-    if (!cardPanel || !cardName || !cardLevel || !cardDesc || !cardSpeciesWrap || !cardSpeciesList) return;
+    if (!cardPanel || !cardNameBackeberg || !cardLevel || !cardDesc || !cardSpeciesWrap || !cardSpeciesList) return;
     cardPanel.hidden = false;
-    cardName.textContent = genusNode.name || '—';
+    var gid = (genusNode.id || '').toLowerCase();
+    var entry = synonymsBridge && synonymsBridge.genera ? synonymsBridge.genera[gid] : null;
+    setCardNames(entry, genusNode.name || '—');
     cardLevel.textContent = levelLabel('genus');
     var info = (genusNode.info || '').trim();
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
@@ -198,8 +238,10 @@
   }
 
   function showSpeciesInCard(speciesNode, genusName) {
-    if (!cardName || !cardLevel || !cardDesc) return;
-    cardName.textContent = speciesNode.name || '—';
+    if (!cardNameBackeberg || !cardLevel || !cardDesc) return;
+    var sid = (speciesNode.id || '').toLowerCase();
+    var entry = synonymsBridge && synonymsBridge.species ? synonymsBridge.species[sid] : null;
+    setCardNames(entry, speciesNode.name || '—');
     cardLevel.textContent = levelLabel('species');
     var desc = (speciesNode.description || '').trim();
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
@@ -217,7 +259,10 @@
     treeError = document.getElementById('tree-error');
     cardPanel = document.getElementById('card-panel');
     cardClose = document.getElementById('card-close');
-    cardName = document.getElementById('card-name');
+    cardNameBackeberg = document.getElementById('card-name-backeberg');
+    cardNameModern = document.getElementById('card-name-modern');
+    cardNamePreviously = document.getElementById('card-name-previously');
+    cardNameSynonyms = document.getElementById('card-name-synonyms');
     cardLevel = document.getElementById('card-level');
     cardDesc = document.getElementById('card-desc');
     cardSpeciesWrap = document.getElementById('card-species-wrap');
@@ -229,13 +274,13 @@
       });
     }
 
-    fetch(TAXONOMY_URL)
-      .then(function (r) {
-        if (!r.ok) throw new Error('load failed');
-        return r.json();
-      })
-      .then(function (data) {
-        taxonomy = data;
+    Promise.all([
+      fetch(TAXONOMY_URL).then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); }),
+      fetch(BRIDGE_URL).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+    ])
+      .then(function (results) {
+        taxonomy = results[0];
+        synonymsBridge = results[1];
         if (treeLoading) treeLoading.hidden = true;
         if (treeError) treeError.hidden = true;
         buildTree(taxonomy);

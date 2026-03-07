@@ -195,12 +195,40 @@
   color: var(--cactus-text);
 }
 
-.card-panel__name {
+.card-panel__name-block {
   margin: 0 2rem 0 0;
+}
+
+.card-panel__name {
+  margin: 0 0 0.25rem;
   font-size: 1.35rem;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal;
   color: var(--cactus-text);
+}
+
+.card-panel__name--backeberg {
+  font-weight: 700;
+}
+
+.card-panel__name-modern {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--cactus-text-muted);
+}
+
+.card-panel__name-previously {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+  color: var(--cactus-accent);
+}
+
+.card-panel__name-synonyms {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--cactus-text-muted);
+  line-height: 1.4;
 }
 
 .card-panel__level {
