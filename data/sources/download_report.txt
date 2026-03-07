@@ -1,0 +1,17 @@
+Cactaceae sources — download report
+==================================================
+
+Downloaded:
+  /Users/alexanderermolovich/Documents/cactus/data/sources/backeberg/Backeberg_DieCactaceae_Vol1.pdf
+  /Users/alexanderermolovich/Documents/cactus/data/sources/backeberg/Cactician_4_Generitaxa_Index.pdf
+  /Users/alexanderermolovich/Documents/cactus/data/sources/modern_taxonomy/taxdump.tar.gz
+  /Users/alexanderermolovich/Documents/cactus/data/sources/modern_taxonomy/plantlst.txt
+
+Failed:
+  WFO_plantlist: https://zenodo.org/records/18007552/files/wfo_plantlist_2025-06.zip?download=1
+  Caryophyllales_Cactaceae_backbone: https://www.researchgate.net/publication/354247877_Cactaceae_at_Caryophyllalesorg_-_a_dynamic_online_species-level_taxonomic_backbone_for_the_family
+
+Formats: pdf, tar.gz, txt
+
+Backeberg files: Backeberg_DieCactaceae_Vol1.pdf, Cactician_4_Generitaxa_Index.pdf
+Modern files: taxdump.tar.gz, plantlst.txt

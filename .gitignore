@@ -38,3 +38,8 @@ venv/
 dist/
 build/
 *.min.js.map
+
+# Cactaceae sources (large; download locally via download_cactaceae_sources.py)
+data/sources/backeberg/*.pdf
+data/sources/modern_taxonomy/*.dmp
+data/sources/modern_taxonomy/*.tar.gz
