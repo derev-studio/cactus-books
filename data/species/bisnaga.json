@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ferocactus-histrix-dc-gelinds",
+    "name": "Ferocactus histrix (DC.) G.E.Linds.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-hamatacanthus-muehlenpf-britton-rose",
+    "name": "Ferocactus hamatacanthus (Muehlenpf.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-haematacanthus-monv-ex-salm-dyck-bravo-ex-backeb-fmknuth",
+    "name": "Ferocactus haematacanthus (Monv. ex Salm-Dyck) Bravo ex Backeb. & F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-glaucescens-dc-britton-rose",
+    "name": "Ferocactus glaucescens (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

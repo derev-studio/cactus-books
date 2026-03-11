@@ -1,0 +1,60 @@
+[
+  {
+    "id": "nyctocereus-serpentinus-lag-rodr-britton-rose",
+    "name": "Nyctocereus serpentinus (Lag. & Rodr.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "wilcoxia-striata-kbrandegee-britton-rose",
+    "name": "Wilcoxia striata (K.Brandegee) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-zopilotensis-meyran-buxb",
+    "name": "Peniocereus zopilotensis (Meyran) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-greggii-engelm-britton-rose",
+    "name": "Peniocereus greggii (Engelm.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Peniocereus greggii var. greggii",
+        "rank": "variety"
+      },
+      {
+        "name": "Peniocereus greggii subsp. greggii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "peniocereus-lazaro-cardenasii-jlcontr-jjiménez-ram-sánchez-mej-ctoledo-drhunt",
+    "name": "Peniocereus lazaro-cardenasii (J.L.Contr., J.Jiménez Ram., Sánchez-Mej. & C.Toledo) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-marianus-gentry-sánchez-mej",
+    "name": "Peniocereus marianus (Gentry) Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-viperinus-facweber-buxb",
+    "name": "Peniocereus viperinus (F.A.C.Weber) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-johnstonii-britton-rose",
+    "name": "Peniocereus johnstonii Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

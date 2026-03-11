@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pseudorhipsalis-ramulosa-salm-dyck-barthlott",
+    "name": "Pseudorhipsalis ramulosa (Salm-Dyck) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-amazonicus-kschum-drhunt",
+    "name": "Disocactus amazonicus (K.Schum.) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pseudorhipsalis-himantoclada-rol-goss-britton-rose",
+    "name": "Pseudorhipsalis himantoclada (Rol.-Goss.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "rhipsalis-acuminata-cufod-standl",
+    "name": "Rhipsalis acuminata (Cufod.) Standl.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

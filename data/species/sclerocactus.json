@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sclerocactus-scheerii-salm-dyck-nptaylor",
+    "name": "Sclerocactus scheerii (Salm-Dyck) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "sclerocactus-warnockii-ldbenson-nptaylor",
+    "name": "Sclerocactus warnockii (L.D.Benson) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "sclerocactus-unguispinus-engelm-nptaylor",
+    "name": "Sclerocactus unguispinus (Engelm.) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Sclerocactus unguispinus var. durangensis (Ruenge) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "sclerocactus-mariposensis-hester-nptaylor",
+    "name": "Sclerocactus mariposensis (Hester) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "sclerocactus-polyancistrus-engelm-jmbigelow-britton-rose",
+    "name": "Sclerocactus polyancistrus (Engelm. & J.M.Bigelow) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "neolloydia-johnsonii-parry-ex-engelm-ldbenson",
+    "name": "Neolloydia johnsonii (Parry ex Engelm.) L.D.Benson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

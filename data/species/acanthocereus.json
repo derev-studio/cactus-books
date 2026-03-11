@@ -1,0 +1,68 @@
+[
+  {
+    "id": "peniocereus-cuixmalensis-sánchez-mej",
+    "name": "Peniocereus cuixmalensis Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "acanthocereus-tetragonus-l-hummelinck",
+    "name": "Acanthocereus tetragonus (L.) Hummelinck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-tepalcatepecanus-sánchez-mej",
+    "name": "Peniocereus tepalcatepecanus Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-oaxacensis-britton-rose-drhunt",
+    "name": "Peniocereus oaxacensis (Britton & Rose) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-hirschtianus-kschum-drhunt",
+    "name": "Peniocereus hirschtianus (K.Schum.) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-fosterianus-cutak",
+    "name": "Peniocereus fosterianus Cutak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-castellae-sánchez-mej",
+    "name": "Peniocereus castellae Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-occidentalis-bravo-ex-sarias-uguzmán-gama",
+    "name": "Peniocereus occidentalis Bravo ex S.Arias, U.Guzmán & Gama",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-rosei-jgortega",
+    "name": "Peniocereus rosei J.G.Ortega",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "peniocereus-maculatus-weing-cutak",
+    "name": "Peniocereus maculatus (Weing.) Cutak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "acanthocereus-chiapensis-bravo",
+    "name": "Acanthocereus chiapensis Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

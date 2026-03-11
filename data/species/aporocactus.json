@@ -1,0 +1,14 @@
+[
+  {
+    "id": "disocactus-flagelliformis-l-barthlott",
+    "name": "Disocactus flagelliformis (L.) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-martianus-zucc-ex-pfeiff-barthlott",
+    "name": "Disocactus martianus (Zucc. ex Pfeiff.) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

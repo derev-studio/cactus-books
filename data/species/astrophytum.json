@@ -1,0 +1,26 @@
+[
+  {
+    "id": "astrophytum-capricorne-adietr-britton-rose",
+    "name": "Astrophytum capricorne (A.Dietr.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "astrophytum-myriostigma-lem",
+    "name": "Astrophytum myriostigma Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "astrophytum-ornatum-dc-britton-rose",
+    "name": "Astrophytum ornatum (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "astrophytum-asterias-zucc-lem",
+    "name": "Astrophytum asterias (Zucc.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

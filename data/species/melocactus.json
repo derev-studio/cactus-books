@@ -1,0 +1,24 @@
+[
+  {
+    "id": "melocactus-curvispinus-hortberol-ex-pfeiff",
+    "name": "Melocactus curvispinus Hort.Berol. ex Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Melocactus curvispinus subsp. dawsonii (Bravo) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Melocactus curvispinus subsp. curvispinus",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "melocactus-lemairei-monv-ex-lem-miq",
+    "name": "Melocactus lemairei (Monv. ex Lem.) Miq.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

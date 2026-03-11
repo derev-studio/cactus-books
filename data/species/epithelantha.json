@@ -1,0 +1,28 @@
+[
+  {
+    "id": "epithelantha-micromeris-engelm-facweber",
+    "name": "Epithelantha micromeris (Engelm.) F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Epithelantha micromeris subsp. pachyrhiza (W.T.Marshall) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Epithelantha micromeris var. polycephala (Backeb.) Glass & R.A.Foster",
+        "rank": "variety"
+      },
+      {
+        "name": "Epithelantha micromeris var. pachyrhiza W.T.Marshall",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "epithelantha-bokei-ldbenson",
+    "name": "Epithelantha bokei L.D.Benson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

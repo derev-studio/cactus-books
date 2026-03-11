@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pereskiopsis-diguetii-facweber-britton-rose",
+    "name": "Pereskiopsis diguetii (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskiopsis-kellermanii-rose",
+    "name": "Pereskiopsis kellermanii Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskiopsis-aquosa-britton-rose",
+    "name": "Pereskiopsis aquosa Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskiopsis-rotundifolia-adc-britton-rose",
+    "name": "Pereskiopsis rotundifolia (A.DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskiopsis-blakeana-ortega",
+    "name": "Pereskiopsis blakeana Ortega",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskiopsis-porteri-brandegee-ex-facweber-britton-rose",
+    "name": "Pereskiopsis porteri (Brandegee ex F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

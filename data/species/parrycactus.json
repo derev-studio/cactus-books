@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ferocactus-alamosanus-britton-rose-britton-rose",
+    "name": "Ferocactus alamosanus (Britton & Rose) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-reppenhagenii-gunger",
+    "name": "Ferocactus reppenhagenii G.Unger",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-echidne-dc-britton-rose",
+    "name": "Ferocactus echidne (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-flavovirens-scheidw-britton-rose",
+    "name": "Ferocactus flavovirens (Scheidw.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-schwarzii-gelinds",
+    "name": "Ferocactus schwarzii G.E.Linds.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

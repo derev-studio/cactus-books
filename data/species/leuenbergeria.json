@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pereskia-lychnidiflora-dc",
+    "name": "Pereskia lychnidiflora DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskia-bleo-kunth-dc",
+    "name": "Pereskia bleo (Kunth) DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskia-zinniiflora-dc",
+    "name": "Pereskia zinniiflora DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskia-guamacho-facweber",
+    "name": "Pereskia guamacho F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

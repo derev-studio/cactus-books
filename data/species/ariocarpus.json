@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ariocarpus-retusus-scheidw",
+    "name": "Ariocarpus retusus Scheidw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ariocarpus retusus subsp. trigonus (F.A.C.Weber) E.F.Anderson & W.A.Fitz Maur.",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ariocarpus retusus subsp. retusus",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "ariocarpus-fissuratus-engelm-kschum",
+    "name": "Ariocarpus fissuratus (Engelm.) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ariocarpus fissuratus var. hintonii Stuppy & N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Ariocarpus fissuratus var. lloydii (Rose) W.T.Marshall",
+        "rank": "variety"
+      },
+      {
+        "name": "Ariocarpus fissuratus var. fissuratus",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "ariocarpus-scaphirostris-boed",
+    "name": "Ariocarpus scaphirostris Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ariocarpus-trigonus-facweber-kschum",
+    "name": "Ariocarpus trigonus (F.A.C.Weber) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ariocarpus trigonus var. elongatus (Salm-Dyck) Backeb.",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "ariocarpus-kotschoubeyanus-lem-kschum",
+    "name": "Ariocarpus kotschoubeyanus (Lem.) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ariocarpus-agavoides-castañeda-efanderson",
+    "name": "Ariocarpus agavoides (Castañeda) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

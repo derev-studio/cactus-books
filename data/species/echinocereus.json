@@ -1,0 +1,522 @@
+[
+  {
+    "id": "echinocereus-scheeri-salm-dyck-scheer",
+    "name": "Echinocereus scheeri (Salm-Dyck) Scheer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-rigidissimus-engelm-haage",
+    "name": "Echinocereus rigidissimus (Engelm.) Haage",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-enneacanthus-engelm",
+    "name": "Echinocereus enneacanthus Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus enneacanthus subsp. enneacanthus",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus enneacanthus var. brevispinus (W.O.Moore) L.D.Benson",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-sciurus-brandegee-dams",
+    "name": "Echinocereus sciurus (Brandegee) Dams",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus sciurus var. floresii (Backeb.) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus sciurus subsp. sciurus",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-acifer-otto-ex-salm-dyck-haage",
+    "name": "Echinocereus acifer (Otto ex Salm-Dyck) Haage",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-cinerascens-dc-lem",
+    "name": "Echinocereus cinerascens (DC.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus cinerascens subsp. septentrionalis (N.P.Taylor) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus cinerascens subsp. tulensis (Bravo) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus cinerascens var. ehrenbergii (Pfeiff.) Bravo",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus cinerascens var. tulensis (Bravo) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus cinerascens subsp. cinerascens",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus cinerascens var. septentrionalis N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-pentalophus-dc-engelm-ex-haage",
+    "name": "Echinocereus pentalophus (DC.) Engelm. ex Haage",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus pentalophus subsp. pentalophus",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus pentalophus var. leonensis (Mathsson) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus pentalophus subsp. leonensis (Mathsson) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus pentalophus subsp. procumbens (Engelm.) W.Blum & Mich.Lange",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-polyacanthus-engelm",
+    "name": "Echinocereus polyacanthus Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-pectinatus-scheidw-engelm",
+    "name": "Echinocereus pectinatus (Scheidw.) Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus pectinatus var. dasyacanthus (Engelm.) W.H.Earle ex N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus pectinatus var. pectinatus",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-brandegeei-jmcoult-kschum",
+    "name": "Echinocereus brandegeei (J.M.Coult.) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-fendleri-engelm-rümpler",
+    "name": "Echinocereus fendleri (Engelm.) Rümpler",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus fendleri var. kuenzleri (Castetter, Pierce & K.H.Schwer.) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus fendleri var. fasciculatus (Engelm. ex B.D.Jacks.) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus fendleri var. albiflorus (Weing.) Backeb.",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-poselgeri-lem",
+    "name": "Echinocereus poselgeri Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-knippelianus-liebner",
+    "name": "Echinocereus knippelianus Liebner",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus knippelianus subsp. knippelianus",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-stramineus-engelm-ex-rümpler",
+    "name": "Echinocereus stramineus Engelm. ex Rümpler",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus stramineus var. occidentalis N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus stramineus subsp. occidentalis (N.P.Taylor) N.P.Taylor",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-pulchellus-mart-kschum",
+    "name": "Echinocereus pulchellus (Mart.) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus pulchellus subsp. weinbergii (Weing.) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus pulchellus var. weinbergii (Weing.) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus pulchellus subsp. acanthosetus (S.Arias & U.Guzmán) W.Blum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-yavapaiensis-mabaker",
+    "name": "Echinocereus yavapaiensis M.A.Baker",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-engelmannii-parry-ex-engelm-lem",
+    "name": "Echinocereus engelmannii (Parry ex Engelm.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus engelmannii subsp. fasciculatus (Engelm. ex S.Watson) W.Blum & Mich.Lange",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus engelmannii var. chrysocentrus (Engelm. & J.M.Bigelow) Rümpler",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus engelmannii var. engelmannii",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus engelmannii var. acicularis L.D.Benson",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-palmeri-britton-rose",
+    "name": "Echinocereus palmeri Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-primolanatus-fritz-schwarz-ex-nptaylor",
+    "name": "Echinocereus primolanatus Fritz Schwarz ex N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-laui-gfrank",
+    "name": "Echinocereus laui G.Frank",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-dasyacanthus-engelm",
+    "name": "Echinocereus dasyacanthus Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-leucanthus-nptaylor",
+    "name": "Echinocereus leucanthus N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-adustus-engelm",
+    "name": "Echinocereus adustus Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-coccineus-engelm-engelm",
+    "name": "Echinocereus coccineus (Engelm.) Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus coccineus subsp. coccineus",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus coccineus var. coccineus",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus coccineus var. paucispinus (Engelm.) D.J.Ferguson",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-pseudopectinatus-nptaylor-nptaylor",
+    "name": "Echinocereus pseudopectinatus (N.P.Taylor) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-rayonesensis-nptaylor",
+    "name": "Echinocereus rayonesensis N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-berlandieri-engelm-fhaage",
+    "name": "Echinocereus berlandieri (Engelm.) F.Haage",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-pensilis-kbrandegee-japurpus",
+    "name": "Echinocereus pensilis (K.Brandegee) J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-grandis-britton-rose",
+    "name": "Echinocereus grandis Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-platyacanthus-link-otto",
+    "name": "Echinocereus platyacanthus Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-conglomeratus-cfförst-ex-haag-1860",
+    "name": "Echinocereus conglomeratus C.F.Först. ex Haag, 1860",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-waldeisii-haugg",
+    "name": "Echinocereus waldeisii Haugg",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-maritimus-mejones-kschum",
+    "name": "Echinocereus maritimus (M.E.Jones) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-delaetii-gürke-gürke",
+    "name": "Echinocereus delaetii (Gürke) Gürke",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-reichenbachii-terscheck-fhaage-ex-britton-rose",
+    "name": "Echinocereus reichenbachii (Terscheck) F.Haage ex Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus reichenbachii var. fitchii (Britton & Rose) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus reichenbachii var. armatus (Poselg.) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-fasciculatus-engelm-ldbenson",
+    "name": "Echinocereus fasciculatus (Engelm.) L.D.Benson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus fasciculatus var. boyce-thompsonii (Orcutt) L.D.Benson",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-pringlei-rose",
+    "name": "Echinocereus pringlei Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-viereckii-werderm",
+    "name": "Echinocereus viereckii Werderm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus viereckii var. morricalii (Ríha) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Echinocereus viereckii subsp. viereckii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-marksianus-fritz-schwarz-ex-backeb-1966",
+    "name": "Echinocereus marksianus Fritz Schwarz ex Backeb., 1966",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-spinigemmatus-ablau",
+    "name": "Echinocereus spinigemmatus A.B.Lau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-nivosus-glass-rafoster",
+    "name": "Echinocereus nivosus Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-ferreiranus-hegates-1953",
+    "name": "Echinocereus ferreiranus H.E.Gates, 1953",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-subinermis-salm-dyck-ex-scheer",
+    "name": "Echinocereus subinermis Salm-Dyck ex Scheer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus subinermis subsp. ochoterenae (J.G.Ortega) N.P.Taylor",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-stolonifer-wtmarshall",
+    "name": "Echinocereus stolonifer W.T.Marshall",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus stolonifer subsp. tayopensis (W.T.Marshall) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus stolonifer var. tayopensis (W.T.Marshall) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-scopulorum-britton-rose",
+    "name": "Echinocereus scopulorum Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-mojavensis-engelm-jmbigelow-engelm-ex-rümpler",
+    "name": "Echinocereus mojavensis (Engelm. & J.M.Bigelow) Engelm. ex Rümpler",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-pacificus-engelm-fhaage",
+    "name": "Echinocereus pacificus (Engelm.) F.Haage",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-arizonicus-rose-ex-orcutt",
+    "name": "Echinocereus arizonicus Rose ex Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocereus arizonicus subsp. matudae (Bravo) Rutow",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Echinocereus arizonicus subsp. nigrihorridispinus W.Blum & Rutow",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "echinocereus-nicholii-ldbenson-bdparfitt",
+    "name": "Echinocereus nicholii (L.D.Benson) B.D.Parfitt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-schmollii-weing-nptaylor",
+    "name": "Echinocereus schmollii (Weing.) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-viridiflorus-engelm",
+    "name": "Echinocereus viridiflorus Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-barthelowanus-britton-rose",
+    "name": "Echinocereus barthelowanus Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocereus-websterianus-gelinds",
+    "name": "Echinocereus websterianus G.E.Linds.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

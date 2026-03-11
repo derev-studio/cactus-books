@@ -1,0 +1,26 @@
+[
+  {
+    "id": "werckleocereus-glaber-eichlam-britton-rose",
+    "name": "Werckleocereus glaber (Eichlam) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "weberocereus-biolleyi-facweber-britton-rose",
+    "name": "Weberocereus biolleyi (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "weberocereus-bradei-britton-rose-drhunt",
+    "name": "Weberocereus bradei (Britton & Rose) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "weberocereus-imitans-kimnach-hutchison-drhunt",
+    "name": "Weberocereus imitans (Kimnach & Hutchison) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

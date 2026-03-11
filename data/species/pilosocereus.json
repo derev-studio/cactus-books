@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pilosocereus-collinsii-britton-rose-byles-gdrowley",
+    "name": "Pilosocereus collinsii (Britton & Rose) Byles & G.D.Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilosocereus-leucocephalus-poselg-byles-gdrowley",
+    "name": "Pilosocereus leucocephalus (Poselg.) Byles & G.D.Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilocereus-purpusii-britton-rose-fmknuth",
+    "name": "Pilocereus purpusii (Britton & Rose) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilosocereus-chrysacanthus-facweber-ex-kschum-byles-gdrowley",
+    "name": "Pilosocereus chrysacanthus (F.A.C.Weber ex K.Schum.) Byles & G.D.Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilosocereus-quadricentralis-eydawson-backeb",
+    "name": "Pilosocereus quadricentralis (E.Y.Dawson) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cephalocereus-alensis-facweber-britton-rose",
+    "name": "Cephalocereus alensis (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilosocereus-gaumeri-britton-rose-backeb",
+    "name": "Pilosocereus gaumeri (Britton & Rose) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pilosocereus-royenii-l-byles-gdrowley",
+    "name": "Pilosocereus royenii (L.) Byles & G.D.Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

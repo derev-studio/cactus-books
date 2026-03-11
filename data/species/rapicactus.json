@@ -1,0 +1,26 @@
+[
+  {
+    "id": "turbinicarpus-subterraneus-backeb-azimmerman",
+    "name": "Turbinicarpus subterraneus (Backeb.) A.Zimmerman",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-beguinii-nptaylor-mosco-zanov",
+    "name": "Turbinicarpus beguinii (N.P.Taylor) Mosco & Zanov.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-mandragora-aberger",
+    "name": "Thelocactus mandragora A.Berger",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-zaragosae-glass-rafoster-ceglass-hofer",
+    "name": "Turbinicarpus zaragosae (Glass & R.A.Foster) C.E.Glass & Hofer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "turbinicarpus-knuthianus-boed-vjohn-ríha",
+    "name": "Turbinicarpus knuthianus (Boed.) V.John & Ríha",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-hoferi-lüthy-ablau",
+    "name": "Turbinicarpus hoferi Lüthy & A.B.Lau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-viereckii-werderm-vjohn-ríha",
+    "name": "Turbinicarpus viereckii (Werderm.) V.John & Ríha",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Turbinicarpus viereckii subsp. major (Glass & R.A.Foster) Glass",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "turbinicarpus-gielsdorfianus-werderm-john-ríha",
+    "name": "Turbinicarpus gielsdorfianus (Werderm.) John & Ríha",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-valdezianus-hmoeller-glass-rafoster",
+    "name": "Turbinicarpus valdezianus (H.Moeller) Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "turbinicarpus-laui-glass-rafoster",
+    "name": "Turbinicarpus laui Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

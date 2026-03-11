@@ -1,0 +1,14 @@
+[
+  {
+    "id": "strombocactus-disciformis-dc-britton-rose",
+    "name": "Strombocactus disciformis (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "strombocactus-corregidorae-sarias-esánchez",
+    "name": "Strombocactus corregidorae S.Arias & E.Sánchez",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]
