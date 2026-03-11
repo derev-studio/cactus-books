@@ -27,6 +27,12 @@
     "id": "echinocactus-polycephalus-engelm-jmbigelow",
     "name": "Echinocactus polycephalus Engelm. & J.M.Bigelow",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Echinocactus polycephalus var. polycephalus",
+        "rank": "variety"
+      }
+    ]
   }
 ]

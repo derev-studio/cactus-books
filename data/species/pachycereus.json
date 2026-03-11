@@ -27,7 +27,13 @@
     "id": "pachycereus-schottii-engelm-drhunt",
     "name": "Pachycereus schottii (Engelm.) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Pachycereus schottii var. tenuis (G.E.Linds.) P.V.Heath",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "pachycereus-pringlei-swatson-britton-rose",

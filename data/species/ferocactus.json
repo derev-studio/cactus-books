@@ -2,18 +2,56 @@
   {
     "id": "ferocactus-wislizeni",
     "name": "Ferocactus wislizeni",
-    "description": "Бочковидный кактус пустыни Сонора. Мощные красноватые колючки. Жёлтые или оранжевые цветки на макушке."
+    "description": "Бочковидный кактус пустыни Сонора. Мощные красноватые колючки. Жёлтые или оранжевые цветки на макушке.",
+    "infraspecific": [
+      {
+        "name": "Ferocactus wislizeni subsp. herrerae (J.G.Ortega) Pilbeam & Bowdery",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus wislizeni var. wislizeni",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus wislizeni var. herrerae (J.G.Ortega) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "ferocactus-latispinus",
     "name": "Ferocactus latispinus",
-    "description": "«Дьявольский язык» — плоская крючковидная нижняя колючка. Пурпурные или жёлтые цветки."
+    "description": "«Дьявольский язык» — плоская крючковидная нижняя колючка. Пурпурные или жёлтые цветки.",
+    "infraspecific": [
+      {
+        "name": "Ferocactus latispinus var. spiralis (Karw. ex Pfeiff.) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus latispinus subsp. latispinus",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "ferocactus-wislizeni-engelm-britton-rose",
     "name": "Ferocactus wislizeni (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus wislizeni subsp. herrerae (J.G.Ortega) Pilbeam & Bowdery",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus wislizeni var. wislizeni",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus wislizeni var. herrerae (J.G.Ortega) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "sclerocactus-uncinatus-galeotti-nptaylor",
@@ -25,25 +63,65 @@
     "id": "ferocactus-gracilis-hegates",
     "name": "Ferocactus gracilis H.E.Gates",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus gracilis var. gracilis",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "ferocactus-emoryi-engelm-orcutt",
     "name": "Ferocactus emoryi (Engelm.) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus emoryi subsp. emoryi",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus emoryi var. rectispinus (Engelm. ex J.M.Coult.) N.P.Taylor",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "ferocactus-macrodiscus-matt-britton-rose",
     "name": "Ferocactus macrodiscus (Matt.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus macrodiscus subsp. macrodiscus",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus macrodiscus var. septentrionalis J.Meyrán",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus macrodiscus subsp. septentrionalis (J.Meyrán) N.P.Taylor",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "ferocactus-peninsulae-facweber-britton-rose",
     "name": "Ferocactus peninsulae (F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus peninsulae var. townsendianus (Britton & Rose) N.P.Taylor",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus peninsulae var. peninsulae",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "ferocactus-pilosus-salm-dyck-werderm",
@@ -55,7 +133,17 @@
     "id": "ferocactus-recurvus-mill-borg",
     "name": "Ferocactus recurvus (Mill.) Borg",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus recurvus var. greenwoodiae Glass",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus recurvus subsp. greenwoodiae (Glass) Pilbeam & Bowdery",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "ferocactus-robustus-karw-ex-pfeiff-britton-rose",
@@ -97,7 +185,21 @@
     "id": "ferocactus-cylindraceus-engelm-orcutt",
     "name": "Ferocactus cylindraceus (Engelm.) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus cylindraceus subsp. cylindraceus",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus cylindraceus subsp. tortulispinus (H.E.Gates) N.P.Taylor",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Ferocactus cylindraceus var. lecontei (Engelm.) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "ferocactus-pottsii-salm-dyck-backeb",
@@ -109,6 +211,16 @@
     "id": "ferocactus-fordii-orcutt-britton-rose",
     "name": "Ferocactus fordii (Orcutt) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Ferocactus fordii var. fordii",
+        "rank": "variety"
+      },
+      {
+        "name": "Ferocactus fordii var. grandiflorus G.E.Linds.",
+        "rank": "variety"
+      }
+    ]
   }
 ]

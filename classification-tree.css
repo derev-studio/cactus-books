@@ -286,6 +286,35 @@
   display: none !important;
 }
 
+.card-panel__infraspecific-wrap {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--cactus-border-light);
+}
+
+.card-panel__infraspecific-wrap[hidden] {
+  display: none !important;
+}
+
+.card-panel__infraspecific-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cactus-text);
+}
+
+.card-panel__infraspecific-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--cactus-muted-on-dark, rgba(255,255,255,0.85));
+}
+
+.card-panel__infraspecific-list li {
+  margin-bottom: 0.25rem;
+}
+
 .card-panel__species-title {
   margin: 0 0 0.5rem;
   font-size: 1rem;

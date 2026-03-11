@@ -15,7 +15,17 @@
     "id": "stenocereus-thurberi-engelm-buxb",
     "name": "Stenocereus thurberi (Engelm.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Stenocereus thurberi subsp. thurberi",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Stenocereus thurberi var. littoralis (K.Brandegee) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "stenocereus-pruinosus-otto-ex-pfeiff-buxb",

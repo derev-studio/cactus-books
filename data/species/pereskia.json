@@ -2,7 +2,13 @@
   {
     "id": "pereskia-grandifolia",
     "name": "Pereskia grandifolia",
-    "description": "Крупнолистная переския. Выглядит как обычный кустарник с листьями, но имеет ареолы с колючками."
+    "description": "Крупнолистная переския. Выглядит как обычный кустарник с листьями, но имеет ареолы с колючками.",
+    "infraspecific": [
+      {
+        "name": "Pereskia grandifolia var. grandifolia",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "pereskia-aculeata",
@@ -19,6 +25,12 @@
     "id": "pereskia-grandifolia-haw",
     "name": "Pereskia grandifolia Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Pereskia grandifolia var. grandifolia",
+        "rank": "variety"
+      }
+    ]
   }
 ]

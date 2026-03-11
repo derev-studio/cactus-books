@@ -2,17 +2,43 @@
   {
     "id": "mammillaria-hahniana",
     "name": "Mammillaria hahniana",
-    "description": "Шаровидный кактус с густым белым опушением. Цветки мелкие, розовые или красные, венчиком вокруг макушки. Родина — Мексика."
+    "description": "Шаровидный кактус с густым белым опушением. Цветки мелкие, розовые или красные, венчиком вокруг макушки. Родина — Мексика.",
+    "infraspecific": [
+      {
+        "name": "Mammillaria hahniana subsp. woodsii (R.T.Craig) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-elongata",
     "name": "Mammillaria elongata",
-    "description": "«Пальчики леди» — удлинённые побеги с золотистыми колючками. Легко кустится. Мексика."
+    "description": "«Пальчики леди» — удлинённые побеги с золотистыми колючками. Легко кустится. Мексика.",
+    "infraspecific": [
+      {
+        "name": "Mammillaria elongata subsp. elongata",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria elongata subsp. echinaria (DC.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-bocasana",
     "name": "Mammillaria bocasana",
-    "description": "Мягкие волосовидные колючки и крючковидные центральные. Цветки кремовые. Популярен в коллекциях."
+    "description": "Мягкие волосовидные колючки и крючковидные центральные. Цветки кремовые. Популярен в коллекциях.",
+    "infraspecific": [
+      {
+        "name": "Mammillaria bocasana subsp. bocasana",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria bocasana subsp. eschauzieri (J.M.Coult.) W.A.Fitz Maur. & B.Fitz Maur.",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-zeilmanniana",
@@ -28,7 +54,21 @@
     "id": "mammillaria-discolor-haw",
     "name": "Mammillaria discolor Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria discolor var. ochoterenae (Bravo) Repp.",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria discolor subsp. schmollii (Bravo) Linzen",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria discolor subsp. ochoterenae (Bravo) U.Guzmán",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-bombycina-quehl",
@@ -58,13 +98,29 @@
     "id": "mammillaria-decipiens-scheidw",
     "name": "Mammillaria decipiens Scheidw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria decipiens subsp. camptotricha (Dams) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-karwinskiana-mart",
     "name": "Mammillaria karwinskiana Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria karwinskiana subsp. collinsii (Britton & Rose) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria karwinskiana subsp. beiselii (Diers) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-zephyranthoides-scheidw",
@@ -76,7 +132,13 @@
     "id": "mammillaria-albilanata-backeb",
     "name": "Mammillaria albilanata Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria albilanata subsp. oaxacana D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-mystax-mart",
@@ -94,25 +156,81 @@
     "id": "mammillaria-haageana-pfeiff",
     "name": "Mammillaria haageana Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria haageana subsp. haageana",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria haageana subsp. conspicua (J.A.Purpus) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria haageana subsp. vaupelii (Tiegel) U.Guzmán",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria haageana subsp. meissneri (C.Ehrenb.) U.Guzmán",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-voburnensis-scheer",
     "name": "Mammillaria voburnensis Scheer",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria voburnensis var. eichlamii (Quehl) Repp.",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria voburnensis subsp. eichlamii (Quehl) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria voburnensis var. collinsii (Britton & Rose) Repp.",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria voburnensis subsp. collinsii (Britton & Rose) U.Guzmán",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria voburnensis var. voburnensis",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "mammillaria-lasiacantha-engelm",
     "name": "Mammillaria lasiacantha Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria lasiacantha var. denudata Engelm.",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria lasiacantha subsp. hyalina D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-hahniana-werderm",
     "name": "Mammillaria hahniana Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria hahniana subsp. woodsii (R.T.Craig) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-senilis-lodd-ex-salm-dyck",
@@ -124,13 +242,25 @@
     "id": "mammillaria-compressa-dc",
     "name": "Mammillaria compressa DC.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria compressa subsp. compressa",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-schiedeana-cehrenb",
     "name": "Mammillaria schiedeana C.Ehrenb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria schiedeana subsp. dumetorum (J.A.Purpus) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-rekoi-britton-rose-vaupel",
@@ -184,7 +314,25 @@
     "id": "mammillaria-heyderi-muehlenpf",
     "name": "Mammillaria heyderi Muehlenpf.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria heyderi subsp. macdougalii (Rose) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria heyderi var. meiacantha (Engelm.) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria heyderi var. heyderi",
+        "rank": "variety"
+      },
+      {
+        "name": "Mammillaria heyderi subsp. gummifera (Engelm.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-eriacantha-hortberol-ex-pfeiff",
@@ -196,7 +344,13 @@
     "id": "mammillaria-longimamma-dc",
     "name": "Mammillaria longimamma DC.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria longimamma var. longimamma",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "mammillaria-supertexta-mart",
@@ -238,13 +392,41 @@
     "id": "mammillaria-elongata-dc",
     "name": "Mammillaria elongata DC.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria elongata subsp. elongata",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria elongata subsp. echinaria (DC.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-crinita-dc",
     "name": "Mammillaria crinita DC.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria crinita subsp. painteri (Rose) U.Guzmán",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria crinita subsp. leucantha (Boed.) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria crinita subsp. crinita",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria crinita subsp. wildii (A.Dietr.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-carnea-zucc-ex-pfeiff",
@@ -262,7 +444,13 @@
     "id": "mammillaria-gracilis-pfeiff",
     "name": "Mammillaria gracilis Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria gracilis var. pulchella (Salm-Dyck) Salm-Dyck",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "mammillaria-orcuttii-boed",
@@ -292,7 +480,13 @@
     "id": "mammillaria-prolifera-mill-haw",
     "name": "Mammillaria prolifera (Mill.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria prolifera var. texana (Engelm.) A.Berger",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "mammillaria-microhelia-werderm",
@@ -328,7 +522,13 @@
     "id": "mammillaria-jaliscana-britton-rose-boed",
     "name": "Mammillaria jaliscana (Britton & Rose) Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria jaliscana subsp. zacatecasensis (Shurly) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-uncinata-zucc-ex-pfeiff",
@@ -340,7 +540,17 @@
     "id": "mammillaria-polythele-mart",
     "name": "Mammillaria polythele Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria polythele subsp. obconella (Scheidw.) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria polythele subsp. durispina (Boed.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-roseoalba-boed",
@@ -418,19 +628,49 @@
     "id": "mammillaria-rhodantha-link-otto",
     "name": "Mammillaria rhodantha Link & Otto",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria rhodantha subsp. fera-rubra (Schmoll ex R.T.Craig) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria rhodantha subsp. rhodantha",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria rhodantha subsp. aureiceps (Lem.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-sphacelata-mart",
     "name": "Mammillaria sphacelata Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria sphacelata subsp. sphacelata",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria sphacelata subsp. viperina (J.A.Purpus) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-columbiana-salm-dyck",
     "name": "Mammillaria columbiana Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria columbiana subsp. yucatanensis (Britton & Rose) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-muehlenpfordtii-cfförst",
@@ -442,19 +682,49 @@
     "id": "mammillaria-pennispinosa-krainz-ex-shurly",
     "name": "Mammillaria pennispinosa Krainz ex Shurly",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria pennispinosa subsp. nazasensis (Glass & R.A.Foster) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria pennispinosa subsp. pennispinosa",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria pennispinosa var. nazasensis Glass & R.A.Foster",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "mammillaria-bocasana-poselg",
     "name": "Mammillaria bocasana Poselg.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria bocasana subsp. bocasana",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria bocasana subsp. eschauzieri (J.M.Coult.) W.A.Fitz Maur. & B.Fitz Maur.",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-picta-meinsh",
     "name": "Mammillaria picta Meinsh.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria picta subsp. viereckii (Boed.) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-klissingiana-boed",
@@ -628,7 +898,13 @@
     "id": "mammillaria-deherdtiana-farwig",
     "name": "Mammillaria deherdtiana Farwig",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria deherdtiana subsp. dodsonii (Bravo) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-purpurea-cehrenb",
@@ -670,7 +946,13 @@
     "id": "mammillaria-spinosissima-lem",
     "name": "Mammillaria spinosissima Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria spinosissima subsp. pilcayensis (Bravo) D.R.Hunt",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-herrerae-werderm",
@@ -760,7 +1042,17 @@
     "id": "mammillaria-crucigera-mart",
     "name": "Mammillaria crucigera Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Mammillaria crucigera subsp. tlalocii (Repp.) D.R.Hunt",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Mammillaria crucigera subsp. crucigera",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "mammillaria-albiflora-werderm-backeb",

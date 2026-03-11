@@ -3,7 +3,29 @@
     "id": "epiphyllum-phyllanthus-l-haw",
     "name": "Epiphyllum phyllanthus (L.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Epiphyllum phyllanthus var. pittieri (F.A.C.Weber) Kimnach",
+        "rank": "variety"
+      },
+      {
+        "name": "Epiphyllum phyllanthus var. hookeri (Haw.) Kimnach",
+        "rank": "variety"
+      },
+      {
+        "name": "Epiphyllum phyllanthus var. guatemalense (Britton & Rose) Kimnach",
+        "rank": "variety"
+      },
+      {
+        "name": "Epiphyllum phyllanthus subsp. hookeri (Haw.) U.Guzmán",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Epiphyllum phyllanthus var. columbiense (F.A.C.Weber) Backeb.",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "epiphyllum-pumilum-vaupel-britton-rose",
@@ -15,7 +37,13 @@
     "id": "epiphyllum-hookeri-haw",
     "name": "Epiphyllum hookeri Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Epiphyllum hookeri subsp. hookeri",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "epiphyllum-oxypetalum-dc-haw",
@@ -33,7 +61,13 @@
     "id": "epiphyllum-thomasianum-kschum-britton-rose",
     "name": "Epiphyllum thomasianum (K.Schum.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Epiphyllum thomasianum var. thomasianum",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "epiphyllum-grandilobum-facweber-britton-rose",

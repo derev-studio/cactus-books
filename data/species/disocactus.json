@@ -3,7 +3,17 @@
     "id": "disocactus-speciosus-cav-barthlott",
     "name": "Disocactus speciosus (Cav.) Barthlott",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Disocactus speciosus subsp. cinnabarinus (Eichlam ex Weing.) Ralf Bauer",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Disocactus speciosus subsp. aurantiacus (Kimnach) Ralf Bauer",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "epiphyllum-anguliger-lem-gdon",
@@ -15,13 +25,33 @@
     "id": "disocactus-nelsonii-britton-rose-linding",
     "name": "Disocactus nelsonii (Britton & Rose) Linding.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Disocactus nelsonii var. nelsonii",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "disocactus-ackermannii-haw-ralf-bauer",
     "name": "Disocactus ackermannii (Haw.) Ralf Bauer",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Disocactus ackermannii var. ackermannii",
+        "rank": "variety"
+      },
+      {
+        "name": "Disocactus ackermannii subsp. conzattianus (T.Mac Doug.) Ralf Bauer",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Disocactus ackermannii var. conzattianus (T.Mac Doug.) Barthlott",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "epiphyllum-crenatum-lindl-gdon",

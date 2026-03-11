@@ -3,7 +3,13 @@
     "id": "cylindropuntia-leptocaulis-dc-fmknuth",
     "name": "Cylindropuntia leptocaulis (DC.) F.M.Knuth",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Cylindropuntia leptocaulis var. badia (A.Berger) F.M.Knuth",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-tunicata-lehm-link-otto",
@@ -63,7 +69,13 @@
     "id": "cylindropuntia-fulgida-engelm-fmknuth",
     "name": "Cylindropuntia fulgida (Engelm.) F.M.Knuth",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Cylindropuntia fulgida var. mamillata (Schott) Backeb.",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "cylindropuntia-anteojoensis-pinkava-efanderson",

@@ -32,6 +32,8 @@
   var cardDesc = null;
   var cardSpeciesWrap = null;
   var cardSpeciesList = null;
+  var cardInfraspecificWrap = null;
+  var cardInfraspecificList = null;
   var taxonomy = null;
   var speciesCache = {};
   var synonymsBridge = null;
@@ -206,6 +208,7 @@
     var info = (genusNode.info || '').trim();
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
 
+    if (cardInfraspecificWrap) cardInfraspecificWrap.hidden = true;
     cardSpeciesWrap.hidden = false;
     cardSpeciesList.innerHTML = '<li>Загрузка…</li>';
 
@@ -245,6 +248,22 @@
     cardLevel.textContent = levelLabel('species');
     var desc = (speciesNode.description || '').trim();
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
+    var infras = speciesNode.infraspecific;
+    if (cardInfraspecificWrap && cardInfraspecificList) {
+      if (infras && infras.length > 0) {
+        var rankLabels = { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' };
+        cardInfraspecificList.innerHTML = '';
+        infras.forEach(function (item) {
+          var li = document.createElement('li');
+          var label = rankLabels[item.rank] || item.rank;
+          li.textContent = (label ? label + ': ' : '') + (item.name || '');
+          cardInfraspecificList.appendChild(li);
+        });
+        cardInfraspecificWrap.hidden = false;
+      } else {
+        cardInfraspecificWrap.hidden = true;
+      }
+    }
   }
 
   function buildTree(rootNode) {
@@ -267,6 +286,8 @@
     cardDesc = document.getElementById('card-desc');
     cardSpeciesWrap = document.getElementById('card-species-wrap');
     cardSpeciesList = document.getElementById('card-species-list');
+    cardInfraspecificWrap = document.getElementById('card-infraspecific-wrap');
+    cardInfraspecificList = document.getElementById('card-infraspecific-list');
 
     if (cardClose) {
       cardClose.addEventListener('click', function () {

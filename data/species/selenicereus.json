@@ -27,7 +27,13 @@
     "id": "selenicereus-grandiflorus-l-britton-rose",
     "name": "Selenicereus grandiflorus (L.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Selenicereus grandiflorus subsp. hondurensis (K.Schum. ex Weing.) Ralf Bauer",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "selenicereus-chontalensis-alexander-kimnach",

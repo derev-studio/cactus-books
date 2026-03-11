@@ -9,7 +9,17 @@
     "id": "coryphantha-macromeris-engelm-lem",
     "name": "Coryphantha macromeris (Engelm.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Coryphantha macromeris var. macromeris",
+        "rank": "variety"
+      },
+      {
+        "name": "Coryphantha macromeris subsp. macromeris",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "coryphantha-delicata-lbremer",
@@ -21,7 +31,13 @@
     "id": "coryphantha-radians-dc-britton-rose",
     "name": "Coryphantha radians (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Coryphantha radians var. pseudoradians (Bravo) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "coryphantha-pseudoradians-bravo",
@@ -75,7 +91,13 @@
     "id": "coryphantha-retusa-pfeiff-britton-rose",
     "name": "Coryphantha retusa (Pfeiff.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Coryphantha retusa var. melleospina (Bravo) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "coryphantha-nickelsiae-kbrandegee-britton-rose",
@@ -105,7 +127,13 @@
     "id": "coryphantha-ramillosa-cutak",
     "name": "Coryphantha ramillosa Cutak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Coryphantha ramillosa subsp. santarosa Dicht & A.Lüthy",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "coryphantha-sulcata-engelm-britton-rose",

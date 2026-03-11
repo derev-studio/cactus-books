@@ -7,17 +7,55 @@
   {
     "id": "opuntia-microdasys",
     "name": "Opuntia microdasys",
-    "description": "«Заячьи ушки» — мелкие глохидии вместо колючек, жёлтые или белые. Декоративный вид."
+    "description": "«Заячьи ушки» — мелкие глохидии вместо колючек, жёлтые или белые. Декоративный вид.",
+    "infraspecific": [
+      {
+        "name": "Opuntia microdasys subsp. rufida (Engelm.) U.Guzmán & Mandujano",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia microdasys subsp. microdasys",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia microdasys var. laevior Salm-Dyck",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia microdasys var. rufida (Engelm.) K.Schum.",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-robusta",
     "name": "Opuntia robusta",
-    "description": "Крупные округлые членики, сизый налёт. Мексика. Плоды используют в пищу."
+    "description": "Крупные округлые членики, сизый налёт. Мексика. Плоды используют в пищу.",
+    "infraspecific": [
+      {
+        "name": "Opuntia robusta var. guerrana (Griff.) Sánchez-Mej.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia robusta var. robusta",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia robusta var. larreyi (F.A.C.Weber) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-humifusa",
     "name": "Opuntia humifusa",
-    "description": "Стелющаяся опунция, морозостойкая. Встречается в США на востоке. Жёлтые цветки."
+    "description": "Стелющаяся опунция, морозостойкая. Встречается в США на востоке. Жёлтые цветки.",
+    "infraspecific": [
+      {
+        "name": "Opuntia humifusa var. humifusa",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-depressa-rose",
@@ -41,13 +79,57 @@
     "id": "opuntia-engelmannii-salm-dyck-ex-engelm",
     "name": "Opuntia engelmannii Salm-Dyck ex Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia engelmannii subsp. lindheimeri (Engelm.) U.Guzmán & Mandujano",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia engelmannii subsp. engelmannii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia engelmannii var. rastrera (F.A.C.Weber) Pinkava",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia engelmannii var. engelmannii",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia engelmannii var. cujia Griffiths & Hare",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia engelmannii var. lindheimeri (Engelm.) B.D.Parfitt & Pinkava",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia engelmannii subsp. aciculata (Griffiths) U.Guzmán & Mandujano",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "opuntia-robusta-hlwendl",
     "name": "Opuntia robusta H.L.Wendl.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia robusta var. guerrana (Griff.) Sánchez-Mej.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia robusta var. robusta",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia robusta var. larreyi (F.A.C.Weber) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-pumila-rose",
@@ -77,7 +159,13 @@
     "id": "opuntia-tomentosa-salm-dyck",
     "name": "Opuntia tomentosa Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia tomentosa var. hernandezii (DC.) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-puberula-hortvindob-ex-pfeiff",
@@ -89,7 +177,25 @@
     "id": "opuntia-microdasys-lehm-pfeiff",
     "name": "Opuntia microdasys (Lehm.) Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia microdasys subsp. rufida (Engelm.) U.Guzmán & Mandujano",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia microdasys subsp. microdasys",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia microdasys var. laevior Salm-Dyck",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia microdasys var. rufida (Engelm.) K.Schum.",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-macrocentra-engelm",
@@ -101,19 +207,69 @@
     "id": "opuntia-phaeacantha-engelm",
     "name": "Opuntia phaeacantha Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia phaeacantha var. phaeacantha",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. laevis (J.M.Coult.) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. spinosibacca (M.S.Anthony) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. nigricans Engelm.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. major Engelm.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. discata (Griffiths) L.D.Benson & Walk.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. chihuahuensis (Rose) Bravo",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia phaeacantha var. flavispina L.D.Benson",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-streptacantha-lem",
     "name": "Opuntia streptacantha Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia streptacantha subsp. aguirriana Scheinvar & A.Rodr.",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "opuntia-velutina-facweber",
     "name": "Opuntia velutina F.A.C.Weber",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia velutina var. macdougaliana (Rose) Bravo",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia velutina var. affinis (Griffiths) Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-matudae-scheinvar",
@@ -161,7 +317,13 @@
     "id": "opuntia-stenopetala-engelm",
     "name": "Opuntia stenopetala Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia stenopetala var. inerme Bravo",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-chlorotica-engelm-jmbigelow",
@@ -227,7 +389,21 @@
     "id": "opuntia-littoralis-engelm-cockerell",
     "name": "Opuntia littoralis (Engelm.) Cockerell",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia littoralis var. piercei (Fosberg) L.D.Benson & Walk.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia littoralis var. austrocalifornica L.D.Benson & Walk.",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia littoralis var. littoralis",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-wilcoxii-britton-rose",
@@ -287,7 +463,21 @@
     "id": "opuntia-macrorhiza-engelm",
     "name": "Opuntia macrorhiza Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia macrorhiza subsp. pottsii (Salm-Dyck) U.Guzmán & Mandujano",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Opuntia macrorhiza var. macrorhiza",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia macrorhiza subsp. macrorhiza",
+        "rank": "subspecies"
+      }
+    ]
   },
   {
     "id": "opuntia-intricata-griffiths",
@@ -383,7 +573,17 @@
     "id": "opuntia-stricta-haw-haw",
     "name": "Opuntia stricta (Haw.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia stricta var. dillenii (Ker Gawl.) L.D.Benson",
+        "rank": "variety"
+      },
+      {
+        "name": "Opuntia stricta var. stricta",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-amarilla-griffiths",
@@ -473,7 +673,13 @@
     "id": "opuntia-compressa-jfmacbr",
     "name": "Opuntia compressa J.F.Macbr.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "infraspecific": [
+      {
+        "name": "Opuntia compressa var. macrorhiza (Engelm.) L.D.Benson",
+        "rank": "variety"
+      }
+    ]
   },
   {
     "id": "opuntia-bravoana-embaxter",
