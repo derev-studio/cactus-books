@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "id": "grusonia-bradtiana-jmcoult-britton-rose",
+    "name": "Grusonia bradtiana (J.M.Coult.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-emoryi-engelm",
+    "name": "Opuntia emoryi Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-marenae-shparsons-efanderson",
+    "name": "Grusonia marenae (S.H.Parsons) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-grahamii-engelm-hrob",
+    "name": "Grusonia grahamii (Engelm.) H.Rob.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-invicta-brandegee-efanderson",
+    "name": "Grusonia invicta (Brandegee) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "corynopuntia-bulbispina-engelm-fmknuth",
+    "name": "Corynopuntia bulbispina (Engelm.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-kunzei-rose-pinkava",
+    "name": "Grusonia kunzei (Rose) Pinkava",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-aggeria-ralston-hilsenb-efanderson",
+    "name": "Grusonia aggeria (Ralston & Hilsenb.) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-moelleri-aberger-efanderson",
+    "name": "Grusonia moelleri (A.Berger) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-vilis-rose-hrob",
+    "name": "Grusonia vilis (Rose) H.Rob.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "corynopuntia-schottii-engelm-fmknuth",
+    "name": "Corynopuntia schottii (Engelm.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-parishii-orcutt-pinkava",
+    "name": "Grusonia parishii (Orcutt) Pinkava",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "grusonia-clavata-engelm-hrob",
+    "name": "Grusonia clavata (Engelm.) H.Rob.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,6 +1,520 @@
 [
-  { "id": "opuntia-ficus-indica", "name": "Opuntia ficus-indica", "description": "Опунция индийская (инжирная). Плоские членики, съедобные плоды — «колючая груша». Широко культивируется." },
-  { "id": "opuntia-microdasys", "name": "Opuntia microdasys", "description": "«Заячьи ушки» — мелкие глохидии вместо колючек, жёлтые или белые. Декоративный вид." },
-  { "id": "opuntia-robusta", "name": "Opuntia robusta", "description": "Крупные округлые членики, сизый налёт. Мексика. Плоды используют в пищу." },
-  { "id": "opuntia-humifusa", "name": "Opuntia humifusa", "description": "Стелющаяся опунция, морозостойкая. Встречается в США на востоке. Жёлтые цветки." }
+  {
+    "id": "opuntia-ficus-indica",
+    "name": "Opuntia ficus-indica",
+    "description": "Опунция индийская (инжирная). Плоские членики, съедобные плоды — «колючая груша». Широко культивируется."
+  },
+  {
+    "id": "opuntia-microdasys",
+    "name": "Opuntia microdasys",
+    "description": "«Заячьи ушки» — мелкие глохидии вместо колючек, жёлтые или белые. Декоративный вид."
+  },
+  {
+    "id": "opuntia-robusta",
+    "name": "Opuntia robusta",
+    "description": "Крупные округлые членики, сизый налёт. Мексика. Плоды используют в пищу."
+  },
+  {
+    "id": "opuntia-humifusa",
+    "name": "Opuntia humifusa",
+    "description": "Стелющаяся опунция, морозостойкая. Встречается в США на востоке. Жёлтые цветки."
+  },
+  {
+    "id": "opuntia-depressa-rose",
+    "name": "Opuntia depressa Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-megacantha-salm-dyck",
+    "name": "Opuntia megacantha Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-rzedowskii-scheinvar",
+    "name": "Opuntia rzedowskii Scheinvar",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-engelmannii-salm-dyck-ex-engelm",
+    "name": "Opuntia engelmannii Salm-Dyck ex Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-robusta-hlwendl",
+    "name": "Opuntia robusta H.L.Wendl.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-pumila-rose",
+    "name": "Opuntia pumila Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-hyptiacantha-facweber",
+    "name": "Opuntia hyptiacantha F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-occidentalis-engelm-jmbigelow",
+    "name": "Opuntia × occidentalis Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "nopalea-auberi-pfeiff-salm-dyck",
+    "name": "Nopalea auberi (Pfeiff.) Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-tomentosa-salm-dyck",
+    "name": "Opuntia tomentosa Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-puberula-hortvindob-ex-pfeiff",
+    "name": "Opuntia puberula Hort.Vindob. ex Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-microdasys-lehm-pfeiff",
+    "name": "Opuntia microdasys (Lehm.) Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-macrocentra-engelm",
+    "name": "Opuntia macrocentra Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-phaeacantha-engelm",
+    "name": "Opuntia phaeacantha Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-streptacantha-lem",
+    "name": "Opuntia streptacantha Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-velutina-facweber",
+    "name": "Opuntia velutina F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-matudae-scheinvar",
+    "name": "Opuntia matudae Scheinvar",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-atrispina-griffiths",
+    "name": "Opuntia atrispina Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-joconostle-facweber",
+    "name": "Opuntia joconostle F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-deamii-rose",
+    "name": "Opuntia deamii Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-eichlamii-rose",
+    "name": "Opuntia eichlamii Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-dejecta-salm-dyck",
+    "name": "Opuntia dejecta Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-hitchcockii-jgortega",
+    "name": "Opuntia hitchcockii J.G.Ortega",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-stenopetala-engelm",
+    "name": "Opuntia stenopetala Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-chlorotica-engelm-jmbigelow",
+    "name": "Opuntia chlorotica Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-aciculata-griffiths",
+    "name": "Opuntia aciculata Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-andersonii-hmhern-gómez-hin-bárcenas",
+    "name": "Opuntia × andersonii H.M.Hern., Gómez-Hin. & Bárcenas",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-oligacantha-pfeiff",
+    "name": "Opuntia oligacantha Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-durangensis-britton-rose",
+    "name": "Opuntia durangensis Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-nejapensis-bravo",
+    "name": "Opuntia nejapensis Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-excelsa-sánchez-mej",
+    "name": "Opuntia excelsa Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-decumbens-salm-dyck",
+    "name": "Opuntia decumbens Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-oricola-philbrick",
+    "name": "Opuntia oricola Philbrick",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "nopalea-cochenillifera-l-salm-dyck",
+    "name": "Nopalea cochenillifera (L.) Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-littoralis-engelm-cockerell",
+    "name": "Opuntia littoralis (Engelm.) Cockerell",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-wilcoxii-britton-rose",
+    "name": "Opuntia wilcoxii Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-fuliginosa-griffiths",
+    "name": "Opuntia fuliginosa Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-mesacantha-raf",
+    "name": "Opuntia mesacantha Raf.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-guilanchii-griffiths",
+    "name": "Opuntia guilanchii Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-scheeri-facweber",
+    "name": "Opuntia scheeri F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-robinsonii-jgortega",
+    "name": "Opuntia robinsonii J.G.Ortega",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-feroacantha-britton-rose",
+    "name": "Opuntia feroacantha Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-albicarpa-scheinvar-1995",
+    "name": "Opuntia albicarpa Scheinvar, 1995",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "nopalea-inaperta-schott-ex-griffith",
+    "name": "Nopalea inaperta Schott ex Griffith",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-macrorhiza-engelm",
+    "name": "Opuntia macrorhiza Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-intricata-griffiths",
+    "name": "Opuntia intricata Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-cochinera-griffiths",
+    "name": "Opuntia × cochinera Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-pycnantha-engelm-ex-jmcoult",
+    "name": "Opuntia pycnantha Engelm. ex J.M.Coult.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-rastrera-facweber",
+    "name": "Opuntia rastrera F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-pilifera-facweber",
+    "name": "Opuntia pilifera F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-huajuapensis-bravo",
+    "name": "Opuntia huajuapensis Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-parviclada-sarias-gama",
+    "name": "Opuntia parviclada S.Arias & Gama",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-tehuacana-sarias-uguzmán",
+    "name": "Opuntia tehuacana S.Arias & U.Guzmán",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-rufida-engelm",
+    "name": "Opuntia rufida Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-elizondoana-esánchez-villaseñor",
+    "name": "Opuntia elizondoana E.Sánchez & Villaseñor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-tapona-engelm-ex-jmcoult",
+    "name": "Opuntia tapona Engelm. ex J.M.Coult.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "nopalea-lutea-rose",
+    "name": "Nopalea lutea Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-carstenii-rpuente-chamann",
+    "name": "Opuntia × carstenii R.Puente & C.Hamann",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-arenaria-engelm",
+    "name": "Opuntia arenaria Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-gosseliniana-facweber",
+    "name": "Opuntia gosseliniana F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-stricta-haw-haw",
+    "name": "Opuntia stricta (Haw.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-amarilla-griffiths",
+    "name": "Opuntia amarilla Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-dillenii-ker-gawl-haw",
+    "name": "Opuntia dillenii (Ker Gawl.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-chaffeyi-britton-rose",
+    "name": "Opuntia chaffeyi Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-pachyrrhiza-hmhern-gómez-hin-bárcenas",
+    "name": "Opuntia pachyrrhiza H.M.Hern., Gómez-Hin. & Bárcenas",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-jaliscana-bravo",
+    "name": "Opuntia jaliscana Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-megarrhiza-rose",
+    "name": "Opuntia megarrhiza Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-vaseyi-jmcoult-britton-rose",
+    "name": "Opuntia × vaseyi (J.M.Coult.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-crassa-haw",
+    "name": "Opuntia crassa Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-cymochila-engelm-jmbigelow",
+    "name": "Opuntia × cymochila Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-amyclaea-ten",
+    "name": "Opuntia amyclaea Ten.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-howeyi-japurpus",
+    "name": "Opuntia howeyi J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-fragilis-nutt-haw",
+    "name": "Opuntia fragilis (Nutt.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-pottsii-salm-dyck",
+    "name": "Opuntia pottsii Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-gallegiana-scheinvar-olalde",
+    "name": "Opuntia gallegiana Scheinvar & Olalde",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-compressa-jfmacbr",
+    "name": "Opuntia compressa J.F.Macbr.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-bravoana-embaxter",
+    "name": "Opuntia bravoana E.M.Baxter",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-cubensis-britton-rose",
+    "name": "Opuntia × cubensis Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-demissa-griffiths",
+    "name": "Opuntia × demissa Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-vulgaris-ten-1831",
+    "name": "Opuntia vulgaris Ten., 1831",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-elata-link-otto",
+    "name": "Opuntia elata Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-drummondii-graham",
+    "name": "Opuntia drummondii Graham",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-setispina-engelm-1850",
+    "name": "Opuntia setispina Engelm., 1850",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
 ]

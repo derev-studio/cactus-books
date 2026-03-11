@@ -1,1 +1,176 @@
-[]
+[
+  {
+    "id": "cylindropuntia-leptocaulis-dc-fmknuth",
+    "name": "Cylindropuntia leptocaulis (DC.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-tunicata-lehm-link-otto",
+    "name": "Opuntia tunicata (Lehm.) Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-wolfii-ldbenson-mabaker",
+    "name": "Cylindropuntia wolfii (L.D.Benson) M.A.Baker",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-imbricata-haw-dc",
+    "name": "Opuntia imbricata (Haw.) DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-thurberi-engelm-fmknuth",
+    "name": "Cylindropuntia thurberi (Engelm.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-sanfelipensis-rebman",
+    "name": "Opuntia sanfelipensis Rebman",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-kleiniae-dc-fmknuth",
+    "name": "Cylindropuntia kleiniae (DC.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-cholla-facweber",
+    "name": "Opuntia cholla F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-prolifera-engelm",
+    "name": "Opuntia prolifera Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-lindsayi-rebman",
+    "name": "Opuntia lindsayi Rebman",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-fulgida-engelm-fmknuth",
+    "name": "Cylindropuntia fulgida (Engelm.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-anteojoensis-pinkava-efanderson",
+    "name": "Cylindropuntia anteojoensis (Pinkava) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-fosbergii-cbwolf",
+    "name": "Opuntia fosbergii C.B.Wolf",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-ramosissima-engelm",
+    "name": "Opuntia ramosissima Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-tesajo-engelm-ex-jmcoult",
+    "name": "Opuntia tesajo Engelm. ex J.M.Coult.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-alcahes-facweber-fmknuth",
+    "name": "Cylindropuntia alcahes (F.A.C.Weber) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "cylindropuntia-viridiflora-britton-rose-fmknuth",
+    "name": "Cylindropuntia × viridiflora (Britton & Rose) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-cardenche-griffiths",
+    "name": "Opuntia × cardenche Griffiths",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-munzii-cbwolf",
+    "name": "Opuntia munzii C.B.Wolf",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-bigelovii-engelm",
+    "name": "Opuntia bigelovii Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-echinocarpa-engelm-jmbigelow",
+    "name": "Opuntia echinocarpa Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-arbuscula-engelm",
+    "name": "Opuntia arbuscula Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-rosarica-gelinds",
+    "name": "Opuntia rosarica G.E.Linds.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-acanthocarpa-engelm-jmbigelow",
+    "name": "Opuntia acanthocarpa Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-molesta-brandegee",
+    "name": "Opuntia molesta Brandegee",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-whipplei-engelm-jmbigelow",
+    "name": "Opuntia whipplei Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-kelvinensis-vegrant-kagrant",
+    "name": "Opuntia × kelvinensis V.E.Grant & K.A.Grant",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-santamaria-baxter-bravo",
+    "name": "Opuntia santamaria (Baxter) Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "opuntia-ganderi-cbwolf-rebman-pinkava",
+    "name": "Opuntia ganderi (C.B.Wolf) Rebman & Pinkava",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

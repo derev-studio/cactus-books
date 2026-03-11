@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "rhipsalis-baccifera-jsmuell-stearn",
+    "name": "Rhipsalis baccifera (J.S.Muell.) Stearn",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "rhipsalis-simmleri-beauverd",
+    "name": "Rhipsalis simmleri Beauverd",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

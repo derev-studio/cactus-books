@@ -43,3 +43,7 @@ build/
 data/sources/backeberg/*.pdf
 data/sources/modern_taxonomy/*.dmp
 data/sources/modern_taxonomy/*.tar.gz
+
+# GBIF archive (heavy; keep locally, do not push)
+data/sources/gbif/*/
+0026914-260226173443078/

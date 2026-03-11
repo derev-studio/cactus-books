@@ -1,4 +1,18 @@
 [
-  { "id": "schlumbergera-truncata", "name": "Schlumbergera truncata", "description": "«Декабрист», «рождественский кактус». Сегментированные стебли, цветение осенью и зимой. Цветки розовые, красные или белые." },
-  { "id": "schlumbergera-buckleyi", "name": "Schlumbergera × buckleyi", "description": "Гибридный «настоящий» декабрист с симметричными сегментами. Популярное комнатное растение." }
+  {
+    "id": "schlumbergera-truncata",
+    "name": "Schlumbergera truncata",
+    "description": "«Декабрист», «рождественский кактус». Сегментированные стебли, цветение осенью и зимой. Цветки розовые, красные или белые."
+  },
+  {
+    "id": "schlumbergera-buckleyi",
+    "name": "Schlumbergera × buckleyi",
+    "description": "Гибридный «настоящий» декабрист с симметричными сегментами. Популярное комнатное растение."
+  },
+  {
+    "id": "zygocactus-truncatus-haw-kschum",
+    "name": "Zygocactus truncatus (Haw.) K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
 ]

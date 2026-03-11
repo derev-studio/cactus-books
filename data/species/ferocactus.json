@@ -1,4 +1,114 @@
 [
-  { "id": "ferocactus-wislizeni", "name": "Ferocactus wislizeni", "description": "Бочковидный кактус пустыни Сонора. Мощные красноватые колючки. Жёлтые или оранжевые цветки на макушке." },
-  { "id": "ferocactus-latispinus", "name": "Ferocactus latispinus", "description": "«Дьявольский язык» — плоская крючковидная нижняя колючка. Пурпурные или жёлтые цветки." }
+  {
+    "id": "ferocactus-wislizeni",
+    "name": "Ferocactus wislizeni",
+    "description": "Бочковидный кактус пустыни Сонора. Мощные красноватые колючки. Жёлтые или оранжевые цветки на макушке."
+  },
+  {
+    "id": "ferocactus-latispinus",
+    "name": "Ferocactus latispinus",
+    "description": "«Дьявольский язык» — плоская крючковидная нижняя колючка. Пурпурные или жёлтые цветки."
+  },
+  {
+    "id": "ferocactus-wislizeni-engelm-britton-rose",
+    "name": "Ferocactus wislizeni (Engelm.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "sclerocactus-uncinatus-galeotti-nptaylor",
+    "name": "Sclerocactus uncinatus (Galeotti) N.P.Taylor",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-gracilis-hegates",
+    "name": "Ferocactus gracilis H.E.Gates",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-emoryi-engelm-orcutt",
+    "name": "Ferocactus emoryi (Engelm.) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-macrodiscus-matt-britton-rose",
+    "name": "Ferocactus macrodiscus (Matt.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-peninsulae-facweber-britton-rose",
+    "name": "Ferocactus peninsulae (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-pilosus-salm-dyck-werderm",
+    "name": "Ferocactus pilosus (Salm-Dyck) Werderm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-recurvus-mill-borg",
+    "name": "Ferocactus recurvus (Mill.) Borg",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-robustus-karw-ex-pfeiff-britton-rose",
+    "name": "Ferocactus robustus (Karw. ex Pfeiff.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-townsendianus-britton-rose",
+    "name": "Ferocactus townsendianus Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-viridescens-torr-agray-britton-rose",
+    "name": "Ferocactus viridescens (Torr. & A.Gray) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hamatocactus-crassihamatus-facweber-buxb",
+    "name": "Hamatocactus crassihamatus (F.A.C.Weber) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-lindsayi-bravo",
+    "name": "Ferocactus lindsayi Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-johnstonianus-britton-rose",
+    "name": "Ferocactus johnstonianus Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-cylindraceus-engelm-orcutt",
+    "name": "Ferocactus cylindraceus (Engelm.) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-pottsii-salm-dyck-backeb",
+    "name": "Ferocactus pottsii (Salm-Dyck) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "ferocactus-fordii-orcutt-britton-rose",
+    "name": "Ferocactus fordii (Orcutt) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
 ]

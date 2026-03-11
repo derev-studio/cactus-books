@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "id": "stenocereus-quevedonis-jgortega-buxb",
+    "name": "Stenocereus quevedonis (J.G.Ortega) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-beneckei-cehrenb-aberger-buxb",
+    "name": "Stenocereus beneckei (C.Ehrenb.) A.Berger & Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-thurberi-engelm-buxb",
+    "name": "Stenocereus thurberi (Engelm.) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-pruinosus-otto-ex-pfeiff-buxb",
+    "name": "Stenocereus pruinosus (Otto ex Pfeiff.) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-griseus-haw-buxb",
+    "name": "Stenocereus griseus (Haw.) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-eichlamii-britton-rose-buxb-ex-bravo",
+    "name": "Stenocereus eichlamii (Britton & Rose) Buxb. ex Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "isolatocereus-dumortieri-scheidw-backeb",
+    "name": "Isolatocereus dumortieri (Scheidw.) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-gummosus-engelm-acgibson-kehorak",
+    "name": "Stenocereus gummosus (Engelm.) A.C.Gibson & K.E.Horak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-stellatus-pfeiff-riccob",
+    "name": "Stenocereus stellatus (Pfeiff.) Riccob.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-queretaroensis-facweber-ex-mathsson-buxb",
+    "name": "Stenocereus queretaroensis (F.A.C.Weber ex Mathsson) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-eruca-brandegee-acgibson-kehorak",
+    "name": "Stenocereus eruca (Brandegee) A.C.Gibson & K.E.Horak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-zopilotensis-arreola-nava-terrazas",
+    "name": "Stenocereus zopilotensis Arreola-Nava & Terrazas",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-kerberi-kschum-acgibson-kehorak",
+    "name": "Stenocereus kerberi (K.Schum.) A.C.Gibson & K.E.Horak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-alamosensis-jmcoult-acgibson-kehorak",
+    "name": "Stenocereus alamosensis (J.M.Coult.) A.C.Gibson & K.E.Horak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-montanus-britton-rose-buxb",
+    "name": "Stenocereus montanus (Britton & Rose) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-standleyi-jgortega-buxb",
+    "name": "Stenocereus standleyi (J.G.Ortega) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-treleasei-rose-backeb",
+    "name": "Stenocereus treleasei (Rose) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-chacalapensis-bravo-tmac-doug-buxb",
+    "name": "Stenocereus chacalapensis (Bravo & T.Mac Doug.) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-aragonii-facweber-buxb",
+    "name": "Stenocereus aragonii (F.A.C.Weber) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-chrysocarpus-sánchez-mej",
+    "name": "Stenocereus chrysocarpus Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-fricii-sánchez-mej",
+    "name": "Stenocereus fricii Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-martinezii-jgortega-buxb",
+    "name": "Stenocereus martinezii (J.G.Ortega) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

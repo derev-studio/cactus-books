@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "thelocactus-heterochromus-facweber-oosten",
+    "name": "Thelocactus heterochromus (F.A.C.Weber) Oosten",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-hastifer-werderm-boed-fmknuth",
+    "name": "Thelocactus hastifer (Werderm. & Boed.) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-tulensis-poselg-britton-rose",
+    "name": "Thelocactus tulensis (Poselg.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-hexaedrophorus-lem-britton-rose",
+    "name": "Thelocactus hexaedrophorus (Lem.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-leucacanthus-zucc-ex-pfeiff-britton-rose",
+    "name": "Thelocactus leucacanthus (Zucc. ex Pfeiff.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-setispinus-engelm-efanderson",
+    "name": "Thelocactus setispinus (Engelm.) E.F.Anderson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-conothelos-regel-eklein-bis-fmknuth",
+    "name": "Thelocactus conothelos (Regel & E.Klein bis) F.M.Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-rinconensis-poselg-britton-rose",
+    "name": "Thelocactus rinconensis (Poselg.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-macdowellii-rebut-ex-quehl-wtmarshall",
+    "name": "Thelocactus macdowellii (Rebut ex Quehl) W.T.Marshall",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "thelocactus-buekii-eklein-bis-britton-rose",
+    "name": "Thelocactus buekii (E.Klein bis) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

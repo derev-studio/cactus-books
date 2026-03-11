@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "epiphyllum-phyllanthus-l-haw",
+    "name": "Epiphyllum phyllanthus (L.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-pumilum-vaupel-britton-rose",
+    "name": "Epiphyllum pumilum (Vaupel) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-hookeri-haw",
+    "name": "Epiphyllum hookeri Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-oxypetalum-dc-haw",
+    "name": "Epiphyllum oxypetalum (DC.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-cartagense-facweber-britton-rose",
+    "name": "Epiphyllum cartagense (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-thomasianum-kschum-britton-rose",
+    "name": "Epiphyllum thomasianum (K.Schum.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-grandilobum-facweber-britton-rose",
+    "name": "Epiphyllum grandilobum (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-laui-kimnach",
+    "name": "Epiphyllum laui Kimnach",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

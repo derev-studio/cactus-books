@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "id": "hylocereus-undatus-haw-britton-rose",
+    "name": "Hylocereus undatus (Haw.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-ocamponis-salm-dyck-britton-rose",
+    "name": "Hylocereus ocamponis (Salm-Dyck) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-purpusii-weing-britton-rose",
+    "name": "Hylocereus purpusii (Weing.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-spinulosus-dc-britton-rose",
+    "name": "Selenicereus spinulosus (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-grandiflorus-l-britton-rose",
+    "name": "Selenicereus grandiflorus (L.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-chontalensis-alexander-kimnach",
+    "name": "Selenicereus chontalensis (Alexander) Kimnach",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-atropilosus-kimnach",
+    "name": "Selenicereus atropilosus Kimnach",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-escuintlensis-kimnach",
+    "name": "Hylocereus escuintlensis Kimnach",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-boeckmannii-otto-britton-rose",
+    "name": "Selenicereus boeckmannii (Otto) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-hamatus-scheidw-britton-rose",
+    "name": "Selenicereus hamatus (Scheidw.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-vagans-britton-rose",
+    "name": "Selenicereus vagans Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-triangularis-l-britton-rose",
+    "name": "Hylocereus triangularis (L.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-monacanthus-lem-britton-rose",
+    "name": "Hylocereus monacanthus (Lem.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-anthonyanus-alexander-drhunt",
+    "name": "Selenicereus anthonyanus (Alexander) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-costaricensis-facweber-britton-rose",
+    "name": "Hylocereus costaricensis (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-wercklei-facweber-britton-rose",
+    "name": "Selenicereus wercklei (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "selenicereus-murrillii-britton-rose",
+    "name": "Selenicereus murrillii Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-stenopterus-facweber-britton-rose",
+    "name": "Hylocereus stenopterus (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "weberocereus-tonduzii-facweber-gdrowley",
+    "name": "Weberocereus tonduzii (F.A.C.Weber) G.D.Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-minutiflorus-britton-rose",
+    "name": "Hylocereus minutiflorus Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-guatemalensis-eichlam-ex-weing-britton-rose",
+    "name": "Hylocereus guatemalensis (Eichlam ex Weing.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "hylocereus-calcaratus-facweber-britton-rose",
+    "name": "Hylocereus calcaratus (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": "echinopsis-bridgesii-salm-dyck",
+    "name": "Echinopsis bridgesii Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "myrtillocactus-geometrizans-mart-ex-pfeiff-console",
+    "name": "Myrtillocactus geometrizans (Mart. ex Pfeiff.) Console",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "escontria-chiotilla-facweber-ex-kschum-rose",
+    "name": "Escontria chiotilla (F.A.C.Weber ex K.Schum.) Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "myrtillocactus-schenckii-japurpus-britton-rose",
+    "name": "Myrtillocactus schenckii (J.A.Purpus) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "polaskia-chende-rol-goss-acgibson-kehorak",
+    "name": "Polaskia chende (Rol.-Goss.) A.C.Gibson & K.E.Horak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "polaskia-chichipe-rol-goss-backeb",
+    "name": "Polaskia chichipe (Rol.-Goss.) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "myrtillocactus-eichlamii-britton-rose",
+    "name": "Myrtillocactus eichlamii Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "myrtillocactus-cochal-orcutt-britton-rose",
+    "name": "Myrtillocactus cochal (Orcutt) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

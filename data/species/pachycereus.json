@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "pachycereus-militaris-audot-drhunt",
+    "name": "Pachycereus militaris (Audot) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-weberi-jmcoult-backeb",
+    "name": "Pachycereus weberi (J.M.Coult.) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-pecten-aboriginum-engelm-ex-swatson-britton-rose",
+    "name": "Pachycereus pecten-aboriginum (Engelm. ex S.Watson) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "lemaireocereus-hollianus-facweber-ex-jmcoult-britton-rose",
+    "name": "Lemaireocereus hollianus (F.A.C.Weber ex J.M.Coult.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-schottii-engelm-drhunt",
+    "name": "Pachycereus schottii (Engelm.) D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-pringlei-swatson-britton-rose",
+    "name": "Pachycereus pringlei (S.Watson) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-tepamo-gama-sarias",
+    "name": "Pachycereus tepamo Gama & S.Arias",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-grandis-rose",
+    "name": "Pachycereus grandis Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pachycereus-gaumeri-britton-rose",
+    "name": "Pachycereus gaumeri Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "lemaireocereus-lepidanthus-eichlam-sarias-terrazas",
+    "name": "Lemaireocereus lepidanthus (Eichlam) S.Arias & Terrazas",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "stenocereus-longispinus-britton-rose-buxb",
+    "name": "Stenocereus longispinus (Britton & Rose) Buxb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "lophocereus-gatesii-mejones",
+    "name": "Lophocereus gatesii M.E.Jones",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "id": "disocactus-speciosus-cav-barthlott",
+    "name": "Disocactus speciosus (Cav.) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-anguliger-lem-gdon",
+    "name": "Epiphyllum anguliger (Lem.) G.Don",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-nelsonii-britton-rose-linding",
+    "name": "Disocactus nelsonii (Britton & Rose) Linding.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-ackermannii-haw-ralf-bauer",
+    "name": "Disocactus ackermannii (Haw.) Ralf Bauer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-crenatum-lindl-gdon",
+    "name": "Epiphyllum crenatum (Lindl.) G.Don",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-macranthus-alexander-kimnach-hutchison",
+    "name": "Disocactus macranthus (Alexander) Kimnach & Hutchison",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-phyllanthoides-dc-barthlott",
+    "name": "Disocactus phyllanthoides (DC.) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-biformis-lindl-lindl",
+    "name": "Disocactus biformis (Lindl.) Lindl.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-macdougallii-alexander-barthlott",
+    "name": "Disocactus macdougallii (Alexander) Barthlott",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "epiphyllum-lepidocarpum-facweber-britton-rose",
+    "name": "Epiphyllum lepidocarpum (F.A.C.Weber) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "disocactus-quezaltecus-standl-steyerm-kimnach",
+    "name": "Disocactus quezaltecus (Standl. & Steyerm.) Kimnach",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

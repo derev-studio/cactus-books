@@ -1,4 +1,24 @@
 [
-  { "id": "pereskia-grandifolia", "name": "Pereskia grandifolia", "description": "Крупнолистная переския. Выглядит как обычный кустарник с листьями, но имеет ареолы с колючками." },
-  { "id": "pereskia-aculeata", "name": "Pereskia aculeata", "description": "Перуанская яблоня — лиана с съедобными плодами. Листья и стебли с колючками." }
+  {
+    "id": "pereskia-grandifolia",
+    "name": "Pereskia grandifolia",
+    "description": "Крупнолистная переския. Выглядит как обычный кустарник с листьями, но имеет ареолы с колючками."
+  },
+  {
+    "id": "pereskia-aculeata",
+    "name": "Pereskia aculeata",
+    "description": "Перуанская яблоня — лиана с съедобными плодами. Листья и стебли с колючками."
+  },
+  {
+    "id": "pereskia-aculeata-mill",
+    "name": "Pereskia aculeata Mill.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "pereskia-grandifolia-haw",
+    "name": "Pereskia grandifolia Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
 ]

@@ -1,1 +1,212 @@
-[]
+[
+  {
+    "id": "coryphantha-bumamma-ehrenb-britton-rose",
+    "name": "Coryphantha bumamma (Ehrenb.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-macromeris-engelm-lem",
+    "name": "Coryphantha macromeris (Engelm.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-delicata-lbremer",
+    "name": "Coryphantha delicata L.Bremer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-radians-dc-britton-rose",
+    "name": "Coryphantha radians (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-pseudoradians-bravo",
+    "name": "Coryphantha pseudoradians Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-glanduligera-otto-adietr-lem",
+    "name": "Coryphantha glanduligera (Otto & A.Dietr.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-difficilis-quehl-orcutt",
+    "name": "Coryphantha difficilis (Quehl) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-poselgeriana-adietr-britton-rose",
+    "name": "Coryphantha poselgeriana (A.Dietr.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-echinoidea-quehl-britton-rose",
+    "name": "Coryphantha echinoidea (Quehl) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-erecta-lem-ex-pfeiff-lem",
+    "name": "Coryphantha erecta (Lem. ex Pfeiff.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-delaetiana-quehl-aberger",
+    "name": "Coryphantha delaetiana (Quehl) A.Berger",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-compacta-engelm-britton-rose",
+    "name": "Coryphantha compacta (Engelm.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-retusa-pfeiff-britton-rose",
+    "name": "Coryphantha retusa (Pfeiff.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-nickelsiae-kbrandegee-britton-rose",
+    "name": "Coryphantha nickelsiae (K.Brandegee) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-georgii-boed",
+    "name": "Coryphantha georgii Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pectinata-engelm",
+    "name": "Mammillaria pectinata Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-octacantha-dc-britton-rose",
+    "name": "Coryphantha octacantha (DC.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-ramillosa-cutak",
+    "name": "Coryphantha ramillosa Cutak",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-sulcata-engelm-britton-rose",
+    "name": "Coryphantha sulcata (Engelm.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-pseudoechinus-boed",
+    "name": "Coryphantha pseudoechinus Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-clavata-scheidw-backeb",
+    "name": "Coryphantha clavata (Scheidw.) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-durangensis-ruenge-britton-rose",
+    "name": "Coryphantha durangensis (Ruenge) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-vaupeliana-boed",
+    "name": "Coryphantha vaupeliana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-jalpanensis-fgbuchenau",
+    "name": "Coryphantha jalpanensis F.G.Buchenau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-pulleineana-backeb-glass",
+    "name": "Coryphantha pulleineana (Backeb.) Glass",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-wohlschlageri-holzeis",
+    "name": "Coryphantha wohlschlageri Holzeis",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-glassii-dicht-alüthy",
+    "name": "Coryphantha glassii Dicht & A.Lüthy",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-ottonis-pfeiff-lem",
+    "name": "Coryphantha ottonis (Pfeiff.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-potosiana-jacobi-glass-rafoster-ex-rowley",
+    "name": "Coryphantha potosiana (Jacobi) Glass & R.A.Foster ex Rowley",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-pycnacantha-mart-lem",
+    "name": "Coryphantha pycnacantha (Mart.) Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-salinensis-poselg-dicht-alüthy",
+    "name": "Coryphantha salinensis (Poselg.) Dicht & A.Lüthy",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-werdermannii-boed",
+    "name": "Coryphantha werdermannii Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-maiz-tablasensis-fritz-schwarz",
+    "name": "Coryphantha maiz-tablasensis Fritz Schwarz",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-asterias-cels",
+    "name": "Coryphantha asterias Cels",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "coryphantha-recurvata-engelm-britton-rose",
+    "name": "Coryphantha recurvata (Engelm.) Britton & Rose",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "echinocactus-platyacanthus-link-otto",
+    "name": "Echinocactus platyacanthus Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocactus-parryi-engelm",
+    "name": "Echinocactus parryi Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocactus-horizonthalonius-lem",
+    "name": "Echinocactus horizonthalonius Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocactus-texensis-hopffer",
+    "name": "Echinocactus texensis Hopffer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "echinocactus-polycephalus-engelm-jmbigelow",
+    "name": "Echinocactus polycephalus Engelm. & J.M.Bigelow",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
+]

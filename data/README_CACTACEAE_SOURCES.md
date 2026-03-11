@@ -8,6 +8,8 @@ data/
 │   ├── backeberg/                    # Система Бакеберга (морфология, описания)
 │   │   ├── Backeberg_DieCactaceae_Vol1.pdf
 │   │   └── Cactician_4_Generitaxa_Index.pdf
+│   ├── gbif/                         # Выгрузка с GBIF.org (Darwin Core Archive)
+│   │   └── README_GBIF.md            # куда положить папку 0026914-... и цепочка шагов
 │   ├── modern_taxonomy/              # Современная таксономия (NCBI, USDA)
 │   │   ├── taxdump.tar.gz           # (распакован → *.dmp)
 │   │   ├── plantlst.txt             # USDA PLANTS

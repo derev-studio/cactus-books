@@ -357,6 +357,736 @@
     }
   },
   "species": {
+    "carnegiea-gigantea-engelm-britton-rose": {
+      "backeberg": "Carnegiea gigantea (Engelm.) Britton & Rose",
+      "modern": "Carnegiea gigantea (Engelm.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Carnegiea gigantea (Engelm.) Britton & Rose"
+      ]
+    },
+    "coryphantha-bumamma-ehrenb-britton-rose": {
+      "backeberg": "Coryphantha bumamma (Ehrenb.) Britton & Rose",
+      "modern": "Coryphantha bumamma (Ehrenb.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha bumamma (Ehrenb.) Britton & Rose"
+      ]
+    },
+    "coryphantha-macromeris-engelm-lem": {
+      "backeberg": "Coryphantha macromeris (Engelm.) Lem.",
+      "modern": "Coryphantha macromeris (Engelm.) Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha macromeris (Engelm.) Lem."
+      ]
+    },
+    "coryphantha-delicata-lbremer": {
+      "backeberg": "Coryphantha delicata L.Bremer",
+      "modern": "Coryphantha delicata L.Bremer",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha delicata L.Bremer"
+      ]
+    },
+    "coryphantha-radians-dc-britton-rose": {
+      "backeberg": "Coryphantha radians (DC.) Britton & Rose",
+      "modern": "Coryphantha radians (DC.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha radians (DC.) Britton & Rose"
+      ]
+    },
+    "coryphantha-pseudoradians-bravo": {
+      "backeberg": "Coryphantha pseudoradians Bravo",
+      "modern": "Coryphantha pseudoradians Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha pseudoradians Bravo"
+      ]
+    },
+    "coryphantha-glanduligera-otto-adietr-lem": {
+      "backeberg": "Coryphantha glanduligera (Otto & A.Dietr.) Lem.",
+      "modern": "Coryphantha glanduligera (Otto & A.Dietr.) Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha glanduligera (Otto & A.Dietr.) Lem."
+      ]
+    },
+    "coryphantha-difficilis-quehl-orcutt": {
+      "backeberg": "Coryphantha difficilis (Quehl) Orcutt",
+      "modern": "Coryphantha difficilis (Quehl) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha difficilis (Quehl) Orcutt"
+      ]
+    },
+    "coryphantha-poselgeriana-adietr-britton-rose": {
+      "backeberg": "Coryphantha poselgeriana (A.Dietr.) Britton & Rose",
+      "modern": "Coryphantha poselgeriana (A.Dietr.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha poselgeriana (A.Dietr.) Britton & Rose"
+      ]
+    },
+    "coryphantha-echinoidea-quehl-britton-rose": {
+      "backeberg": "Coryphantha echinoidea (Quehl) Britton & Rose",
+      "modern": "Coryphantha echinoidea (Quehl) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha echinoidea (Quehl) Britton & Rose"
+      ]
+    },
+    "coryphantha-erecta-lem-ex-pfeiff-lem": {
+      "backeberg": "Coryphantha erecta (Lem. ex Pfeiff.) Lem.",
+      "modern": "Coryphantha erecta (Lem. ex Pfeiff.) Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha erecta (Lem. ex Pfeiff.) Lem."
+      ]
+    },
+    "coryphantha-delaetiana-quehl-aberger": {
+      "backeberg": "Coryphantha delaetiana (Quehl) A.Berger",
+      "modern": "Coryphantha delaetiana (Quehl) A.Berger",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha delaetiana (Quehl) A.Berger"
+      ]
+    },
+    "coryphantha-compacta-engelm-britton-rose": {
+      "backeberg": "Coryphantha compacta (Engelm.) Britton & Rose",
+      "modern": "Coryphantha compacta (Engelm.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha compacta (Engelm.) Britton & Rose"
+      ]
+    },
+    "coryphantha-retusa-pfeiff-britton-rose": {
+      "backeberg": "Coryphantha retusa (Pfeiff.) Britton & Rose",
+      "modern": "Coryphantha retusa (Pfeiff.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha retusa (Pfeiff.) Britton & Rose"
+      ]
+    },
+    "coryphantha-nickelsiae-kbrandegee-britton-rose": {
+      "backeberg": "Coryphantha nickelsiae (K.Brandegee) Britton & Rose",
+      "modern": "Coryphantha nickelsiae (K.Brandegee) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha nickelsiae (K.Brandegee) Britton & Rose"
+      ]
+    },
+    "coryphantha-georgii-boed": {
+      "backeberg": "Coryphantha georgii Boed.",
+      "modern": "Coryphantha georgii Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha georgii Boed."
+      ]
+    },
+    "mammillaria-pectinata-engelm": {
+      "backeberg": "Mammillaria pectinata Engelm.",
+      "modern": "Mammillaria pectinata Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pectinata Engelm."
+      ]
+    },
+    "coryphantha-octacantha-dc-britton-rose": {
+      "backeberg": "Coryphantha octacantha (DC.) Britton & Rose",
+      "modern": "Coryphantha octacantha (DC.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha octacantha (DC.) Britton & Rose"
+      ]
+    },
+    "coryphantha-ramillosa-cutak": {
+      "backeberg": "Coryphantha ramillosa Cutak",
+      "modern": "Coryphantha ramillosa Cutak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha ramillosa Cutak"
+      ]
+    },
+    "coryphantha-sulcata-engelm-britton-rose": {
+      "backeberg": "Coryphantha sulcata (Engelm.) Britton & Rose",
+      "modern": "Coryphantha sulcata (Engelm.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha sulcata (Engelm.) Britton & Rose"
+      ]
+    },
+    "coryphantha-pseudoechinus-boed": {
+      "backeberg": "Coryphantha pseudoechinus Boed.",
+      "modern": "Coryphantha pseudoechinus Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha pseudoechinus Boed."
+      ]
+    },
+    "coryphantha-clavata-scheidw-backeb": {
+      "backeberg": "Coryphantha clavata (Scheidw.) Backeb.",
+      "modern": "Coryphantha clavata (Scheidw.) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha clavata (Scheidw.) Backeb."
+      ]
+    },
+    "coryphantha-durangensis-ruenge-britton-rose": {
+      "backeberg": "Coryphantha durangensis (Ruenge) Britton & Rose",
+      "modern": "Coryphantha durangensis (Ruenge) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha durangensis (Ruenge) Britton & Rose"
+      ]
+    },
+    "coryphantha-vaupeliana-boed": {
+      "backeberg": "Coryphantha vaupeliana Boed.",
+      "modern": "Coryphantha vaupeliana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha vaupeliana Boed."
+      ]
+    },
+    "coryphantha-jalpanensis-fgbuchenau": {
+      "backeberg": "Coryphantha jalpanensis F.G.Buchenau",
+      "modern": "Coryphantha jalpanensis F.G.Buchenau",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha jalpanensis F.G.Buchenau"
+      ]
+    },
+    "coryphantha-pulleineana-backeb-glass": {
+      "backeberg": "Coryphantha pulleineana (Backeb.) Glass",
+      "modern": "Coryphantha pulleineana (Backeb.) Glass",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha pulleineana (Backeb.) Glass"
+      ]
+    },
+    "coryphantha-wohlschlageri-holzeis": {
+      "backeberg": "Coryphantha wohlschlageri Holzeis",
+      "modern": "Coryphantha wohlschlageri Holzeis",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha wohlschlageri Holzeis"
+      ]
+    },
+    "coryphantha-glassii-dicht-alüthy": {
+      "backeberg": "Coryphantha glassii Dicht & A.Lüthy",
+      "modern": "Coryphantha glassii Dicht & A.Lüthy",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha glassii Dicht & A.Lüthy"
+      ]
+    },
+    "coryphantha-ottonis-pfeiff-lem": {
+      "backeberg": "Coryphantha ottonis (Pfeiff.) Lem.",
+      "modern": "Coryphantha ottonis (Pfeiff.) Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha ottonis (Pfeiff.) Lem."
+      ]
+    },
+    "coryphantha-potosiana-jacobi-glass-rafoster-ex-rowley": {
+      "backeberg": "Coryphantha potosiana (Jacobi) Glass & R.A.Foster ex Rowley",
+      "modern": "Coryphantha potosiana (Jacobi) Glass & R.A.Foster ex Rowley",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha potosiana (Jacobi) Glass & R.A.Foster ex Rowley"
+      ]
+    },
+    "coryphantha-pycnacantha-mart-lem": {
+      "backeberg": "Coryphantha pycnacantha (Mart.) Lem.",
+      "modern": "Coryphantha pycnacantha (Mart.) Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha pycnacantha (Mart.) Lem."
+      ]
+    },
+    "coryphantha-salinensis-poselg-dicht-alüthy": {
+      "backeberg": "Coryphantha salinensis (Poselg.) Dicht & A.Lüthy",
+      "modern": "Coryphantha salinensis (Poselg.) Dicht & A.Lüthy",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha salinensis (Poselg.) Dicht & A.Lüthy"
+      ]
+    },
+    "coryphantha-werdermannii-boed": {
+      "backeberg": "Coryphantha werdermannii Boed.",
+      "modern": "Coryphantha werdermannii Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha werdermannii Boed."
+      ]
+    },
+    "coryphantha-maiz-tablasensis-fritz-schwarz": {
+      "backeberg": "Coryphantha maiz-tablasensis Fritz Schwarz",
+      "modern": "Coryphantha maiz-tablasensis Fritz Schwarz",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha maiz-tablasensis Fritz Schwarz"
+      ]
+    },
+    "coryphantha-asterias-cels": {
+      "backeberg": "Coryphantha asterias Cels",
+      "modern": "Coryphantha asterias Cels",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha asterias Cels"
+      ]
+    },
+    "coryphantha-recurvata-engelm-britton-rose": {
+      "backeberg": "Coryphantha recurvata (Engelm.) Britton & Rose",
+      "modern": "Coryphantha recurvata (Engelm.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Coryphantha recurvata (Engelm.) Britton & Rose"
+      ]
+    },
+    "cylindropuntia-leptocaulis-dc-fmknuth": {
+      "backeberg": "Cylindropuntia leptocaulis (DC.) F.M.Knuth",
+      "modern": "Cylindropuntia leptocaulis (DC.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia leptocaulis (DC.) F.M.Knuth"
+      ]
+    },
+    "opuntia-tunicata-lehm-link-otto": {
+      "backeberg": "Opuntia tunicata (Lehm.) Link & Otto",
+      "modern": "Opuntia tunicata (Lehm.) Link & Otto",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia tunicata (Lehm.) Link & Otto"
+      ]
+    },
+    "cylindropuntia-wolfii-ldbenson-mabaker": {
+      "backeberg": "Cylindropuntia wolfii (L.D.Benson) M.A.Baker",
+      "modern": "Cylindropuntia wolfii (L.D.Benson) M.A.Baker",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia wolfii (L.D.Benson) M.A.Baker"
+      ]
+    },
+    "opuntia-imbricata-haw-dc": {
+      "backeberg": "Opuntia imbricata (Haw.) DC.",
+      "modern": "Opuntia imbricata (Haw.) DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia imbricata (Haw.) DC."
+      ]
+    },
+    "cylindropuntia-thurberi-engelm-fmknuth": {
+      "backeberg": "Cylindropuntia thurberi (Engelm.) F.M.Knuth",
+      "modern": "Cylindropuntia thurberi (Engelm.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia thurberi (Engelm.) F.M.Knuth"
+      ]
+    },
+    "opuntia-sanfelipensis-rebman": {
+      "backeberg": "Opuntia sanfelipensis Rebman",
+      "modern": "Opuntia sanfelipensis Rebman",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia sanfelipensis Rebman"
+      ]
+    },
+    "cylindropuntia-kleiniae-dc-fmknuth": {
+      "backeberg": "Cylindropuntia kleiniae (DC.) F.M.Knuth",
+      "modern": "Cylindropuntia kleiniae (DC.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia kleiniae (DC.) F.M.Knuth"
+      ]
+    },
+    "opuntia-cholla-facweber": {
+      "backeberg": "Opuntia cholla F.A.C.Weber",
+      "modern": "Opuntia cholla F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia cholla F.A.C.Weber"
+      ]
+    },
+    "opuntia-prolifera-engelm": {
+      "backeberg": "Opuntia prolifera Engelm.",
+      "modern": "Opuntia prolifera Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia prolifera Engelm."
+      ]
+    },
+    "opuntia-lindsayi-rebman": {
+      "backeberg": "Opuntia lindsayi Rebman",
+      "modern": "Opuntia lindsayi Rebman",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia lindsayi Rebman"
+      ]
+    },
+    "cylindropuntia-fulgida-engelm-fmknuth": {
+      "backeberg": "Cylindropuntia fulgida (Engelm.) F.M.Knuth",
+      "modern": "Cylindropuntia fulgida (Engelm.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia fulgida (Engelm.) F.M.Knuth"
+      ]
+    },
+    "cylindropuntia-anteojoensis-pinkava-efanderson": {
+      "backeberg": "Cylindropuntia anteojoensis (Pinkava) E.F.Anderson",
+      "modern": "Cylindropuntia anteojoensis (Pinkava) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia anteojoensis (Pinkava) E.F.Anderson"
+      ]
+    },
+    "opuntia-fosbergii-cbwolf": {
+      "backeberg": "Opuntia fosbergii C.B.Wolf",
+      "modern": "Opuntia fosbergii C.B.Wolf",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia fosbergii C.B.Wolf"
+      ]
+    },
+    "opuntia-ramosissima-engelm": {
+      "backeberg": "Opuntia ramosissima Engelm.",
+      "modern": "Opuntia ramosissima Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia ramosissima Engelm."
+      ]
+    },
+    "opuntia-tesajo-engelm-ex-jmcoult": {
+      "backeberg": "Opuntia tesajo Engelm. ex J.M.Coult.",
+      "modern": "Opuntia tesajo Engelm. ex J.M.Coult.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia tesajo Engelm. ex J.M.Coult."
+      ]
+    },
+    "cylindropuntia-alcahes-facweber-fmknuth": {
+      "backeberg": "Cylindropuntia alcahes (F.A.C.Weber) F.M.Knuth",
+      "modern": "Cylindropuntia alcahes (F.A.C.Weber) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia alcahes (F.A.C.Weber) F.M.Knuth"
+      ]
+    },
+    "cylindropuntia-viridiflora-britton-rose-fmknuth": {
+      "backeberg": "Cylindropuntia × viridiflora (Britton & Rose) F.M.Knuth",
+      "modern": "Cylindropuntia × viridiflora (Britton & Rose) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Cylindropuntia × viridiflora (Britton & Rose) F.M.Knuth"
+      ]
+    },
+    "opuntia-cardenche-griffiths": {
+      "backeberg": "Opuntia × cardenche Griffiths",
+      "modern": "Opuntia × cardenche Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × cardenche Griffiths"
+      ]
+    },
+    "opuntia-munzii-cbwolf": {
+      "backeberg": "Opuntia munzii C.B.Wolf",
+      "modern": "Opuntia munzii C.B.Wolf",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia munzii C.B.Wolf"
+      ]
+    },
+    "opuntia-bigelovii-engelm": {
+      "backeberg": "Opuntia bigelovii Engelm.",
+      "modern": "Opuntia bigelovii Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia bigelovii Engelm."
+      ]
+    },
+    "opuntia-echinocarpa-engelm-jmbigelow": {
+      "backeberg": "Opuntia echinocarpa Engelm. & J.M.Bigelow",
+      "modern": "Cylindropuntia echinocarpa",
+      "synonyms": [],
+      "previouslyCalled": "Opuntia echinocarpa Engelm. & J.M.Bigelow",
+      "nameHistory": [
+        "Opuntia echinocarpa Engelm. & J.M.Bigelow",
+        "Cylindropuntia echinocarpa"
+      ]
+    },
+    "opuntia-arbuscula-engelm": {
+      "backeberg": "Opuntia arbuscula Engelm.",
+      "modern": "Opuntia arbuscula Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia arbuscula Engelm."
+      ]
+    },
+    "opuntia-rosarica-gelinds": {
+      "backeberg": "Opuntia rosarica G.E.Linds.",
+      "modern": "Opuntia rosarica G.E.Linds.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia rosarica G.E.Linds."
+      ]
+    },
+    "opuntia-acanthocarpa-engelm-jmbigelow": {
+      "backeberg": "Opuntia acanthocarpa Engelm. & J.M.Bigelow",
+      "modern": "Opuntia acanthocarpa Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia acanthocarpa Engelm. & J.M.Bigelow"
+      ]
+    },
+    "opuntia-molesta-brandegee": {
+      "backeberg": "Opuntia molesta Brandegee",
+      "modern": "Opuntia molesta Brandegee",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia molesta Brandegee"
+      ]
+    },
+    "opuntia-whipplei-engelm-jmbigelow": {
+      "backeberg": "Opuntia whipplei Engelm. & J.M.Bigelow",
+      "modern": "Opuntia whipplei Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia whipplei Engelm. & J.M.Bigelow"
+      ]
+    },
+    "opuntia-kelvinensis-vegrant-kagrant": {
+      "backeberg": "Opuntia × kelvinensis V.E.Grant & K.A.Grant",
+      "modern": "Opuntia × kelvinensis V.E.Grant & K.A.Grant",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × kelvinensis V.E.Grant & K.A.Grant"
+      ]
+    },
+    "opuntia-santamaria-baxter-bravo": {
+      "backeberg": "Opuntia santamaria (Baxter) Bravo",
+      "modern": "Opuntia santamaria (Baxter) Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia santamaria (Baxter) Bravo"
+      ]
+    },
+    "opuntia-ganderi-cbwolf-rebman-pinkava": {
+      "backeberg": "Opuntia ganderi (C.B.Wolf) Rebman & Pinkava",
+      "modern": "Opuntia ganderi (C.B.Wolf) Rebman & Pinkava",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia ganderi (C.B.Wolf) Rebman & Pinkava"
+      ]
+    },
+    "disocactus-speciosus-cav-barthlott": {
+      "backeberg": "Disocactus speciosus (Cav.) Barthlott",
+      "modern": "Disocactus speciosus (Cav.) Barthlott",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus speciosus (Cav.) Barthlott"
+      ]
+    },
+    "epiphyllum-anguliger-lem-gdon": {
+      "backeberg": "Epiphyllum anguliger (Lem.) G.Don",
+      "modern": "Epiphyllum anguliger (Lem.) G.Don",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum anguliger (Lem.) G.Don"
+      ]
+    },
+    "disocactus-nelsonii-britton-rose-linding": {
+      "backeberg": "Disocactus nelsonii (Britton & Rose) Linding.",
+      "modern": "Disocactus nelsonii (Britton & Rose) Linding.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus nelsonii (Britton & Rose) Linding."
+      ]
+    },
+    "disocactus-ackermannii-haw-ralf-bauer": {
+      "backeberg": "Disocactus ackermannii (Haw.) Ralf Bauer",
+      "modern": "Disocactus ackermannii (Haw.) Ralf Bauer",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus ackermannii (Haw.) Ralf Bauer"
+      ]
+    },
+    "epiphyllum-crenatum-lindl-gdon": {
+      "backeberg": "Epiphyllum crenatum (Lindl.) G.Don",
+      "modern": "Epiphyllum crenatum (Lindl.) G.Don",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum crenatum (Lindl.) G.Don"
+      ]
+    },
+    "disocactus-macranthus-alexander-kimnach-hutchison": {
+      "backeberg": "Disocactus macranthus (Alexander) Kimnach & Hutchison",
+      "modern": "Disocactus macranthus (Alexander) Kimnach & Hutchison",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus macranthus (Alexander) Kimnach & Hutchison"
+      ]
+    },
+    "disocactus-phyllanthoides-dc-barthlott": {
+      "backeberg": "Disocactus phyllanthoides (DC.) Barthlott",
+      "modern": "Disocactus phyllanthoides (DC.) Barthlott",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus phyllanthoides (DC.) Barthlott"
+      ]
+    },
+    "disocactus-biformis-lindl-lindl": {
+      "backeberg": "Disocactus biformis (Lindl.) Lindl.",
+      "modern": "Disocactus biformis (Lindl.) Lindl.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus biformis (Lindl.) Lindl."
+      ]
+    },
+    "disocactus-macdougallii-alexander-barthlott": {
+      "backeberg": "Disocactus macdougallii (Alexander) Barthlott",
+      "modern": "Disocactus macdougallii (Alexander) Barthlott",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus macdougallii (Alexander) Barthlott"
+      ]
+    },
+    "epiphyllum-lepidocarpum-facweber-britton-rose": {
+      "backeberg": "Epiphyllum lepidocarpum (F.A.C.Weber) Britton & Rose",
+      "modern": "Epiphyllum lepidocarpum (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum lepidocarpum (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "disocactus-quezaltecus-standl-steyerm-kimnach": {
+      "backeberg": "Disocactus quezaltecus (Standl. & Steyerm.) Kimnach",
+      "modern": "Disocactus quezaltecus (Standl. & Steyerm.) Kimnach",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Disocactus quezaltecus (Standl. & Steyerm.) Kimnach"
+      ]
+    },
+    "echinocactus-platyacanthus-link-otto": {
+      "backeberg": "Echinocactus platyacanthus Link & Otto",
+      "modern": "Echinocactus platyacanthus Link & Otto",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus platyacanthus Link & Otto"
+      ]
+    },
+    "echinocactus-parryi-engelm": {
+      "backeberg": "Echinocactus parryi Engelm.",
+      "modern": "Echinocactus parryi Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus parryi Engelm."
+      ]
+    },
+    "echinocactus-horizonthalonius-lem": {
+      "backeberg": "Echinocactus horizonthalonius Lem.",
+      "modern": "Echinocactus horizonthalonius Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus horizonthalonius Lem."
+      ]
+    },
+    "echinocactus-texensis-hopffer": {
+      "backeberg": "Echinocactus texensis Hopffer",
+      "modern": "Echinocactus texensis Hopffer",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus texensis Hopffer"
+      ]
+    },
+    "echinocactus-polycephalus-engelm-jmbigelow": {
+      "backeberg": "Echinocactus polycephalus Engelm. & J.M.Bigelow",
+      "modern": "Echinocactus polycephalus Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinocactus polycephalus Engelm. & J.M.Bigelow"
+      ]
+    },
     "echinopsis-oxygona": {
       "backeberg": "Echinopsis oxygona",
       "modern": "Echinopsis oxygona",
@@ -387,6 +1117,78 @@
         "Echinopsis chamaecereus"
       ]
     },
+    "epiphyllum-phyllanthus-l-haw": {
+      "backeberg": "Epiphyllum phyllanthus (L.) Haw.",
+      "modern": "Epiphyllum phyllanthus (L.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum phyllanthus (L.) Haw."
+      ]
+    },
+    "epiphyllum-pumilum-vaupel-britton-rose": {
+      "backeberg": "Epiphyllum pumilum (Vaupel) Britton & Rose",
+      "modern": "Epiphyllum pumilum (Vaupel) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum pumilum (Vaupel) Britton & Rose"
+      ]
+    },
+    "epiphyllum-hookeri-haw": {
+      "backeberg": "Epiphyllum hookeri Haw.",
+      "modern": "Epiphyllum hookeri Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum hookeri Haw."
+      ]
+    },
+    "epiphyllum-oxypetalum-dc-haw": {
+      "backeberg": "Epiphyllum oxypetalum (DC.) Haw.",
+      "modern": "Epiphyllum oxypetalum (DC.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum oxypetalum (DC.) Haw."
+      ]
+    },
+    "epiphyllum-cartagense-facweber-britton-rose": {
+      "backeberg": "Epiphyllum cartagense (F.A.C.Weber) Britton & Rose",
+      "modern": "Epiphyllum cartagense (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum cartagense (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "epiphyllum-thomasianum-kschum-britton-rose": {
+      "backeberg": "Epiphyllum thomasianum (K.Schum.) Britton & Rose",
+      "modern": "Epiphyllum thomasianum (K.Schum.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum thomasianum (K.Schum.) Britton & Rose"
+      ]
+    },
+    "epiphyllum-grandilobum-facweber-britton-rose": {
+      "backeberg": "Epiphyllum grandilobum (F.A.C.Weber) Britton & Rose",
+      "modern": "Epiphyllum grandilobum (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum grandilobum (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "epiphyllum-laui-kimnach": {
+      "backeberg": "Epiphyllum laui Kimnach",
+      "modern": "Epiphyllum laui Kimnach",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Epiphyllum laui Kimnach"
+      ]
+    },
     "ferocactus-wislizeni": {
       "backeberg": "Ferocactus wislizeni",
       "modern": "Ferocactus wislizeni",
@@ -408,6 +1210,285 @@
       "previouslyCalled": null,
       "nameHistory": [
         "Ferocactus latispinus"
+      ]
+    },
+    "ferocactus-wislizeni-engelm-britton-rose": {
+      "backeberg": "Ferocactus wislizeni (Engelm.) Britton & Rose",
+      "modern": "Ferocactus wislizeni (Engelm.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus wislizeni (Engelm.) Britton & Rose"
+      ]
+    },
+    "sclerocactus-uncinatus-galeotti-nptaylor": {
+      "backeberg": "Sclerocactus uncinatus (Galeotti) N.P.Taylor",
+      "modern": "Sclerocactus uncinatus (Galeotti) N.P.Taylor",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Sclerocactus uncinatus (Galeotti) N.P.Taylor"
+      ]
+    },
+    "ferocactus-gracilis-hegates": {
+      "backeberg": "Ferocactus gracilis H.E.Gates",
+      "modern": "Ferocactus gracilis H.E.Gates",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus gracilis H.E.Gates"
+      ]
+    },
+    "ferocactus-emoryi-engelm-orcutt": {
+      "backeberg": "Ferocactus emoryi (Engelm.) Orcutt",
+      "modern": "Ferocactus emoryi (Engelm.) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus emoryi (Engelm.) Orcutt"
+      ]
+    },
+    "ferocactus-macrodiscus-matt-britton-rose": {
+      "backeberg": "Ferocactus macrodiscus (Matt.) Britton & Rose",
+      "modern": "Ferocactus macrodiscus (Matt.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus macrodiscus (Matt.) Britton & Rose"
+      ]
+    },
+    "ferocactus-peninsulae-facweber-britton-rose": {
+      "backeberg": "Ferocactus peninsulae (F.A.C.Weber) Britton & Rose",
+      "modern": "Ferocactus peninsulae (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus peninsulae (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "ferocactus-pilosus-salm-dyck-werderm": {
+      "backeberg": "Ferocactus pilosus (Salm-Dyck) Werderm.",
+      "modern": "Ferocactus pilosus (Salm-Dyck) Werderm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus pilosus (Salm-Dyck) Werderm."
+      ]
+    },
+    "ferocactus-recurvus-mill-borg": {
+      "backeberg": "Ferocactus recurvus (Mill.) Borg",
+      "modern": "Ferocactus recurvus (Mill.) Borg",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus recurvus (Mill.) Borg"
+      ]
+    },
+    "ferocactus-robustus-karw-ex-pfeiff-britton-rose": {
+      "backeberg": "Ferocactus robustus (Karw. ex Pfeiff.) Britton & Rose",
+      "modern": "Ferocactus robustus (Karw. ex Pfeiff.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus robustus (Karw. ex Pfeiff.) Britton & Rose"
+      ]
+    },
+    "ferocactus-townsendianus-britton-rose": {
+      "backeberg": "Ferocactus townsendianus Britton & Rose",
+      "modern": "Ferocactus townsendianus Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus townsendianus Britton & Rose"
+      ]
+    },
+    "ferocactus-viridescens-torr-agray-britton-rose": {
+      "backeberg": "Ferocactus viridescens (Torr. & A.Gray) Britton & Rose",
+      "modern": "Ferocactus viridescens (Torr. & A.Gray) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus viridescens (Torr. & A.Gray) Britton & Rose"
+      ]
+    },
+    "hamatocactus-crassihamatus-facweber-buxb": {
+      "backeberg": "Hamatocactus crassihamatus (F.A.C.Weber) Buxb.",
+      "modern": "Hamatocactus crassihamatus (F.A.C.Weber) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hamatocactus crassihamatus (F.A.C.Weber) Buxb."
+      ]
+    },
+    "ferocactus-lindsayi-bravo": {
+      "backeberg": "Ferocactus lindsayi Bravo",
+      "modern": "Ferocactus lindsayi Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus lindsayi Bravo"
+      ]
+    },
+    "ferocactus-johnstonianus-britton-rose": {
+      "backeberg": "Ferocactus johnstonianus Britton & Rose",
+      "modern": "Ferocactus johnstonianus Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus johnstonianus Britton & Rose"
+      ]
+    },
+    "ferocactus-cylindraceus-engelm-orcutt": {
+      "backeberg": "Ferocactus cylindraceus (Engelm.) Orcutt",
+      "modern": "Ferocactus cylindraceus (Engelm.) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus cylindraceus (Engelm.) Orcutt"
+      ]
+    },
+    "ferocactus-pottsii-salm-dyck-backeb": {
+      "backeberg": "Ferocactus pottsii (Salm-Dyck) Backeb.",
+      "modern": "Ferocactus pottsii (Salm-Dyck) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus pottsii (Salm-Dyck) Backeb."
+      ]
+    },
+    "ferocactus-fordii-orcutt-britton-rose": {
+      "backeberg": "Ferocactus fordii (Orcutt) Britton & Rose",
+      "modern": "Ferocactus fordii (Orcutt) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Ferocactus fordii (Orcutt) Britton & Rose"
+      ]
+    },
+    "grusonia-bradtiana-jmcoult-britton-rose": {
+      "backeberg": "Grusonia bradtiana (J.M.Coult.) Britton & Rose",
+      "modern": "Grusonia bradtiana (J.M.Coult.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia bradtiana (J.M.Coult.) Britton & Rose"
+      ]
+    },
+    "opuntia-emoryi-engelm": {
+      "backeberg": "Opuntia emoryi Engelm.",
+      "modern": "Opuntia emoryi Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia emoryi Engelm."
+      ]
+    },
+    "grusonia-marenae-shparsons-efanderson": {
+      "backeberg": "Grusonia marenae (S.H.Parsons) E.F.Anderson",
+      "modern": "Grusonia marenae (S.H.Parsons) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia marenae (S.H.Parsons) E.F.Anderson"
+      ]
+    },
+    "grusonia-grahamii-engelm-hrob": {
+      "backeberg": "Grusonia grahamii (Engelm.) H.Rob.",
+      "modern": "Grusonia grahamii (Engelm.) H.Rob.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia grahamii (Engelm.) H.Rob."
+      ]
+    },
+    "grusonia-invicta-brandegee-efanderson": {
+      "backeberg": "Grusonia invicta (Brandegee) E.F.Anderson",
+      "modern": "Grusonia invicta (Brandegee) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia invicta (Brandegee) E.F.Anderson"
+      ]
+    },
+    "corynopuntia-bulbispina-engelm-fmknuth": {
+      "backeberg": "Corynopuntia bulbispina (Engelm.) F.M.Knuth",
+      "modern": "Corynopuntia bulbispina (Engelm.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Corynopuntia bulbispina (Engelm.) F.M.Knuth"
+      ]
+    },
+    "grusonia-kunzei-rose-pinkava": {
+      "backeberg": "Grusonia kunzei (Rose) Pinkava",
+      "modern": "Grusonia kunzei (Rose) Pinkava",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia kunzei (Rose) Pinkava"
+      ]
+    },
+    "grusonia-aggeria-ralston-hilsenb-efanderson": {
+      "backeberg": "Grusonia aggeria (Ralston & Hilsenb.) E.F.Anderson",
+      "modern": "Grusonia aggeria (Ralston & Hilsenb.) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia aggeria (Ralston & Hilsenb.) E.F.Anderson"
+      ]
+    },
+    "grusonia-moelleri-aberger-efanderson": {
+      "backeberg": "Grusonia moelleri (A.Berger) E.F.Anderson",
+      "modern": "Grusonia moelleri (A.Berger) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia moelleri (A.Berger) E.F.Anderson"
+      ]
+    },
+    "grusonia-vilis-rose-hrob": {
+      "backeberg": "Grusonia vilis (Rose) H.Rob.",
+      "modern": "Grusonia vilis (Rose) H.Rob.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia vilis (Rose) H.Rob."
+      ]
+    },
+    "corynopuntia-schottii-engelm-fmknuth": {
+      "backeberg": "Corynopuntia schottii (Engelm.) F.M.Knuth",
+      "modern": "Corynopuntia schottii (Engelm.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Corynopuntia schottii (Engelm.) F.M.Knuth"
+      ]
+    },
+    "grusonia-parishii-orcutt-pinkava": {
+      "backeberg": "Grusonia parishii (Orcutt) Pinkava",
+      "modern": "Grusonia parishii (Orcutt) Pinkava",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia parishii (Orcutt) Pinkava"
+      ]
+    },
+    "grusonia-clavata-engelm-hrob": {
+      "backeberg": "Grusonia clavata (Engelm.) H.Rob.",
+      "modern": "Grusonia clavata (Engelm.) H.Rob.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Grusonia clavata (Engelm.) H.Rob."
+      ]
+    },
+    "echinopsis-bridgesii-salm-dyck": {
+      "backeberg": "Echinopsis bridgesii Salm-Dyck",
+      "modern": "Echinopsis bridgesii Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Echinopsis bridgesii Salm-Dyck"
       ]
     },
     "mammillaria-hahniana": {
@@ -455,6 +1536,1203 @@
         "Mammillaria geminispina"
       ]
     },
+    "mammillaria-discolor-haw": {
+      "backeberg": "Mammillaria discolor Haw.",
+      "modern": "Mammillaria discolor Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria discolor Haw."
+      ]
+    },
+    "mammillaria-bombycina-quehl": {
+      "backeberg": "Mammillaria bombycina Quehl",
+      "modern": "Mammillaria bombycina Quehl",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria bombycina Quehl"
+      ]
+    },
+    "mammillaria-chionocephala-japurpus": {
+      "backeberg": "Mammillaria chionocephala J.A.Purpus",
+      "modern": "Mammillaria chionocephala J.A.Purpus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria chionocephala J.A.Purpus"
+      ]
+    },
+    "mammillaria-beneckei-cehrenb": {
+      "backeberg": "Mammillaria beneckei C.Ehrenb.",
+      "modern": "Mammillaria beneckei C.Ehrenb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria beneckei C.Ehrenb."
+      ]
+    },
+    "mammillaria-grusonii-ruenge": {
+      "backeberg": "Mammillaria grusonii Ruenge",
+      "modern": "Mammillaria grusonii Ruenge",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria grusonii Ruenge"
+      ]
+    },
+    "mammillaria-decipiens-scheidw": {
+      "backeberg": "Mammillaria decipiens Scheidw.",
+      "modern": "Mammillaria decipiens Scheidw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria decipiens Scheidw."
+      ]
+    },
+    "mammillaria-karwinskiana-mart": {
+      "backeberg": "Mammillaria karwinskiana Mart.",
+      "modern": "Mammillaria karwinskiana Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria karwinskiana Mart."
+      ]
+    },
+    "mammillaria-zephyranthoides-scheidw": {
+      "backeberg": "Mammillaria zephyranthoides Scheidw.",
+      "modern": "Mammillaria zephyranthoides Scheidw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria zephyranthoides Scheidw."
+      ]
+    },
+    "mammillaria-albilanata-backeb": {
+      "backeberg": "Mammillaria albilanata Backeb.",
+      "modern": "Mammillaria albilanata Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria albilanata Backeb."
+      ]
+    },
+    "mammillaria-mystax-mart": {
+      "backeberg": "Mammillaria mystax Mart.",
+      "modern": "Mammillaria mystax Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria mystax Mart."
+      ]
+    },
+    "mammillaria-sartorii-japurpus": {
+      "backeberg": "Mammillaria sartorii J.A.Purpus",
+      "modern": "Mammillaria sartorii J.A.Purpus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sartorii J.A.Purpus"
+      ]
+    },
+    "mammillaria-haageana-pfeiff": {
+      "backeberg": "Mammillaria haageana Pfeiff.",
+      "modern": "Mammillaria haageana Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria haageana Pfeiff."
+      ]
+    },
+    "mammillaria-voburnensis-scheer": {
+      "backeberg": "Mammillaria voburnensis Scheer",
+      "modern": "Mammillaria voburnensis Scheer",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria voburnensis Scheer"
+      ]
+    },
+    "mammillaria-lasiacantha-engelm": {
+      "backeberg": "Mammillaria lasiacantha Engelm.",
+      "modern": "Mammillaria lasiacantha Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria lasiacantha Engelm."
+      ]
+    },
+    "mammillaria-hahniana-werderm": {
+      "backeberg": "Mammillaria hahniana Werderm.",
+      "modern": "Mammillaria hahniana Werderm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria hahniana Werderm."
+      ]
+    },
+    "mammillaria-senilis-lodd-ex-salm-dyck": {
+      "backeberg": "Mammillaria senilis Lodd. ex Salm-Dyck",
+      "modern": "Mammillaria senilis Lodd. ex Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria senilis Lodd. ex Salm-Dyck"
+      ]
+    },
+    "mammillaria-compressa-dc": {
+      "backeberg": "Mammillaria compressa DC.",
+      "modern": "Mammillaria compressa DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria compressa DC."
+      ]
+    },
+    "mammillaria-schiedeana-cehrenb": {
+      "backeberg": "Mammillaria schiedeana C.Ehrenb.",
+      "modern": "Mammillaria schiedeana C.Ehrenb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria schiedeana C.Ehrenb."
+      ]
+    },
+    "mammillaria-rekoi-britton-rose-vaupel": {
+      "backeberg": "Mammillaria rekoi (Britton & Rose) Vaupel",
+      "modern": "Mammillaria rekoi (Britton & Rose) Vaupel",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria rekoi (Britton & Rose) Vaupel"
+      ]
+    },
+    "mammillaria-pottsii-scheer-ex-salm-dyck": {
+      "backeberg": "Mammillaria pottsii Scheer ex Salm-Dyck",
+      "modern": "Mammillaria pottsii Scheer ex Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pottsii Scheer ex Salm-Dyck"
+      ]
+    },
+    "mammillaria-albicoma-boed": {
+      "backeberg": "Mammillaria albicoma Boed.",
+      "modern": "Mammillaria albicoma Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria albicoma Boed."
+      ]
+    },
+    "mammillaria-candida-scheidw": {
+      "backeberg": "Mammillaria candida Scheidw.",
+      "modern": "Mammillaria candida Scheidw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria candida Scheidw."
+      ]
+    },
+    "mammillaria-huitzilopochtli-drhunt": {
+      "backeberg": "Mammillaria huitzilopochtli D.R.Hunt",
+      "modern": "Mammillaria huitzilopochtli D.R.Hunt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria huitzilopochtli D.R.Hunt"
+      ]
+    },
+    "mammillaria-sanchez-mejoradae-rodrgonzález": {
+      "backeberg": "Mammillaria sanchez-mejoradae Rodr.González",
+      "modern": "Mammillaria sanchez-mejoradae Rodr.González",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sanchez-mejoradae Rodr.González"
+      ]
+    },
+    "mammillaria-magnimamma-haw": {
+      "backeberg": "Mammillaria magnimamma Haw.",
+      "modern": "Mammillaria magnimamma Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria magnimamma Haw."
+      ]
+    },
+    "mammillaria-flavicentra-backeb": {
+      "backeberg": "Mammillaria flavicentra Backeb.",
+      "modern": "Mammillaria flavicentra Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria flavicentra Backeb."
+      ]
+    },
+    "mammillaria-heyderi-muehlenpf": {
+      "backeberg": "Mammillaria heyderi Muehlenpf.",
+      "modern": "Mammillaria heyderi Muehlenpf.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria heyderi Muehlenpf."
+      ]
+    },
+    "mammillaria-eriacantha-hortberol-ex-pfeiff": {
+      "backeberg": "Mammillaria eriacantha Hort.Berol. ex Pfeiff.",
+      "modern": "Mammillaria eriacantha Hort.Berol. ex Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria eriacantha Hort.Berol. ex Pfeiff."
+      ]
+    },
+    "mammillaria-longimamma-dc": {
+      "backeberg": "Mammillaria longimamma DC.",
+      "modern": "Mammillaria longimamma DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria longimamma DC."
+      ]
+    },
+    "mammillaria-supertexta-mart": {
+      "backeberg": "Mammillaria supertexta Mart.",
+      "modern": "Mammillaria supertexta Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria supertexta Mart."
+      ]
+    },
+    "mammillaria-dixanthocentron-backeb": {
+      "backeberg": "Mammillaria dixanthocentron Backeb.",
+      "modern": "Mammillaria dixanthocentron Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria dixanthocentron Backeb."
+      ]
+    },
+    "mammillaria-surculosa-boed": {
+      "backeberg": "Mammillaria surculosa Boed.",
+      "modern": "Mammillaria surculosa Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria surculosa Boed."
+      ]
+    },
+    "mammillaria-kraehenbuehlii-krainz-krainz": {
+      "backeberg": "Mammillaria kraehenbuehlii (Krainz) Krainz",
+      "modern": "Mammillaria kraehenbuehlii (Krainz) Krainz",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria kraehenbuehlii (Krainz) Krainz"
+      ]
+    },
+    "mammillaria-polyedra-mart": {
+      "backeberg": "Mammillaria polyedra Mart.",
+      "modern": "Mammillaria polyedra Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria polyedra Mart."
+      ]
+    },
+    "mammillaria-melanocentra-poselg": {
+      "backeberg": "Mammillaria melanocentra Poselg.",
+      "modern": "Mammillaria melanocentra Poselg.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria melanocentra Poselg."
+      ]
+    },
+    "mammillaria-elongata-dc": {
+      "backeberg": "Mammillaria elongata DC.",
+      "modern": "Mammillaria elongata DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria elongata DC."
+      ]
+    },
+    "mammillaria-crinita-dc": {
+      "backeberg": "Mammillaria crinita DC.",
+      "modern": "Mammillaria crinita DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria crinita DC."
+      ]
+    },
+    "mammillaria-carnea-zucc-ex-pfeiff": {
+      "backeberg": "Mammillaria carnea Zucc. ex Pfeiff.",
+      "modern": "Mammillaria carnea Zucc. ex Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria carnea Zucc. ex Pfeiff."
+      ]
+    },
+    "mammillaria-oteroi-glass-rafoster": {
+      "backeberg": "Mammillaria oteroi Glass & R.A.Foster",
+      "modern": "Mammillaria oteroi Glass & R.A.Foster",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria oteroi Glass & R.A.Foster"
+      ]
+    },
+    "mammillaria-gracilis-pfeiff": {
+      "backeberg": "Mammillaria gracilis Pfeiff.",
+      "modern": "Mammillaria gracilis Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria gracilis Pfeiff."
+      ]
+    },
+    "mammillaria-orcuttii-boed": {
+      "backeberg": "Mammillaria orcuttii Boed.",
+      "modern": "Mammillaria orcuttii Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria orcuttii Boed."
+      ]
+    },
+    "mammillaria-mieheana-tiegel": {
+      "backeberg": "Mammillaria mieheana Tiegel",
+      "modern": "Mammillaria mieheana Tiegel",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria mieheana Tiegel"
+      ]
+    },
+    "mammillaria-bocensis-rtcraig": {
+      "backeberg": "Mammillaria bocensis R.T.Craig",
+      "modern": "Mammillaria bocensis R.T.Craig",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria bocensis R.T.Craig"
+      ]
+    },
+    "mammillaria-perbella-hildm-ex-kschum": {
+      "backeberg": "Mammillaria perbella Hildm. ex K.Schum.",
+      "modern": "Mammillaria perbella Hildm. ex K.Schum.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria perbella Hildm. ex K.Schum."
+      ]
+    },
+    "mammillaria-prolifera-mill-haw": {
+      "backeberg": "Mammillaria prolifera (Mill.) Haw.",
+      "modern": "Mammillaria prolifera (Mill.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria prolifera (Mill.) Haw."
+      ]
+    },
+    "mammillaria-microhelia-werderm": {
+      "backeberg": "Mammillaria microhelia Werderm.",
+      "modern": "Mammillaria microhelia Werderm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria microhelia Werderm."
+      ]
+    },
+    "mammillaria-baumii-boed": {
+      "backeberg": "Mammillaria baumii Boed.",
+      "modern": "Mammillaria baumii Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria baumii Boed."
+      ]
+    },
+    "mammillaria-winterae-boed": {
+      "backeberg": "Mammillaria winterae Boed.",
+      "modern": "Mammillaria winterae Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria winterae Boed."
+      ]
+    },
+    "mammillaria-hertrichiana-rtcraig": {
+      "backeberg": "Mammillaria hertrichiana R.T.Craig",
+      "modern": "Mammillaria hertrichiana R.T.Craig",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria hertrichiana R.T.Craig"
+      ]
+    },
+    "mammillaria-scrippsiana-britton-rose-orcutt": {
+      "backeberg": "Mammillaria scrippsiana (Britton & Rose) Orcutt",
+      "modern": "Mammillaria scrippsiana (Britton & Rose) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria scrippsiana (Britton & Rose) Orcutt"
+      ]
+    },
+    "mammillaria-jaliscana-britton-rose-boed": {
+      "backeberg": "Mammillaria jaliscana (Britton & Rose) Boed.",
+      "modern": "Mammillaria jaliscana (Britton & Rose) Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria jaliscana (Britton & Rose) Boed."
+      ]
+    },
+    "mammillaria-uncinata-zucc-ex-pfeiff": {
+      "backeberg": "Mammillaria uncinata Zucc. ex Pfeiff.",
+      "modern": "Mammillaria uncinata Zucc. ex Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria uncinata Zucc. ex Pfeiff."
+      ]
+    },
+    "mammillaria-polythele-mart": {
+      "backeberg": "Mammillaria polythele Mart.",
+      "modern": "Mammillaria polythele Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria polythele Mart."
+      ]
+    },
+    "mammillaria-roseoalba-boed": {
+      "backeberg": "Mammillaria roseoalba Boed.",
+      "modern": "Mammillaria roseoalba Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria roseoalba Boed."
+      ]
+    },
+    "mammillaria-plumosa-facweber": {
+      "backeberg": "Mammillaria plumosa F.A.C.Weber",
+      "modern": "Mammillaria plumosa F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria plumosa F.A.C.Weber"
+      ]
+    },
+    "mammillaria-glassii-rafoster": {
+      "backeberg": "Mammillaria glassii R.A.Foster",
+      "modern": "Mammillaria glassii R.A.Foster",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria glassii R.A.Foster"
+      ]
+    },
+    "mammillaria-napina-japurpus": {
+      "backeberg": "Mammillaria napina J.A.Purpus",
+      "modern": "Mammillaria napina J.A.Purpus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria napina J.A.Purpus"
+      ]
+    },
+    "mammillaria-gasseriana-boed": {
+      "backeberg": "Mammillaria gasseriana Boed.",
+      "modern": "Mammillaria gasseriana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria gasseriana Boed."
+      ]
+    },
+    "mammillaria-erythrosperma-boed": {
+      "backeberg": "Mammillaria erythrosperma Boed.",
+      "modern": "Mammillaria erythrosperma Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria erythrosperma Boed."
+      ]
+    },
+    "mammillaria-mercadensis-patoni": {
+      "backeberg": "Mammillaria mercadensis Patoni",
+      "modern": "Mammillaria mercadensis Patoni",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria mercadensis Patoni"
+      ]
+    },
+    "mammillaria-geminispina-haw": {
+      "backeberg": "Mammillaria geminispina Haw.",
+      "modern": "Mammillaria geminispina Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria geminispina Haw."
+      ]
+    },
+    "mammillaria-weingartiana-boed": {
+      "backeberg": "Mammillaria weingartiana Boed.",
+      "modern": "Mammillaria weingartiana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria weingartiana Boed."
+      ]
+    },
+    "mammillaria-parkinsonii-cehrenb": {
+      "backeberg": "Mammillaria parkinsonii C.Ehrenb.",
+      "modern": "Mammillaria parkinsonii C.Ehrenb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria parkinsonii C.Ehrenb."
+      ]
+    },
+    "mammillaria-sempervivi-dc": {
+      "backeberg": "Mammillaria sempervivi DC.",
+      "modern": "Mammillaria sempervivi DC.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sempervivi DC."
+      ]
+    },
+    "mammillaria-nunezii-britton-rose-orcutt": {
+      "backeberg": "Mammillaria nunezii (Britton & Rose) Orcutt",
+      "modern": "Mammillaria nunezii (Britton & Rose) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria nunezii (Britton & Rose) Orcutt"
+      ]
+    },
+    "mammillaria-rhodantha-link-otto": {
+      "backeberg": "Mammillaria rhodantha Link & Otto",
+      "modern": "Mammillaria rhodantha Link & Otto",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria rhodantha Link & Otto"
+      ]
+    },
+    "mammillaria-sphacelata-mart": {
+      "backeberg": "Mammillaria sphacelata Mart.",
+      "modern": "Mammillaria sphacelata Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sphacelata Mart."
+      ]
+    },
+    "mammillaria-columbiana-salm-dyck": {
+      "backeberg": "Mammillaria columbiana Salm-Dyck",
+      "modern": "Mammillaria columbiana Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria columbiana Salm-Dyck"
+      ]
+    },
+    "mammillaria-muehlenpfordtii-cfförst": {
+      "backeberg": "Mammillaria muehlenpfordtii C.F.Först.",
+      "modern": "Mammillaria muehlenpfordtii C.F.Först.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria muehlenpfordtii C.F.Först."
+      ]
+    },
+    "mammillaria-pennispinosa-krainz-ex-shurly": {
+      "backeberg": "Mammillaria pennispinosa Krainz ex Shurly",
+      "modern": "Mammillaria pennispinosa Krainz ex Shurly",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pennispinosa Krainz ex Shurly"
+      ]
+    },
+    "mammillaria-bocasana-poselg": {
+      "backeberg": "Mammillaria bocasana Poselg.",
+      "modern": "Mammillaria bocasana Poselg.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria bocasana Poselg."
+      ]
+    },
+    "mammillaria-picta-meinsh": {
+      "backeberg": "Mammillaria picta Meinsh.",
+      "modern": "Mammillaria picta Meinsh.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria picta Meinsh."
+      ]
+    },
+    "mammillaria-klissingiana-boed": {
+      "backeberg": "Mammillaria klissingiana Boed.",
+      "modern": "Mammillaria klissingiana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria klissingiana Boed."
+      ]
+    },
+    "mammillaria-gigantea-hildm-ex-kschum": {
+      "backeberg": "Mammillaria gigantea Hildm. ex K.Schum.",
+      "modern": "Mammillaria gigantea Hildm. ex K.Schum.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria gigantea Hildm. ex K.Schum."
+      ]
+    },
+    "mammillaria-solisioides-backeb": {
+      "backeberg": "Mammillaria solisioides Backeb.",
+      "modern": "Mammillaria solisioides Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria solisioides Backeb."
+      ]
+    },
+    "mammillaria-coahuilensis-boed-moran": {
+      "backeberg": "Mammillaria coahuilensis (Boed.) Moran",
+      "modern": "Mammillaria coahuilensis (Boed.) Moran",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria coahuilensis (Boed.) Moran"
+      ]
+    },
+    "mammillaria-limonensis-repp": {
+      "backeberg": "Mammillaria limonensis Repp.",
+      "modern": "Mammillaria limonensis Repp.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria limonensis Repp."
+      ]
+    },
+    "mammillaria-glochidiata-mart": {
+      "backeberg": "Mammillaria glochidiata Mart.",
+      "modern": "Mammillaria glochidiata Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria glochidiata Mart."
+      ]
+    },
+    "mammillaria-anniana-glass-rafoster": {
+      "backeberg": "Mammillaria anniana Glass & R.A.Foster",
+      "modern": "Mammillaria anniana Glass & R.A.Foster",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria anniana Glass & R.A.Foster"
+      ]
+    },
+    "mammillaria-mathildae-kraehenb-krainz": {
+      "backeberg": "Mammillaria mathildae Kraehenb. & Krainz",
+      "modern": "Mammillaria mathildae Kraehenb. & Krainz",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria mathildae Kraehenb. & Krainz"
+      ]
+    },
+    "mammillaria-melaleuca-karw-ex-salm-dyck": {
+      "backeberg": "Mammillaria melaleuca Karw. ex Salm-Dyck",
+      "modern": "Mammillaria melaleuca Karw. ex Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria melaleuca Karw. ex Salm-Dyck"
+      ]
+    },
+    "mammillaria-zublerae-repp": {
+      "backeberg": "Mammillaria zublerae Repp.",
+      "modern": "Mammillaria zublerae Repp.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria zublerae Repp."
+      ]
+    },
+    "mammillaria-nana-backeb": {
+      "backeberg": "Mammillaria nana Backeb.",
+      "modern": "Mammillaria nana Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria nana Backeb."
+      ]
+    },
+    "mammillaria-petterssonii-hildm": {
+      "backeberg": "Mammillaria petterssonii Hildm.",
+      "modern": "Mammillaria petterssonii Hildm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria petterssonii Hildm."
+      ]
+    },
+    "mammillaria-lenta-kbrandegee": {
+      "backeberg": "Mammillaria lenta K.Brandegee",
+      "modern": "Mammillaria lenta K.Brandegee",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria lenta K.Brandegee"
+      ]
+    },
+    "mammillaria-pilispina-japurpus": {
+      "backeberg": "Mammillaria pilispina J.A.Purpus",
+      "modern": "Mammillaria pilispina J.A.Purpus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pilispina J.A.Purpus"
+      ]
+    },
+    "mammillaria-pectinifera-stein-facweber": {
+      "backeberg": "Mammillaria pectinifera (Stein) F.A.C.Weber",
+      "modern": "Mammillaria pectinifera (Stein) F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pectinifera (Stein) F.A.C.Weber"
+      ]
+    },
+    "mammillaria-sphaerica-adietr-ex-engelm": {
+      "backeberg": "Mammillaria sphaerica A.Dietr. ex Engelm.",
+      "modern": "Mammillaria sphaerica A.Dietr. ex Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sphaerica A.Dietr. ex Engelm."
+      ]
+    },
+    "mammillaria-moelleriana-boed": {
+      "backeberg": "Mammillaria moelleriana Boed.",
+      "modern": "Mammillaria moelleriana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria moelleriana Boed."
+      ]
+    },
+    "mammillaria-johnstonii-britton-rose-orcutt": {
+      "backeberg": "Mammillaria johnstonii (Britton & Rose) Orcutt",
+      "modern": "Mammillaria johnstonii (Britton & Rose) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria johnstonii (Britton & Rose) Orcutt"
+      ]
+    },
+    "mammillaria-painteri-rose-ex-quehl": {
+      "backeberg": "Mammillaria painteri Rose ex Quehl",
+      "modern": "Mammillaria painteri Rose ex Quehl",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria painteri Rose ex Quehl"
+      ]
+    },
+    "mammillaria-backebergiana-fgbuchenau": {
+      "backeberg": "Mammillaria backebergiana F.G.Buchenau",
+      "modern": "Mammillaria backebergiana F.G.Buchenau",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria backebergiana F.G.Buchenau"
+      ]
+    },
+    "mammillaria-zeilmanniana-boed": {
+      "backeberg": "Mammillaria zeilmanniana Boed.",
+      "modern": "Mammillaria zeilmanniana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria zeilmanniana Boed."
+      ]
+    },
+    "mammillaria-insularis-hegates-ex-shurly-1938": {
+      "backeberg": "Mammillaria insularis H.E.Gates ex Shurly, 1938",
+      "modern": "Mammillaria insularis H.E.Gates ex Shurly, 1938",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria insularis H.E.Gates ex Shurly, 1938"
+      ]
+    },
+    "mammillaria-longiflora-britton-rose-aberger": {
+      "backeberg": "Mammillaria longiflora (Britton & Rose) A.Berger",
+      "modern": "Mammillaria longiflora (Britton & Rose) A.Berger",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria longiflora (Britton & Rose) A.Berger"
+      ]
+    },
+    "mammillaria-magnifica-fgbuchenau": {
+      "backeberg": "Mammillaria magnifica F.G.Buchenau",
+      "modern": "Mammillaria magnifica F.G.Buchenau",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria magnifica F.G.Buchenau"
+      ]
+    },
+    "mammillaria-tepexicensis-jmeyrán": {
+      "backeberg": "Mammillaria tepexicensis J.Meyrán",
+      "modern": "Mammillaria tepexicensis J.Meyrán",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria tepexicensis J.Meyrán"
+      ]
+    },
+    "mammillaria-duoformis-rtcraig-eydawson": {
+      "backeberg": "Mammillaria duoformis R.T.Craig & E.Y.Dawson",
+      "modern": "Mammillaria duoformis R.T.Craig & E.Y.Dawson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria duoformis R.T.Craig & E.Y.Dawson"
+      ]
+    },
+    "mammillaria-duwei-rogoz-pjbraun": {
+      "backeberg": "Mammillaria duwei Rogoz. & P.J.Braun",
+      "modern": "Mammillaria duwei Rogoz. & P.J.Braun",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria duwei Rogoz. & P.J.Braun"
+      ]
+    },
+    "mammillaria-meyranii-bravo": {
+      "backeberg": "Mammillaria meyranii Bravo",
+      "modern": "Mammillaria meyranii Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria meyranii Bravo"
+      ]
+    },
+    "mammillaria-deherdtiana-farwig": {
+      "backeberg": "Mammillaria deherdtiana Farwig",
+      "modern": "Mammillaria deherdtiana Farwig",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria deherdtiana Farwig"
+      ]
+    },
+    "mammillaria-purpurea-cehrenb": {
+      "backeberg": "Mammillaria purpurea C.Ehrenb.",
+      "modern": "Mammillaria purpurea C.Ehrenb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria purpurea C.Ehrenb."
+      ]
+    },
+    "mammillaria-carmenae-castañeda-núñez": {
+      "backeberg": "Mammillaria carmenae Castañeda & Núñez",
+      "modern": "Mammillaria carmenae Castañeda & Núñez",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria carmenae Castañeda & Núñez"
+      ]
+    },
+    "mammillaria-brandegeei-jmcoult-engelm-ex-kbrandegee": {
+      "backeberg": "Mammillaria brandegeei (J.M.Coult.) Engelm. ex K.Brandegee",
+      "modern": "Mammillaria brandegeei (J.M.Coult.) Engelm. ex K.Brandegee",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria brandegeei (J.M.Coult.) Engelm. ex K.Brandegee"
+      ]
+    },
+    "mammillaria-petrophila-kbrandegee": {
+      "backeberg": "Mammillaria petrophila K.Brandegee",
+      "modern": "Mammillaria petrophila K.Brandegee",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria petrophila K.Brandegee"
+      ]
+    },
+    "mammillaria-xaltianguensis-sánchez-mej": {
+      "backeberg": "Mammillaria xaltianguensis Sánchez-Mej.",
+      "modern": "Mammillaria xaltianguensis Sánchez-Mej.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria xaltianguensis Sánchez-Mej."
+      ]
+    },
+    "mammillaria-wiesingeri-boed": {
+      "backeberg": "Mammillaria wiesingeri Boed.",
+      "modern": "Mammillaria wiesingeri Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria wiesingeri Boed."
+      ]
+    },
+    "mammillaria-spinosissima-lem": {
+      "backeberg": "Mammillaria spinosissima Lem.",
+      "modern": "Mammillaria spinosissima Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria spinosissima Lem."
+      ]
+    },
+    "mammillaria-herrerae-werderm": {
+      "backeberg": "Mammillaria herrerae Werderm.",
+      "modern": "Mammillaria herrerae Werderm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria herrerae Werderm."
+      ]
+    },
+    "mammillaria-knippeliana-quehl": {
+      "backeberg": "Mammillaria knippeliana Quehl",
+      "modern": "Mammillaria knippeliana Quehl",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria knippeliana Quehl"
+      ]
+    },
+    "mammillaria-evermanniana-britton-rose-orcutt": {
+      "backeberg": "Mammillaria evermanniana (Britton & Rose) Orcutt",
+      "modern": "Mammillaria evermanniana (Britton & Rose) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria evermanniana (Britton & Rose) Orcutt"
+      ]
+    },
+    "mammillaria-sonorensis-rtcraig": {
+      "backeberg": "Mammillaria sonorensis R.T.Craig",
+      "modern": "Mammillaria sonorensis R.T.Craig",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria sonorensis R.T.Craig"
+      ]
+    },
+    "mammillaria-pringlei-jmcoult-kbrandegee": {
+      "backeberg": "Mammillaria pringlei (J.M.Coult.) K.Brandegee",
+      "modern": "Mammillaria pringlei (J.M.Coult.) K.Brandegee",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria pringlei (J.M.Coult.) K.Brandegee"
+      ]
+    },
+    "mammillaria-peninsularis-britton-rose-orcutt": {
+      "backeberg": "Mammillaria peninsularis (Britton & Rose) Orcutt",
+      "modern": "Mammillaria peninsularis (Britton & Rose) Orcutt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria peninsularis (Britton & Rose) Orcutt"
+      ]
+    },
+    "mammillaria-aureilanata-backeb": {
+      "backeberg": "Mammillaria aureilanata Backeb.",
+      "modern": "Mammillaria aureilanata Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria aureilanata Backeb."
+      ]
+    },
+    "mammillaria-hutchisoniana-hegates-backeb-knuth": {
+      "backeberg": "Mammillaria hutchisoniana (H.E.Gates) Backeb. & Knuth",
+      "modern": "Mammillaria hutchisoniana (H.E.Gates) Backeb. & Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria hutchisoniana (H.E.Gates) Backeb. & Knuth"
+      ]
+    },
+    "mammillaria-wagneriana-boed": {
+      "backeberg": "Mammillaria wagneriana Boed.",
+      "modern": "Mammillaria wagneriana Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria wagneriana Boed."
+      ]
+    },
+    "mammillaria-guerreronis-bravo-boed": {
+      "backeberg": "Mammillaria guerreronis (Bravo) Boed.",
+      "modern": "Mammillaria guerreronis (Bravo) Boed.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria guerreronis (Bravo) Boed."
+      ]
+    },
+    "mammillaria-schwarzii-shurly": {
+      "backeberg": "Mammillaria schwarzii Shurly",
+      "modern": "Mammillaria schwarzii Shurly",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria schwarzii Shurly"
+      ]
+    },
+    "mammillaria-varieaculeata-francgbuchenau": {
+      "backeberg": "Mammillaria varieaculeata Franc.G.Buchenau",
+      "modern": "Mammillaria varieaculeata Franc.G.Buchenau",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria varieaculeata Franc.G.Buchenau"
+      ]
+    },
+    "mammillaria-hernandezii-glass-rafoster": {
+      "backeberg": "Mammillaria hernandezii Glass & R.A.Foster",
+      "modern": "Mammillaria hernandezii Glass & R.A.Foster",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria hernandezii Glass & R.A.Foster"
+      ]
+    },
+    "mammillaria-laui-drhunt": {
+      "backeberg": "Mammillaria laui D.R.Hunt",
+      "modern": "Mammillaria laui D.R.Hunt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria laui D.R.Hunt"
+      ]
+    },
+    "mammillaria-crucigera-mart": {
+      "backeberg": "Mammillaria crucigera Mart.",
+      "modern": "Mammillaria crucigera Mart.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria crucigera Mart."
+      ]
+    },
+    "mammillaria-albiflora-werderm-backeb": {
+      "backeberg": "Mammillaria albiflora (Werderm.) Backeb.",
+      "modern": "Mammillaria albiflora (Werderm.) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria albiflora (Werderm.) Backeb."
+      ]
+    },
+    "mammillaria-fuscata-link-otto": {
+      "backeberg": "Mammillaria fuscata Link & Otto",
+      "modern": "Mammillaria fuscata Link & Otto",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria fuscata Link & Otto"
+      ]
+    },
+    "mammillaria-marksiana-krainz": {
+      "backeberg": "Mammillaria marksiana Krainz",
+      "modern": "Mammillaria marksiana Krainz",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Mammillaria marksiana Krainz"
+      ]
+    },
+    "myrtillocactus-geometrizans-mart-ex-pfeiff-console": {
+      "backeberg": "Myrtillocactus geometrizans (Mart. ex Pfeiff.) Console",
+      "modern": "Myrtillocactus geometrizans (Mart. ex Pfeiff.) Console",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Myrtillocactus geometrizans (Mart. ex Pfeiff.) Console"
+      ]
+    },
+    "escontria-chiotilla-facweber-ex-kschum-rose": {
+      "backeberg": "Escontria chiotilla (F.A.C.Weber ex K.Schum.) Rose",
+      "modern": "Escontria chiotilla (F.A.C.Weber ex K.Schum.) Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Escontria chiotilla (F.A.C.Weber ex K.Schum.) Rose"
+      ]
+    },
+    "myrtillocactus-schenckii-japurpus-britton-rose": {
+      "backeberg": "Myrtillocactus schenckii (J.A.Purpus) Britton & Rose",
+      "modern": "Myrtillocactus schenckii (J.A.Purpus) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Myrtillocactus schenckii (J.A.Purpus) Britton & Rose"
+      ]
+    },
+    "polaskia-chende-rol-goss-acgibson-kehorak": {
+      "backeberg": "Polaskia chende (Rol.-Goss.) A.C.Gibson & K.E.Horak",
+      "modern": "Polaskia chende (Rol.-Goss.) A.C.Gibson & K.E.Horak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Polaskia chende (Rol.-Goss.) A.C.Gibson & K.E.Horak"
+      ]
+    },
+    "polaskia-chichipe-rol-goss-backeb": {
+      "backeberg": "Polaskia chichipe (Rol.-Goss.) Backeb.",
+      "modern": "Polaskia chichipe (Rol.-Goss.) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Polaskia chichipe (Rol.-Goss.) Backeb."
+      ]
+    },
+    "myrtillocactus-eichlamii-britton-rose": {
+      "backeberg": "Myrtillocactus eichlamii Britton & Rose",
+      "modern": "Myrtillocactus eichlamii Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Myrtillocactus eichlamii Britton & Rose"
+      ]
+    },
+    "myrtillocactus-cochal-orcutt-britton-rose": {
+      "backeberg": "Myrtillocactus cochal (Orcutt) Britton & Rose",
+      "modern": "Myrtillocactus cochal (Orcutt) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Myrtillocactus cochal (Orcutt) Britton & Rose"
+      ]
+    },
     "opuntia-ficus-indica": {
       "backeberg": "Opuntia ficus-indica",
       "modern": "Opuntia ficus-indica",
@@ -496,6 +2774,861 @@
         "Opuntia humifusa"
       ]
     },
+    "opuntia-depressa-rose": {
+      "backeberg": "Opuntia depressa Rose",
+      "modern": "Opuntia depressa Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia depressa Rose"
+      ]
+    },
+    "opuntia-megacantha-salm-dyck": {
+      "backeberg": "Opuntia megacantha Salm-Dyck",
+      "modern": "Opuntia megacantha Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia megacantha Salm-Dyck"
+      ]
+    },
+    "opuntia-rzedowskii-scheinvar": {
+      "backeberg": "Opuntia rzedowskii Scheinvar",
+      "modern": "Opuntia rzedowskii Scheinvar",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia rzedowskii Scheinvar"
+      ]
+    },
+    "opuntia-engelmannii-salm-dyck-ex-engelm": {
+      "backeberg": "Opuntia engelmannii Salm-Dyck ex Engelm.",
+      "modern": "Opuntia engelmannii Salm-Dyck ex Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia engelmannii Salm-Dyck ex Engelm."
+      ]
+    },
+    "opuntia-robusta-hlwendl": {
+      "backeberg": "Opuntia robusta H.L.Wendl.",
+      "modern": "Opuntia robusta H.L.Wendl.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia robusta H.L.Wendl."
+      ]
+    },
+    "opuntia-pumila-rose": {
+      "backeberg": "Opuntia pumila Rose",
+      "modern": "Opuntia pumila Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia pumila Rose"
+      ]
+    },
+    "opuntia-hyptiacantha-facweber": {
+      "backeberg": "Opuntia hyptiacantha F.A.C.Weber",
+      "modern": "Opuntia hyptiacantha F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia hyptiacantha F.A.C.Weber"
+      ]
+    },
+    "opuntia-occidentalis-engelm-jmbigelow": {
+      "backeberg": "Opuntia × occidentalis Engelm. & J.M.Bigelow",
+      "modern": "Opuntia × occidentalis Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × occidentalis Engelm. & J.M.Bigelow"
+      ]
+    },
+    "nopalea-auberi-pfeiff-salm-dyck": {
+      "backeberg": "Nopalea auberi (Pfeiff.) Salm-Dyck",
+      "modern": "Nopalea auberi (Pfeiff.) Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Nopalea auberi (Pfeiff.) Salm-Dyck"
+      ]
+    },
+    "opuntia-tomentosa-salm-dyck": {
+      "backeberg": "Opuntia tomentosa Salm-Dyck",
+      "modern": "Opuntia tomentosa Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia tomentosa Salm-Dyck"
+      ]
+    },
+    "opuntia-puberula-hortvindob-ex-pfeiff": {
+      "backeberg": "Opuntia puberula Hort.Vindob. ex Pfeiff.",
+      "modern": "Opuntia puberula Hort.Vindob. ex Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia puberula Hort.Vindob. ex Pfeiff."
+      ]
+    },
+    "opuntia-microdasys-lehm-pfeiff": {
+      "backeberg": "Opuntia microdasys (Lehm.) Pfeiff.",
+      "modern": "Opuntia microdasys (Lehm.) Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia microdasys (Lehm.) Pfeiff."
+      ]
+    },
+    "opuntia-macrocentra-engelm": {
+      "backeberg": "Opuntia macrocentra Engelm.",
+      "modern": "Opuntia macrocentra Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia macrocentra Engelm."
+      ]
+    },
+    "opuntia-phaeacantha-engelm": {
+      "backeberg": "Opuntia phaeacantha Engelm.",
+      "modern": "Opuntia phaeacantha Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia phaeacantha Engelm."
+      ]
+    },
+    "opuntia-streptacantha-lem": {
+      "backeberg": "Opuntia streptacantha Lem.",
+      "modern": "Opuntia streptacantha Lem.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia streptacantha Lem."
+      ]
+    },
+    "opuntia-velutina-facweber": {
+      "backeberg": "Opuntia velutina F.A.C.Weber",
+      "modern": "Opuntia velutina F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia velutina F.A.C.Weber"
+      ]
+    },
+    "opuntia-matudae-scheinvar": {
+      "backeberg": "Opuntia matudae Scheinvar",
+      "modern": "Opuntia matudae Scheinvar",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia matudae Scheinvar"
+      ]
+    },
+    "opuntia-atrispina-griffiths": {
+      "backeberg": "Opuntia atrispina Griffiths",
+      "modern": "Opuntia atrispina Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia atrispina Griffiths"
+      ]
+    },
+    "opuntia-joconostle-facweber": {
+      "backeberg": "Opuntia joconostle F.A.C.Weber",
+      "modern": "Opuntia joconostle F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia joconostle F.A.C.Weber"
+      ]
+    },
+    "opuntia-deamii-rose": {
+      "backeberg": "Opuntia deamii Rose",
+      "modern": "Opuntia deamii Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia deamii Rose"
+      ]
+    },
+    "opuntia-eichlamii-rose": {
+      "backeberg": "Opuntia eichlamii Rose",
+      "modern": "Opuntia eichlamii Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia eichlamii Rose"
+      ]
+    },
+    "opuntia-dejecta-salm-dyck": {
+      "backeberg": "Opuntia dejecta Salm-Dyck",
+      "modern": "Opuntia dejecta Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia dejecta Salm-Dyck"
+      ]
+    },
+    "opuntia-hitchcockii-jgortega": {
+      "backeberg": "Opuntia hitchcockii J.G.Ortega",
+      "modern": "Opuntia hitchcockii J.G.Ortega",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia hitchcockii J.G.Ortega"
+      ]
+    },
+    "opuntia-stenopetala-engelm": {
+      "backeberg": "Opuntia stenopetala Engelm.",
+      "modern": "Opuntia stenopetala Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia stenopetala Engelm."
+      ]
+    },
+    "opuntia-chlorotica-engelm-jmbigelow": {
+      "backeberg": "Opuntia chlorotica Engelm. & J.M.Bigelow",
+      "modern": "Opuntia chlorotica Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia chlorotica Engelm. & J.M.Bigelow"
+      ]
+    },
+    "opuntia-aciculata-griffiths": {
+      "backeberg": "Opuntia aciculata Griffiths",
+      "modern": "Opuntia aciculata Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia aciculata Griffiths"
+      ]
+    },
+    "opuntia-andersonii-hmhern-gómez-hin-bárcenas": {
+      "backeberg": "Opuntia × andersonii H.M.Hern., Gómez-Hin. & Bárcenas",
+      "modern": "Opuntia × andersonii H.M.Hern., Gómez-Hin. & Bárcenas",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × andersonii H.M.Hern., Gómez-Hin. & Bárcenas"
+      ]
+    },
+    "opuntia-oligacantha-pfeiff": {
+      "backeberg": "Opuntia oligacantha Pfeiff.",
+      "modern": "Opuntia oligacantha Pfeiff.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia oligacantha Pfeiff."
+      ]
+    },
+    "opuntia-durangensis-britton-rose": {
+      "backeberg": "Opuntia durangensis Britton & Rose",
+      "modern": "Opuntia durangensis Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia durangensis Britton & Rose"
+      ]
+    },
+    "opuntia-nejapensis-bravo": {
+      "backeberg": "Opuntia nejapensis Bravo",
+      "modern": "Opuntia nejapensis Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia nejapensis Bravo"
+      ]
+    },
+    "opuntia-excelsa-sánchez-mej": {
+      "backeberg": "Opuntia excelsa Sánchez-Mej.",
+      "modern": "Opuntia excelsa Sánchez-Mej.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia excelsa Sánchez-Mej."
+      ]
+    },
+    "opuntia-decumbens-salm-dyck": {
+      "backeberg": "Opuntia decumbens Salm-Dyck",
+      "modern": "Opuntia decumbens Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia decumbens Salm-Dyck"
+      ]
+    },
+    "opuntia-oricola-philbrick": {
+      "backeberg": "Opuntia oricola Philbrick",
+      "modern": "Opuntia oricola Philbrick",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia oricola Philbrick"
+      ]
+    },
+    "nopalea-cochenillifera-l-salm-dyck": {
+      "backeberg": "Nopalea cochenillifera (L.) Salm-Dyck",
+      "modern": "Nopalea cochenillifera (L.) Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Nopalea cochenillifera (L.) Salm-Dyck"
+      ]
+    },
+    "opuntia-littoralis-engelm-cockerell": {
+      "backeberg": "Opuntia littoralis (Engelm.) Cockerell",
+      "modern": "Opuntia littoralis (Engelm.) Cockerell",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia littoralis (Engelm.) Cockerell"
+      ]
+    },
+    "opuntia-wilcoxii-britton-rose": {
+      "backeberg": "Opuntia wilcoxii Britton & Rose",
+      "modern": "Opuntia wilcoxii Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia wilcoxii Britton & Rose"
+      ]
+    },
+    "opuntia-fuliginosa-griffiths": {
+      "backeberg": "Opuntia fuliginosa Griffiths",
+      "modern": "Opuntia fuliginosa Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia fuliginosa Griffiths"
+      ]
+    },
+    "opuntia-mesacantha-raf": {
+      "backeberg": "Opuntia mesacantha Raf.",
+      "modern": "Opuntia mesacantha Raf.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia mesacantha Raf."
+      ]
+    },
+    "opuntia-guilanchii-griffiths": {
+      "backeberg": "Opuntia guilanchii Griffiths",
+      "modern": "Opuntia guilanchii Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia guilanchii Griffiths"
+      ]
+    },
+    "opuntia-scheeri-facweber": {
+      "backeberg": "Opuntia scheeri F.A.C.Weber",
+      "modern": "Opuntia scheeri F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia scheeri F.A.C.Weber"
+      ]
+    },
+    "opuntia-robinsonii-jgortega": {
+      "backeberg": "Opuntia robinsonii J.G.Ortega",
+      "modern": "Opuntia robinsonii J.G.Ortega",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia robinsonii J.G.Ortega"
+      ]
+    },
+    "opuntia-feroacantha-britton-rose": {
+      "backeberg": "Opuntia feroacantha Britton & Rose",
+      "modern": "Opuntia feroacantha Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia feroacantha Britton & Rose"
+      ]
+    },
+    "opuntia-albicarpa-scheinvar-1995": {
+      "backeberg": "Opuntia albicarpa Scheinvar, 1995",
+      "modern": "Opuntia albicarpa Scheinvar, 1995",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia albicarpa Scheinvar, 1995"
+      ]
+    },
+    "nopalea-inaperta-schott-ex-griffith": {
+      "backeberg": "Nopalea inaperta Schott ex Griffith",
+      "modern": "Nopalea inaperta Schott ex Griffith",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Nopalea inaperta Schott ex Griffith"
+      ]
+    },
+    "opuntia-macrorhiza-engelm": {
+      "backeberg": "Opuntia macrorhiza Engelm.",
+      "modern": "Opuntia macrorhiza Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia macrorhiza Engelm."
+      ]
+    },
+    "opuntia-intricata-griffiths": {
+      "backeberg": "Opuntia intricata Griffiths",
+      "modern": "Opuntia intricata Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia intricata Griffiths"
+      ]
+    },
+    "opuntia-cochinera-griffiths": {
+      "backeberg": "Opuntia × cochinera Griffiths",
+      "modern": "Opuntia × cochinera Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × cochinera Griffiths"
+      ]
+    },
+    "opuntia-pycnantha-engelm-ex-jmcoult": {
+      "backeberg": "Opuntia pycnantha Engelm. ex J.M.Coult.",
+      "modern": "Opuntia pycnantha Engelm. ex J.M.Coult.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia pycnantha Engelm. ex J.M.Coult."
+      ]
+    },
+    "opuntia-rastrera-facweber": {
+      "backeberg": "Opuntia rastrera F.A.C.Weber",
+      "modern": "Opuntia rastrera F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia rastrera F.A.C.Weber"
+      ]
+    },
+    "opuntia-pilifera-facweber": {
+      "backeberg": "Opuntia pilifera F.A.C.Weber",
+      "modern": "Opuntia pilifera F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia pilifera F.A.C.Weber"
+      ]
+    },
+    "opuntia-huajuapensis-bravo": {
+      "backeberg": "Opuntia huajuapensis Bravo",
+      "modern": "Opuntia huajuapensis Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia huajuapensis Bravo"
+      ]
+    },
+    "opuntia-parviclada-sarias-gama": {
+      "backeberg": "Opuntia parviclada S.Arias & Gama",
+      "modern": "Opuntia parviclada S.Arias & Gama",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia parviclada S.Arias & Gama"
+      ]
+    },
+    "opuntia-tehuacana-sarias-uguzmán": {
+      "backeberg": "Opuntia tehuacana S.Arias & U.Guzmán",
+      "modern": "Opuntia tehuacana S.Arias & U.Guzmán",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia tehuacana S.Arias & U.Guzmán"
+      ]
+    },
+    "opuntia-rufida-engelm": {
+      "backeberg": "Opuntia rufida Engelm.",
+      "modern": "Opuntia rufida Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia rufida Engelm."
+      ]
+    },
+    "opuntia-elizondoana-esánchez-villaseñor": {
+      "backeberg": "Opuntia elizondoana E.Sánchez & Villaseñor",
+      "modern": "Opuntia elizondoana E.Sánchez & Villaseñor",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia elizondoana E.Sánchez & Villaseñor"
+      ]
+    },
+    "opuntia-tapona-engelm-ex-jmcoult": {
+      "backeberg": "Opuntia tapona Engelm. ex J.M.Coult.",
+      "modern": "Opuntia tapona Engelm. ex J.M.Coult.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia tapona Engelm. ex J.M.Coult."
+      ]
+    },
+    "nopalea-lutea-rose": {
+      "backeberg": "Nopalea lutea Rose",
+      "modern": "Nopalea lutea Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Nopalea lutea Rose"
+      ]
+    },
+    "opuntia-carstenii-rpuente-chamann": {
+      "backeberg": "Opuntia × carstenii R.Puente & C.Hamann",
+      "modern": "Opuntia × carstenii R.Puente & C.Hamann",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × carstenii R.Puente & C.Hamann"
+      ]
+    },
+    "opuntia-arenaria-engelm": {
+      "backeberg": "Opuntia arenaria Engelm.",
+      "modern": "Opuntia arenaria Engelm.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia arenaria Engelm."
+      ]
+    },
+    "opuntia-gosseliniana-facweber": {
+      "backeberg": "Opuntia gosseliniana F.A.C.Weber",
+      "modern": "Opuntia gosseliniana F.A.C.Weber",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia gosseliniana F.A.C.Weber"
+      ]
+    },
+    "opuntia-stricta-haw-haw": {
+      "backeberg": "Opuntia stricta (Haw.) Haw.",
+      "modern": "Opuntia stricta (Haw.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia stricta (Haw.) Haw."
+      ]
+    },
+    "opuntia-amarilla-griffiths": {
+      "backeberg": "Opuntia amarilla Griffiths",
+      "modern": "Opuntia amarilla Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia amarilla Griffiths"
+      ]
+    },
+    "opuntia-dillenii-ker-gawl-haw": {
+      "backeberg": "Opuntia dillenii (Ker Gawl.) Haw.",
+      "modern": "Opuntia dillenii (Ker Gawl.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia dillenii (Ker Gawl.) Haw."
+      ]
+    },
+    "opuntia-chaffeyi-britton-rose": {
+      "backeberg": "Opuntia chaffeyi Britton & Rose",
+      "modern": "Opuntia chaffeyi Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia chaffeyi Britton & Rose"
+      ]
+    },
+    "opuntia-pachyrrhiza-hmhern-gómez-hin-bárcenas": {
+      "backeberg": "Opuntia pachyrrhiza H.M.Hern., Gómez-Hin. & Bárcenas",
+      "modern": "Opuntia pachyrrhiza H.M.Hern., Gómez-Hin. & Bárcenas",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia pachyrrhiza H.M.Hern., Gómez-Hin. & Bárcenas"
+      ]
+    },
+    "opuntia-jaliscana-bravo": {
+      "backeberg": "Opuntia jaliscana Bravo",
+      "modern": "Opuntia jaliscana Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia jaliscana Bravo"
+      ]
+    },
+    "opuntia-megarrhiza-rose": {
+      "backeberg": "Opuntia megarrhiza Rose",
+      "modern": "Opuntia megarrhiza Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia megarrhiza Rose"
+      ]
+    },
+    "opuntia-vaseyi-jmcoult-britton-rose": {
+      "backeberg": "Opuntia × vaseyi (J.M.Coult.) Britton & Rose",
+      "modern": "Opuntia × vaseyi (J.M.Coult.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × vaseyi (J.M.Coult.) Britton & Rose"
+      ]
+    },
+    "opuntia-crassa-haw": {
+      "backeberg": "Opuntia crassa Haw.",
+      "modern": "Opuntia crassa Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia crassa Haw."
+      ]
+    },
+    "opuntia-cymochila-engelm-jmbigelow": {
+      "backeberg": "Opuntia × cymochila Engelm. & J.M.Bigelow",
+      "modern": "Opuntia × cymochila Engelm. & J.M.Bigelow",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × cymochila Engelm. & J.M.Bigelow"
+      ]
+    },
+    "opuntia-amyclaea-ten": {
+      "backeberg": "Opuntia amyclaea Ten.",
+      "modern": "Opuntia amyclaea Ten.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia amyclaea Ten."
+      ]
+    },
+    "opuntia-howeyi-japurpus": {
+      "backeberg": "Opuntia howeyi J.A.Purpus",
+      "modern": "Opuntia howeyi J.A.Purpus",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia howeyi J.A.Purpus"
+      ]
+    },
+    "opuntia-fragilis-nutt-haw": {
+      "backeberg": "Opuntia fragilis (Nutt.) Haw.",
+      "modern": "Opuntia fragilis (Nutt.) Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia fragilis (Nutt.) Haw."
+      ]
+    },
+    "opuntia-pottsii-salm-dyck": {
+      "backeberg": "Opuntia pottsii Salm-Dyck",
+      "modern": "Opuntia pottsii Salm-Dyck",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia pottsii Salm-Dyck"
+      ]
+    },
+    "opuntia-gallegiana-scheinvar-olalde": {
+      "backeberg": "Opuntia gallegiana Scheinvar & Olalde",
+      "modern": "Opuntia gallegiana Scheinvar & Olalde",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia gallegiana Scheinvar & Olalde"
+      ]
+    },
+    "opuntia-compressa-jfmacbr": {
+      "backeberg": "Opuntia compressa J.F.Macbr.",
+      "modern": "Opuntia compressa J.F.Macbr.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia compressa J.F.Macbr."
+      ]
+    },
+    "opuntia-bravoana-embaxter": {
+      "backeberg": "Opuntia bravoana E.M.Baxter",
+      "modern": "Opuntia bravoana E.M.Baxter",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia bravoana E.M.Baxter"
+      ]
+    },
+    "opuntia-cubensis-britton-rose": {
+      "backeberg": "Opuntia × cubensis Britton & Rose",
+      "modern": "Opuntia × cubensis Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × cubensis Britton & Rose"
+      ]
+    },
+    "opuntia-demissa-griffiths": {
+      "backeberg": "Opuntia × demissa Griffiths",
+      "modern": "Opuntia × demissa Griffiths",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia × demissa Griffiths"
+      ]
+    },
+    "opuntia-vulgaris-ten-1831": {
+      "backeberg": "Opuntia vulgaris Ten., 1831",
+      "modern": "Opuntia vulgaris Ten., 1831",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia vulgaris Ten., 1831"
+      ]
+    },
+    "opuntia-elata-link-otto": {
+      "backeberg": "Opuntia elata Link & Otto",
+      "modern": "Opuntia elata Link & Otto",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia elata Link & Otto"
+      ]
+    },
+    "opuntia-drummondii-graham": {
+      "backeberg": "Opuntia drummondii Graham",
+      "modern": "Opuntia drummondii Graham",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia drummondii Graham"
+      ]
+    },
+    "opuntia-setispina-engelm-1850": {
+      "backeberg": "Opuntia setispina Engelm., 1850",
+      "modern": "Opuntia setispina Engelm., 1850",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Opuntia setispina Engelm., 1850"
+      ]
+    },
+    "pachycereus-militaris-audot-drhunt": {
+      "backeberg": "Pachycereus militaris (Audot) D.R.Hunt",
+      "modern": "Pachycereus militaris (Audot) D.R.Hunt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus militaris (Audot) D.R.Hunt"
+      ]
+    },
+    "pachycereus-weberi-jmcoult-backeb": {
+      "backeberg": "Pachycereus weberi (J.M.Coult.) Backeb.",
+      "modern": "Pachycereus weberi (J.M.Coult.) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus weberi (J.M.Coult.) Backeb."
+      ]
+    },
+    "pachycereus-pecten-aboriginum-engelm-ex-swatson-britton-rose": {
+      "backeberg": "Pachycereus pecten-aboriginum (Engelm. ex S.Watson) Britton & Rose",
+      "modern": "Pachycereus pecten-aboriginum (Engelm. ex S.Watson) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus pecten-aboriginum (Engelm. ex S.Watson) Britton & Rose"
+      ]
+    },
+    "lemaireocereus-hollianus-facweber-ex-jmcoult-britton-rose": {
+      "backeberg": "Lemaireocereus hollianus (F.A.C.Weber ex J.M.Coult.) Britton & Rose",
+      "modern": "Lemaireocereus hollianus (F.A.C.Weber ex J.M.Coult.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Lemaireocereus hollianus (F.A.C.Weber ex J.M.Coult.) Britton & Rose"
+      ]
+    },
+    "pachycereus-schottii-engelm-drhunt": {
+      "backeberg": "Pachycereus schottii (Engelm.) D.R.Hunt",
+      "modern": "Pachycereus schottii (Engelm.) D.R.Hunt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus schottii (Engelm.) D.R.Hunt"
+      ]
+    },
+    "pachycereus-pringlei-swatson-britton-rose": {
+      "backeberg": "Pachycereus pringlei (S.Watson) Britton & Rose",
+      "modern": "Pachycereus pringlei (S.Watson) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus pringlei (S.Watson) Britton & Rose"
+      ]
+    },
+    "pachycereus-tepamo-gama-sarias": {
+      "backeberg": "Pachycereus tepamo Gama & S.Arias",
+      "modern": "Pachycereus tepamo Gama & S.Arias",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus tepamo Gama & S.Arias"
+      ]
+    },
+    "pachycereus-grandis-rose": {
+      "backeberg": "Pachycereus grandis Rose",
+      "modern": "Pachycereus grandis Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus grandis Rose"
+      ]
+    },
+    "pachycereus-gaumeri-britton-rose": {
+      "backeberg": "Pachycereus gaumeri Britton & Rose",
+      "modern": "Pachycereus gaumeri Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pachycereus gaumeri Britton & Rose"
+      ]
+    },
+    "lemaireocereus-lepidanthus-eichlam-sarias-terrazas": {
+      "backeberg": "Lemaireocereus lepidanthus (Eichlam) S.Arias & Terrazas",
+      "modern": "Lemaireocereus lepidanthus (Eichlam) S.Arias & Terrazas",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Lemaireocereus lepidanthus (Eichlam) S.Arias & Terrazas"
+      ]
+    },
+    "stenocereus-longispinus-britton-rose-buxb": {
+      "backeberg": "Stenocereus longispinus (Britton & Rose) Buxb.",
+      "modern": "Stenocereus longispinus (Britton & Rose) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus longispinus (Britton & Rose) Buxb."
+      ]
+    },
+    "lophocereus-gatesii-mejones": {
+      "backeberg": "Lophocereus gatesii M.E.Jones",
+      "modern": "Lophocereus gatesii M.E.Jones",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Lophocereus gatesii M.E.Jones"
+      ]
+    },
     "pereskia-grandifolia": {
       "backeberg": "Pereskia grandifolia",
       "modern": "Pereskia grandifolia",
@@ -512,6 +3645,42 @@
       "previouslyCalled": null,
       "nameHistory": [
         "Pereskia aculeata"
+      ]
+    },
+    "pereskia-aculeata-mill": {
+      "backeberg": "Pereskia aculeata Mill.",
+      "modern": "Pereskia aculeata Mill.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pereskia aculeata Mill."
+      ]
+    },
+    "pereskia-grandifolia-haw": {
+      "backeberg": "Pereskia grandifolia Haw.",
+      "modern": "Pereskia grandifolia Haw.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Pereskia grandifolia Haw."
+      ]
+    },
+    "rhipsalis-baccifera-jsmuell-stearn": {
+      "backeberg": "Rhipsalis baccifera (J.S.Muell.) Stearn",
+      "modern": "Rhipsalis baccifera (J.S.Muell.) Stearn",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Rhipsalis baccifera (J.S.Muell.) Stearn"
+      ]
+    },
+    "rhipsalis-simmleri-beauverd": {
+      "backeberg": "Rhipsalis simmleri Beauverd",
+      "modern": "Rhipsalis simmleri Beauverd",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Rhipsalis simmleri Beauverd"
       ]
     },
     "schlumbergera-truncata": {
@@ -535,6 +3704,501 @@
       "previouslyCalled": null,
       "nameHistory": [
         "Schlumbergera × buckleyi"
+      ]
+    },
+    "zygocactus-truncatus-haw-kschum": {
+      "backeberg": "Zygocactus truncatus (Haw.) K.Schum.",
+      "modern": "Zygocactus truncatus (Haw.) K.Schum.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Zygocactus truncatus (Haw.) K.Schum."
+      ]
+    },
+    "hylocereus-undatus-haw-britton-rose": {
+      "backeberg": "Hylocereus undatus (Haw.) Britton & Rose",
+      "modern": "Hylocereus undatus (Haw.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus undatus (Haw.) Britton & Rose"
+      ]
+    },
+    "hylocereus-ocamponis-salm-dyck-britton-rose": {
+      "backeberg": "Hylocereus ocamponis (Salm-Dyck) Britton & Rose",
+      "modern": "Hylocereus ocamponis (Salm-Dyck) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus ocamponis (Salm-Dyck) Britton & Rose"
+      ]
+    },
+    "hylocereus-purpusii-weing-britton-rose": {
+      "backeberg": "Hylocereus purpusii (Weing.) Britton & Rose",
+      "modern": "Hylocereus purpusii (Weing.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus purpusii (Weing.) Britton & Rose"
+      ]
+    },
+    "selenicereus-spinulosus-dc-britton-rose": {
+      "backeberg": "Selenicereus spinulosus (DC.) Britton & Rose",
+      "modern": "Selenicereus spinulosus (DC.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus spinulosus (DC.) Britton & Rose"
+      ]
+    },
+    "selenicereus-grandiflorus-l-britton-rose": {
+      "backeberg": "Selenicereus grandiflorus (L.) Britton & Rose",
+      "modern": "Selenicereus grandiflorus (L.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus grandiflorus (L.) Britton & Rose"
+      ]
+    },
+    "selenicereus-chontalensis-alexander-kimnach": {
+      "backeberg": "Selenicereus chontalensis (Alexander) Kimnach",
+      "modern": "Selenicereus chontalensis (Alexander) Kimnach",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus chontalensis (Alexander) Kimnach"
+      ]
+    },
+    "selenicereus-atropilosus-kimnach": {
+      "backeberg": "Selenicereus atropilosus Kimnach",
+      "modern": "Selenicereus atropilosus Kimnach",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus atropilosus Kimnach"
+      ]
+    },
+    "hylocereus-escuintlensis-kimnach": {
+      "backeberg": "Hylocereus escuintlensis Kimnach",
+      "modern": "Hylocereus escuintlensis Kimnach",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus escuintlensis Kimnach"
+      ]
+    },
+    "selenicereus-boeckmannii-otto-britton-rose": {
+      "backeberg": "Selenicereus boeckmannii (Otto) Britton & Rose",
+      "modern": "Selenicereus boeckmannii (Otto) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus boeckmannii (Otto) Britton & Rose"
+      ]
+    },
+    "selenicereus-hamatus-scheidw-britton-rose": {
+      "backeberg": "Selenicereus hamatus (Scheidw.) Britton & Rose",
+      "modern": "Selenicereus hamatus (Scheidw.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus hamatus (Scheidw.) Britton & Rose"
+      ]
+    },
+    "selenicereus-vagans-britton-rose": {
+      "backeberg": "Selenicereus vagans Britton & Rose",
+      "modern": "Selenicereus vagans Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus vagans Britton & Rose"
+      ]
+    },
+    "hylocereus-triangularis-l-britton-rose": {
+      "backeberg": "Hylocereus triangularis (L.) Britton & Rose",
+      "modern": "Hylocereus triangularis (L.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus triangularis (L.) Britton & Rose"
+      ]
+    },
+    "hylocereus-monacanthus-lem-britton-rose": {
+      "backeberg": "Hylocereus monacanthus (Lem.) Britton & Rose",
+      "modern": "Hylocereus monacanthus (Lem.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus monacanthus (Lem.) Britton & Rose"
+      ]
+    },
+    "selenicereus-anthonyanus-alexander-drhunt": {
+      "backeberg": "Selenicereus anthonyanus (Alexander) D.R.Hunt",
+      "modern": "Selenicereus anthonyanus (Alexander) D.R.Hunt",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus anthonyanus (Alexander) D.R.Hunt"
+      ]
+    },
+    "hylocereus-costaricensis-facweber-britton-rose": {
+      "backeberg": "Hylocereus costaricensis (F.A.C.Weber) Britton & Rose",
+      "modern": "Hylocereus costaricensis (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus costaricensis (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "selenicereus-wercklei-facweber-britton-rose": {
+      "backeberg": "Selenicereus wercklei (F.A.C.Weber) Britton & Rose",
+      "modern": "Selenicereus wercklei (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus wercklei (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "selenicereus-murrillii-britton-rose": {
+      "backeberg": "Selenicereus murrillii Britton & Rose",
+      "modern": "Selenicereus murrillii Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Selenicereus murrillii Britton & Rose"
+      ]
+    },
+    "hylocereus-stenopterus-facweber-britton-rose": {
+      "backeberg": "Hylocereus stenopterus (F.A.C.Weber) Britton & Rose",
+      "modern": "Hylocereus stenopterus (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus stenopterus (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "weberocereus-tonduzii-facweber-gdrowley": {
+      "backeberg": "Weberocereus tonduzii (F.A.C.Weber) G.D.Rowley",
+      "modern": "Weberocereus tonduzii (F.A.C.Weber) G.D.Rowley",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Weberocereus tonduzii (F.A.C.Weber) G.D.Rowley"
+      ]
+    },
+    "hylocereus-minutiflorus-britton-rose": {
+      "backeberg": "Hylocereus minutiflorus Britton & Rose",
+      "modern": "Hylocereus minutiflorus Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus minutiflorus Britton & Rose"
+      ]
+    },
+    "hylocereus-guatemalensis-eichlam-ex-weing-britton-rose": {
+      "backeberg": "Hylocereus guatemalensis (Eichlam ex Weing.) Britton & Rose",
+      "modern": "Hylocereus guatemalensis (Eichlam ex Weing.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus guatemalensis (Eichlam ex Weing.) Britton & Rose"
+      ]
+    },
+    "hylocereus-calcaratus-facweber-britton-rose": {
+      "backeberg": "Hylocereus calcaratus (F.A.C.Weber) Britton & Rose",
+      "modern": "Hylocereus calcaratus (F.A.C.Weber) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Hylocereus calcaratus (F.A.C.Weber) Britton & Rose"
+      ]
+    },
+    "stenocereus-quevedonis-jgortega-buxb": {
+      "backeberg": "Stenocereus quevedonis (J.G.Ortega) Buxb.",
+      "modern": "Stenocereus quevedonis (J.G.Ortega) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus quevedonis (J.G.Ortega) Buxb."
+      ]
+    },
+    "stenocereus-beneckei-cehrenb-aberger-buxb": {
+      "backeberg": "Stenocereus beneckei (C.Ehrenb.) A.Berger & Buxb.",
+      "modern": "Stenocereus beneckei (C.Ehrenb.) A.Berger & Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus beneckei (C.Ehrenb.) A.Berger & Buxb."
+      ]
+    },
+    "stenocereus-thurberi-engelm-buxb": {
+      "backeberg": "Stenocereus thurberi (Engelm.) Buxb.",
+      "modern": "Stenocereus thurberi (Engelm.) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus thurberi (Engelm.) Buxb."
+      ]
+    },
+    "stenocereus-pruinosus-otto-ex-pfeiff-buxb": {
+      "backeberg": "Stenocereus pruinosus (Otto ex Pfeiff.) Buxb.",
+      "modern": "Stenocereus pruinosus (Otto ex Pfeiff.) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus pruinosus (Otto ex Pfeiff.) Buxb."
+      ]
+    },
+    "stenocereus-griseus-haw-buxb": {
+      "backeberg": "Stenocereus griseus (Haw.) Buxb.",
+      "modern": "Stenocereus griseus (Haw.) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus griseus (Haw.) Buxb."
+      ]
+    },
+    "stenocereus-eichlamii-britton-rose-buxb-ex-bravo": {
+      "backeberg": "Stenocereus eichlamii (Britton & Rose) Buxb. ex Bravo",
+      "modern": "Stenocereus eichlamii (Britton & Rose) Buxb. ex Bravo",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus eichlamii (Britton & Rose) Buxb. ex Bravo"
+      ]
+    },
+    "isolatocereus-dumortieri-scheidw-backeb": {
+      "backeberg": "Isolatocereus dumortieri (Scheidw.) Backeb.",
+      "modern": "Isolatocereus dumortieri (Scheidw.) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Isolatocereus dumortieri (Scheidw.) Backeb."
+      ]
+    },
+    "stenocereus-gummosus-engelm-acgibson-kehorak": {
+      "backeberg": "Stenocereus gummosus (Engelm.) A.C.Gibson & K.E.Horak",
+      "modern": "Stenocereus gummosus (Engelm.) A.C.Gibson & K.E.Horak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus gummosus (Engelm.) A.C.Gibson & K.E.Horak"
+      ]
+    },
+    "stenocereus-stellatus-pfeiff-riccob": {
+      "backeberg": "Stenocereus stellatus (Pfeiff.) Riccob.",
+      "modern": "Stenocereus stellatus (Pfeiff.) Riccob.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus stellatus (Pfeiff.) Riccob."
+      ]
+    },
+    "stenocereus-queretaroensis-facweber-ex-mathsson-buxb": {
+      "backeberg": "Stenocereus queretaroensis (F.A.C.Weber ex Mathsson) Buxb.",
+      "modern": "Stenocereus queretaroensis (F.A.C.Weber ex Mathsson) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus queretaroensis (F.A.C.Weber ex Mathsson) Buxb."
+      ]
+    },
+    "stenocereus-eruca-brandegee-acgibson-kehorak": {
+      "backeberg": "Stenocereus eruca (Brandegee) A.C.Gibson & K.E.Horak",
+      "modern": "Stenocereus eruca (Brandegee) A.C.Gibson & K.E.Horak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus eruca (Brandegee) A.C.Gibson & K.E.Horak"
+      ]
+    },
+    "stenocereus-zopilotensis-arreola-nava-terrazas": {
+      "backeberg": "Stenocereus zopilotensis Arreola-Nava & Terrazas",
+      "modern": "Stenocereus zopilotensis Arreola-Nava & Terrazas",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus zopilotensis Arreola-Nava & Terrazas"
+      ]
+    },
+    "stenocereus-kerberi-kschum-acgibson-kehorak": {
+      "backeberg": "Stenocereus kerberi (K.Schum.) A.C.Gibson & K.E.Horak",
+      "modern": "Stenocereus kerberi (K.Schum.) A.C.Gibson & K.E.Horak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus kerberi (K.Schum.) A.C.Gibson & K.E.Horak"
+      ]
+    },
+    "stenocereus-alamosensis-jmcoult-acgibson-kehorak": {
+      "backeberg": "Stenocereus alamosensis (J.M.Coult.) A.C.Gibson & K.E.Horak",
+      "modern": "Stenocereus alamosensis (J.M.Coult.) A.C.Gibson & K.E.Horak",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus alamosensis (J.M.Coult.) A.C.Gibson & K.E.Horak"
+      ]
+    },
+    "stenocereus-montanus-britton-rose-buxb": {
+      "backeberg": "Stenocereus montanus (Britton & Rose) Buxb.",
+      "modern": "Stenocereus montanus (Britton & Rose) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus montanus (Britton & Rose) Buxb."
+      ]
+    },
+    "stenocereus-standleyi-jgortega-buxb": {
+      "backeberg": "Stenocereus standleyi (J.G.Ortega) Buxb.",
+      "modern": "Stenocereus standleyi (J.G.Ortega) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus standleyi (J.G.Ortega) Buxb."
+      ]
+    },
+    "stenocereus-treleasei-rose-backeb": {
+      "backeberg": "Stenocereus treleasei (Rose) Backeb.",
+      "modern": "Stenocereus treleasei (Rose) Backeb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus treleasei (Rose) Backeb."
+      ]
+    },
+    "stenocereus-chacalapensis-bravo-tmac-doug-buxb": {
+      "backeberg": "Stenocereus chacalapensis (Bravo & T.Mac Doug.) Buxb.",
+      "modern": "Stenocereus chacalapensis (Bravo & T.Mac Doug.) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus chacalapensis (Bravo & T.Mac Doug.) Buxb."
+      ]
+    },
+    "stenocereus-aragonii-facweber-buxb": {
+      "backeberg": "Stenocereus aragonii (F.A.C.Weber) Buxb.",
+      "modern": "Stenocereus aragonii (F.A.C.Weber) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus aragonii (F.A.C.Weber) Buxb."
+      ]
+    },
+    "stenocereus-chrysocarpus-sánchez-mej": {
+      "backeberg": "Stenocereus chrysocarpus Sánchez-Mej.",
+      "modern": "Stenocereus chrysocarpus Sánchez-Mej.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus chrysocarpus Sánchez-Mej."
+      ]
+    },
+    "stenocereus-fricii-sánchez-mej": {
+      "backeberg": "Stenocereus fricii Sánchez-Mej.",
+      "modern": "Stenocereus fricii Sánchez-Mej.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus fricii Sánchez-Mej."
+      ]
+    },
+    "stenocereus-martinezii-jgortega-buxb": {
+      "backeberg": "Stenocereus martinezii (J.G.Ortega) Buxb.",
+      "modern": "Stenocereus martinezii (J.G.Ortega) Buxb.",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Stenocereus martinezii (J.G.Ortega) Buxb."
+      ]
+    },
+    "thelocactus-heterochromus-facweber-oosten": {
+      "backeberg": "Thelocactus heterochromus (F.A.C.Weber) Oosten",
+      "modern": "Thelocactus heterochromus (F.A.C.Weber) Oosten",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus heterochromus (F.A.C.Weber) Oosten"
+      ]
+    },
+    "thelocactus-hastifer-werderm-boed-fmknuth": {
+      "backeberg": "Thelocactus hastifer (Werderm. & Boed.) F.M.Knuth",
+      "modern": "Thelocactus hastifer (Werderm. & Boed.) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus hastifer (Werderm. & Boed.) F.M.Knuth"
+      ]
+    },
+    "thelocactus-tulensis-poselg-britton-rose": {
+      "backeberg": "Thelocactus tulensis (Poselg.) Britton & Rose",
+      "modern": "Thelocactus tulensis (Poselg.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus tulensis (Poselg.) Britton & Rose"
+      ]
+    },
+    "thelocactus-hexaedrophorus-lem-britton-rose": {
+      "backeberg": "Thelocactus hexaedrophorus (Lem.) Britton & Rose",
+      "modern": "Thelocactus hexaedrophorus (Lem.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus hexaedrophorus (Lem.) Britton & Rose"
+      ]
+    },
+    "thelocactus-leucacanthus-zucc-ex-pfeiff-britton-rose": {
+      "backeberg": "Thelocactus leucacanthus (Zucc. ex Pfeiff.) Britton & Rose",
+      "modern": "Thelocactus leucacanthus (Zucc. ex Pfeiff.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus leucacanthus (Zucc. ex Pfeiff.) Britton & Rose"
+      ]
+    },
+    "thelocactus-setispinus-engelm-efanderson": {
+      "backeberg": "Thelocactus setispinus (Engelm.) E.F.Anderson",
+      "modern": "Thelocactus setispinus (Engelm.) E.F.Anderson",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus setispinus (Engelm.) E.F.Anderson"
+      ]
+    },
+    "thelocactus-conothelos-regel-eklein-bis-fmknuth": {
+      "backeberg": "Thelocactus conothelos (Regel & E.Klein bis) F.M.Knuth",
+      "modern": "Thelocactus conothelos (Regel & E.Klein bis) F.M.Knuth",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus conothelos (Regel & E.Klein bis) F.M.Knuth"
+      ]
+    },
+    "thelocactus-rinconensis-poselg-britton-rose": {
+      "backeberg": "Thelocactus rinconensis (Poselg.) Britton & Rose",
+      "modern": "Thelocactus rinconensis (Poselg.) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus rinconensis (Poselg.) Britton & Rose"
+      ]
+    },
+    "thelocactus-macdowellii-rebut-ex-quehl-wtmarshall": {
+      "backeberg": "Thelocactus macdowellii (Rebut ex Quehl) W.T.Marshall",
+      "modern": "Thelocactus macdowellii (Rebut ex Quehl) W.T.Marshall",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus macdowellii (Rebut ex Quehl) W.T.Marshall"
+      ]
+    },
+    "thelocactus-buekii-eklein-bis-britton-rose": {
+      "backeberg": "Thelocactus buekii (E.Klein bis) Britton & Rose",
+      "modern": "Thelocactus buekii (E.Klein bis) Britton & Rose",
+      "synonyms": [],
+      "previouslyCalled": null,
+      "nameHistory": [
+        "Thelocactus buekii (E.Klein bis) Britton & Rose"
       ]
     }
   }

@@ -1,7 +1,783 @@
 [
-  { "id": "mammillaria-hahniana", "name": "Mammillaria hahniana", "description": "Шаровидный кактус с густым белым опушением. Цветки мелкие, розовые или красные, венчиком вокруг макушки. Родина — Мексика." },
-  { "id": "mammillaria-elongata", "name": "Mammillaria elongata", "description": "«Пальчики леди» — удлинённые побеги с золотистыми колючками. Легко кустится. Мексика." },
-  { "id": "mammillaria-bocasana", "name": "Mammillaria bocasana", "description": "Мягкие волосовидные колючки и крючковидные центральные. Цветки кремовые. Популярен в коллекциях." },
-  { "id": "mammillaria-zeilmanniana", "name": "Mammillaria zeilmanniana", "description": "Компактный вид с розовыми или фиолетовыми цветками, цветёт рано и обильно. Мексика." },
-  { "id": "mammillaria-geminispina", "name": "Mammillaria geminispina", "description": "Белые опушённые ареолы, красные цветки. Образует крупные куртины." }
+  {
+    "id": "mammillaria-hahniana",
+    "name": "Mammillaria hahniana",
+    "description": "Шаровидный кактус с густым белым опушением. Цветки мелкие, розовые или красные, венчиком вокруг макушки. Родина — Мексика."
+  },
+  {
+    "id": "mammillaria-elongata",
+    "name": "Mammillaria elongata",
+    "description": "«Пальчики леди» — удлинённые побеги с золотистыми колючками. Легко кустится. Мексика."
+  },
+  {
+    "id": "mammillaria-bocasana",
+    "name": "Mammillaria bocasana",
+    "description": "Мягкие волосовидные колючки и крючковидные центральные. Цветки кремовые. Популярен в коллекциях."
+  },
+  {
+    "id": "mammillaria-zeilmanniana",
+    "name": "Mammillaria zeilmanniana",
+    "description": "Компактный вид с розовыми или фиолетовыми цветками, цветёт рано и обильно. Мексика."
+  },
+  {
+    "id": "mammillaria-geminispina",
+    "name": "Mammillaria geminispina",
+    "description": "Белые опушённые ареолы, красные цветки. Образует крупные куртины."
+  },
+  {
+    "id": "mammillaria-discolor-haw",
+    "name": "Mammillaria discolor Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-bombycina-quehl",
+    "name": "Mammillaria bombycina Quehl",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-chionocephala-japurpus",
+    "name": "Mammillaria chionocephala J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-beneckei-cehrenb",
+    "name": "Mammillaria beneckei C.Ehrenb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-grusonii-ruenge",
+    "name": "Mammillaria grusonii Ruenge",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-decipiens-scheidw",
+    "name": "Mammillaria decipiens Scheidw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-karwinskiana-mart",
+    "name": "Mammillaria karwinskiana Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-zephyranthoides-scheidw",
+    "name": "Mammillaria zephyranthoides Scheidw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-albilanata-backeb",
+    "name": "Mammillaria albilanata Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-mystax-mart",
+    "name": "Mammillaria mystax Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sartorii-japurpus",
+    "name": "Mammillaria sartorii J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-haageana-pfeiff",
+    "name": "Mammillaria haageana Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-voburnensis-scheer",
+    "name": "Mammillaria voburnensis Scheer",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-lasiacantha-engelm",
+    "name": "Mammillaria lasiacantha Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-hahniana-werderm",
+    "name": "Mammillaria hahniana Werderm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-senilis-lodd-ex-salm-dyck",
+    "name": "Mammillaria senilis Lodd. ex Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-compressa-dc",
+    "name": "Mammillaria compressa DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-schiedeana-cehrenb",
+    "name": "Mammillaria schiedeana C.Ehrenb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-rekoi-britton-rose-vaupel",
+    "name": "Mammillaria rekoi (Britton & Rose) Vaupel",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pottsii-scheer-ex-salm-dyck",
+    "name": "Mammillaria pottsii Scheer ex Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-albicoma-boed",
+    "name": "Mammillaria albicoma Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-candida-scheidw",
+    "name": "Mammillaria candida Scheidw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-huitzilopochtli-drhunt",
+    "name": "Mammillaria huitzilopochtli D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sanchez-mejoradae-rodrgonzález",
+    "name": "Mammillaria sanchez-mejoradae Rodr.González",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-magnimamma-haw",
+    "name": "Mammillaria magnimamma Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-flavicentra-backeb",
+    "name": "Mammillaria flavicentra Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-heyderi-muehlenpf",
+    "name": "Mammillaria heyderi Muehlenpf.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-eriacantha-hortberol-ex-pfeiff",
+    "name": "Mammillaria eriacantha Hort.Berol. ex Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-longimamma-dc",
+    "name": "Mammillaria longimamma DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-supertexta-mart",
+    "name": "Mammillaria supertexta Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-dixanthocentron-backeb",
+    "name": "Mammillaria dixanthocentron Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-surculosa-boed",
+    "name": "Mammillaria surculosa Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-kraehenbuehlii-krainz-krainz",
+    "name": "Mammillaria kraehenbuehlii (Krainz) Krainz",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-polyedra-mart",
+    "name": "Mammillaria polyedra Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-melanocentra-poselg",
+    "name": "Mammillaria melanocentra Poselg.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-elongata-dc",
+    "name": "Mammillaria elongata DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-crinita-dc",
+    "name": "Mammillaria crinita DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-carnea-zucc-ex-pfeiff",
+    "name": "Mammillaria carnea Zucc. ex Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-oteroi-glass-rafoster",
+    "name": "Mammillaria oteroi Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-gracilis-pfeiff",
+    "name": "Mammillaria gracilis Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-orcuttii-boed",
+    "name": "Mammillaria orcuttii Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-mieheana-tiegel",
+    "name": "Mammillaria mieheana Tiegel",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-bocensis-rtcraig",
+    "name": "Mammillaria bocensis R.T.Craig",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-perbella-hildm-ex-kschum",
+    "name": "Mammillaria perbella Hildm. ex K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-prolifera-mill-haw",
+    "name": "Mammillaria prolifera (Mill.) Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-microhelia-werderm",
+    "name": "Mammillaria microhelia Werderm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-baumii-boed",
+    "name": "Mammillaria baumii Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-winterae-boed",
+    "name": "Mammillaria winterae Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-hertrichiana-rtcraig",
+    "name": "Mammillaria hertrichiana R.T.Craig",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-scrippsiana-britton-rose-orcutt",
+    "name": "Mammillaria scrippsiana (Britton & Rose) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-jaliscana-britton-rose-boed",
+    "name": "Mammillaria jaliscana (Britton & Rose) Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-uncinata-zucc-ex-pfeiff",
+    "name": "Mammillaria uncinata Zucc. ex Pfeiff.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-polythele-mart",
+    "name": "Mammillaria polythele Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-roseoalba-boed",
+    "name": "Mammillaria roseoalba Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-plumosa-facweber",
+    "name": "Mammillaria plumosa F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-glassii-rafoster",
+    "name": "Mammillaria glassii R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-napina-japurpus",
+    "name": "Mammillaria napina J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-gasseriana-boed",
+    "name": "Mammillaria gasseriana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-erythrosperma-boed",
+    "name": "Mammillaria erythrosperma Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-mercadensis-patoni",
+    "name": "Mammillaria mercadensis Patoni",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-geminispina-haw",
+    "name": "Mammillaria geminispina Haw.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-weingartiana-boed",
+    "name": "Mammillaria weingartiana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-parkinsonii-cehrenb",
+    "name": "Mammillaria parkinsonii C.Ehrenb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sempervivi-dc",
+    "name": "Mammillaria sempervivi DC.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-nunezii-britton-rose-orcutt",
+    "name": "Mammillaria nunezii (Britton & Rose) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-rhodantha-link-otto",
+    "name": "Mammillaria rhodantha Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sphacelata-mart",
+    "name": "Mammillaria sphacelata Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-columbiana-salm-dyck",
+    "name": "Mammillaria columbiana Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-muehlenpfordtii-cfförst",
+    "name": "Mammillaria muehlenpfordtii C.F.Först.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pennispinosa-krainz-ex-shurly",
+    "name": "Mammillaria pennispinosa Krainz ex Shurly",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-bocasana-poselg",
+    "name": "Mammillaria bocasana Poselg.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-picta-meinsh",
+    "name": "Mammillaria picta Meinsh.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-klissingiana-boed",
+    "name": "Mammillaria klissingiana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-gigantea-hildm-ex-kschum",
+    "name": "Mammillaria gigantea Hildm. ex K.Schum.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-solisioides-backeb",
+    "name": "Mammillaria solisioides Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-coahuilensis-boed-moran",
+    "name": "Mammillaria coahuilensis (Boed.) Moran",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-limonensis-repp",
+    "name": "Mammillaria limonensis Repp.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-glochidiata-mart",
+    "name": "Mammillaria glochidiata Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-anniana-glass-rafoster",
+    "name": "Mammillaria anniana Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-mathildae-kraehenb-krainz",
+    "name": "Mammillaria mathildae Kraehenb. & Krainz",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-melaleuca-karw-ex-salm-dyck",
+    "name": "Mammillaria melaleuca Karw. ex Salm-Dyck",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-zublerae-repp",
+    "name": "Mammillaria zublerae Repp.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-nana-backeb",
+    "name": "Mammillaria nana Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-petterssonii-hildm",
+    "name": "Mammillaria petterssonii Hildm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-lenta-kbrandegee",
+    "name": "Mammillaria lenta K.Brandegee",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pilispina-japurpus",
+    "name": "Mammillaria pilispina J.A.Purpus",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pectinifera-stein-facweber",
+    "name": "Mammillaria pectinifera (Stein) F.A.C.Weber",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sphaerica-adietr-ex-engelm",
+    "name": "Mammillaria sphaerica A.Dietr. ex Engelm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-moelleriana-boed",
+    "name": "Mammillaria moelleriana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-johnstonii-britton-rose-orcutt",
+    "name": "Mammillaria johnstonii (Britton & Rose) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-painteri-rose-ex-quehl",
+    "name": "Mammillaria painteri Rose ex Quehl",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-backebergiana-fgbuchenau",
+    "name": "Mammillaria backebergiana F.G.Buchenau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-zeilmanniana-boed",
+    "name": "Mammillaria zeilmanniana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-insularis-hegates-ex-shurly-1938",
+    "name": "Mammillaria insularis H.E.Gates ex Shurly, 1938",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-longiflora-britton-rose-aberger",
+    "name": "Mammillaria longiflora (Britton & Rose) A.Berger",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-magnifica-fgbuchenau",
+    "name": "Mammillaria magnifica F.G.Buchenau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-tepexicensis-jmeyrán",
+    "name": "Mammillaria tepexicensis J.Meyrán",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-duoformis-rtcraig-eydawson",
+    "name": "Mammillaria duoformis R.T.Craig & E.Y.Dawson",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-duwei-rogoz-pjbraun",
+    "name": "Mammillaria duwei Rogoz. & P.J.Braun",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-meyranii-bravo",
+    "name": "Mammillaria meyranii Bravo",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-deherdtiana-farwig",
+    "name": "Mammillaria deherdtiana Farwig",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-purpurea-cehrenb",
+    "name": "Mammillaria purpurea C.Ehrenb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-carmenae-castañeda-núñez",
+    "name": "Mammillaria carmenae Castañeda & Núñez",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-brandegeei-jmcoult-engelm-ex-kbrandegee",
+    "name": "Mammillaria brandegeei (J.M.Coult.) Engelm. ex K.Brandegee",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-petrophila-kbrandegee",
+    "name": "Mammillaria petrophila K.Brandegee",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-xaltianguensis-sánchez-mej",
+    "name": "Mammillaria xaltianguensis Sánchez-Mej.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-wiesingeri-boed",
+    "name": "Mammillaria wiesingeri Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-spinosissima-lem",
+    "name": "Mammillaria spinosissima Lem.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-herrerae-werderm",
+    "name": "Mammillaria herrerae Werderm.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-knippeliana-quehl",
+    "name": "Mammillaria knippeliana Quehl",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-evermanniana-britton-rose-orcutt",
+    "name": "Mammillaria evermanniana (Britton & Rose) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-sonorensis-rtcraig",
+    "name": "Mammillaria sonorensis R.T.Craig",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-pringlei-jmcoult-kbrandegee",
+    "name": "Mammillaria pringlei (J.M.Coult.) K.Brandegee",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-peninsularis-britton-rose-orcutt",
+    "name": "Mammillaria peninsularis (Britton & Rose) Orcutt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-aureilanata-backeb",
+    "name": "Mammillaria aureilanata Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-hutchisoniana-hegates-backeb-knuth",
+    "name": "Mammillaria hutchisoniana (H.E.Gates) Backeb. & Knuth",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-wagneriana-boed",
+    "name": "Mammillaria wagneriana Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-guerreronis-bravo-boed",
+    "name": "Mammillaria guerreronis (Bravo) Boed.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-schwarzii-shurly",
+    "name": "Mammillaria schwarzii Shurly",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-varieaculeata-francgbuchenau",
+    "name": "Mammillaria varieaculeata Franc.G.Buchenau",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-hernandezii-glass-rafoster",
+    "name": "Mammillaria hernandezii Glass & R.A.Foster",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-laui-drhunt",
+    "name": "Mammillaria laui D.R.Hunt",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-crucigera-mart",
+    "name": "Mammillaria crucigera Mart.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-albiflora-werderm-backeb",
+    "name": "Mammillaria albiflora (Werderm.) Backeb.",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-fuscata-link-otto",
+    "name": "Mammillaria fuscata Link & Otto",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  },
+  {
+    "id": "mammillaria-marksiana-krainz",
+    "name": "Mammillaria marksiana Krainz",
+    "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
+    "source": "gbif"
+  }
 ]
