@@ -15,6 +15,19 @@
 .classification-header {
   flex-shrink: 0;
   padding: 1rem max(1.25rem, env(safe-area-inset-left)) 0.75rem;
+  position: relative;
+}
+
+.classification-corner {
+  position: absolute;
+  top: 0.5rem;
+  right: max(1.25rem, env(safe-area-inset-right));
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cactus-muted-on-dark);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .classification-header h1 {
@@ -31,36 +44,31 @@
   line-height: 1.5;
 }
 
-.classification-gbif-credit {
+/* Благодарности — только в подвале */
+.classification-credit--footer {
   margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 8px;
-  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.88rem;
   line-height: 1.5;
   color: var(--cactus-muted-on-dark);
 }
 
-.classification-gbif-credit p {
+.classification-credit--footer p {
   margin: 0 0 0.5rem;
 }
 
-.classification-gbif-credit p:last-child {
+.classification-credit--footer p:last-child {
   margin-bottom: 0;
 }
 
-.classification-gbif-credit a {
+.classification-credit--footer a {
   color: var(--cactus-accent, #7cb342);
   text-decoration: underline;
 }
 
-.classification-gbif-credit a:hover {
+.classification-credit--footer a:hover {
   text-decoration: none;
-}
-
-.classification-gbif-citation {
-  font-size: 0.85rem;
-  word-break: break-all;
 }
 
 .classification-body {
@@ -100,6 +108,26 @@
 .tree-node {
   margin: 0;
   padding: 0;
+}
+
+/* Плитка семейства — крупная, заметная */
+.tree-node--root .tree-node__row {
+  min-height: 56px;
+  padding: 0.75rem 1rem;
+  font-size: 1.15rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tree-node--root .tree-node__label {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.tree-node--root .tree-node__level {
+  font-size: 0.8rem;
 }
 
 .tree-node__row {

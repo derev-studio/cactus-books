@@ -61,6 +61,7 @@
 
     var li = document.createElement('div');
     li.className = 'tree-node';
+    if (node.type === 'family') li.classList.add('tree-node--root');
     li.dataset.id = node.id || '';
 
     var row = document.createElement('div');
