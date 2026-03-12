@@ -28,6 +28,13 @@
               "type": "genus",
               "info": "Небольшой род низкорослых кактусов с мелкими листьями.",
               "speciesFile": "maihuenia.json"
+            },
+            {
+              "id": "leuenbergeria",
+              "name": "Leuenbergeria",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "leuenbergeria.json"
             }
           ]
         }
@@ -57,6 +64,34 @@
               "type": "genus",
               "info": "Близки к опунциям, характерны для Центральной Америки.",
               "speciesFile": "nopalea.json"
+            },
+            {
+              "id": "brasiliopuntia",
+              "name": "Brasiliopuntia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "brasiliopuntia.json"
+            },
+            {
+              "id": "consolea",
+              "name": "Consolea",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "consolea.json"
+            },
+            {
+              "id": "miqueliopuntia",
+              "name": "Miqueliopuntia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "miqueliopuntia.json"
+            },
+            {
+              "id": "pereskiopsis",
+              "name": "Pereskiopsis",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "pereskiopsis.json"
             }
           ]
         },
@@ -78,6 +113,13 @@
               "type": "genus",
               "info": "Низкорослые кустящиеся опунциевые.",
               "speciesFile": "grusonia.json"
+            },
+            {
+              "id": "austrocylindropuntia",
+              "name": "Austrocylindropuntia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "austrocylindropuntia.json"
             }
           ]
         },
@@ -177,6 +219,189 @@
               "type": "genus",
               "info": "Близки к ребуциям, компактные, горные.",
               "speciesFile": "sulcorebutia.json"
+            },
+            {
+              "id": "ariocarpus",
+              "name": "Ariocarpus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "ariocarpus.json"
+            },
+            {
+              "id": "astrophytum",
+              "name": "Astrophytum",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "astrophytum.json"
+            },
+            {
+              "id": "aztekium",
+              "name": "Aztekium",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "aztekium.json"
+            },
+            {
+              "id": "aztekonia",
+              "name": "Aztekonia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "aztekonia.json"
+            },
+            {
+              "id": "bisnaga",
+              "name": "Bisnaga",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "bisnaga.json"
+            },
+            {
+              "id": "cochemiea",
+              "name": "Cochemiea",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "cochemiea.json"
+            },
+            {
+              "id": "cumarinia",
+              "name": "Cumarinia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "cumarinia.json"
+            },
+            {
+              "id": "epithelantha",
+              "name": "Epithelantha",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "epithelantha.json"
+            },
+            {
+              "id": "geohintonia",
+              "name": "Geohintonia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "geohintonia.json"
+            },
+            {
+              "id": "kadenicarpus",
+              "name": "Kadenicarpus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "kadenicarpus.json"
+            },
+            {
+              "id": "kroenleinia",
+              "name": "Kroenleinia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "kroenleinia.json"
+            },
+            {
+              "id": "leuchtenbergia",
+              "name": "Leuchtenbergia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "leuchtenbergia.json"
+            },
+            {
+              "id": "lophophora",
+              "name": "Lophophora",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "lophophora.json"
+            },
+            {
+              "id": "melocactus",
+              "name": "Melocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "melocactus.json"
+            },
+            {
+              "id": "obregonia",
+              "name": "Obregonia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "obregonia.json"
+            },
+            {
+              "id": "parrycactus",
+              "name": "Parrycactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "parrycactus.json"
+            },
+            {
+              "id": "pediocactus",
+              "name": "Pediocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "pediocactus.json"
+            },
+            {
+              "id": "pelecyphora",
+              "name": "Pelecyphora",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "pelecyphora.json"
+            },
+            {
+              "id": "rapicactus",
+              "name": "Rapicactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "rapicactus.json"
+            },
+            {
+              "id": "sclerocactus",
+              "name": "Sclerocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "sclerocactus.json"
+            },
+            {
+              "id": "stenocactus",
+              "name": "Stenocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "stenocactus.json"
+            },
+            {
+              "id": "strombocactus",
+              "name": "Strombocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "strombocactus.json"
+            },
+            {
+              "id": "turbinicarpus",
+              "name": "Turbinicarpus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "turbinicarpus.json"
+            }
+          ]
+        },
+        {
+          "id": "echinocereeae",
+          "name": "Echinocereeae",
+          "type": "tribe",
+          "info": "Эхиноцереусовые — Echinocereus, Bergerocactus и близкие.",
+          "children": [
+            {
+              "id": "bergerocactus",
+              "name": "Bergerocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "bergerocactus.json"
+            },
+            {
+              "id": "echinocereus",
+              "name": "Echinocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "echinocereus.json"
             }
           ]
         },
@@ -226,6 +451,48 @@
               "type": "genus",
               "info": "Колонны с белым волосистым покровом.",
               "speciesFile": "espostoa.json"
+            },
+            {
+              "id": "acanthocereus",
+              "name": "Acanthocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "acanthocereus.json"
+            },
+            {
+              "id": "cephalocereus",
+              "name": "Cephalocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "cephalocereus.json"
+            },
+            {
+              "id": "cereus",
+              "name": "Cereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "cereus.json"
+            },
+            {
+              "id": "peniocereus",
+              "name": "Peniocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "peniocereus.json"
+            },
+            {
+              "id": "pilosocereus",
+              "name": "Pilosocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "pilosocereus.json"
+            },
+            {
+              "id": "soehrensia",
+              "name": "Soehrensia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "soehrensia.json"
             }
           ]
         },
@@ -254,6 +521,20 @@
               "type": "genus",
               "info": "Эпифиты с членистыми стеблями, близки к шлюмбергерам.",
               "speciesFile": "hatiora.json"
+            },
+            {
+              "id": "lepismium",
+              "name": "Lepismium",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "lepismium.json"
+            },
+            {
+              "id": "pseudorhipsalis",
+              "name": "Pseudorhipsalis",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "pseudorhipsalis.json"
             }
           ]
         },
@@ -282,6 +563,27 @@
               "type": "genus",
               "info": "Эпифиты с плоскими или трёхгранными стеблями.",
               "speciesFile": "disocactus.json"
+            },
+            {
+              "id": "aporocactus",
+              "name": "Aporocactus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "aporocactus.json"
+            },
+            {
+              "id": "deamia",
+              "name": "Deamia",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "deamia.json"
+            },
+            {
+              "id": "weberocereus",
+              "name": "Weberocereus",
+              "type": "genus",
+              "info": "По данным GBIF (коллекция UNAM).",
+              "speciesFile": "weberocereus.json"
             }
           ]
         },
@@ -338,189 +640,6 @@
               "type": "genus",
               "info": "Канделябровидные ветвящиеся кактусы.",
               "speciesFile": "myrtillocactus.json"
-            }
-          ]
-        },
-        {
-          "id": "genera_gbif",
-          "name": "Прочие роды (по GBIF)",
-          "type": "tribe",
-          "info": "Роды из выгрузки GBIF (коллекция UNAM), которых нет в классификации Бакеберга. Со временем можно перенести в соответствующие трибы.",
-          "children": [
-            {
-              "id": "acanthocereus",
-              "name": "Acanthocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "acanthocereus.json"
-            },
-            {
-              "id": "aporocactus",
-              "name": "Aporocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "aporocactus.json"
-            },
-            {
-              "id": "ariocarpus",
-              "name": "Ariocarpus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "ariocarpus.json"
-            },
-            {
-              "id": "astrophytum",
-              "name": "Astrophytum",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "astrophytum.json"
-            },
-            {
-              "id": "austrocylindropuntia",
-              "name": "Austrocylindropuntia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "austrocylindropuntia.json"
-            },
-            {
-              "id": "aztekium",
-              "name": "Aztekium",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "aztekium.json"
-            },
-            {
-              "id": "aztekonia",
-              "name": "Aztekonia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "aztekonia.json"
-            },
-            {
-              "id": "bergerocactus",
-              "name": "Bergerocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "bergerocactus.json"
-            },
-            {
-              "id": "bisnaga",
-              "name": "Bisnaga",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "bisnaga.json"
-            },
-            {
-              "id": "brasiliopuntia",
-              "name": "Brasiliopuntia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "brasiliopuntia.json"
-            },
-            {
-              "id": "cephalocereus",
-              "name": "Cephalocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "cephalocereus.json"
-            },
-            {
-              "id": "cereus",
-              "name": "Cereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "cereus.json"
-            },
-            {
-              "id": "cochemiea",
-              "name": "Cochemiea",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "cochemiea.json"
-            },
-            {
-              "id": "consolea",
-              "name": "Consolea",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "consolea.json"
-            },
-            {
-              "id": "cumarinia",
-              "name": "Cumarinia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "cumarinia.json"
-            },
-            {
-              "id": "deamia",
-              "name": "Deamia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "deamia.json"
-            },
-            {
-              "id": "echinocereus",
-              "name": "Echinocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "echinocereus.json"
-            },
-            {
-              "id": "epithelantha",
-              "name": "Epithelantha",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "epithelantha.json"
-            },
-            {
-              "id": "geohintonia",
-              "name": "Geohintonia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "geohintonia.json"
-            },
-            {
-              "id": "kadenicarpus",
-              "name": "Kadenicarpus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "kadenicarpus.json"
-            },
-            {
-              "id": "kroenleinia",
-              "name": "Kroenleinia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "kroenleinia.json"
-            },
-            {
-              "id": "lepismium",
-              "name": "Lepismium",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "lepismium.json"
-            },
-            {
-              "id": "leuchtenbergia",
-              "name": "Leuchtenbergia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "leuchtenbergia.json"
-            },
-            {
-              "id": "leuenbergeria",
-              "name": "Leuenbergeria",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "leuenbergeria.json"
-            },
-            {
-              "id": "lophophora",
-              "name": "Lophophora",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "lophophora.json"
             },
             {
               "id": "marginatocereus",
@@ -530,20 +649,6 @@
               "speciesFile": "marginatocereus.json"
             },
             {
-              "id": "melocactus",
-              "name": "Melocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "melocactus.json"
-            },
-            {
-              "id": "miqueliopuntia",
-              "name": "Miqueliopuntia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "miqueliopuntia.json"
-            },
-            {
               "id": "myrtgerocactus",
               "name": "Myrtgerocactus",
               "type": "genus",
@@ -551,116 +656,11 @@
               "speciesFile": "myrtgerocactus.json"
             },
             {
-              "id": "obregonia",
-              "name": "Obregonia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "obregonia.json"
-            },
-            {
               "id": "pacherocactus",
               "name": "Pacherocactus",
               "type": "genus",
               "info": "По данным GBIF (коллекция UNAM).",
               "speciesFile": "pacherocactus.json"
-            },
-            {
-              "id": "parrycactus",
-              "name": "Parrycactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "parrycactus.json"
-            },
-            {
-              "id": "pediocactus",
-              "name": "Pediocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "pediocactus.json"
-            },
-            {
-              "id": "pelecyphora",
-              "name": "Pelecyphora",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "pelecyphora.json"
-            },
-            {
-              "id": "peniocereus",
-              "name": "Peniocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "peniocereus.json"
-            },
-            {
-              "id": "pereskiopsis",
-              "name": "Pereskiopsis",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "pereskiopsis.json"
-            },
-            {
-              "id": "pilosocereus",
-              "name": "Pilosocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "pilosocereus.json"
-            },
-            {
-              "id": "pseudorhipsalis",
-              "name": "Pseudorhipsalis",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "pseudorhipsalis.json"
-            },
-            {
-              "id": "rapicactus",
-              "name": "Rapicactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "rapicactus.json"
-            },
-            {
-              "id": "sclerocactus",
-              "name": "Sclerocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "sclerocactus.json"
-            },
-            {
-              "id": "soehrensia",
-              "name": "Soehrensia",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "soehrensia.json"
-            },
-            {
-              "id": "stenocactus",
-              "name": "Stenocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "stenocactus.json"
-            },
-            {
-              "id": "strombocactus",
-              "name": "Strombocactus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "strombocactus.json"
-            },
-            {
-              "id": "turbinicarpus",
-              "name": "Turbinicarpus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "turbinicarpus.json"
-            },
-            {
-              "id": "weberocereus",
-              "name": "Weberocereus",
-              "type": "genus",
-              "info": "По данным GBIF (коллекция UNAM).",
-              "speciesFile": "weberocereus.json"
             }
           ]
         }
