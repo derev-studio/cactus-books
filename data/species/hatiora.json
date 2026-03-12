@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "hatiora-cylindrica",
+    "name": "Hatiora cylindrica",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "hatiora-herminiae",
+    "name": "Hatiora herminiae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "hatiora-salicornioides",
+    "name": "Hatiora salicornioides",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

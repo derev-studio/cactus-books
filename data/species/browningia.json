@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "browningia-altissima",
+    "name": "Browningia altissima",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "browningia-candelaris",
+    "name": "Browningia candelaris",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "browningia-microsperma",
+    "name": "Browningia microsperma",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "browningia-hertlingiana",
+    "name": "Browningia hertlingiana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "browningia-chlorocarpa",
+    "name": "Browningia chlorocarpa",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

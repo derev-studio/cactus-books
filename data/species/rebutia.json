@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "id": "rebutia-spinosissima",
+    "name": "Rebutia spinosissima",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-heliosa",
+    "name": "Rebutia heliosa",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-atrovirens",
+    "name": "Rebutia atrovirens",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-margarethae",
+    "name": "Rebutia margarethae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-mentosa",
+    "name": "Rebutia mentosa",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Rebutia mentosa subsp. purpurea",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "rebutia-christinae",
+    "name": "Rebutia christinae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-donaldiana",
+    "name": "Rebutia donaldiana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-fabrisii",
+    "name": "Rebutia fabrisii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-friedrichiana",
+    "name": "Rebutia friedrichiana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-muscula",
+    "name": "Rebutia muscula",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-arenacea",
+    "name": "Rebutia arenacea",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-wessneriana",
+    "name": "Rebutia wessneriana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-haagei",
+    "name": "Rebutia haagei",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-kariusiana",
+    "name": "Rebutia kariusiana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-fiebrigii",
+    "name": "Rebutia fiebrigii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-minuscula",
+    "name": "Rebutia minuscula",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-padcayensis",
+    "name": "Rebutia padcayensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-pseudodeminuta",
+    "name": "Rebutia pseudodeminuta",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-steinmannii",
+    "name": "Rebutia steinmannii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-canigueralii",
+    "name": "Rebutia canigueralii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-steinbachii",
+    "name": "Rebutia steinbachii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "rebutia-fidaiana",
+    "name": "Rebutia fidaiana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Rebutia fidaiana subsp. cintiensis",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "rebutia-neocumingii",
+    "name": "Rebutia neocumingii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Rebutia neocumingii subsp. neocumingii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Rebutia neocumingii subsp. pulquinensis",
+        "rank": "subspecies"
+      }
+    ]
+  }
+]

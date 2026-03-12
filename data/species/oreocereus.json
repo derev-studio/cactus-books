@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "oreocereus-ritteri",
+    "name": "Oreocereus ritteri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "oreocereus-trollii",
+    "name": "Oreocereus trollii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "oreocereus-celsianus",
+    "name": "Oreocereus celsianus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "oreocereus-pseudofossulatus",
+    "name": "Oreocereus pseudofossulatus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "oreocereus-tacnaensis",
+    "name": "Oreocereus tacnaensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

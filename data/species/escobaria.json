@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "escobaria-missouriensis",
+    "name": "Escobaria missouriensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Escobaria missouriensis subsp. asperispina",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "escobaria-cubensis",
+    "name": "Escobaria cubensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "escobaria-laredoi",
+    "name": "Escobaria laredoi",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "escobaria-sp-h2193",
+    "name": "Escobaria sp. H2193",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "escobaria-zilziana",
+    "name": "Escobaria zilziana",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "escobaria-chihuahuensis",
+    "name": "Escobaria chihuahuensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

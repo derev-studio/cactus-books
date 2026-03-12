@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "maihuenia-poeppigii",
+    "name": "Maihuenia poeppigii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihuenia-patagonica",
+    "name": "Maihuenia patagonica",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

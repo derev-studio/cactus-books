@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "id": "tephrocactus-alexanderi",
+    "name": "Tephrocactus alexanderi",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-molinensis",
+    "name": "Tephrocactus molinensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-geometricus",
+    "name": "Tephrocactus geometricus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-halophilus",
+    "name": "Tephrocactus halophilus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-paediophilus",
+    "name": "Tephrocactus paediophilus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-articulatus",
+    "name": "Tephrocactus articulatus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-turpinii",
+    "name": "Tephrocactus turpinii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-aoracanthus",
+    "name": "Tephrocactus aoracanthus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-recurvatus",
+    "name": "Tephrocactus recurvatus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-verschaffeltii",
+    "name": "Tephrocactus verschaffeltii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-weberi",
+    "name": "Tephrocactus weberi",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-bonnieae",
+    "name": "Tephrocactus bonnieae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "tephrocactus-nigrispinus",
+    "name": "Tephrocactus nigrispinus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

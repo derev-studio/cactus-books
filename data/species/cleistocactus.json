@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "id": "cleistocactus-winteri",
+    "name": "Cleistocactus winteri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Cleistocactus winteri subsp. colademononis",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "cleistocactus-parviflorus",
+    "name": "Cleistocactus parviflorus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-tupizensis",
+    "name": "Cleistocactus tupizensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-hyalacanthus",
+    "name": "Cleistocactus hyalacanthus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-ritteri",
+    "name": "Cleistocactus ritteri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-samaipatanus",
+    "name": "Cleistocactus samaipatanus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-brookeae",
+    "name": "Cleistocactus brookeae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-morawetzianus",
+    "name": "Cleistocactus morawetzianus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-baumannii",
+    "name": "Cleistocactus baumannii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-smaragdiflorus",
+    "name": "Cleistocactus smaragdiflorus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-chrysocephalus",
+    "name": "Cleistocactus chrysocephalus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-sp-pr-2017",
+    "name": "Cleistocactus sp. PR-2017",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-strausii",
+    "name": "Cleistocactus strausii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "cleistocactus-laniceps",
+    "name": "Cleistocactus laniceps",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

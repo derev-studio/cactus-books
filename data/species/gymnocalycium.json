@@ -1,1 +1,668 @@
-[]
+[
+  {
+    "id": "gymnocalycium-amerhauseri",
+    "name": "Gymnocalycium amerhauseri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-baldianum",
+    "name": "Gymnocalycium baldianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-bayrianum",
+    "name": "Gymnocalycium bayrianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-bodenbenderianum",
+    "name": "Gymnocalycium bodenbenderianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-capillense",
+    "name": "Gymnocalycium capillense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-mucidum",
+    "name": "Gymnocalycium mucidum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-castellanosii",
+    "name": "Gymnocalycium castellanosii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium castellanosii subsp. bozsingianum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium castellanosii subsp. castellanosii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium castellanosii subsp. ferocior",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-catamarcense",
+    "name": "Gymnocalycium catamarcense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium catamarcense subsp. acinacispinum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-chacoense",
+    "name": "Gymnocalycium chacoense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-chubutense",
+    "name": "Gymnocalycium chubutense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-erinaceum",
+    "name": "Gymnocalycium erinaceum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-eurypleurum",
+    "name": "Gymnocalycium eurypleurum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-ferrarii",
+    "name": "Gymnocalycium ferrarii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-fischeri",
+    "name": "Gymnocalycium fischeri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium fischeri subsp. suyuquense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-fleischerianum",
+    "name": "Gymnocalycium fleischerianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-eytianum",
+    "name": "Gymnocalycium eytianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-hamatum",
+    "name": "Gymnocalycium hamatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-horstii",
+    "name": "Gymnocalycium horstii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium horstii subsp. horstii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-hossei",
+    "name": "Gymnocalycium hossei",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-hyptiacanthum",
+    "name": "Gymnocalycium hyptiacanthum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium hyptiacanthum subsp. netrelianum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium hyptiacanthum subsp. uruguayense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-kieslingii",
+    "name": "Gymnocalycium kieslingii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-marsoneri",
+    "name": "Gymnocalycium marsoneri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium marsoneri subsp. marsoneri",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium marsoneri subsp. megatae",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-mazanense",
+    "name": "Gymnocalycium mazanense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-megalothelon",
+    "name": "Gymnocalycium megalothelon",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-mesopotamicum",
+    "name": "Gymnocalycium mesopotamicum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-monvillei",
+    "name": "Gymnocalycium monvillei",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium monvillei subsp. horridispinum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium monvillei subsp. achirasense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-mostii",
+    "name": "Gymnocalycium mostii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium mostii subsp. mostii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium mostii subsp. valnicekianum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-multiflorum",
+    "name": "Gymnocalycium multiflorum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-oenanthemum",
+    "name": "Gymnocalycium oenanthemum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-papschii",
+    "name": "Gymnocalycium papschii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-parvulum",
+    "name": "Gymnocalycium parvulum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium parvulum subsp. huettneri",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium parvulum subsp. parvulum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-prochazkianum",
+    "name": "Gymnocalycium prochazkianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-quehlianum",
+    "name": "Gymnocalycium quehlianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-raineri",
+    "name": "Gymnocalycium raineri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-reductum",
+    "name": "Gymnocalycium reductum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium reductum subsp. leeanum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium reductum subsp. reductum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-rhodantherum",
+    "name": "Gymnocalycium rhodantherum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-riojense",
+    "name": "Gymnocalycium riojense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium riojense subsp. kozelskyanum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium riojense subsp. paucispinum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium riojense subsp. riojense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-ritterianum",
+    "name": "Gymnocalycium ritterianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium ritterianum subsp. acentracanthum",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium ritterianum subsp. ritterianum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-saglionis",
+    "name": "Gymnocalycium saglionis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium saglionis subsp. tilcarense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-stellatum",
+    "name": "Gymnocalycium stellatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-striglianum",
+    "name": "Gymnocalycium striglianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-tillianum",
+    "name": "Gymnocalycium tillianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-uebelmannianum",
+    "name": "Gymnocalycium uebelmannianum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-robustum",
+    "name": "Gymnocalycium robustum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-glaucum",
+    "name": "Gymnocalycium glaucum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium glaucum subsp. glaucum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-mihanovichii",
+    "name": "Gymnocalycium mihanovichii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-calochlorum",
+    "name": "Gymnocalycium calochlorum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-pugionacanthum",
+    "name": "Gymnocalycium pugionacanthum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-stenopleurum",
+    "name": "Gymnocalycium stenopleurum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-acorrugatum",
+    "name": "Gymnocalycium acorrugatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-affine",
+    "name": "Gymnocalycium affine",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-berchtii",
+    "name": "Gymnocalycium berchtii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-esperanzae",
+    "name": "Gymnocalycium esperanzae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-lukasikii",
+    "name": "Gymnocalycium lukasikii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium lukasikii subsp. emilii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium lukasikii subsp. lukasikii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-morroense",
+    "name": "Gymnocalycium morroense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-nataliae",
+    "name": "Gymnocalycium nataliae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-nigriareolatum",
+    "name": "Gymnocalycium nigriareolatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-poeschlii",
+    "name": "Gymnocalycium poeschlii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-sp-sanluisense",
+    "name": "Gymnocalycium sp. 'sanluisense'",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-taningaense",
+    "name": "Gymnocalycium taningaense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium taningaense subsp. taningaense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-walteri",
+    "name": "Gymnocalycium walteri",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-alboareolatum",
+    "name": "Gymnocalycium alboareolatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-angelae",
+    "name": "Gymnocalycium angelae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-chiquitanum",
+    "name": "Gymnocalycium chiquitanum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-erolesii",
+    "name": "Gymnocalycium erolesii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-gibbosum",
+    "name": "Gymnocalycium gibbosum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium gibbosum subsp. gibbosum",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-intertextum",
+    "name": "Gymnocalycium intertextum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-ochoterenae",
+    "name": "Gymnocalycium ochoterenae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-spegazzinii",
+    "name": "Gymnocalycium spegazzinii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-x-applanatum",
+    "name": "Gymnocalycium x applanatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-denudatum",
+    "name": "Gymnocalycium denudatum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-andreae",
+    "name": "Gymnocalycium andreae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium andreae subsp. carolinense",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-anisitsii",
+    "name": "Gymnocalycium anisitsii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium anisitsii subsp. damsii",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium anisitsii subsp. anisitsii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-bruchii",
+    "name": "Gymnocalycium bruchii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-carminanthum",
+    "name": "Gymnocalycium carminanthum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-leptanthum",
+    "name": "Gymnocalycium leptanthum",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-paraguayense",
+    "name": "Gymnocalycium paraguayense",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-pflanzii",
+    "name": "Gymnocalycium pflanzii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium pflanzii subsp. zegarrae",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium pflanzii subsp. argentinense",
+        "rank": "subspecies"
+      },
+      {
+        "name": "Gymnocalycium pflanzii subsp. pflanzii",
+        "rank": "subspecies"
+      }
+    ]
+  },
+  {
+    "id": "gymnocalycium-rauschii",
+    "name": "Gymnocalycium rauschii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "gymnocalycium-schickendantzii",
+    "name": "Gymnocalycium schickendantzii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi",
+    "infraspecific": [
+      {
+        "name": "Gymnocalycium schickendantzii subsp. schickendantzii",
+        "rank": "subspecies"
+      }
+    ]
+  }
+]

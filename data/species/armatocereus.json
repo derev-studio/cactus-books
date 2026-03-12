@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "armatocereus-laetus",
+    "name": "Armatocereus laetus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "armatocereus-matucanensis",
+    "name": "Armatocereus matucanensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "armatocereus-procerus",
+    "name": "Armatocereus procerus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "armatocereus-godingianus",
+    "name": "Armatocereus godingianus",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "armatocereus-rauhii",
+    "name": "Armatocereus rauhii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]

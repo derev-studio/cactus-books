@@ -1,1 +1,128 @@
-[]
+[
+  {
+    "id": "maihueniopsis-ovata",
+    "name": "Maihueniopsis ovata",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-sp-3-amg-2014",
+    "name": "Maihueniopsis sp. 3 AMG-2014",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-atacamensis",
+    "name": "Maihueniopsis atacamensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-darwinii",
+    "name": "Maihueniopsis darwinii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-colorea",
+    "name": "Maihueniopsis colorea",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-sp-s-29sar-11502",
+    "name": "Maihueniopsis sp. S-29/SAR 115.02",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-sp-s-28sar-11702",
+    "name": "Maihueniopsis sp. S-28/SAR 117.02",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-bonnieae",
+    "name": "Maihueniopsis bonnieae",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-recurvata",
+    "name": "Maihueniopsis recurvata",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-camachoi",
+    "name": "Maihueniopsis camachoi",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-sp-conc184956",
+    "name": "Maihueniopsis sp. CONC:184956",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-archiconoidea",
+    "name": "Maihueniopsis archiconoidea",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-clavarioides",
+    "name": "Maihueniopsis clavarioides",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-domeykoensis",
+    "name": "Maihueniopsis domeykoensis",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-minuta",
+    "name": "Maihueniopsis minuta",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-molfinoi",
+    "name": "Maihueniopsis molfinoi",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-conoidea",
+    "name": "Maihueniopsis conoidea",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-glochidiata",
+    "name": "Maihueniopsis glochidiata",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-hickenii",
+    "name": "Maihueniopsis hickenii",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-platyacantha",
+    "name": "Maihueniopsis platyacantha",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  },
+  {
+    "id": "maihueniopsis-glomerata",
+    "name": "Maihueniopsis glomerata",
+    "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
+    "source": "ncbi"
+  }
+]
