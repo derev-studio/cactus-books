@@ -3,7 +3,15 @@
     "id": "turbinicarpus-knuthianus-boed-vjohn-ríha",
     "name": "Turbinicarpus knuthianus (Boed.) V.John & Ríha",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus knuthianus",
+      "Gymnocactus knuthianus",
+      "Neolloydia knuthiana",
+      "Pediocactus knuthianus",
+      "Thelocactus knuthianus",
+      "Turbinicarpus knuthianus"
+    ]
   },
   {
     "id": "turbinicarpus-hoferi-lüthy-ablau",
@@ -21,19 +29,48 @@
         "name": "Turbinicarpus viereckii subsp. major (Glass & R.A.Foster) Glass",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus viereckii",
+      "Gymnocactus viereckii",
+      "Neolloydia viereckii",
+      "Pediocactus viereckii",
+      "Thelocactus viereckii",
+      "Turbinicarpus viereckii"
     ]
   },
   {
     "id": "turbinicarpus-gielsdorfianus-werderm-john-ríha",
     "name": "Turbinicarpus gielsdorfianus (Werderm.) John & Ríha",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus gielsdorfianus",
+      "Gymnocactus gielsdorfianus",
+      "Neolloydia gielsdorfiana",
+      "Pediocactus gielsdorfianus",
+      "Thelocactus gielsdorfianus",
+      "Turbinicarpus gielsdorfianus"
+    ]
   },
   {
     "id": "turbinicarpus-valdezianus-hmoeller-glass-rafoster",
     "name": "Turbinicarpus valdezianus (H.Moeller) Glass & R.A.Foster",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus valdezianus",
+      "Gymnocactus valdezianus",
+      "Mammillaria valdeziana",
+      "Neolloydia valdeziana",
+      "Normanbokea valdeziana",
+      "Pediocactus valdezianus",
+      "Pelecyphora plumosa",
+      "Pelecyphora valdeziana",
+      "Pseudosolisia valdeziana",
+      "Thelocactus valdezianus",
+      "Turbinicarpus valdezianus"
+    ]
   },
   {
     "id": "turbinicarpus-laui-glass-rafoster",

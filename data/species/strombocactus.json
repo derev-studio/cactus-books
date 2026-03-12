@@ -3,7 +3,23 @@
     "id": "strombocactus-disciformis-dc-britton-rose",
     "name": "Strombocactus disciformis (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ariocarpus disciformis",
+      "Cactus disciformis",
+      "Cactus turbinatus",
+      "Echinocactus disciformis",
+      "Echinocactus helianthodiscus",
+      "Echinocactus turbiniformis",
+      "Echinofossulocactus turbiniformis",
+      "Mammillaria disciformis",
+      "Mammillaria turbinata",
+      "Pediocactus disciformis",
+      "Pediocactus jarmilae",
+      "Strombocactus disciformis",
+      "Strombocactus jarmilae",
+      "Strombocactus turbiniformis"
+    ]
   },
   {
     "id": "strombocactus-corregidorae-sarias-esánchez",

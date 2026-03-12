@@ -9,7 +9,18 @@
     "id": "pereskia-bleo-kunth-dc",
     "name": "Pereskia bleo (Kunth) DC.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus bleo",
+      "Leuenbergeria bleo",
+      "Peireskia cruenta",
+      "Pereskia bleo",
+      "Pereskia corrugata",
+      "Pereskia cruenta",
+      "Pereskia panamensis",
+      "Rhodocactus bleo",
+      "Rhodocactus corrugatus"
+    ]
   },
   {
     "id": "pereskia-zinniiflora-dc",

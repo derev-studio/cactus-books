@@ -3,13 +3,30 @@
     "id": "turbinicarpus-subterraneus-backeb-azimmerman",
     "name": "Turbinicarpus subterraneus (Backeb.) A.Zimmerman",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus subterraneus",
+      "Gymnocactus subterraneus",
+      "Neolloydia subterranea",
+      "Pediocactus subterraneus",
+      "Rapicactus subterraneus",
+      "Thelocactus subterraneus",
+      "Turbinicarpus subterraneus"
+    ]
   },
   {
     "id": "turbinicarpus-beguinii-nptaylor-mosco-zanov",
     "name": "Turbinicarpus beguinii (N.P.Taylor) Mosco & Zanov.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Neolloydia glassii",
+      "Rapicactus beguinii",
+      "Rapicactus canescens",
+      "Rapicactus donatii",
+      "Thelocactus beguinii",
+      "Turbinicarpus beguinii"
+    ]
   },
   {
     "id": "thelocactus-mandragora-aberger",
@@ -21,6 +38,12 @@
     "id": "turbinicarpus-zaragosae-glass-rafoster-ceglass-hofer",
     "name": "Turbinicarpus zaragosae (Glass & R.A.Foster) C.E.Glass & Hofer",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Neolloydia zaragosae",
+      "Rapicactus zaragosae",
+      "Turbinicarpus zaragosae",
+      "Turbinicarpus zaragozae"
+    ]
   }
 ]

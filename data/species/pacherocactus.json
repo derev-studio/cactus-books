@@ -3,6 +3,12 @@
     "id": "pacherocactus-orcuttii-brandegee-gdrowley",
     "name": "Pacherocactus orcuttii (Brandegee) G.D.Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus orcuttii",
+      "Pachgerocereus orcuttii",
+      "Pachycereus orcuttii",
+      "× Pacherocactus × orcuttii"
+    ]
   }
 ]

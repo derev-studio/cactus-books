@@ -3,7 +3,15 @@
     "id": "astrophytum-capricorne-adietr-britton-rose",
     "name": "Astrophytum capricorne (A.Dietr.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Astrophytum capricorne",
+      "Astrophytum crassispinum",
+      "Astrophytum niveum",
+      "Astrophytum senile",
+      "Echinocactus capricornis",
+      "Maierocactus capricornis"
+    ]
   },
   {
     "id": "astrophytum-myriostigma-lem",
@@ -15,12 +23,30 @@
     "id": "astrophytum-ornatum-dc-britton-rose",
     "name": "Astrophytum ornatum (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Astrophytum glabrescens",
+      "Astrophytum ornatum",
+      "Echinocactus ghiesbrechtii",
+      "Echinocactus haageanus",
+      "Echinocactus holopterus",
+      "Echinocactus mirbelii",
+      "Echinocactus ornatus",
+      "Echinocactus tortus",
+      "Echinofossulocactus holopterus",
+      "Echinofossulocactus mirbelii",
+      "Echinopsis haageana",
+      "Echinopsis haageanus"
+    ]
   },
   {
     "id": "astrophytum-asterias-zucc-lem",
     "name": "Astrophytum asterias (Zucc.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Astrophytum asterias",
+      "Echinocactus asterias"
+    ]
   }
 ]

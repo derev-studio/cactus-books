@@ -9,7 +9,12 @@
     "id": "thelocactus-hastifer-werderm-boed-fmknuth",
     "name": "Thelocactus hastifer (Werderm. & Boed.) F.M.Knuth",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus hastifer",
+      "Ferocactus hastifer",
+      "Thelocactus hastifer"
+    ]
   },
   {
     "id": "thelocactus-tulensis-poselg-britton-rose",
@@ -25,6 +30,13 @@
         "name": "Thelocactus tulensis subsp. buekii (E.Klein bis) N.P.Taylor",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus tulensis",
+      "Thelocactus krainzianus",
+      "Thelocactus santaclarensis",
+      "Thelocactus tulensis",
+      "Thelocactus vaskoanus"
     ]
   },
   {
@@ -37,6 +49,17 @@
         "name": "Thelocactus hexaedrophorus subsp. hexaedrophorus",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus drageanus",
+      "Echinocactus droegeanus",
+      "Echinocactus fossulatus",
+      "Echinocactus hexaedrophorus",
+      "Echinocactus insculptus",
+      "Echinofossulocactus hexaedrophorus",
+      "Thelocactus fossulatus",
+      "Thelocactus hexaedrophorus",
+      "Thelocactus lloydii"
     ]
   },
   {
@@ -49,13 +72,44 @@
         "name": "Thelocactus leucacanthus var. porrectus (Lem.) Backeb.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus maelenii",
+      "Cereus tuberosus",
+      "Echinocactus ehrenbergii",
+      "Echinocactus leucacanthus",
+      "Echinocactus maelenii",
+      "Echinocactus porrectus",
+      "Echinocactus subporrectus",
+      "Echinocactus theloideus",
+      "Echinocactus tuberosus",
+      "Ferocactus leucacanthus",
+      "Mammillaria maelenii",
+      "Thelocactus ehrenbergii",
+      "Thelocactus leucacanthus",
+      "Thelocactus porrectus",
+      "Thelocactus sanchezmejoradae"
     ]
   },
   {
     "id": "thelocactus-setispinus-engelm-efanderson",
     "name": "Thelocactus setispinus (Engelm.) E.F.Anderson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus bicolor",
+      "Echinocactus cachetianus",
+      "Echinocactus hamatus",
+      "Echinocactus hamulosus",
+      "Echinocactus muehlenpfordtii",
+      "Echinocactus nodosus",
+      "Echinocactus setispinus",
+      "Echinopsis nodosa",
+      "Ferocactus setispinus",
+      "Hamatocactus bicolor",
+      "Hamatocactus setispinus",
+      "Thelocactus setispinus"
+    ]
   },
   {
     "id": "thelocactus-conothelos-regel-eklein-bis-fmknuth",
@@ -75,6 +129,20 @@
         "name": "Thelocactus conothelos var. aurantiacus Glass & R.A.Foster",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus conothelos",
+      "Echinocactus saussieri",
+      "Echinocactus smithii",
+      "Gymnocactus conothelos",
+      "Gymnocactus saussieri",
+      "Neolloydia smithii",
+      "Pediocactus smithii",
+      "Thelocactus conothelos",
+      "Thelocactus saussieri",
+      "Thelocactus smithii",
+      "Torreycactus conothele",
+      "Torreycactus conothelos"
     ]
   },
   {
@@ -91,18 +159,37 @@
         "name": "Thelocactus rinconensis var. nidulans (Quehl) Glass & R.A.Foster",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus lophothele",
+      "Echinocactus nidulans",
+      "Echinocactus phymatothele",
+      "Echinocactus phymatothelos",
+      "Echinocactus rinconensis",
+      "Thelocactus lophothele",
+      "Thelocactus nidulans",
+      "Thelocactus phymatothele",
+      "Thelocactus rinconensis"
     ]
   },
   {
     "id": "thelocactus-macdowellii-rebut-ex-quehl-wtmarshall",
     "name": "Thelocactus macdowellii (Rebut ex Quehl) W.T.Marshall",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Thelocactus macdowellii"
+    ]
   },
   {
     "id": "thelocactus-buekii-eklein-bis-britton-rose",
     "name": "Thelocactus buekii (E.Klein bis) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus buekii",
+      "Thelocactus buekii",
+      "Thelocactus matudae"
+    ]
   }
 ]

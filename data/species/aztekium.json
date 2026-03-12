@@ -3,6 +3,10 @@
     "id": "aztekium-ritteri-boed-boed-ex-aberger",
     "name": "Aztekium ritteri (Boed.) Boed. ex A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Aztekium ritteri",
+      "Echinocactus ritteri"
+    ]
   }
 ]

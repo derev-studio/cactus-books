@@ -16,6 +16,15 @@
         "name": "Ferocactus wislizeni var. herrerae (J.G.Ortega) N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus arizonicus",
+      "Echinocactus falconeri",
+      "Echinocactus wislizeni",
+      "Ferocactus arizonicus",
+      "Ferocactus falconeri",
+      "Ferocactus phoeniceus",
+      "Ferocactus wislizeni"
     ]
   },
   {
@@ -31,6 +40,36 @@
         "name": "Ferocactus latispinus subsp. latispinus",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Bisnaga cornigera",
+      "Bisnaga latispina",
+      "Cactus cornigerus",
+      "Cactus latispinus",
+      "Cactus nobilis",
+      "Cactus recurvus",
+      "Cereus recurvus",
+      "Echinocactus corniger",
+      "Echinocactus cornigerus",
+      "Echinocactus curvicornis",
+      "Echinocactus latispinus",
+      "Echinocactus nobilis",
+      "Echinocactus recurvus",
+      "Echinocactus solenacanthus",
+      "Echinocactus stellaris",
+      "Echinocactus stellatus",
+      "Echinofossulocactus angustispinus",
+      "Echinofossulocactus corniger",
+      "Echinofossulocactus cornigerus",
+      "Echinofossulocactus elatior",
+      "Echinofossulocactus recurvus",
+      "Echinofossulocactus rubrospinus",
+      "Ferocactus latispinus",
+      "Ferocactus nobilis",
+      "Mammillaria latispina",
+      "Melocactus besleri-affinis",
+      "Melocactus latispinus",
+      "Melocactus recurvus"
     ]
   },
   {
@@ -51,13 +90,37 @@
         "name": "Ferocactus wislizeni var. herrerae (J.G.Ortega) N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus arizonicus",
+      "Echinocactus falconeri",
+      "Echinocactus wislizeni",
+      "Ferocactus arizonicus",
+      "Ferocactus falconeri",
+      "Ferocactus phoeniceus",
+      "Ferocactus wislizeni"
     ]
   },
   {
     "id": "sclerocactus-uncinatus-galeotti-nptaylor",
     "name": "Sclerocactus uncinatus (Galeotti) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ancistrocactus uncinatus",
+      "Echinocactus ancylacanthus",
+      "Echinocactus uncinatus",
+      "Echinocactus wrightii",
+      "Echinomastus uncinatus",
+      "Ferocactus uncinatus",
+      "Glandulicactus uncinatus",
+      "Glandulicactus wrightii",
+      "Hamatocactus uncinatus",
+      "Hamatocactus wrightii",
+      "Pediocactus uncinatus",
+      "Sclerocactus uncinatus",
+      "Thelocactus uncinatus"
+    ]
   },
   {
     "id": "ferocactus-gracilis-hegates",
@@ -85,6 +148,10 @@
         "name": "Ferocactus emoryi var. rectispinus (Engelm. ex J.M.Coult.) N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus emoryi",
+      "Ferocactus emoryi"
     ]
   },
   {
@@ -105,6 +172,15 @@
         "name": "Ferocactus macrodiscus subsp. septentrionalis (J.Meyrán) N.P.Taylor",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Bisnaga macrodisca",
+      "Coryphantha macromeris",
+      "Echinocactus campylacanthus",
+      "Echinocactus macrodiscus",
+      "Echinocactus macromeris",
+      "Echinofossulocactus campylacanthus",
+      "Ferocactus macrodiscus"
     ]
   },
   {
@@ -121,6 +197,11 @@
         "name": "Ferocactus peninsulae var. peninsulae",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus peninsulae",
+      "Ferocactus horridus",
+      "Ferocactus peninsulae"
     ]
   },
   {
@@ -143,13 +224,25 @@
         "name": "Ferocactus recurvus subsp. greenwoodiae (Glass) Pilbeam & Bowdery",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Ferocactus recurvus"
     ]
   },
   {
     "id": "ferocactus-robustus-karw-ex-pfeiff-britton-rose",
     "name": "Ferocactus robustus (Karw. ex Pfeiff.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus agglomeratus",
+      "Echinocactus robustus",
+      "Echinocactus subulifer",
+      "Echinocactus subuliferus",
+      "Echinofossulocactus robustus",
+      "Ferocactus robustus",
+      "Melocactus prolifer"
+    ]
   },
   {
     "id": "ferocactus-townsendianus-britton-rose",
@@ -161,7 +254,16 @@
     "id": "ferocactus-viridescens-torr-agray-britton-rose",
     "name": "Ferocactus viridescens (Torr. & A.Gray) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus cylindraceus",
+      "Echinocactus limitus",
+      "Echinocactus orcuttii",
+      "Echinocactus viridescens",
+      "Ferocactus orcuttii",
+      "Ferocactus viridescens",
+      "Melocactus viridescens"
+    ]
   },
   {
     "id": "hamatocactus-crassihamatus-facweber-buxb",
@@ -205,7 +307,12 @@
     "id": "ferocactus-pottsii-salm-dyck-backeb",
     "name": "Ferocactus pottsii (Salm-Dyck) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus pottsii",
+      "Ferocactus pottsii",
+      "Thelocactus pottsii"
+    ]
   },
   {
     "id": "ferocactus-fordii-orcutt-britton-rose",
@@ -221,6 +328,10 @@
         "name": "Ferocactus fordii var. grandiflorus G.E.Linds.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus fordii",
+      "Ferocactus fordii"
     ]
   }
 ]

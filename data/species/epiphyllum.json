@@ -25,13 +25,28 @@
         "name": "Epiphyllum phyllanthus var. columbiense (F.A.C.Weber) Backeb.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus phyllanthus",
+      "Cereus phyllanthus",
+      "Epiphyllum phyllanthus",
+      "Opuntia phyllanthus",
+      "Phyllocactus phyllanthus",
+      "Phyllocactus speciosus",
+      "Rhipsalis phyllanthus"
     ]
   },
   {
     "id": "epiphyllum-pumilum-vaupel-britton-rose",
     "name": "Epiphyllum pumilum (Vaupel) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Epiphyllum caudatum",
+      "Epiphyllum pumilum",
+      "Phyllocactus caudatus",
+      "Phyllocactus pumilus"
+    ]
   },
   {
     "id": "epiphyllum-hookeri-haw",
@@ -49,13 +64,33 @@
     "id": "epiphyllum-oxypetalum-dc-haw",
     "name": "Epiphyllum oxypetalum (DC.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus oxypetalus",
+      "Cereus latifrons",
+      "Cereus oxypetalus",
+      "Epiphyllum acuminatum",
+      "Epiphyllum grande",
+      "Epiphyllum latifrons",
+      "Epiphyllum oxypetalum",
+      "Epiphyllum purpusii",
+      "Phyllocactus acuminatus",
+      "Phyllocactus grandis",
+      "Phyllocactus guyanensis",
+      "Phyllocactus latifrons",
+      "Phyllocactus oxypetalus",
+      "Phyllocactus purpusii"
+    ]
   },
   {
     "id": "epiphyllum-cartagense-facweber-britton-rose",
     "name": "Epiphyllum cartagense (F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Epiphyllum cartagense",
+      "Phyllocactus cartagensis"
+    ]
   },
   {
     "id": "epiphyllum-thomasianum-kschum-britton-rose",
@@ -67,13 +102,22 @@
         "name": "Epiphyllum thomasianum var. thomasianum",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Epiphyllum thomasianum",
+      "Phyllocactus thomasianus"
     ]
   },
   {
     "id": "epiphyllum-grandilobum-facweber-britton-rose",
     "name": "Epiphyllum grandilobum (F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Epiphyllum gigas",
+      "Epiphyllum grandilobum",
+      "Phyllocactus grandilobus"
+    ]
   },
   {
     "id": "epiphyllum-laui-kimnach",

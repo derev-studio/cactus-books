@@ -2,12 +2,38 @@
   {
     "id": "schlumbergera-truncata",
     "name": "Schlumbergera truncata",
-    "description": "«Декабрист», «рождественский кактус». Сегментированные стебли, цветение осенью и зимой. Цветки розовые, красные или белые."
+    "description": "«Декабрист», «рождественский кактус». Сегментированные стебли, цветение осенью и зимой. Цветки розовые, красные или белые.",
+    "nameHistory": [
+      "Cactus truncatus",
+      "Cereus truncatus",
+      "Epiphyllum altensteinii",
+      "Epiphyllum bridgesii",
+      "Epiphyllum delicatum",
+      "Epiphyllum elegans",
+      "Epiphyllum guedneyrii",
+      "Epiphyllum purpurascens",
+      "Epiphyllum ruckeri",
+      "Epiphyllum ruckerianum",
+      "Epiphyllum salmoneum",
+      "Epiphyllum smithianum",
+      "Epiphyllum truncatum",
+      "Epiphyllum violaceum",
+      "Schlumbergera bridgesii",
+      "Schlumbergera truncata",
+      "Zygocactus altensteinii",
+      "Zygocactus bridgesii",
+      "Zygocactus delicatus",
+      "Zygocactus truncatus"
+    ]
   },
   {
     "id": "schlumbergera-buckleyi",
     "name": "Schlumbergera × buckleyi",
-    "description": "Гибридный «настоящий» декабрист с симметричными сегментами. Популярное комнатное растение."
+    "description": "Гибридный «настоящий» декабрист с симметричными сегментами. Популярное комнатное растение.",
+    "nameHistory": [
+      "Epiphyllum buckleyi",
+      "Schlumbergera × buckleyi"
+    ]
   },
   {
     "id": "zygocactus-truncatus-haw-kschum",

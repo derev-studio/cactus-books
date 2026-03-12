@@ -3,6 +3,17 @@
     "id": "austrocylindropuntia-subulata-muehlenpf-backeb",
     "name": "Austrocylindropuntia subulata (Muehlenpf.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Austrocylindropuntia subulata",
+      "Cylindropuntia subulata",
+      "Opuntia ellemeetiana",
+      "Opuntia ellemetiana",
+      "Opuntia segethii",
+      "Opuntia subulata",
+      "Pereskia affinis",
+      "Pereskia subulata",
+      "Pereskiopsis subulata"
+    ]
   }
 ]

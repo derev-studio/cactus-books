@@ -3,7 +3,20 @@
     "id": "myrtillocactus-geometrizans-mart-ex-pfeiff-console",
     "name": "Myrtillocactus geometrizans (Mart. ex Pfeiff.) Console",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus aquicaulensis",
+      "Cereus arrigens",
+      "Cereus garambello",
+      "Cereus geometrizans",
+      "Cereus gladiator",
+      "Cereus pugionifer",
+      "Myrtillocactus geometrizans",
+      "Myrtillocactus grandiareolatus",
+      "Myrtillocactus hertrichii",
+      "Myrtillocactus pugionifer",
+      "Myrtillocereus geometrizans"
+    ]
   },
   {
     "id": "escontria-chiotilla-facweber-ex-kschum-rose",
@@ -15,7 +28,11 @@
     "id": "myrtillocactus-schenckii-japurpus-britton-rose",
     "name": "Myrtillocactus schenckii (J.A.Purpus) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus schenckii",
+      "Myrtillocactus schenckii"
+    ]
   },
   {
     "id": "polaskia-chende-rol-goss-acgibson-kehorak",
@@ -39,6 +56,10 @@
     "id": "myrtillocactus-cochal-orcutt-britton-rose",
     "name": "Myrtillocactus cochal (Orcutt) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus cochal",
+      "Myrtillocactus cochal"
+    ]
   }
 ]

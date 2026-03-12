@@ -1,5 +1,61 @@
 [
-  { "id": "echinopsis-oxygona", "name": "Echinopsis oxygona", "description": "Шаровидный, с возрастом вытягивается. Крупные воронковидные цветки — белые или розовые, ночные." },
-  { "id": "echinopsis-subdenudata", "name": "Echinopsis subdenudata", "description": "«Кактус-пасхальная лилия». Почти без колючек, крупные белые ароматные цветки." },
-  { "id": "echinopsis-chamaecereus", "name": "Echinopsis chamaecereus", "description": "«Арахисовый кактус» — тонкие пальцевидные стебли, оранжевые цветки. Легко выращивать." }
+  {
+    "id": "echinopsis-oxygona",
+    "name": "Echinopsis oxygona",
+    "description": "Шаровидный, с возрастом вытягивается. Крупные воронковидные цветки — белые или розовые, ночные.",
+    "nameHistory": [
+      "Cereus decaisneanus",
+      "Cereus eyriesii",
+      "Cereus geminatus",
+      "Cereus jasmineus",
+      "Cereus multiplex",
+      "Cereus oxygonus",
+      "Cereus schelhasii",
+      "Cereus turbinatus",
+      "Echinocactus boutillieri",
+      "Echinocactus decaisneanus",
+      "Echinocactus decaisnei",
+      "Echinocactus eyriesii",
+      "Echinocactus gemmatus",
+      "Echinocactus multiplex",
+      "Echinocactus octogonus",
+      "Echinocactus oxygonus",
+      "Echinocactus sulcatus",
+      "Echinocactus turbinatus",
+      "Echinonyctanthus decaisneanus",
+      "Echinonyctanthus eyriesii",
+      "Echinonyctanthus multiplex",
+      "Echinonyctanthus nigrispinus",
+      "Echinonyctanthus oxygonus",
+      "Echinonyctanthus turbinatus",
+      "Echinopsis adolfofriedrichii",
+      "Echinopsis brasiliensis",
+      "Echinopsis decaisniana",
+      "Echinopsis derenbergii",
+      "Echinopsis eyriesii",
+      "Echinopsis melanacantha",
+      "Echinopsis multiplex",
+      "Echinopsis nigrispina",
+      "Echinopsis oxygona",
+      "Echinopsis paraguayensis",
+      "Echinopsis pudantii",
+      "Echinopsis schelhasii",
+      "Echinopsis schwantesii",
+      "Echinopsis tettavii",
+      "Echinopsis turbinata",
+      "Echinopsis werdermannii",
+      "Echinopsis zuccarinii",
+      "Rebutia multiplex"
+    ]
+  },
+  {
+    "id": "echinopsis-subdenudata",
+    "name": "Echinopsis subdenudata",
+    "description": "«Кактус-пасхальная лилия». Почти без колючек, крупные белые ароматные цветки."
+  },
+  {
+    "id": "echinopsis-chamaecereus",
+    "name": "Echinopsis chamaecereus",
+    "description": "«Арахисовый кактус» — тонкие пальцевидные стебли, оранжевые цветки. Легко выращивать."
+  }
 ]

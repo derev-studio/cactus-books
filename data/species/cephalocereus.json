@@ -3,7 +3,14 @@
     "id": "neobuxbaumia-mezcalaensis-bravo-backeb",
     "name": "Neobuxbaumia mezcalaensis (Bravo) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Carnegiea mezcalaensis",
+      "Cephalocereus mezcalaensis",
+      "Neobuxbaumia mezcalaensis",
+      "Neodawsonia mezcalaensis",
+      "Pilocereus mezcalaensis"
+    ]
   },
   {
     "id": "neobuxbaumia-polylopha-dc-backeb",
@@ -27,13 +34,37 @@
     "id": "neobuxbaumia-euphorbioides-haw-buxb",
     "name": "Neobuxbaumia euphorbioides (Haw.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus euphorbioides",
+      "Carnegiea euphorbioides",
+      "Cephalocereus euphorbioides",
+      "Cereus conicus",
+      "Cereus euphorbioides",
+      "Cereus olfersii",
+      "Cereus oxygonus",
+      "Lemaireocereus euphorbioides",
+      "Neobuxbaumia euphorbioides",
+      "Neodawsonia euphorbioides",
+      "Pilocereus euphorbioides",
+      "Rooksbya euphorbioides"
+    ]
   },
   {
     "id": "pseudomitrocereus-fulviceps-facweber-ex-kschum-bravo-buxb",
     "name": "Pseudomitrocereus fulviceps (F.A.C.Weber ex K.Schum.) Bravo & Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Carnegiea fulviceps",
+      "Cephalocereus fulviceps",
+      "Cereus fulviceps",
+      "Mitrocereus fulviceps",
+      "Pachycereus chrysomallus",
+      "Pachycereus fulviceps",
+      "Pilocereus fulviceps",
+      "Pseudomitrocereus fulviceps"
+    ]
   },
   {
     "id": "neobuxbaumia-squamulosa-scheinvar-sánchez-mej",
@@ -51,13 +82,44 @@
     "id": "neobuxbaumia-tetetzo-facweber-ex-jmcoult-backeb",
     "name": "Neobuxbaumia tetetzo (F.A.C.Weber ex J.M.Coult.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Carnegiea tetetzo",
+      "Cephalocereus tetazo",
+      "Cephalocereus tetetzo",
+      "Cereus tetazo",
+      "Cereus tetetzo",
+      "Neobuxbaumia tetetzo",
+      "Pachycereus tetetzo",
+      "Pilocereus tetetzo"
+    ]
   },
   {
     "id": "cephalocereus-columna-trajani-karw-ex-pfeiff-kschum",
     "name": "Cephalocereus columna-trajani (Karw. ex Pfeiff.) K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus columna",
+      "Cephalocereus columna-trajani",
+      "Cephalocereus hoppenstedtii",
+      "Cephalophorus columna-trajani",
+      "Cereus columna",
+      "Cereus columna-trajani",
+      "Cereus hoogendorpii",
+      "Cereus hoppenstedtii",
+      "Cereus lateribarbatus",
+      "Haseltonia columna-trajani",
+      "Haseltonia hoppenstedtii",
+      "Mitrocereus columna-trajani",
+      "Pachycereus columna-trajani",
+      "Pilocereus columna",
+      "Pilocereus columna-trajani",
+      "Pilocereus hoogendorpii",
+      "Pilocereus hoppenstedtii",
+      "Pilocereus lateralis",
+      "Pilocereus lateribarbatus"
+    ]
   },
   {
     "id": "neobuxbaumia-laui-pvheath-drhunt",
@@ -69,6 +131,19 @@
     "id": "cephalocereus-senilis-haw-pfeiff",
     "name": "Cephalocereus senilis (Haw.) Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus bradypus",
+      "Cactus senilis",
+      "Cephalocereus senilis",
+      "Cephalophorus senilis",
+      "Cereus bradypus",
+      "Cereus senilis",
+      "Echinocactus senilis",
+      "Echinocactus staplesiae",
+      "Euporteria senilis",
+      "Melocactus bradypus",
+      "Pilocereus senilis"
+    ]
   }
 ]

@@ -3,13 +3,20 @@
     "id": "echinocereus-scheeri-salm-dyck-scheer",
     "name": "Echinocereus scheeri (Salm-Dyck) Scheer",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus scheeri",
+      "Echinocereus scheeri"
+    ]
   },
   {
     "id": "echinocereus-rigidissimus-engelm-haage",
     "name": "Echinocereus rigidissimus (Engelm.) Haage",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocereus rigidissimus"
+    ]
   },
   {
     "id": "echinocereus-enneacanthus-engelm",
@@ -41,13 +48,21 @@
         "name": "Echinocereus sciurus subsp. sciurus",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cereus sciurus",
+      "Echinocereus sciurus"
     ]
   },
   {
     "id": "echinocereus-acifer-otto-ex-salm-dyck-haage",
     "name": "Echinocereus acifer (Otto ex Salm-Dyck) Haage",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus acifer",
+      "Echinocereus acifer"
+    ]
   },
   {
     "id": "echinocereus-cinerascens-dc-lem",
@@ -79,6 +94,9 @@
         "name": "Echinocereus cinerascens var. septentrionalis N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocereus cinerascens"
     ]
   },
   {
@@ -103,6 +121,14 @@
         "name": "Echinocereus pentalophus subsp. procumbens (Engelm.) W.Blum & Mich.Lange",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cereus leptacanthus",
+      "Cereus pentalophus",
+      "Cereus propinquus",
+      "Echinocereus leptacanthus",
+      "Echinocereus pentalophus",
+      "Echinocereus runyonii"
     ]
   },
   {
@@ -125,13 +151,30 @@
         "name": "Echinocereus pectinatus var. pectinatus",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus pectinatus",
+      "Cereus pectiniferus",
+      "Echinocactus pectinatus",
+      "Echinocactus pectinifer",
+      "Echinocactus pectiniferus",
+      "Echinocereus pectinatus",
+      "Echinopsis pectinata"
     ]
   },
   {
     "id": "echinocereus-brandegeei-jmcoult-kschum",
     "name": "Echinocereus brandegeei (J.M.Coult.) K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus brandegeei",
+      "Cereus mamillatus",
+      "Cereus sanborgianus",
+      "Echinocereus brandegeei",
+      "Echinocereus mamillatus",
+      "Echinocereus sanborgianus"
+    ]
   },
   {
     "id": "echinocereus-fendleri-engelm-rümpler",
@@ -151,6 +194,9 @@
         "name": "Echinocereus fendleri var. albiflorus (Weing.) Backeb.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocereus fendleri"
     ]
   },
   {
@@ -205,6 +251,16 @@
         "name": "Echinocereus pulchellus subsp. acanthosetus (S.Arias & U.Guzmán) W.Blum",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cereus amoenus",
+      "Cereus pulchellus",
+      "Echinocactus pulchellus",
+      "Echinocereus amoenus",
+      "Echinocereus pulchellus",
+      "Echinonyctanthus pulchellus",
+      "Echinopsis amoena",
+      "Echinopsis pulchella"
     ]
   },
   {
@@ -235,6 +291,11 @@
         "name": "Echinocereus engelmannii var. acicularis L.D.Benson",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus engelmannii",
+      "Echinocereus engelmannii",
+      "Pilocereus engelmannii"
     ]
   },
   {
@@ -291,13 +352,22 @@
         "name": "Echinocereus coccineus var. paucispinus (Engelm.) D.J.Ferguson",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus aggregatus",
+      "Cereus hexaedrus",
+      "Echinocereus coccineus",
+      "Echinocereus conoideus"
     ]
   },
   {
     "id": "echinocereus-pseudopectinatus-nptaylor-nptaylor",
     "name": "Echinocereus pseudopectinatus (N.P.Taylor) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocereus pseudopectinatus"
+    ]
   },
   {
     "id": "echinocereus-rayonesensis-nptaylor",
@@ -309,7 +379,15 @@
     "id": "echinocereus-berlandieri-engelm-fhaage",
     "name": "Echinocereus berlandieri (Engelm.) F.Haage",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus berlandieri",
+      "Cereus blanckii",
+      "Cereus poselgerianus",
+      "Echinocereus berlandieri",
+      "Echinocereus blanckii",
+      "Echinocereus poselgerianus"
+    ]
   },
   {
     "id": "echinocereus-pensilis-kbrandegee-japurpus",
@@ -345,7 +423,16 @@
     "id": "echinocereus-maritimus-mejones-kschum",
     "name": "Echinocereus maritimus (M.E.Jones) K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus flaviflorus",
+      "Cereus glomeratus",
+      "Cereus maritimus",
+      "Echinocereus flaviflorus",
+      "Echinocereus hancockii",
+      "Echinocereus maritimus",
+      "Echinocereus orcuttii"
+    ]
   },
   {
     "id": "echinocereus-delaetii-gürke-gürke",
@@ -367,6 +454,20 @@
         "name": "Echinocereus reichenbachii var. armatus (Poselg.) N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus caespitosus",
+      "Cereus concolor",
+      "Cereus pectinifer",
+      "Cereus reichenbachianus",
+      "Echinocactus reichenbachii",
+      "Echinocereus caespitosus",
+      "Echinocereus castaneus",
+      "Echinocereus reichenbachii",
+      "Echinocereus rotatus",
+      "Echinocereus rungei",
+      "Echinocereus texensis",
+      "Echinopsis reichenbachiana"
     ]
   },
   {
@@ -471,7 +572,11 @@
     "id": "echinocereus-pacificus-engelm-fhaage",
     "name": "Echinocereus pacificus (Engelm.) F.Haage",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus pacificus",
+      "Echinocereus pacificus"
+    ]
   },
   {
     "id": "echinocereus-arizonicus-rose-ex-orcutt",
@@ -493,13 +598,22 @@
     "id": "echinocereus-nicholii-ldbenson-bdparfitt",
     "name": "Echinocereus nicholii (L.D.Benson) B.D.Parfitt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocereus nicholii"
+    ]
   },
   {
     "id": "echinocereus-schmollii-weing-nptaylor",
     "name": "Echinocereus schmollii (Weing.) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus schmollii",
+      "Echinocereus schmollii",
+      "Wilcoxia nerispina",
+      "Wilcoxia schmollii"
+    ]
   },
   {
     "id": "echinocereus-viridiflorus-engelm",

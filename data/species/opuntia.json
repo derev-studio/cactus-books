@@ -2,7 +2,50 @@
   {
     "id": "opuntia-ficus-indica",
     "name": "Opuntia ficus-indica",
-    "description": "Опунция индийская (инжирная). Плоские членики, съедобные плоды — «колючая груша». Широко культивируется."
+    "description": "Опунция индийская (инжирная). Плоские членики, съедобные плоды — «колючая груша». Широко культивируется.",
+    "nameHistory": [
+      "Cactus compressus",
+      "Cactus decumanus",
+      "Cactus elongatus",
+      "Cactus ficus",
+      "Cactus ficus-indica",
+      "Cactus lanceolatus",
+      "Cactus maximus",
+      "Cactus opuntia",
+      "Opuntia alfagayucca",
+      "Opuntia amyclaea",
+      "Opuntia apurimacensis",
+      "Opuntia arkansana",
+      "Opuntia caespitosa",
+      "Opuntia compressa",
+      "Opuntia cordobensis",
+      "Opuntia crassa",
+      "Opuntia decumana",
+      "Opuntia elongata",
+      "Opuntia ficus-barbarica",
+      "Opuntia ficus-indica",
+      "Opuntia fusicaulis",
+      "Opuntia glaberrima",
+      "Opuntia glauca",
+      "Opuntia gymnocarpa",
+      "Opuntia labouretiana",
+      "Opuntia lanceolata",
+      "Opuntia leiascheinvariana",
+      "Opuntia leucostata",
+      "Opuntia maxima",
+      "Opuntia mexicana",
+      "Opuntia obovata",
+      "Opuntia opuntia",
+      "Opuntia paraguayensis",
+      "Opuntia parvula",
+      "Opuntia tribuloides",
+      "Opuntia tuna-blanca",
+      "Opuntia umbrella",
+      "Opuntia undosa",
+      "Platyopuntia apurimacensis",
+      "Platyopuntia cordobensis",
+      "Platyopuntia ficus-indica"
+    ]
   },
   {
     "id": "opuntia-microdasys",
@@ -25,6 +68,14 @@
         "name": "Opuntia microdasys var. rufida (Engelm.) K.Schum.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus microdasys",
+      "Opuntia herrfeldtii",
+      "Opuntia lubrica",
+      "Opuntia macrocalyx",
+      "Opuntia microdasys",
+      "Opuntia pulvinata"
     ]
   },
   {
@@ -44,6 +95,18 @@
         "name": "Opuntia robusta var. larreyi (F.A.C.Weber) Bravo",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Opuntia albicans",
+      "Opuntia camuessa",
+      "Opuntia flavicans",
+      "Opuntia gorda",
+      "Opuntia guerrana",
+      "Opuntia larreyi",
+      "Opuntia megalarthra",
+      "Opuntia prate",
+      "Opuntia pruinosa",
+      "Opuntia robusta"
     ]
   },
   {
@@ -55,6 +118,21 @@
         "name": "Opuntia humifusa var. humifusa",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus humifusus",
+      "Cactus italicus",
+      "Opuntia allairei",
+      "Opuntia calcicola",
+      "Opuntia humifusa",
+      "Opuntia intermedia",
+      "Opuntia italica",
+      "Opuntia prostrata",
+      "Opuntia rafinesquei",
+      "Opuntia rafinesquiana",
+      "Opuntia rubiflora",
+      "Opuntia vulgaris",
+      "Platyopuntia vulgaris"
     ]
   },
   {
@@ -153,7 +231,12 @@
     "id": "nopalea-auberi-pfeiff-salm-dyck",
     "name": "Nopalea auberi (Pfeiff.) Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Nopalea auberi",
+      "Nopalea escuintlensis",
+      "Opuntia auberi"
+    ]
   },
   {
     "id": "opuntia-tomentosa-salm-dyck",
@@ -195,6 +278,14 @@
         "name": "Opuntia microdasys var. rufida (Engelm.) K.Schum.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus microdasys",
+      "Opuntia herrfeldtii",
+      "Opuntia lubrica",
+      "Opuntia macrocalyx",
+      "Opuntia microdasys",
+      "Opuntia pulvinata"
     ]
   },
   {
@@ -383,7 +474,21 @@
     "id": "nopalea-cochenillifera-l-salm-dyck",
     "name": "Nopalea cochenillifera (L.) Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus campechianus",
+      "Cactus cochenillifer",
+      "Cactus subinermis",
+      "Nopalea brittonii",
+      "Nopalea coccifera",
+      "Nopalea cochenillifera",
+      "Nopalea nuda",
+      "Opuntia coccinellifera",
+      "Opuntia cochenillifera",
+      "Opuntia cochinelifera",
+      "Opuntia magnifolia",
+      "Opuntia nuda"
+    ]
   },
   {
     "id": "opuntia-littoralis-engelm-cockerell",
@@ -403,6 +508,10 @@
         "name": "Opuntia littoralis var. littoralis",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Opuntia littoralis",
+      "Opuntia semispinosa"
     ]
   },
   {
@@ -583,6 +692,31 @@
         "name": "Opuntia stricta var. stricta",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus chilensis",
+      "Cactus chinensis",
+      "Cactus indicus",
+      "Cactus strictus",
+      "Opuntia airampo",
+      "Opuntia anahuacensis",
+      "Opuntia balearica",
+      "Opuntia bartramii",
+      "Opuntia bentonii",
+      "Opuntia chinensis",
+      "Opuntia inermis",
+      "Opuntia keyensis",
+      "Opuntia longiclada",
+      "Opuntia magnifica",
+      "Opuntia maritima",
+      "Opuntia melanosperma",
+      "Opuntia nejapensis",
+      "Opuntia parva",
+      "Opuntia stricta",
+      "Opuntia tenuiflora",
+      "Opuntia tunoidea",
+      "Opuntia zebrina",
+      "Pilocereus flavispinus"
     ]
   },
   {
@@ -595,7 +729,11 @@
     "id": "opuntia-dillenii-ker-gawl-haw",
     "name": "Opuntia dillenii (Ker Gawl.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus dillenii",
+      "Opuntia dillenii"
+    ]
   },
   {
     "id": "opuntia-chaffeyi-britton-rose",
@@ -625,7 +763,14 @@
     "id": "opuntia-vaseyi-jmcoult-britton-rose",
     "name": "Opuntia × vaseyi (J.M.Coult.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Opuntia covillei",
+      "Opuntia magenta",
+      "Opuntia rubiflora",
+      "Opuntia rugosa",
+      "Opuntia × vaseyi"
+    ]
   },
   {
     "id": "opuntia-crassa-haw",
@@ -655,7 +800,15 @@
     "id": "opuntia-fragilis-nutt-haw",
     "name": "Opuntia fragilis (Nutt.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus fragilis",
+      "Opuntia brachyarthra",
+      "Opuntia fragilis",
+      "Opuntia sabinii",
+      "Terecaulis fragilis",
+      "Tunas fragilis"
+    ]
   },
   {
     "id": "opuntia-pottsii-salm-dyck",

@@ -33,7 +33,40 @@
     "id": "neolloydia-conoidea-dc-britton-rose",
     "name": "Neolloydia conoidea (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus conoideus",
+      "Cactus coronatus",
+      "Cactus crebrispinus",
+      "Cactus echinocactoides",
+      "Cactus grandiflorus",
+      "Cactus scheeri",
+      "Cochemiea conoidea",
+      "Coryphantha ceratites",
+      "Coryphantha conoidea",
+      "Coryphantha grandiflora",
+      "Coryphantha stuetzlei",
+      "Echinocactus conoideus",
+      "Escobaria orcuttii",
+      "Mammillaria ceratites",
+      "Mammillaria conoidea",
+      "Mammillaria coronata",
+      "Mammillaria crebrispina",
+      "Mammillaria diaphanacantha",
+      "Mammillaria echinocactoides",
+      "Mammillaria grandiflora",
+      "Mammillaria inconspicua",
+      "Mammillaria scheeri",
+      "Neolloydia ceratites",
+      "Neolloydia conoidea",
+      "Neolloydia grandiflora",
+      "Neolloydia matehualensis",
+      "Neolloydia orcuttii",
+      "Neolloydia stuetzlei",
+      "Neolloydia stuetzleri",
+      "Neolloydia texensis",
+      "Pediocactus conoideus"
+    ]
   },
   {
     "id": "mammillaria-poselgeri-hildm",
@@ -69,7 +102,18 @@
     "id": "mammillaria-phitauiana-embaxter-werderm",
     "name": "Mammillaria phitauiana (E.M.Baxter) Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Chilita phitauiana",
+      "Chilita verhaertiana",
+      "Cochemiea phitauiana",
+      "Ebnerella phitauiana",
+      "Ebnerella verhaertiana",
+      "Mammillaria phitauiana",
+      "Mammillaria verhaertiana",
+      "Neomammillaria phitauiana",
+      "Neomammillaria verhaertiana"
+    ]
   },
   {
     "id": "mammillaria-armillata-kbrandegee",
@@ -81,13 +125,27 @@
     "id": "mammillaria-capensis-hegates-rtcraig",
     "name": "Mammillaria capensis (H.E.Gates) R.T.Craig",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Chilita capensis",
+      "Cochemiea capensis",
+      "Ebnerella capensis",
+      "Mammillaria capensis",
+      "Neomammillaria capensis"
+    ]
   },
   {
     "id": "mammillaria-fraileana-britton-rose-boed",
     "name": "Mammillaria fraileana (Britton & Rose) Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Chilita fraileana",
+      "Cochemiea fraileana",
+      "Ebnerella fraileana",
+      "Mammillaria fraileana",
+      "Neomammillaria fraileana"
+    ]
   },
   {
     "id": "mammillaria-estebanensis-gelinds",
@@ -111,7 +169,14 @@
     "id": "mammillaria-swinglei-britton-rose-boed",
     "name": "Mammillaria swinglei (Britton & Rose) Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Chilita swinglei",
+      "Cochemiea swinglei",
+      "Ebnerella swinglei",
+      "Mammillaria swinglei",
+      "Neomammillaria swinglei"
+    ]
   },
   {
     "id": "mammillaria-boolii-gelinds",
@@ -123,7 +188,12 @@
     "id": "cochemiea-halei-brandegee-walton",
     "name": "Cochemiea halei (Brandegee) Walton",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus halei",
+      "Cochemiea halei",
+      "Mammillaria halei"
+    ]
   },
   {
     "id": "mammillaria-louisae-gelinds",
@@ -141,7 +211,13 @@
     "id": "mammillaria-cerralboa-britton-rose-orcutt",
     "name": "Mammillaria cerralboa (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Bartschella cerralboa",
+      "Cochemiea cerralboa",
+      "Mammillaria cerralboa",
+      "Neomammillaria cerralboa"
+    ]
   },
   {
     "id": "cochemiea-maritima-gelinds",
@@ -153,13 +229,29 @@
     "id": "cochemiea-setispina-jmcoult-walton",
     "name": "Cochemiea setispina (J.M.Coult.) Walton",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus roseanus",
+      "Cactus setispinus",
+      "Cochemiea setispina",
+      "Mammillaria setispina"
+    ]
   },
   {
     "id": "mammillaria-albicans-britton-rose-aberger",
     "name": "Mammillaria albicans (Britton & Rose) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Bartschella albicans",
+      "Chilita albicans",
+      "Chilita slevinii",
+      "Cochemiea albicans",
+      "Mammillaria albicans",
+      "Mammillaria slevinii",
+      "Neomammillaria albicans",
+      "Neomammillaria slevinii"
+    ]
   },
   {
     "id": "mammillaria-mainiae-kbrandegee",

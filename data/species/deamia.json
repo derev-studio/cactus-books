@@ -3,6 +3,19 @@
     "id": "selenicereus-testudo-karw-ex-zucc-buxb",
     "name": "Selenicereus testudo (Karw. ex Zucc.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus acanthosphaera",
+      "Cereus miravallensis",
+      "Cereus nothus",
+      "Cereus pentapterus",
+      "Cereus pterogonus",
+      "Cereus testudo",
+      "Deamia diabolica",
+      "Deamia testudo",
+      "Selenicereus miravallensis",
+      "Selenicereus testudo",
+      "Strophocactus testudo"
+    ]
   }
 ]

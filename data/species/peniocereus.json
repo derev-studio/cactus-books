@@ -15,7 +15,12 @@
     "id": "peniocereus-zopilotensis-meyran-buxb",
     "name": "Peniocereus zopilotensis (Meyran) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Neoevansia zopilotensis",
+      "Peniocereus zopilotensis",
+      "Wilcoxia zopilotensis"
+    ]
   },
   {
     "id": "peniocereus-greggii-engelm-britton-rose",
@@ -31,25 +36,48 @@
         "name": "Peniocereus greggii subsp. greggii",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cereus greggii",
+      "Cereus pottsii",
+      "Peniocereus greggii"
     ]
   },
   {
     "id": "peniocereus-lazaro-cardenasii-jlcontr-jjiménez-ram-sánchez-mej-ctoledo-drhunt",
     "name": "Peniocereus lazaro-cardenasii (J.L.Contr., J.Jiménez Ram., Sánchez-Mej. & C.Toledo) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Neoevansia lazaro-cardenasii",
+      "Neoevansia lazarocardenasii",
+      "Peniocereus lazaro-cardenasii",
+      "Wilcoxia lazaro-cardenasii"
+    ]
   },
   {
     "id": "peniocereus-marianus-gentry-sánchez-mej",
     "name": "Peniocereus marianus (Gentry) Sánchez-Mej.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Peniocereus marianus",
+      "Wilcoxia mariana"
+    ]
   },
   {
     "id": "peniocereus-viperinus-facweber-buxb",
     "name": "Peniocereus viperinus (F.A.C.Weber) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus viperinus",
+      "Cullmannia viperina",
+      "Peniocereus tomentosus",
+      "Peniocereus viperinus",
+      "Wilcoxia tomentosa",
+      "Wilcoxia viperina"
+    ]
   },
   {
     "id": "peniocereus-johnstonii-britton-rose",

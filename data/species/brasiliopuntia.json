@@ -3,6 +3,22 @@
     "id": "opuntia-brasiliensis-willd-haw",
     "name": "Opuntia brasiliensis (Willd.) Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brasiliopuntia bahiensis",
+      "Brasiliopuntia brasiliensis",
+      "Brasiliopuntia neoargentina",
+      "Brasiliopuntia subacarpa",
+      "Cactus arboreus",
+      "Cactus brasiliensis",
+      "Cactus heterocladus",
+      "Cactus paradoxus",
+      "Cereus paradoxus",
+      "Opuntia arborea",
+      "Opuntia bahiensis",
+      "Opuntia brasiliensis",
+      "Opuntia hieronymi",
+      "Opuntia neoargentina"
+    ]
   }
 ]

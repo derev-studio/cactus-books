@@ -3,12 +3,34 @@
     "id": "turbinicarpus-horripilus-lem-vjohn-ríha",
     "name": "Turbinicarpus horripilus (Lem.) V.John & Ríha",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Bravocactus horripilus",
+      "Echinocactus caespititius",
+      "Echinocactus horripilus",
+      "Gymnocactus horripilus",
+      "Kadenicarpus horripilus",
+      "Mammillaria horripila",
+      "Neolloydia horripila",
+      "Pediocactus horripilus",
+      "Thelocactus goldii",
+      "Thelocactus horripilus",
+      "Turbinicarpus horripilus"
+    ]
   },
   {
     "id": "turbinicarpus-pseudomacrochele-backeb-buxb-backeb",
     "name": "Turbinicarpus pseudomacrochele (Backeb.) Buxb. & Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Kadenicarpus pseudomacrochele",
+      "Neolloydia pseudomacrochele",
+      "Pediocactus pseudomacrochele",
+      "Strombocactus pseudomacrochele",
+      "Toumeya pseudomacrochele",
+      "Turbinicarpus kubesii",
+      "Turbinicarpus pseudomacrochele"
+    ]
   }
 ]

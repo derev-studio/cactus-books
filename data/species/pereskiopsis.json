@@ -3,7 +3,20 @@
     "id": "pereskiopsis-diguetii-facweber-britton-rose",
     "name": "Pereskiopsis diguetii (F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Grusonia diguetii",
+      "Opuntia diguetii",
+      "Opuntia spathulata",
+      "Peireskia spathulata",
+      "Pereskia crassicaulis",
+      "Pereskia higuerana",
+      "Pereskia spathulata",
+      "Pereskiopsis diguetii",
+      "Pereskiopsis spathulata",
+      "Pereskiopsis velutina",
+      "Rhodocactus higueranus"
+    ]
   },
   {
     "id": "pereskiopsis-kellermanii-rose",
@@ -21,7 +34,16 @@
     "id": "pereskiopsis-rotundifolia-adc-britton-rose",
     "name": "Pereskiopsis rotundifolia (A.DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus frutescens",
+      "Cactus rotundifolius",
+      "Grusonia rotundifolia",
+      "Opuntia chapistle",
+      "Pereskia rotundifolia",
+      "Pereskiopsis chapistle",
+      "Pereskiopsis rotundifolia"
+    ]
   },
   {
     "id": "pereskiopsis-blakeana-ortega",
@@ -33,6 +55,15 @@
     "id": "pereskiopsis-porteri-brandegee-ex-facweber-britton-rose",
     "name": "Pereskiopsis porteri (Brandegee ex F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Grusonia porteri",
+      "Opuntia brandegeei",
+      "Opuntia porteri",
+      "Opuntia rotundifolia",
+      "Pereskiopsis brandegeei",
+      "Pereskiopsis gatesii",
+      "Pereskiopsis porteri"
+    ]
   }
 ]

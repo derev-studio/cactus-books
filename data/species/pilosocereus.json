@@ -3,25 +3,80 @@
     "id": "pilosocereus-collinsii-britton-rose-byles-gdrowley",
     "name": "Pilosocereus collinsii (Britton & Rose) Byles & G.D.Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus collinsii",
+      "Pilocereus collinsii",
+      "Pilosocereus collinsii"
+    ]
   },
   {
     "id": "pilosocereus-leucocephalus-poselg-byles-gdrowley",
     "name": "Pilosocereus leucocephalus (Poselg.) Byles & G.D.Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus cometes",
+      "Cephalocereus leucocephalus",
+      "Cephalocereus maxonii",
+      "Cephalocereus palmeri",
+      "Cephalocereus sartorianus",
+      "Cephalophorus palmeri",
+      "Cereus cometes",
+      "Cereus flavicomus",
+      "Cereus foersteri",
+      "Cereus houlletii",
+      "Cereus jubatus",
+      "Cereus maxonii",
+      "Cereus sartorianus",
+      "Cereus victoriensis",
+      "Pilocereus cometes",
+      "Pilocereus flavicomus",
+      "Pilocereus foersteri",
+      "Pilocereus jubatus",
+      "Pilocereus leucocephalus",
+      "Pilocereus maxonii",
+      "Pilocereus palmeri",
+      "Pilocereus sartorianus",
+      "Pilosocereus cometes",
+      "Pilosocereus leucocephalus",
+      "Pilosocereus maxonii",
+      "Pilosocereus palmeri",
+      "Pilosocereus sartorianus"
+    ]
   },
   {
     "id": "pilocereus-purpusii-britton-rose-fmknuth",
     "name": "Pilocereus purpusii (Britton & Rose) F.M.Knuth",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus guerreronis",
+      "Cephalocereus purpusii",
+      "Pilocereus guerreronis",
+      "Pilocereus purpusii",
+      "Pilosocereus guerreronis",
+      "Pilosocereus purpusii"
+    ]
   },
   {
     "id": "pilosocereus-chrysacanthus-facweber-ex-kschum-byles-gdrowley",
     "name": "Pilosocereus chrysacanthus (F.A.C.Weber ex K.Schum.) Byles & G.D.Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus chrysacanthus",
+      "Cephalocereus quadricentralis",
+      "Cephalocereus tehuacanus",
+      "Cephalophorus chrysacanthus",
+      "Cereus chrysacanthus",
+      "Cereus tehuacanus",
+      "Pilocereus chrysacanthus",
+      "Pilocereus tehuacanus",
+      "Pilosocereus chrysacanthus",
+      "Pilosocereus quadricentralis",
+      "Pilosocereus tehuacanus"
+    ]
   },
   {
     "id": "pilosocereus-quadricentralis-eydawson-backeb",
@@ -33,18 +88,37 @@
     "id": "cephalocereus-alensis-facweber-britton-rose",
     "name": "Cephalocereus alensis (F.A.C.Weber) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus alensis",
+      "Cereus alensis",
+      "Pilocereus alensis",
+      "Pilocereus houlettii",
+      "Pilocereus houlletianum",
+      "Pilocereus houlletii",
+      "Pilocereus marschalleckianus",
+      "Pilosocereus alensis"
+    ]
   },
   {
     "id": "pilosocereus-gaumeri-britton-rose-backeb",
     "name": "Pilosocereus gaumeri (Britton & Rose) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cephalocereus gaumeri",
+      "Cereus gaumeri",
+      "Pilocereus gaumeri",
+      "Pilosocereus gaumeri"
+    ]
   },
   {
     "id": "pilosocereus-royenii-l-byles-gdrowley",
     "name": "Pilosocereus royenii (L.) Byles & G.D.Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Pilosocereus royenii"
+    ]
   }
 ]

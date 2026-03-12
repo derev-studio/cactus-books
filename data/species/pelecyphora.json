@@ -3,7 +3,19 @@
     "id": "escobaria-dasyacantha-engelm-britton-rose",
     "name": "Escobaria dasyacantha (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus dasyacanthus",
+      "Coryphantha chlorantha",
+      "Coryphantha dasyacantha",
+      "Escobaria chlorantha",
+      "Escobaria dasyacantha",
+      "Escobesseya dasyacantha",
+      "Mammillaria chlorantha",
+      "Mammillaria dasyacantha",
+      "Neobesseya dasyacantha",
+      "Pelecyphora dasyacantha"
+    ]
   },
   {
     "id": "escobaria-chihuahuensis-britton-rose",
@@ -15,7 +27,22 @@
     "id": "escobaria-emskoetteriana-quehl-borg",
     "name": "Escobaria emskoetteriana (Quehl) Borg",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha bella",
+      "Coryphantha emskoetteriana",
+      "Coryphantha muehlbaueriana",
+      "Coryphantha robertii",
+      "Escobaria bella",
+      "Escobaria emskoetteriana",
+      "Escobaria muehlbaueriana",
+      "Escobaria runyonii",
+      "Mammillaria emskoetteriana",
+      "Mammillaria escobaria",
+      "Neobesseya emskoetteriana",
+      "Neobesseya muehlbaueriana",
+      "Pelecyphora emskoetteriana"
+    ]
   },
   {
     "id": "escobaria-grata-mkaplan-kunte-snicer",
@@ -33,13 +60,28 @@
     "id": "pelecyphora-strobiliformis-werderm-fric-schelle",
     "name": "Pelecyphora strobiliformis (Werderm.) Fric & Schelle",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ariocarpus strobiliformis",
+      "Encephalocarpus strobiliformis",
+      "Pelecyphora strobiliformis"
+    ]
   },
   {
     "id": "escobaria-tuberculosa-engelm-britton-rose",
     "name": "Escobaria tuberculosa (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus tuberculosus",
+      "Coryphantha tuberculosa",
+      "Coryphantha varicolor",
+      "Escobaria tuberculosa",
+      "Escobaria varicolor",
+      "Mammillaria strobiliformis",
+      "Mammillaria tuberculosa",
+      "Pelecyphora tuberculosa"
+    ]
   },
   {
     "id": "escobaria-lloydii-britton-rose",
@@ -51,18 +93,66 @@
     "id": "escobaria-laredoi-glass-rafoster-nptaylor",
     "name": "Escobaria laredoi (Glass & R.A.Foster) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha laredoi",
+      "Escobaria laredoi",
+      "Pelecyphora laredoi"
+    ]
   },
   {
     "id": "coryphantha-vivipara-nutt-britton-rose",
     "name": "Coryphantha vivipara (Nutt.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus neomexicanus",
+      "Cactus radiosus",
+      "Cactus viviparus",
+      "Coryphantha aggregata",
+      "Coryphantha arizonica",
+      "Coryphantha bisbeeana",
+      "Coryphantha columnaris",
+      "Coryphantha deserti",
+      "Coryphantha fragrans",
+      "Coryphantha neomexicana",
+      "Coryphantha neovivipara",
+      "Coryphantha oklahomensis",
+      "Coryphantha radiosa",
+      "Coryphantha rosea",
+      "Coryphantha vivipara",
+      "Echinocactus radiosus",
+      "Echinocactus viviparus",
+      "Escobaria aggregata",
+      "Escobaria arizonica",
+      "Escobaria bisbeeana",
+      "Escobaria deserti",
+      "Escobaria neomexicana",
+      "Escobaria oklahomensis",
+      "Escobaria radiosa",
+      "Escobaria vivipara",
+      "Mammillaria aggregata",
+      "Mammillaria arizonica",
+      "Mammillaria deserti",
+      "Mammillaria hirschtiana",
+      "Mammillaria neomexicana",
+      "Mammillaria radiosa",
+      "Mammillaria ramosissima",
+      "Mammillaria vivipara",
+      "Neomammillaria radiosa",
+      "Pelecyphora vivipara"
+    ]
   },
   {
     "id": "escobaria-zilziana-boed-backeb",
     "name": "Escobaria zilziana (Boed.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha zilziana",
+      "Escobaria zilziana",
+      "Neobesseya zilziana",
+      "Pelecyphora zilziana"
+    ]
   }
 ]

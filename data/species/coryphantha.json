@@ -3,7 +3,11 @@
     "id": "coryphantha-bumamma-ehrenb-britton-rose",
     "name": "Coryphantha bumamma (Ehrenb.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha bumamma",
+      "Mammillaria bumamma"
+    ]
   },
   {
     "id": "coryphantha-macromeris-engelm-lem",
@@ -49,43 +53,99 @@
     "id": "coryphantha-glanduligera-otto-adietr-lem",
     "name": "Coryphantha glanduligera (Otto & A.Dietr.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus brevimamma",
+      "Cactus glanduliger",
+      "Coryphantha bergeriana",
+      "Coryphantha brevimamma",
+      "Coryphantha glanduligera",
+      "Echinocactus brevimammus",
+      "Echinocactus glanduliger",
+      "Mammillaria glanduligera"
+    ]
   },
   {
     "id": "coryphantha-difficilis-quehl-orcutt",
     "name": "Coryphantha difficilis (Quehl) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha densispina",
+      "Coryphantha difficilis",
+      "Mammillaria difficilis"
+    ]
   },
   {
     "id": "coryphantha-poselgeriana-adietr-britton-rose",
     "name": "Coryphantha poselgeriana (A.Dietr.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus salm-dyckianus",
+      "Coryphantha kieferiana",
+      "Coryphantha poselgeriana",
+      "Coryphantha salm-dyckiana",
+      "Coryphantha valida",
+      "Echinocactus poselgerianus",
+      "Echinocactus salm-dyckianus",
+      "Echinocactus saltillensis",
+      "Mammillaria kieferiana",
+      "Mammillaria salm-dyckiana",
+      "Mammillaria valida",
+      "Neomammillaria melanocentra"
+    ]
   },
   {
     "id": "coryphantha-echinoidea-quehl-britton-rose",
     "name": "Coryphantha echinoidea (Quehl) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha echinoidea",
+      "Coryphantha schwarziana",
+      "Mammillaria echinoidea"
+    ]
   },
   {
     "id": "coryphantha-erecta-lem-ex-pfeiff-lem",
     "name": "Coryphantha erecta (Lem. ex Pfeiff.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus ceratocentrus",
+      "Cactus erectus",
+      "Coryphantha erecta",
+      "Echinocactus erectus",
+      "Glandulifera erecta",
+      "Mammillaria ceratocentra",
+      "Mammillaria erecta",
+      "Mammillaria evanescens"
+    ]
   },
   {
     "id": "coryphantha-delaetiana-quehl-aberger",
     "name": "Coryphantha delaetiana (Quehl) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha delaetiana",
+      "Coryphantha gladiispina",
+      "Mammillaria delaetiana",
+      "Mammillaria gladiispina"
+    ]
   },
   {
     "id": "coryphantha-compacta-engelm-britton-rose",
     "name": "Coryphantha compacta (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus compactus",
+      "Coryphantha compacta",
+      "Coryphantha palmeri",
+      "Mammillaria compacta"
+    ]
   },
   {
     "id": "coryphantha-retusa-pfeiff-britton-rose",
@@ -97,13 +157,30 @@
         "name": "Coryphantha retusa var. melleospina (Bravo) Bravo",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus cephalophorus",
+      "Cactus retusus",
+      "Coryphantha melleospina",
+      "Coryphantha retusa",
+      "Echinocactus cephalophorus",
+      "Mammillaria cephalophora",
+      "Mammillaria retusa",
+      "Melocactus cephalophora",
+      "Melocactus mammillariiformis"
     ]
   },
   {
     "id": "coryphantha-nickelsiae-kbrandegee-britton-rose",
     "name": "Coryphantha nickelsiae (K.Brandegee) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha calochlora",
+      "Coryphantha nickelsiae",
+      "Mammillaria calochlora",
+      "Mammillaria nickelsiae"
+    ]
   },
   {
     "id": "coryphantha-georgii-boed",
@@ -121,7 +198,48 @@
     "id": "coryphantha-octacantha-dc-britton-rose",
     "name": "Coryphantha octacantha (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus aulacothele",
+      "Cactus biglandulosus",
+      "Cactus clavus",
+      "Cactus exudans",
+      "Cactus macrothele",
+      "Cactus martianus",
+      "Cactus octacanthus",
+      "Cactus plaschnickii",
+      "Cactus polymorphus",
+      "Cactus schlechtendalii",
+      "Coryphantha aulacothele",
+      "Coryphantha clava",
+      "Coryphantha exsudans",
+      "Coryphantha lehmannii",
+      "Coryphantha macrothele",
+      "Coryphantha octacantha",
+      "Coryphantha schlechtendalii",
+      "Echinocactus clava",
+      "Echinocactus clavus",
+      "Echinocactus glanduligerus",
+      "Echinocactus macrothele",
+      "Echinocactus plaschnickii",
+      "Echinocactus schlechtendalii",
+      "Glandulifera clava",
+      "Mammillaria aulacothele",
+      "Mammillaria biglandulosa",
+      "Mammillaria brevimamma",
+      "Mammillaria clava",
+      "Mammillaria curvata",
+      "Mammillaria exsudans",
+      "Mammillaria leucacantha",
+      "Mammillaria macrothele",
+      "Mammillaria martiana",
+      "Mammillaria octacantha",
+      "Mammillaria plaschnickii",
+      "Mammillaria polymorpha",
+      "Mammillaria schlechtendalii",
+      "Mammillaria sulcimamma",
+      "Mammillaria thelocamptos"
+    ]
   },
   {
     "id": "coryphantha-ramillosa-cutak",
@@ -139,7 +257,19 @@
     "id": "coryphantha-sulcata-engelm-britton-rose",
     "name": "Coryphantha sulcata (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus calcaratus",
+      "Cactus kotschubeyi",
+      "Cactus sulcatus",
+      "Coryphantha calcarata",
+      "Coryphantha obscura",
+      "Coryphantha roederiana",
+      "Coryphantha speciosa",
+      "Coryphantha sulcata",
+      "Mammillaria calcarata",
+      "Mammillaria sulcata"
+    ]
   },
   {
     "id": "coryphantha-pseudoechinus-boed",
@@ -151,13 +281,31 @@
     "id": "coryphantha-clavata-scheidw-backeb",
     "name": "Coryphantha clavata (Scheidw.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus brunneus",
+      "Cactus maculatus",
+      "Cactus rhaphidacanthus",
+      "Coryphantha clavata",
+      "Coryphantha raphidacantha",
+      "Coryphantha unicornis",
+      "Echinocactus raphidacanthus",
+      "Mammillaria clavata",
+      "Mammillaria radicantissima",
+      "Mammillaria raphidacantha",
+      "Mammillaria sulcoglandulifera",
+      "Neolloydia clavata"
+    ]
   },
   {
     "id": "coryphantha-durangensis-ruenge-britton-rose",
     "name": "Coryphantha durangensis (Ruenge) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha durangensis",
+      "Mammillaria durangensis"
+    ]
   },
   {
     "id": "coryphantha-vaupeliana-boed",
@@ -175,7 +323,11 @@
     "id": "coryphantha-pulleineana-backeb-glass",
     "name": "Coryphantha pulleineana (Backeb.) Glass",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha pulleineana",
+      "Neolloydia pulleineana"
+    ]
   },
   {
     "id": "coryphantha-wohlschlageri-holzeis",
@@ -193,25 +345,73 @@
     "id": "coryphantha-ottonis-pfeiff-lem",
     "name": "Coryphantha ottonis (Pfeiff.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus ottonis",
+      "Coryphantha asterias",
+      "Coryphantha bussleri",
+      "Coryphantha guerkeana",
+      "Coryphantha ottonianus",
+      "Coryphantha ottonis",
+      "Echinocactus ottonianus",
+      "Mammillaria asterias",
+      "Mammillaria bussleri",
+      "Mammillaria golziana",
+      "Mammillaria guerkeana",
+      "Mammillaria ottonis"
+    ]
   },
   {
     "id": "coryphantha-potosiana-jacobi-glass-rafoster-ex-rowley",
     "name": "Coryphantha potosiana (Jacobi) Glass & R.A.Foster ex Rowley",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha potosiana",
+      "Mammillaria potosiana"
+    ]
   },
   {
     "id": "coryphantha-pycnacantha-mart-lem",
     "name": "Coryphantha pycnacantha (Mart.) Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus acanthostephes",
+      "Cactus latimamma",
+      "Cactus pycnacanthus",
+      "Cactus scepontocentrus",
+      "Cactus winkleri",
+      "Coryphantha acanthostephes",
+      "Coryphantha andreae",
+      "Coryphantha conimamma",
+      "Coryphantha connivens",
+      "Coryphantha pycnacantha",
+      "Echinocactus acanthostephes",
+      "Echinocactus pycnacanthus",
+      "Echinocactus radiatus",
+      "Echinocactus winkleri",
+      "Escobaria sniceri",
+      "Mammillaria acanthostephes",
+      "Mammillaria andreae",
+      "Mammillaria conimamma",
+      "Mammillaria latimamma",
+      "Mammillaria pycnacantha",
+      "Mammillaria scepontocentra",
+      "Mammillaria winkleri"
+    ]
   },
   {
     "id": "coryphantha-salinensis-poselg-dicht-alüthy",
     "name": "Coryphantha salinensis (Poselg.) Dicht & A.Lüthy",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha borwigii",
+      "Coryphantha salinensis",
+      "Echinocactus salinensis",
+      "Mammillaria borwigii"
+    ]
   },
   {
     "id": "coryphantha-werdermannii-boed",
@@ -235,6 +435,13 @@
     "id": "coryphantha-recurvata-engelm-britton-rose",
     "name": "Coryphantha recurvata (Engelm.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus engelmannii",
+      "Cactus recurvatus",
+      "Coryphantha engelmannii",
+      "Coryphantha recurvata",
+      "Mammillaria recurvata"
+    ]
   }
 ]

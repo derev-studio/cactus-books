@@ -9,13 +9,29 @@
     "id": "pachycereus-weberi-jmcoult-backeb",
     "name": "Pachycereus weberi (J.M.Coult.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus belieuli",
+      "Cereus candelabrum",
+      "Cereus pugionifer",
+      "Cereus weberi",
+      "Lemaireocereus weberi",
+      "Pachycereus gigas",
+      "Pachycereus weberi",
+      "Ritterocereus weberi",
+      "Stenocereus weberi"
+    ]
   },
   {
     "id": "pachycereus-pecten-aboriginum-engelm-ex-swatson-britton-rose",
     "name": "Pachycereus pecten-aboriginum (Engelm. ex S.Watson) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus pecten-aboriginum",
+      "Pachycereus pecten-aboriginum",
+      "Pachycereus tehuantepecanus"
+    ]
   },
   {
     "id": "lemaireocereus-hollianus-facweber-ex-jmcoult-britton-rose",
@@ -39,7 +55,16 @@
     "id": "pachycereus-pringlei-swatson-britton-rose",
     "name": "Pachycereus pringlei (S.Watson) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus calvus",
+      "Cereus pringlei",
+      "Cereus titan",
+      "Pachycereus calvus",
+      "Pachycereus pringlei",
+      "Pachycereus titan",
+      "Pilocereus pringlei"
+    ]
   },
   {
     "id": "pachycereus-tepamo-gama-sarias",

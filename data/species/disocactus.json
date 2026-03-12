@@ -13,13 +13,38 @@
         "name": "Disocactus speciosus subsp. aurantiacus (Kimnach) Ralf Bauer",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cactus speciosus",
+      "Cereus bifrons",
+      "Cereus coccineus",
+      "Cereus hybridus",
+      "Cereus jenkinsonii",
+      "Cereus lateritius",
+      "Cereus setiger",
+      "Cereus speciosus",
+      "Disocactus speciosus",
+      "Epiphyllum speciosum",
+      "Heliocereus speciosus"
     ]
   },
   {
     "id": "epiphyllum-anguliger-lem-gdon",
     "name": "Epiphyllum anguliger (Lem.) G.Don",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus mexicanus",
+      "Disocactus anguliger",
+      "Epiphyllum anguliger",
+      "Epiphyllum darrahii",
+      "Phyllocactus angularis",
+      "Phyllocactus angulifer",
+      "Phyllocactus anguliger",
+      "Phyllocactus darrahii",
+      "Phyllocactus mexicanus",
+      "Phyllocactus serratus"
+    ]
   },
   {
     "id": "disocactus-nelsonii-britton-rose-linding",
@@ -31,6 +56,12 @@
         "name": "Disocactus nelsonii var. nelsonii",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Chiapasia nelsonii",
+      "Disocactus nelsonii",
+      "Epiphyllum nelsonii",
+      "Phyllocactus nelsonii"
     ]
   },
   {
@@ -51,6 +82,16 @@
         "name": "Disocactus ackermannii var. conzattianus (T.Mac Doug.) Barthlott",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus ackermannii",
+      "Cereus ackermannii",
+      "Disocactus ackermannii",
+      "Epiphyllum ackermannii",
+      "Heliocereus ackermannii",
+      "Nopalxochia ackermannii",
+      "Phyllocactus ackermannii",
+      "Weberocereus ackermannii"
     ]
   },
   {
@@ -63,25 +104,57 @@
     "id": "disocactus-macranthus-alexander-kimnach-hutchison",
     "name": "Disocactus macranthus (Alexander) Kimnach & Hutchison",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Disisorhipsalis macrantha",
+      "Disocactus macranthus",
+      "Pseudorhipsalis macrantha"
+    ]
   },
   {
     "id": "disocactus-phyllanthoides-dc-barthlott",
     "name": "Disocactus phyllanthoides (DC.) Barthlott",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus elegans",
+      "Cactus phyllanthoides",
+      "Cereus phyllanthoides",
+      "Disocactus phyllanthoides",
+      "Epiphyllum phyllanthoides",
+      "Heliocereus phyllanthoides",
+      "Nopalxochia phyllanthoides",
+      "Opuntia speciosa",
+      "Phyllocactus phyllanthoides",
+      "Phyllocactus plukenetii"
+    ]
   },
   {
     "id": "disocactus-biformis-lindl-lindl",
     "name": "Disocactus biformis (Lindl.) Lindl.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus biformis",
+      "Disisocactus biformis",
+      "Disocactus biformis",
+      "Epiphyllum biforme",
+      "Epiphyllum biformis",
+      "Phyllocactus biformis"
+    ]
   },
   {
     "id": "disocactus-macdougallii-alexander-barthlott",
     "name": "Disocactus macdougallii (Alexander) Barthlott",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Disocactus macdougallii",
+      "Heliocereus macdougallii",
+      "Lobeira macdougallii",
+      "Nopalopuntia macdougallii",
+      "Nopalxochia macdougallii"
+    ]
   },
   {
     "id": "epiphyllum-lepidocarpum-facweber-britton-rose",
@@ -93,6 +166,11 @@
     "id": "disocactus-quezaltecus-standl-steyerm-kimnach",
     "name": "Disocactus quezaltecus (Standl. & Steyerm.) Kimnach",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Bonifazia quezalteca",
+      "Disocactus quezaltecus",
+      "Epiphyllum quezaltecum"
+    ]
   }
 ]

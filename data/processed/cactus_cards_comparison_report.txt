@@ -1,0 +1,20 @@
+Загружаю наши виды из data/species/*.json ...
+  У нас родов: 65 , пар (род, эпитет): 505
+
+Читаю cactus_cards_species.csv ...
+
+==================================================
+ОТЧЁТ: cactus_cards_species.csv vs наше дерево
+==================================================
+Всего записей в файле cards: 3569
+
+Уже есть у нас (род + вид совпадают): 269
+  из них с синонимами (names_count > 1): 260 — можно подтянуть цепочки синонимов в карточки
+
+Род есть, вида нет (можно добавить в наш род): 2052
+  примеры: Mammillaria crinita, Mammillaria schwarzii, Mammillaria densispina, Mammillaria erythrosperma, Cochemiea guelzowiana, Mammillaria microhelia, Mammillaria decipiens, Mammillaria pottsii
+
+Рода нет в дереве (вид бы добавить после добавления рода): 1248
+  примеры родов: acanthocalycium, acanthocephala, acharagma, airampoa, akersia, ancistrocactus, aporepiphyllum, aporodisocactus, aporoheliocereus, aporophyllum
+
+Следующий шаг: обогатить синонимами 260 видов и/или добавить 2052 новых видов в существующие роды.

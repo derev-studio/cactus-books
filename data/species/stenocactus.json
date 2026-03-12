@@ -3,37 +3,100 @@
     "id": "stenocactus-coptonogonus-lem-aberger",
     "name": "Stenocactus coptonogonus (Lem.) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea coptonogona",
+      "Echinocactus coptonogonus",
+      "Echinocactus interruptus",
+      "Echinofossulocactus coptonogonus",
+      "Efossus coptonogonus",
+      "Ferocactus coptonogonus",
+      "Stenocactus coptonogonus"
+    ]
   },
   {
     "id": "stenocactus-lamellosus-adietr-aberger",
     "name": "Stenocactus lamellosus (A.Dietr.) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea confusa",
+      "Brittonrosea hastata",
+      "Brittonrosea lamellosa",
+      "Echinocactus confusus",
+      "Echinocactus hastatus",
+      "Echinocactus lamellosus",
+      "Echinofossulocactus confusus",
+      "Echinofossulocactus hastatus",
+      "Echinofossulocactus lamellosus",
+      "Efossus confusus",
+      "Efossus hastatus",
+      "Efossus lamellosus",
+      "Stenocactus confusus",
+      "Stenocactus hastatus",
+      "Stenocactus lamellosus"
+    ]
   },
   {
     "id": "stenocactus-obvallatus-dc-hill",
     "name": "Stenocactus obvallatus (DC.) Hill",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea obvallata",
+      "Cactus obvallatus",
+      "Echinocactus biceras",
+      "Echinocactus obvallatus",
+      "Echinofossulocactus caespitosus",
+      "Echinofossulocactus obvallatus",
+      "Efossus obvallatus",
+      "Stenocactus obvallatus"
+    ]
   },
   {
     "id": "stenocactus-multicostatus-hildm-aberger",
     "name": "Stenocactus multicostatus (Hildm.) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea multicostata",
+      "Echinocactus multicostatus",
+      "Echinofossulocactus erectocentrus",
+      "Echinofossulocactus multicostatus",
+      "Efossus multicostatus",
+      "Stenocactus multicostatus"
+    ]
   },
   {
     "id": "stenocactus-heteracanthus-muehlenpf-aberger-ex-awhill",
     "name": "Stenocactus heteracanthus (Muehlenpf.) A.Berger ex A.W.Hill",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea heteracantha",
+      "Echinocactus heteracanthus",
+      "Echinocactus tellii",
+      "Echinofossulocactus heteracanthus",
+      "Echinofossulocactus lexarzai",
+      "Echinofossulocactus tellii",
+      "Efossus heteracanthus",
+      "Stenocactus heteracanthus",
+      "Stenocactus lexarzae",
+      "Stenocactus lexarzai"
+    ]
   },
   {
     "id": "stenocactus-dichroacanthus-dc-aberger-ex-awhill",
     "name": "Stenocactus dichroacanthus (DC.) A.Berger ex A.W.Hill",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Brittonrosea dichroacantha",
+      "Echinocactus dichroacanthus",
+      "Echinofossulocactus dichroacanthus",
+      "Efossus dichroacanthus",
+      "Stenocactus dichroacanthus"
+    ]
   },
   {
     "id": "stenocactus-ochoterenanus-tiegel",
@@ -45,6 +108,9 @@
     "id": "stenocactus-phyllacanthus-adietr-otto-aberger",
     "name": "Stenocactus phyllacanthus (A.Dietr. & Otto) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Stenocactus phyllacanthus"
+    ]
   }
 ]

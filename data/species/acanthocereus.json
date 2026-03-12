@@ -9,7 +9,42 @@
     "id": "acanthocereus-tetragonus-l-hummelinck",
     "name": "Acanthocereus tetragonus (L.) Hummelinck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Acanthocereus acutangulus",
+      "Acanthocereus baxaniensis",
+      "Acanthocereus colombianus",
+      "Acanthocereus floridanus",
+      "Acanthocereus horridus",
+      "Acanthocereus occidentalis",
+      "Acanthocereus pentagonus",
+      "Acanthocereus pitajaya",
+      "Acanthocereus princeps",
+      "Acanthocereus subinermis",
+      "Acanthocereus tetragonus",
+      "Cactus pentagonus",
+      "Cactus pitajaya",
+      "Cactus prismaticus",
+      "Cactus reptans",
+      "Cactus tetragonus",
+      "Cereus acutangulus",
+      "Cereus babosus",
+      "Cereus baxaniensis",
+      "Cereus dussii",
+      "Cereus horribilis",
+      "Cereus nitidus",
+      "Cereus pentagonus",
+      "Cereus pitajaya",
+      "Cereus princeps",
+      "Cereus prismaticus",
+      "Cereus ramosus",
+      "Cereus reptans",
+      "Cereus sirul",
+      "Cereus tetragonus",
+      "Cereus undulatus",
+      "Cereus variabilis",
+      "Cereus vasmerii"
+    ]
   },
   {
     "id": "peniocereus-tepalcatepecanus-sánchez-mej",
@@ -21,13 +56,29 @@
     "id": "peniocereus-oaxacensis-britton-rose-drhunt",
     "name": "Peniocereus oaxacensis (Britton & Rose) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Acanthocereus oaxacensis",
+      "Nyctocereus oaxacensis",
+      "Peniocereus oaxacensis"
+    ]
   },
   {
     "id": "peniocereus-hirschtianus-kschum-drhunt",
     "name": "Peniocereus hirschtianus (K.Schum.) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Acanthocereus hirschtianus",
+      "Cereus guatemalensis",
+      "Cereus hirschtianus",
+      "Cereus neumannii",
+      "Nyctocereus guatemalensis",
+      "Nyctocereus hirschtianus",
+      "Nyctocereus neumannii",
+      "Peniocereus guatemalensis",
+      "Peniocereus hirschtianus"
+    ]
   },
   {
     "id": "peniocereus-fosterianus-cutak",
@@ -57,7 +108,12 @@
     "id": "peniocereus-maculatus-weing-cutak",
     "name": "Peniocereus maculatus (Weing.) Cutak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Acanthocereus maculatus",
+      "Cereus maculatus",
+      "Peniocereus maculatus"
+    ]
   },
   {
     "id": "acanthocereus-chiapensis-bravo",

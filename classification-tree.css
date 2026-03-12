@@ -286,6 +286,51 @@
   display: none !important;
 }
 
+.card-panel__morphology-wrap {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--cactus-border-light);
+}
+
+.card-panel__morphology-wrap[hidden] {
+  display: none !important;
+}
+
+.card-panel__morphology-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cactus-text);
+}
+
+.card-panel__morphology-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--cactus-muted-on-dark, rgba(255,255,255,0.9));
+}
+
+.card-panel__morphology-list li {
+  margin-bottom: 0.35rem;
+}
+
+.card-panel__photo-wrap {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--cactus-border-light);
+}
+
+.card-panel__photo-wrap[hidden] {
+  display: none !important;
+}
+
+.card-panel__photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 .card-panel__infraspecific-wrap {
   margin-top: 1rem;
   padding-top: 0.75rem;

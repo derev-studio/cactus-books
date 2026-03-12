@@ -3,13 +3,29 @@
     "id": "stenocereus-quevedonis-jgortega-buxb",
     "name": "Stenocereus quevedonis (J.G.Ortega) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Glandulicereus quevedonis",
+      "Lemaireocereus quevedonis",
+      "Rathbunia quevedonis",
+      "Stenocereus quevedonis"
+    ]
   },
   {
     "id": "stenocereus-beneckei-cehrenb-aberger-buxb",
     "name": "Stenocereus beneckei (C.Ehrenb.) A.Berger & Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus beneckei",
+      "Cereus farinosus",
+      "Echinocactus farinosus",
+      "Hertrichocereus beneckei",
+      "Lemaireocereus beneckei",
+      "Piptanthocereus beneckei",
+      "Rathbunia beneckei",
+      "Stenocereus beneckei"
+    ]
   },
   {
     "id": "stenocereus-thurberi-engelm-buxb",
@@ -25,19 +41,70 @@
         "name": "Stenocereus thurberi var. littoralis (K.Brandegee) Bravo",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cereus thurberi",
+      "Glandulicereus thurberi",
+      "Lemaireocereus thurberi",
+      "Marshallocereus thurberi",
+      "Neolemaireocereus thurberi",
+      "Pilocereus thurberi",
+      "Rathbunia thurberi",
+      "Stenocereus thurberi"
     ]
   },
   {
     "id": "stenocereus-pruinosus-otto-ex-pfeiff-buxb",
     "name": "Stenocereus pruinosus (Otto ex Pfeiff.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus pruinosus",
+      "Cereus edulis",
+      "Cereus pruinosus",
+      "Cereus roridus",
+      "Echinocactus pruinosus",
+      "Griseocactus pruinosus",
+      "Griseocereus pruinosus",
+      "Lemaireocereus pruinosus",
+      "Neogriseocereus pruinosus",
+      "Rathbunia pruinosa",
+      "Ritterocereus pruinosus",
+      "Stenocereus pruinosus"
+    ]
   },
   {
     "id": "stenocereus-griseus-haw-buxb",
     "name": "Stenocereus griseus (Haw.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus eburneus",
+      "Cereus clavatus",
+      "Cereus deficiens",
+      "Cereus eburneus",
+      "Cereus enriquezii",
+      "Cereus griseus",
+      "Cereus peruvianus",
+      "Cereus polygonatus",
+      "Cereus resupinatus",
+      "Cereus ziczkaanus",
+      "Cereus zizkaanus",
+      "Griseocactus griseus",
+      "Griseocereus griseus",
+      "Lemaireocereus deficiens",
+      "Lemaireocereus eburneus",
+      "Lemaireocereus griseus",
+      "Neogriseocereus griseus",
+      "Neolemaireocereus griseus",
+      "Pilocereus deficiens",
+      "Rathbunia deficiens",
+      "Rathbunia grisea",
+      "Ritterocereus deficiens",
+      "Ritterocereus griseus",
+      "Stenocereus deficiens",
+      "Stenocereus griseus"
+    ]
   },
   {
     "id": "stenocereus-eichlamii-britton-rose-buxb-ex-bravo",
@@ -55,25 +122,66 @@
     "id": "stenocereus-gummosus-engelm-acgibson-kehorak",
     "name": "Stenocereus gummosus (Engelm.) A.C.Gibson & K.E.Horak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus cumengei",
+      "Cereus flexuosus",
+      "Cereus gummatus",
+      "Cereus gumminosus",
+      "Cereus gummosus",
+      "Cereus pfersdorffii",
+      "Lemaireocereus cumengei",
+      "Lemaireocereus gummosus",
+      "Machaerocereus gummosus",
+      "Rathbunia gummosa",
+      "Stenocereus gummosus"
+    ]
   },
   {
     "id": "stenocereus-stellatus-pfeiff-riccob",
     "name": "Stenocereus stellatus (Pfeiff.) Riccob.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus dyckii",
+      "Cereus joconostle",
+      "Cereus stellatus",
+      "Cereus tonelianus",
+      "Cereus torrellianus",
+      "Lemaireocereus stellatus",
+      "Neolemaireocereus stellatus",
+      "Rathbunia stellata",
+      "Stenocereus stellatus"
+    ]
   },
   {
     "id": "stenocereus-queretaroensis-facweber-ex-mathsson-buxb",
     "name": "Stenocereus queretaroensis (F.A.C.Weber ex Mathsson) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus queretaroensis",
+      "Glandulicereus queretaroensis",
+      "Lemaireocereus queretarensis",
+      "Lemaireocereus queretaroensis",
+      "Pachycereus queretarensis",
+      "Rathbunia queretaroensis",
+      "Ritterocereus queretaroensis",
+      "Stenocereus queretaroensis"
+    ]
   },
   {
     "id": "stenocereus-eruca-brandegee-acgibson-kehorak",
     "name": "Stenocereus eruca (Brandegee) A.C.Gibson & K.E.Horak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus eruca",
+      "Lemaireocereus eruca",
+      "Machaerocereus eruca",
+      "Rathbunia eruca",
+      "Stenocereus eruca"
+    ]
   },
   {
     "id": "stenocereus-zopilotensis-arreola-nava-terrazas",
@@ -85,37 +193,79 @@
     "id": "stenocereus-kerberi-kschum-acgibson-kehorak",
     "name": "Stenocereus kerberi (K.Schum.) A.C.Gibson & K.E.Horak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus kerberi",
+      "Cleistocactus kerberi",
+      "Rathbunia kerberi",
+      "Stenocereus kerberi"
+    ]
   },
   {
     "id": "stenocereus-alamosensis-jmcoult-acgibson-kehorak",
     "name": "Stenocereus alamosensis (J.M.Coult.) A.C.Gibson & K.E.Horak",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus alamosensis",
+      "Cereus pseudosonorensis",
+      "Cereus simonii",
+      "Cereus sonorensis",
+      "Rathbunia alamosensis",
+      "Rathbunia neosonorensis",
+      "Rathbunia pseudosonorensis",
+      "Rathbunia sonorensis",
+      "Stenocereus alamosensis"
+    ]
   },
   {
     "id": "stenocereus-montanus-britton-rose-buxb",
     "name": "Stenocereus montanus (Britton & Rose) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Glandulicereus montanus",
+      "Lemaireocereus montanus",
+      "Rathbunia montana",
+      "Ritterocereus montanus",
+      "Stenocereus montanus"
+    ]
   },
   {
     "id": "stenocereus-standleyi-jgortega-buxb",
     "name": "Stenocereus standleyi (J.G.Ortega) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Lemaireocereus standleyi",
+      "Rathbunia standleyi",
+      "Ritterocereus standleyi",
+      "Stenocereus standleyi"
+    ]
   },
   {
     "id": "stenocereus-treleasei-rose-backeb",
     "name": "Stenocereus treleasei (Rose) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cereus treleasei",
+      "Lemaireocereus treleasei",
+      "Rathbunia treleasei",
+      "Stenocereus treleasei"
+    ]
   },
   {
     "id": "stenocereus-chacalapensis-bravo-tmac-doug-buxb",
     "name": "Stenocereus chacalapensis (Bravo & T.Mac Doug.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Glandulicereus chacalapensis",
+      "Rathbunia chacalapensis",
+      "Ritterocereus chacalapensis",
+      "Stenocereus chacalapensis"
+    ]
   },
   {
     "id": "stenocereus-aragonii-facweber-buxb",
@@ -139,6 +289,12 @@
     "id": "stenocereus-martinezii-jgortega-buxb",
     "name": "Stenocereus martinezii (J.G.Ortega) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Glandulicereus martinezii",
+      "Lemaireocereus martinezii",
+      "Rathbunia martinezii",
+      "Stenocereus martinezii"
+    ]
   }
 ]

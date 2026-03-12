@@ -15,12 +15,24 @@
     "id": "weberocereus-bradei-britton-rose-drhunt",
     "name": "Weberocereus bradei (Britton & Rose) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Eccremocactus bradei",
+      "Epiphyllum bradei",
+      "Phyllocactus bradei",
+      "Weberocereus bradei"
+    ]
   },
   {
     "id": "weberocereus-imitans-kimnach-hutchison-drhunt",
     "name": "Weberocereus imitans (Kimnach & Hutchison) D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cryptocereus imitans",
+      "Eccremocactus imitans",
+      "Weberocereus imitans",
+      "Werckleocereus imitans"
+    ]
   }
 ]

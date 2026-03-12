@@ -209,6 +209,10 @@
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
 
     if (cardInfraspecificWrap) cardInfraspecificWrap.hidden = true;
+    var morphWrap = document.getElementById('card-morphology-wrap');
+    var photoWrap = document.getElementById('card-photo-wrap');
+    if (morphWrap) morphWrap.hidden = true;
+    if (photoWrap) photoWrap.hidden = true;
     cardSpeciesWrap.hidden = false;
     cardSpeciesList.innerHTML = '<li>Загрузка…</li>';
 
@@ -244,6 +248,10 @@
     if (!cardNameBackeberg || !cardLevel || !cardDesc) return;
     var sid = (speciesNode.id || '').toLowerCase();
     var entry = synonymsBridge && synonymsBridge.species ? synonymsBridge.species[sid] : null;
+    if (speciesNode.nameHistory && speciesNode.nameHistory.length > 0) {
+      entry = entry || {};
+      entry.nameHistory = speciesNode.nameHistory;
+    }
     setCardNames(entry, speciesNode.name || '—');
     cardLevel.textContent = levelLabel('species');
     var desc = (speciesNode.description || '').trim();
@@ -262,6 +270,38 @@
         cardInfraspecificWrap.hidden = false;
       } else {
         cardInfraspecificWrap.hidden = true;
+      }
+    }
+    var morphWrap = document.getElementById('card-morphology-wrap');
+    var morphList = document.getElementById('card-morphology-list');
+    if (morphWrap && morphList) {
+      var morphParts = [];
+      if (speciesNode.morphology_stem) morphParts.push({ label: 'Стебель', text: speciesNode.morphology_stem });
+      if (speciesNode.morphology_spines) morphParts.push({ label: 'Колючки', text: speciesNode.morphology_spines });
+      if (speciesNode.morphology_flower) morphParts.push({ label: 'Цветок', text: speciesNode.morphology_flower });
+      if (speciesNode.morphology_fruit) morphParts.push({ label: 'Плод', text: speciesNode.morphology_fruit });
+      if (morphParts.length > 0) {
+        morphList.innerHTML = '';
+        morphParts.forEach(function (p) {
+          var li = document.createElement('li');
+          li.innerHTML = '<strong>' + p.label + ':</strong> ' + p.text;
+          morphList.appendChild(li);
+        });
+        morphWrap.hidden = false;
+      } else {
+        morphWrap.hidden = true;
+      }
+    }
+    var photoWrap = document.getElementById('card-photo-wrap');
+    var photoImg = document.getElementById('card-photo-main');
+    if (photoWrap && photoImg) {
+      var url = speciesNode.photo_main_url || speciesNode.photo_flower_url || '';
+      if (url) {
+        photoImg.src = url;
+        photoImg.alt = speciesNode.name || 'Фото';
+        photoWrap.hidden = false;
+      } else {
+        photoWrap.hidden = true;
       }
     }
   }

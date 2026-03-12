@@ -15,12 +15,26 @@
     "id": "pseudorhipsalis-himantoclada-rol-goss-britton-rose",
     "name": "Pseudorhipsalis himantoclada (Rol.-Goss.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Disocactus himantocladus",
+      "Pseudorhipsalis himantoclada",
+      "Rhipsalis himantoclada",
+      "Wittia costaricensis",
+      "Wittia himantoclada"
+    ]
   },
   {
     "id": "rhipsalis-acuminata-cufod-standl",
     "name": "Rhipsalis acuminata (Cufod.) Standl.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Disocactus acuminatus",
+      "Disocactus horichii",
+      "Pseudorhipsalis acuminata",
+      "Pseudorhipsalis horichii",
+      "Rhipsalis acuminata"
+    ]
   }
 ]

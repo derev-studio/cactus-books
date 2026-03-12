@@ -3,6 +3,13 @@
     "id": "cumarinia-odorata-boed-buxb",
     "name": "Cumarinia odorata (Boed.) Buxb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Coryphantha odorata",
+      "Cumarinia odorata",
+      "Neobesseya odorata",
+      "Neolloydia odonta",
+      "Neolloydia odorata"
+    ]
   }
 ]

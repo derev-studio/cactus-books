@@ -9,7 +9,17 @@
     "id": "sclerocactus-warnockii-ldbenson-nptaylor",
     "name": "Sclerocactus warnockii (L.D.Benson) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinomastus gautii",
+      "Echinomastus warnockii",
+      "Neolloydia gautii",
+      "Neolloydia warnockii",
+      "Pediocactus gautii",
+      "Pediocactus warnockii",
+      "Sclerocactus warnockii",
+      "Turbinicarpus gautii"
+    ]
   },
   {
     "id": "sclerocactus-unguispinus-engelm-nptaylor",
@@ -21,24 +31,64 @@
         "name": "Sclerocactus unguispinus var. durangensis (Ruenge) N.P.Taylor",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Echinocactus durangensis",
+      "Echinocactus trollietii",
+      "Echinocactus unguispinus",
+      "Echinomastus durangensis",
+      "Echinomastus laui",
+      "Echinomastus mapimiensis",
+      "Echinomastus unguispinus",
+      "Neolloydia durangensis",
+      "Neolloydia unguispina",
+      "Pediocactus unguispinus",
+      "Sclerocactus unguispinus",
+      "Thelocactus durangensis",
+      "Thelocactus unguispinus"
     ]
   },
   {
     "id": "sclerocactus-mariposensis-hester-nptaylor",
     "name": "Sclerocactus mariposensis (Hester) N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinomastus mariposensis",
+      "Neolloydia mariposensis",
+      "Pediocactus mariposensis",
+      "Sclerocactus mariposensis"
+    ]
   },
   {
     "id": "sclerocactus-polyancistrus-engelm-jmbigelow-britton-rose",
     "name": "Sclerocactus polyancistrus (Engelm. & J.M.Bigelow) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus polyancistrus",
+      "Ferocactus polyancistrus",
+      "Pediocactus polyancistrus",
+      "Sclerocactus polyancistrus"
+    ]
   },
   {
     "id": "neolloydia-johnsonii-parry-ex-engelm-ldbenson",
     "name": "Neolloydia johnsonii (Parry ex Engelm.) L.D.Benson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Echinocactus johnsonii",
+      "Echinocactus krausei",
+      "Echinomastus arizonicus",
+      "Echinomastus johnstonii",
+      "Echinomastus krausei",
+      "Ferocactus johnsonii",
+      "Neolloydia johnsonii",
+      "Pediocactus johnsonii",
+      "Sclerocactus johnsonii",
+      "Thelocactus johnsonii",
+      "Thelocactus krausei"
+    ]
   }
 ]

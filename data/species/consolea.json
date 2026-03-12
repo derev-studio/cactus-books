@@ -9,6 +9,18 @@
     "id": "opuntia-moniliformis-l-haw-ex-steud",
     "name": "Opuntia moniliformis (L.) Haw. ex Steud.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus ferox",
+      "Cactus moniliformis",
+      "Cereus moniliformis",
+      "Consolea ferox",
+      "Consolea intermedia",
+      "Consolea moniliformis",
+      "Nopalea moniliformis",
+      "Opuntia dolabriformis",
+      "Opuntia ferox",
+      "Opuntia moniliformis"
+    ]
   }
 ]

@@ -33,6 +33,17 @@
         "name": "Ariocarpus fissuratus var. fissuratus",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Anhalonium engelmannii",
+      "Anhalonium fissuratum",
+      "Ariocarpus fissuratus",
+      "Ariocarpus lloydii",
+      "Mammillaria fissurata",
+      "Roseocactus fissurams",
+      "Roseocactus fissuratus",
+      "Roseocactus intermedius",
+      "Roseocactus lloydii"
     ]
   },
   {
@@ -51,18 +62,40 @@
         "name": "Ariocarpus trigonus var. elongatus (Salm-Dyck) Backeb.",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Anhalonium trigonum",
+      "Ariocarpus trigonus"
     ]
   },
   {
     "id": "ariocarpus-kotschoubeyanus-lem-kschum",
     "name": "Ariocarpus kotschoubeyanus (Lem.) K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Anhalonium fissipedum",
+      "Anhalonium kotchubeyi",
+      "Anhalonium kotschoubeyanum",
+      "Anhalonium sulcatum",
+      "Ariocarpus kotschoubeyanus",
+      "Ariocarpus macdowellii",
+      "Ariocarpus rotchubeyanus",
+      "Ariocarpus sulcatus",
+      "Cactus kotschoubeyi",
+      "Roseocactus kotschoubeyanus",
+      "Stromatocactus kotschoubeyi",
+      "Stromatocarpus kotschoubeyi"
+    ]
   },
   {
     "id": "ariocarpus-agavoides-castañeda-efanderson",
     "name": "Ariocarpus agavoides (Castañeda) E.F.Anderson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ariocarpus agavoides",
+      "Neogomesia agavoides"
+    ]
   }
 ]

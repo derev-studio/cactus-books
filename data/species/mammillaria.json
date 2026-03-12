@@ -8,6 +8,18 @@
         "name": "Mammillaria hahniana subsp. woodsii (R.T.Craig) D.R.Hunt",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Mammillaria bravoae",
+      "Mammillaria hahniana",
+      "Mammillaria mendeliana",
+      "Mammillaria saetigera",
+      "Mammillaria woodsii",
+      "Neomammillaria bravoae",
+      "Neomammillaria hahniana",
+      "Neomammillaria mendeliana",
+      "Neomammillaria saetigera",
+      "Neomammillaria woodsii"
     ]
   },
   {
@@ -23,6 +35,39 @@
         "name": "Mammillaria elongata subsp. echinaria (DC.) D.R.Hunt",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cactus anguineus",
+      "Cactus densus",
+      "Cactus elongatus",
+      "Cactus intertextus",
+      "Cactus minimus",
+      "Cactus pulvilliger",
+      "Cactus rufocroceus",
+      "Cactus stella-aurata",
+      "Cactus subcroceus",
+      "Cactus subechinatus",
+      "Cactus tenuis",
+      "Chilita elongata",
+      "Echinocactus densus",
+      "Krainzia elongata",
+      "Leptocladia elongata",
+      "Leptocladodia elongata",
+      "Mammillaria anguinea",
+      "Mammillaria anguineea",
+      "Mammillaria caespitosa",
+      "Mammillaria densa",
+      "Mammillaria echinata",
+      "Mammillaria elongata",
+      "Mammillaria intertexta",
+      "Mammillaria minima",
+      "Mammillaria rufocrocea",
+      "Mammillaria stella-aurata",
+      "Mammillaria subcrocea",
+      "Mammillaria subechinata",
+      "Mammillaria tenuis",
+      "Neomammillaria elongata",
+      "Neomammillaria subcrocea"
     ]
   },
   {
@@ -38,17 +83,91 @@
         "name": "Mammillaria bocasana subsp. eschauzieri (J.M.Coult.) W.A.Fitz Maur. & B.Fitz Maur.",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Cactus bocasanus",
+      "Cactus eschanzieri",
+      "Cactus eschauzieri",
+      "Chilita bocasana",
+      "Chilita eschanzieri",
+      "Chilita eschauzieri",
+      "Chilita haehneliana",
+      "Chilita hirsuta",
+      "Chilita icamolensis",
+      "Chilita knebeliana",
+      "Chilita kunzeana",
+      "Chilita longicoma",
+      "Ebnerella bocasana",
+      "Ebnerella haehneliana",
+      "Ebnerella icamolensis",
+      "Ebnerella knebeliana",
+      "Ebnerella kunzeana",
+      "Ebnerella longicoma",
+      "Krainzia bocasana",
+      "Mammillaria bocasana",
+      "Mammillaria eschanzieri",
+      "Mammillaria eschauzieri",
+      "Mammillaria haehneliana",
+      "Mammillaria hirsuta",
+      "Mammillaria icamolensis",
+      "Mammillaria knebeliana",
+      "Mammillaria kunzeana",
+      "Mammillaria longicoma",
+      "Neomammillaria bocasana",
+      "Neomammillaria eschausieri",
+      "Neomammillaria eschauzieri",
+      "Neomammillaria hirsuta",
+      "Neomammillaria kunzeana",
+      "Neomammillaria longicoma"
     ]
   },
   {
     "id": "mammillaria-zeilmanniana",
     "name": "Mammillaria zeilmanniana",
-    "description": "Компактный вид с розовыми или фиолетовыми цветками, цветёт рано и обильно. Мексика."
+    "description": "Компактный вид с розовыми или фиолетовыми цветками, цветёт рано и обильно. Мексика.",
+    "nameHistory": [
+      "Chilita zeilmanniana",
+      "Ebnerella zeilmanniana",
+      "Mammillaria zeilmanniana",
+      "Neomammillaria zeilmanniana"
+    ]
   },
   {
     "id": "mammillaria-geminispina",
     "name": "Mammillaria geminispina",
-    "description": "Белые опушённые ареолы, красные цветки. Образует крупные куртины."
+    "description": "Белые опушённые ареолы, красные цветки. Образует крупные куртины.",
+    "nameHistory": [
+      "Cactus acanthophlegmus",
+      "Cactus bellatulus",
+      "Cactus columnaris",
+      "Cactus dyckianus",
+      "Cactus elegans",
+      "Cactus geminispinus",
+      "Cactus klugii",
+      "Cactus leucocentrus",
+      "Cactus meissneri",
+      "Cactus nobilis",
+      "Mammillaria acanthophlegma",
+      "Mammillaria bellatula",
+      "Mammillaria bicolor",
+      "Mammillaria daedalea",
+      "Mammillaria dyckiana",
+      "Mammillaria eburnea",
+      "Mammillaria elegans",
+      "Mammillaria geminispina",
+      "Mammillaria klugei",
+      "Mammillaria klugii",
+      "Mammillaria leucocephala",
+      "Mammillaria nobilis",
+      "Mammillaria recta",
+      "Mammillaria splendens",
+      "Mammillaria toaldoae",
+      "Neomammillaria acanthophlegma",
+      "Neomammillaria acanthoplegma",
+      "Neomammillaria bicolor",
+      "Neomammillaria elegans",
+      "Neomammillaria geminispina"
+    ]
   },
   {
     "id": "mammillaria-discolor-haw",
@@ -266,7 +385,19 @@
     "id": "mammillaria-rekoi-britton-rose-vaupel",
     "name": "Mammillaria rekoi (Britton & Rose) Vaupel",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ebnerella rekoi",
+      "Mammillaria albrechtiana",
+      "Mammillaria krasuckae",
+      "Mammillaria mitlensis",
+      "Mammillaria pseudorekoi",
+      "Mammillaria pullihamata",
+      "Mammillaria rekoi",
+      "Mammillaria rekoiana",
+      "Mammillaria sanjuanensis",
+      "Neomammillaria rekoi"
+    ]
   },
   {
     "id": "mammillaria-pottsii-scheer-ex-salm-dyck",
@@ -374,7 +505,12 @@
     "id": "mammillaria-kraehenbuehlii-krainz-krainz",
     "name": "Mammillaria kraehenbuehlii (Krainz) Krainz",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Escobariopsis kraehenbuehlii",
+      "Mammillaria kraehenbuehlii",
+      "Pseudomammillaria kraehenbuehlii"
+    ]
   },
   {
     "id": "mammillaria-polyedra-mart",
@@ -486,6 +622,22 @@
         "name": "Mammillaria prolifera var. texana (Engelm.) A.Berger",
         "rank": "variety"
       }
+    ],
+    "nameHistory": [
+      "Cactus glomeratus",
+      "Cactus griseus",
+      "Cactus proliferus",
+      "Cactus stellaris",
+      "Cactus stellatus",
+      "Chilita prolifera",
+      "Ebnerella prolifera",
+      "Escobariopsis prolifera",
+      "Mammillaria glomerata",
+      "Mammillaria grisea",
+      "Mammillaria prolifera",
+      "Mammillaria pusilla",
+      "Mammillaria stellaris",
+      "Neomammillaria prolifera"
     ]
   },
   {
@@ -516,7 +668,12 @@
     "id": "mammillaria-scrippsiana-britton-rose-orcutt",
     "name": "Mammillaria scrippsiana (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria pseudoscrippsiana",
+      "Mammillaria scrippsiana",
+      "Neomammillaria scrippsiana"
+    ]
   },
   {
     "id": "mammillaria-jaliscana-britton-rose-boed",
@@ -528,6 +685,13 @@
         "name": "Mammillaria jaliscana subsp. zacatecasensis (Shurly) D.R.Hunt",
         "rank": "subspecies"
       }
+    ],
+    "nameHistory": [
+      "Chilita jaliscana",
+      "Ebnerella jaliscana",
+      "Escobariopsis jaliscana",
+      "Mammillaria jaliscana",
+      "Neomammillaria jaliscana"
     ]
   },
   {
@@ -622,7 +786,12 @@
     "id": "mammillaria-nunezii-britton-rose-orcutt",
     "name": "Mammillaria nunezii (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Ebnerella nunezii",
+      "Mammillaria nunezii",
+      "Neomammillaria nunezii"
+    ]
   },
   {
     "id": "mammillaria-rhodantha-link-otto",
@@ -748,7 +917,16 @@
     "id": "mammillaria-coahuilensis-boed-moran",
     "name": "Mammillaria coahuilensis (Boed.) Moran",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Haagea schwarzii",
+      "Mammillaria albiarmata",
+      "Mammillaria coahuilensis",
+      "Mammillaria schwartzii",
+      "Neomammillaria schwarzii",
+      "Porfiria coahuilensis",
+      "Porfiria schwarzii"
+    ]
   },
   {
     "id": "mammillaria-limonensis-repp",
@@ -814,7 +992,13 @@
     "id": "mammillaria-pectinifera-stein-facweber",
     "name": "Mammillaria pectinifera (Stein) F.A.C.Weber",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria pectinifera",
+      "Neomammillaria pectinata",
+      "Pelecyphora pectinata",
+      "Solisia pectinata"
+    ]
   },
   {
     "id": "mammillaria-sphaerica-adietr-ex-engelm",
@@ -832,7 +1016,11 @@
     "id": "mammillaria-johnstonii-britton-rose-orcutt",
     "name": "Mammillaria johnstonii (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria johnstonii",
+      "Neomammillaria johnstonii"
+    ]
   },
   {
     "id": "mammillaria-painteri-rose-ex-quehl",
@@ -862,7 +1050,14 @@
     "id": "mammillaria-longiflora-britton-rose-aberger",
     "name": "Mammillaria longiflora (Britton & Rose) A.Berger",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Chilita longiflora",
+      "Krainzia longiflora",
+      "Mammillaria longiflora",
+      "Neomammillaria longiflora",
+      "Phellosperma longiflora"
+    ]
   },
   {
     "id": "mammillaria-magnifica-fgbuchenau",
@@ -922,7 +1117,13 @@
     "id": "mammillaria-brandegeei-jmcoult-engelm-ex-kbrandegee",
     "name": "Mammillaria brandegeei (J.M.Coult.) Engelm. ex K.Brandegee",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus brandegeei",
+      "Mammillaria brandegeei",
+      "Mammillaria magdalensis",
+      "Neomammillaria brandegeei"
+    ]
   },
   {
     "id": "mammillaria-petrophila-kbrandegee",
@@ -970,7 +1171,11 @@
     "id": "mammillaria-evermanniana-britton-rose-orcutt",
     "name": "Mammillaria evermanniana (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria evermanniana",
+      "Neomammillaria evermanniana"
+    ]
   },
   {
     "id": "mammillaria-sonorensis-rtcraig",
@@ -982,13 +1187,23 @@
     "id": "mammillaria-pringlei-jmcoult-kbrandegee",
     "name": "Mammillaria pringlei (J.M.Coult.) K.Brandegee",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus pringlei",
+      "Mammillaria parensis",
+      "Mammillaria pringlei",
+      "Neomammillaria pringlei"
+    ]
   },
   {
     "id": "mammillaria-peninsularis-britton-rose-orcutt",
     "name": "Mammillaria peninsularis (Britton & Rose) Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria peninsularis",
+      "Neomammillaria peninsularis"
+    ]
   },
   {
     "id": "mammillaria-aureilanata-backeb",
@@ -1012,7 +1227,12 @@
     "id": "mammillaria-guerreronis-bravo-boed",
     "name": "Mammillaria guerreronis (Bravo) Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Mammillaria guerreronis",
+      "Mammillaria zapilotensis",
+      "Neomammillaria guerreronis"
+    ]
   },
   {
     "id": "mammillaria-schwarzii-shurly",
@@ -1058,7 +1278,11 @@
     "id": "mammillaria-albiflora-werderm-backeb",
     "name": "Mammillaria albiflora (Werderm.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Escobariopsis albiflora",
+      "Mammillaria albiflora"
+    ]
   },
   {
     "id": "mammillaria-fuscata-link-otto",

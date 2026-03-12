@@ -3,12 +3,40 @@
     "id": "lophophora-williamsii-lem-ex-salm-dyck-jmcoult",
     "name": "Lophophora williamsii (Lem. ex Salm-Dyck) J.M.Coult.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Anhalonium lewinii",
+      "Anhalonium williamsii",
+      "Ariocarpus williamsii",
+      "Echinocactus jourdanianus",
+      "Echinocactus lewinii",
+      "Echinocactus lewisii",
+      "Echinocactus williamsii",
+      "Lophophora alberto-vojtechii",
+      "Lophophora echinata",
+      "Lophophora jourdaniana",
+      "Lophophora lewinii",
+      "Lophophora lutea",
+      "Lophophora pentagona",
+      "Lophophora pluricostata",
+      "Lophophora williamsii",
+      "Mammillaria lewinii",
+      "Mammillaria williamsii",
+      "Peyotl xochimilcensis"
+    ]
   },
   {
     "id": "lophophora-diffusa-croizat-bravo",
     "name": "Lophophora diffusa (Croizat) Bravo",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Lophophora diffusa",
+      "Lophophora koehresii",
+      "Lophophora viridescens",
+      "Peyotl diffusus",
+      "Peyotl koehresii",
+      "Peyotl viridescens"
+    ]
   }
 ]

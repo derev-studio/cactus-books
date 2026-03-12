@@ -19,6 +19,16 @@
     "id": "melocactus-lemairei-monv-ex-lem-miq",
     "name": "Melocactus lemairei (Monv. ex Lem.) Miq.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "nameHistory": [
+      "Cactus lemairei",
+      "Echinocactus lemairei",
+      "Melocactus conicus",
+      "Melocactus crassispinus",
+      "Melocactus hispaniolicus",
+      "Melocactus lemairei",
+      "Melocactus macrocephalus",
+      "Melocactus pycnacanthus"
+    ]
   }
 ]
