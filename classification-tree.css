@@ -524,6 +524,55 @@
   color: var(--cactus-accent);
 }
 
+.card-panel__see-also-wrap {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cactus-border-light);
+}
+
+.card-panel__see-also-wrap[hidden] {
+  display: none !important;
+}
+
+.card-panel__see-also-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cactus-text);
+}
+
+.card-panel__see-also-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-panel__see-also-list li {
+  margin: 0 0 0.25rem;
+}
+
+.card-panel__see-also-list a {
+  font-style: italic;
+  color: var(--cactus-accent);
+  text-decoration: none;
+}
+
+.card-panel__see-also-list a:hover {
+  text-decoration: underline;
+}
+
+/* Ссылки в блоке имён (синонимы, ранее) */
+.card-panel__name-previously a,
+.card-panel__name-synonyms a {
+  color: var(--cactus-accent);
+  text-decoration: none;
+}
+
+.card-panel__name-previously a:hover,
+.card-panel__name-synonyms a:hover {
+  text-decoration: underline;
+}
+
 /* Мобильная версия: карточка на всю ширину поверх или снизу */
 @media (max-width: 768px) {
   .classification-body {

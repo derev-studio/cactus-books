@@ -34,6 +34,8 @@
   var cardSpeciesList = null;
   var cardInfraspecificWrap = null;
   var cardInfraspecificList = null;
+  var cardSeeAlsoWrap = null;
+  var cardSeeAlsoList = null;
   var taxonomy = null;
   var speciesCache = {};
   var synonymsBridge = null;
@@ -75,14 +77,37 @@
 
   var CC_BY_SA_URL = 'https://creativecommons.org/licenses/by-sa/4.0/deed.ru';
 
+  /** Ссылка на карточку вида по латинскому имени (Genus epithet → ?genus=...&species=...) */
+  function speciesHref(latinName) {
+    if (!latinName || typeof latinName !== 'string') return '';
+    var s = latinName.trim().replace(/\s*[(\[].*$/, '').trim();
+    var parts = s.split(/\s+/);
+    if (parts.length >= 2) {
+      var genus = parts[0].toLowerCase().replace(/[^a-z0-9-]/g, '');
+      var epithet = parts[1].toLowerCase().replace(/[^a-z0-9-]/g, '');
+      if (genus && epithet) {
+        var speciesId = genus + '-' + epithet;
+        var base = window.location.pathname || '/classification-cacti.html';
+        return base + '?genus=' + encodeURIComponent(genus) + '&species=' + encodeURIComponent(speciesId);
+      }
+    }
+    return '';
+  }
+
+  function escapeHtml(s) {
+    if (s == null) return '';
+    var t = String(s);
+    return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
   function updateUrl(genusId, speciesId) {
     if (!window.history || !window.history.replaceState) return;
     try {
       var url = new URL(window.location.href);
       if (genusId) url.searchParams.set('genus', String(genusId).toLowerCase());
-      else url.searchParams["delete"] && url.searchParams["delete"]('genus');
+      else url.searchParams.delete('genus');
       if (speciesId) url.searchParams.set('species', String(speciesId).toLowerCase());
-      else url.searchParams["delete"] && url.searchParams["delete"]('species');
+      else url.searchParams.delete('species');
       window.history.replaceState({}, '', url.toString());
     } catch (e) {
       // ignore URL errors (старые браузеры или нестандартная среда)
@@ -241,28 +266,33 @@
       cardNameModern.style.display = entry && entry.modern ? '' : 'none';
     }
     if (cardNamePreviously) {
-      var prevText = '';
+      var prevHtml = '';
       if (entry && entry.nameHistory && entry.nameHistory.length > 1) {
-        prevText = 'Ранее / синонимы: ' + entry.nameHistory.join(' → ');
+        var prevParts = entry.nameHistory.map(function (n) {
+          var href = speciesHref(n);
+          return href ? '<a href="' + escapeHtml(href) + '">' + escapeHtml(n) + '</a>' : escapeHtml(n);
+        });
+        prevHtml = 'Ранее / синонимы: ' + prevParts.join(' → ');
       } else if (entry && entry.previouslyCalled) {
-        prevText = 'Ранее назывался: ' + entry.previouslyCalled;
+        var pc = entry.previouslyCalled;
+        var pcHref = speciesHref(pc);
+        prevHtml = 'Ранее назывался: ' + (pcHref ? '<a href="' + escapeHtml(pcHref) + '">' + escapeHtml(pc) + '</a>' : escapeHtml(pc));
       }
-      if (cardNamePreviously) {
-        cardNamePreviously.textContent = prevText;
-        cardNamePreviously.style.display = prevText ? '' : 'none';
-      }
+      cardNamePreviously.innerHTML = prevHtml;
+      cardNamePreviously.style.display = prevHtml ? '' : 'none';
     }
     if (cardNameSynonyms) {
-      var synText = '';
-      if (entry && entry.synonyms && entry.synonyms.length > 0 && !(entry.nameHistory && entry.nameHistory.length > 1)) {
-        synText = 'Синонимы / базионим: ' + entry.synonyms.join(', ');
-      } else if (entry && entry.synonyms && entry.synonyms.length > 0) {
-        synText = 'Синонимы: ' + entry.synonyms.join(', ');
+      var synHtml = '';
+      if (entry && entry.synonyms && entry.synonyms.length > 0) {
+        var synParts = entry.synonyms.map(function (n) {
+          var href = speciesHref(n);
+          return href ? '<a href="' + escapeHtml(href) + '">' + escapeHtml(n) + '</a>' : escapeHtml(n);
+        });
+        var synPrefix = (entry.nameHistory && entry.nameHistory.length > 1) ? 'Синонимы: ' : 'Синонимы / базионим: ';
+        synHtml = synPrefix + synParts.join(', ');
       }
-      if (cardNameSynonyms) {
-        cardNameSynonyms.textContent = synText;
-        cardNameSynonyms.style.display = synText ? '' : 'none';
-      }
+      cardNameSynonyms.innerHTML = synHtml;
+      cardNameSynonyms.style.display = synHtml ? '' : 'none';
     }
   }
 
@@ -279,6 +309,7 @@
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
 
     if (cardInfraspecificWrap) cardInfraspecificWrap.hidden = true;
+    if (cardSeeAlsoWrap) cardSeeAlsoWrap.hidden = true;
     var morphWrap = document.getElementById('card-morphology-wrap');
     var photoWrap = document.getElementById('card-photo-wrap');
     if (morphWrap) morphWrap.hidden = true;
@@ -396,6 +427,32 @@
         photoWrap.hidden = true;
       }
     }
+    // Смотрите также: 3 других вида того же рода
+    if (cardSeeAlsoWrap && cardSeeAlsoList) {
+      var list = speciesCache[(genusId || '').toLowerCase()] || [];
+      var others = list.filter(function (sp) {
+        return (sp.id || '').toLowerCase() !== (speciesNode.id || '').toLowerCase();
+      });
+      for (var j = others.length - 1; j > 0; j--) {
+        var k = Math.floor(Math.random() * (j + 1));
+        var tmp = others[j];
+        others[j] = others[k];
+        others[k] = tmp;
+      }
+      var take = Math.min(3, others.length);
+      cardSeeAlsoList.innerHTML = '';
+      for (var i = 0; i < take; i++) {
+        var sp = others[i];
+        var href = (window.location.pathname || '/classification-cacti.html') + '?genus=' + encodeURIComponent((genusId || '').toLowerCase()) + '&species=' + encodeURIComponent((sp.id || '').toLowerCase());
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = href;
+        a.textContent = sp.name || sp.id || '—';
+        li.appendChild(a);
+        cardSeeAlsoList.appendChild(li);
+      }
+      cardSeeAlsoWrap.hidden = take === 0;
+    }
   }
 
   function renderBreadcrumb() {
@@ -476,6 +533,8 @@
     cardSpeciesList = document.getElementById('card-species-list');
     cardInfraspecificWrap = document.getElementById('card-infraspecific-wrap');
     cardInfraspecificList = document.getElementById('card-infraspecific-list');
+    cardSeeAlsoWrap = document.getElementById('card-see-also-wrap');
+    cardSeeAlsoList = document.getElementById('card-see-also-list');
 
     // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки
     try {
