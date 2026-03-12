@@ -201,6 +201,7 @@
   function openGenusCard(genusNode) {
     if (!cardPanel || !cardNameBackeberg || !cardLevel || !cardDesc || !cardSpeciesWrap || !cardSpeciesList) return;
     cardPanel.hidden = false;
+    cardPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     var gid = (genusNode.id || '').toLowerCase();
     var entry = synonymsBridge && synonymsBridge.genera ? synonymsBridge.genera[gid] : null;
     setCardNames(entry, genusNode.name || '—');
@@ -246,6 +247,7 @@
 
   function showSpeciesInCard(speciesNode, genusName) {
     if (!cardNameBackeberg || !cardLevel || !cardDesc) return;
+    if (cardPanel) cardPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     var sid = (speciesNode.id || '').toLowerCase();
     var entry = synonymsBridge && synonymsBridge.species ? synonymsBridge.species[sid] : null;
     if (speciesNode.nameHistory && speciesNode.nameHistory.length > 0) {
