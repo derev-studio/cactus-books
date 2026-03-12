@@ -58,6 +58,22 @@
     return name + ' — вид рода ' + (genusName || '') + '. Подробное описание будет добавлено позже.';
   }
 
+  function wikiArticleUrl(speciesName) {
+    if (!speciesName || typeof speciesName !== 'string') return '';
+    var s = speciesName.trim().replace(/\s*[(\[].*$/, '').trim();
+    var parts = s.split(/\s+/);
+    if (parts.length >= 2) {
+      var genus = parts[0].replace(/\×/g, '').trim();
+      var epithet = parts[1].replace(/\×/g, '').trim();
+      if (genus && epithet) {
+        return 'https://en.wikipedia.org/wiki/' + encodeURIComponent(genus + '_' + epithet);
+      }
+    }
+    return 'https://en.wikipedia.org/wiki/Cactaceae';
+  }
+
+  var CC_BY_SA_URL = 'https://creativecommons.org/licenses/by-sa/4.0/deed.ru';
+
   function createNodeRow(node, depth, parentEl) {
     var children = getChildren(node);
     var isLeaf = children.length === 0;
@@ -298,7 +314,8 @@
         var morphSource = document.getElementById('card-morphology-source');
         if (morphSource) {
           if (speciesNode.morphology_source === 'wikipedia') {
-            morphSource.textContent = 'Источник: Wikipedia';
+            var wikiUrl = wikiArticleUrl(speciesNode.name);
+            morphSource.innerHTML = 'Источник: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). Лицензия: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
             morphSource.hidden = false;
           } else {
             morphSource.hidden = true;
@@ -319,7 +336,8 @@
         photoWrap.hidden = false;
         if (photoSource) {
           if (speciesNode.photo_source === 'wikipedia') {
-            photoSource.textContent = 'Фото: Wikipedia';
+            var photoWikiUrl = wikiArticleUrl(speciesNode.name);
+            photoSource.innerHTML = 'Фото: <a href="' + photoWikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
             photoSource.hidden = false;
           } else {
             photoSource.hidden = true;

@@ -431,6 +431,13 @@
   font-size: 0.8rem;
   color: var(--cactus-muted-on-dark, rgba(255,255,255,0.65));
 }
+.card-panel__source-note a {
+  color: #1a4a7a;
+  text-decoration: underline;
+}
+.card-panel__source-note a:hover {
+  color: var(--cactus-accent);
+}
 
 .card-panel__photo-wrap {
   margin-top: 1rem;
