@@ -3,6 +3,10 @@
     "id": "leuchtenbergia-principis-fisch-ex-hook",
     "name": "Leuchtenbergia principis Fisch. ex Hook.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Leuchtenbergia_principis.jpg/330px-Leuchtenbergia_principis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Leuchtenbergia is a genus of cactus which has only one species, Leuchtenbergia principis. It is native to north-central Mexico. The genus is named after Maximilian Eugen Joseph (1817–1852), Duke of Leuchtenberg and amateur botanist.",
+    "morphology_source": "wikipedia"
   }
 ]

@@ -189,7 +189,11 @@
     "id": "opuntia-fosbergii-cbwolf",
     "name": "Opuntia fosbergii C.B.Wolf",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cylindropuntia_fosbergii.jpg/330px-Cylindropuntia_fosbergii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia fosbergii is a species of cactus known by the common names Hoffmann's teddybear cholla, pink teddy-bear cholla, and Mason Valley cholla.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-ramosissima-engelm",
@@ -244,13 +248,21 @@
     "id": "opuntia-bigelovii-engelm",
     "name": "Opuntia bigelovii Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cylindropuntia_bigelovii.jpg/330px-Cylindropuntia_bigelovii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia bigelovii, the teddy-bear cholla, is a cholla cactus species native to Northwestern Mexico, and to the United States in California, Arizona, and Nevada.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-echinocarpa-engelm-jmbigelow",
     "name": "Opuntia echinocarpa Engelm. & J.M.Bigelow",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cylindropuntia_echinocarpa_1.jpg/330px-Cylindropuntia_echinocarpa_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia echinocarpa is a species of cactus known by the common names silver cholla, golden cholla, and Wiggins' cholla. It was formerly named Opuntia echinocarpa.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-arbuscula-engelm",
@@ -268,19 +280,31 @@
     "id": "opuntia-acanthocarpa-engelm-jmbigelow",
     "name": "Opuntia acanthocarpa Engelm. & J.M.Bigelow",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Buckhorn_Cholla.JPG/330px-Buckhorn_Cholla.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia acanthocarpa, commonly referred to as buckhorn cholla, is a cholla native to the Mojave, Sonoran, and Colorado Deserts of North America. Along with Cylindropuntia bigelovii, it is the most common cholla found in these deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-molesta-brandegee",
     "name": "Opuntia molesta Brandegee",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Cylindropuntia_molesta_molesta_10.jpeg/330px-Cylindropuntia_molesta_molesta_10.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia molesta is a cactus species that is endemic to Baja California state in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-whipplei-engelm-jmbigelow",
     "name": "Opuntia whipplei Engelm. & J.M.Bigelow",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Cylindropuntia_whipplei_13.jpeg/330px-Cylindropuntia_whipplei_13.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia whipplei is a member of the cactus family, Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-kelvinensis-vegrant-kagrant",

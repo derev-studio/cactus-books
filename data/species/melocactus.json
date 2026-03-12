@@ -13,7 +13,11 @@
         "name": "Melocactus curvispinus subsp. curvispinus",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Melocactus_curvispinus_curvispinus_%281%29.jpg/330px-Melocactus_curvispinus_curvispinus_%281%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Melocactus curvispinus is a species of Melocactus found from southern Mexico to Venezuela.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "melocactus-lemairei-monv-ex-lem-miq",

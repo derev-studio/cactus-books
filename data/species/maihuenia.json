@@ -3,12 +3,20 @@
     "id": "maihuenia-poeppigii",
     "name": "Maihuenia poeppigii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Maihuenia_poeppigii_02.jpg/330px-Maihuenia_poeppigii_02.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Maihuenia poeppigii, commonly known in Chile as maihuén or hierba del guanaco, is a succulent cactus shrub from Argentina of a type called a cushion plant. The flowers and fruit are yellow. M. poeppigii is remarkably tolerant to moisture and cold temperatures.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "maihuenia-patagonica",
     "name": "Maihuenia patagonica",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Maihuenia_patigonica_%288417531292%29.jpg/330px-Maihuenia_patigonica_%288417531292%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Maihuenia patagonica, commonly known locally as chupasangre or siempre verde, is a succulent cactus shrub native to Chile and Argentina. Maihuenia patagonica is remarkably tolerant to moisture and cold temperatures.",
+    "morphology_source": "wikipedia"
   }
 ]

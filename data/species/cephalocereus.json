@@ -84,7 +84,11 @@
     "id": "cephalocereus-apicicephalium-eydawson",
     "name": "Cephalocereus apicicephalium E.Y.Dawson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cephalocereus_apicicephalium_5.jpg/330px-Cephalocereus_apicicephalium_5.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus apicicephalium is a species of cactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "neobuxbaumia-tetetzo-facweber-ex-jmcoult-backeb",

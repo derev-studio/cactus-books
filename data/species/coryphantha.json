@@ -33,7 +33,11 @@
     "id": "coryphantha-delicata-lbremer",
     "name": "Coryphantha delicata L.Bremer",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coryphantha_delicata_11.jpg/330px-Coryphantha_delicata_11.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha delicata is a small cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-radians-dc-britton-rose",
@@ -198,7 +202,11 @@
     "id": "coryphantha-georgii-boed",
     "name": "Coryphantha georgii Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Coryphantha_georgii_2.jpg/330px-Coryphantha_georgii_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha georgii is a species of cactus that is endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-pectinata-engelm",
@@ -263,7 +271,11 @@
         "name": "Coryphantha ramillosa subsp. santarosa Dicht & A.Lüthy",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Coryphantha_ramillosa_ramillosa_4.jpg/330px-Coryphantha_ramillosa_ramillosa_4.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha ramillosa is a rare species of cactus known by the common names bunched cory cactus and whiskerbush. It is native to the border region between Texas in the United States and Coahuila in Mexico. Because it was believed to be rare and threatened by a number of processes, it was federally listed as a threatened species of the United States in 1979.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-sulcata-engelm-britton-rose",
@@ -333,7 +345,11 @@
     "id": "coryphantha-jalpanensis-fgbuchenau",
     "name": "Coryphantha jalpanensis F.G.Buchenau",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Coryphantha_jalpanensis.jpg/330px-Coryphantha_jalpanensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha jalpanensis is a succulent plant belonging to the Cactaceae family. It is endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-pulleineana-backeb-glass",

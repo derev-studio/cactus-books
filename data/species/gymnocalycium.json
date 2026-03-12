@@ -3,31 +3,51 @@
     "id": "gymnocalycium-amerhauseri",
     "name": "Gymnocalycium amerhauseri",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Gymnocalycium_amerhauseri1MAWI.jpg/330px-Gymnocalycium_amerhauseri1MAWI.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium amerhauseri is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-baldianum",
     "name": "Gymnocalycium baldianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Gymnocalcium_baldianium.jpg/330px-Gymnocalcium_baldianium.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium baldianum, the spider-cactus or dwarf chin cactus, is a species of flowering plant in the cactus family Cactaceae, native to the Catamarca Province in Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-bayrianum",
     "name": "Gymnocalycium bayrianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gymnocalycium_bayrianum_GN88-69.JPG/330px-Gymnocalycium_bayrianum_GN88-69.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium bayrianum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-bodenbenderianum",
     "name": "Gymnocalycium bodenbenderianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Gymnocalycium_bodenbenderianum_pm.jpg/330px-Gymnocalycium_bodenbenderianum_pm.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium bodenbenderianum is a species of Gymnocalycium cactus from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-capillense",
     "name": "Gymnocalycium capillense",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Succu_Gymnocalycium_capillaense_01.JPG/330px-Succu_Gymnocalycium_capillaense_01.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium capillense is a species of Gymnocalycium cactus from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-mucidum",
@@ -53,7 +73,11 @@
         "name": "Gymnocalycium castellanosii subsp. ferocior",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Gymnocalycium_castellanosi.JPG/330px-Gymnocalycium_castellanosi.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium castellanosii is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-catamarcense",
@@ -71,7 +95,11 @@
     "id": "gymnocalycium-chacoense",
     "name": "Gymnocalycium chacoense",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Gymnocalycium_chacoense_42810.JPG/330px-Gymnocalycium_chacoense_42810.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium chacoense is a species of cactus in the genus Gymnocalycium, endemic to Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-chubutense",
@@ -83,13 +111,21 @@
     "id": "gymnocalycium-erinaceum",
     "name": "Gymnocalycium erinaceum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gymnocalycium_erinaceum.jpg/330px-Gymnocalycium_erinaceum.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium erinaceum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-eurypleurum",
     "name": "Gymnocalycium eurypleurum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Gymnocalycium_eurypleurum_Prague_2012_1.jpg/330px-Gymnocalycium_eurypleurum_Prague_2012_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium eurypleurum is a small \"chin cactus\" that is highly prized by cactus collectors and is known to be fairly easy to grow, albeit very slow",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-ferrarii",
@@ -107,7 +143,11 @@
         "name": "Gymnocalycium fischeri subsp. suyuquense",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Succu_Gymnocalycium_capillaense_01.JPG/330px-Succu_Gymnocalycium_capillaense_01.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium capillense is a species of Gymnocalycium cactus from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-fleischerianum",
@@ -137,13 +177,21 @@
         "name": "Gymnocalycium horstii subsp. horstii",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Gymnocalycium_horstii_%282%29.jpg/330px-Gymnocalycium_horstii_%282%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium horstii is a globular cactus resembling a loaf of bread.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-hossei",
     "name": "Gymnocalycium hossei",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Gymnocalycium_hossei_VoS853_30469.JPG/330px-Gymnocalycium_hossei_VoS853_30469.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium hossei is a species of cactus in the genus Gymnocalycium, endemic to Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-hyptiacanthum",
@@ -165,7 +213,11 @@
     "id": "gymnocalycium-kieslingii",
     "name": "Gymnocalycium kieslingii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Gymnocalycium_kieslingii_subsp._castaneum_41456.JPG/330px-Gymnocalycium_kieslingii_subsp._castaneum_41456.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium kieslingii is a species of cactus in the genus Gymnocalycium, endemic to Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-marsoneri",
@@ -215,7 +267,11 @@
         "name": "Gymnocalycium monvillei subsp. achirasense",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Gymnocalicium_multiflorum_3.JPG/330px-Gymnocalicium_multiflorum_3.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium monvillei is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-mostii",
@@ -231,7 +287,11 @@
         "name": "Gymnocalycium mostii subsp. valnicekianum",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Gymnocalycium_Mostii_Flower.jpg/330px-Gymnocalycium_Mostii_Flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium mostii is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-multiflorum",
@@ -243,7 +303,11 @@
     "id": "gymnocalycium-oenanthemum",
     "name": "Gymnocalycium oenanthemum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Gymnocalycium_carminanthum1MAWI.jpg/330px-Gymnocalycium_carminanthum1MAWI.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium oenanthemum is a species of flowering plant in the family Cactaceae, endemic to Argentina. A slightly flattened sphere growing to 12 cm (4.7 in), it has 10–13 ribs, each containing a row of tubercles with radial spines. In summer it bears a wine-red or pink daisy-like flower.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-papschii",
@@ -277,7 +341,11 @@
     "id": "gymnocalycium-quehlianum",
     "name": "Gymnocalycium quehlianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Gymnocalycium_quehlianum_BlKakteenT105.jpg/330px-Gymnocalycium_quehlianum_BlKakteenT105.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium quehlianum, the Quehla chin cactus, is a species of flowering plant in the family Cactaceae, native to northern Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-raineri",
@@ -299,7 +367,11 @@
         "name": "Gymnocalycium reductum subsp. reductum",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gymnocalycium_leeanum_4.JPG/330px-Gymnocalycium_leeanum_4.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium reductum is a species of Gymnocalycium from Uruguay and Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-rhodantherum",
@@ -353,19 +425,29 @@
         "name": "Gymnocalycium saglionis subsp. tilcarense",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Gymnocalycium_Saglionis.JPG/330px-Gymnocalycium_Saglionis.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium saglionis, the giant chin cactus, is a globular Gymnocalycium species endemic to northwest Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-stellatum",
     "name": "Gymnocalycium stellatum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Gymnocalycium_stellatum_3.JPG/330px-Gymnocalycium_stellatum_3.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium stellatum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-striglianum",
     "name": "Gymnocalycium striglianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "morphology_stem": "Gymnocalycium striglianum is a species of cactus in the genus Gymnocalycium, endemic to Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-tillianum",
@@ -377,13 +459,21 @@
     "id": "gymnocalycium-uebelmannianum",
     "name": "Gymnocalycium uebelmannianum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/G.uebelmannianum_WR_141.JPG/330px-G.uebelmannianum_WR_141.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium uebelmannianum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-robustum",
     "name": "Gymnocalycium robustum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Gymnocalycium_robustum_JO1028.jpg/330px-Gymnocalycium_robustum_JO1028.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium robustum is a species of Gymnocalycium from northern Córdoba and southern Santiago del Estero, Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-glaucum",
@@ -401,13 +491,21 @@
     "id": "gymnocalycium-mihanovichii",
     "name": "Gymnocalycium mihanovichii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Gymnocalycium_mihanovichii_4.JPG/330px-Gymnocalycium_mihanovichii_4.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium mihanovichii is a species of cactus from South America. The most popular cultivars are varied mutants which completely lack chlorophyll, exposing the red, orange, or yellow pigmentation. These mutant strains are often grafted onto the hylocereus cactus, and the combined plant is called a \"Moon Cactus\". Moon cacti are commonly grown as houseplants and are also known as Ruby Ball, Red Cap, Red Hibotan, or Hibotan cacti.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-calochlorum",
     "name": "Gymnocalycium calochlorum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Gymnocalycium_calochlorum_%286052744051%29.jpg/330px-Gymnocalycium_calochlorum_%286052744051%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium calochlorum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-pugionacanthum",
@@ -419,7 +517,11 @@
     "id": "gymnocalycium-stenopleurum",
     "name": "Gymnocalycium stenopleurum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/2010._%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0_%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2_%D0%B2_%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B5_%D0%BD%D0%B0_%D0%B4%D0%B5%D0%BD%D1%8C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_45.jpg/330px-2010._%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0_%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D0%B2_%D0%B2_%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B5_%D0%BD%D0%B0_%D0%B4%D0%B5%D0%BD%D1%8C_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_45.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium stenopleurum is a species of Gymnocalycium from Bolivia and Paraguay.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-acorrugatum",
@@ -437,13 +539,21 @@
     "id": "gymnocalycium-berchtii",
     "name": "Gymnocalycium berchtii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gymnocalycium_berchtii_GN158-418.jpg/330px-Gymnocalycium_berchtii_GN158-418.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium berchtii is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-esperanzae",
     "name": "Gymnocalycium esperanzae",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gymnocalycium_esperanzae_VoS1791_30439.JPG/330px-Gymnocalycium_esperanzae_VoS1791_30439.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium esperanzae is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-lukasikii",
@@ -477,7 +587,11 @@
     "id": "gymnocalycium-nigriareolatum",
     "name": "Gymnocalycium nigriareolatum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gymnocalycium_nigriareolatum_1000.jpg/330px-Gymnocalycium_nigriareolatum_1000.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium nigriareolatum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-poeschlii",
@@ -501,7 +615,9 @@
         "name": "Gymnocalycium taningaense subsp. taningaense",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "morphology_stem": "Gymnocalycium taningaense is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-walteri",
@@ -513,19 +629,27 @@
     "id": "gymnocalycium-alboareolatum",
     "name": "Gymnocalycium alboareolatum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "morphology_stem": "Gymnocalycium alboareolatum is a species of cactus in the genus Gymnocalycium, endemic to Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-angelae",
     "name": "Gymnocalycium angelae",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "morphology_stem": "Gymnocalycium angelae is a species of cactus in the genus Gymnocalycium, endemic to Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-chiquitanum",
     "name": "Gymnocalycium chiquitanum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Gymnocalycium_chiquitanum_%28Gymnocalycium_paediophilum%29-IMG_6753.JPG/330px-Gymnocalycium_chiquitanum_%28Gymnocalycium_paediophilum%29-IMG_6753.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium chiquitanum is a species of cactus in the genus Gymnocalycium, endemic to Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-erolesii",
@@ -543,7 +667,11 @@
         "name": "Gymnocalycium gibbosum subsp. gibbosum",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gymnocalycium_gibbosum.jpg/330px-Gymnocalycium_gibbosum.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium gibbosum is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-intertextum",
@@ -555,13 +683,21 @@
     "id": "gymnocalycium-ochoterenae",
     "name": "Gymnocalycium ochoterenae",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Gymnocalycium_moserianum.jpg/330px-Gymnocalycium_moserianum.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium ochoterenae is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-spegazzinii",
     "name": "Gymnocalycium spegazzinii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gymnocalycium_spegazzinii_3_Succulents_exhibition_in_Botanical_Garden_of_Charles_University_2016.jpg/330px-Gymnocalycium_spegazzinii_3_Succulents_exhibition_in_Botanical_Garden_of_Charles_University_2016.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium spegazzinii is a species of Gymnocalycium from Argentina and Bolivia named after the botanist C. L. Spegazzini.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-x-applanatum",
@@ -573,7 +709,11 @@
     "id": "gymnocalycium-denudatum",
     "name": "Gymnocalycium denudatum",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Gymnocalycium_denudatum_7.JPG/330px-Gymnocalycium_denudatum_7.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium denudatum is a species of Gymnocalycium from Brazil to Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-andreae",
@@ -585,7 +725,11 @@
         "name": "Gymnocalycium andreae subsp. carolinense",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Gymnocalycium_andreae.jpg/330px-Gymnocalycium_andreae.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium andreae is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-anisitsii",
@@ -601,13 +745,21 @@
         "name": "Gymnocalycium anisitsii subsp. anisitsii",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Gymnocalycium_anisitsii_-_pink_flower.jpg/330px-Gymnocalycium_anisitsii_-_pink_flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium anisitsii is a globular cactus belonging to the family Cactaceae. The specific epithet honors the Hungarian pharmacist Dániel Anisits J. (1856-1911).",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-bruchii",
     "name": "Gymnocalycium bruchii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Gymnocalycium_bruchii.JPG/330px-Gymnocalycium_bruchii.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium bruchii is a species of Gymnocalycium from Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-carminanthum",
@@ -625,7 +777,11 @@
     "id": "gymnocalycium-paraguayense",
     "name": "Gymnocalycium paraguayense",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Gymnocalycium_fleischerianum_c-4312_-_02A.jpg/330px-Gymnocalycium_fleischerianum_c-4312_-_02A.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium paraguayense is a species of Gymnocalycium from Paraguay.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-pflanzii",
@@ -645,7 +801,11 @@
         "name": "Gymnocalycium pflanzii subsp. pflanzii",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gymnocalycium_pflanzii_pm1.jpg/330px-Gymnocalycium_pflanzii_pm1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Gymnocalycium pflanzii is a species of Gymnocalycium from Bolivia and Paraguay.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "gymnocalycium-rauschii",

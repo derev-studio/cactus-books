@@ -9,13 +9,21 @@
         "name": "Cleistocactus winteri subsp. colademononis",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Cleistocactus_winteri_HabitusFlower_BotGard0906a.jpg/330px-Cleistocactus_winteri_HabitusFlower_BotGard0906a.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus winteri is a succulent of the family Cactaceae. Its common name is the golden rat tail. Cleistocactus colademononis, which has gained the Royal Horticultural Society's Award of Garden Merit, is sometimes considered to be a subspecies, Cleistocactus winteri subsp. colademono.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-parviflorus",
     "name": "Cleistocactus parviflorus",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Cleistocactus_parviflorus-IMG_6945.jpg/330px-Cleistocactus_parviflorus-IMG_6945.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus parviflorus is a species of columnar cacti in the genus Cleistocactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-tupizensis",
@@ -27,43 +35,71 @@
     "id": "cleistocactus-hyalacanthus",
     "name": "Cleistocactus hyalacanthus",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cleistocactus_hyalacanthus_1.jpg/330px-Cleistocactus_hyalacanthus_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus hyalacanthus is a species of columnar cacti in the genus Cleistocactus. The name comes from the Greek kleistos meaning closed because the flowers hardly open.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-ritteri",
     "name": "Cleistocactus ritteri",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cleistocactus_ritteri%2C_Jard%C3%ADn_Bot%C3%A1nico_de_M%C3%BAnich%2C_Alemania%2C_2013-05-04%2C_DD_01.jpg/330px-Cleistocactus_ritteri%2C_Jard%C3%ADn_Bot%C3%A1nico_de_M%C3%BAnich%2C_Alemania%2C_2013-05-04%2C_DD_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus ritteri is a species of Cleistocactus found in Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-samaipatanus",
     "name": "Cleistocactus samaipatanus",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Cleistocactus_samaipatanus_001.JPG/330px-Cleistocactus_samaipatanus_001.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus samaipatanus is a species of flowering plant in the family Cactaceae, native to Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-brookeae",
     "name": "Cleistocactus brookeae",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cleistocactus_brookeae1PAKAL.jpg/330px-Cleistocactus_brookeae1PAKAL.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus brookeae is a species of columnar cacti in the genus Cleistocactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-morawetzianus",
     "name": "Cleistocactus morawetzianus",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cleistocactus_morawetzianus_-_Botanischer_Garten%2C_Dresden%2C_Germany_-_DSC08890.JPG/330px-Cleistocactus_morawetzianus_-_Botanischer_Garten%2C_Dresden%2C_Germany_-_DSC08890.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus morawetzianus is a species of columnar cactus in the genus Cleistocactus, endemic to Peru.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-baumannii",
     "name": "Cleistocactus baumannii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Cleistocactus_baumannii_%289291633271%29.jpg/330px-Cleistocactus_baumannii_%289291633271%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus baumannii is a species of Cleistocactus found in Argentina, Paraguay, Bolivia, Uruguay, and Brazil.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-smaragdiflorus",
     "name": "Cleistocactus smaragdiflorus",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cleistocactus_smaragdiflorus_kz1.JPG/330px-Cleistocactus_smaragdiflorus_kz1.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus smaragdiflorus is a species of Cleistocactus found in Bolivia and Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-chrysocephalus",
@@ -81,12 +117,20 @@
     "id": "cleistocactus-strausii",
     "name": "Cleistocactus strausii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Cleistocactus_strausii_Woolly_Torch%2C_Huntington_Desert_Garden.jpg/330px-Cleistocactus_strausii_Woolly_Torch%2C_Huntington_Desert_Garden.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus strausii, the silver torch or wooly torch, is a perennial flowering plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cleistocactus-laniceps",
     "name": "Cleistocactus laniceps",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/IMG_8256-1-Cleistocactus_laniceps.jpg/330px-IMG_8256-1-Cleistocactus_laniceps.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cleistocactus laniceps is a species of columnar cacti in the genus Cleistocactus.",
+    "morphology_source": "wikipedia"
   }
 ]

@@ -3,6 +3,10 @@
     "id": "obregonia-denegrii-fric",
     "name": "Obregonia denegrii Fric",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Obregonia_denegrii.jpg/330px-Obregonia_denegrii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Obregonia, the artichoke cactus, is a monotypic genus of cacti, containing the species Obregonia denegrii. The species is endemic to the state of Tamaulipas in Mexico.",
+    "morphology_source": "wikipedia"
   }
 ]

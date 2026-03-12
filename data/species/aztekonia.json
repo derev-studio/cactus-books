@@ -3,6 +3,10 @@
     "id": "aztekium-hintonii-glass-wafitz-maur",
     "name": "Aztekium hintonii Glass & W.A.Fitz Maur.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Aztekium_hintonii2.jpg/330px-Aztekium_hintonii2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aztekium hintonii, is a species of cactus in the genus Aztekium.",
+    "morphology_source": "wikipedia"
   }
 ]

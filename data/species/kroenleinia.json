@@ -3,6 +3,10 @@
     "id": "echinocactus-grusonii-hildm",
     "name": "Echinocactus grusonii Hildm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Echinocactus_grusonii_%28aka%29.jpg/330px-Echinocactus_grusonii_%28aka%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Kroenleinia grusonii, popularly known as the golden barrel cactus, golden ball, \"mother-in-law's cushion\" or \"mother-in-law's chair\", is a species of barrel cactus which is endemic to east-central Mexico.",
+    "morphology_source": "wikipedia"
   }
 ]

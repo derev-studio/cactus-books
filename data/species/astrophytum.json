@@ -21,7 +21,11 @@
     "id": "astrophytum-myriostigma-lem",
     "name": "Astrophytum myriostigma Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Astrophytum_myriostigma_Lem.png/330px-Astrophytum_myriostigma_Lem.png",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Astrophytum myriostigma, the bishop's cap cactus, bishop's hat or bishop's miter cactus, is a species of cactus native to the highlands of northeastern and central Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "astrophytum-ornatum-dc-britton-rose",

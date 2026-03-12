@@ -13,7 +13,11 @@
         "name": "Ariocarpus retusus subsp. retusus",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ariocarpus_retusus_v._scapharostroides1-4524.jpg/330px-Ariocarpus_retusus_v._scapharostroides1-4524.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ariocarpus retusus is a species of cactus, from the genus Ariocarpus, found mainly in Mexico. It is one of the largest and fastest-growing species in this genus known for a slow rate of growth. Despite its slow growth, often taking ten years to reach flowering age, the retusus is a desirable cactus for cultivation, having attractive flowers and an unusual form for a cactus. It is also one of the most easily cultivated species in the genus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ariocarpus-fissuratus-engelm-kschum",
@@ -54,7 +58,11 @@
     "id": "ariocarpus-scaphirostris-boed",
     "name": "Ariocarpus scaphirostris Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ariocarpus_scaphirostris_%2850549764088%29.jpg/330px-Ariocarpus_scaphirostris_%2850549764088%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ariocarpus scaphirostris is a species of plant in the family Cactaceae. It was originally called Ariocarpus scapharostrus in the 1930s.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ariocarpus-trigonus-facweber-kschum",

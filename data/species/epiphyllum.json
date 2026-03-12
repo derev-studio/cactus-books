@@ -66,7 +66,11 @@
         "name": "Epiphyllum hookeri subsp. hookeri",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Epiphyllum_hookeri_%284%29.jpg/330px-Epiphyllum_hookeri_%284%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Epiphyllum hookeri is a species of climbing cactus in the Epiphyllum genus. It forms showy white flowers and is native from Mexico through Central America to Venezuela. A perennial, it was introduced to Florida and some West Indian islands.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "epiphyllum-oxypetalum-dc-haw",
@@ -145,6 +149,10 @@
     "id": "epiphyllum-laui-kimnach",
     "name": "Epiphyllum laui Kimnach",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Epiphyllum_laui2LAU.jpg/330px-Epiphyllum_laui2LAU.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Epiphyllum laui is a cactus species native to Mexico and grown as an ornamental.",
+    "morphology_source": "wikipedia"
   }
 ]

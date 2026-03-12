@@ -15,13 +15,21 @@
     "id": "neolloydia-matehualensis-backeb",
     "name": "Neolloydia matehualensis Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Neolloydia_matehualensis_1101.jpg/330px-Neolloydia_matehualensis_1101.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Neolloydia matehualensis is a species of Neolloydia found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-dioica-kbrandegee",
     "name": "Mammillaria dioica K.Brandegee",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mammillariadioica1.jpg/330px-Mammillariadioica1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea dioica, also called the strawberry cactus, California fishhook cactus, strawberry pincushion or fishhook cactus, is a cactus species of the genus Cochemiea. Its common name in Spanish is biznaga llavina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-mazatlanensis-kschum-ex-gürke",
@@ -82,13 +90,21 @@
     "id": "ortegocactus-macdougallii-alexander",
     "name": "Ortegocactus macdougallii Alexander",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ortegocactus_macdougallii_01.jpg/330px-Ortegocactus_macdougallii_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ortegocactus is a monotypic species of cactus with a single species Ortegocactus macdougallii.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-barbata-engelm",
     "name": "Mammillaria barbata Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cochemiea_barbata.png/330px-Cochemiea_barbata.png",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea barbata is a small cactus native to Chihuahua, Sonora, and Durango, with the common name greenflower nipple cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-schumannii-hildm",
@@ -100,7 +116,11 @@
     "id": "mammillaria-grahamii-engelm",
     "name": "Mammillaria grahamii Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Mammilaria_grahamii.jpg/330px-Mammilaria_grahamii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea grahamii is a species of cactus also known by the names Arizona fishhook cactus and Graham's nipple cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-phitauiana-embaxter-werderm",
@@ -165,7 +185,11 @@
     "id": "mammillaria-thornberi-orcutt",
     "name": "Mammillaria thornberi Orcutt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cochemiea_thornberi5.png/330px-Cochemiea_thornberi5.png",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea thornberi is a species of cactus known by the common names Thornber's fishhook cactus and Thornber's nipple cactus. It is native to Arizona in the United States and Sonora in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-blossfeldiana-boed",
@@ -190,7 +214,11 @@
     "id": "mammillaria-boolii-gelinds",
     "name": "Mammillaria boolii G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Mammillaria_boolii_HBG_48842_Oct_PICT3673.jpg/330px-Mammillaria_boolii_HBG_48842_Oct_PICT3673.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": " Cochemiea boolii is a species of cactus in the subfamily Cactoideae with pink-petaled flowers.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cochemiea-halei-brandegee-walton",
@@ -217,7 +245,11 @@
     "id": "mammillaria-angelensis-rtcraig",
     "name": "Mammillaria angelensis R.T.Craig",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cochemiea_angelensis%2C_11Nov2018.jpg/330px-Cochemiea_angelensis%2C_11Nov2018.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea angelensis is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-cerralboa-britton-rose-orcutt",
@@ -235,7 +267,11 @@
     "id": "cochemiea-maritima-gelinds",
     "name": "Cochemiea maritima G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mammillaria_%28Cochemia%29_maritima.jpg/330px-Mammillaria_%28Cochemia%29_maritima.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea maritima is a species of Cochemiea found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cochemiea-setispina-jmcoult-walton",
@@ -273,25 +309,41 @@
     "id": "mammillaria-mainiae-kbrandegee",
     "name": "Mammillaria mainiae K.Brandegee",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mammillaria_mainiae.jpg/330px-Mammillaria_mainiae.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea mainiae is a species of cactus in the subfamily Cactoideae, with the common name counterclockwise nipple cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-pondii-greene",
     "name": "Mammillaria pondii Greene",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cochemiea_pondii_1.jpg/330px-Cochemiea_pondii_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea pondii is a species of Cochemiea found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-multidigitata-radley-ex-gelinds",
     "name": "Mammillaria multidigitata Radley ex G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mammillaria_multidigitata_13951.jpg/330px-Mammillaria_multidigitata_13951.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea multidigitata is a species of flowering plant in the family Cactaceae that is endemic to San Pedro Nolasco Island in Mexico, growing on steep slopes. Cochemiea multidigitata sprouts a white to cream-colored flower from spring to early summer.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-guelzowiana-werderm",
     "name": "Mammillaria guelzowiana Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mammillaria_guelzowiana.jpg/330px-Mammillaria_guelzowiana.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea guelzowiana is a species of plant belonging to the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-neopalmeri-rtcraig",
@@ -303,12 +355,20 @@
     "id": "mammillaria-wrightii-engelm",
     "name": "Mammillaria wrightii Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cochemiea_barbata.png/330px-Cochemiea_barbata.png",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea barbata is a small cactus native to Chihuahua, Sonora, and Durango, with the common name greenflower nipple cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-tetrancistra-engelm",
     "name": "Mammillaria tetrancistra Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Cochemiea_tetrancistra_15.jpg/330px-Cochemiea_tetrancistra_15.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea tetrancistra is a species of fishhook cactus known by the common name common fishhook cactus. It is native to the Mojave and Sonoran Deserts of northern Mexico and the southwestern United States, where it grows in a variety of desert habitat types.",
+    "morphology_source": "wikipedia"
   }
 ]

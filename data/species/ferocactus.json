@@ -144,7 +144,11 @@
         "name": "Ferocactus gracilis var. gracilis",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ferocactus_gracilis_45.jpg/330px-Ferocactus_gracilis_45.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus gracilis, the fire barrel cactus, is a species of Ferocactus from Northwestern Mexico. This cactus gets its common name from the striking red coloration of its defensive spines and flowers.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-emoryi-engelm-orcutt",
@@ -284,7 +288,11 @@
     "id": "ferocactus-townsendianus-britton-rose",
     "name": "Ferocactus townsendianus Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ferocactus_townsendianus_27516128.jpg/330px-Ferocactus_townsendianus_27516128.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus townsendianus, commonly known as the Townsend barrel cactus, is a species of cactus endemic to southern Baja California Sur in Mexico. It is a barrel cactus that grows solitary stems up to 1 metre (3.3 ft) tall, with gray to brown spines, with one central spine on each areole usually curved or hooked at the tip, and orange to red flowers that bloom from May to August. Ferocactus townsendianus is similar to both Ferocactus peninsulae and Ferocactus santa-maria, and is sometimes placed under peninsulae as a variety or subspecies.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-viridescens-torr-agray-britton-rose",
@@ -315,13 +323,21 @@
     "id": "ferocactus-lindsayi-bravo",
     "name": "Ferocactus lindsayi Bravo",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Ferocactus_lindsayi.jpg/330px-Ferocactus_lindsayi.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus lindsayi is a species of Ferocactus found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-johnstonianus-britton-rose",
     "name": "Ferocactus johnstonianus Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ferocactus_johnstonianus_17452.jpg/330px-Ferocactus_johnstonianus_17452.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus johnstonianus is a species of Ferocactus found in Mexico",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-cylindraceus-engelm-orcutt",

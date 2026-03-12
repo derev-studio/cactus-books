@@ -40,7 +40,11 @@
         "name": "Echinocereus enneacanthus var. brevispinus (W.O.Moore) L.D.Benson",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Echinocereus_enneacanthus_in_bloom_-_Val_Verde_County_TX_%281%29.jpg/330px-Echinocereus_enneacanthus_in_bloom_-_Val_Verde_County_TX_%281%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus enneacanthus is a species of flowering plant first described by George Engelmann.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-sciurus-brandegee-dams",
@@ -159,7 +163,11 @@
     "id": "echinocereus-polyacanthus-engelm",
     "name": "Echinocereus polyacanthus Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cactus_in_garden.jpg/330px-Cactus_in_garden.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus polyacanthus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-pectinatus-scheidw-engelm",
@@ -239,7 +247,11 @@
     "id": "echinocereus-poselgeri-lem",
     "name": "Echinocereus poselgeri Lem.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Echinocereus_poselgeri.jpg/330px-Echinocereus_poselgeri.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus poselgeri, also known as the dahlia cactus, is a species of Echinocereus. It is native to Coahuila and southern Texas.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-knippelianus-liebner",
@@ -251,7 +263,11 @@
         "name": "Echinocereus knippelianus subsp. knippelianus",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Echinocereus_knippelianus02.jpg/330px-Echinocereus_knippelianus02.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus knippelianus is a species of hedgehog cactus native to Mexico. It can be grown in cultivation.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-stramineus-engelm-ex-rümpler",
@@ -267,7 +283,11 @@
         "name": "Echinocereus stramineus subsp. occidentalis (N.P.Taylor) N.P.Taylor",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Echinocereus_stramineus.jpg/330px-Echinocereus_stramineus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus stramineus is a species of cactus, with stramineus meaning made of straw. There are various common names such as strawberry cactus, porcupine hedgehog cactus, straw-color hedgehog, and pitaya. The straw-colored spines distinguishes this particular plant from other Echinocereus. The aged spines may turn white in color and are very fragile.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-pulchellus-mart-kschum",
@@ -307,7 +327,11 @@
     "id": "echinocereus-yavapaiensis-mabaker",
     "name": "Echinocereus yavapaiensis M.A.Baker",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Echinocereus_yavapaiensis.jpg/330px-Echinocereus_yavapaiensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus yavapaiensis is a species of cactus native to Arizona.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-engelmannii-parry-ex-engelm-lem",
@@ -346,37 +370,61 @@
     "id": "echinocereus-palmeri-britton-rose",
     "name": "Echinocereus palmeri Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Echinocereus_palmeri_02.jpg/330px-Echinocereus_palmeri_02.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus palmeri is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-primolanatus-fritz-schwarz-ex-nptaylor",
     "name": "Echinocereus primolanatus Fritz Schwarz ex N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Echinocereus_primolanatus.jpg/330px-Echinocereus_primolanatus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus primolanatus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-laui-gfrank",
     "name": "Echinocereus laui G.Frank",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Echinocereus_laui.JPG/330px-Echinocereus_laui.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus laui is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-dasyacanthus-engelm",
     "name": "Echinocereus dasyacanthus Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/E._dasyacanthus_5.jpg/330px-E._dasyacanthus_5.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus dasyacanthus is a member of the cactus family, Cactaceae. It is one of about 2000 total species belonging to this family. The cactus is commonly known as Texas rainbow cactus because of the subtle rings or bands of contrasting colors along the stem of the plant. Not all Texas rainbow cacti have the \"rainbow\" coloration on their stems. Another common name is spiny hedgehog cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-leucanthus-nptaylor",
     "name": "Echinocereus leucanthus N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Echinocereus_leucanthus.jpg/330px-Echinocereus_leucanthus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus leucanthus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-adustus-engelm",
     "name": "Echinocereus adustus Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Echinocereus_adustus_SB_072_%286993085804%29.jpg/330px-Echinocereus_adustus_SB_072_%286993085804%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus adustus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-coccineus-engelm-engelm",
@@ -425,7 +473,11 @@
     "id": "echinocereus-rayonesensis-nptaylor",
     "name": "Echinocereus rayonesensis N.P.Taylor",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Echinocereus_rayonesensis.jpeg/330px-Echinocereus_rayonesensis.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus rayonesensis is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-berlandieri-engelm-fhaage",
@@ -455,7 +507,11 @@
     "id": "echinocereus-grandis-britton-rose",
     "name": "Echinocereus grandis Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Echinocereus_grandis_1.jpg/330px-Echinocereus_grandis_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus grandis is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-platyacanthus-link-otto",
@@ -467,13 +523,21 @@
     "id": "echinocereus-conglomeratus-cfförst-ex-haag-1860",
     "name": "Echinocereus conglomeratus C.F.Först. ex Haag, 1860",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Echinocereus_stramineus.jpg/330px-Echinocereus_stramineus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus stramineus is a species of cactus, with stramineus meaning made of straw. There are various common names such as strawberry cactus, porcupine hedgehog cactus, straw-color hedgehog, and pitaya. The straw-colored spines distinguishes this particular plant from other Echinocereus. The aged spines may turn white in color and are very fragile.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-waldeisii-haugg",
     "name": "Echinocereus waldeisii Haugg",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/E.waldeisii.jpg/330px-E.waldeisii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus waldeisii is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-maritimus-mejones-kschum",
@@ -570,25 +634,41 @@
         "name": "Echinocereus viereckii subsp. viereckii",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Echinocereus_viereckii_GotBot_2015_003.jpg/330px-Echinocereus_viereckii_GotBot_2015_003.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus viereckii is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-marksianus-fritz-schwarz-ex-backeb-1966",
     "name": "Echinocereus marksianus Fritz Schwarz ex Backeb., 1966",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Echinocereus_marksianus_1.jpg/330px-Echinocereus_marksianus_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus marksianus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-spinigemmatus-ablau",
     "name": "Echinocereus spinigemmatus A.B.Lau",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Echinocer_spinigemmatus_140608_4324-a.jpg/330px-Echinocer_spinigemmatus_140608_4324-a.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus spinigemmatus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-nivosus-glass-rafoster",
     "name": "Echinocereus nivosus Glass & R.A.Foster",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Echinocereus_nivosus_01.jpg/330px-Echinocereus_nivosus_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus nivosus is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-ferreiranus-hegates-1953",
@@ -606,7 +686,11 @@
         "name": "Echinocereus subinermis subsp. ochoterenae (J.G.Ortega) N.P.Taylor",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Echinocereus_subinermis.JPG/330px-Echinocereus_subinermis.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus subinermis is a species of flowering plant in the cactus family Cactaceae, native to north, northwestern, and central Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-stolonifer-wtmarshall",
@@ -622,13 +706,21 @@
         "name": "Echinocereus stolonifer var. tayopensis (W.T.Marshall) N.P.Taylor",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Echinocereus_stoloniferus_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00061.jpg/330px-Echinocereus_stoloniferus_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00061.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus stolonifer is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-scopulorum-britton-rose",
     "name": "Echinocereus scopulorum Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Echinocereus_scopulorum_1.png/330px-Echinocereus_scopulorum_1.png",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus scopulorum is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-mojavensis-engelm-jmbigelow-engelm-ex-rümpler",
@@ -668,7 +760,11 @@
         "name": "Echinocereus arizonicus subsp. nigrihorridispinus W.Blum & Rutow",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Echinocereus_triglochidiatus_arizonicus_flower.jpg/330px-Echinocereus_triglochidiatus_arizonicus_flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus arizonicus is a species of cactus native to the Chihuahuan Desert region of Chihuahua, southwestern New Mexico and southeastern Arizona, as well as in the Superstition and Mescal Mountains of Central Arizona at elevations between 1400 and 1900 meters.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-nicholii-ldbenson-bdparfitt",
@@ -703,7 +799,11 @@
     "id": "echinocereus-viridiflorus-engelm",
     "name": "Echinocereus viridiflorus Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Echinocereus_viridiflorus.jpg/330px-Echinocereus_viridiflorus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus viridiflorus is a species of cactus known by the common names nylon hedgehog cactus, green pitaya, and small-flowered hedgehog cactus. It is native to the central and south-central United States and northern Mexico, where it can be found in varied habitat types, including desert scrub, woodlands, dry grasslands, and short-grass prairie.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinocereus-barthelowanus-britton-rose",
@@ -715,6 +815,10 @@
     "id": "echinocereus-websterianus-gelinds",
     "name": "Echinocereus websterianus G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Echinocereus_websterianus_%286050284589%29.jpg/330px-Echinocereus_websterianus_%286050284589%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinocereus websterianus, commonly known as the San Pedro Nolasco hedgehog cactus or Webster's hedgehog cactus, is a species of cactus. It is named after American philanthropist Gertrude Webster, who cofounded the Desert Botanical Garden in Phoenix, Arizona.",
+    "morphology_source": "wikipedia"
   }
 ]

@@ -207,13 +207,21 @@
         "name": "Mammillaria discolor subsp. ochoterenae (Bravo) U.Guzmán",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mammillaria_discolor_pm_1.JPG/330px-Mammillaria_discolor_pm_1.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria discolor is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-bombycina-quehl",
     "name": "Mammillaria bombycina Quehl",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mammillaria_bombycina7_ies.jpg/330px-Mammillaria_bombycina7_ies.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria bombycina, the silken pincushion cactus, is a species of flowering plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-chionocephala-japurpus",
@@ -225,13 +233,21 @@
     "id": "mammillaria-beneckei-cehrenb",
     "name": "Mammillaria beneckei C.Ehrenb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Life_cycle_of_Fish_hook_Cactus.jpg/330px-Life_cycle_of_Fish_hook_Cactus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria beneckei is a species of cacti in the tribe Cacteae. It is native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-grusonii-ruenge",
     "name": "Mammillaria grusonii Ruenge",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cactaceae_-_Mammillaria_grusonii.JPG/330px-Cactaceae_-_Mammillaria_grusonii.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria grusonii is a cactus in the genus Mammillaria of the family Cactaceae. The epithet grusonii honors the inventor, scientist, industrialist and cacti collector Hermann Gruson of Magdeburg.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-decipiens-scheidw",
@@ -259,7 +275,11 @@
         "name": "Mammillaria karwinskiana subsp. beiselii (Diers) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mammillaria_karwinskiana_ssp_karwinskiana_pm_1.JPG/330px-Mammillaria_karwinskiana_ssp_karwinskiana_pm_1.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria karwinskiana is a species of cacti in the tribe Cacteae. It is native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-zephyranthoides-scheidw",
@@ -277,13 +297,21 @@
         "name": "Mammillaria albilanata subsp. oaxacana D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mammillaria_albilanata_flowering_huntington_gardens.jpg/330px-Mammillaria_albilanata_flowering_huntington_gardens.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria albilanata is a cactus species native to Mexico. The species is divided into four recognized subspecies: subsp. albilanata, subsp. oaxacana, subsp. reppenhagenii, and subsp. tegelbergiana. It occurs across the states of Chiapas, Colima, Guerrero, Oaxaca, and Puebla.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-mystax-mart",
     "name": "Mammillaria mystax Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Mammillaria_mystax_03.jpg/330px-Mammillaria_mystax_03.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria mystax is a species of cactus in the subfamily Cactoideae.\nIt is endemic to the Mexican states of Hidalgo, Oaxaca and central Puebla.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-sartorii-japurpus",
@@ -313,7 +341,11 @@
         "name": "Mammillaria haageana subsp. meissneri (C.Ehrenb.) U.Guzmán",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Mammillaria_haageana_haageana_pm.JPG/330px-Mammillaria_haageana_haageana_pm.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria haageana is a species of cacti in the tribe Cacteae. It is native to Mexico, where it is found commonly, and is widespread throughout much of the country.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-voburnensis-scheer",
@@ -357,7 +389,11 @@
         "name": "Mammillaria lasiacantha subsp. hyalina D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mammillaria_egregia_SB30.jpg/330px-Mammillaria_egregia_SB30.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria lasiacantha is a species of cactus in the subfamily Cactoideae, with the common names lacespine nipple cactus, small pincushion cactus, and biznaga de espinas pubescentes (Spanish).",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-hahniana-werderm",
@@ -369,13 +405,21 @@
         "name": "Mammillaria hahniana subsp. woodsii (R.T.Craig) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mammillaria_hahniana.jpg/330px-Mammillaria_hahniana.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria hahniana, the old lady cactus, is a species of flowering plant in the family Cactaceae, native to central Mexico. It grows to 25 cm (10 in) tall by 50 cm (20 in) broad. The solitary spherical stems, 12 cm in diameter, are covered in white down and white spines. Reddish purple flowers are borne in spring and summer, sometimes forming a complete ring around the apex of the plant.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-senilis-lodd-ex-salm-dyck",
     "name": "Mammillaria senilis Lodd. ex Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Mammillaria_senilis.jpg/330px-Mammillaria_senilis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria senilis is a species of cacti in the tribe Cacteae. It is native to Mexico, where it is found in the states of Chihuahua, Durango, Jalisco, Nayarit, Sinaloa and in south Zacatecas.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-compressa-dc",
@@ -387,7 +431,11 @@
         "name": "Mammillaria compressa subsp. compressa",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mammillaria_Compressa_in_Jardin_de_Cactus_on_Lanzarote%2C_June_2013_%281%29.jpg/330px-Mammillaria_Compressa_in_Jardin_de_Cactus_on_Lanzarote%2C_June_2013_%281%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria compressa, commonly called mother of hundreds, is a species of cactus in the subfamily Cactoideae. It is native to northern and southern Mexico, and is cultivated as an ornamental plant. It blooms in the winter and early spring, with bell-shaped flowers that range from a purplish pink to red color. Its curved spines were traditionally used as hooks for fishing.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-schiedeana-cehrenb",
@@ -399,7 +447,11 @@
         "name": "Mammillaria schiedeana subsp. dumetorum (J.A.Purpus) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mammillaria_schiedeana_Kh115_Khanon-215.jpg/330px-Mammillaria_schiedeana_Kh115_Khanon-215.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria schiedeana is a species of Mammillaria native to Mexico that was first described in 1838 by C. Ehrenb.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-rekoi-britton-rose-vaupel",
@@ -427,19 +479,31 @@
     "id": "mammillaria-pottsii-scheer-ex-salm-dyck",
     "name": "Mammillaria pottsii Scheer ex Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/DBG_Mammillaria_Pottsii.jpg/330px-DBG_Mammillaria_Pottsii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria pottsii, also known as fox-tail cactus or rat-tail nipple cactus, is a species of flowering plant in the family Cactaceae. It was first described by Scheer ex Salm-Dyck, Cact. Hort. 1849: 104 (1850) According to the United Nations Environment Programme, M. leona is a synonym for M. pottsii.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-albicoma-boed",
     "name": "Mammillaria albicoma Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Mammillaria_albicoma_pm_1.JPG/330px-Mammillaria_albicoma_pm_1.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria albicoma is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts. It is threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-candida-scheidw",
     "name": "Mammillaria candida Scheidw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Mammilloydia_candida_-_Snowball_Cactus.jpg/330px-Mammilloydia_candida_-_Snowball_Cactus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria candida, the snowball cactus, is a species of cactus endemic to Mexico. When treated as Mammilloydia candida, it was the only species in the genus Mammilloydia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-huitzilopochtli-drhunt",
@@ -451,13 +515,21 @@
     "id": "mammillaria-sanchez-mejoradae-rodrgonzález",
     "name": "Mammillaria sanchez-mejoradae Rodr.González",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mammillaria_sanchez-mejoradae.jpg/330px-Mammillaria_sanchez-mejoradae.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria sanchez-mejoradae is a species of plant in the family Cactaceae. It is endemic to Nuevo León state of northeastern Mexico. Its natural habitat is hot deserts. It is a Critically endangered species, threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-magnimamma-haw",
     "name": "Mammillaria magnimamma Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mammillaria_magnimamma_in_Jardin_de_Cactus_on_Lanzarote%2C_June_2013_%281%29.jpg/330px-Mammillaria_magnimamma_in_Jardin_de_Cactus_on_Lanzarote%2C_June_2013_%281%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria magnimamma, common name Mexican pincushion, is a species of flowering plant in the cactus family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-flavicentra-backeb",
@@ -487,7 +559,11 @@
         "name": "Mammillaria heyderi subsp. gummifera (Engelm.) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Mammillaria_heyderi_flowering_in_Saguaro_NP.jpg/330px-Mammillaria_heyderi_flowering_in_Saguaro_NP.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria heyderi  is a species of pincushion cactus in the tribe Cacteae. It is endemic to Sonora and Chihuahua in Mexico and New Mexico, Arizona, Texas, and Oklahoma in the United States.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-eriacantha-hortberol-ex-pfeiff",
@@ -505,25 +581,41 @@
         "name": "Mammillaria longimamma var. longimamma",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mammillaria_longimamma_pm.jpg/330px-Mammillaria_longimamma_pm.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria longimamma is a species of cactus from Hidalgo and Querétaro, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-supertexta-mart",
     "name": "Mammillaria supertexta Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mammillaria_supertexta_-_JBM.jpg/330px-Mammillaria_supertexta_-_JBM.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria supertexta is a species of cactus in the tribe Cacteae. It is native to Oaxaca, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-dixanthocentron-backeb",
     "name": "Mammillaria dixanthocentron Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mammillaria_dixanthocentron_pm_03.JPG/330px-Mammillaria_dixanthocentron_pm_03.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria dixanthocentron is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-surculosa-boed",
     "name": "Mammillaria surculosa Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Dolichothele_surculosa_Kh303_Khanon_Ss200.jpg/330px-Dolichothele_surculosa_Kh303_Khanon_Ss200.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria surculosa is a species of flowering plant in the cactus family Cactaceae, native to north eastern Mexico, where it occurs in extremely isolated patches at altitudes of 950–1,200 m (3,120–3,940 ft). It is registered as \"Endangered\" by the IUCN Red List. Growing to 10 cm (3.9 in) tall by 50 cm (20 in) wide, this tiny plant forms colonies of spiny stems with relatively large, lemon yellow flowers in spring.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-kraehenbuehlii-krainz-krainz",
@@ -562,7 +654,11 @@
         "name": "Mammillaria elongata subsp. echinaria (DC.) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/MammillariaElongata2.jpg/330px-MammillariaElongata2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria elongata, the gold lace cactus or ladyfinger cactus, is a species of flowering plant in the family Cactaceae, native to central Mexico. Growing to 15 cm (6 in) tall by 30 cm (12 in) wide, it consists of densely packed clusters of elongated oval stems, covered in harmless yellow or brown spines, and in spring producing white or yellow flowers. It is among the most common and most variable of its genus in nature, and is a popular subject for cultivation. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-crinita-dc",
@@ -586,13 +682,21 @@
         "name": "Mammillaria crinita subsp. wildii (A.Dietr.) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mammillaria_crinita_BlKakteenT170.jpg/330px-Mammillaria_crinita_BlKakteenT170.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria crinita is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-carnea-zucc-ex-pfeiff",
     "name": "Mammillaria carnea Zucc. ex Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mammillariacarnea.JPG/330px-Mammillariacarnea.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria carnea is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-oteroi-glass-rafoster",
@@ -610,7 +714,11 @@
         "name": "Mammillaria gracilis var. pulchella (Salm-Dyck) Salm-Dyck",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mammillaria_gracilis_02.jpg/330px-Mammillaria_gracilis_02.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria vetula, the thimble cactus, is a species of nipple cactus in the subfamily Cactoideae. It is native to the Mexican states of Hidalgo, Guanajuato and Querétaro. Two subspecies are recognized M. vetula subsp. vetula and M. vetula subsp. gracilis. While the former is usually considered too plain to be grown as an ornamental plant, the latter is one of the most widespread mammillarias in cultivation.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-orcuttii-boed",
@@ -672,13 +780,21 @@
     "id": "mammillaria-microhelia-werderm",
     "name": "Mammillaria microhelia Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mammillaria_microhelia_12.JPG/330px-Mammillaria_microhelia_12.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria microhelia is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-baumii-boed",
     "name": "Mammillaria baumii Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mammillaria_baumii.jpg/330px-Mammillaria_baumii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria baumii is a species of cactus in the subfamily Cactoideae. It is endemic to Mexico. It was named for botanist Hugo Baum.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-winterae-boed",
@@ -726,7 +842,11 @@
     "id": "mammillaria-uncinata-zucc-ex-pfeiff",
     "name": "Mammillaria uncinata Zucc. ex Pfeiff.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Mammillaria_uncinata_%28Cactaceae%29%2C_Sierra_de_Guanajuato.jpg/330px-Mammillaria_uncinata_%28Cactaceae%29%2C_Sierra_de_Guanajuato.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria uncinata is a species of cactus in the family Cactaceae. It is endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-polythele-mart",
@@ -742,7 +862,11 @@
         "name": "Mammillaria polythele subsp. durispina (Boed.) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mammillaria_polythele_2.jpg/330px-Mammillaria_polythele_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria polythele is a cactus in the genus Mammillaria, native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-roseoalba-boed",
@@ -754,13 +878,21 @@
     "id": "mammillaria-plumosa-facweber",
     "name": "Mammillaria plumosa F.A.C.Weber",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mammillaria_plumosa_%287216361854%29.jpg/330px-Mammillaria_plumosa_%287216361854%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria plumosa, the feather cactus, is a species of flowering plant in the family Cactaceae, native to Northeastern Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-glassii-rafoster",
     "name": "Mammillaria glassii R.A.Foster",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mammillaria_glassii_ssp_glassii_pm_01.JPG/330px-Mammillaria_glassii_ssp_glassii_pm_01.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria glassii is a species of cactus native to Mexico. It comprises two subspecies: M. glassii subsp. glassii and M. glassii subsp. ascensionis. In its natural habitat, high in the mountains, it often grows on rocky slopes in the shade. It is grown as an ornamental plant, appreciated for its dense spines and pink flowers, which are especially large in the subsp. ascensionis.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-napina-japurpus",
@@ -772,7 +904,11 @@
     "id": "mammillaria-gasseriana-boed",
     "name": "Mammillaria gasseriana Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mammillaria_gasseriana_pm.jpg/330px-Mammillaria_gasseriana_pm.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria gasseriana is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-erythrosperma-boed",
@@ -784,25 +920,41 @@
     "id": "mammillaria-mercadensis-patoni",
     "name": "Mammillaria mercadensis Patoni",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mammillaria_mercadensis_pm.JPG/330px-Mammillaria_mercadensis_pm.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria mercadensis is a species of flowering plant in the cactus family (Cactaceae), native to north and west Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-geminispina-haw",
     "name": "Mammillaria geminispina Haw.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mammillaria_geminispina_2.jpg/330px-Mammillaria_geminispina_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria geminispina, the twin spined cactus, is a species of flowering plant in the family Cactaceae, native to central Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-weingartiana-boed",
     "name": "Mammillaria weingartiana Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Mammillaria_weingartiana_01.jpg/330px-Mammillaria_weingartiana_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria weingartiana is a species of plant in the family Cactaceae. It is endemic to Nuevo León state, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-parkinsonii-cehrenb",
     "name": "Mammillaria parkinsonii C.Ehrenb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mammillaria_parkinsonii_%2870369%29.jpg/330px-Mammillaria_parkinsonii_%2870369%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria parkinsonii, also known as owl-eye pincushion or owl-eye cactus, is a species of flowering plant in the family Cactaceae. It is endemic to Queretaro, Mexico. Mammillaria parkinsonii is listed as Endangered due to a limited distribution, severe fragmentation, a continuing decline due to illegal collection, and degradation of its habitat across its range. Clarification of the taxonomic status of this species is a research priority.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-sempervivi-dc",
@@ -839,7 +991,11 @@
         "name": "Mammillaria rhodantha subsp. aureiceps (Lem.) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Mammillaria_rhodantha_ssp_pringlei2_ies.jpg/330px-Mammillaria_rhodantha_ssp_pringlei2_ies.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria rhodantha, the rainbow pincushion, is a plant in the cactus family (Cactaceae) and is one of 171 species in the genus Mammillaria which are characterized by having nipple-shaped tubercles or prominences on their surface.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-sphacelata-mart",
@@ -867,13 +1023,21 @@
         "name": "Mammillaria columbiana subsp. yucatanensis (Britton & Rose) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mammillaria_columbiana1.jpg/330px-Mammillaria_columbiana1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria columbiana is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-muehlenpfordtii-cfförst",
     "name": "Mammillaria muehlenpfordtii C.F.Först.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mammillaria_muehlenpfordtii_01.jpg/330px-Mammillaria_muehlenpfordtii_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria muehlenpfordtii is a species of cactus in the subfamily Cactoideae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-pennispinosa-krainz-ex-shurly",
@@ -893,7 +1057,11 @@
         "name": "Mammillaria pennispinosa var. nazasensis Glass & R.A.Foster",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mammillaria_pennispinosa.jpg/330px-Mammillaria_pennispinosa.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria pennispinosa is a species of cactus. It is endemic to Mexico, where it is known only from a single location in Durango. Its total population is fewer than 1250 individuals. They grow on volcanic rock in desert habitat.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-bocasana-poselg",
@@ -909,7 +1077,11 @@
         "name": "Mammillaria bocasana subsp. eschauzieri (J.M.Coult.) W.A.Fitz Maur. & B.Fitz Maur.",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mammillaria_bocasana_03_ies.jpg/330px-Mammillaria_bocasana_03_ies.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria bocasana is a species of cactus in the subfamily Cactoideae. It is often sold as a \"powder puff\" cactus, and also as a \"Powder Puff Pincushion.\" The plant is protected from collecting in the wild in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-picta-meinsh",
@@ -933,7 +1105,11 @@
     "id": "mammillaria-gigantea-hildm-ex-kschum",
     "name": "Mammillaria gigantea Hildm. ex K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mammillaria_gigantea_1.jpg/330px-Mammillaria_gigantea_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria gigantea is a species of cactus in the subfamily Cactoideae native to Mexico. It is named for its large size.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-solisioides-backeb",
@@ -966,19 +1142,29 @@
     "id": "mammillaria-glochidiata-mart",
     "name": "Mammillaria glochidiata Mart.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Mammillaria_wildii_01.jpg/330px-Mammillaria_wildii_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria glochidiata is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts. It was classed as Extinct in the wild but since 2013, it has been classed as Critically Endangered by the IUCN Red List.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-anniana-glass-rafoster",
     "name": "Mammillaria anniana Glass & R.A.Foster",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Mammillaria anniana is a species of plant in the family Cactaceae. It is endemic to Tamaulipas state of northeastern Mexico. Its natural habitat is hot deserts. It is a Critically endangered species, threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-mathildae-kraehenb-krainz",
     "name": "Mammillaria mathildae Kraehenb. & Krainz",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mammillaria_mathildae.jpg/330px-Mammillaria_mathildae.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria mathildae is a species of plant in the family Cactaceae. It is endemic to Querétaro, Mexico. Its natural habitat is hot deserts. It is of IUCN Red List Vulnerable status and threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-melaleuca-karw-ex-salm-dyck",
@@ -1002,7 +1188,11 @@
     "id": "mammillaria-petterssonii-hildm",
     "name": "Mammillaria petterssonii Hildm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Mammillaria_pettersonii_%285723146770%29.jpg/330px-Mammillaria_pettersonii_%285723146770%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria petterssonii is a species of cactus in the genus Mammillaria, native to northeast and southwest Mexico. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-lenta-kbrandegee",
@@ -1032,7 +1222,11 @@
     "id": "mammillaria-sphaerica-adietr-ex-engelm",
     "name": "Mammillaria sphaerica A.Dietr. ex Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mamillaria_sphaerica_%283779397028%29.jpg/330px-Mamillaria_sphaerica_%283779397028%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria sphaerica, the longmamma nipple cactus or pale mammillaria is a species of flowering plant in the cactus family Cactaceae, native to south eastern Texas in the USA and north eastern Mexico, where it occurs in scattered patches at altitudes up to 1,000 m (3,300 ft). It forms clumps of small pale green spheres to 5 cm (2.0 in) in diameter, with short hairs and pale yellow flowers up to 3 cm (1.2 in) wide in summer.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-moelleriana-boed",
@@ -1054,19 +1248,31 @@
     "id": "mammillaria-painteri-rose-ex-quehl",
     "name": "Mammillaria painteri Rose ex Quehl",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mammillaria_painteri_4.JPG/330px-Mammillaria_painteri_4.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria painteri is a species of plant in the family Cactaceae. It is endemic to Mexico. It is usually found near, but not limited to, San Juan del Rio, Guanajuato. It is commonly referred to as the biznaguita in Spanish. It is also known by many to be synonymous with Mammillaria crinita subspecies crinita. It was evaluated and added to the IUCN Redlist in 2002 as data deficient. The causes of this species' endangerment or threats to its well-being are not clear.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-backebergiana-fgbuchenau",
     "name": "Mammillaria backebergiana F.G.Buchenau",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cacti1003.jpg/330px-Cacti1003.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria backebergiana is a species of cactus in the subfamily Cactoideae. It is native to Mexico and can be found on cliffs at elevations of around 1,900 m.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-zeilmanniana-boed",
     "name": "Mammillaria zeilmanniana Boed.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mammillaria_zeilmanniana.jpg/330px-Mammillaria_zeilmanniana.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria zeilmanniana is a species of cactus. It is endemic to Mexico, where it is known only from Guanajuato. It grows in a narrow canyon usually near water where there is high humidity, its total population is fewer than 250 individuals. It is threatened by illegal collection for the horticultural trade. Recent studies link this species to Mammillaria crinita.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-insularis-hegates-ex-shurly-1938",
@@ -1109,7 +1315,11 @@
     "id": "mammillaria-duwei-rogoz-pjbraun",
     "name": "Mammillaria duwei Rogoz. & P.J.Braun",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Mammillaria_duwei_flower.jpg/330px-Mammillaria_duwei_flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria duwei is a species of flowering plant in the cactus family. It is endemic to Mexico, where it occurs only in the state of Guanajuato. It is known from only one location. It is known commonly as the biznaguita.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-meyranii-bravo",
@@ -1127,7 +1337,11 @@
         "name": "Mammillaria deherdtiana subsp. dodsonii (Bravo) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mammillaria_deherdtiana.jpg/330px-Mammillaria_deherdtiana.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria deherdtiana is a species of cactus in the subfamily Cactoideae. It is native to South-western Mexico, in particular to Oaxaca, in a region between Nejaba, Juquila, Mixes.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-purpurea-cehrenb",
@@ -1139,7 +1353,11 @@
     "id": "mammillaria-carmenae-castañeda-núñez",
     "name": "Mammillaria carmenae Castañeda & Núñez",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mammillaria_carmenae_c-1281_-_01A.jpg/330px-Mammillaria_carmenae_c-1281_-_01A.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria carmenae, the Isla Carmen pincushion cactus, is a species of flowering plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-brandegeei-jmcoult-engelm-ex-kbrandegee",
@@ -1185,13 +1403,21 @@
         "name": "Mammillaria spinosissima subsp. pilcayensis (Bravo) D.R.Hunt",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mammillaria_spinosissima_by_RO.jpg/330px-Mammillaria_spinosissima_by_RO.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria spinosissima, also known as the spiny pincushion cactus, is a species of flowering plant in the cactus family Cactaceae, endemic to the central Mexican states of Guerrero and Morelos, where they grow at elevations of approximately 1,600 to 1,900 metres. The species was described in 1838 by James Forbes, gardener of the Duke of Bedford. Botanist David Hunt collected a specimen in 1971, when he located one near Sierra de Tepoztlan, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-herrerae-werderm",
     "name": "Mammillaria herrerae Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mammillaria_herrerae.JPG/330px-Mammillaria_herrerae.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria herrerae is a species of plant in the family Cactaceae. It is endemic to Mexico where it is confined to Querétaro. It thrives in a semi-desert shrubland habitat. Common name is golf ball cactus. It is threatened by habitat loss and illegal collection. In a 20-year period over 95% of the species population was illegally collected or sold. Mammillaria herrerae has an IUCN rating of critically endangered. Due to its specific growing conditions, there is a challenge in propagating. Many studies are being done to determine best growing conditions, through related species.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-knippeliana-quehl",
@@ -1213,7 +1439,11 @@
     "id": "mammillaria-sonorensis-rtcraig",
     "name": "Mammillaria sonorensis R.T.Craig",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pincushion_cactus_plants_at_the_Arizona-Sonora_Desert_Museum.jpg/330px-Pincushion_cactus_plants_at_the_Arizona-Sonora_Desert_Museum.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria standleyi is a species of the family Cactaceae native to the Sierra Madre Occidental of Sinaloa, Chihuahua and Sonora. It has red-purple flowers surrounded by cottony pubescence. Fruits are red and edible, tasting like apples, although too small to be of much food value to humans.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-pringlei-jmcoult-kbrandegee",
@@ -1245,7 +1475,11 @@
     "id": "mammillaria-aureilanata-backeb",
     "name": "Mammillaria aureilanata Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Mammillaria_aureilanata2.jpg/330px-Mammillaria_aureilanata2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria aureilanata is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-hutchisoniana-hegates-backeb-knuth",
@@ -1274,7 +1508,11 @@
     "id": "mammillaria-schwarzii-shurly",
     "name": "Mammillaria schwarzii Shurly",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mammillaria_schwarzii.jpg/330px-Mammillaria_schwarzii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria schwarzii is a species of plant in the family Cactaceae. It is endemic to Guanajuato state in Mexico. Its natural habitat is hot deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-varieaculeata-francgbuchenau",
@@ -1286,13 +1524,21 @@
     "id": "mammillaria-hernandezii-glass-rafoster",
     "name": "Mammillaria hernandezii Glass & R.A.Foster",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Mammillaria_hernandezii.jpg/330px-Mammillaria_hernandezii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria hernandezii is a species of cacti in the tribe Cacteae. It is native to Mexico where it has a disjointed distribution in a small area of upland tropical pine scrub. There are estimated to be fewer than 500 plants in the wild and is classified as endangered.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-laui-drhunt",
     "name": "Mammillaria laui D.R.Hunt",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mammillaria_laui_ssp_subducta.jpg/330px-Mammillaria_laui_ssp_subducta.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria laui is a species of cactus in the genus Mammillaria, native to Tamaulipas state in Mexico. A number of subspecies were described, occurring along an elevation gradient; these are no longer accepted. It is listed as Critically Endangered (CR) in the wild.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-crucigera-mart",
@@ -1334,6 +1580,10 @@
     "id": "mammillaria-marksiana-krainz",
     "name": "Mammillaria marksiana Krainz",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Mammillaria_marksiana_Kh101%28a%29_Khanon_Ss201select.jpg/330px-Mammillaria_marksiana_Kh101%28a%29_Khanon_Ss201select.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Mammillaria marksiana is a cactus in the genus Mammillaria of the family Cactaceae.",
+    "morphology_source": "wikipedia"
   }
 ]

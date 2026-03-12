@@ -34,6 +34,10 @@
     "id": "epithelantha-bokei-ldbenson",
     "name": "Epithelantha bokei L.D.Benson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Epithelantha_bokei_26.jpg/330px-Epithelantha_bokei_26.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Epithelantha bokei is a species of cactus known by the common names pingpong ball cactus and button-cactus. It is native to Texas in the United States and Coahuila in Mexico.",
+    "morphology_source": "wikipedia"
   }
 ]

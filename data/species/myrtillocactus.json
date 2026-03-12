@@ -70,7 +70,9 @@
     "id": "myrtillocactus-eichlamii-britton-rose",
     "name": "Myrtillocactus eichlamii Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Myrtillocactus eichlamii is a species of Myrtillocactus found in Guatemala.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "myrtillocactus-cochal-orcutt-britton-rose",
