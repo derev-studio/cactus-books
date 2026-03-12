@@ -134,21 +134,27 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Блок «Источники» в футере: одна кнопка, по клику раскрывается список ссылок */
+/* Блок «Источники» в футере: контрастный блок, чтобы заголовок и текст были чётко видны */
 .site-footer__sources {
   margin-top: 0;
-  font-size: clamp(0.72rem, 1vw, 0.8rem);
+  padding: 1rem 1.25rem;
+  background: var(--cactus-surface, #faf9f6);
+  border-radius: 10px;
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
   text-align: left;
+  color: #1a1a2e;
 }
 .site-footer__sources-title {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--cactus-text-on-dark, #fff);
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0d0d0d;
+  letter-spacing: 0.02em;
 }
 .site-footer__sources-panel {
   margin-top: 0;
   padding: 0;
+  color: #2d2d2d;
 }
 .site-footer__nav {
   margin-top: 1.25rem;
@@ -160,29 +166,31 @@
   margin: 0 0 0.5rem;
   padding: 0;
   line-height: 1.5;
+  color: #2d2d2d;
 }
 .site-footer__sources-list a {
-  color: var(--cactus-muted-on-dark);
-  text-decoration: none;
+  color: #1a4a7a;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 .site-footer__sources-list a:hover {
   color: var(--cactus-accent);
 }
 .site-footer__sources-sep {
-  color: var(--cactus-muted-on-dark);
+  color: #5a6476;
   pointer-events: none;
   user-select: none;
 }
 .site-footer__gbif-cite {
   margin: 0 0 0.5rem;
   font-size: 0.8rem;
-  color: var(--cactus-muted-on-dark);
+  color: #2d2d2d;
 }
 .site-footer__gbif-cite a {
-  color: var(--cactus-accent, #7cb342);
+  color: #1a4a7a;
   text-decoration: underline;
 }
 .site-footer__gbif-cite a:hover {
   text-decoration: none;
+  color: var(--cactus-accent);
 }

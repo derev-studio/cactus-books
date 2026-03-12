@@ -48,10 +48,10 @@
 .classification-credit--footer {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 0.88rem;
-  line-height: 1.5;
-  color: var(--cactus-muted-on-dark);
+  line-height: 1.55;
+  color: #2d2d2d;
 }
 
 .classification-credit--footer p {
@@ -63,12 +63,13 @@
 }
 
 .classification-credit--footer a {
-  color: var(--cactus-accent, #7cb342);
+  color: #1a4a7a;
   text-decoration: underline;
 }
 
 .classification-credit--footer a:hover {
   text-decoration: none;
+  color: var(--cactus-accent);
 }
 
 .classification-body {
