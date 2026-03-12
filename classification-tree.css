@@ -426,6 +426,19 @@
   margin-bottom: 0.35rem;
 }
 
+.card-panel__morphology-translate {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--cactus-muted-on-dark, rgba(255,255,255,0.65));
+}
+.card-panel__morphology-translate a {
+  color: var(--cactus-accent);
+  text-decoration: underline;
+}
+.card-panel__morphology-translate a:hover {
+  text-decoration: none;
+}
+
 .card-panel__source-note {
   margin: 0.5rem 0 0;
   font-size: 0.8rem;
