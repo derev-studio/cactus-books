@@ -379,11 +379,13 @@
     var morphList = document.getElementById('card-morphology-list');
     var morphTranslateEl = document.getElementById('card-morphology-translate');
     if (morphWrap && morphList) {
+      var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      var morphLang = lang.indexOf('uk') === 0 ? 'uk' : (lang.indexOf('ru') === 0 ? 'ru' : 'en');
+      var stemText = speciesNode['morphology_stem_' + morphLang] || speciesNode.morphology_stem_ru || speciesNode.morphology_stem;
+      var spinesText = speciesNode['morphology_spines_' + morphLang] || speciesNode.morphology_spines_ru || speciesNode.morphology_spines;
+      var flowerText = speciesNode['morphology_flower_' + morphLang] || speciesNode.morphology_flower_ru || speciesNode.morphology_flower;
+      var fruitText = speciesNode['morphology_fruit_' + morphLang] || speciesNode.morphology_fruit_ru || speciesNode.morphology_fruit;
       var morphParts = [];
-      var stemText = speciesNode.morphology_stem_ru || speciesNode.morphology_stem;
-      var spinesText = speciesNode.morphology_spines_ru || speciesNode.morphology_spines;
-      var flowerText = speciesNode.morphology_flower_ru || speciesNode.morphology_flower;
-      var fruitText = speciesNode.morphology_fruit_ru || speciesNode.morphology_fruit;
       if (stemText) morphParts.push({ label: 'Стебель', text: stemText });
       if (spinesText) morphParts.push({ label: 'Колючки', text: spinesText });
       if (flowerText) morphParts.push({ label: 'Цветок', text: flowerText });
@@ -396,17 +398,7 @@
           morphList.appendChild(li);
         });
         morphWrap.hidden = false;
-        var hasRussian = speciesNode.morphology_stem_ru || speciesNode.morphology_spines_ru || speciesNode.morphology_flower_ru || speciesNode.morphology_fruit_ru;
-        if (morphTranslateEl) {
-          var rawEn = [];
-          if (speciesNode.morphology_stem) rawEn.push('Стебель: ' + speciesNode.morphology_stem);
-          if (speciesNode.morphology_spines) rawEn.push('Колючки: ' + speciesNode.morphology_spines);
-          if (speciesNode.morphology_flower) rawEn.push('Цветок: ' + speciesNode.morphology_flower);
-          if (speciesNode.morphology_fruit) rawEn.push('Плод: ' + speciesNode.morphology_fruit);
-          var translateUrl = rawEn.length > 0 ? 'https://translate.google.com/?sl=en&tl=ru&text=' + encodeURIComponent(rawEn.join('\n\n')) : '';
-          morphTranslateEl.innerHTML = translateUrl ? 'Текст на английском. <a href="' + translateUrl + '" target="_blank" rel="noopener">Прочитать в переводе (Google)</a>' : '';
-          morphTranslateEl.hidden = !translateUrl;
-        }
+        if (morphTranslateEl) morphTranslateEl.hidden = true;
         var morphSource = document.getElementById('card-morphology-source');
         if (morphSource) {
           if (speciesNode.morphology_source === 'wikipedia') {
