@@ -290,18 +290,36 @@
           morphList.appendChild(li);
         });
         morphWrap.hidden = false;
+        var morphSource = document.getElementById('card-morphology-source');
+        if (morphSource) {
+          if (speciesNode.morphology_source === 'wikipedia') {
+            morphSource.textContent = 'Источник: Wikipedia';
+            morphSource.hidden = false;
+          } else {
+            morphSource.hidden = true;
+          }
+        }
       } else {
         morphWrap.hidden = true;
       }
     }
     var photoWrap = document.getElementById('card-photo-wrap');
     var photoImg = document.getElementById('card-photo-main');
+    var photoSource = document.getElementById('card-photo-source');
     if (photoWrap && photoImg) {
       var url = speciesNode.photo_main_url || speciesNode.photo_flower_url || '';
       if (url) {
         photoImg.src = url;
         photoImg.alt = speciesNode.name || 'Фото';
         photoWrap.hidden = false;
+        if (photoSource) {
+          if (speciesNode.photo_source === 'wikipedia') {
+            photoSource.textContent = 'Фото: Wikipedia';
+            photoSource.hidden = false;
+          } else {
+            photoSource.hidden = true;
+          }
+        }
       } else {
         photoWrap.hidden = true;
       }

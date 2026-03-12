@@ -11,7 +11,11 @@
       "Astrophytum senile",
       "Echinocactus capricornis",
       "Maierocactus capricornis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Astrophytum_capricorne_4.jpg/330px-Astrophytum_capricorne_4.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Astrophytum capricorne, the goat's horn cactus, is a species of flowering plant in the cactus family Cactaceae, that is native to the Coahuila regions of Northern Mexico. Growing to 50 centimetres (20 in) tall by 10 centimetres (3.9 in) wide in a ball or oval shape, it is grey-green in colour with 7 to 9 prominent ribs, very long twisted spines and yellow flowers with a red centre in summer.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "astrophytum-myriostigma-lem",
@@ -37,7 +41,11 @@
       "Echinofossulocactus mirbelii",
       "Echinopsis haageana",
       "Echinopsis haageanus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Astrophytum_ornatum5.jpg/330px-Astrophytum_ornatum5.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Astrophytum ornatum, the bishop's cap or monk's hood cactus, is a flowering plant of the family Cactaceae, endemic to the Central Plateau of Mexico. It is the largest and tallest species of Astrophytum.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "astrophytum-asterias-zucc-lem",
@@ -47,6 +55,10 @@
     "nameHistory": [
       "Astrophytum asterias",
       "Echinocactus asterias"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Astrophytum_asterias1.jpg/330px-Astrophytum_asterias1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Astrophytum asterias is a species of cactus in the genus Astrophytum, and is native to small parts of Texas in the United States and Mexico. Common names include sand dollar cactus, sea urchin cactus, star cactus and star peyote.",
+    "morphology_source": "wikipedia"
   }
 ]

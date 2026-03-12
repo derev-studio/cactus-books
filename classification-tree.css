@@ -315,6 +315,12 @@
   margin-bottom: 0.35rem;
 }
 
+.card-panel__source-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--cactus-muted-on-dark, rgba(255,255,255,0.65));
+}
+
 .card-panel__photo-wrap {
   margin-top: 1rem;
   padding-top: 0.75rem;

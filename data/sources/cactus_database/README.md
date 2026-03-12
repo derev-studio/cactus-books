@@ -52,3 +52,5 @@
 - **notes_ru** — заметки
 
 При этом **подвиды, разновидности, формы (infraspecific)** не изменяются и не удаляются. Дубликаты по полному названию не создаём; вариации (var., subsp., f.) сохраняются.
+
+**Почему в карточке не было морфологии и фото:** в cactus_cards_species.csv колонки morphology_* и photo_* **пустые** (0 заполненных строк). Чтобы появились описание и картинки, используется скрипт **`scripts/fetch_wikipedia_morphology_photo.py`**: он запрашивает у Википедии (REST API) краткое описание и главное фото по латинскому названию вида и пишет их в `morphology_stem` и `photo_main_url`. Запуск: `python3 scripts/fetch_wikipedia_morphology_photo.py` (для всех видов, с паузой 1 сек — займёт время) или `python3 scripts/fetch_wikipedia_morphology_photo.py --limit 50` для теста на 50 видах.

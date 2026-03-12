@@ -3,24 +3,40 @@
     "id": "ferocactus-histrix-dc-gelinds",
     "name": "Ferocactus histrix (DC.) G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ferocactus_histrix_%285761384470%29.jpg/330px-Ferocactus_histrix_%285761384470%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus histrix, also known as Acitrón barrel cactus is a species of Ferocactus native to central Mexico.\nIt is a large barrel cactus that can be commonly found throughout all the Central Mexican matorral. It produces an edible fruit appreciated for its sour taste.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-hamatacanthus-muehlenpf-britton-rose",
     "name": "Ferocactus hamatacanthus (Muehlenpf.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ferocactus_hamatacanthus_pm.JPG/330px-Ferocactus_hamatacanthus_pm.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus hamatacanthus, commonly named Turk's head, is a barrel cactus in the tribe Cacteae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-haematacanthus-monv-ex-salm-dyck-bravo-ex-backeb-fmknuth",
     "name": "Ferocactus haematacanthus (Monv. ex Salm-Dyck) Bravo ex Backeb. & F.M.Knuth",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Ferocactus_haematacanthus.jpg/330px-Ferocactus_haematacanthus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus haematacanthus is a species of Ferocactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-glaucescens-dc-britton-rose",
     "name": "Ferocactus glaucescens (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ferocactus_glaucescens_%2814126550259%29.jpg/330px-Ferocactus_glaucescens_%2814126550259%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus glaucescens, the glaucous barrel cactus, is a species of flowering plant in the family Cactaceae, native endemic to México.",
+    "morphology_source": "wikipedia"
   }
 ]

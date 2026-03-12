@@ -66,7 +66,11 @@
       "Neolloydia stuetzleri",
       "Neolloydia texensis",
       "Pediocactus conoideus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Neolloydia_matehualensis_1101.jpg/330px-Neolloydia_matehualensis_1101.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Neolloydia conoidea, common name Texas cone cactus or Chihuahuan beehive, is a species of cactus native to southern United States to central Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-poselgeri-hildm",
@@ -145,7 +149,11 @@
       "Ebnerella fraileana",
       "Mammillaria fraileana",
       "Neomammillaria fraileana"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Mammillaria_fraileana_pm01.jpg/330px-Mammillaria_fraileana_pm01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea fraileana is a rare species of cactus in the genus Cochemiea commonly known as the Fraile nipple cactus. This species is endemic to the state of Baja California Sur in Mexico and can be found along the east coast of the southern part of the state in desert scrub communities. They tend to grow in non-calcareous dry granite-based soil but can also grow in rocky habitats, either in rock fissures or directly on top of the rock surface even without the presence of soil. Thus, the mineral composition of the rocks in their habitat directly influences their abundance. The habitat of Cochemiea fraileana is home to succulent flora and is particularly rich in local endemics. Currently, no major threats to the species are known to exist.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-estebanensis-gelinds",
@@ -193,7 +201,11 @@
       "Cactus halei",
       "Cochemiea halei",
       "Mammillaria halei"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cochemiea_halei_12.jpg/330px-Cochemiea_halei_12.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea halei is a species of cactus in the genus Cochemiea commonly known as the Magdalena cochemiea. It is endemic to the Magdalena Bay region in the Mexican state of Baja California Sur.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-louisae-gelinds",
@@ -235,7 +247,11 @@
       "Cactus setispinus",
       "Cochemiea setispina",
       "Mammillaria setispina"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mammillaria_%28Cochemia%29_setispina.jpg/330px-Mammillaria_%28Cochemia%29_setispina.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cochemiea setispina is a species of cactus in the genus Cochemiea commonly known as the mountain cochemiea. It is endemic to the mountains of the central part of the Baja California Peninsula in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "mammillaria-albicans-britton-rose-aberger",

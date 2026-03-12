@@ -16,13 +16,21 @@
     "id": "neobuxbaumia-polylopha-dc-backeb",
     "name": "Neobuxbaumia polylopha (DC.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Neobuxbaumia_polylopha_%283644603939%29.jpg/330px-Neobuxbaumia_polylopha_%283644603939%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus polylophus is a species of cactus endemic to Mexico. Often grown under the synonym Neobuxbaumia polylopha, it is popular with cactus growers and reproduces well in cultivation.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "neobuxbaumia-macrocephala-facweber-ex-kschum-eydawson",
     "name": "Neobuxbaumia macrocephala (F.A.C.Weber ex K.Schum.) E.Y.Dawson",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Neobuxbaumia_macrocephala_%285754203358%29.jpg/330px-Neobuxbaumia_macrocephala_%285754203358%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus macrocephalus, synonym Neobuxbaumia macrocephala, is a species of cactus endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "neobuxbaumia-scoparia-poselg-backeb",
@@ -92,7 +100,11 @@
       "Neobuxbaumia tetetzo",
       "Pachycereus tetetzo",
       "Pilocereus tetetzo"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neobuxbaumia_tetezo_%285758807588%29.jpg/330px-Neobuxbaumia_tetezo_%285758807588%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus tetetzo is a species of cactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cephalocereus-columna-trajani-karw-ex-pfeiff-kschum",
@@ -119,7 +131,11 @@
       "Pilocereus hoppenstedtii",
       "Pilocereus lateralis",
       "Pilocereus lateribarbatus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cephalocereus_columna-trajani_%285753639979%29.jpg/330px-Cephalocereus_columna-trajani_%285753639979%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus columna-trajani is a species of cactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "neobuxbaumia-laui-pvheath-drhunt",
@@ -144,6 +160,10 @@
       "Euporteria senilis",
       "Melocactus bradypus",
       "Pilocereus senilis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Cephalocereus_senilis.jpg/330px-Cephalocereus_senilis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cephalocereus senilis, the old man cactus, is a species of cactus native to Hidalgo and Veracruz in central Mexico. It is threatened in the wild, but widespread propagation and popularity in cultivation have reduced the demand on wild populations.",
+    "morphology_source": "wikipedia"
   }
 ]
