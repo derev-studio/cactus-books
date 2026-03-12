@@ -9,7 +9,11 @@
       "Lemaireocereus quevedonis",
       "Rathbunia quevedonis",
       "Stenocereus quevedonis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Stenocereus_quevedonis_1.jpg/330px-Stenocereus_quevedonis_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus quevedonis is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-beneckei-cehrenb-aberger-buxb",
@@ -25,7 +29,11 @@
       "Piptanthocereus beneckei",
       "Rathbunia beneckei",
       "Stenocereus beneckei"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Hertrichocereus_beneckei.jpg/330px-Hertrichocereus_beneckei.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus beneckei is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-thurberi-engelm-buxb",
@@ -51,7 +59,11 @@
       "Pilocereus thurberi",
       "Rathbunia thurberi",
       "Stenocereus thurberi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Organ_pipe_cactus.jpg/330px-Organ_pipe_cactus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus thurberi, the organ pipe cactus, is a species of cactus native to Mexico and the United States. The species is found in rocky desert. Two subspecies are recognized based on their distribution and height. The Organ Pipe Cactus National Monument is named for the species. Cacti are minimally adapted to particular thermal niches, and are tremendously vulnerable to seasonal precipitation.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-pruinosus-otto-ex-pfeiff-buxb",
@@ -71,7 +83,11 @@
       "Rathbunia pruinosa",
       "Ritterocereus pruinosus",
       "Stenocereus pruinosus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Stenocereus_pruinosus.jpg/330px-Stenocereus_pruinosus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus pruinosus is a species of cactus. It is endemic to Mexico and occurs in the states of Veracruz, Puebla, and Oaxaca.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-griseus-haw-buxb",
@@ -104,7 +120,11 @@
       "Ritterocereus griseus",
       "Stenocereus deficiens",
       "Stenocereus griseus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cactus_Scrub_Dagger_Cactus_Stenocereus_Griseus_Interspersed_with_Thorny_Shrubs_Arashi_Bay_Coast_Noord_Aruba.jpg/330px-Cactus_Scrub_Dagger_Cactus_Stenocereus_Griseus_Interspersed_with_Thorny_Shrubs_Arashi_Bay_Coast_Noord_Aruba.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus griseus, also known as the Mexican organ pipe, dagger cactus, pitaya, and pitayo de mayo, is a species of cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-eichlamii-britton-rose-buxb-ex-bravo",
@@ -116,7 +136,11 @@
     "id": "isolatocereus-dumortieri-scheidw-backeb",
     "name": "Isolatocereus dumortieri (Scheidw.) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Isolatocereus_dumortieri_%285739383513%29.jpg/330px-Isolatocereus_dumortieri_%285739383513%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Isolatocereus is a monotypic genus of flowering plant in the family Cactaceae. The only species is Isolatocereus dumortieri that is found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-gummosus-engelm-acgibson-kehorak",
@@ -135,7 +159,11 @@
       "Machaerocereus gummosus",
       "Rathbunia gummosa",
       "Stenocereus gummosus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Stenocereus_gummosus_Huntington_Desert_Garden.jpg/330px-Stenocereus_gummosus_Huntington_Desert_Garden.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus gummosus is a flowering plant in the family Cactaceae that is found in Baja California, Mexico at elevations of 9 to 134 meters",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-stellatus-pfeiff-riccob",
@@ -152,7 +180,11 @@
       "Neolemaireocereus stellatus",
       "Rathbunia stellata",
       "Stenocereus stellatus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stenocereus_stellatus_2.jpg/330px-Stenocereus_stellatus_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus stellatus is a flowering plant in the family Cactaceae that is found in Oaxaca, Mexico",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-queretaroensis-facweber-ex-mathsson-buxb",
@@ -168,7 +200,11 @@
       "Rathbunia queretaroensis",
       "Ritterocereus queretaroensis",
       "Stenocereus queretaroensis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Glandulicereus_queretaroensis.jpg/330px-Glandulicereus_queretaroensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus queretaroensis is a species of cactus from Mexico, including the state of Querétaro. It is cultivated for its fruit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-eruca-brandegee-acgibson-kehorak",
@@ -181,7 +217,11 @@
       "Machaerocereus eruca",
       "Rathbunia eruca",
       "Stenocereus eruca"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Stenocereus_eruca%2C_Creeping_Devils_at_Huntington.jpg/330px-Stenocereus_eruca%2C_Creeping_Devils_at_Huntington.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus eruca, commonly known as the creeping devil, is a member of the family Cactaceae. It is one of the most distinctive cacti, a member of the relatively small genus Stenocereus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-zopilotensis-arreola-nava-terrazas",
@@ -199,7 +239,11 @@
       "Cleistocactus kerberi",
       "Rathbunia kerberi",
       "Stenocereus kerberi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stenocereus_kerberi_1.jpg/330px-Stenocereus_kerberi_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus kerberi is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-alamosensis-jmcoult-acgibson-kehorak",
@@ -216,7 +260,11 @@
       "Rathbunia pseudosonorensis",
       "Rathbunia sonorensis",
       "Stenocereus alamosensis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Stenocereus_alamosensis.jpg/330px-Stenocereus_alamosensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus alamosensis is a species of cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-montanus-britton-rose-buxb",
@@ -229,7 +277,11 @@
       "Rathbunia montana",
       "Ritterocereus montanus",
       "Stenocereus montanus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Stenocereus_montanus.jpg/330px-Stenocereus_montanus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus montanus, known as sahuira, is a species of columnar cactus in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-standleyi-jgortega-buxb",
@@ -241,7 +293,11 @@
       "Rathbunia standleyi",
       "Ritterocereus standleyi",
       "Stenocereus standleyi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Stenocereus_standleyi_1.jpg/330px-Stenocereus_standleyi_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus standleyi is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-treleasei-rose-backeb",
@@ -253,7 +309,11 @@
       "Lemaireocereus treleasei",
       "Rathbunia treleasei",
       "Stenocereus treleasei"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Stenocereus_treleasei.jpg/330px-Stenocereus_treleasei.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus treleasei, commonly known as tunillo, is a species of flowering plant in the family Cactaceae, native to Oaxaca in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-chacalapensis-bravo-tmac-doug-buxb",
@@ -265,7 +325,9 @@
       "Rathbunia chacalapensis",
       "Ritterocereus chacalapensis",
       "Stenocereus chacalapensis"
-    ]
+    ],
+    "morphology_stem": "Stenocereus chacalapensis is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-aragonii-facweber-buxb",
@@ -295,6 +357,10 @@
       "Lemaireocereus martinezii",
       "Rathbunia martinezii",
       "Stenocereus martinezii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Stenocereus_martinezii_1.jpg/330px-Stenocereus_martinezii_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus martinezii is a species of flowering plant in the family Cactaceae, native to Sinaloa in Mexico. A candelabriform cactus typically 5 to 7 m tall, it is easy to propagate from cuttings, so local people use it to build live fences.",
+    "morphology_source": "wikipedia"
   }
 ]

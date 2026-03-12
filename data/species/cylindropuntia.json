@@ -24,7 +24,11 @@
       "Opuntia stipata",
       "Opuntia vaginata",
       "Opuntia virgata"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Cylindropuntialeptocaulis.jpg/330px-Cylindropuntialeptocaulis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia leptocaulis, the desert Christmas cactus, desert Christmas cholla, pencil cactus, or tasajillo, is a species of cholla cactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-tunicata-lehm-link-otto",
@@ -51,7 +55,11 @@
       "Cylindropuntia wolfii",
       "Grusonia wolfii",
       "Opuntia wolfii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Cylindropuntia_wolfii_%284471720355%29.jpg/330px-Cylindropuntia_wolfii_%284471720355%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia wolfii is a species of cactus known by the common name Wolf's cholla.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-imbricata-haw-dc",
@@ -78,7 +86,11 @@
       "Opuntia ruthei",
       "Opuntia stellata",
       "Opuntia vexans"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cylindropuntia_spinosior%2C_July_Albuquerque.jpg/330px-Cylindropuntia_spinosior%2C_July_Albuquerque.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia imbricata, the cane cholla, is a cactus found in the Southwestern United States and northern Mexico, including some cooler regions in comparison to many other cacti. It occurs primarily in the arid regions of the Southwestern United States in the states of Kansas, Oklahoma, Texas, New Mexico, Arizona, Colorado, and Nevada. It is often conspicuous because of its shrubby or even tree-like size, its silhouette, and its long-lasting yellowish fruits.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cylindropuntia-thurberi-engelm-fmknuth",
@@ -156,7 +168,11 @@
       "Opuntia fulgida",
       "Opuntia mamillata",
       "Opuntia mammillata"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Choya_brincadora_-_panoramio.jpg/330px-Choya_brincadora_-_panoramio.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Cylindropuntia fulgida, the jumping cholla, also known as the hanging chain cholla, is a cholla (Cylindropuntia) cactus native to Sonora and the Southwestern United States.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cylindropuntia-anteojoensis-pinkava-efanderson",

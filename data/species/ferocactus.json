@@ -25,7 +25,11 @@
       "Ferocactus falconeri",
       "Ferocactus phoeniceus",
       "Ferocactus wislizeni"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ferocactus_wislizeni_flower.jpg/330px-Ferocactus_wislizeni_flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus wislizeni, the fishhook barrel cactus, also called Arizona barrel cactus, candy barrel cactus, and Southwestern barrel cactus, is a species of flowering plant in the cactus family Cactaceae, native to northern Mexico and the southern United States. It is a ball-shaped cactus eventually growing to a cylindrical shape, with spiny ribs and red or yellow flowers in summer.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-latispinus",
@@ -70,7 +74,11 @@
       "Melocactus besleri-affinis",
       "Melocactus latispinus",
       "Melocactus recurvus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flor_de_Ferocactus_latispinus.jpg/330px-Flor_de_Ferocactus_latispinus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus latispinus is a species of barrel cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-wislizeni-engelm-britton-rose",
@@ -99,7 +107,11 @@
       "Ferocactus falconeri",
       "Ferocactus phoeniceus",
       "Ferocactus wislizeni"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ferocactus_wislizeni_flower.jpg/330px-Ferocactus_wislizeni_flower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus wislizeni, the fishhook barrel cactus, also called Arizona barrel cactus, candy barrel cactus, and Southwestern barrel cactus, is a species of flowering plant in the cactus family Cactaceae, native to northern Mexico and the southern United States. It is a ball-shaped cactus eventually growing to a cylindrical shape, with spiny ribs and red or yellow flowers in summer.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "sclerocactus-uncinatus-galeotti-nptaylor",
@@ -152,7 +164,11 @@
     "nameHistory": [
       "Echinocactus emoryi",
       "Ferocactus emoryi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saguaro_National_Park_1989_12.jpg/330px-Saguaro_National_Park_1989_12.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus emoryi, known commonly as Emory's barrel cactus, Coville's barrel cactus and traveler's friend, is a barrel cactus in the genus Ferocactus.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-macrodiscus-matt-britton-rose",
@@ -181,7 +197,11 @@
       "Echinocactus macromeris",
       "Echinofossulocactus campylacanthus",
       "Ferocactus macrodiscus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Ferocactus_macrodiscus.jpg/330px-Ferocactus_macrodiscus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus macrodiscus is a species of cactus in the genus Ferocactus from Guanahuato and Oaxaca States, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-peninsulae-facweber-britton-rose",
@@ -202,13 +222,21 @@
       "Echinocactus peninsulae",
       "Ferocactus horridus",
       "Ferocactus peninsulae"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cactaceae_-_Ferocactus_peninsulae.JPG/330px-Cactaceae_-_Ferocactus_peninsulae.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus peninsulae is a barrel cactus in the genus Ferocactus of the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-pilosus-salm-dyck-werderm",
     "name": "Ferocactus pilosus (Salm-Dyck) Werderm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ferocactus_pilosus1.jpg/330px-Ferocactus_pilosus1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus pilosus, also known as Mexican lime cactus or Mexican fire barrel, is a species of cactus in North America.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-recurvus-mill-borg",
@@ -227,7 +255,11 @@
     ],
     "nameHistory": [
       "Ferocactus recurvus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flor_de_Ferocactus_latispinus.jpg/330px-Flor_de_Ferocactus_latispinus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus latispinus is a species of barrel cactus native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-robustus-karw-ex-pfeiff-britton-rose",
@@ -242,7 +274,11 @@
       "Echinofossulocactus robustus",
       "Ferocactus robustus",
       "Melocactus prolifer"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Ferocactus_robustus_001.JPG/330px-Ferocactus_robustus_001.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus robustus is a barrel cactus in the genus Ferocactus of the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-townsendianus-britton-rose",
@@ -263,7 +299,11 @@
       "Ferocactus orcuttii",
       "Ferocactus viridescens",
       "Melocactus viridescens"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ferocactus_viridescens_1.jpg/330px-Ferocactus_viridescens_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus viridescens is a species of flowering plant in the cactus family Cactaceae. This barrel cactus is known by several common names, including coast barrel cactus, keg cactus and San Diego barrel cactus. Most of its native range in the United States is in San Diego County, California, where it is threatened by development, agriculture, and other alterations in its habitat. It is also found in northern Baja California, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "hamatocactus-crassihamatus-facweber-buxb",
@@ -301,7 +341,11 @@
         "name": "Ferocactus cylindraceus var. lecontei (Engelm.) Bravo",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ferocactus-cylindraceus.jpg/330px-Ferocactus-cylindraceus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus cylindraceus is a species of barrel cactus which is known by several common names, including California barrel cactus, Desert barrel cactus, compass barrel cactus, and miner's compass. It was first described by George Engelmann in 1853.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-pottsii-salm-dyck-backeb",
@@ -312,7 +356,11 @@
       "Echinocactus pottsii",
       "Ferocactus pottsii",
       "Thelocactus pottsii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Ferocactus_pottsii_pottsii_BotGardBln07122011E.jpg/330px-Ferocactus_pottsii_pottsii_BotGardBln07122011E.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus pottsii is a species of Ferocactus from Mexico. The specific epithet has also been spelt pottsi.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-fordii-orcutt-britton-rose",
@@ -332,6 +380,10 @@
     "nameHistory": [
       "Echinocactus fordii",
       "Ferocactus fordii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Ferocactus_fordii_borealis_317935833.jpg/330px-Ferocactus_fordii_borealis_317935833.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus fordii is a species of succulent plant in the family Cactaceae, commonly known as Ford's barrel cactus, endemic to the Baja California Peninsula of Mexico. It is spherical, growing to 50 cm (20 in) in diameter, with whitish-grey radial spines and solitary flowers of a deep rose pink, 4 cm (2 in) in diameter.",
+    "morphology_source": "wikipedia"
   }
 ]

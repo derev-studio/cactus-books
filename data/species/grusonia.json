@@ -41,7 +41,11 @@
       "Corynopuntia planibulbispina",
       "Grusonia grahamii",
       "Opuntia grahamii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Grusonia_grahamii_21.jpeg/330px-Grusonia_grahamii_21.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Grusonia grahamii is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "grusonia-invicta-brandegee-efanderson",
@@ -135,7 +139,11 @@
       "Opuntia parishii",
       "Opuntia parishiorum",
       "Opuntia parryi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Grusonia_parishii_11.jpg/330px-Grusonia_parishii_11.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Grusonia parishiorum is a species of cactus known by the common names matted cholla and Parish club cholla. It is native to the Mojave and Sonoran Deserts of California and Arizona.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "grusonia-clavata-engelm-hrob",

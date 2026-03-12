@@ -65,7 +65,11 @@
       "Ariocarpus strobiliformis",
       "Encephalocarpus strobiliformis",
       "Pelecyphora strobiliformis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Pelecyphora_strobiliformis.jpg/330px-Pelecyphora_strobiliformis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora strobiliformis is a species of cactus from Mexico. Its numbers in the wild have been reduced by collecting; it is listed in Appendix I of CITES but only as of \"Least Concern\" by the IUCN.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "escobaria-tuberculosa-engelm-britton-rose",
@@ -81,7 +85,11 @@
       "Mammillaria strobiliformis",
       "Mammillaria tuberculosa",
       "Pelecyphora tuberculosa"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Escobaria_varicolor.jpg/330px-Escobaria_varicolor.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora tuberculosa, the corncob cactus, is a species of flowering plant in the family Cactaceae, native to the south-central United States, and northern Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "escobaria-lloydii-britton-rose",
@@ -141,7 +149,11 @@
       "Mammillaria vivipara",
       "Neomammillaria radiosa",
       "Pelecyphora vivipara"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Escobaria_vivipara_6.jpg/330px-Escobaria_vivipara_6.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora vivipara is a species of cactus known by several common names, including spinystar, viviparous foxtail cactus, pincushion cactus and ball cactus. It is native to North America, where certain varieties can be found from Mexico to Canada. Most of these varieties are limited to the Mojave and Sonoran Deserts. The species epithet \"vivipara\" was likely a reference to the plants tendency to produce offsets, or \"pups\", but there is no evidence that it is truly viviparous.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "escobaria-zilziana-boed-backeb",

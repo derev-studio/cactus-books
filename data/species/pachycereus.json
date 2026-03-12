@@ -20,7 +20,11 @@
       "Pachycereus weberi",
       "Ritterocereus weberi",
       "Stenocereus weberi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pachycereus_weberi_%285741010770%29.jpg/330px-Pachycereus_weberi_%285741010770%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pachycereus weberi is a columnar cactus plant native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-pecten-aboriginum-engelm-ex-swatson-britton-rose",
@@ -31,13 +35,21 @@
       "Cereus pecten-aboriginum",
       "Pachycereus pecten-aboriginum",
       "Pachycereus tehuantepecanus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Teguise_Guatiza_-_Jardin_-_Pachycereus_pecten-aboriginum_02_ies.jpg/330px-Teguise_Guatiza_-_Jardin_-_Pachycereus_pecten-aboriginum_02_ies.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pachycereus pecten-aboriginum is a columnar cactus plant native to Mexico. They can grow up to 15 m (49 ft) high. The trunk of this species is 1.2 to 5.0 m tall and the fruits are large and burr-like. The specific name, pecten-aboriginum, is from the Latin, and means \"native combs\". It was inspired by the use of the fruits as hair combs.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "lemaireocereus-hollianus-facweber-ex-jmcoult-britton-rose",
     "name": "Lemaireocereus hollianus (F.A.C.Weber ex J.M.Coult.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pachycereus_hollianus_%285754192208%29.jpg/330px-Pachycereus_hollianus_%285754192208%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Lemaireocereus hollianus is a species of Lemaireocereus found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-schottii-engelm-drhunt",
@@ -49,7 +61,11 @@
         "name": "Pachycereus schottii var. tenuis (G.E.Linds.) P.V.Heath",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/P%C3%A1jara_La_Lajita_-_Oasis_Park_-_Pachycereus_schottii_04_ies.jpg/330px-P%C3%A1jara_La_Lajita_-_Oasis_Park_-_Pachycereus_schottii_04_ies.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Lophocereus schottii, the senita cactus, is a species of cactus from southern Arizona and north-western Mexico, particularly Baja California and Sonora.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-pringlei-swatson-britton-rose",
@@ -64,7 +80,11 @@
       "Pachycereus pringlei",
       "Pachycereus titan",
       "Pilocereus pringlei"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pachycereus_pringlei_%285782057703%29.jpg/330px-Pachycereus_pringlei_%285782057703%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pachycereus pringlei is a species of large cactus native to northwestern Mexico, in the states of Baja California, Baja California Sur, and Sonora. It is commonly known as cardón, a name derived from the Spanish word cardo, meaning \"thistle\"; additionally, it is often referred to as sabueso, which is possibly an early Spanish interpretation of the native Seri term for the plant, xaasj.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-tepamo-gama-sarias",

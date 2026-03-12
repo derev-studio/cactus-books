@@ -3,7 +3,11 @@
     "id": "ferocactus-alamosanus-britton-rose-britton-rose",
     "name": "Ferocactus alamosanus (Britton & Rose) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Ferocactus_alamosanus_1.jpg/330px-Ferocactus_alamosanus_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus alamosanus is a species of Ferocactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-reppenhagenii-gunger",
@@ -15,13 +19,21 @@
     "id": "ferocactus-echidne-dc-britton-rose",
     "name": "Ferocactus echidne (DC.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ferocactus_echidne_Ferokaktus_2023-04-23_01.jpg/330px-Ferocactus_echidne_Ferokaktus_2023-04-23_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus echidne is a barrel cactus in the genus Ferocactus. It is found in nature in Mexico. This cactus is known commonly as Sonora barrel, Coville's barrel cactus, Emory's barrel cactus, and traveler's friend. This plant is often sold as a houseplant.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-flavovirens-scheidw-britton-rose",
     "name": "Ferocactus flavovirens (Scheidw.) Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ferocactus_flavovirens_%285753683467%29.jpg/330px-Ferocactus_flavovirens_%285753683467%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus flavovirens is a species of Ferocactus from Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "ferocactus-schwarzii-gelinds",

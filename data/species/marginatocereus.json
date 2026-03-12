@@ -3,6 +3,10 @@
     "id": "lophocereus-marginatus-dc-sarias-terrazas",
     "name": "Lophocereus marginatus (DC.) S.Arias & Terrazas",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Cactus_Path.JPG/330px-Cactus_Path.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Marginatocereus marginatus is a species of plant in the family Cactaceae. It is sometimes called Mexican fencepost cactus.",
+    "morphology_source": "wikipedia"
   }
 ]

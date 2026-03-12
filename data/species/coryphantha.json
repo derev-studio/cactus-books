@@ -23,7 +23,11 @@
         "name": "Coryphantha macromeris subsp. macromeris",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Coryphantha_macromeris.jpg/330px-Coryphantha_macromeris.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora macromeris, the nipple beehive cactus, is a species of cactus in the United States and Mexico. In the Chihuhuan Desert, it is common and has a wide range.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-delicata-lbremer",
@@ -121,7 +125,11 @@
       "Mammillaria ceratocentra",
       "Mammillaria erecta",
       "Mammillaria evanescens"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Coryphantha_erecta.JPG/330px-Coryphantha_erecta.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha erecta is a species of Coryphantha found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-delaetiana-quehl-aberger",
@@ -145,7 +153,11 @@
       "Coryphantha compacta",
       "Coryphantha palmeri",
       "Mammillaria compacta"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Coryphantha_compacta_2.jpg/330px-Coryphantha_compacta_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha cornifera is a species of cactus that is endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-retusa-pfeiff-britton-rose",
@@ -269,7 +281,11 @@
       "Coryphantha sulcata",
       "Mammillaria calcarata",
       "Mammillaria sulcata"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Coryphantha_sulcata%2C_Dana_Peak_Park%2C_Bell_County%2C_Texas_1.jpg/330px-Coryphantha_sulcata%2C_Dana_Peak_Park%2C_Bell_County%2C_Texas_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha sulcata, a member of the cactus family Cactaceae, is a species of cactus occurring in Texas and a small part of northeastern Mexico. Sometimes the species is called Grooved Nipple Cactus or Pineapple Cactus, though the latter name sometimes is shared with another species.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-pseudoechinus-boed",
@@ -399,7 +415,11 @@
       "Mammillaria pycnacantha",
       "Mammillaria scepontocentra",
       "Mammillaria winkleri"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Coryphantha_pycnacantha_03.jpg/330px-Coryphantha_pycnacantha_03.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Coryphantha pycnacantha is a cactus species endemic to central Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "coryphantha-salinensis-poselg-dicht-alüthy",

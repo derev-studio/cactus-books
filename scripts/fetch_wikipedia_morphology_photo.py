@@ -10,6 +10,7 @@
 import json
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -22,9 +23,17 @@ USER_AGENT = "CactusBooks/1.0 (educational; taxonomy project)"
 
 
 def wiki_title(species_name: str) -> str:
-    """Mammillaria hahniana -> Mammillaria_hahniana."""
+    """Из полного имени делаем заголовок страницы Википедии: Genus species."""
     s = (species_name or "").strip()
-    s = re.sub(r"\s*[\(\[].*$", "", s).strip()  # убрать автора
+    # Часто у нас имя идёт с автором без скобок: "Ariocarpus retusus Scheidw."
+    # Для Википедии почти всегда нужен только "Ariocarpus retusus".
+    s = re.sub(r"\s*[\(\[].*$", "", s).strip()
+    parts = s.split()
+    if len(parts) >= 2:
+        genus = parts[0].replace("×", "").strip()
+        epithet = parts[1].replace("×", "").strip()
+        if genus and epithet:
+            return f"{genus}_{epithet}"
     return s.replace(" ", "_") if s else ""
 
 
@@ -32,16 +41,20 @@ def fetch_summary(title: str) -> dict | None:
     url = WIKI_API + urllib.parse.quote(title.replace(" ", "_"))
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             data = json.loads(resp.read().decode())
             if data.get("type") == "standard" and (data.get("extract") or data.get("thumbnail")):
                 return data
-    except Exception:
+    except (OSError, urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, TimeoutError):
         pass
     return None
 
 
 def main(limit=None):
+    print("Скрипт запущен. Жди — раз в секунду обрабатывается один вид, не закрывай терминал.")
+    if limit:
+        print("Ограничение: обработаю не больше", limit, "видов.")
+    print()
     total_updated = 0
     genera_done = 0
     for genus_file in sorted(SPECIES_DIR.glob("*.json")):
@@ -53,6 +66,7 @@ def main(limit=None):
             continue
         if not isinstance(species_list, list):
             continue
+        print("  Род:", genus_file.stem, "— видов:", len(species_list))
         changed = False
         for sp in species_list:
             name = (sp.get("name") or "").strip()

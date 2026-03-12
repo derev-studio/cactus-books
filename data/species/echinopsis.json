@@ -46,16 +46,28 @@
       "Echinopsis werdermannii",
       "Echinopsis zuccarinii",
       "Rebutia multiplex"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Echinopsis_oxygona_%285%29.jpg/330px-Echinopsis_oxygona_%285%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinopsis oxygona, also known as Eyries cactus, Easter lily cactus or sea-urchin cactus, is a species of flowering plant in the cactus family Cactaceae, native to south Brazil, Uruguay, Paraguay and northeastern Argentina. Some species that have been described separately, including Echinopsis eyriesii and Echinopsis tubiflora, are now considered to be synonymous. The features of the species include a large flower, with sharply pointed lavender or white petals, and a sweet scent.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinopsis-subdenudata",
     "name": "Echinopsis subdenudata",
-    "description": "«Кактус-пасхальная лилия». Почти без колючек, крупные белые ароматные цветки."
+    "description": "«Кактус-пасхальная лилия». Почти без колючек, крупные белые ароматные цветки.",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Echinopsis_subdenudata_1.JPG/330px-Echinopsis_subdenudata_1.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinopsis ancistrophora, synonyms including Lobivia ancistrophora, commonly called domino cactus, night blooming hedgehog, Easter lily cactus, is a species of cactus. It has a globular shape, few spines, with large, white flowers attached to long, green tubes. It occurs in Bolivia, at altitudes of 600–1800 metres, and northwest Argentina. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "echinopsis-chamaecereus",
     "name": "Echinopsis chamaecereus",
-    "description": "«Арахисовый кактус» — тонкие пальцевидные стебли, оранжевые цветки. Легко выращивать."
+    "description": "«Арахисовый кактус» — тонкие пальцевидные стебли, оранжевые цветки. Легко выращивать.",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Echinopsis_chamaecereus_BlKakteenT168.jpg/330px-Echinopsis_chamaecereus_BlKakteenT168.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinopsis chamaecereus is a species of cactus from northwestern Argentina and Bolivia. Synonyms include Chamaecereus silvestrii. It has been called the peanut cactus. This plant should not be confused with Echinopsis silvestrii, a synonym of Echinopsis albispinosa, a species with a very different appearance.",
+    "morphology_source": "wikipedia"
   }
 ]

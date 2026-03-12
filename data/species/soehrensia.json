@@ -3,6 +3,10 @@
     "id": "trichocereus-spachianus-lem-riccob",
     "name": "Trichocereus spachianus (Lem.) Riccob.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Lightmatter_cactusflower.jpg/330px-Lightmatter_cactusflower.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Echinopsis spachiana, synonyms including Soehrensia spachiana and Trichocereus spachianus, commonly known as the golden torch, (white) torch cactus or golden column, is a species of cactus native to South America. It is commonly cultivated as a pot or rockery plant worldwide. It has a columnar habit, with a lime-green cylindrical body with 1–2 cm (0.4–0.8 in) long golden spines.",
+    "morphology_source": "wikipedia"
   }
 ]

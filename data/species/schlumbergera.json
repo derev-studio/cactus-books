@@ -24,7 +24,11 @@
       "Zygocactus bridgesii",
       "Zygocactus delicatus",
       "Zygocactus truncatus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Schlumbergera_truncata_%28Exotic_Flora_Plate_20%29.jpg/330px-Schlumbergera_truncata_%28Exotic_Flora_Plate_20%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Schlumbergera truncata, the false Christmas cactus, is a species of plant in the family Cactaceae. It is endemic to a small area of the coastal mountains of south-eastern Brazil where its natural habitats are subtropical or tropical moist forests. It is the parent or one of the parents of the houseplants called Christmas cactus, Thanksgiving cactus or zygocactus, among other names.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "schlumbergera-buckleyi",
@@ -33,12 +37,20 @@
     "nameHistory": [
       "Epiphyllum buckleyi",
       "Schlumbergera × buckleyi"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cactus_de_no%C3%ABl_rev.jpg/330px-Cactus_de_no%C3%ABl_rev.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Schlumbergera is a small genus of cacti with six to nine species native to the coastal mountains of southeastern Brazil. These plants grow on trees or rocks in habitats that are generally shady with high humidity, and can be quite different in appearance from their desert-dwelling cousins. Most species of Schlumbergera have stems which resemble leaf-like pads joined one to the other and flowers which appear from areoles at the joints and tips of the stems. Two species have cylindrical stems more similar to other cacti.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "zygocactus-truncatus-haw-kschum",
     "name": "Zygocactus truncatus (Haw.) K.Schum.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Schlumbergera_truncata_%28Exotic_Flora_Plate_20%29.jpg/330px-Schlumbergera_truncata_%28Exotic_Flora_Plate_20%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Schlumbergera truncata, the false Christmas cactus, is a species of plant in the family Cactaceae. It is endemic to a small area of the coastal mountains of south-eastern Brazil where its natural habitats are subtropical or tropical moist forests. It is the parent or one of the parents of the houseplants called Christmas cactus, Thanksgiving cactus or zygocactus, among other names.",
+    "morphology_source": "wikipedia"
   }
 ]

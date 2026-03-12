@@ -11,7 +11,11 @@
       "Pediocactus knuthianus",
       "Thelocactus knuthianus",
       "Turbinicarpus knuthianus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Turbinicarpus_saueri.jpg/330px-Turbinicarpus_saueri.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Turbinicarpus saueri is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "turbinicarpus-hoferi-lüthy-ablau",
@@ -37,7 +41,11 @@
       "Pediocactus viereckii",
       "Thelocactus viereckii",
       "Turbinicarpus viereckii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Turbinicarpus_viereckii.jpg/330px-Turbinicarpus_viereckii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Turbinicarpus viereckii is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "turbinicarpus-gielsdorfianus-werderm-john-ríha",
@@ -51,7 +59,11 @@
       "Pediocactus gielsdorfianus",
       "Thelocactus gielsdorfianus",
       "Turbinicarpus gielsdorfianus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Turbinicarpus_gielsdorfianus.jpg/330px-Turbinicarpus_gielsdorfianus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Turbinicarpus gielsdorfianus is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "turbinicarpus-valdezianus-hmoeller-glass-rafoster",
@@ -70,7 +82,11 @@
       "Pseudosolisia valdeziana",
       "Thelocactus valdezianus",
       "Turbinicarpus valdezianus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Turbinicarpus_valdezianus_600_2.jpg/330px-Turbinicarpus_valdezianus_600_2.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Turbinicarpus valdezianus is a plant species in the Cactaceae family.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "turbinicarpus-laui-glass-rafoster",

@@ -58,7 +58,11 @@
       "Neolloydia mariposensis",
       "Pediocactus mariposensis",
       "Sclerocactus mariposensis"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Echinomastus_mariposensis.jpg/330px-Echinomastus_mariposensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Sclerocactus mariposensis, synonyms including Echinomastus mariposensis and Neolloydia mariposensis, is a rare species of cactus known by the common names Lloyd's fishhook cactus, golfball cactus, silver column cactus, and Mariposa cactus. It is native to a section of territory straddling the border between Brewster County, Texas, in the United States, and the states of Coahuila and Nuevo León in northeastern Mexico. It has been federally listed as a threatened species in the United States since 1979.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "sclerocactus-polyancistrus-engelm-jmbigelow-britton-rose",
@@ -70,7 +74,11 @@
       "Ferocactus polyancistrus",
       "Pediocactus polyancistrus",
       "Sclerocactus polyancistrus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Hermit_cactus%2C_Sclerocactus_polyancistrus_%2815461482495%29.jpg/330px-Hermit_cactus%2C_Sclerocactus_polyancistrus_%2815461482495%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Sclerocactus polyancistrus, the Mohave fishhook cactus or redspined fishhook cactus, is a species of flowering cactus in the genus Sclerocactus. It is found in the Mojave Desert in the Southwestern United States.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "neolloydia-johnsonii-parry-ex-engelm-ldbenson",

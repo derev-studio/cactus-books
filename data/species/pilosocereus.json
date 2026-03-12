@@ -8,7 +8,11 @@
       "Cephalocereus collinsii",
       "Pilocereus collinsii",
       "Pilosocereus collinsii"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pilosocereus_collinsii_-_Jim_Riley_-_249733158.jpeg/330px-Pilosocereus_collinsii_-_Jim_Riley_-_249733158.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pilosocereus collinsii is a species of cactus native to Oaxaca, Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pilosocereus-leucocephalus-poselg-byles-gdrowley",
@@ -43,7 +47,11 @@
       "Pilosocereus maxonii",
       "Pilosocereus palmeri",
       "Pilosocereus sartorianus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cereus_senilis_%283%29.jpg/330px-Cereus_senilis_%283%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pilosocereus leucocephalus, called old man cactus, old man of Mexico, tuno, and woolly torch, is a species of cactus in the genus Pilosocereus, native to Mexico and Central America. It has gained the Royal Horticultural Society's Award of Garden Merit. Pilosocereus leucocephalus functions as a keystone species in dry landscapes found in Mesoamerica. The fruit this cactus produces is relied upon as a source of hydration and sugar in arid areas by frugivores such as birds, bats, and even some reptiles.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pilocereus-purpusii-britton-rose-fmknuth",
@@ -76,13 +84,21 @@
       "Pilosocereus chrysacanthus",
       "Pilosocereus quadricentralis",
       "Pilosocereus tehuacanus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pilosocereus_chrysacanthus_%285754281260%29.jpg/330px-Pilosocereus_chrysacanthus_%285754281260%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pilosocereus chrysacanthus is a species of Pilosocereus found in Mexico to Honduras",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pilosocereus-quadricentralis-eydawson-backeb",
     "name": "Pilosocereus quadricentralis (E.Y.Dawson) Backeb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pilosocereus_quadricentralis.jpg/330px-Pilosocereus_quadricentralis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pilosocereus quadricentralis is a species of Pilosocereus found in Oaxaca and Chiapas States of Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "cephalocereus-alensis-facweber-britton-rose",
@@ -110,7 +126,11 @@
       "Cereus gaumeri",
       "Pilocereus gaumeri",
       "Pilosocereus gaumeri"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pilosocereusgaumericutting.jpg/330px-Pilosocereusgaumericutting.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pilosocereus gaumeri is a species of columnar cactus endemic to the Yucatán Peninsula of Mexico. Its common name in Spanish is sabucán.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pilosocereus-royenii-l-byles-gdrowley",
@@ -119,6 +139,8 @@
     "source": "gbif",
     "nameHistory": [
       "Pilosocereus royenii"
-    ]
+    ],
+    "morphology_stem": "\nPilosocereus royenii is a name which has been used in different senses for a species of cactus. In the past, it has been treated as a distinct species with a wide distribution in the Caribbean and Mexico. As of June 2025, it is not accepted by Plants of the World Online.Populations in Puerto Rico and the Virgin Islands that have been treated as the variety armatus of Pilosocereus royenii are considered to be Pilosocereus armatus (Otto ex Pfeiff.) A.R.Franck.\nPopulations in southeast Cuba that have been treated as the variety brooksianus of Pilosocereus royenii are considered to be Pilosocereus brooksianus (Britton & Rose) Byles & G.D.Rowley\nPopulations in Mexico that have been called by this name are considered to be Pilosocereus gaumeri (Britton & Rose) Backeb.\nPilosocereus royenii has been treated as a possible synonym of Pilosocereus polygonus (Lam.) Byles & G.D.Rowley, e.g. by Plants of the World Online.",
+    "morphology_source": "wikipedia"
   }
 ]

@@ -12,7 +12,11 @@
       "Rapicactus subterraneus",
       "Thelocactus subterraneus",
       "Turbinicarpus subterraneus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Rapicactus_subterraneus.jpg/330px-Rapicactus_subterraneus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rapicactus subterraneus, synonym Turbinicarpus subterraneus, is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "turbinicarpus-beguinii-nptaylor-mosco-zanov",
@@ -44,6 +48,10 @@
       "Rapicactus zaragosae",
       "Turbinicarpus zaragosae",
       "Turbinicarpus zaragozae"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Rapicactus_zaragozae.jpg/330px-Rapicactus_zaragozae.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rapicactus zaragosae, synonym Turbinicarpus zaragosae, is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts. It is threatened by habitat destruction.",
+    "morphology_source": "wikipedia"
   }
 ]

@@ -12,7 +12,11 @@
       "Efossus coptonogonus",
       "Ferocactus coptonogonus",
       "Stenocactus coptonogonus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Stenocactus_coptonogonus_002.jpg/330px-Stenocactus_coptonogonus_002.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocactus coptonogonus is a species of cactus native to the deserts of Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocactus-lamellosus-adietr-aberger",
@@ -51,7 +55,11 @@
       "Echinofossulocactus obvallatus",
       "Efossus obvallatus",
       "Stenocactus obvallatus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Stenocactus_kellerianus.jpg/330px-Stenocactus_kellerianus.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "\n\nStenocactus obvallatus is a species of cactus native to the deserts of Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocactus-multicostatus-hildm-aberger",
@@ -65,7 +73,11 @@
       "Echinofossulocactus multicostatus",
       "Efossus multicostatus",
       "Stenocactus multicostatus"
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Brain_Cactus_%28Stenocactus_multicostatus%29.jpg/330px-Brain_Cactus_%28Stenocactus_multicostatus%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocactus multicostatus, the brain cactus, is a member of the cactus family native to the deserts of Mexico, and is popular in the gardening community. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocactus-heteracanthus-muehlenpf-aberger-ex-awhill",
