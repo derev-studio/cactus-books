@@ -114,7 +114,11 @@
     "id": "stenocactus-ochoterenanus-tiegel",
     "name": "Stenocactus ochoterenanus Tiegel",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Stenocactus_ochoterena_GotBot_2015_003.jpg/330px-Stenocactus_ochoterena_GotBot_2015_003.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "\n\nStenocactus ochoterenianus is a species of cactus native to the deserts of Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocactus-phyllacanthus-adietr-otto-aberger",

@@ -29,6 +29,10 @@
     "id": "strombocactus-corregidorae-sarias-esánchez",
     "name": "Strombocactus corregidorae S.Arias & E.Sánchez",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Chichimecactus_corregidorae_1.jpeg/330px-Chichimecactus_corregidorae_1.jpeg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Strombocactus corregidorae is a species of cactus.",
+    "morphology_source": "wikipedia"
   }
 ]

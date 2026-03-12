@@ -54,7 +54,11 @@
     "id": "pelecyphora-aselliformis-cehrenb",
     "name": "Pelecyphora aselliformis C.Ehrenb.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pelecyphora_aselliformis_20020511.jpg/330px-Pelecyphora_aselliformis_20020511.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora aselliformis is a species of Pelecyphora found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pelecyphora-strobiliformis-werderm-fric-schelle",
@@ -95,7 +99,11 @@
     "id": "escobaria-lloydii-britton-rose",
     "name": "Escobaria lloydii Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Escobaria_lloydii.jpg/330px-Escobaria_lloydii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pelecyphora lloydii is a species of flowering plant in the family Cactaceae, native to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "escobaria-laredoi-glass-rafoster-nptaylor",

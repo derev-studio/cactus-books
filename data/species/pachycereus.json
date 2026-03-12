@@ -90,13 +90,17 @@
     "id": "pachycereus-tepamo-gama-sarias",
     "name": "Pachycereus tepamo Gama & S.Arias",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Pachycereus tepamo is a species of Pachycereus found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-grandis-rose",
     "name": "Pachycereus grandis Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Pachycereus grandis is a species of Pachycereus found in Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pachycereus-gaumeri-britton-rose",
@@ -120,6 +124,10 @@
     "id": "lophocereus-gatesii-mejones",
     "name": "Lophocereus gatesii M.E.Jones",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pachycereus_gatesii.jpg/330px-Pachycereus_gatesii.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Lophocereus gatesii is a species of plant in the family Cactaceae.",
+    "morphology_source": "wikipedia"
   }
 ]

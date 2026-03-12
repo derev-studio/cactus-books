@@ -227,7 +227,11 @@
     "id": "stenocereus-zopilotensis-arreola-nava-terrazas",
     "name": "Stenocereus zopilotensis Arreola-Nava & Terrazas",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Stenocereus_zopilotensis_1.jpg/330px-Stenocereus_zopilotensis_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Stenocereus zopilotensis is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-kerberi-kschum-acgibson-kehorak",
@@ -339,13 +343,17 @@
     "id": "stenocereus-chrysocarpus-sánchez-mej",
     "name": "Stenocereus chrysocarpus Sánchez-Mej.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Stenocereus chrysocarpus is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-fricii-sánchez-mej",
     "name": "Stenocereus fricii Sánchez-Mej.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Stenocereus fricii is a species of cactus in the genus Stenocereus, endemic to Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "stenocereus-martinezii-jgortega-buxb",

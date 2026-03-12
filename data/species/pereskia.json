@@ -55,7 +55,11 @@
     "id": "pereskia-aculeata-mill",
     "name": "Pereskia aculeata Mill.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pereskia_aculeata4_cropped.jpg/330px-Pereskia_aculeata4_cropped.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Pereskia aculeata is a scrambling shrub in the family Cactaceae. Common names include Barbados gooseberry, blade-apple cactus, leaf cactus, rose cactus, and lemonvine. It is native to tropical America. The leaves and fruits are edible, containing high quantities of protein, iron and other nutrients, and it is a popular vegetable in parts of the Brazilian state of Minas Gerais under the name of ora-pro-nóbis.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "pereskia-grandifolia-haw",
@@ -67,6 +71,10 @@
         "name": "Pereskia grandifolia var. grandifolia",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pereskia_grandifolia4.jpg/330px-Pereskia_grandifolia4.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rhodocactus grandifolius is a species of cactus native to eastern and southern Brazil. Like all species in the genus Rhodocactus and unlike most cacti, it has persistent leaves. It was first described in 1819. It is grown as an ornamental plant and has naturalized outside its native range.",
+    "morphology_source": "wikipedia"
   }
 ]

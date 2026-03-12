@@ -39,6 +39,10 @@
     "id": "ferocactus-schwarzii-gelinds",
     "name": "Ferocactus schwarzii G.E.Linds.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/At_Jardin_de_Cactus_2022_114.jpg/330px-At_Jardin_de_Cactus_2022_114.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Ferocactus schwarzii is a species of Ferocactus from Mexico.",
+    "morphology_source": "wikipedia"
   }
 ]

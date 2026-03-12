@@ -696,19 +696,31 @@
     "id": "opuntia-rastrera-facweber",
     "name": "Opuntia rastrera F.A.C.Weber",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Opuntia_rastrera.jpg/330px-Opuntia_rastrera.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia rastrera is a prickly pear which grows in the Mexican state of San Luis Potosí. It is known in Spanish as cuija, although that name can also refer to other cactuses such as Brasiliopuntia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-pilifera-facweber",
     "name": "Opuntia pilifera F.A.C.Weber",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Opuntia_pilifera.jpg/330px-Opuntia_pilifera.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia pilifera is a species of plants in the family Cactaceae (cacti). They are listed in CITES Appendix II.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-huajuapensis-bravo",
     "name": "Opuntia huajuapensis Bravo",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Opuntia_huajuapensis.jpg/330px-Opuntia_huajuapensis.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia huajuapensis, commonly known as the Huajuapan prickly pear or the Chumbera, is a species of prickly pear cactus in the family Cactaceae. It was described by Helia Bravo Hollis in 1953, and named for the town of Heroica Ciudad Huajuapan de León in Oaxaca, Mexico, from which the first specimens were described.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-parviclada-sarias-gama",
@@ -720,13 +732,19 @@
     "id": "opuntia-tehuacana-sarias-uguzmán",
     "name": "Opuntia tehuacana S.Arias & U.Guzmán",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Opuntia tehuacana, commonly known as the Tehuacán prickly pear, is a species of prickly pear cactus in the family Cactaceae. It was described by Mexican botanists Salvador Arias Montez and Susana Gama López in 1997. The species was named for the town of Tehuacán, Mexico, which is near the center of the species range.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-rufida-engelm",
     "name": "Opuntia rufida Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Opuntia_microdasys_subsp_rufida%2C_habitus%2C_La_Montagne%2C_b.jpg/330px-Opuntia_microdasys_subsp_rufida%2C_habitus%2C_La_Montagne%2C_b.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia rufida is a species of prickly pear cactus native to southwestern Texas and northern Mexico, where it grows on rocky slopes. The species makes up for its total lack of spines with a profusion of red-brown glochids. The common name blind prickly pear or cow blinder comes from the fact that the glochids may be carried away by the wind and blind animals.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-elizondoana-esánchez-villaseñor",
@@ -756,7 +774,11 @@
     "id": "opuntia-arenaria-engelm",
     "name": "Opuntia arenaria Engelm.",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Opuntia-arenaria.jpg/330px-Opuntia-arenaria.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia arenaria was considered a variety of O. polyacantha by many botanists, and is still treated that way in the Flora of North America. However, O. arenaria is diploid and O. polyacantha is tetraploid. It was described by Engelmann in 1856.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-gosseliniana-facweber",
@@ -837,13 +859,19 @@
     "id": "opuntia-chaffeyi-britton-rose",
     "name": "Opuntia chaffeyi Britton & Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Opuntia_chaffeyi_01.jpg/330px-Opuntia_chaffeyi_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia chaffeyi is a species of plant in the family Cactaceae. It is endemic to Zacatecas state in Mexico. Its natural habitat is hot deserts. It is a Critically endangered species, threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-pachyrrhiza-hmhern-gómez-hin-bárcenas",
     "name": "Opuntia pachyrrhiza H.M.Hern., Gómez-Hin. & Bárcenas",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Opuntia pachyrrhiza is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is subtropical or tropical dry lowland grassland. It is threatened by habitat loss.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-jaliscana-bravo",
@@ -855,7 +883,9 @@
     "id": "opuntia-megarrhiza-rose",
     "name": "Opuntia megarrhiza Rose",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Opuntia megarrhiza Rose is a species of plant in the family Cactaceae. It is endemic to the state of San Luís Potosí in northeastern Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-vaseyi-jmcoult-britton-rose",
@@ -916,7 +946,9 @@
     "id": "opuntia-pottsii-salm-dyck",
     "name": "Opuntia pottsii Salm-Dyck",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "morphology_stem": "Opuntia pottsii is a species of flowering plant in the family Cactaceae, native to Arizona, New Mexico and Texas in the United States and to northeast Mexico. It was first described by Joseph zu Salm-Reifferscheidt-Dyck in 1850.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-gallegiana-scheinvar-olalde",
@@ -934,7 +966,11 @@
         "name": "Opuntia compressa var. macrorhiza (Engelm.) L.D.Benson",
         "rank": "variety"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Prickly_pear_MN_2007.JPG/330px-Prickly_pear_MN_2007.JPG",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia humifusa, commonly known as the devil's-tongue, eastern prickly pear or Indian fig, is a cactus of the genus Opuntia present in parts of the eastern United States, southeastern Canada, and northeastern Mexico.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-bravoana-embaxter",
@@ -958,13 +994,21 @@
     "id": "opuntia-vulgaris-ten-1831",
     "name": "Opuntia vulgaris Ten., 1831",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dikenli_%C4%B0ncir_%28Opuntia_ficus-indica%29_Gaziantep_Turkey.IMG_1104.jpg/330px-Dikenli_%C4%B0ncir_%28Opuntia_ficus-indica%29_Gaziantep_Turkey.IMG_1104.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia ficus-indica, the Indian fig opuntia, fig opuntia, or prickly pear, is a species of cactus that has long been a domesticated crop plant grown in agricultural economies throughout arid and semiarid parts of the world. O. ficus-indica is the most widespread and most commercially important cactus. It is grown primarily as a fruit crop, and also for the vegetable nopales and other uses. Cacti are good crops for dry areas because they efficiently convert water into biomass. O. ficus-indica is the most widespread of the long-domesticated cactuses. Opuntia species hybridize easily, but the wild origin of O. ficus-indica is likely to have been in central Mexico, where its closest genetic relatives are found.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-elata-link-otto",
     "name": "Opuntia elata Link & Otto",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Opuntia_elata_%28flowers%29.jpg/330px-Opuntia_elata_%28flowers%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia elata is a species of cactus found in Bolivia, Paraguay, southern Brazil, northern Argentina, and Uruguay.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "opuntia-drummondii-graham",
@@ -976,6 +1020,10 @@
     "id": "opuntia-setispina-engelm-1850",
     "name": "Opuntia setispina Engelm., 1850",
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
-    "source": "gbif"
+    "source": "gbif",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Opuntia_macrorhiza_-_JBM.jpg/330px-Opuntia_macrorhiza_-_JBM.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Opuntia setispina is a species of cactus found in the Sierra Madre Occidental in Chihuahua, Sonora, and Durango in Mexico. The name O. setispina has been listed as a synonym under Opuntia macrorhiza and Opuntia pottsii, but shows no close relationship to either species. It is more of a woody shrubby, often somewhat tree-like species, growing up to approximately 1 meter tall and wide. It is morphologically similar to Opuntia chlorotica, Opuntia santa-rita, and Opuntia gosseliniana.",
+    "morphology_source": "wikipedia"
   }
 ]
