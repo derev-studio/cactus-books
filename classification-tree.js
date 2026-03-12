@@ -41,6 +41,7 @@
   var breadcrumbWrap = null;
   var backBtn = null;
   var breadcrumbEl = null;
+  var initialTarget = null;
 
   function getChildren(node) {
     return node && node.children ? node.children : [];
@@ -73,6 +74,52 @@
   }
 
   var CC_BY_SA_URL = 'https://creativecommons.org/licenses/by-sa/4.0/deed.ru';
+
+  function updateUrl(genusId, speciesId) {
+    if (!window.history || !window.history.replaceState) return;
+    try {
+      var url = new URL(window.location.href);
+      if (genusId) url.searchParams.set('genus', String(genusId).toLowerCase());
+      else url.searchParams["delete"] && url.searchParams["delete"]('genus');
+      if (speciesId) url.searchParams.set('species', String(speciesId).toLowerCase());
+      else url.searchParams["delete"] && url.searchParams["delete"]('species');
+      window.history.replaceState({}, '', url.toString());
+    } catch (e) {
+      // ignore URL errors (старые браузеры или нестандартная среда)
+    }
+  }
+
+  function findGenusNode(node, genusId) {
+    if (!node || !genusId) return null;
+    if (node.type === 'genus' && (node.id || '').toLowerCase() === genusId) return node;
+    var children = getChildren(node);
+    for (var i = 0; i < children.length; i++) {
+      var found = findGenusNode(children[i], genusId);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  function openInitialFromUrl() {
+    if (!initialTarget || !initialTarget.genusId || !taxonomy) return;
+    var genusId = initialTarget.genusId.toLowerCase();
+    var genusNode = findGenusNode(taxonomy, genusId);
+    if (!genusNode) return;
+    openGenusCard(genusNode);
+    if (initialTarget.speciesId) {
+      loadSpecies(genusNode.id, genusNode.speciesFile, function (err, list) {
+        if (err || !list) return;
+        var sid = initialTarget.speciesId.toLowerCase();
+        for (var i = 0; i < list.length; i++) {
+          var sp = list[i];
+          if ((sp.id || '').toLowerCase() === sid) {
+            showSpeciesInCard(sp, genusNode.name, genusNode.id);
+            break;
+          }
+        }
+      });
+    }
+  }
 
   function createNodeRow(node, depth, parentEl) {
     var children = getChildren(node);
@@ -224,6 +271,7 @@
     cardPanel.hidden = false;
     cardPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     var gid = (genusNode.id || '').toLowerCase();
+    updateUrl(gid || '', '');
     var entry = synonymsBridge && synonymsBridge.genera ? synonymsBridge.genera[gid] : null;
     setCardNames(entry, genusNode.name || '—');
     cardLevel.textContent = levelLabel('genus');
@@ -257,7 +305,7 @@
           btn.type = 'button';
           btn.textContent = sp.name || sp.id || '—';
           btn.addEventListener('click', function () {
-            showSpeciesInCard(sp, genusNode.name);
+            showSpeciesInCard(sp, genusNode.name, genusNode.id);
           });
           li.appendChild(btn);
           cardSpeciesList.appendChild(li);
@@ -266,7 +314,7 @@
     });
   }
 
-  function showSpeciesInCard(speciesNode, genusName) {
+  function showSpeciesInCard(speciesNode, genusName, genusId) {
     if (!cardNameBackeberg || !cardLevel || !cardDesc) return;
     if (cardPanel) cardPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     var sid = (speciesNode.id || '').toLowerCase();
@@ -277,6 +325,7 @@
     }
     setCardNames(entry, speciesNode.name || '—');
     cardLevel.textContent = levelLabel('species');
+    updateUrl(genusId || '', speciesNode.id || '');
     var desc = (speciesNode.description || '').trim();
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
     var infras = speciesNode.infraspecific;
@@ -428,6 +477,20 @@
     cardInfraspecificWrap = document.getElementById('card-infraspecific-wrap');
     cardInfraspecificList = document.getElementById('card-infraspecific-list');
 
+    // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки
+    try {
+      var params = new URLSearchParams(window.location.search || '');
+      var g = params.get('genus') || '';
+      var s = params.get('species') || '';
+      if (g || s) {
+        initialTarget = {
+          genusId: g.toLowerCase(),
+          speciesId: (s || '').toLowerCase()
+        };
+      }
+    } catch (e) {
+      initialTarget = null;
+    }
     if (cardClose) {
       cardClose.addEventListener('click', function () {
         if (cardPanel) cardPanel.hidden = true;
@@ -444,6 +507,9 @@
         if (treeLoading) treeLoading.hidden = true;
         if (treeError) treeError.hidden = true;
         buildTree(taxonomy);
+        if (initialTarget && initialTarget.genusId) {
+          openInitialFromUrl();
+        }
       })
       .catch(function () {
         if (treeLoading) treeLoading.hidden = true;
