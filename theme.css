@@ -192,3 +192,15 @@
   pointer-events: none;
   user-select: none;
 }
+.site-footer__gbif-cite {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--cactus-muted-on-dark);
+}
+.site-footer__gbif-cite a {
+  color: var(--cactus-accent, #7cb342);
+  text-decoration: underline;
+}
+.site-footer__gbif-cite a:hover {
+  text-decoration: none;
+}

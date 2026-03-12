@@ -58,8 +58,14 @@
       <p class="classification-intro">Семейство Cactaceae: подсемейства, трибы, роды и виды. Раскройте уровень по клику. Клик по роду — карточка и список видов, подвидов и разновидностей.</p>
     </div>
     <div class="classification-body">
-      <nav class="tree-nav" aria-label="Дерево систематики">
-        <div id="tree-root" class="tree"></div>
+      <nav class="tree-nav" aria-label="Систематика кактусов">
+        <div class="classification-tiles-wrap">
+          <div class="classification-breadcrumb-wrap" hidden>
+            <button type="button" class="classification-back" aria-label="Назад">← Назад</button>
+            <p class="classification-breadcrumb" id="classification-breadcrumb"></p>
+          </div>
+          <div id="tree-root" class="classification-tiles"></div>
+        </div>
         <p id="tree-loading" class="tree-loading">Загрузка…</p>
         <p id="tree-error" class="tree-error" hidden>Не удалось загрузить дерево. Проверьте наличие <code>data/taxonomy.json</code>.</p>
       </nav>
@@ -97,6 +103,7 @@
   </main>
 
   <footer class="site-footer">
+    <p class="site-footer__gbif-cite">При использовании данных о видах: <a href="https://doi.org/10.15468/dl.pxn5xp" target="_blank" rel="noopener">GBIF.org (10 марта 2026) GBIF Occurrence Download</a></p>
     <a href="about.html" class="site-footer__btn">Кактусярий ©</a>
     <a href="systematics.html" class="site-footer__btn">← Происхождение видов</a>
     <nav class="site-footer__sources" aria-label="Источники и благодарности">

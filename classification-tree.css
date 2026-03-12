@@ -85,6 +85,88 @@
   padding: 0 1rem 1.5rem max(1.25rem, env(safe-area-inset-left));
 }
 
+/* Плиточный вид (как «Происхождение видов») */
+.classification-tiles-wrap {
+  margin-top: 0.5rem;
+}
+.classification-breadcrumb-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.classification-back {
+  flex-shrink: 0;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cactus-accent, #7cb342);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.classification-back:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.classification-breadcrumb {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--cactus-muted-on-dark);
+}
+.classification-tiles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 480px) {
+  .classification-tiles { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 700px) {
+  .classification-tiles { grid-template-columns: repeat(3, 1fr); }
+}
+.classification-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 1rem 0.75rem;
+  background: var(--cactus-surface);
+  color: var(--cactus-text);
+  text-decoration: none;
+  border: none;
+  border-radius: 14px;
+  font: inherit;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.35;
+}
+.classification-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+.classification-tile:active {
+  transform: translateY(0);
+}
+.classification-tile__level {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--cactus-text-muted);
+  text-transform: lowercase;
+}
+
 .tree-loading,
 .tree-error {
   margin: 1rem 0;

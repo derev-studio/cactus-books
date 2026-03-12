@@ -37,6 +37,10 @@
   var taxonomy = null;
   var speciesCache = {};
   var synonymsBridge = null;
+  var pathStack = [];
+  var breadcrumbWrap = null;
+  var backBtn = null;
+  var breadcrumbEl = null;
 
   function getChildren(node) {
     return node && node.children ? node.children : [];
@@ -327,16 +331,72 @@
     }
   }
 
+  function renderBreadcrumb() {
+    if (!breadcrumbWrap || !breadcrumbEl) return;
+    if (pathStack.length <= 1) {
+      breadcrumbWrap.hidden = true;
+      return;
+    }
+    breadcrumbWrap.hidden = false;
+    breadcrumbEl.textContent = pathStack.map(function (n) { return n.name; }).join(' › ');
+  }
+
+  function renderTiles() {
+    if (!treeRoot) return;
+    var current = pathStack[pathStack.length - 1];
+    var children = getChildren(current);
+    treeRoot.innerHTML = '';
+    for (var i = 0; i < children.length; i++) {
+      (function (node) {
+        var type = node.type || '';
+        var tile = document.createElement('button');
+        tile.type = 'button';
+        tile.className = 'classification-tile';
+        tile.setAttribute('role', 'button');
+        var nameSpan = document.createElement('span');
+        nameSpan.textContent = node.name || '—';
+        var levelSpan = document.createElement('span');
+        levelSpan.className = 'classification-tile__level';
+        levelSpan.textContent = levelLabel(type);
+        tile.appendChild(nameSpan);
+        tile.appendChild(levelSpan);
+        tile.addEventListener('click', function () {
+          if (type === 'genus') {
+            openGenusCard(node);
+          } else {
+            pathStack.push(node);
+            renderBreadcrumb();
+            renderTiles();
+          }
+        });
+        treeRoot.appendChild(tile);
+      })(children[i]);
+    }
+    renderBreadcrumb();
+  }
+
   function buildTree(rootNode) {
     if (!treeRoot) return;
-    treeRoot.innerHTML = '';
-    createNodeRow(rootNode, 0, treeRoot);
+    pathStack = [rootNode];
+    if (backBtn) {
+      backBtn.onclick = function () {
+        if (pathStack.length > 1) {
+          pathStack.pop();
+          renderBreadcrumb();
+          renderTiles();
+        }
+      };
+    }
+    renderTiles();
   }
 
   function init() {
     treeRoot = document.getElementById('tree-root');
     treeLoading = document.getElementById('tree-loading');
     treeError = document.getElementById('tree-error');
+    breadcrumbWrap = document.querySelector('.classification-breadcrumb-wrap');
+    backBtn = document.querySelector('.classification-back');
+    breadcrumbEl = document.getElementById('classification-breadcrumb');
     cardPanel = document.getElementById('card-panel');
     cardClose = document.getElementById('card-close');
     cardNameBackeberg = document.getElementById('card-name-backeberg');
