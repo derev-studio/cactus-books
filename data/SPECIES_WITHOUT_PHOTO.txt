@@ -1,0 +1,18 @@
+# Виды без фото (photo_main_url) — по данным на момент проверки
+# Скрипт Wikipedia не нашёл статей в en.wikipedia.org с точным названием Genus_species.
+# Для завтра: можно подставлять синонимы, другой источник картинок или ручные ссылки.
+
+Итого: 47 родов, 396 видов без фото.
+
+Роды, где ВСЕ виды без фото (особенно заметно):
+- sulcorebutia: 1/1 — Sulcorebutia cardenasiana
+- maihueniopsis: 21/21
+- nopalea: 1/1 — Nopalea cochenillifera
+- trichocereus: 1/1 — Trichocereus macrogonus
+- consolea: 2/2
+- cumarinia: 1/1
+- deamia: 1/1
+- miqueliopuntia: 1/1
+- myrtgerocactus: 1/1
+
+Остальные роды — частично без фото (запуск проверки: см. classification-tree или запрос «у кого нет картинок»).
