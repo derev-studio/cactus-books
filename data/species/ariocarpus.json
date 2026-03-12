@@ -17,7 +17,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ariocarpus_retusus_v._scapharostroides1-4524.jpg/330px-Ariocarpus_retusus_v._scapharostroides1-4524.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus retusus is a species of cactus, from the genus Ariocarpus, found mainly in Mexico. It is one of the largest and fastest-growing species in this genus known for a slow rate of growth. Despite its slow growth, often taking ten years to reach flowering age, the retusus is a desirable cactus for cultivation, having attractive flowers and an unusual form for a cactus. It is also one of the most easily cultivated species in the genus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus retusus - вид кактусов из рода Ariocarpus, встречающийся в основном в Мексике. Это один из самых крупных и быстрорастущих видов в этом роде, известный медленными темпами роста. Несмотря на медленный рост, часто требующий десяти лет для достижения возраста цветения, ретуша является желанным кактусом для выращивания, имеющим привлекательные цветы и необычную для кактуса форму. Это также один из наиболее легко культивируемых видов в роде."
   },
   {
     "id": "ariocarpus-fissuratus-engelm-kschum",
@@ -52,7 +53,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ariocarpus_fissuratus-IMG_4228.jpg/330px-Ariocarpus_fissuratus-IMG_4228.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus fissuratus is a species of cactus found in small numbers in northern Mexico and Texas in the United States. Common names include living rock cactus, false peyote, chautle, dry whiskey and star cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus fissuratus - вид кактусов, встречающийся в небольших количествах в северной Мексике и Техасе в Соединенных Штатах. Распространенные названия включают живой каменный кактус, ложный пейот, шаттл, сухой виски и звездчатый кактус."
   },
   {
     "id": "ariocarpus-scaphirostris-boed",
@@ -62,7 +64,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ariocarpus_scaphirostris_%2850549764088%29.jpg/330px-Ariocarpus_scaphirostris_%2850549764088%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus scaphirostris is a species of plant in the family Cactaceae. It was originally called Ariocarpus scapharostrus in the 1930s.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus scaphirostris - вид растений из семейства кактусовых. Первоначально он назывался Ariocarpus scapharostrus в 1930-х годах."
   },
   {
     "id": "ariocarpus-trigonus-facweber-kschum",
@@ -82,7 +85,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ariocarpus_trigonus_%286152130973%29.jpg/330px-Ariocarpus_trigonus_%286152130973%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus trigonus or better known as Landmine Flowers is a species of flowering plant in the family Cactaceae, native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus trigonus или более известный как Landmine Flowers - вид цветковых растений из семейства кактусовых, произрастающих в Мексике."
   },
   {
     "id": "ariocarpus-kotschoubeyanus-lem-kschum",
@@ -106,7 +110,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Aiocarpus_kotschoubeyanus_Bluete.jpg/330px-Aiocarpus_kotschoubeyanus_Bluete.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus kotschoubeyanus is a species of plant in the family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus kotschoubeyanus - вид растений из семейства кактусовых."
   },
   {
     "id": "ariocarpus-agavoides-castañeda-efanderson",
@@ -120,6 +125,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/DSC_1783-Ariocarpus_agavoides-800px.jpg/330px-DSC_1783-Ariocarpus_agavoides-800px.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Ariocarpus agavoides is a species of cactus. Some taxonomists place it in a separate genus as Neogomesia agavoides. The locals use the slime from the roots of the plants as glue to repair pottery. The sweet-tasting warts are eaten and often added to salads",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Ariocarpus agavoides - вид кактусов. Некоторые таксономисты выделяют его в отдельный род как Neogomesia agavoides. Местные жители используют слизь из корней растений в качестве клея для ремонта керамики. Сладкие бородавки едят и часто добавляют в салаты"
   }
 ]

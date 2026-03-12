@@ -19,7 +19,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Disocactus_flagelliformis_1787.jpg/330px-Disocactus_flagelliformis_1787.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Aporocactus flagelliformis, the rattail cactus, is a species of flowering plant in the cactus family Cactaceae, and is the more cultivated of the two species in the genus Aporocactus. Due to its ease of cultivation and attractive floral displays, it is often grown as an ornamental potted plant.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Aporocactus flagelliformis, кактус крысохвостый, является видом цветущего растения в семействе кактусов Cactaceae, и является более культивируемым из двух видов в роде Aporocactus. Благодаря простоте выращивания и привлекательным цветочным проявлениям, его часто выращивают как декоративное растение в горшках."
   },
   {
     "id": "disocactus-martianus-zucc-ex-pfeiff-barthlott",
@@ -37,6 +38,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Disocactus_martianus_001.jpg/330px-Disocactus_martianus_001.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Aporocactus martianus is a species of cactus found in Oaxaca, Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Aporocactus martianus - вид кактусов, обитающий в штате Оахака, Мексика."
   }
 ]
