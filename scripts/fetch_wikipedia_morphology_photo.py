@@ -50,14 +50,23 @@ def fetch_summary(title: str) -> dict | None:
     return None
 
 
-def main(limit=None):
+def main(limit=None, only_genera=None):
+    """
+    only_genera: список имён файлов родов без .json, например ['rebutia', 'tephrocactus'].
+    Если задан, обрабатываются только эти файлы.
+    """
     print("Скрипт запущен. Жди — раз в секунду обрабатывается один вид, не закрывай терминал.")
     if limit:
         print("Ограничение: обработаю не больше", limit, "видов.")
+    if only_genera:
+        print("Только роды:", ", ".join(only_genera))
     print()
     total_updated = 0
     genera_done = 0
+    only_set = set((g.strip().lower().replace(".json", "") for g in only_genera)) if only_genera else None
     for genus_file in sorted(SPECIES_DIR.glob("*.json")):
+        if only_set is not None and genus_file.stem.lower() not in only_set:
+            continue
         if limit is not None and total_updated >= limit:
             break
         try:
@@ -106,6 +115,7 @@ def main(limit=None):
 if __name__ == "__main__":
     import sys
     LIMIT = None
+    ONLY_GENERA = None
     if "--limit" in sys.argv:
         try:
             i = sys.argv.index("--limit") + 1
@@ -113,4 +123,11 @@ if __name__ == "__main__":
                 LIMIT = int(sys.argv[i])
         except (ValueError, IndexError):
             pass
-    main(limit=LIMIT)
+    if "--genera" in sys.argv:
+        try:
+            i = sys.argv.index("--genera") + 1
+            if i < len(sys.argv):
+                ONLY_GENERA = [g.strip() for g in sys.argv[i].split(",") if g.strip()]
+        except (ValueError, IndexError):
+            pass
+    main(limit=LIMIT, only_genera=ONLY_GENERA)

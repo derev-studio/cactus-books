@@ -15,7 +15,9 @@
     "id": "rebutia-atrovirens",
     "name": "Rebutia atrovirens",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "morphology_stem": "Aylostera atrovirens is a species of flowering plant in the family Cactaceae, native to Bolivia and northwestern Argentina. It was first described by Curt Backeberg in 1936 as Lobivia atrovirens.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-margarethae",
@@ -33,7 +35,11 @@
         "name": "Rebutia mentosa subsp. purpurea",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rebutia_mentosa_GotBot_2015_002.jpg/330px-Rebutia_mentosa_GotBot_2015_002.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia mentosa, the crown cactus, is a species of cactus in the genus Weingartia, native to Bolivia. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-christinae",
@@ -45,19 +51,31 @@
     "id": "rebutia-donaldiana",
     "name": "Rebutia donaldiana",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rebutia_fiebrigii_pm.jpg/330px-Rebutia_fiebrigii_pm.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aylostera fiebrigii, the orange crown cactus or flame crown, is a species of flowering plant in the cactus family that is native to exposed rocky plateaux in the Bolivean Andes, at altitudes of 2,100–4,000 m (6,900–13,100 ft) above sea level. It consists of a solitary ball some 15 cm (5.9 in) in diameter, covered in tubercles and silky hairs, with brilliant orange daisy-like flowers. In time these balls multiply to form mounds.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-fabrisii",
     "name": "Rebutia fabrisii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Rebutia_fabrisii_aureiflora_1.jpg/330px-Rebutia_fabrisii_aureiflora_1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rebutia fabrisii is a species of Rebutia found in Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-friedrichiana",
     "name": "Rebutia friedrichiana",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Rebutia_pygmaea1d.MW.jpg/330px-Rebutia_pygmaea1d.MW.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aylostera pygmaea, synonyms including Rebutia pygmaea, is a species of cactus in the genus Aylostera, native to Bolivia and northwest Argentina. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-muscula",
@@ -69,49 +87,81 @@
     "id": "rebutia-arenacea",
     "name": "Rebutia arenacea",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Rebutia_arenacea.jpg/330px-Rebutia_arenacea.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia arenacea, the arenaceous crown cactus, is a species of cactus native to central Bolivia. It has been renamed Weingartia arenacea. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-wessneriana",
     "name": "Rebutia wessneriana",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rebutia_minuscula1.jpg/330px-Rebutia_minuscula1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rebutia minuscula is a species of cactus from South America found in northern Argentina and Bolivia. It is the type species of the genus Rebutia. As its synonym Rebutia senilis it has gained the Royal Horticultural Society's Award of Garden Merit. Its cultivars 'Krainziana', 'Marsoneri' and 'Violaciflora' are also listed as having gained the Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-haagei",
     "name": "Rebutia haagei",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Rebutia_pygmaea1d.MW.jpg/330px-Rebutia_pygmaea1d.MW.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aylostera pygmaea, synonyms including Rebutia pygmaea, is a species of cactus in the genus Aylostera, native to Bolivia and northwest Argentina. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-kariusiana",
     "name": "Rebutia kariusiana",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rebutia_minuscula1.jpg/330px-Rebutia_minuscula1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rebutia minuscula is a species of cactus from South America found in northern Argentina and Bolivia. It is the type species of the genus Rebutia. As its synonym Rebutia senilis it has gained the Royal Horticultural Society's Award of Garden Merit. Its cultivars 'Krainziana', 'Marsoneri' and 'Violaciflora' are also listed as having gained the Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-fiebrigii",
     "name": "Rebutia fiebrigii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Rebutia_fiebrigii_pm.jpg/330px-Rebutia_fiebrigii_pm.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aylostera fiebrigii, the orange crown cactus or flame crown, is a species of flowering plant in the cactus family that is native to exposed rocky plateaux in the Bolivean Andes, at altitudes of 2,100–4,000 m (6,900–13,100 ft) above sea level. It consists of a solitary ball some 15 cm (5.9 in) in diameter, covered in tubercles and silky hairs, with brilliant orange daisy-like flowers. In time these balls multiply to form mounds.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-minuscula",
     "name": "Rebutia minuscula",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rebutia_minuscula1.jpg/330px-Rebutia_minuscula1.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rebutia minuscula is a species of cactus from South America found in northern Argentina and Bolivia. It is the type species of the genus Rebutia. As its synonym Rebutia senilis it has gained the Royal Horticultural Society's Award of Garden Merit. Its cultivars 'Krainziana', 'Marsoneri' and 'Violaciflora' are also listed as having gained the Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-padcayensis",
     "name": "Rebutia padcayensis",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aylostera_%28Rebutia%29_padcayensis_%285734625098%29.jpg/330px-Aylostera_%28Rebutia%29_padcayensis_%285734625098%29.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Rebutia padcayensis is a species of Rebutia found in Bolivia and Argentina.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-pseudodeminuta",
     "name": "Rebutia pseudodeminuta",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Aylostera_pseudodeminuta_crop.jpg/330px-Aylostera_pseudodeminuta_crop.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Aylostera deminuta, synonym Rebutia deminuta, is a species of flowering plant in the family Cactaceae, native to Bolivia and northwest Argentina. The exact delimitation of the species varies, but sources agree that it is a short cactus with ribbed stems and orange to red flowers.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-steinmannii",
@@ -123,13 +173,21 @@
     "id": "rebutia-canigueralii",
     "name": "Rebutia canigueralii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rebutia_caniguerallii1e.MW.jpg/330px-Rebutia_caniguerallii1e.MW.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia canigueralii is a species of cactus in the genus Weingartia, native to Bolivia. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-steinbachii",
     "name": "Rebutia steinbachii",
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
-    "source": "ncbi"
+    "source": "ncbi",
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sulco_steinbachii_WR459.jpg/330px-Sulco_steinbachii_WR459.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia steinbachii, called Steinbach's crown cactus, is a species of cactus in the genus Weingartia, native to Bolivia. It has gained the Royal Horticultural Society's Award of Garden Merit under the synonym Rebutia steinbachii.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-fidaiana",
@@ -141,7 +199,11 @@
         "name": "Rebutia fidaiana subsp. cintiensis",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Weingartia_fidaiana_var._kargliana_WR677.jpg/330px-Weingartia_fidaiana_var._kargliana_WR677.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia fidana is a species of Weingartia found in Bolivia.",
+    "morphology_source": "wikipedia"
   },
   {
     "id": "rebutia-neocumingii",
@@ -157,6 +219,10 @@
         "name": "Rebutia neocumingii subsp. pulquinensis",
         "rank": "subspecies"
       }
-    ]
+    ],
+    "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Succu_Weingartia_lanata_01.jpg/330px-Succu_Weingartia_lanata_01.jpg",
+    "photo_source": "wikipedia",
+    "morphology_stem": "Weingartia neocumingii, the Cuming crown cactus, is a species of cactus in the genus Weingartia, endemic to Bolivia. It has gained the Royal Horticultural Society's Award of Garden Merit.",
+    "morphology_source": "wikipedia"
   }
 ]

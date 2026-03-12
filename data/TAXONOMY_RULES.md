@@ -24,6 +24,8 @@
 
 **Что сделано:** скрипт `scripts/gbif_add_missing_genera.py` создаёт для всех родов из GBIF, которых нет в дереве, новую трибу (позже роды распределены по трибам), добавляет в неё эти роды и создаёт для каждого файл `data/species/<род>.json` с видами из выгрузки. Пустые файлы видов (Gymnocalycium, Rebutia, Sulcorebutia, Tephrocactus и др.) заполняются из **NCBI** скриптом `scripts/fill_empty_genera_from_ncbi.py` (данные из `data/processed/species.csv`). В итоге **ничего не теряется**: все виды из GBIF и NCBI по возможности отображаются на сайте.
 
+**Важно:** после заполнения родов из NCBI нужно подтянуть фото и морфологию из Википедии, иначе в карточках видов картинок не будет. Запуск: `python3 scripts/fetch_wikipedia_morphology_photo.py --genera rebutia,tephrocactus` (или без `--genera` для всех родов). Для отдельных родов: `--genera maihueniopsis,sulcorebutia,nopalea` и т.д.
+
 ---
 
 ## Кто «старички», кто «новички»
