@@ -9,7 +9,8 @@
     "morphology_stem": "Ferocactus histrix, also known as Acitrón barrel cactus is a species of Ferocactus native to central Mexico.\nIt is a large barrel cactus that can be commonly found throughout all the Central Mexican matorral. It produces an edible fruit appreciated for its sour taste.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Ferocactus histrix, также известный как бочковый кактус Acitrón, является видом Ferocactus, произрастающим в центральной Мексике.\nЭто большой бочковый кактус, который обычно встречается во всех центральных мексиканских маторалях. Из него получаются съедобные фрукты, ценимые за кислый вкус.",
-    "morphology_stem_uk": "Ferocactus histrix, також відомий як бочковий кактус Acitrón, є видом Ferocactus, що походить із центральної Мексики.\nЦе великий бочковий кактус, який можна зустріти по всьому центрально-мексиканському маторралю. З нього виходить їстівний плід, який цінується за його кислий смак."
+    "morphology_stem_uk": "Ferocactus histrix, також відомий як бочковий кактус Acitrón, є видом Ferocactus, що походить із центральної Мексики.\nЦе великий бочковий кактус, який можна зустріти по всьому центрально-мексиканському маторралю. З нього виходить їстівний плід, який цінується за його кислий смак.",
+    "morphology_stem_es": "Ferocactus histrix, también conocido como cactus barril Acitrón es una especie de Ferocactus originaria del centro de México.\nEs un cactus de barril de gran tamaño que se puede encontrar comúnmente en todo el matorral del centro de México. Produce un fruto comestible apreciado por su sabor amargo."
   },
   {
     "id": "ferocactus-hamatacanthus-muehlenpf-britton-rose",
@@ -21,7 +22,8 @@
     "morphology_stem": "Ferocactus hamatacanthus, commonly named Turk's head, is a barrel cactus in the tribe Cacteae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Ferocactus hamatacanthus, обычно называемый головой турка, является бочкообразным кактусом в племени кактусов.",
-    "morphology_stem_uk": "Ferocactus hamatacanthus, зазвичай званий головою турка, є бочковим кактусом із триби Cacteae."
+    "morphology_stem_uk": "Ferocactus hamatacanthus, зазвичай званий головою турка, є бочковим кактусом із триби Cacteae.",
+    "morphology_stem_es": "Ferocactus hamatacanthus, comúnmente llamado cabeza de turco, es un cactus de barril de la tribu Cacteae."
   },
   {
     "id": "ferocactus-haematacanthus-monv-ex-salm-dyck-bravo-ex-backeb-fmknuth",
@@ -33,7 +35,8 @@
     "morphology_stem": "Ferocactus haematacanthus is a species of Ferocactus from Mexico.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Ferocactus haematacanthus - вид мексиканского рода Ferocactus.",
-    "morphology_stem_uk": "Ferocactus haematacanthus — вид Ferocactus з Мексики."
+    "morphology_stem_uk": "Ferocactus haematacanthus — вид Ferocactus з Мексики.",
+    "morphology_stem_es": "Ferocactus haematacanthus es una especie de Ferocactus de México."
   },
   {
     "id": "ferocactus-glaucescens-dc-britton-rose",
@@ -45,6 +48,7 @@
     "morphology_stem": "Ferocactus glaucescens, the glaucous barrel cactus, is a species of flowering plant in the family Cactaceae, native endemic to México.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Ferocactus glaucescens, глаукозный бочковый кактус, является разновидностью цветущего растения из семейства кактусовых, эндемичного для Мексики.",
-    "morphology_stem_uk": "Ferocactus glaucescens, сірий бочковий кактус, є видом квіткової рослини з родини Cactaceae, місцевим ендеміком Мексики."
+    "morphology_stem_uk": "Ferocactus glaucescens, сірий бочковий кактус, є видом квіткової рослини з родини Cactaceae, місцевим ендеміком Мексики.",
+    "morphology_stem_es": "Ferocactus glaucescens, el cactus barril glauco, es una especie de planta con flores de la familia Cactaceae, nativa de México."
   }
 ]

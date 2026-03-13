@@ -15,7 +15,8 @@
     "morphology_stem": "Cleistocactus winteri is a succulent of the family Cactaceae. Its common name is the golden rat tail. Cleistocactus colademononis, which has gained the Royal Horticultural Society's Award of Garden Merit, is sometimes considered to be a subspecies, Cleistocactus winteri subsp. colademono.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus winteri - суккулент семейства кактусовых. Его общее название - золотистый крысиный хвост. Cleistocactus colademononis, получивший награду Королевского садоводческого общества за заслуги в садоводстве, иногда считается подвидом Cleistocactus winteri subsp. colademono.",
-    "morphology_stem_uk": "Клейстокактус зимовий (Cleistocactus winteri) — сукулент сімейства кактусових. Його загальна назва - золотий щурячий хвіст. Cleistocactus colademononis, який отримав нагороду Royal Horticultural Society Award of Garden Merit, іноді вважається підвидом Cleistocactus winteri subsp. colademono."
+    "morphology_stem_uk": "Клейстокактус зимовий (Cleistocactus winteri) — сукулент сімейства кактусових. Його загальна назва - золотий щурячий хвіст. Cleistocactus colademononis, який отримав нагороду Royal Horticultural Society Award of Garden Merit, іноді вважається підвидом Cleistocactus winteri subsp. colademono.",
+    "morphology_stem_es": "Cleistocactus winteri es una suculenta de la familia Cactaceae. Su nombre común es cola de rata dorada. Cleistocactus colademononis, que ha ganado el Premio al Mérito del Jardín de la Royal Horticultural Society, a veces se considera una subespecie, Cleistocactus winteri subsp. colademono."
   },
   {
     "id": "cleistocactus-parviflorus",
@@ -27,7 +28,8 @@
     "morphology_stem": "Cleistocactus parviflorus is a species of columnar cacti in the genus Cleistocactus.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus parviflorus - вид столбчатых кактусов рода Cleistocactus.",
-    "morphology_stem_uk": "Cleistocactus parviflorus — вид колоновидних кактусів з роду Cleistocactus."
+    "morphology_stem_uk": "Cleistocactus parviflorus — вид колоновидних кактусів з роду Cleistocactus.",
+    "morphology_stem_es": "Cleistocactus parviflorus es una especie de cactus columnares del género Cleistocactus."
   },
   {
     "id": "cleistocactus-tupizensis",
@@ -45,7 +47,8 @@
     "morphology_stem": "Cleistocactus hyalacanthus is a species of columnar cacti in the genus Cleistocactus. The name comes from the Greek kleistos meaning closed because the flowers hardly open.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus hyalacanthus - вид столбчатых кактусов рода Cleistocactus. Название происходит от греческого kleistos, что означает закрытый, потому что цветы едва раскрываются.",
-    "morphology_stem_uk": "Cleistocactus hyalacanthus — вид колоновидних кактусів роду Клейстокактус. Назва походить від грецького kleistos, що означає закритий, оскільки квіти майже не розкриваються."
+    "morphology_stem_uk": "Cleistocactus hyalacanthus — вид колоновидних кактусів роду Клейстокактус. Назва походить від грецького kleistos, що означає закритий, оскільки квіти майже не розкриваються.",
+    "morphology_stem_es": "Cleistocactus hyalacanthus es una especie de cactus columnares del género Cleistocactus. El nombre proviene del griego kleistos y significa cerrado porque las flores apenas se abren."
   },
   {
     "id": "cleistocactus-ritteri",
@@ -57,7 +60,8 @@
     "morphology_stem": "Cleistocactus ritteri is a species of Cleistocactus found in Bolivia.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus ritteri - вид клеистокактуса, встречающийся в Боливии.",
-    "morphology_stem_uk": "Cleistocactus ritteri — вид клейстокактуса, що зустрічається в Болівії."
+    "morphology_stem_uk": "Cleistocactus ritteri — вид клейстокактуса, що зустрічається в Болівії.",
+    "morphology_stem_es": "Cleistocactus ritteri es una especie de Cleistocactus que se encuentra en Bolivia."
   },
   {
     "id": "cleistocactus-samaipatanus",
@@ -69,7 +73,8 @@
     "morphology_stem": "Cleistocactus samaipatanus is a species of flowering plant in the family Cactaceae, native to Bolivia.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus samaipatanus - вид цветковых растений семейства кактусовых, произрастающих в Боливии.",
-    "morphology_stem_uk": "Cleistocactus samaipatanus — вид квіткової рослини родини Cactaceae, що походить із Болівії."
+    "morphology_stem_uk": "Cleistocactus samaipatanus — вид квіткової рослини родини Cactaceae, що походить із Болівії.",
+    "morphology_stem_es": "Cleistocactus samaipatanus es una especie de planta con flores de la familia Cactaceae, originaria de Bolivia."
   },
   {
     "id": "cleistocactus-brookeae",
@@ -81,7 +86,8 @@
     "morphology_stem": "Cleistocactus brookeae is a species of columnar cacti in the genus Cleistocactus.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus brookeae - вид столбчатых кактусов рода Cleistocactus.",
-    "morphology_stem_uk": "Cleistocactus brookeae — вид колоновидних кактусів роду Клейстокактус."
+    "morphology_stem_uk": "Cleistocactus brookeae — вид колоновидних кактусів роду Клейстокактус.",
+    "morphology_stem_es": "Cleistocactus brookeae es una especie de cactus columnares del género Cleistocactus."
   },
   {
     "id": "cleistocactus-morawetzianus",
@@ -93,7 +99,8 @@
     "morphology_stem": "Cleistocactus morawetzianus is a species of columnar cactus in the genus Cleistocactus, endemic to Peru.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus morawetzianus - вид столбчатых кактусов рода Cleistocactus, эндемик Перу.",
-    "morphology_stem_uk": "Cleistocactus morawetzianus — вид колоноподібних кактусів з роду Cleistocactus, ендемік Перу."
+    "morphology_stem_uk": "Cleistocactus morawetzianus — вид колоноподібних кактусів з роду Cleistocactus, ендемік Перу.",
+    "morphology_stem_es": "Cleistocactus morawetzianus es una especie de cactus columnar del género Cleistocactus, endémica del Perú."
   },
   {
     "id": "cleistocactus-baumannii",
@@ -105,7 +112,8 @@
     "morphology_stem": "Cleistocactus baumannii is a species of Cleistocactus found in Argentina, Paraguay, Bolivia, Uruguay, and Brazil.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus baumannii - вид клеистокактуса, встречающийся в Аргентине, Парагвае, Боливии, Уругвае и Бразилии.",
-    "morphology_stem_uk": "Cleistocactus baumannii — вид клейстокактусів, що зустрічається в Аргентині, Парагваї, Болівії, Уругваї та Бразилії."
+    "morphology_stem_uk": "Cleistocactus baumannii — вид клейстокактусів, що зустрічається в Аргентині, Парагваї, Болівії, Уругваї та Бразилії.",
+    "morphology_stem_es": "Cleistocactus baumannii es una especie de Cleistocactus que se encuentra en Argentina, Paraguay, Bolivia, Uruguay y Brasil."
   },
   {
     "id": "cleistocactus-smaragdiflorus",
@@ -117,7 +125,8 @@
     "morphology_stem": "Cleistocactus smaragdiflorus is a species of Cleistocactus found in Bolivia and Argentina.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus smaragdiflorus - вид клеистокактуса, встречающийся в Боливии и Аргентине.",
-    "morphology_stem_uk": "Cleistocactus smaragdiflorus — вид клейстокактусів, що зустрічається в Болівії та Аргентині."
+    "morphology_stem_uk": "Cleistocactus smaragdiflorus — вид клейстокактусів, що зустрічається в Болівії та Аргентині.",
+    "morphology_stem_es": "Cleistocactus smaragdiflorus es una especie de Cleistocactus que se encuentra en Bolivia y Argentina."
   },
   {
     "id": "cleistocactus-chrysocephalus",
@@ -141,7 +150,8 @@
     "morphology_stem": "Cleistocactus strausii, the silver torch or wooly torch, is a perennial flowering plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus strausii, серебряный факел или шерстистый факел, является многолетним цветущим растением из семейства кактусовых.",
-    "morphology_stem_uk": "Cleistocactus strausii, сріблястий факел або шерстистий факел, є багаторічною квітковою рослиною родини Cactaceae."
+    "morphology_stem_uk": "Cleistocactus strausii, сріблястий факел або шерстистий факел, є багаторічною квітковою рослиною родини Cactaceae.",
+    "morphology_stem_es": "Cleistocactus strausii, la antorcha plateada o la antorcha lanuda, es una planta con flores perennes de la familia Cactaceae."
   },
   {
     "id": "cleistocactus-laniceps",
@@ -153,6 +163,7 @@
     "morphology_stem": "Cleistocactus laniceps is a species of columnar cacti in the genus Cleistocactus.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Cleistocactus laniceps - вид столбчатых кактусов рода Cleistocactus.",
-    "morphology_stem_uk": "Cleistocactus laniceps — вид колоноподібних кактусів з роду Cleistocactus."
+    "morphology_stem_uk": "Cleistocactus laniceps — вид колоноподібних кактусів з роду Cleistocactus.",
+    "morphology_stem_es": "Cleistocactus laniceps es una especie de cactus columnares del género Cleistocactus."
   }
 ]

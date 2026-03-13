@@ -33,7 +33,8 @@
     "morphology_stem": "Espostoa frutescens is a plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Espostoa frutescens — растение семейства Кактусовые.",
-    "morphology_stem_uk": "Espostoa frutescens — рослина родини кактусових."
+    "morphology_stem_uk": "Espostoa frutescens — рослина родини кактусових.",
+    "morphology_stem_es": "Espostoa frutescens es una planta de la familia Cactaceae."
   },
   {
     "id": "espostoa-huanucoensis",
@@ -87,7 +88,8 @@
     "morphology_stem": "Vatricania is a monotypic genus of flowering plants belonging to the family Cactaceae. It contains just one species, Vatricania guentheri. It has the common name of red tail cactus.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Ватрикания — монотипический род цветковых растений семейства Кактусовые. Он содержит только один вид — Vatricania guentheri. Он имеет общее название кактуса с красным хвостом.",
-    "morphology_stem_uk": "Vatricania — монотипний рід квіткових рослин родини кактусових. Він містить лише один вид, Vatricania guentheri. Має загальну назву червонохвостий кактус."
+    "morphology_stem_uk": "Vatricania — монотипний рід квіткових рослин родини кактусових. Він містить лише один вид, Vatricania guentheri. Має загальну назву червонохвостий кактус.",
+    "morphology_stem_es": "Vatricania es un género monotípico de plantas con flores perteneciente a la familia Cactaceae. Contiene una sola especie, Vatricania guentheri. Tiene el nombre común de cactus cola roja."
   },
   {
     "id": "espostoa-lanata",
@@ -99,7 +101,8 @@
     "morphology_stem": "Espostoa lanata is a species of cactus of the genus Espostoa.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Эспостоа ланата — вид кактусов рода Эспостоа.",
-    "morphology_stem_uk": "Espostoa lanata — вид кактусів роду Espostoa."
+    "morphology_stem_uk": "Espostoa lanata — вид кактусів роду Espostoa.",
+    "morphology_stem_es": "Espostoa lanata es una especie de cactus del género Espostoa."
   },
   {
     "id": "espostoa-ritteri",
@@ -117,7 +120,8 @@
     "morphology_stem": "Espostoa melanostele is a species of long-lived, slow-growing plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Espostoa melanostele — вид долгоживущего, медленнорастущего растения семейства Кактусовые.",
-    "morphology_stem_uk": "Espostoa melanostele — вид довгоживучих повільно зростаючих рослин родини кактусових."
+    "morphology_stem_uk": "Espostoa melanostele — вид довгоживучих повільно зростаючих рослин родини кактусових.",
+    "morphology_stem_es": "Espostoa melanostele es una especie de planta longeva y de crecimiento lento de la familia Cactaceae."
   },
   {
     "id": "espostoa-senilis",

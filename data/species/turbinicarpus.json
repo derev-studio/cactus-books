@@ -17,7 +17,8 @@
     "morphology_stem": "Turbinicarpus saueri is a species of plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus saueri — растение семейства Кактусовые.",
-    "morphology_stem_uk": "Turbinicarpus saueri — вид рослин родини кактусових."
+    "morphology_stem_uk": "Turbinicarpus saueri — вид рослин родини кактусових.",
+    "morphology_stem_es": "Turbinicarpus saueri es una especie de planta de la familia Cactaceae."
   },
   {
     "id": "turbinicarpus-hoferi-lüthy-ablau",
@@ -29,7 +30,8 @@
     "morphology_stem": "Turbinicarpus hoferi is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus hoferi — растение семейства Кактусовые. Это эндемик Мексики. Его естественная среда обитания – жаркие пустыни.",
-    "morphology_stem_uk": "Turbinicarpus hoferi — вид рослин родини кактусових. Це ендемік Мексики. Його природне місце проживання - спекотні пустелі."
+    "morphology_stem_uk": "Turbinicarpus hoferi — вид рослин родини кактусових. Це ендемік Мексики. Його природне місце проживання - спекотні пустелі.",
+    "morphology_stem_es": "Turbinicarpus hoferi es una especie de planta de la familia Cactaceae. Es endémica de México. Su hábitat natural son los desiertos cálidos."
   },
   {
     "id": "turbinicarpus-viereckii-werderm-vjohn-ríha",
@@ -55,7 +57,8 @@
     "morphology_stem": "Turbinicarpus viereckii is a species of plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus viereckii) — растение семейства Кактусовые.",
-    "morphology_stem_uk": "Turbinicarpus viereckii — вид рослин родини кактусових."
+    "morphology_stem_uk": "Turbinicarpus viereckii — вид рослин родини кактусових.",
+    "morphology_stem_es": "Turbinicarpus viereckii es una especie de planta de la familia Cactaceae."
   },
   {
     "id": "turbinicarpus-gielsdorfianus-werderm-john-ríha",
@@ -75,7 +78,8 @@
     "morphology_stem": "Turbinicarpus gielsdorfianus is a species of plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus gielsdorfianus — растение семейства Кактусовые.",
-    "morphology_stem_uk": "Turbinicarpus gielsdorfianus — вид рослин родини кактусових."
+    "morphology_stem_uk": "Turbinicarpus gielsdorfianus — вид рослин родини кактусових.",
+    "morphology_stem_es": "Turbinicarpus gielsdorfianus es una especie de planta de la familia Cactaceae."
   },
   {
     "id": "turbinicarpus-valdezianus-hmoeller-glass-rafoster",
@@ -100,7 +104,8 @@
     "morphology_stem": "Turbinicarpus valdezianus is a plant species in the Cactaceae family.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus valdezianus — растение семейства Кактусовые.",
-    "morphology_stem_uk": "Turbinicarpus valdezianus — вид рослин родини кактусових."
+    "morphology_stem_uk": "Turbinicarpus valdezianus — вид рослин родини кактусових.",
+    "morphology_stem_es": "Turbinicarpus valdezianus es una especie de planta de la familia Cactaceae."
   },
   {
     "id": "turbinicarpus-laui-glass-rafoster",
@@ -112,6 +117,7 @@
     "morphology_stem": "Turbinicarpus laui is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is hot deserts. It is threatened by habitat loss.",
     "morphology_source": "wikipedia",
     "morphology_stem_ru": "Turbinicarpus laui) — растение семейства Кактусовые. Это эндемик Мексики. Его естественная среда обитания – жаркие пустыни. Ему угрожает потеря среды обитания.",
-    "morphology_stem_uk": "Turbinicarpus laui — вид рослин родини кактусових. Це ендемік Мексики. Його природне місце проживання - спекотні пустелі. Йому загрожує втрата середовища проживання."
+    "morphology_stem_uk": "Turbinicarpus laui — вид рослин родини кактусових. Це ендемік Мексики. Його природне місце проживання - спекотні пустелі. Йому загрожує втрата середовища проживання.",
+    "morphology_stem_es": "Turbinicarpus laui es una especie de planta de la familia Cactaceae. Es endémica de México. Su hábitat natural son los desiertos cálidos. Está amenazado por la pérdida de hábitat."
   }
 ]
