@@ -19,6 +19,69 @@
     species: 'вид'
   };
 
+  /** Строки интерфейса по языку браузера (ru / uk / en) */
+  var UI_STRINGS = {
+    ru: {
+      back: '← Назад',
+      backAria: 'Назад',
+      close: 'Закрыть',
+      species: 'Виды',
+      seeAlso: 'Смотрите также',
+      loading: 'Загрузка…',
+      noSpeciesData: 'Нет данных о видах.',
+      infraspecific: 'Подвиды, разновидности и формы',
+      treeError: 'Не удалось загрузить дерево. Проверьте наличие <code>data/taxonomy.json</code>.',
+      level: { subfamily: 'подсемейство', tribe: 'триба', genus: 'род', species: 'вид' },
+      rank: { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' },
+      genusPlaceholder: ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.',
+      speciesPlaceholder: ' — вид рода %s. Подробное описание будет добавлено позже.',
+      photoSource: 'Фото: '
+    },
+    uk: {
+      back: '← Назад',
+      backAria: 'Назад',
+      close: 'Закрити',
+      species: 'Види',
+      seeAlso: 'Дивіться також',
+      loading: 'Завантаження…',
+      noSpeciesData: 'Немає даних про види.',
+      infraspecific: 'Підвиди, різновиди та форми',
+      treeError: 'Не вдалося завантажити дерево. Перевірте наявність <code>data/taxonomy.json</code>.',
+      level: { subfamily: 'підродина', tribe: 'триба', genus: 'рід', species: 'вид' },
+      rank: { subspecies: 'Підвид', variety: 'Різновид', form: 'Форма' },
+      genusPlaceholder: ' — рід кактусів родини Cactaceae. Детальний опис буде додано пізніше.',
+      speciesPlaceholder: ' — вид роду %s. Детальний опис буде додано пізніше.',
+      photoSource: 'Фото: '
+    },
+    en: {
+      back: '← Back',
+      backAria: 'Back',
+      close: 'Close',
+      species: 'Species',
+      seeAlso: 'See also',
+      loading: 'Loading…',
+      noSpeciesData: 'No species data.',
+      infraspecific: 'Subspecies, varieties and forms',
+      treeError: 'Failed to load tree. Check that <code>data/taxonomy.json</code> exists.',
+      level: { subfamily: 'subfamily', tribe: 'tribe', genus: 'genus', species: 'species' },
+      rank: { subspecies: 'Subspecies', variety: 'Variety', form: 'Form' },
+      genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
+      speciesPlaceholder: ' — species of genus %s. Description to be added.',
+      photoSource: 'Photo: '
+    }
+  };
+
+  function getUILocale() {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (lang.indexOf('uk') === 0) return 'uk';
+    if (lang.indexOf('ru') === 0) return 'ru';
+    return 'en';
+  }
+
+  function getUIStrings() {
+    return UI_STRINGS[getUILocale()] || UI_STRINGS.ru;
+  }
+
   var treeRoot = null;
   var treeLoading = null;
   var treeError = null;
@@ -50,15 +113,17 @@
   }
 
   function levelLabel(type) {
-    return LEVEL_LABELS[type] || type;
+    var ui = getUIStrings();
+    return (ui.level && ui.level[type]) || LEVEL_LABELS[type] || type;
   }
 
   function genusPlaceholder(name) {
-    return name + ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.';
+    return name + (getUIStrings().genusPlaceholder || '');
   }
 
   function speciesPlaceholder(name, genusName) {
-    return name + ' — вид рода ' + (genusName || '') + '. Подробное описание будет добавлено позже.';
+    var t = getUIStrings().speciesPlaceholder || '';
+    return name + t.replace('%s', genusName || '');
   }
 
   function wikiArticleUrl(speciesName) {
@@ -315,18 +380,18 @@
     if (morphWrap) morphWrap.hidden = true;
     if (photoWrap) photoWrap.hidden = true;
     cardSpeciesWrap.hidden = false;
-    cardSpeciesList.innerHTML = '<li>Загрузка…</li>';
+    cardSpeciesList.innerHTML = '<li>' + (getUIStrings().loading || 'Загрузка…') + '</li>';
 
     var speciesFile = genusNode.speciesFile;
     if (!speciesFile) {
-      cardSpeciesList.innerHTML = '<li>Нет данных о видах.</li>';
+      cardSpeciesList.innerHTML = '<li>' + (getUIStrings().noSpeciesData || 'Нет данных о видах.') + '</li>';
       return;
     }
 
     loadSpecies(genusNode.id, speciesFile, function (err, list) {
       cardSpeciesList.innerHTML = '';
       if (!list || list.length === 0) {
-        cardSpeciesList.innerHTML = '<li>Нет данных о видах.</li>';
+        cardSpeciesList.innerHTML = '<li>' + (getUIStrings().noSpeciesData || 'Нет данных о видах.') + '</li>';
         return;
       }
       for (var i = 0; i < list.length; i++) {
@@ -362,7 +427,7 @@
     var infras = speciesNode.infraspecific;
     if (cardInfraspecificWrap && cardInfraspecificList) {
       if (infras && infras.length > 0) {
-        var rankLabels = { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' };
+        var rankLabels = getUIStrings().rank || { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' };
         cardInfraspecificList.innerHTML = '';
         infras.forEach(function (item) {
           var li = document.createElement('li');
@@ -428,12 +493,12 @@
       var url = speciesNode.photo_main_url || speciesNode.photo_flower_url || '';
       if (url) {
         photoImg.src = url;
-        photoImg.alt = speciesNode.name || 'Фото';
+        photoImg.alt = speciesNode.name || (getUILocale() === 'en' ? 'Photo' : 'Фото');
         photoWrap.hidden = false;
         if (photoSource) {
           if (speciesNode.photo_source === 'wikipedia') {
             var photoWikiUrl = wikiArticleUrl(speciesNode.name);
-            photoSource.innerHTML = 'Фото: <a href="' + photoWikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
+            photoSource.innerHTML = (getUIStrings().photoSource || 'Фото: ') + '<a href="' + photoWikiUrl + '" target="_blank" rel="noopener">Wikipedia</a>. <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
             photoSource.hidden = false;
           } else {
             photoSource.hidden = true;
@@ -551,6 +616,30 @@
     cardInfraspecificList = document.getElementById('card-infraspecific-list');
     cardSeeAlsoWrap = document.getElementById('card-see-also-wrap');
     cardSeeAlsoList = document.getElementById('card-see-also-list');
+
+    applyUILocale();
+
+    // Применяем язык интерфейса (кнопки, заголовки, сообщения) по языку браузера
+    function applyUILocale() {
+      var ui = getUIStrings();
+      if (backBtn) {
+        backBtn.textContent = ui.back;
+        backBtn.setAttribute('aria-label', ui.backAria || ui.back.replace(/^\s*←\s*/, ''));
+      }
+      if (cardClose) {
+        cardClose.setAttribute('aria-label', ui.close);
+      }
+      var treeLoadingEl = document.getElementById('tree-loading');
+      if (treeLoadingEl) treeLoadingEl.textContent = ui.loading;
+      var treeErrorEl = document.getElementById('tree-error');
+      if (treeErrorEl) treeErrorEl.innerHTML = ui.treeError;
+      var speciesTitle = document.getElementById('card-species-title');
+      if (speciesTitle) speciesTitle.textContent = ui.species;
+      var seeAlsoTitle = document.getElementById('card-see-also-title');
+      if (seeAlsoTitle) seeAlsoTitle.textContent = ui.seeAlso;
+      var infraspecificTitle = document.getElementById('card-infraspecific-title');
+      if (infraspecificTitle) infraspecificTitle.textContent = ui.infraspecific;
+    }
 
     // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки
     try {
