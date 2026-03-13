@@ -16,6 +16,7 @@
     { code: "cs", name: "Čeština", flag: "🇨🇿" },
     { code: "nl", name: "Nederlands", flag: "🇳🇱" },
     { code: "en", name: "English", flag: "🇬🇧" },
+    { code: "es", name: "Español", flag: "🇪🇸" },
     { code: "fr", name: "Français", flag: "🇫🇷" },
     { code: "ka", name: "ქართული", flag: "🇬🇪" },
     { code: "de", name: "Deutsch", flag: "🇩🇪" },
