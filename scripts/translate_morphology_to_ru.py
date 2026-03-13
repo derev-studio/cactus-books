@@ -1,35 +1,36 @@
 #!/usr/bin/env python3
 """
-Переводит поля морфологии (morphology_stem, morphology_spines, morphology_flower, morphology_fruit)
-на русский и записывает в morphology_*_ru.
+Переводит поля морфологии на русский (morphology_* → morphology_*_ru).
+Только встроенный Python — ничего не нужно устанавливать (ни pip, ни venv).
 
-Использует deep_translator: сначала Google, при ошибке — MyMemory.
-Умная пауза: 1–2.5 сек между запросами, каждые 40 запросов — длинная пауза 25–45 сек,
-чтобы сервисы не заблокировали. Один запуск обрабатывает всю базу (data/species/*.json).
+Использует бесплатный API MyMemory через urllib. Умная пауза, чтобы не упереться в лимит:
+3–4 сек между запросами, каждые 25 запросов — пауза 90 сек. Один запуск обходит всю базу.
 
-Установка зависимости (один раз, в терминале):
-  pip3 install deep-translator
-  или: pip3 install -r requirements.txt
-
-Запуск:
-  cd /Users/alexanderermolovich/Documents/cactus && python3 -u scripts/translate_morphology_to_ru.py
+Запуск (достаточно двух строк в терминале):
+  cd /Users/alexanderermolovich/Documents/cactus
+  python3 -u scripts/translate_morphology_to_ru.py
 """
 
 import json
 import random
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT = SCRIPT_DIR.parent
 SPECIES_DIR = PROJECT / "data" / "species"
 MORPH_FIELDS = ["morphology_stem", "morphology_spines", "morphology_flower", "morphology_fruit"]
-MAX_TEXT_LEN = 4500
-PAUSE_MIN, PAUSE_MAX = 1.0, 2.5
-LONG_PAUSE_EVERY = 40
-LONG_PAUSE_MIN, LONG_PAUSE_MAX = 25, 45
-RETRIES = 3
-RETRY_PAUSE = 15
+MAX_TEXT_LEN = 2500
+MYMEMORY_URL = "https://api.mymemory.translated.net/get"
+USER_AGENT = "CactusBooks/1.0 (educational; taxonomy)"
+PAUSE_MIN, PAUSE_MAX = 3.0, 4.0
+LONG_PAUSE_EVERY = 25
+LONG_PAUSE_SEC = 90
+RETRIES = 2
+RETRY_PAUSE = 20
 
 
 def translate_en_ru(text: str) -> str | None:
@@ -37,56 +38,33 @@ def translate_en_ru(text: str) -> str | None:
         return None
     text = text[:MAX_TEXT_LEN]
     try:
-        from deep_translator import GoogleTranslator
-        t = GoogleTranslator(source="en", target="ru")
-        out = t.translate(text)
+        url = MYMEMORY_URL + "?" + urllib.parse.urlencode({"q": text, "langpair": "en|ru"})
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.loads(resp.read().decode())
+        out = (data.get("responseData") or {}).get("translatedText")
         if out and out.strip():
             return out.strip()
-    except Exception:
+    except (OSError, urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, TimeoutError):
         pass
-    try:
-        from deep_translator import MyMemoryTranslator
-        t = MyMemoryTranslator(source="en", target="ru")
-        out = t.translate(text)
-        if out and out.strip():
-            return out.strip()
-    except Exception:
-        pass
-    return None
-
-
-def translate_with_retry(text: str) -> str | None:
-    for attempt in range(RETRIES):
-        result = translate_en_ru(text)
-        if result:
-            return result
-        if attempt < RETRIES - 1:
-            time.sleep(RETRY_PAUSE)
     return None
 
 
 def main(limit: int | None = None, only_genera: list[str] | None = None):
     import sys
-    try:
-        from deep_translator import GoogleTranslator
-    except ImportError:
-        print("Ошибка: не установлен deep-translator.", flush=True)
-        print("Выполни один раз: pip install deep-translator", flush=True)
-        sys.exit(1)
-
     only_set = {g.strip().lower().replace(".json", "") for g in (only_genera or [])}
     total_done = 0
     genera_saved = 0
     request_count = 0
 
-    print("Скрипт перевода запущен. Ждите…", flush=True)
-    print("Перевод морфологии на русский (deep_translator: Google + MyMemory).", flush=True)
-    print("Умная пауза: 1–2.5 сек между запросами, каждые 40 — длинная пауза.", flush=True)
+    print("Скрипт перевода запущен (без установки библиотек). Ждите…", flush=True)
+    print("Перевод морфологии на русский через MyMemory API.", flush=True)
+    print("Пауза 3–4 сек между запросами, каждые 25 — пауза 90 сек.", flush=True)
     if limit:
         print("Ограничение: не более", limit, "полей.")
     if only_set:
         print("Только роды:", ", ".join(sorted(only_set)))
-    print("Обхожу data/species/*.json. Ниже — «Род: …» и «Перевожу: …».", flush=True)
+    print("Обхожу data/species/*.json.", flush=True)
     print()
 
     for genus_file in sorted(SPECIES_DIR.glob("*.json")):
@@ -114,12 +92,16 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
                 print("  Перевожу:", name, "…", flush=True)
                 request_count += 1
                 if request_count > 0 and request_count % LONG_PAUSE_EVERY == 0:
-                    long_pause = random.uniform(LONG_PAUSE_MIN, LONG_PAUSE_MAX)
-                    print("  [пауза", round(long_pause), "сек, чтобы не перегружать сервис]", flush=True)
-                    time.sleep(long_pause)
+                    print("  [пауза", LONG_PAUSE_SEC, "сек]", flush=True)
+                    time.sleep(LONG_PAUSE_SEC)
                 else:
                     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
-                ru_val = translate_with_retry(en_val)
+                ru_val = None
+                for _ in range(RETRIES):
+                    ru_val = translate_en_ru(en_val)
+                    if ru_val:
+                        break
+                    time.sleep(RETRY_PAUSE)
                 if ru_val:
                     sp[ru_field] = ru_val
                     changed = True
@@ -135,7 +117,7 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
     print()
     print("Готово. Переведено полей:", total_done, ", обновлено родов:", genera_saved, flush=True)
     if total_done == 0 and (limit is None or limit > 0):
-        print("(Ни один перевод не получен. Проверь интернет и позже запусти снова.)", flush=True)
+        print("(Лимит API сегодня исчерпан. Запусти скрипт завтра — он продолжит с того места, где остановился.)", flush=True)
 
 
 if __name__ == "__main__":
