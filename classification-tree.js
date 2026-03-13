@@ -35,31 +35,7 @@
       rank: { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' },
       genusPlaceholder: ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.',
       speciesPlaceholder: ' — вид рода %s. Подробное описание будет добавлено позже.',
-      photoSource: 'Фото: ',
-      header: {
-        searchPlaceholder: 'Название кактуса…',
-        searchBtn: 'Найти',
-        navLabel: 'Навигатор по кактусам',
-        linkOrigin: 'Происхождение видов',
-        linkGeography: 'Места обитания',
-        linkCare: 'Здоровье кактуса',
-        linkIdentifier: 'Опознать кактус',
-        linkGuardian: 'Колючий Собеседник',
-        moreSummary: 'Ещё',
-        dropdownHome: 'Главная',
-        dropdownNav: 'Навигатор по кактусам',
-        dropdownBook: 'Кактусология',
-        dropdownGreat: 'Великие кактусоводы',
-        dropdownGallery: 'Галерея',
-        dropdownStories: 'Рассказы',
-        dropdownRelax: 'Отдых',
-        dropdownDraw: 'Рисование',
-        dropdownSucculents: 'Суккуленты',
-        dropdownEdible: 'Съедобные кактусы',
-        dropdownRarities: 'Редкости',
-        dropdownFacts: 'Интересные факты',
-        dropdownCaution: 'Осторожно'
-      }
+      photoSource: 'Фото: '
     },
     uk: {
       back: '← Назад',
@@ -75,31 +51,7 @@
       rank: { subspecies: 'Підвид', variety: 'Різновид', form: 'Форма' },
       genusPlaceholder: ' — рід кактусів родини Cactaceae. Детальний опис буде додано пізніше.',
       speciesPlaceholder: ' — вид роду %s. Детальний опис буде додано пізніше.',
-      photoSource: 'Фото: ',
-      header: {
-        searchPlaceholder: 'Назва кактуса…',
-        searchBtn: 'Знайти',
-        navLabel: 'Навігатор по кактусах',
-        linkOrigin: 'Походження видів',
-        linkGeography: 'Місця проживання',
-        linkCare: 'Здоров\'я кактуса',
-        linkIdentifier: 'Впізнати кактус',
-        linkGuardian: 'Колючий Співбесідник',
-        moreSummary: 'Ще',
-        dropdownHome: 'Головна',
-        dropdownNav: 'Навігатор по кактусах',
-        dropdownBook: 'Кактусологія',
-        dropdownGreat: 'Великі кактусоводи',
-        dropdownGallery: 'Галерея',
-        dropdownStories: 'Оповідання',
-        dropdownRelax: 'Відпочинок',
-        dropdownDraw: 'Малювання',
-        dropdownSucculents: 'Сукуленти',
-        dropdownEdible: 'Їстівні кактуси',
-        dropdownRarities: 'Рідкості',
-        dropdownFacts: 'Цікаві факти',
-        dropdownCaution: 'Обережно'
-      }
+      photoSource: 'Фото: '
     },
     en: {
       back: '← Back',
@@ -115,31 +67,7 @@
       rank: { subspecies: 'Subspecies', variety: 'Variety', form: 'Form' },
       genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
       speciesPlaceholder: ' — species of genus %s. Description to be added.',
-      photoSource: 'Photo: ',
-      header: {
-        searchPlaceholder: 'Cactus name…',
-        searchBtn: 'Search',
-        navLabel: 'Cactus navigator',
-        linkOrigin: 'Origin of species',
-        linkGeography: 'Habitats',
-        linkCare: 'Cactus care',
-        linkIdentifier: 'Identify cactus',
-        linkGuardian: 'Prickly Companion',
-        moreSummary: 'More',
-        dropdownHome: 'Home',
-        dropdownNav: 'Cactus navigator',
-        dropdownBook: 'Cactology',
-        dropdownGreat: 'Great cactologists',
-        dropdownGallery: 'Gallery',
-        dropdownStories: 'Stories',
-        dropdownRelax: 'Relax',
-        dropdownDraw: 'Drawing',
-        dropdownSucculents: 'Succulents',
-        dropdownEdible: 'Edible cacti',
-        dropdownRarities: 'Rarities',
-        dropdownFacts: 'Interesting facts',
-        dropdownCaution: 'Caution'
-      }
+      photoSource: 'Photo: '
     }
   };
 
@@ -711,39 +639,6 @@
       if (seeAlsoTitle) seeAlsoTitle.textContent = ui.seeAlso;
       var infraspecificTitle = document.getElementById('card-infraspecific-title');
       if (infraspecificTitle) infraspecificTitle.textContent = ui.infraspecific;
-      // Шапка: поиск, меню, «Ещё»
-      var h = ui.header;
-      if (h) {
-        var navSearch = document.getElementById('nav-search');
-        if (navSearch) navSearch.placeholder = h.searchPlaceholder || navSearch.placeholder;
-        var searchBtn = document.getElementById('header-search-btn');
-        if (searchBtn) searchBtn.textContent = h.searchBtn || 'Найти';
-        var navLabel = document.getElementById('header-nav-label');
-        if (navLabel) navLabel.textContent = h.navLabel || navLabel.textContent;
-        var set = function (id, text) {
-          var el = document.getElementById(id);
-          if (el && text) el.textContent = text;
-        };
-        set('header-link-origin', h.linkOrigin);
-        set('header-link-geography', h.linkGeography);
-        set('header-link-care', h.linkCare);
-        set('header-link-identifier', h.linkIdentifier);
-        set('header-link-guardian', h.linkGuardian);
-        set('header-more-summary', h.moreSummary);
-        set('header-dropdown-home', h.dropdownHome);
-        set('header-dropdown-nav', h.dropdownNav);
-        set('header-dropdown-book', h.dropdownBook);
-        set('header-dropdown-great', h.dropdownGreat);
-        set('header-dropdown-gallery', h.dropdownGallery);
-        set('header-dropdown-stories', h.dropdownStories);
-        set('header-dropdown-relax', h.dropdownRelax);
-        set('header-dropdown-draw', h.dropdownDraw);
-        set('header-dropdown-succulents', h.dropdownSucculents);
-        set('header-dropdown-edible', h.dropdownEdible);
-        set('header-dropdown-rarities', h.dropdownRarities);
-        set('header-dropdown-facts', h.dropdownFacts);
-        set('header-dropdown-caution', h.dropdownCaution);
-      }
     }
 
     // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки

@@ -18,32 +18,32 @@
   <header class="site-header">
     <a href="home.html" class="site-header__brand">🌵 Кактусярий</a>
     <form class="site-header__navigator" action="navigator.html" method="get" role="search">
-      <label for="nav-search" class="visually-hidden">Навигатор по кактусам</label>
+      <label for="nav-search" class="visually-hidden" id="header-nav-label">Навигатор по кактусам</label>
       <input type="search" name="q" id="nav-search" class="site-header__navigator-input" placeholder="Название кактуса…" autocomplete="off" />
-      <button type="submit" class="site-header__navigator-btn">Найти</button>
+      <button type="submit" class="site-header__navigator-btn" id="header-search-btn">Найти</button>
     </form>
     <nav class="site-header__nav">
-      <a href="systematics.html" class="site-header__link">Происхождение видов</a>
-      <a href="geography.html" class="site-header__link">Места обитания</a>
-      <a href="care.html" class="site-header__link">Здоровье кактуса</a>
-      <a href="identifier.html" class="site-header__link">Опознать кактус</a>
-      <a href="guardian.html" class="site-header__link">Колючий Собеседник</a>
+      <a href="systematics.html" class="site-header__link" id="header-link-origin">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link" id="header-link-geography">Места обитания</a>
+      <a href="care.html" class="site-header__link" id="header-link-care">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link" id="header-link-identifier">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link" id="header-link-guardian">Колючий Собеседник</a>
       <details class="site-header__more">
-        <summary>Ещё</summary>
+        <summary id="header-more-summary">Ещё</summary>
         <div class="site-header__dropdown">
-          <a href="home.html">Главная</a>
-          <a href="navigator.html">Навигатор по кактусам</a>
-          <a href="книга-кактусология/book-read.html">Кактусология</a>
-          <a href="great-cactus.html">Великие кактусоводы</a>
-          <a href="index.html">Галерея</a>
-          <a href="stories.html">Рассказы</a>
-          <a href="relax.html">Отдых</a>
-          <a href="draw.html">Рисование</a>
-          <a href="succulents.html">Суккуленты</a>
-          <a href="edible.html" class="site-header__link--active">Съедобные кактусы</a>
-          <a href="rarities.html">Редкости</a>
-          <a href="facts.html">Интересные факты</a>
-          <a href="caution.html">Осторожно</a>
+          <a href="home.html" id="header-dropdown-home">Главная</a>
+          <a href="navigator.html" id="header-dropdown-nav">Навигатор по кактусам</a>
+          <a href="книга-кактусология/book-read.html" id="header-dropdown-book">Кактусология</a>
+          <a href="great-cactus.html" id="header-dropdown-great">Великие кактусоводы</a>
+          <a href="index.html" id="header-dropdown-gallery">Галерея</a>
+          <a href="stories.html" id="header-dropdown-stories">Рассказы</a>
+          <a href="relax.html" id="header-dropdown-relax">Отдых</a>
+          <a href="draw.html" id="header-dropdown-draw">Рисование</a>
+          <a href="succulents.html" id="header-dropdown-succulents">Суккуленты</a>
+          <a href="edible.html" class="site-header__link--active" id="header-dropdown-edible">Съедобные кактусы</a>
+          <a href="rarities.html" id="header-dropdown-rarities">Редкости</a>
+          <a href="facts.html" id="header-dropdown-facts">Интересные факты</a>
+          <a href="caution.html" id="header-dropdown-caution">Осторожно</a>
         </div>
       </details>
     </nav>
@@ -76,6 +76,7 @@
     </nav>
   </footer>
   <script src="i18n.js" defer></script>
+  <script src="header-i18n.js" defer></script>
   <script>
     (function () {
       function init() {

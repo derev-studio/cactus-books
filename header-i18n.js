@@ -1,0 +1,138 @@
+/**
+ * Локализация шапки сайта по языку браузера (ru / uk / en).
+ * Подключите скрипт на всех страницах с общим header.
+ */
+(function () {
+  'use strict';
+
+  var HEADER_STRINGS = {
+    ru: {
+      searchPlaceholder: 'Название кактуса…',
+      searchBtn: 'Найти',
+      navLabel: 'Навигатор по кактусам',
+      linkOrigin: 'Происхождение видов',
+      linkGeography: 'Места обитания',
+      linkCare: 'Здоровье кактуса',
+      linkIdentifier: 'Опознать кактус',
+      linkGuardian: 'Колючий Собеседник',
+      moreSummary: 'Ещё',
+      dropdownHome: 'Главная',
+      dropdownNav: 'Навигатор по кактусам',
+      dropdownBook: 'Кактусология',
+      dropdownGreat: 'Великие кактусоводы',
+      dropdownGallery: 'Галерея',
+      dropdownStories: 'Рассказы',
+      dropdownRelax: 'Отдых',
+      dropdownDraw: 'Рисование',
+      dropdownSucculents: 'Суккуленты',
+      dropdownEdible: 'Съедобные кактусы',
+      dropdownRarities: 'Редкости',
+      dropdownFacts: 'Интересные факты',
+      dropdownCaution: 'Осторожно',
+      startLink: '← Стартовая',
+      dropdownFiles: 'Список файлов (по алфавиту)'
+    },
+    uk: {
+      searchPlaceholder: 'Назва кактуса…',
+      searchBtn: 'Знайти',
+      navLabel: 'Навігатор по кактусах',
+      linkOrigin: 'Походження видів',
+      linkGeography: 'Місця проживання',
+      linkCare: "Здоров'я кактуса",
+      linkIdentifier: 'Впізнати кактус',
+      linkGuardian: 'Колючий Співбесідник',
+      moreSummary: 'Ще',
+      dropdownHome: 'Головна',
+      dropdownNav: 'Навігатор по кактусах',
+      dropdownBook: 'Кактусологія',
+      dropdownGreat: 'Великі кактусоводи',
+      dropdownGallery: 'Галерея',
+      dropdownStories: 'Оповідання',
+      dropdownRelax: 'Відпочинок',
+      dropdownDraw: 'Малювання',
+      dropdownSucculents: 'Сукуленти',
+      dropdownEdible: 'Їстівні кактуси',
+      dropdownRarities: 'Рідкості',
+      dropdownFacts: 'Цікаві факти',
+      dropdownCaution: 'Обережно',
+      startLink: '← Стартова',
+      dropdownFiles: 'Список файлів (за абеткою)'
+    },
+    en: {
+      searchPlaceholder: 'Cactus name…',
+      searchBtn: 'Search',
+      navLabel: 'Cactus navigator',
+      linkOrigin: 'Origin of species',
+      linkGeography: 'Habitats',
+      linkCare: 'Cactus care',
+      linkIdentifier: 'Identify cactus',
+      linkGuardian: 'Prickly Companion',
+      moreSummary: 'More',
+      dropdownHome: 'Home',
+      dropdownNav: 'Cactus navigator',
+      dropdownBook: 'Cactology',
+      dropdownGreat: 'Great cactologists',
+      dropdownGallery: 'Gallery',
+      dropdownStories: 'Stories',
+      dropdownRelax: 'Relax',
+      dropdownDraw: 'Drawing',
+      dropdownSucculents: 'Succulents',
+      dropdownEdible: 'Edible cacti',
+      dropdownRarities: 'Rarities',
+      dropdownFacts: 'Interesting facts',
+      dropdownCaution: 'Caution',
+      startLink: '← Start',
+      dropdownFiles: 'File list (A–Z)'
+    }
+  };
+
+  function getHeaderLocale() {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (lang.indexOf('uk') === 0) return 'uk';
+    if (lang.indexOf('ru') === 0) return 'ru';
+    return 'en';
+  }
+
+  function applyHeaderLocale() {
+    var ui = HEADER_STRINGS[getHeaderLocale()] || HEADER_STRINGS.ru;
+    var set = function (id, text) {
+      var el = document.getElementById(id);
+      if (el && text !== undefined) el.textContent = text;
+    };
+    var setPlaceholder = function (id, text) {
+      var el = document.getElementById(id);
+      if (el && text !== undefined) el.placeholder = text;
+    };
+
+    setPlaceholder('nav-search', ui.searchPlaceholder);
+    set('header-search-btn', ui.searchBtn);
+    set('header-nav-label', ui.navLabel);
+    set('header-link-origin', ui.linkOrigin);
+    set('header-link-geography', ui.linkGeography);
+    set('header-link-care', ui.linkCare);
+    set('header-link-identifier', ui.linkIdentifier);
+    set('header-link-guardian', ui.linkGuardian);
+    set('header-more-summary', ui.moreSummary);
+    set('header-dropdown-home', ui.dropdownHome);
+    set('header-dropdown-nav', ui.dropdownNav);
+    set('header-dropdown-book', ui.dropdownBook);
+    set('header-dropdown-great', ui.dropdownGreat);
+    set('header-dropdown-gallery', ui.dropdownGallery);
+    set('header-dropdown-stories', ui.dropdownStories);
+    set('header-dropdown-relax', ui.dropdownRelax);
+    set('header-dropdown-draw', ui.dropdownDraw);
+    set('header-dropdown-succulents', ui.dropdownSucculents);
+    set('header-dropdown-edible', ui.dropdownEdible);
+    set('header-dropdown-rarities', ui.dropdownRarities);
+    set('header-dropdown-facts', ui.dropdownFacts);
+    set('header-dropdown-caution', ui.dropdownCaution);
+    set('header-start-link', ui.startLink);
+    set('header-dropdown-files', ui.dropdownFiles);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyHeaderLocale);
+  } else {
+    applyHeaderLocale();
+  }
+})();
