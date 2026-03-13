@@ -38,7 +38,13 @@
       photoSource: 'Фото: ',
       pageTitle: 'Классификация кактусов',
       pageIntro: 'Семейство Cactaceae: подсемейства, трибы, роды и виды. Раскройте уровень по клику. Клик по роду — карточка и список видов, подвидов и разновидностей.',
-      cornerLabel: 'Кактусы'
+      cornerLabel: 'Кактусы',
+      prevSynonyms: 'Ранее / синонимы: ',
+      previouslyCalled: 'Ранее назывался: ',
+      synonymsLabel: 'Синонимы: ',
+      synonymsBasionym: 'Синонимы / базионим: ',
+      descGbifPlaceholder: 'По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.',
+      descNcbiPlaceholder: 'По данным NCBI. Морфология и синонимы будут добавлены.'
     },
     uk: {
       back: '← Назад',
@@ -57,7 +63,13 @@
       photoSource: 'Фото: ',
       pageTitle: 'Класифікація кактусів',
       pageIntro: 'Родина Cactaceae: підродини, триби, роди та види. Розгорніть рівень кліком. Клік по роду — картка та список видів, підвидів і різновидів.',
-      cornerLabel: 'Кактуси'
+      cornerLabel: 'Кактуси',
+      prevSynonyms: 'Раніше / синоніми: ',
+      previouslyCalled: 'Раніше називався: ',
+      synonymsLabel: 'Синоніми: ',
+      synonymsBasionym: 'Синоніми / базіонім: ',
+      descGbifPlaceholder: 'За даними GBIF (колекція UNAM). Морфологія та синоніми будуть додані.',
+      descNcbiPlaceholder: 'За даними NCBI. Морфологія та синоніми будуть додані.'
     },
     en: {
       back: '← Back',
@@ -76,7 +88,13 @@
       photoSource: 'Photo: ',
       pageTitle: 'Cactus classification',
       pageIntro: 'Family Cactaceae: subfamilies, tribes, genera and species. Expand a level by click. Click on a genus for the card and list of species, subspecies and varieties.',
-      cornerLabel: 'Cacti'
+      cornerLabel: 'Cacti',
+      prevSynonyms: 'Previously / synonyms: ',
+      previouslyCalled: 'Previously called: ',
+      synonymsLabel: 'Synonyms: ',
+      synonymsBasionym: 'Synonyms / basionym: ',
+      descGbifPlaceholder: 'According to GBIF (UNAM collection). Morphology and synonyms to be added.',
+      descNcbiPlaceholder: 'According to NCBI. Morphology and synonyms to be added.'
     },
     es: {
       back: '← Atrás',
@@ -95,7 +113,13 @@
       photoSource: 'Foto: ',
       pageTitle: 'Clasificación de cactus',
       pageIntro: 'Familia Cactaceae: subfamilias, tribus, géneros y especies. Expanda el nivel con un clic. Clic en un género — ficha y lista de especies, subespecies y variedades.',
-      cornerLabel: 'Cactus'
+      cornerLabel: 'Cactus',
+      prevSynonyms: 'Antes / sinónimos: ',
+      previouslyCalled: 'Antes llamado: ',
+      synonymsLabel: 'Sinónimos: ',
+      synonymsBasionym: 'Sinónimos / basiónimo: ',
+      descGbifPlaceholder: 'Según GBIF (colección UNAM). Morfología y sinónimos se añadirán.',
+      descNcbiPlaceholder: 'Según NCBI. Morfología y sinónimos se añadirán.'
     }
   };
 
@@ -361,16 +385,17 @@
     }
     if (cardNamePreviously) {
       var prevHtml = '';
+      var ui = getUIStrings();
       if (entry && entry.nameHistory && entry.nameHistory.length > 1) {
         var prevParts = entry.nameHistory.map(function (n) {
           var href = speciesHref(n);
           return href ? '<a href="' + escapeHtml(href) + '">' + escapeHtml(n) + '</a>' : escapeHtml(n);
         });
-        prevHtml = 'Ранее / синонимы: ' + prevParts.join(' → ');
+        prevHtml = (ui.prevSynonyms || 'Ранее / синонимы: ') + prevParts.join(' → ');
       } else if (entry && entry.previouslyCalled) {
         var pc = entry.previouslyCalled;
         var pcHref = speciesHref(pc);
-        prevHtml = 'Ранее назывался: ' + (pcHref ? '<a href="' + escapeHtml(pcHref) + '">' + escapeHtml(pc) + '</a>' : escapeHtml(pc));
+        prevHtml = (ui.previouslyCalled || 'Ранее назывался: ') + (pcHref ? '<a href="' + escapeHtml(pcHref) + '">' + escapeHtml(pc) + '</a>' : escapeHtml(pc));
       }
       cardNamePreviously.innerHTML = prevHtml;
       cardNamePreviously.style.display = prevHtml ? '' : 'none';
@@ -382,7 +407,7 @@
           var href = speciesHref(n);
           return href ? '<a href="' + escapeHtml(href) + '">' + escapeHtml(n) + '</a>' : escapeHtml(n);
         });
-        var synPrefix = (entry.nameHistory && entry.nameHistory.length > 1) ? 'Синонимы: ' : 'Синонимы / базионим: ';
+        var synPrefix = (entry.nameHistory && entry.nameHistory.length > 1) ? (ui.synonymsLabel || 'Синонимы: ') : (ui.synonymsBasionym || 'Синонимы / базионим: ');
         synHtml = synPrefix + synParts.join(', ');
       }
       cardNameSynonyms.innerHTML = synHtml;
@@ -452,6 +477,9 @@
     cardLevel.textContent = levelLabel('species');
     updateUrl(genusId || '', speciesNode.id || '');
     var desc = (speciesNode.description || '').trim();
+    var descUi = getUIStrings();
+    if (desc === UI_STRINGS.ru.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
+    if (desc === UI_STRINGS.ru.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
     var infras = speciesNode.infraspecific;
     if (cardInfraspecificWrap && cardInfraspecificList) {
