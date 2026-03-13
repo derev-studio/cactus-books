@@ -161,6 +161,14 @@
     more_btn: { ru: "Ещё", en: "More", jp: "もっと", it: "Altro", zh: "更多", es: "Más", de: "Mehr", fr: "Plus", he: "עוד" },
     navigator_title: { ru: "Навигатор по кактусам", en: "Cactus navigator", jp: "サボテン案内", it: "Navigatore cactus", zh: "仙人掌导航", es: "Navegador de cactus", de: "Kakteen-Navigator", fr: "Navigateur cactus", he: "ניווט קקטי" },
     navigator_intro: { ru: "Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.", en: "Enter a cactus or succulent name above — links to care, range, systematics, or ask the AI.", jp: "上でサボテンや多肉の名前を入力 — 手入れ、分布、分類、AIへの質問へ。", it: "Inserisci il nome di un cactus o succulenta sopra — link a cura, areale, sistematica o chiedi all'AI.", zh: "在上方输入仙人掌或多肉名称 — 可打开养护、分布、分类或向AI提问。", es: "Introduce el nombre de un cactus o suculenta arriba — enlaces a cuidado, área, sistemática o preguntar a la IA.", de: "Kakteen- oder Sukkulentenname oben eingeben — Links zu Pflege, Verbreitung, Systematik oder KI fragen.", fr: "Entrez un nom de cactus ou succulente ci-dessus — liens vers soins, répartition, systématique ou demander à l'IA.", he: "הזן שם קקטוס או סוקולנט למעלה — קישורים לטיפול, תפוצה, סיסטמטיקה או לשאול את ה-AI." },
+    navigator_desc_care: { ru: "Уход для этого вида", en: "Care for this species", es: "Cuidado para esta especie", uk: "Догляд для цього виду", zh: "该物种养护", he: "טיפול למין זה" },
+    navigator_desc_geography: { ru: "Ареал на карте", en: "Range on map", es: "Área en el mapa", uk: "Ареал на карті", zh: "分布地图", he: "תפוצה על המפה" },
+    navigator_desc_systematics: { ru: "Систематика, названия", en: "Systematics, names", es: "Sistemática, nombres", uk: "Систематика, назви", zh: "分类与名称", he: "סיסטמטיקה, שמות" },
+    navigator_desc_identifier: { ru: "Определить по фото", en: "Identify by photo", es: "Identificar por foto", uk: "Визначити за фото", zh: "按照片识别", he: "זיהוי לפי תמונה" },
+    navigator_desc_guardian: { ru: "Колючий Собеседник ответит на вопрос", en: "Companion will answer your question", es: "El compañero responderá tu pregunta", uk: "Колючий Співбесідник відповість на питання", zh: "守护者回答您的问题", he: "השומר יענה על שאלתך" },
+    navigator_results_title: { ru: "Результаты по запросу", en: "Results for query", es: "Resultados para la búsqueda", uk: "Результати за запитом", zh: "搜索结果", he: "תוצאות לחיפוש" },
+    navigator_results_intro: { ru: "Перейдите в нужный раздел — там будет учтён ваш запрос (разделы дорабатываются).", en: "Go to the section you need — your query will be taken into account (sections in progress).", es: "Ve a la sección que necesites — allí se tendrá en cuenta tu búsqueda.", uk: "Перейдіть у потрібний розділ — там буде враховано ваш запит.", zh: "进入相应板块 — 将根据您的搜索显示内容。", he: "עבור לסעיף המתאים — השאילתה תילקח בחשבון." },
+    navigator_empty_hint: { ru: "Введите запрос в поле поиска в шапке и нажмите «Найти».", en: "Enter your query in the search field in the header and click «Find».", es: "Introduce tu búsqueda en el campo de la cabecera y pulsa «Buscar».", uk: "Введіть запит у поле пошуку в шапці та натисніть «Знайти».", zh: "在顶部搜索框输入并点击「查找」。", he: "הזן את החיפוש בשדה בכותרת ולחץ «חפש»." },
     guardian_back: { ru: "← На главную", en: "← Back to main", jp: "← メインへ", it: "← Torna alla home", zh: "← 返回主页", es: "← Volver al inicio", de: "← Zur Startseite", fr: "← Retour à l'accueil", he: "← לדף הראשי" },
     guardian_title: { ru: "Колючий Собеседник", en: "Cactus Companion", jp: "守護者", it: "Compagno cactus", zh: "守护者", es: "Compañero cactus", de: "Kaktus-Begleiter", fr: "Compagnon cactus", he: "שומר" },
     guardian_subtitle: { ru: "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве.", en: "The companion knows the Cactology book, can suggest species and range, route to habitat. Chat about cacti, languages, creativity.", jp: "サポート、アドバイス、会話。守護者はサイトのストーリーと本を知り、創作・言語をサポートします。", it: "Il compagno conosce il libro Cactologia, specie e areali. Conversazione su cactus, lingue, creatività.", zh: "守护者了解网站故事和书籍，支持创作、语言。", es: "El compañero conoce el libro Cactología, especies y área. Charla sobre cactus, idiomas, creatividad.", de: "Der Begleiter kennt das Buch Kaktologie, Arten und Verbreitung. Gespräch über Kakteen, Sprachen, Kreativität.", fr: "Le compagnon connaît le livre Cactologie, espèces et aire. Conversation sur les cactus, langues, créativité.", he: "השומר מכיר את הסיפורים והספר באתר." },
@@ -232,6 +240,9 @@
 
   function getStoredLang() {
     try {
+      if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
+        return window.LanguageManager.getLang();
+      }
       const v = localStorage.getItem(LANG_STORAGE_KEY);
       if (v && SUPPORTED.some(function (s) { return s.code === v; })) {
         var detected = detectBrowserLang();
@@ -281,6 +292,11 @@
     if (!SUPPORTED.some(function (s) { return s.code === code; })) return;
     currentLang = code;
     setStoredLang(code);
+    if (window.LanguageManager && typeof window.LanguageManager.setLang === 'function') {
+      window.LanguageManager.setLang(code);
+    } else {
+      try { localStorage.setItem(LANG_STORAGE_KEY, code); } catch (_) {}
+    }
     applyToPage();
     try {
       window.dispatchEvent(new CustomEvent("soulart-language-change", { detail: { lang: code } }));
@@ -333,6 +349,10 @@
   }
 
   function init() {
+    if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
+      currentLang = window.LanguageManager.getLang();
+      if (window.LanguageManager.applyRtl) window.LanguageManager.applyRtl(currentLang);
+    }
     applyToPage();
     setTimeout(function () { applyToPage(); }, 50);
     try {

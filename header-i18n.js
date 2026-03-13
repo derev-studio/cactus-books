@@ -6,7 +6,7 @@
   'use strict';
 
   var LANG_STORAGE_KEY = 'cactusbooks_lang';
-  var HEADER_LANGS = { ru: true, uk: true, en: true, es: true };
+  var HEADER_LANGS = { ru: true, uk: true, en: true, es: true, he: true, zh: true };
 
   var HEADER_STRINGS = {
     ru: {
@@ -116,6 +116,60 @@
       dropdownCaution: 'Precaución',
       startLink: '← Inicio',
       dropdownFiles: 'Lista de archivos (A–Z)'
+    },
+    he: {
+      brand: '🌵 קקטוסריום',
+      searchPlaceholder: 'שם קקטוס…',
+      searchBtn: 'חפש',
+      navLabel: 'ניווט קקטי',
+      linkOrigin: 'מוצא המינים',
+      linkGeography: 'סביבות מחיה',
+      linkCare: 'טיפול בקקטוס',
+      linkIdentifier: 'זיהוי קקטוס',
+      linkGuardian: 'שומר קוצני',
+      moreSummary: 'עוד',
+      dropdownHome: 'עמוד ראשי',
+      dropdownNav: 'ניווט קקטי',
+      dropdownBook: 'קטולוגיה',
+      dropdownGreat: 'חוקרי קקטי דגולים',
+      dropdownGallery: 'גלריה',
+      dropdownStories: 'סיפורים',
+      dropdownRelax: 'מנוחה',
+      dropdownDraw: 'ציור',
+      dropdownSucculents: 'סוקולנטים',
+      dropdownEdible: 'קקטי אכילים',
+      dropdownRarities: 'נדירים',
+      dropdownFacts: 'עובדות מעניינות',
+      dropdownCaution: 'זהירות',
+      startLink: '← התחל',
+      dropdownFiles: 'רשימת קבצים'
+    },
+    zh: {
+      brand: '🌵 仙人掌园',
+      searchPlaceholder: '仙人掌名称…',
+      searchBtn: '查找',
+      navLabel: '仙人掌导航',
+      linkOrigin: '物种起源',
+      linkGeography: '生境',
+      linkCare: '仙人掌养护',
+      linkIdentifier: '识别仙人掌',
+      linkGuardian: '守护者',
+      moreSummary: '更多',
+      dropdownHome: '首页',
+      dropdownNav: '仙人掌导航',
+      dropdownBook: '仙人掌学',
+      dropdownGreat: '著名仙人掌学者',
+      dropdownGallery: '画廊',
+      dropdownStories: '故事',
+      dropdownRelax: '休息',
+      dropdownDraw: '绘画',
+      dropdownSucculents: '多肉植物',
+      dropdownEdible: '可食仙人掌',
+      dropdownRarities: '珍品',
+      dropdownFacts: '趣闻',
+      dropdownCaution: '注意',
+      startLink: '← 首页',
+      dropdownFiles: '文件列表'
     }
   };
 
@@ -132,10 +186,16 @@
     if (lang.indexOf('uk') === 0) return 'uk';
     if (lang.indexOf('ru') === 0) return 'ru';
     if (lang.indexOf('es') === 0) return 'es';
+    if (lang.indexOf('he') === 0) return 'he';
+    if (lang.indexOf('zh') === 0) return 'zh';
     return 'en';
   }
 
   function getHeaderLocale() {
+    if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
+      var lang = window.LanguageManager.getLang();
+      if (HEADER_LANGS[lang]) return lang;
+    }
     return getStoredLang() || getBrowserLocale();
   }
 

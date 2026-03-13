@@ -120,14 +120,26 @@
       synonymsBasionym: 'Sinónimos / basiónimo: ',
       descGbifPlaceholder: 'Según GBIF (colección UNAM). Morfología y sinónimos se añadirán.',
       descNcbiPlaceholder: 'Según NCBI. Morfología y sinónimos se añadirán.'
+    },
+    he: {
+      back: '← אחורה', backAria: 'אחורה', close: 'סגור', species: 'מינים', seeAlso: 'ראה גם', loading: 'טוען…', noSpeciesData: 'אין נתוני מינים.', infraspecific: 'תת-מינים, זנים וצורות', treeError: 'טעינת העץ נכשלה.', level: { subfamily: 'תת-משפחה', tribe: 'שבט', genus: 'סוג', species: 'מין' }, rank: { subspecies: 'תת-מין', variety: 'זן', form: 'צורה' }, genusPlaceholder: ' — סוג קקטי, משפחת Cactaceae. תיאור יתווסף.', speciesPlaceholder: ' — מין של סוג %s. תיאור יתווסף.', photoSource: 'תמונה: ', pageTitle: 'סיווג קקטי', pageIntro: 'משפחת Cactaceae: תת-משפחות, שבטים, סוגים ומינים.', cornerLabel: 'קקטי', prevSynonyms: 'לשעבר / synonyms: ', previouslyCalled: 'לשעבר נקרא: ', synonymsLabel: 'Synonyms: ', synonymsBasionym: 'Synonyms / basionym: ', descGbifPlaceholder: 'לפי GBIF. מורפולוגיה ו-synonyms יתווספו.', descNcbiPlaceholder: 'לפי NCBI. מורפולוגיה ו-synonyms יתווספו.'
+    },
+    zh: {
+      back: '← 返回', backAria: '返回', close: '关闭', species: '物种', seeAlso: '另见', loading: '加载中…', noSpeciesData: '暂无物种数据。', infraspecific: '亚种、变种与变型', treeError: '加载分类树失败。', level: { subfamily: '亚科', tribe: '族', genus: '属', species: '种' }, rank: { subspecies: '亚种', variety: '变种', form: '变型' }, genusPlaceholder: ' — 仙人掌科一属。描述待补充。', speciesPlaceholder: ' — %s 属物种。描述待补充。', photoSource: '照片：', pageTitle: '仙人掌分类', pageIntro: '仙人掌科：亚科、族、属与种。', cornerLabel: '仙人掌', prevSynonyms: '曾用名 / 同义：', previouslyCalled: '曾称：', synonymsLabel: '同义：', synonymsBasionym: '同义 / 基名：', descGbifPlaceholder: '据 GBIF。形态与同义待补充。', descNcbiPlaceholder: '据 NCBI。形态与同义待补充。'
     }
   };
 
   function getUILocale() {
+    if (window.I18n && typeof window.I18n.getLang === 'function') {
+      var lang = window.I18n.getLang();
+      if (lang === 'uk' || lang === 'ru' || lang === 'es' || lang === 'en' || lang === 'he' || lang === 'zh') return lang;
+    }
     var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
     if (lang.indexOf('uk') === 0) return 'uk';
     if (lang.indexOf('ru') === 0) return 'ru';
     if (lang.indexOf('es') === 0) return 'es';
+    if (lang.indexOf('he') === 0) return 'he';
+    if (lang.indexOf('zh') === 0) return 'zh';
     return 'en';
   }
 
@@ -483,11 +495,36 @@
     setCardNames(entry, speciesNode.name || '—');
     cardLevel.textContent = levelLabel('species');
     updateUrl(genusId || '', speciesNode.id || '');
+    var uiLocale = getUILocale();
     var desc = (speciesNode.description || '').trim();
     var descUi = getUIStrings();
     if (desc === UI_STRINGS.ru.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
     if (desc === UI_STRINGS.ru.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
-    if (getUILocale() !== 'ru' && desc && hasCyrillic(desc)) desc = '';
+    if (uiLocale !== 'ru' && desc && hasCyrillic(desc)) desc = '';
+    if (!desc) {
+      var lmLang = null;
+      try {
+        if (window.I18n && typeof window.I18n.getLang === 'function') {
+          lmLang = window.I18n.getLang();
+        } else if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
+          lmLang = window.LanguageManager.getLang();
+        }
+      } catch (_) {}
+      if (!lmLang) lmLang = uiLocale;
+      var mLang = (lmLang === 'uk' || lmLang === 'ru' || lmLang === 'es' || lmLang === 'he' || lmLang === 'zh') ? lmLang : 'en';
+      var stem = mLang === 'en' ? (speciesNode.morphology_stem || '') : (speciesNode['morphology_stem_' + mLang] || (mLang === 'uk' ? speciesNode.morphology_stem_ru : '') || speciesNode.morphology_stem || '');
+      var spines = mLang === 'en' ? (speciesNode.morphology_spines || '') : (speciesNode['morphology_spines_' + mLang] || (mLang === 'uk' ? speciesNode.morphology_spines_ru : '') || speciesNode.morphology_spines || '');
+      var flower = mLang === 'en' ? (speciesNode.morphology_flower || '') : (speciesNode['morphology_flower_' + mLang] || (mLang === 'uk' ? speciesNode.morphology_flower_ru : '') || speciesNode.morphology_flower || '');
+      var fruit = mLang === 'en' ? (speciesNode.morphology_fruit || '') : (speciesNode['morphology_fruit_' + mLang] || (mLang === 'uk' ? speciesNode.morphology_fruit_ru : '') || speciesNode.morphology_fruit || '');
+      var pieces = [];
+      if (stem) pieces.push(stem);
+      if (spines) pieces.push(spines);
+      if (flower) pieces.push(flower);
+      if (fruit) pieces.push(fruit);
+      if (pieces.length > 0) {
+        desc = pieces.join(' ');
+      }
+    }
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
     var infras = speciesNode.infraspecific;
     if (cardInfraspecificWrap && cardInfraspecificList) {
@@ -509,14 +546,38 @@
     var morphList = document.getElementById('card-morphology-list');
     var morphTranslateEl = document.getElementById('card-morphology-translate');
     if (morphWrap && morphList) {
-      var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-      var morphLang = lang.indexOf('uk') === 0 ? 'uk' : (lang.indexOf('ru') === 0 ? 'ru' : (lang.indexOf('es') === 0 ? 'es' : 'en'));
-      // Для en — только базовые поля. Для es — _es или базовые. Для ru — _ru или базовые. Для uk — _uk или _ru или базовые.
+      var langCode = null;
+      try {
+        if (window.I18n && typeof window.I18n.getLang === 'function') {
+          langCode = window.I18n.getLang();
+        } else if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
+          langCode = window.LanguageManager.getLang();
+        }
+      } catch (_) {}
+      if (!langCode) {
+        var rawLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        langCode = rawLang.split('-')[0];
+      }
+      var morphLang = (langCode === 'uk' || langCode === 'ru' || langCode === 'es' || langCode === 'he' || langCode === 'zh') ? langCode : 'en';
+      // Для en — только базовые поля. Для es/uk/ru/he/zh — *_lang или базовые / русские (для uk) в качестве запаса.
       var stemText = morphLang === 'en' ? (speciesNode.morphology_stem) : (speciesNode['morphology_stem_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_stem_ru : null) || speciesNode.morphology_stem);
       var spinesText = morphLang === 'en' ? (speciesNode.morphology_spines) : (speciesNode['morphology_spines_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_spines_ru : null) || speciesNode.morphology_spines);
       var flowerText = morphLang === 'en' ? (speciesNode.morphology_flower) : (speciesNode['morphology_flower_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_flower_ru : null) || speciesNode.morphology_flower);
       var fruitText = morphLang === 'en' ? (speciesNode.morphology_fruit) : (speciesNode['morphology_fruit_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_fruit_ru : null) || speciesNode.morphology_fruit);
-      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : (morphLang === 'ru' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' } : (morphLang === 'es' ? { stem: 'Tallo', spines: 'Espinas', flower: 'Flor', fruit: 'Fruto' } : { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' }));
+      var morphLabels;
+      if (morphLang === 'uk') {
+        morphLabels = { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' };
+      } else if (morphLang === 'ru') {
+        morphLabels = { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' };
+      } else if (morphLang === 'es') {
+        morphLabels = { stem: 'Tallo', spines: 'Espinas', flower: 'Flor', fruit: 'Fruto' };
+      } else if (morphLang === 'zh') {
+        morphLabels = { stem: '茎', spines: '刺', flower: '花', fruit: '果实' };
+      } else if (morphLang === 'he') {
+        morphLabels = { stem: 'גזע', spines: 'קוצים', flower: 'פרח', fruit: 'פרי' };
+      } else {
+        morphLabels = { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' };
+      }
       var morphParts = [];
       if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
       if (spinesText) morphParts.push({ label: morphLabels.spines, text: spinesText });
