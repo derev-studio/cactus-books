@@ -385,11 +385,12 @@
       var spinesText = speciesNode['morphology_spines_' + morphLang] || speciesNode.morphology_spines_ru || speciesNode.morphology_spines;
       var flowerText = speciesNode['morphology_flower_' + morphLang] || speciesNode.morphology_flower_ru || speciesNode.morphology_flower;
       var fruitText = speciesNode['morphology_fruit_' + morphLang] || speciesNode.morphology_fruit_ru || speciesNode.morphology_fruit;
+      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' };
       var morphParts = [];
-      if (stemText) morphParts.push({ label: 'Стебель', text: stemText });
-      if (spinesText) morphParts.push({ label: 'Колючки', text: spinesText });
-      if (flowerText) morphParts.push({ label: 'Цветок', text: flowerText });
-      if (fruitText) morphParts.push({ label: 'Плод', text: fruitText });
+      if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
+      if (spinesText) morphParts.push({ label: morphLabels.spines, text: spinesText });
+      if (flowerText) morphParts.push({ label: morphLabels.flower, text: flowerText });
+      if (fruitText) morphParts.push({ label: morphLabels.fruit, text: fruitText });
       if (morphParts.length > 0) {
         morphList.innerHTML = '';
         morphParts.forEach(function (p) {
