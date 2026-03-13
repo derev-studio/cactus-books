@@ -97,6 +97,8 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
 
 if __name__ == "__main__":
     import sys
+    print("Скрипт перевода запущен. Ждите…", flush=True)
+    sys.stdout.flush()
     limit_val = None
     genera_val = None
     if "--limit" in sys.argv:
