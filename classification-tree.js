@@ -179,6 +179,12 @@
     return name + t.replace('%s', genusName || '');
   }
 
+  /** Проверка, что строка содержит кириллицу (русский текст) */
+  function hasCyrillic(str) {
+    if (!str || typeof str !== 'string') return false;
+    return /[\u0400-\u04FF]/.test(str);
+  }
+
   function wikiArticleUrl(speciesName) {
     if (!speciesName || typeof speciesName !== 'string') return '';
     var s = speciesName.trim().replace(/\s*[(\[].*$/, '').trim();
@@ -425,6 +431,7 @@
     setCardNames(entry, genusNode.name || '—');
     cardLevel.textContent = levelLabel('genus');
     var info = (genusNode.info || '').trim();
+    if (getUILocale() !== 'ru' && info && hasCyrillic(info)) info = '';
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
 
     if (cardInfraspecificWrap) cardInfraspecificWrap.hidden = true;
@@ -480,6 +487,7 @@
     var descUi = getUIStrings();
     if (desc === UI_STRINGS.ru.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
     if (desc === UI_STRINGS.ru.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
+    if (getUILocale() !== 'ru' && desc && hasCyrillic(desc)) desc = '';
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
     var infras = speciesNode.infraspecific;
     if (cardInfraspecificWrap && cardInfraspecificList) {
