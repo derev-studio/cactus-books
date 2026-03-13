@@ -32,7 +32,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Espostoa frutescens is a plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Espostoa frutescens — растение семейства Кактусовые."
+    "morphology_stem_ru": "Espostoa frutescens — растение семейства Кактусовые.",
+    "morphology_stem_uk": "Espostoa frutescens — рослина родини кактусових."
   },
   {
     "id": "espostoa-huanucoensis",
@@ -85,7 +86,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Vatricania is a monotypic genus of flowering plants belonging to the family Cactaceae. It contains just one species, Vatricania guentheri. It has the common name of red tail cactus.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Ватрикания — монотипический род цветковых растений семейства Кактусовые. Он содержит только один вид — Vatricania guentheri. Он имеет общее название кактуса с красным хвостом."
+    "morphology_stem_ru": "Ватрикания — монотипический род цветковых растений семейства Кактусовые. Он содержит только один вид — Vatricania guentheri. Он имеет общее название кактуса с красным хвостом.",
+    "morphology_stem_uk": "Vatricania — монотипний рід квіткових рослин родини кактусових. Він містить лише один вид, Vatricania guentheri. Має загальну назву червонохвостий кактус."
   },
   {
     "id": "espostoa-lanata",
@@ -96,7 +98,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Espostoa lanata is a species of cactus of the genus Espostoa.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Эспостоа ланата — вид кактусов рода Эспостоа."
+    "morphology_stem_ru": "Эспостоа ланата — вид кактусов рода Эспостоа.",
+    "morphology_stem_uk": "Espostoa lanata — вид кактусів роду Espostoa."
   },
   {
     "id": "espostoa-ritteri",
@@ -113,7 +116,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Espostoa melanostele is a species of long-lived, slow-growing plant in the family Cactaceae.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Espostoa melanostele — вид долгоживущего, медленнорастущего растения семейства Кактусовые."
+    "morphology_stem_ru": "Espostoa melanostele — вид долгоживущего, медленнорастущего растения семейства Кактусовые.",
+    "morphology_stem_uk": "Espostoa melanostele — вид довгоживучих повільно зростаючих рослин родини кактусових."
   },
   {
     "id": "espostoa-senilis",

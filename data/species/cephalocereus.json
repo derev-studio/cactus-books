@@ -21,7 +21,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus polylophus is a species of cactus endemic to Mexico. Often grown under the synonym Neobuxbaumia polylopha, it is popular with cactus growers and reproduces well in cultivation.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus polylophus - эндемичный для Мексики вид кактусов. Часто выращивается под синонимом Neobuxbaumia polylopha, пользуется популярностью у производителей кактусов и хорошо размножается при выращивании."
+    "morphology_stem_ru": "Cephalocereus polylophus - эндемичный для Мексики вид кактусов. Часто выращивается под синонимом Neobuxbaumia polylopha, пользуется популярностью у производителей кактусов и хорошо размножается при выращивании.",
+    "morphology_stem_uk": "Cephalocereus polylophus — ендемічний для Мексики вид кактусів. Часто вирощується під синонімом Neobuxbaumia polylopha, він популярний серед кактусівників і добре розмножується при вирощуванні."
   },
   {
     "id": "neobuxbaumia-macrocephala-facweber-ex-kschum-eydawson",
@@ -32,7 +33,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus macrocephalus, synonym Neobuxbaumia macrocephala, is a species of cactus endemic to Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus macrocephalus, синоним Neobuxbaumia macrocephala, является эндемичным для Мексики видом кактусов."
+    "morphology_stem_ru": "Cephalocereus macrocephalus, синоним Neobuxbaumia macrocephala, является эндемичным для Мексики видом кактусов.",
+    "morphology_stem_uk": "Cephalocereus macrocephalus, синонім Neobuxbaumia macrocephala, є видом кактуса, ендемічним для Мексики."
   },
   {
     "id": "neobuxbaumia-scoparia-poselg-backeb",
@@ -91,7 +93,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus apicicephalium is a species of cactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus apicicephalium - вид кактусов из Мексики."
+    "morphology_stem_ru": "Cephalocereus apicicephalium - вид кактусов из Мексики.",
+    "morphology_stem_uk": "Cephalocereus apicicephalium — вид кактусів із Мексики."
   },
   {
     "id": "neobuxbaumia-tetetzo-facweber-ex-jmcoult-backeb",
@@ -112,7 +115,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus tetetzo is a species of cactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus tetetzo - вид кактусов из Мексики."
+    "morphology_stem_ru": "Cephalocereus tetetzo - вид кактусов из Мексики.",
+    "morphology_stem_uk": "Cephalocereus tetetzo — вид кактуса з Мексики."
   },
   {
     "id": "cephalocereus-columna-trajani-karw-ex-pfeiff-kschum",
@@ -144,7 +148,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus columna-trajani is a species of cactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus columna-trajani - вид кактусов из Мексики."
+    "morphology_stem_ru": "Cephalocereus columna-trajani - вид кактусов из Мексики.",
+    "morphology_stem_uk": "Cephalocereus columna-trajani — вид кактуса з Мексики."
   },
   {
     "id": "neobuxbaumia-laui-pvheath-drhunt",
@@ -174,6 +179,7 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus senilis, the old man cactus, is a species of cactus native to Hidalgo and Veracruz in central Mexico. It is threatened in the wild, but widespread propagation and popularity in cultivation have reduced the demand on wild populations.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Cephalocereus senilis, кактус старика, является видом кактуса, произрастающим в Идальго и Веракрусе в центральной Мексике. Он находится под угрозой в дикой природе, но широкое распространение и популярность в культивировании снизили спрос на дикие популяции."
+    "morphology_stem_ru": "Cephalocereus senilis, кактус старика, является видом кактуса, произрастающим в Идальго и Веракрусе в центральной Мексике. Он находится под угрозой в дикой природе, но широкое распространение и популярность в культивировании снизили спрос на дикие популяции.",
+    "morphology_stem_uk": "Cephalocereus senilis, старий кактус, є видом кактусів, що походить з Ідальго та Веракрус у центральній Мексиці. У дикій природі йому загрожує зникнення, але широке розмноження та популярність у вирощуванні зменшили попит на дикі популяції."
   }
 ]

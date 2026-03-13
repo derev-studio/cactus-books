@@ -8,7 +8,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Armatocereus laetus is a species of Armatocereus from Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Armatocereus laetus - вид перуанского рода Armatocereus."
+    "morphology_stem_ru": "Armatocereus laetus - вид перуанского рода Armatocereus.",
+    "morphology_stem_uk": "Armatocereus laetus — вид Armatocereus з Перу."
   },
   {
     "id": "armatocereus-matucanensis",
@@ -19,7 +20,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Armatocereus matucanensis is a species of Armatocereus from Ecuador and Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Armatocereus matucanensis - вид Armatocereus из Эквадора и Перу."
+    "morphology_stem_ru": "Armatocereus matucanensis - вид Armatocereus из Эквадора и Перу.",
+    "morphology_stem_uk": "Armatocereus matucanensis — вид Armatocereus з Еквадору та Перу."
   },
   {
     "id": "armatocereus-procerus",
@@ -30,7 +32,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Armatocereus procerus is a species of Armatocereus found in southern Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Armatocereus procerus - вид Armatocereus, обитающий на юге Перу."
+    "morphology_stem_ru": "Armatocereus procerus - вид Armatocereus, обитающий на юге Перу.",
+    "morphology_stem_uk": "Armatocereus procerus — вид Armatocereus, що зустрічається на півдні Перу."
   },
   {
     "id": "armatocereus-godingianus",
@@ -41,7 +44,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Armatocereus godingianus is a species of Armatocereus from Ecuador and Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Armatocereus godingianus - вид Armatocereus из Эквадора и Перу."
+    "morphology_stem_ru": "Armatocereus godingianus - вид Armatocereus из Эквадора и Перу.",
+    "morphology_stem_uk": "Armatocereus godingianus — вид Armatocereus з Еквадору та Перу."
   },
   {
     "id": "armatocereus-rauhii",
@@ -52,6 +56,7 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Armatocereus rauhii is a tall, branched columnar species of cactus endemic to the north of Peru on the western slopes of the Andes.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Armatocereus rauhii - высокий, разветвленный столбчатый вид кактуса, эндемичный к северу от Перу на западных склонах Анд."
+    "morphology_stem_ru": "Armatocereus rauhii - высокий, разветвленный столбчатый вид кактуса, эндемичный к северу от Перу на западных склонах Анд.",
+    "morphology_stem_uk": "Armatocereus rauhii — це високий розгалужений колоновидний вид кактуса, ендемічний на півночі Перу на західних схилах Анд."
   }
 ]

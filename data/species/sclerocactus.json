@@ -63,7 +63,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Sclerocactus mariposensis, synonyms including Echinomastus mariposensis and Neolloydia mariposensis, is a rare species of cactus known by the common names Lloyd's fishhook cactus, golfball cactus, silver column cactus, and Mariposa cactus. It is native to a section of territory straddling the border between Brewster County, Texas, in the United States, and the states of Coahuila and Nuevo León in northeastern Mexico. It has been federally listed as a threatened species in the United States since 1979.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS"
+    "morphology_stem_ru": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS",
+    "morphology_stem_uk": "Sclerocactus mariposensis, синоніми якого включають Echinomastus mariposensis і Neolloydia mariposensis, є рідкісним видом кактуса, відомим під загальними назвами кактус рибальського гачка Ллойда, кактус м’яча для гольфу, кактус срібної колони та кактус Маріпоза. Він є рідним для частини території, що пролягає на кордоні між округом Брюстер, штат Техас, у Сполучених Штатах, і штатами Коауіла та Нуево-Леон на північному сході Мексики. З 1979 року в Сполучених Штатах він занесений до списку видів, що перебувають під загрозою зникнення."
   },
   {
     "id": "sclerocactus-polyancistrus-engelm-jmbigelow-britton-rose",
@@ -80,7 +81,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Sclerocactus polyancistrus, the Mohave fishhook cactus or redspined fishhook cactus, is a species of flowering cactus in the genus Sclerocactus. It is found in the Mojave Desert in the Southwestern United States.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Sclerocactus Polyancistrus, кактус Мохаве с рыболовным крючком или кактус с красными шипами, представляет собой разновидность цветущего кактуса из рода Scleroactus. Встречается в пустыне Мохаве на юго-западе США."
+    "morphology_stem_ru": "Sclerocactus Polyancistrus, кактус Мохаве с рыболовным крючком или кактус с красными шипами, представляет собой разновидность цветущего кактуса из рода Scleroactus. Встречается в пустыне Мохаве на юго-западе США.",
+    "morphology_stem_uk": "Sclerocactus polyancistrus, кактус рибальський гачок Мохаве або кактус червоношипий рибальський гачок — вид квітучих кактусів роду Sclerocactus. Він зустрічається в пустелі Мохаве на південному заході США."
   },
   {
     "id": "neolloydia-johnsonii-parry-ex-engelm-ldbenson",

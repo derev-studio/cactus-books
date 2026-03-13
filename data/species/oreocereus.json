@@ -8,7 +8,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus ritteri is a species of Oreocereus found in Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Oreocereus ritteri — вид Oreocereus, обнаруженный в Перу."
+    "morphology_stem_ru": "Oreocereus ritteri — вид Oreocereus, обнаруженный в Перу.",
+    "morphology_stem_uk": "Oreocereus ritteri — вид Oreocereus, що зустрічається в Перу."
   },
   {
     "id": "oreocereus-trollii",
@@ -19,7 +20,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus trollii, commonly known as the Old Man of the Andes cactus, is a species of cacti native to Argentina and Bolivia. Though listed as Least Concern by the IUCN, the plant is collected extensively, and in some areas is threatened.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Oreocereus trollii, широко известный как кактус «Старик Анд», представляет собой вид кактусов, произрастающий в Аргентине и Боливии. Хотя МСОП внес это растение в список вызывающих наименьшие опасения, его активно собирают, а в некоторых районах оно находится под угрозой исчезновения."
+    "morphology_stem_ru": "Oreocereus trollii, широко известный как кактус «Старик Анд», представляет собой вид кактусов, произрастающий в Аргентине и Боливии. Хотя МСОП внес это растение в список вызывающих наименьшие опасения, его активно собирают, а в некоторых районах оно находится под угрозой исчезновения.",
+    "morphology_stem_uk": "Oreocereus trollii, широко відомий як кактус Старий Анд, є видом кактусів, що походить з Аргентини та Болівії. Незважаючи на те, що рослина внесена до списку МСОП, що викликає найменше занепокоєння, її збирають інтенсивно, і в деяких районах вона знаходиться під загрозою зникнення."
   },
   {
     "id": "oreocereus-celsianus",
@@ -30,7 +32,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus celsianus, or the old man of the mountain is a member of the family Cactaceae native to the high lands of the Andes in South America, and is named for its fluffy white hair, which may protect it from intense sunlight and extreme temperatures.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Oreocereus celsianus, или «старец горы», является членом семейства Cactaceae, произрастающим в высокогорных районах Анд в Южной Америке, и назван в честь своих пушистых белых волос, которые могут защитить его от интенсивного солнечного света и экстремальных температур."
+    "morphology_stem_ru": "Oreocereus celsianus, или «старец горы», является членом семейства Cactaceae, произрастающим в высокогорных районах Анд в Южной Америке, и назван в честь своих пушистых белых волос, которые могут защитить его от интенсивного солнечного света и экстремальных температур.",
+    "morphology_stem_uk": "Oreocereus celsianus, або гірський старець, є представником родини Cactaceae, що походить із високогір’я Анд у Південній Америці, і отримав назву через своє пухнасте біле волосся, яке може захищати його від інтенсивного сонячного світла та екстремальних температур."
   },
   {
     "id": "oreocereus-pseudofossulatus",
@@ -41,7 +44,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus pseudofossulatus is a species of Oreocereus found in Bolivia.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Oreocereus pseudofossulatus — вид Oreocereus, обнаруженный в Боливии."
+    "morphology_stem_ru": "Oreocereus pseudofossulatus — вид Oreocereus, обнаруженный в Боливии.",
+    "morphology_stem_uk": "Oreocereus pseudofossulatus — вид Oreocereus, що зустрічається в Болівії."
   },
   {
     "id": "oreocereus-tacnaensis",
@@ -50,6 +54,7 @@
     "source": "ncbi",
     "morphology_stem": "Oreocereus tacnaensis is a species of Oreocereus found in Peru.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Oreocereus tacnaensis — вид Oreocereus, обнаруженный в Перу."
+    "morphology_stem_ru": "Oreocereus tacnaensis — вид Oreocereus, обнаруженный в Перу.",
+    "morphology_stem_uk": "Oreocereus tacnaensis — вид Oreocereus, що зустрічається в Перу."
   }
 ]

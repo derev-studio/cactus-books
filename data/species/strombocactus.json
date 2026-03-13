@@ -24,7 +24,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Strombocactus disciformis is a rare species of cacti and the only species of the genus Strombocactus. The plant originates from Central and Northeast Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Strombocactus diskiformis — редкий вид кактусов и единственный вид рода Strombocactus. Растение родом из Центральной и Северо-Восточной Мексики."
+    "morphology_stem_ru": "Strombocactus diskiformis — редкий вид кактусов и единственный вид рода Strombocactus. Растение родом из Центральной и Северо-Восточной Мексики.",
+    "morphology_stem_uk": "Strombocactus disciformis — рідкісний вид кактусів і єдиний вид роду Strombocactus. Рослина походить з центральної та північно-східної Мексики."
   },
   {
     "id": "strombocactus-corregidorae-sarias-esánchez",
@@ -35,6 +36,7 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Strombocactus corregidorae is a species of cactus.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Strombocactus corregidorae — разновидность кактусов."
+    "morphology_stem_ru": "Strombocactus corregidorae — разновидность кактусов.",
+    "morphology_stem_uk": "Strombocactus corregidorae — вид кактусів."
   }
 ]

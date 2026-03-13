@@ -8,7 +8,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Ferocactus alamosanus is a species of Ferocactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Ferocactus alamosanus — вид ферокактуса из Мексики."
+    "morphology_stem_ru": "Ferocactus alamosanus — вид ферокактуса из Мексики.",
+    "morphology_stem_uk": "Ferocactus alamosanus — вид Ferocactus з Мексики."
   },
   {
     "id": "ferocactus-reppenhagenii-gunger",
@@ -25,7 +26,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Ferocactus echidne is a barrel cactus in the genus Ferocactus. It is found in nature in Mexico. This cactus is known commonly as Sonora barrel, Coville's barrel cactus, Emory's barrel cactus, and traveler's friend. This plant is often sold as a houseplant.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Ferocactus echidne — бочковый кактус из рода Ferocactus. Встречается в природе в Мексике. Этот кактус широко известен как бочка Соноры, кактус-бочка Ковилля, кактус-бочка Эмори и друг путешественника. Это растение часто продают как комнатное."
+    "morphology_stem_ru": "Ferocactus echidne — бочковый кактус из рода Ferocactus. Встречается в природе в Мексике. Этот кактус широко известен как бочка Соноры, кактус-бочка Ковилля, кактус-бочка Эмори и друг путешественника. Это растение часто продают как комнатное.",
+    "morphology_stem_uk": "Ferocactus echidne — бочковий кактус з роду Ferocactus. У природі зустрічається в Мексиці. Цей кактус широко відомий як бочка Сонора, бочка Ковіля, бочка Еморі та друг мандрівника. Ця рослина часто продається як кімнатна."
   },
   {
     "id": "ferocactus-flavovirens-scheidw-britton-rose",
@@ -36,7 +38,8 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Ferocactus flavovirens is a species of Ferocactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Ferocactus flavovirens — вид ферокактуса из Мексики."
+    "morphology_stem_ru": "Ferocactus flavovirens — вид ферокактуса из Мексики.",
+    "morphology_stem_uk": "Ferocactus flavovirens — вид Ferocactus з Мексики."
   },
   {
     "id": "ferocactus-schwarzii-gelinds",
@@ -47,6 +50,7 @@
     "photo_source": "wikipedia",
     "morphology_stem": "Ferocactus schwarzii is a species of Ferocactus from Mexico.",
     "morphology_source": "wikipedia",
-    "morphology_stem_ru": "Ferocactus schwarzii — вид ферокактуса из Мексики."
+    "morphology_stem_ru": "Ferocactus schwarzii — вид ферокактуса из Мексики.",
+    "morphology_stem_uk": "Ferocactus schwarzii — вид Ferocactus з Мексики."
   }
 ]
