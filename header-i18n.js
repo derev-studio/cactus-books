@@ -1,9 +1,12 @@
 /**
- * Локализация шапки сайта по языку браузера (ru / uk / en).
- * Подключите скрипт на всех страницах с общим header.
+ * Локализация шапки по сохранённому языку сайта (как i18n.js).
+ * Язык берётся из localStorage cactusbooks_lang — меню и книга ведут себя одинаково.
  */
 (function () {
   'use strict';
+
+  var LANG_STORAGE_KEY = 'cactusbooks_lang';
+  var HEADER_LANGS = { ru: true, uk: true, en: true, es: true };
 
   var HEADER_STRINGS = {
     ru: {
@@ -34,6 +37,7 @@
       dropdownFiles: 'Список файлов (по алфавиту)'
     },
     uk: {
+      brand: '🌵 Кактусярий',
       searchPlaceholder: 'Назва кактуса…',
       searchBtn: 'Знайти',
       navLabel: 'Навігатор по кактусах',
@@ -115,7 +119,15 @@
     }
   };
 
-  function getHeaderLocale() {
+  function getStoredLang() {
+    try {
+      var v = localStorage.getItem(LANG_STORAGE_KEY);
+      if (v && HEADER_LANGS[v]) return v;
+    } catch (_) {}
+    return null;
+  }
+
+  function getBrowserLocale() {
     var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
     if (lang.indexOf('uk') === 0) return 'uk';
     if (lang.indexOf('ru') === 0) return 'ru';
@@ -123,8 +135,13 @@
     return 'en';
   }
 
+  function getHeaderLocale() {
+    return getStoredLang() || getBrowserLocale();
+  }
+
   function applyHeaderLocale() {
-    var ui = HEADER_STRINGS[getHeaderLocale()] || HEADER_STRINGS.ru;
+    var lang = getHeaderLocale();
+    var ui = HEADER_STRINGS[lang] || HEADER_STRINGS.ru;
     var set = function (id, text) {
       var el = document.getElementById(id);
       if (el && text !== undefined) el.textContent = text;
@@ -159,6 +176,13 @@
     set('header-dropdown-caution', ui.dropdownCaution);
     set('header-start-link', ui.startLink);
     set('header-dropdown-files', ui.dropdownFiles);
+    var bookLink = document.getElementById('header-dropdown-book');
+    if (bookLink) {
+      var base = (bookLink.getAttribute('href') || '').replace(/book-read[^.]*\.html$/, '');
+      if (lang === 'uk') bookLink.href = base + 'book-read.html';
+      else if (lang === 'ru') bookLink.href = base + 'book-read-ru.html';
+      else bookLink.href = base + 'book-read-en.html';
+    }
   }
 
   if (document.readyState === 'loading') {
@@ -166,4 +190,5 @@
   } else {
     applyHeaderLocale();
   }
+  window.addEventListener('cactusbooks-lang-applied', applyHeaderLocale);
 })();
