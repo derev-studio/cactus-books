@@ -12,7 +12,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pilosocereus_collinsii_-_Jim_Riley_-_249733158.jpeg/330px-Pilosocereus_collinsii_-_Jim_Riley_-_249733158.jpeg",
     "photo_source": "wikipedia",
     "morphology_stem": "Pilosocereus collinsii is a species of cactus native to Oaxaca, Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Pilosocereus Collinsii — вид кактусов, произрастающий в Оахаке, Мексика."
   },
   {
     "id": "pilosocereus-leucocephalus-poselg-byles-gdrowley",
@@ -89,7 +90,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Pilosocereus_chrysacanthus_%285754281260%29.jpg/330px-Pilosocereus_chrysacanthus_%285754281260%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Pilosocereus chrysacanthus is a species of Pilosocereus found in Mexico to Honduras",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Pilosocereus chrysacanthus — вид Pilosocereus, обитающий от Мексики до Гондураса."
   },
   {
     "id": "pilosocereus-quadricentralis-eydawson-backeb",
@@ -99,7 +101,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pilosocereus_quadricentralis.jpg/330px-Pilosocereus_quadricentralis.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Pilosocereus quadricentralis is a species of Pilosocereus found in Oaxaca and Chiapas States of Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Pilosocereus Quadricentralis — вид Pilosocereus, обитающий в штатах Оахака и Чьяпас в Мексике."
   },
   {
     "id": "cephalocereus-alensis-facweber-britton-rose",
@@ -131,7 +134,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pilosocereusgaumericutting.jpg/330px-Pilosocereusgaumericutting.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Pilosocereus gaumeri is a species of columnar cactus endemic to the Yucatán Peninsula of Mexico. Its common name in Spanish is sabucán.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Pilosocereus gaumeri — вид колонновидного кактуса, эндемичный для полуострова Юкатан в Мексике. Его обычное название на испанском языке — сабукан."
   },
   {
     "id": "pilosocereus-royenii-l-byles-gdrowley",

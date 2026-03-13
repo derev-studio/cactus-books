@@ -20,7 +20,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Gymnocactus_horripilus_2.jpg/330px-Gymnocactus_horripilus_2.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Kadenicarpus horripilus is a species of plant in the family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Kadenicarpus horripilus — растение семейства Кактусовые."
   },
   {
     "id": "turbinicarpus-pseudomacrochele-backeb-buxb-backeb",
@@ -39,6 +40,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Turbinicarpus_pseudomacrochele_subsp._lausseri_01.jpg/330px-Turbinicarpus_pseudomacrochele_subsp._lausseri_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Kadenicarpus pseudomacrochele, synonym Turbinicarpus pseudomacrochele, is a species of plant in the family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Kadenicarpus pseudomacrochele, синоним Turbinicarpus pseudomacrochele, — вид растения семейства Кактусовые."
   }
 ]

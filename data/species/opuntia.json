@@ -85,7 +85,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Opuntia_microdasys_3.jpg/330px-Opuntia_microdasys_3.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia microdasys is a species of flowering plant in the cactus family, Cactaceae. It is native and endemic to central and northern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia microdasys — вид цветкового растения семейства кактусовых Cactaceae. Он является родным и эндемичным для центральной и северной Мексики."
   },
   {
     "id": "opuntia-robusta",
@@ -120,7 +121,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Opuntia_robusta_%28Cactaceae%29.jpg/330px-Opuntia_robusta_%28Cactaceae%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia robusta, the wheel cactus, nopal tapon, or camuesa, is a species of cactus in the family Cactaceae. It is native and endemic to central and northern Mexico to within 100 miles (160 km) of the Arizona and New Mexico borders where it grow from 5,000 to 10,000 feet on rocky slopes, open shrub lands, woodlands and mixed with other cactus and succulents.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Опунция робуста, кактус-колесо, нопал-тапон или камуэса — вид кактусов семейства Кактусовые. Он является аборигенным и эндемичным для центральной и северной Мексики в пределах 100 миль (160 км) от границ Аризоны и Нью-Мексико, где он растет на высоте от 5 000 до 10 000 футов на каменистых склонах, открытых кустарниках, лесах и в смеси с другими кактусами и суккулентами."
   },
   {
     "id": "opuntia-humifusa",
@@ -150,7 +152,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Prickly_pear_MN_2007.JPG/330px-Prickly_pear_MN_2007.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia humifusa, commonly known as the devil's-tongue, eastern prickly pear or Indian fig, is a cactus of the genus Opuntia present in parts of the eastern United States, southeastern Canada, and northeastern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia humifusa, широко известная как дьявольский язык, восточная опунция или индийский инжир, представляет собой кактус рода Opuntia, произрастающий в некоторых частях восточной части США, юго-восточной Канады и северо-восточной Мексики."
   },
   {
     "id": "opuntia-depressa-rose",
@@ -170,7 +173,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia rzedowskii, also known as Rzedowski's prickly pear, is a species of prickly pear cactus in the family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Опунция ржедовская, также известная как опунция Жедовского, представляет собой разновидность кактуса опунции семейства Кактусовые."
   },
   {
     "id": "opuntia-engelmannii-salm-dyck-ex-engelm",
@@ -210,7 +214,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Opuntia_engelmannii-Figuier_de_barbarie-20150609.jpg/330px-Opuntia_engelmannii-Figuier_de_barbarie-20150609.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia engelmannii is a prickly pear common across the south-central and Southwestern United States and northern Mexico. It goes by a variety of common names, including desert prickly pear, discus prickly pear, Engelmann's prickly pear in the US, and nopal, abrojo, joconostle, and vela de coyote in Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia engelmannii — опунция, распространенная на юге центральной и юго-западной части США, а также на севере Мексики. Он имеет множество распространенных названий, в том числе пустынную опунцию, дискусную опунцию, опунцию Энгельмана в США, а также нопал, аброхо, хоконостле и вела-де-койот в Мексике."
   },
   {
     "id": "opuntia-robusta-hlwendl",
@@ -234,7 +239,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Opuntia_robusta_%28Cactaceae%29.jpg/330px-Opuntia_robusta_%28Cactaceae%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia robusta, the wheel cactus, nopal tapon, or camuesa, is a species of cactus in the family Cactaceae. It is native and endemic to central and northern Mexico to within 100 miles (160 km) of the Arizona and New Mexico borders where it grow from 5,000 to 10,000 feet on rocky slopes, open shrub lands, woodlands and mixed with other cactus and succulents.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Опунция робуста, кактус-колесо, нопал-тапон или камуэса — вид кактусов семейства Кактусовые. Он является аборигенным и эндемичным для центральной и северной Мексики в пределах 100 миль (160 км) от границ Аризоны и Нью-Мексико, где он растет на высоте от 5 000 до 10 000 футов на каменистых склонах, открытых кустарниках, лесах и в смеси с другими кактусами и суккулентами."
   },
   {
     "id": "opuntia-pumila-rose",
@@ -250,7 +256,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Opuntia_hyptiacantha_01.jpg/330px-Opuntia_hyptiacantha_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia hyptiacantha is a plant that belongs to the family Cactaceae. They can be found in Mexico within Durango, Aguascalientes, Zacatecas, San Luis Potosí, Jalisco, Guanajuato, Querétaro, and the State of Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Опунция гиптиаканта – растение семейства Кактусовые. Их можно найти в Мексике в Дуранго, Агуаскальентесе, Сакатекасе, Сан-Луис-Потоси, Халиско, Гуанахуато, Керетаро и штате Мехико."
   },
   {
     "id": "opuntia-occidentalis-engelm-jmbigelow",
@@ -283,7 +290,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Opuntia_tomentosa_%28Cactaceae%29_-_Nopal_chamacuelo.jpg/330px-Opuntia_tomentosa_%28Cactaceae%29_-_Nopal_chamacuelo.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia tomentosa, commonly called woollyjoint pricklypear or velvety tree pear, is a species of Opuntia found in Mexico",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia tomentosa, обычно называемая опунцией с шерстистым соединением или бархатистой древовидной грушей, представляет собой разновидность опунции, обнаруженную в Мексике."
   },
   {
     "id": "opuntia-puberula-hortvindob-ex-pfeiff",
@@ -325,7 +333,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Opuntia_microdasys_3.jpg/330px-Opuntia_microdasys_3.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia microdasys is a species of flowering plant in the cactus family, Cactaceae. It is native and endemic to central and northern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia microdasys — вид цветкового растения семейства кактусовых Cactaceae. Он является родным и эндемичным для центральной и северной Мексики."
   },
   {
     "id": "opuntia-macrocentra-engelm",
@@ -335,7 +344,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Opuntia_macrocentra_01.jpg/330px-Opuntia_macrocentra_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia macrocentra, the long-spined purplish prickly pear or purple pricklypear, is a cactus found in the lower Southwestern United States and Northwestern Mexico. A member of the prickly pear genus, this species of Opuntia is most notable as one of a few cacti that produce a purple pigmentation in the stem. Other common names for this plant include black-spined pricklypear, long-spine prickly pear, purple pricklypear, and redeye prickly pear.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia macrocentra, пурпурно-опунция с длинными шипами или фиолетовая опунция, — это кактус, произрастающий в нижней части юго-запада США и северо-западе Мексики. Этот вид Opuntia, принадлежащий к роду опунций, наиболее известен как один из немногих кактусов, которые производят фиолетовую пигментацию стебля. Другие распространенные названия этого растения включают опунцию с черными шипами, опунцию с длинными шипами, фиолетовую опунцию и красноглазую опунцию."
   },
   {
     "id": "opuntia-phaeacantha-engelm",
@@ -379,7 +389,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Opuntia_phaeacantha_kz2.jpg/330px-Opuntia_phaeacantha_kz2.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia phaeacantha is a species of prickly pear cactus known by the common names brown-spine prickly pear, tulip prickly pear, and desert prickly pear, which is found across the southwestern United States, lower Great Plains, and northern Mexico. The plant forms dense but localized thickets. Several varieties of this particular species occur, and it may hybridize with other prickly pears, making identification sometimes tricky.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia phaeacantha — это вид кактуса опунции, известный под общими названиями опунция с коричневыми шипами, тюльпанная опунция и пустынная опунция, который встречается на юго-западе США, в нижних Великих равнинах и на севере Мексики. Растение образует густые, но локализованные заросли. Встречается несколько разновидностей этого конкретного вида, и он может гибридизоваться с другими опунциями, что иногда затрудняет идентификацию."
   },
   {
     "id": "opuntia-streptacantha-lem",
@@ -415,7 +426,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia matudae, or xoconostle, is a cactus native to Mexico. It is sometimes treated as a synonym of Opuntia hyptiacantha. In 2019, a genetic study supported keeping the taxa distinct.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia matudae, или xoconostle, — кактус родом из Мексики. Иногда его рассматривают как синоним Opuntia hyptiacantha. В 2019 году генетическое исследование подтвердило сохранение различий между таксонами."
   },
   {
     "id": "opuntia-atrispina-griffiths",
@@ -425,7 +437,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Opuntia14_filtered.jpg/330px-Opuntia14_filtered.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia atrispina is a cactus species in the genus Opuntia.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia atrispina) — вид кактусов из рода Opuntia."
   },
   {
     "id": "opuntia-joconostle-facweber",
@@ -453,7 +466,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Nopalea_dejecta.jpg/330px-Nopalea_dejecta.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia dejecta is a species of plant in the cactus family. They are listed in cites appendix ii. Flowers are visited by the broad-billed hummingbird.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia dejecta) — растение семейства кактусовых. Они перечислены в Приложении ii. Цветы посещает ширококлювый колибри."
   },
   {
     "id": "opuntia-hitchcockii-jgortega",
@@ -461,7 +475,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia hitchcockii, commonly known as Hitchcock's prickly pear, is a species of prickly pear cactus in the family Cactaceae. It was described by Jesús González Ortega in 1929. The species range spreads throughout parts of Sinaloa, and Nayarit, where it grows primarily in the dry shrub-land zone of Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia hitchcockii, широко известная как опунция Хичкока, представляет собой разновидность кактуса опунции семейства Кактусовые. Он был описан Хесусом Гонсалесом Ортегой в 1929 году. Ареал вида распространяется по частям Синалоа и Наярита, где он растет в основном в зоне засушливых кустарников Мексики."
   },
   {
     "id": "opuntia-stenopetala-engelm",
@@ -477,7 +492,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Opuntia_stenopetala_%2820074558481%29.jpg/330px-Opuntia_stenopetala_%2820074558481%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia stenopetala is a species low bushy cactus, often forming thickets or mats, the main branches creeping and resting on the edges of the joints. Its native range is within Mexico. It is dioecious, with male and female flowers on separate plants.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia stenopetala — вид невысокого кустистого кактуса, часто образующего заросли или коврики, при этом основные ветви стелются и опираются на края сочленений. Его родной ареал находится в Мексике. Он двудомный, с мужскими и женскими цветками на отдельных растениях."
   },
   {
     "id": "opuntia-chlorotica-engelm-jmbigelow",
@@ -487,7 +503,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Opuntia_chlorotica_7.jpg/330px-Opuntia_chlorotica_7.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia chlorotica is a species of prickly pear in the family Cactaceae. Its common names include pancake prickly pear, flapjack prickly pear and dollarjoint prickly pear.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia chromotica) — вид опунции семейства Кактусовые. Его общие названия включают блинную опунцию, оладьевую опунцию и долларовую опунцию."
   },
   {
     "id": "opuntia-aciculata-griffiths",
@@ -497,7 +514,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Opuntia17_filtered.jpg/330px-Opuntia17_filtered.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia aciculata, also called Chenille pricklypear, old man's whiskers, and cowboy's red whiskers, is a perennial dicot and an attractive ornamental cactus native to Texas. It belongs to the genus Opuntia. It is also widespread in Nuevo Leon and Tamaulipas.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia aciculata, также называемая синельной опунцией, стариковскими бакенбардами и ковбойскими красными бакенбардами, представляет собой многолетнее двудольное растение и привлекательный декоративный кактус, произрастающий в Техасе. It belongs to the genus Opuntia. Он также широко распространен в Нуэво-Леоне и Тамаулипасе."
   },
   {
     "id": "opuntia-andersonii-hmhern-gómez-hin-bárcenas",
@@ -543,7 +561,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Opuntia_oricola_3.jpg/330px-Opuntia_oricola_3.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia oricola is a species of prickly pear cactus known by the common name chaparral prickly pear.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia oricola — это вид кактуса опунции, известный под общим названием чапараль опунция."
   },
   {
     "id": "nopalea-cochenillifera-l-salm-dyck",
@@ -591,7 +610,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Opuntia_littoralis_var_vaseyi_5.jpg/330px-Opuntia_littoralis_var_vaseyi_5.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia littoralis is a species of prickly pear cactus known by the common name satious fruit. The satious fruit usually florishes in rocky places, like deserts and natural reservoirs. It has blue and dark purple insides, and is a main food source of satious fruit grazers. It is sometimes called the sprawling prickly pear due to its short stems and habit of growing close to the ground. \"Littoral\" means \"pertaining to the seashore\".",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntialittoralis — это вид кактуса опунции, известный под общим названием сытный фрукт. Насыщенные плоды обычно цветут в каменистых местах, например, в пустынях и природных водоемах. У него синие и темно-фиолетовые внутренности, и он является основным источником пищи для сытых любителей фруктов. Ее иногда называют раскидистой опунцией из-за ее коротких стеблей и привычки расти близко к земле. «Литораль» означает «относящийся к морскому побережью»."
   },
   {
     "id": "opuntia-wilcoxii-britton-rose",
@@ -607,7 +627,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Opuntia_fuliginosa_1c.JPG/330px-Opuntia_fuliginosa_1c.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia fuliginosa is a species of prickly pear cactus found in the Sonoran Desert in Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia fuliginosa — вид кактуса опунция, произрастающий в пустыне Сонора в Мексике."
   },
   {
     "id": "opuntia-mesacantha-raf",
@@ -673,7 +694,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Opuntia_macrorhiza.jpg/330px-Opuntia_macrorhiza.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia macrorhiza, also called plains pricklypear or prairie pricklypear or western pricklypear, is a common and widespread species of cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia macrorhiza, также называемая равнинной опунцией, прерийной опунцией или западной опунцией, является распространенным и широко распространенным видом кактуса."
   },
   {
     "id": "opuntia-intricata-griffiths",
@@ -701,7 +723,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Opuntia_rastrera.jpg/330px-Opuntia_rastrera.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia rastrera is a prickly pear which grows in the Mexican state of San Luis Potosí. It is known in Spanish as cuija, although that name can also refer to other cactuses such as Brasiliopuntia.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia rastrera — опунция, произрастающая в мексиканском штате Сан-Луис-Потоси. На испанском языке он известен как куиха, хотя это название может относиться и к другим кактусам, таким как Brasiliopuntia."
   },
   {
     "id": "opuntia-pilifera-facweber",
@@ -711,7 +734,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Opuntia_pilifera.jpg/330px-Opuntia_pilifera.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia pilifera is a species of plants in the family Cactaceae (cacti). They are listed in CITES Appendix II.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia pilifera — вид растений семейства Cactaceae (кактусы). Они перечислены в Приложении II СИТЕС."
   },
   {
     "id": "opuntia-huajuapensis-bravo",
@@ -721,7 +745,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Opuntia_huajuapensis.jpg/330px-Opuntia_huajuapensis.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia huajuapensis, commonly known as the Huajuapan prickly pear or the Chumbera, is a species of prickly pear cactus in the family Cactaceae. It was described by Helia Bravo Hollis in 1953, and named for the town of Heroica Ciudad Huajuapan de León in Oaxaca, Mexico, from which the first specimens were described.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia huajuapensis, широко известная как опунция Хуахуапан или Чумбера, представляет собой разновидность кактуса опунции семейства Кактусовые. Он был описан Хелией Браво Холлис в 1953 году и назван в честь города Героика-Сьюдад-Уахуапан-де-Леон в Оахаке, Мексика, из которого были описаны первые экземпляры."
   },
   {
     "id": "opuntia-parviclada-sarias-gama",
@@ -735,7 +760,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia tehuacana, commonly known as the Tehuacán prickly pear, is a species of prickly pear cactus in the family Cactaceae. It was described by Mexican botanists Salvador Arias Montez and Susana Gama López in 1997. The species was named for the town of Tehuacán, Mexico, which is near the center of the species range.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia tehuacana, широко известная как опунция Теуакан, представляет собой разновидность кактуса опунции семейства Кактусовые. Его описали мексиканские ботаники Сальвадор Ариас Монтес и Сусана Гама Лопес в 1997 году. Вид был назван в честь города Теуакан в Мексике, который находится недалеко от центра ареала вида."
   },
   {
     "id": "opuntia-rufida-engelm",
@@ -745,7 +771,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Opuntia_microdasys_subsp_rufida%2C_habitus%2C_La_Montagne%2C_b.jpg/330px-Opuntia_microdasys_subsp_rufida%2C_habitus%2C_La_Montagne%2C_b.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia rufida is a species of prickly pear cactus native to southwestern Texas and northern Mexico, where it grows on rocky slopes. The species makes up for its total lack of spines with a profusion of red-brown glochids. The common name blind prickly pear or cow blinder comes from the fact that the glochids may be carried away by the wind and blind animals.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia rufida — это вид кактуса опунции, произрастающий на юго-западе Техаса и северной Мексике, где он растет на каменистых склонах. Полное отсутствие шипов этот вид компенсирует обилием красно-коричневых глохидий. Общее название слепая опунция или коровья слепота происходит от того факта, что глохиды могут быть унесены ветром и ослепить животных."
   },
   {
     "id": "opuntia-elizondoana-esánchez-villaseñor",
@@ -779,7 +806,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Opuntia-arenaria.jpg/330px-Opuntia-arenaria.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia arenaria was considered a variety of O. polyacantha by many botanists, and is still treated that way in the Flora of North America. However, O. arenaria is diploid and O. polyacantha is tetraploid. It was described by Engelmann in 1856.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Многие ботаники считали Opuntia Arenaria разновидностью O. Polyacantha, и во флоре Северной Америки к ней до сих пор относятся так же. Однако O. Arenaria диплоидна, а O. Polyacantha тетраплоидна. Описан Энгельманом в 1856 году."
   },
   {
     "id": "opuntia-gosseliniana-facweber",
@@ -789,7 +817,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Opuntia_gosseliniana.JPG/330px-Opuntia_gosseliniana.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia gosseliniana, commonly known as the violet pricklypear, is a species of cactus that is native to the United States and Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia gosseliniana, широко известная как фиолетовая опунция, — это вид кактуса, произрастающий в США и Мексике."
   },
   {
     "id": "opuntia-stricta-haw-haw",
@@ -834,7 +863,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Opuntia_stricta%2C_S%C3%A8te%2C_H%C3%A9rault_01.jpg/330px-Opuntia_stricta%2C_S%C3%A8te%2C_H%C3%A9rault_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia stricta is a species of large cactus that is native to subtropical and tropical coastal areas of the Americas, especially around the Caribbean and the lower East Coast of the United States. Common names include erect prickly pear and nopal estricto (Spanish). The first description as Cactus strictus was published in 1803 by Adrian Hardy Haworth. In 1812 he moved the species to the genus Opuntia.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia stricta — это вид большого кактуса, произрастающий в субтропических и тропических прибрежных районах Америки, особенно в районе Карибского бассейна и нижнего восточного побережья Соединенных Штатов. Общие названия включают прямостоячую опунцию и nopal estricto (испанский). Первое описание Cactus strictus было опубликовано в 1803 году Адрианом Харди Хавортом. В 1812 году он перенес вид в род Opuntia."
   },
   {
     "id": "opuntia-amarilla-griffiths",
@@ -854,7 +884,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Opuntia_stricta_-_Tenerife_01.jpg/330px-Opuntia_stricta_-_Tenerife_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia dillenii is a species of prickly pear native to the tropical and subtropical Americas. It is naturalized in many other parts of the world. It differs from O. stricta by having more spines per arose.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia dillenii — вид опунции, произрастающий в тропической и субтропической Америке. Он натурализован во многих других частях мира. Он отличается от O. stricta тем, что в каждом отростке имеется больше шипов."
   },
   {
     "id": "opuntia-chaffeyi-britton-rose",
@@ -864,7 +895,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Opuntia_chaffeyi_01.jpg/330px-Opuntia_chaffeyi_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia chaffeyi is a species of plant in the family Cactaceae. It is endemic to Zacatecas state in Mexico. Its natural habitat is hot deserts. It is a Critically endangered species, threatened by habitat loss.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia chaffeyi — растение семейства Кактусовые. Эндемик штата Сакатекас в Мексике. Его естественная среда обитания – жаркие пустыни. Это вид, находящийся под угрозой исчезновения, которому угрожает потеря среды обитания."
   },
   {
     "id": "opuntia-pachyrrhiza-hmhern-gómez-hin-bárcenas",
@@ -872,7 +904,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia pachyrrhiza is a species of plant in the family Cactaceae. It is endemic to Mexico. Its natural habitat is subtropical or tropical dry lowland grassland. It is threatened by habitat loss.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Опунция пахирриза — растение семейства Кактусовые. Это эндемик Мексики. Его естественная среда обитания — субтропические или тропические засушливые равнинные луга. Ему угрожает потеря среды обитания."
   },
   {
     "id": "opuntia-jaliscana-bravo",
@@ -886,7 +919,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia megarrhiza Rose is a species of plant in the family Cactaceae. It is endemic to the state of San Luís Potosí in northeastern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia megarrhiza Rose) — растение семейства Кактусовые. Эндемик штата Сан-Луис-Потоси на северо-востоке Мексики."
   },
   {
     "id": "opuntia-vaseyi-jmcoult-britton-rose",
@@ -941,7 +975,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Opuntia_fragilis_1.jpg/330px-Opuntia_fragilis_1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia fragilis, known by the common names brittle pricklypear and little prickly pear, is a prickly pear cactus native to much of western North America.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia fragilis, известная под общими названиями «ломкая опунция» и «маленькая опунция», представляет собой кактус опунции, произрастающий на большей части западной части Северной Америки."
   },
   {
     "id": "opuntia-pottsii-salm-dyck",
@@ -949,7 +984,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Opuntia pottsii is a species of flowering plant in the family Cactaceae, native to Arizona, New Mexico and Texas in the United States and to northeast Mexico. It was first described by Joseph zu Salm-Reifferscheidt-Dyck in 1850.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia pottsii — вид цветкового растения семейства Кактусовые, произрастающий в Аризоне, Нью-Мексико и Техасе в США, а также на северо-востоке Мексики. Впервые он был описан Йозефом цу Зальм-Райффершайдт-Дик в 1850 году."
   },
   {
     "id": "opuntia-gallegiana-scheinvar-olalde",
@@ -971,7 +1007,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Prickly_pear_MN_2007.JPG/330px-Prickly_pear_MN_2007.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia humifusa, commonly known as the devil's-tongue, eastern prickly pear or Indian fig, is a cactus of the genus Opuntia present in parts of the eastern United States, southeastern Canada, and northeastern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia humifusa, широко известная как дьявольский язык, восточная опунция или индийский инжир, представляет собой кактус рода Opuntia, произрастающий в некоторых частях восточной части США, юго-восточной Канады и северо-восточной Мексики."
   },
   {
     "id": "opuntia-bravoana-embaxter",
@@ -1010,7 +1047,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Opuntia_elata_%28flowers%29.jpg/330px-Opuntia_elata_%28flowers%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia elata is a species of cactus found in Bolivia, Paraguay, southern Brazil, northern Argentina, and Uruguay.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia elata — вид кактуса, произрастающий в Боливии, Парагвае, южной Бразилии, северной Аргентине и Уругвае."
   },
   {
     "id": "opuntia-drummondii-graham",
@@ -1026,6 +1064,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Opuntia_macrorhiza_-_JBM.jpg/330px-Opuntia_macrorhiza_-_JBM.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Opuntia setispina is a species of cactus found in the Sierra Madre Occidental in Chihuahua, Sonora, and Durango in Mexico. The name O. setispina has been listed as a synonym under Opuntia macrorhiza and Opuntia pottsii, but shows no close relationship to either species. It is more of a woody shrubby, often somewhat tree-like species, growing up to approximately 1 meter tall and wide. It is morphologically similar to Opuntia chlorotica, Opuntia santa-rita, and Opuntia gosseliniana.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Opuntia setispina — это вид кактуса, произрастающий в Западной Сьерра-Мадре в Чиуауа, Соноре и Дуранго в Мексике. Название O. setispina было указано как синоним Opuntia macrorhiza и Opuntia pottsii, но не обнаруживает тесного родства ни с одним из видов. Это скорее древесно-кустарниковый, часто несколько древовидный вид, вырастающий примерно до 1 метра в высоту и ширину. Морфологически он похож на Opuntia chromotica, Opuntia santa-rita и Opuntia gosseliniana."
   }
 ]

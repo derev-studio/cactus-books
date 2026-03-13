@@ -17,7 +17,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Melocactus_curvispinus_curvispinus_%281%29.jpg/330px-Melocactus_curvispinus_curvispinus_%281%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Melocactus curvispinus is a species of Melocactus found from southern Mexico to Venezuela.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Melocactus curvispinus — вид мелокактуса, встречающийся от юга Мексики до Венесуэлы."
   },
   {
     "id": "melocactus-lemairei-monv-ex-lem-miq",
@@ -37,6 +38,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Melocactus_lemairei_The_Cactaceae.jpg/330px-Melocactus_lemairei_The_Cactaceae.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Melocactus lemairei is a species of cactus endemic to the Caribbean island of Hispaniola. It is named after French botanist and cactus expert Charles Antoine Lemaire.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Melocactus lemairei — вид кактуса, эндемичный для карибского острова Эспаньола. Он назван в честь французского ботаника и знатока кактусов Шарля Антуана Лемэра."
   }
 ]

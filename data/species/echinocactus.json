@@ -40,7 +40,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%E4%BB%99%E4%BA%BA%E6%8E%8C-%E7%B6%BE%E6%B3%A2_Homalocephala_texensis_%28Echinocactus_texensis%29_-%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%98%AA%E9%AE%AE%E8%8A%B1%E7%AB%B6%E6%94%BE%E9%A4%A8_Osaka_Sakuya_Konohana_Kan%2C_Japan-_%2827295690187%29.jpg/330px-%E4%BB%99%E4%BA%BA%E6%8E%8C-%E7%B6%BE%E6%B3%A2_Homalocephala_texensis_%28Echinocactus_texensis%29_-%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%98%AA%E9%AE%AE%E8%8A%B1%E7%AB%B6%E6%94%BE%E9%A4%A8_Osaka_Sakuya_Konohana_Kan%2C_Japan-_%2827295690187%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Homalocephala texensis, synonyms including Echinocactus texensis, also known as the horse crippler or devil's pincushion, is a cactus in the subfamily Cactoideae. It is native to the United States and Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Homalocephala texensis, синонимы которого включают Echinocactus texensis, также известный как конский калека или подушечка для иголок дьявола, — это кактус подсемейства Cactoideae. Его родиной являются США и Мексика."
   },
   {
     "id": "echinocactus-polycephalus-engelm-jmbigelow",
@@ -56,6 +57,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Echinocactus_polycephalus%2C_Section_6_BLM_8197_RobbHannawacker.jpg/330px-Echinocactus_polycephalus%2C_Section_6_BLM_8197_RobbHannawacker.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Homalocephala polycephala, synonym Echinocactus polycephalus, is a cactus that is native to the United States and Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Homalocephala polycephala, синоним Echinocactus polycephalus, — это кактус, произрастающий в США и Мексике."
   }
 ]

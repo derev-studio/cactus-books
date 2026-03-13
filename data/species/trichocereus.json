@@ -5,6 +5,7 @@
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
     "source": "ncbi",
     "morphology_stem": "Echinopsis macrogona, synonym Trichocereus macrogonus, is a species of cactus found in Bolivia and Peru. Echinopsis macrogona is one of a number of similar species that may be called San Pedro cactus. Indigenous names include achuma and huachuma, although these too may be applied to similar species.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinopsis macrogona, синоним Trichocereus macrogonus, — это вид кактуса, произрастающий в Боливии и Перу. Echinopsis macrogona — один из множества похожих видов, которые можно назвать кактусом Сан-Педро. Местные названия включают ачума и хуачума, хотя они также могут относиться к аналогичным видам."
   }
 ]

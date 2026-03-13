@@ -7,7 +7,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Oreocereus_ritteri.jpg/330px-Oreocereus_ritteri.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus ritteri is a species of Oreocereus found in Peru.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Oreocereus ritteri — вид Oreocereus, обнаруженный в Перу."
   },
   {
     "id": "oreocereus-trollii",
@@ -17,7 +18,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ses_Salines_-_Botanicactus_-_Oreocereus_trollii_03_ies.jpg/330px-Ses_Salines_-_Botanicactus_-_Oreocereus_trollii_03_ies.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus trollii, commonly known as the Old Man of the Andes cactus, is a species of cacti native to Argentina and Bolivia. Though listed as Least Concern by the IUCN, the plant is collected extensively, and in some areas is threatened.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Oreocereus trollii, широко известный как кактус «Старик Анд», представляет собой вид кактусов, произрастающий в Аргентине и Боливии. Хотя МСОП внес это растение в список вызывающих наименьшие опасения, его активно собирают, а в некоторых районах оно находится под угрозой исчезновения."
   },
   {
     "id": "oreocereus-celsianus",
@@ -27,7 +29,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Specimen_of_Oreocereus_celsianus_from_the_Huntington_Botanical_Gardens.jpg/330px-Specimen_of_Oreocereus_celsianus_from_the_Huntington_Botanical_Gardens.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus celsianus, or the old man of the mountain is a member of the family Cactaceae native to the high lands of the Andes in South America, and is named for its fluffy white hair, which may protect it from intense sunlight and extreme temperatures.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Oreocereus celsianus, или «старец горы», является членом семейства Cactaceae, произрастающим в высокогорных районах Анд в Южной Америке, и назван в честь своих пушистых белых волос, которые могут защитить его от интенсивного солнечного света и экстремальных температур."
   },
   {
     "id": "oreocereus-pseudofossulatus",
@@ -37,7 +40,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Teguise_Guatiza_-_Jardin_-_Oreocereus_pseudofossulatus_04_ies.jpg/330px-Teguise_Guatiza_-_Jardin_-_Oreocereus_pseudofossulatus_04_ies.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Oreocereus pseudofossulatus is a species of Oreocereus found in Bolivia.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Oreocereus pseudofossulatus — вид Oreocereus, обнаруженный в Боливии."
   },
   {
     "id": "oreocereus-tacnaensis",
@@ -45,6 +49,7 @@
     "description": "По данным NCBI. Морфология и синонимы будут добавлены.",
     "source": "ncbi",
     "morphology_stem": "Oreocereus tacnaensis is a species of Oreocereus found in Peru.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Oreocereus tacnaensis — вид Oreocereus, обнаруженный в Перу."
   }
 ]

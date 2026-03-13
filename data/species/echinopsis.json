@@ -50,7 +50,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Echinopsis_oxygona_%285%29.jpg/330px-Echinopsis_oxygona_%285%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinopsis oxygona, also known as Eyries cactus, Easter lily cactus or sea-urchin cactus, is a species of flowering plant in the cactus family Cactaceae, native to south Brazil, Uruguay, Paraguay and northeastern Argentina. Some species that have been described separately, including Echinopsis eyriesii and Echinopsis tubiflora, are now considered to be synonymous. The features of the species include a large flower, with sharply pointed lavender or white petals, and a sweet scent.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinopsis oxygona, также известный как кактус Эйрис, кактус пасхальной лилии или кактус морской еж, представляет собой вид цветущего растения семейства кактусов Cactaceae, произрастающий в южной Бразилии, Уругвае, Парагвае и северо-восточной Аргентине. Некоторые виды, описанные отдельно, в том числе Echinopsis eyriesii и Echinopsis tubiflora, теперь считаются синонимами. К особенностям вида относятся крупный цветок с остроконечными лавандовыми или белыми лепестками и сладкий аромат."
   },
   {
     "id": "echinopsis-subdenudata",
@@ -59,7 +60,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Echinopsis_subdenudata_1.JPG/330px-Echinopsis_subdenudata_1.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinopsis ancistrophora, synonyms including Lobivia ancistrophora, commonly called domino cactus, night blooming hedgehog, Easter lily cactus, is a species of cactus. It has a globular shape, few spines, with large, white flowers attached to long, green tubes. It occurs in Bolivia, at altitudes of 600–1800 metres, and northwest Argentina. It has gained the Royal Horticultural Society's Award of Garden Merit.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinopsis ancistropora, синонимы которого включают Lobivia ancistropora, обычно называемую кактусом домино, ночным цветущим ежом, кактусом пасхальной лилии, являются разновидностью кактуса. У него шаровидная форма, мало колючек, большие белые цветки, прикрепленные к длинным зеленым трубкам. Встречается в Боливии на высоте 600–1800 метров и на северо-западе Аргентины. Он получил награду Королевского садоводческого общества за заслуги перед садом."
   },
   {
     "id": "echinopsis-chamaecereus",
@@ -68,6 +70,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Echinopsis_chamaecereus_BlKakteenT168.jpg/330px-Echinopsis_chamaecereus_BlKakteenT168.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinopsis chamaecereus is a species of cactus from northwestern Argentina and Bolivia. Synonyms include Chamaecereus silvestrii. It has been called the peanut cactus. This plant should not be confused with Echinopsis silvestrii, a synonym of Echinopsis albispinosa, a species with a very different appearance.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinopsis chamaecereus — вид кактуса из северо-западной Аргентины и Боливии. Синонимы включают Chamaecereus silvestrii. Его назвали арахисовым кактусом. Это растение не следует путать с Echinopsis silvestrii, синонимом Echinopsis albispinosa, вида с совершенно другим внешним видом."
   }
 ]

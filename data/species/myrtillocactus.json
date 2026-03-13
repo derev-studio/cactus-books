@@ -20,7 +20,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Blue_Candle_Cactus_%28Myrtillocactus_geometrizans%29_%2835773208785%29.jpg/330px-Blue_Candle_Cactus_%28Myrtillocactus_geometrizans%29_%2835773208785%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Myrtillocactus geometrizans is a species of cactus in the genus Myrtillocactus, native to central and northern Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Myrtillocactus geometrizans — вид кактусов рода Myrtillocactus, произрастающий в центральной и северной Мексике."
   },
   {
     "id": "escontria-chiotilla-facweber-ex-kschum-rose",
@@ -30,7 +31,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Escontria_chiotilla.jpg/330px-Escontria_chiotilla.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Escontria is a genus of cactus. The only species is Escontria chiotilla, the chiotilla or jiotilla.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Эсконтрия — род кактусов. Единственный вид — Escontria chiotilla, хиотилла или хиотилла."
   },
   {
     "id": "myrtillocactus-schenckii-japurpus-britton-rose",
@@ -44,7 +46,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Myrtillocactus_schenckii.jpg/330px-Myrtillocactus_schenckii.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Myrtillocactus schenckii, also known as garambullo or vichishovo, is a species of cacti native to Oaxaca and Puebla, Mexico. Placed in the genus Myrtillocactus, it is a member of the large and diverse family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Myrtillocactus schenckii, также известный как гарамбулло или вичишово, — это вид кактусов, произрастающий в Оахаке и Пуэбле, Мексика. Отнесенный к роду Myrtillocactus, он является членом большого и разнообразного семейства Кактусовых."
   },
   {
     "id": "polaskia-chende-rol-goss-acgibson-kehorak",
@@ -54,7 +57,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Polaskia_chende_%285742284017%29.jpg/330px-Polaskia_chende_%285742284017%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Polaskia chende is a succulent cactus native to a small area of mountains of northern Oaxaca and southern Puebla, Mexico. It grows in xerophytic shrubland between 1,500 and 2,000 meters above sea level.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Полаския ченде — сочный кактус, произрастающий на небольшой территории в горах северной Оахаки и южной Пуэблы, Мексика. Он растет в ксерофитных кустарниках на высоте от 1500 до 2000 метров над уровнем моря."
   },
   {
     "id": "polaskia-chichipe-rol-goss-backeb",
@@ -64,7 +68,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/P%C3%A1jara_La_Lajita_-_Oasis_Park_-_Polaskia_chichipe_02_ies.jpg/330px-P%C3%A1jara_La_Lajita_-_Oasis_Park_-_Polaskia_chichipe_02_ies.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Polaskia chichipe is a succulent cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Полаския чичипе – сочный кактус родом из Мексики."
   },
   {
     "id": "myrtillocactus-eichlamii-britton-rose",
@@ -72,7 +77,8 @@
     "description": "По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.",
     "source": "gbif",
     "morphology_stem": "Myrtillocactus eichlamii is a species of Myrtillocactus found in Guatemala.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Myrtillocactus eichlamii — вид Myrtillocactus, встречающийся в Гватемале."
   },
   {
     "id": "myrtillocactus-cochal-orcutt-britton-rose",
@@ -86,6 +92,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Myrtillocactus_cochal_2020-02-08_7744.jpg/330px-Myrtillocactus_cochal_2020-02-08_7744.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Myrtillocactus cochal, the cochal or candelabra cactus, is a species of flowering plant in the family Cactaceae, native to the Baja California peninsula. Individuals can reach 3 m (10 ft), and are hardy to USDA zone 9b.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Myrtillocactus cochal, кактус кохал или канделябр, представляет собой вид цветущего растения семейства Кактусовые, произрастающий на полуострове Нижняя Калифорния. Особи могут достигать 3 м (10 футов) и выносливы к зоне 9b Министерства сельского хозяйства США."
   }
 ]

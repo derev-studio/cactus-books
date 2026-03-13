@@ -38,7 +38,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Epiphyllum_phyllanthus_in_Bl%C3%BCte.jpg/330px-Epiphyllum_phyllanthus_in_Bl%C3%BCte.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum phyllanthus, commonly known as the climbing cactus, is a species of epiphytic cacti. It has no leaves, instead having stems that photosynthesise. It is thought to be pollinated by hawkmoths, as the flowers only open at night and produce a strong fragrance.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum phyllanthus, широко известный как вьющийся кактус, представляет собой разновидность эпифитных кактусов. У него нет листьев, вместо этого есть стебли, которые фотосинтезируют. Считается, что его опыляют бражники, так как цветки раскрываются только ночью и издают сильный аромат."
   },
   {
     "id": "epiphyllum-pumilum-vaupel-britton-rose",
@@ -54,7 +55,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Epiphyllum_pumilum286970600.jpg/330px-Epiphyllum_pumilum286970600.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum pumilum is a cactus species native to Mexico and Guatemala. The species is commonly grown as an ornamental for its beautiful, fragrant flowers in the summer.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum pumilum — вид кактусов, произрастающий в Мексике и Гватемале. Этот вид обычно выращивают как декоративное растение из-за его красивых ароматных цветков летом."
   },
   {
     "id": "epiphyllum-hookeri-haw",
@@ -70,7 +72,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Epiphyllum_hookeri_%284%29.jpg/330px-Epiphyllum_hookeri_%284%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum hookeri is a species of climbing cactus in the Epiphyllum genus. It forms showy white flowers and is native from Mexico through Central America to Venezuela. A perennial, it was introduced to Florida and some West Indian islands.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllumookeri — вид вьющихся кактусов рода Epiphyllum. Он образует эффектные белые цветы и произрастает от Мексики через Центральную Америку до Венесуэлы. Многолетнее растение было завезено во Флориду и на некоторые острова Вест-Индии."
   },
   {
     "id": "epiphyllum-oxypetalum-dc-haw",
@@ -96,7 +99,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Epiphyllum_oxypetalum_flower.JPG/330px-Epiphyllum_oxypetalum_flower.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum oxypetalum, the Dutchman's pipe cactus, princess of the night or queen of the night, is a species of cactus with a native range from Mexico to Nicaragua. It blooms nocturnally, and its flowers wilt before dawn. Though it is sometimes referred to as a night-blooming cereus, it is not closely related to any of the species in the tribe Cereeae that are more commonly known by that name. All Cereus species bloom at night and are terrestrial plants; Epiphyllum species are usually epiphytic.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum oxypetalum, трубочный кактус Голландца, принцесса ночи или королева ночи, — это вид кактусов, произрастающий от Мексики до Никарагуа. Цветет он ночью, а его цветы увядают перед рассветом. Хотя его иногда называют ночным цветущим цереусом, он не имеет близкого родства ни с одним из видов трибы Cereeae, которые более широко известны под этим названием. Все виды цереусов цветут ночью и являются наземными растениями; Виды Epiphyllum обычно эпифитны."
   },
   {
     "id": "epiphyllum-cartagense-facweber-britton-rose",
@@ -110,7 +114,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Epiphyllum_cartagense_1.png/330px-Epiphyllum_cartagense_1.png",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum cartagense is an epiphytic species of cactus native to Costa Rica and Panama. This species occurs in subtropical and tropical moist lowland forest or montane wet forest at elevations of 600 to 2000 m. The population is stable and the IUCN categorises the species as least concern. International trade is restricted to the conditions of CITES. The specific epithet cartagense refers to the locality Cartago in Costa Rica.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum cartagense — эпифитный вид кактуса, произрастающий в Коста-Рике и Панаме. Этот вид встречается в субтропических и тропических влажных низинных лесах или горных влажных лесах на высоте от 600 до 2000 м. Популяция стабильна, и МСОП относит этот вид к категории наименее опасных. Международная торговля ограничивается условиями СИТЕС. Видовой эпитет cartagense относится к местности Картаго в Коста-Рике."
   },
   {
     "id": "epiphyllum-thomasianum-kschum-britton-rose",
@@ -130,7 +135,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Epiphyllum_thomasianum_%28as_Phyllocactus_thomasianus%29_1.41.jpg/330px-Epiphyllum_thomasianum_%28as_Phyllocactus_thomasianus%29_1.41.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum thomasianum is an epiphytic species of cactus native to Colombia, Costa Rica, Guatemala, Honduras, Mexico, Nicaragua and Panamá.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum thomasianum — эпифитный вид кактуса, произрастающий в Колумбии, Коста-Рике, Гватемале, Гондурасе, Мексике, Никарагуа и Панаме."
   },
   {
     "id": "epiphyllum-grandilobum-facweber-britton-rose",
@@ -154,6 +160,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Epiphyllum_laui2LAU.jpg/330px-Epiphyllum_laui2LAU.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Epiphyllum laui is a cactus species native to Mexico and grown as an ornamental.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Epiphyllum laui — вид кактуса, произрастающий в Мексике и выращиваемый как декоративное растение."
   }
 ]

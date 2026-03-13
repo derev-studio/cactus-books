@@ -27,7 +27,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Peyote_Cactus.jpg/330px-Peyote_Cactus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "The peyote is a small, spineless cactus which contains psychoactive alkaloids, particularly mescaline. Peyote is a Spanish word derived from the Nahuatl peyōtl, meaning \"caterpillar cocoon\", from a root peyōni, \"to glisten\".",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Пейот – это небольшой бесхребетный кактус, содержащий психоактивные алкалоиды, особенно мескалин. Пейот — испанское слово, происходящее от языка науатль peyōtl, что означает «кокон гусеницы», от корня peyōni, «блестить»."
   },
   {
     "id": "lophophora-diffusa-croizat-bravo",
@@ -45,6 +46,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Lophophora_koehresii_San_Francisco.jpg/330px-Lophophora_koehresii_San_Francisco.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Lophophora diffusa, commonly known as false peyote, is a species of plant in the family Cactaceae and one of the species in the Lophophora genus. It is endemic to Mexico in the outskirts of Querétaro. This species contains zero to trace amounts of mescaline. Instead, pellotine is the principal alkaloid - the psychoactive effects of which are comparatively minimal. The species name diffusa refers to the flat tubercles that are outspread without the plant having prominent ribs.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Lophophora diffusa, широко известная как ложный пейот, — это вид растения семейства Кактусовые и один из видов рода Lophophora. Это эндемик Мексики на окраине Керетаро. Этот вид содержит нулевое количество мескалина. Вместо этого пеллотин является основным алкалоидом, психоактивные эффекты которого сравнительно минимальны. Видовое название diffusa относится к плоским бугоркам, которые раскинуты, но у растения нет выступающих ребер."
   }
 ]

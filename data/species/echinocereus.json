@@ -11,7 +11,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Echinocereus_scheeri_var_obscuriensis_02.jpg/330px-Echinocereus_scheeri_var_obscuriensis_02.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus scheeri is a species of hedgehog cactus in the family Cactaceae, native to northern Mexico. With its dramatic offsets, it has gained the Royal Horticultural Society's Award of Garden Merit.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus scheeri — вид кактуса-ежа семейства Cactaceae, произрастающий в северной Мексике. Благодаря своим впечатляющим характеристикам он получил награду Королевского садоводческого общества за заслуги перед садом."
   },
   {
     "id": "echinocereus-rigidissimus-engelm-haage",
@@ -24,7 +25,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Rubrispinus_flowering.jpg/330px-Rubrispinus_flowering.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus rigidissimus, commonly known as the Arizona rainbow cactus or rainbow hedgehog cactus, is a solitary-growing cactus that rarely branches or offsets with age.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Эхиноцереус ригидиссимус, широко известный как Аризонский радужный кактус или кактус радужный еж, представляет собой одиночно растущий кактус, который редко разветвляется или смещается с возрастом."
   },
   {
     "id": "echinocereus-enneacanthus-engelm",
@@ -44,7 +46,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Echinocereus_enneacanthus_in_bloom_-_Val_Verde_County_TX_%281%29.jpg/330px-Echinocereus_enneacanthus_in_bloom_-_Val_Verde_County_TX_%281%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus enneacanthus is a species of flowering plant first described by George Engelmann.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus enneacanthus — вид цветкового растения, впервые описанный Джорджем Энгельманном."
   },
   {
     "id": "echinocereus-sciurus-brandegee-dams",
@@ -68,7 +71,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Echinocereus_sciurus_pm.jpg/330px-Echinocereus_sciurus_pm.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus sciurus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus sciurus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-acifer-otto-ex-salm-dyck-haage",
@@ -82,7 +86,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Echinocereus_polyacanthus_ssp_acifer_pm_01.JPG/330px-Echinocereus_polyacanthus_ssp_acifer_pm_01.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus acifer is a species of Echinocereus cactus found in Mexico",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus acifer — вид кактуса Echinocereus, обнаруженный в Мексике."
   },
   {
     "id": "echinocereus-cinerascens-dc-lem",
@@ -121,7 +126,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Echinocereus_cinerascens.jpg/330px-Echinocereus_cinerascens.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus cinerascens is a species of cactus native from Texas to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus cinerascens — вид кактусов, произрастающий от Техаса до Мексики."
   },
   {
     "id": "echinocereus-pentalophus-dc-engelm-ex-haage",
@@ -157,7 +163,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Caryophyllales_-_Echinocereus_pentalophus_-_1.jpg/330px-Caryophyllales_-_Echinocereus_pentalophus_-_1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus pentalophus, with the common name ladyfinger cactus, is a species of Echinocereus cactus, in the tribe Echinocereeae Tribe. It is native to North America.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus pentalophus, под общим названием кактус божья коровка, является разновидностью кактуса Echinocereus из трибы Echinocereeae Tribe. Его родиной является Северная Америка."
   },
   {
     "id": "echinocereus-polyacanthus-engelm",
@@ -167,7 +174,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cactus_in_garden.jpg/330px-Cactus_in_garden.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus polyacanthus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Эхиноцереус полиакантовый — вид кактуса, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-pectinatus-scheidw-engelm",
@@ -196,7 +204,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Echinocereus_pectinatus_3.JPG/330px-Echinocereus_pectinatus_3.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus pectinatus is a species of hedgehog cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus pectinatus — разновидность кактуса-ежа."
   },
   {
     "id": "echinocereus-brandegeei-jmcoult-kschum",
@@ -214,7 +223,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Echinocereus_brandegeei_pm_1.JPG/330px-Echinocereus_brandegeei_pm_1.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus brandegeei is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus Brandegeei — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-fendleri-engelm-rümpler",
@@ -241,7 +251,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Echinocereus_fendleri_var._fendleri_-_Flickr_-_aspidoscelis_%282%29.jpg/330px-Echinocereus_fendleri_var._fendleri_-_Flickr_-_aspidoscelis_%282%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus fendleri is a species of cactus known by the common names pinkflower hedgehog cactus and Fendler's hedgehog cactus. It is named in honor of Augustus Fendler.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus fendleri — это вид кактуса, известный под общими названиями кактус-ежик розовоцветковый и кактус-еж Фендлера. Он назван в честь Августа Фендлера."
   },
   {
     "id": "echinocereus-poselgeri-lem",
@@ -251,7 +262,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Echinocereus_poselgeri.jpg/330px-Echinocereus_poselgeri.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus poselgeri, also known as the dahlia cactus, is a species of Echinocereus. It is native to Coahuila and southern Texas.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus Poselgeri, также известный как кактус георгин, является разновидностью Echinocereus. Он произрастает в Коауиле и южном Техасе."
   },
   {
     "id": "echinocereus-knippelianus-liebner",
@@ -267,7 +279,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Echinocereus_knippelianus02.jpg/330px-Echinocereus_knippelianus02.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus knippelianus is a species of hedgehog cactus native to Mexico. It can be grown in cultivation.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus knippelianus — вид кактуса-ежика, произрастающий в Мексике. Его можно выращивать в культуре."
   },
   {
     "id": "echinocereus-stramineus-engelm-ex-rümpler",
@@ -287,7 +300,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Echinocereus_stramineus.jpg/330px-Echinocereus_stramineus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus stramineus is a species of cactus, with stramineus meaning made of straw. There are various common names such as strawberry cactus, porcupine hedgehog cactus, straw-color hedgehog, and pitaya. The straw-colored spines distinguishes this particular plant from other Echinocereus. The aged spines may turn white in color and are very fragile.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus stramineus — это разновидность кактуса, слово «страминеус» означает «из соломы». Существуют различные общие названия, такие как клубничный кактус, кактус-еж-дикобраз, еж соломенного цвета и питайя. Колючки соломенного цвета отличают это растение от других эхиноцереев. Старые шипы могут стать белыми и очень хрупкими."
   },
   {
     "id": "echinocereus-pulchellus-mart-kschum",
@@ -321,7 +335,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/E-c_pulchellus_P495_XN30f_Khanon_Ss215.jpg/330px-E-c_pulchellus_P495_XN30f_Khanon_Ss215.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus pulchellus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus pulchellus — вид кактуса, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-yavapaiensis-mabaker",
@@ -331,7 +346,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Echinocereus_yavapaiensis.jpg/330px-Echinocereus_yavapaiensis.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus yavapaiensis is a species of cactus native to Arizona.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus yavapaiensis — вид кактусов, произрастающий в Аризоне."
   },
   {
     "id": "echinocereus-engelmannii-parry-ex-engelm-lem",
@@ -364,7 +380,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Strawberry_Hedgehog.jpg/330px-Strawberry_Hedgehog.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus engelmannii, the strawberry hedgehog cactus or Engelmann's hedgehog cactus, is a cactus commonly found in desert areas of the southwestern United States and the adjacent areas of Mexico, including the states of California, Nevada, Utah, Arizona, Baja California and Sonora.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus engelmannii, клубничный кактус-еж или кактус-еж Энгельмана, представляет собой кактус, обычно встречающийся в пустынных районах юго-запада США и прилегающих районах Мексики, включая штаты Калифорния, Невада, Юта, Аризона, Нижняя Калифорния и Сонора."
   },
   {
     "id": "echinocereus-palmeri-britton-rose",
@@ -374,7 +391,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Echinocereus_palmeri_02.jpg/330px-Echinocereus_palmeri_02.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus palmeri is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus palmeri — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-primolanatus-fritz-schwarz-ex-nptaylor",
@@ -384,7 +402,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Echinocereus_primolanatus.jpg/330px-Echinocereus_primolanatus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus primolanatus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus primolanatus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-laui-gfrank",
@@ -394,7 +413,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Echinocereus_laui.JPG/330px-Echinocereus_laui.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus laui is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus laui — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-dasyacanthus-engelm",
@@ -404,7 +424,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/E._dasyacanthus_5.jpg/330px-E._dasyacanthus_5.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus dasyacanthus is a member of the cactus family, Cactaceae. It is one of about 2000 total species belonging to this family. The cactus is commonly known as Texas rainbow cactus because of the subtle rings or bands of contrasting colors along the stem of the plant. Not all Texas rainbow cacti have the \"rainbow\" coloration on their stems. Another common name is spiny hedgehog cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus dasyacanthus — представитель семейства кактусовых Cactaceae. Это один из примерно 2000 видов, принадлежащих к этому семейству. Кактус широко известен как техасский радужный кактус из-за тонких колец или полос контрастных цветов вдоль стебля растения. Не все техасские радужные кактусы имеют «радужную» окраску стеблей. Другое распространенное название – кактус колючий ёж."
   },
   {
     "id": "echinocereus-leucanthus-nptaylor",
@@ -414,7 +435,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Echinocereus_leucanthus.jpg/330px-Echinocereus_leucanthus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus leucanthus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus leucanthus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-adustus-engelm",
@@ -424,7 +446,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Echinocereus_adustus_SB_072_%286993085804%29.jpg/330px-Echinocereus_adustus_SB_072_%286993085804%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus adustus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus adustus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-coccineus-engelm-engelm",
@@ -454,7 +477,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Echinocereus_coccineus_BW_213_%2814063025822%29.jpg/330px-Echinocereus_coccineus_BW_213_%2814063025822%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus coccineus is a species of hedgehog cactus. Its native to Northern and Central America. It grows on full sun, in sandy or rocky well-drained soil. It can survive in hardiness zones 5-9.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus coccineus — разновидность кактуса-ежа. Его родина – Северная и Центральная Америка. Растет на ярком солнце, на песчаной или каменистой, хорошо дренированной почве. Может выжить в зонах устойчивости 5-9."
   },
   {
     "id": "echinocereus-pseudopectinatus-nptaylor-nptaylor",
@@ -467,7 +491,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Echinocereus_pseudopectinatus_1.jpg/330px-Echinocereus_pseudopectinatus_1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus pseudopectinatus is a species of cactus native to Mexico and the United States.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus pseudopectinatus — вид кактусов, произрастающий в Мексике и США."
   },
   {
     "id": "echinocereus-rayonesensis-nptaylor",
@@ -477,7 +502,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Echinocereus_rayonesensis.jpeg/330px-Echinocereus_rayonesensis.jpeg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus rayonesensis is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus rayonesensis — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-berlandieri-engelm-fhaage",
@@ -495,7 +521,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Echinocereus_berlandieri.jpg/330px-Echinocereus_berlandieri.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus berlandieri is a species of hedgehog cactus. Its range includes most of South Texas, and is commonly found along the Nueces River and the lower Rio Grande.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus berlandieri — вид кактуса-ежа. Его ареал включает большую часть Южного Техаса и обычно встречается вдоль реки Нуэсес и нижнего течения Рио-Гранде."
   },
   {
     "id": "echinocereus-pensilis-kbrandegee-japurpus",
@@ -511,7 +538,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Echinocereus_grandis_1.jpg/330px-Echinocereus_grandis_1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus grandis is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus grandis — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-platyacanthus-link-otto",
@@ -527,7 +555,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Echinocereus_stramineus.jpg/330px-Echinocereus_stramineus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus stramineus is a species of cactus, with stramineus meaning made of straw. There are various common names such as strawberry cactus, porcupine hedgehog cactus, straw-color hedgehog, and pitaya. The straw-colored spines distinguishes this particular plant from other Echinocereus. The aged spines may turn white in color and are very fragile.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus stramineus — это разновидность кактуса, слово «страминеус» означает «из соломы». Существуют различные общие названия, такие как клубничный кактус, кактус-еж-дикобраз, еж соломенного цвета и питайя. Колючки соломенного цвета отличают это растение от других эхиноцереев. Старые шипы могут стать белыми и очень хрупкими."
   },
   {
     "id": "echinocereus-waldeisii-haugg",
@@ -537,7 +566,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/E.waldeisii.jpg/330px-E.waldeisii.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus waldeisii is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus waldeisii — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-maritimus-mejones-kschum",
@@ -556,7 +586,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Echinocereus_maritimus_maritimus.jpg/330px-Echinocereus_maritimus_maritimus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus maritimus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus maritimus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-delaetii-gürke-gürke",
@@ -596,7 +627,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Echinocereus_reichenbachii_by_RO.jpg/330px-Echinocereus_reichenbachii_by_RO.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus reichenbachii is a perennial plant and shrub in the cactus family. The species is native to the Chihuahuan Desert and parts of northern Mexico and the southern United States, where they grow at elevations up to 1,500 meters (4,900 ft). This cactus earned the Royal Horticultural Society's Award of Garden Merit.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus reichenbachii) — многолетнее растение и кустарник семейства кактусовых. Этот вид произрастает в пустыне Чиуауа, а также в некоторых частях северной Мексики и на юге США, где они растут на высоте до 1500 метров (4900 футов). Этот кактус получил награду Королевского садоводческого общества за заслуги перед садом."
   },
   {
     "id": "echinocereus-fasciculatus-engelm-ldbenson",
@@ -612,7 +644,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Echinocereus_fasciculatus_1.jpeg/330px-Echinocereus_fasciculatus_1.jpeg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus fasciculatus, commonly known as pinkflower hedgehog cactus, is a clumping cactus (Cactaceae) with brilliant magenta flowers and long spines found in the Sonoran Desert.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus fasciculatus, широко известный как кактус-ежик с розовыми цветами, представляет собой комковатый кактус (Cactaceae) с блестящими пурпурными цветами и длинными колючками, встречающийся в пустыне Сонора."
   },
   {
     "id": "echinocereus-pringlei-rose",
@@ -638,7 +671,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Echinocereus_viereckii_GotBot_2015_003.jpg/330px-Echinocereus_viereckii_GotBot_2015_003.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus viereckii is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus viereckii — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-marksianus-fritz-schwarz-ex-backeb-1966",
@@ -648,7 +682,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Echinocereus_marksianus_1.jpg/330px-Echinocereus_marksianus_1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus marksianus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus markianus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-spinigemmatus-ablau",
@@ -658,7 +693,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Echinocer_spinigemmatus_140608_4324-a.jpg/330px-Echinocer_spinigemmatus_140608_4324-a.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus spinigemmatus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus spinigemmatus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-nivosus-glass-rafoster",
@@ -668,7 +704,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Echinocereus_nivosus_01.jpg/330px-Echinocereus_nivosus_01.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus nivosus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus nivosus — вид кактуса, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-ferreiranus-hegates-1953",
@@ -690,7 +727,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Echinocereus_subinermis.JPG/330px-Echinocereus_subinermis.JPG",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus subinermis is a species of flowering plant in the cactus family Cactaceae, native to north, northwestern, and central Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus subinermis — вид цветкового растения семейства кактусов Cactaceae, произрастающий на севере, северо-западе и центральной Мексике."
   },
   {
     "id": "echinocereus-stolonifer-wtmarshall",
@@ -710,7 +748,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Echinocereus_stoloniferus_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00061.jpg/330px-Echinocereus_stoloniferus_-_Orto_botanico_-_Rome%2C_Italy_-_DSC00061.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus stolonifer is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus stolonifer — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-scopulorum-britton-rose",
@@ -720,7 +759,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Echinocereus_scopulorum_1.png/330px-Echinocereus_scopulorum_1.png",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus scopulorum is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus scopulorum — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-mojavensis-engelm-jmbigelow-engelm-ex-rümpler",
@@ -730,7 +770,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Echinocereus_triglochidiatusUGA0807034.jpg/330px-Echinocereus_triglochidiatusUGA0807034.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus triglochidiatus is a species of hedgehog cactus known by several common names, including kingcup cactus, claret cup cactus, red-flowered hedgehog cactus and Mojave mound cactus. This cactus is native to the southwestern United States and northern Mexico, where it is a resident of varied habitats from low desert to rocky slopes, scrub, and mountain woodland. E. triglochidiatus is the official state cactus of Colorado.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus triglochidiatus — это вид кактуса-ежа, известный под несколькими общими названиями, в том числе кактус королевской чаши, кактус бордовой чашки, кактус еж с красными цветками и кактус насыпи Мохаве. Этот кактус произрастает на юго-западе США и на севере Мексики, где он обитает в различных средах обитания: от низкой пустыни до каменистых склонов, кустарников и горных лесов. E. triglochidiatus — официальный кактус штата Колорадо."
   },
   {
     "id": "echinocereus-pacificus-engelm-fhaage",
@@ -744,7 +785,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Echinocereus_pacificus_pacificus_6.jpeg/330px-Echinocereus_pacificus_pacificus_6.jpeg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus pacificus is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus pacificus — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-arizonicus-rose-ex-orcutt",
@@ -764,7 +806,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Echinocereus_triglochidiatus_arizonicus_flower.jpg/330px-Echinocereus_triglochidiatus_arizonicus_flower.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus arizonicus is a species of cactus native to the Chihuahuan Desert region of Chihuahua, southwestern New Mexico and southeastern Arizona, as well as in the Superstition and Mescal Mountains of Central Arizona at elevations between 1400 and 1900 meters.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus arizonicus — это вид кактуса, произрастающий в районе пустыни Чиуауа в Чиуауа, на юго-западе Нью-Мексико и юго-востоке Аризоны, а также в горах Суеверие и Мескаль в Центральной Аризоне на высоте от 1400 до 1900 метров."
   },
   {
     "id": "echinocereus-nicholii-ldbenson-bdparfitt",
@@ -777,7 +820,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Echinocereus_nicholii.jpg/330px-Echinocereus_nicholii.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus nicholii is a species of cactus native to Arizona in the United States, and Sonora in Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus nicholii — вид кактуса, произрастающий в Аризоне в США и Соноре в Мексике."
   },
   {
     "id": "echinocereus-schmollii-weing-nptaylor",
@@ -793,7 +837,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Wilcoxia_schmollii.jpg/330px-Wilcoxia_schmollii.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus schmollii is a species of cactus native to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus schmollii — вид кактусов, произрастающий в Мексике."
   },
   {
     "id": "echinocereus-viridiflorus-engelm",
@@ -803,7 +848,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Echinocereus_viridiflorus.jpg/330px-Echinocereus_viridiflorus.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus viridiflorus is a species of cactus known by the common names nylon hedgehog cactus, green pitaya, and small-flowered hedgehog cactus. It is native to the central and south-central United States and northern Mexico, where it can be found in varied habitat types, including desert scrub, woodlands, dry grasslands, and short-grass prairie.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus viridiflorus — это вид кактуса, известный под общими названиями кактус нейлоновый еж, зеленая питайя и кактус мелкоцветковый еж. Он произрастает в центральной и юго-центральной части США и на севере Мексики, где его можно найти в различных типах среды обитания, включая пустынные кустарники, лесные массивы, сухие луга и прерии с короткой травой."
   },
   {
     "id": "echinocereus-barthelowanus-britton-rose",
@@ -819,6 +865,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Echinocereus_websterianus_%286050284589%29.jpg/330px-Echinocereus_websterianus_%286050284589%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Echinocereus websterianus, commonly known as the San Pedro Nolasco hedgehog cactus or Webster's hedgehog cactus, is a species of cactus. It is named after American philanthropist Gertrude Webster, who cofounded the Desert Botanical Garden in Phoenix, Arizona.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Echinocereus websterianus, широко известный как кактус-еж Сан-Педро-Ноласко или кактус-еж Вебстера, представляет собой разновидность кактуса. Он назван в честь американского филантропа Гертруды Вебстер, соосновательницы Ботанического сада пустыни в Фениксе, штат Аризона."
   }
 ]

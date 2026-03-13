@@ -23,7 +23,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/White_cactus_bloomig.jpg/330px-White_cactus_bloomig.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Strombocactus disciformis is a rare species of cacti and the only species of the genus Strombocactus. The plant originates from Central and Northeast Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Strombocactus diskiformis — редкий вид кактусов и единственный вид рода Strombocactus. Растение родом из Центральной и Северо-Восточной Мексики."
   },
   {
     "id": "strombocactus-corregidorae-sarias-esánchez",
@@ -33,6 +34,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Chichimecactus_corregidorae_1.jpeg/330px-Chichimecactus_corregidorae_1.jpeg",
     "photo_source": "wikipedia",
     "morphology_stem": "Strombocactus corregidorae is a species of cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Strombocactus corregidorae — разновидность кактусов."
   }
 ]
