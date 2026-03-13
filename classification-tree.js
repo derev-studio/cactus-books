@@ -385,13 +385,15 @@
       var spinesText = speciesNode['morphology_spines_' + morphLang] || speciesNode.morphology_spines_ru || speciesNode.morphology_spines;
       var flowerText = speciesNode['morphology_flower_' + morphLang] || speciesNode.morphology_flower_ru || speciesNode.morphology_flower;
       var fruitText = speciesNode['morphology_fruit_' + morphLang] || speciesNode.morphology_fruit_ru || speciesNode.morphology_fruit;
-      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' };
+      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : (morphLang === 'ru' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' } : { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' });
       var morphParts = [];
       if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
       if (spinesText) morphParts.push({ label: morphLabels.spines, text: spinesText });
       if (flowerText) morphParts.push({ label: morphLabels.flower, text: flowerText });
       if (fruitText) morphParts.push({ label: morphLabels.fruit, text: fruitText });
       if (morphParts.length > 0) {
+        var morphTitleEl = document.getElementById('card-morphology-title');
+        if (morphTitleEl) morphTitleEl.textContent = morphLang === 'en' ? 'Morphology' : (morphLang === 'uk' ? 'Морфологія' : 'Морфология');
         morphList.innerHTML = '';
         morphParts.forEach(function (p) {
           var li = document.createElement('li');
@@ -404,7 +406,11 @@
         if (morphSource) {
           if (speciesNode.morphology_source === 'wikipedia') {
             var wikiUrl = wikiArticleUrl(speciesNode.name);
-            morphSource.innerHTML = 'Источник: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). Лицензия: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
+            if (morphLang === 'en') {
+              morphSource.innerHTML = 'Source: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a>. License: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
+            } else {
+              morphSource.innerHTML = 'Источник: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). Лицензия: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
+            }
             morphSource.hidden = false;
           } else {
             morphSource.hidden = true;
