@@ -93,6 +93,8 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
             print("  Сохранён:", genus_file.name)
     print()
     print("Готово. Переведено видов (полей):", total_done, ", обновлено родов:", genera_saved)
+    if total_done == 0 and (limit is None or limit > 0):
+        print("(API не вернул переводы — возможно, дневной лимит. Попробуй запустить завтра. Чтобы отправить на сайт, нужны ненулевые числа выше.)")
 
 
 if __name__ == "__main__":
