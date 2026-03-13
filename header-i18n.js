@@ -7,6 +7,7 @@
 
   var HEADER_STRINGS = {
     ru: {
+      brand: '🌵 Кактусярий',
       searchPlaceholder: 'Название кактуса…',
       searchBtn: 'Найти',
       navLabel: 'Навигатор по кактусам',
@@ -59,6 +60,7 @@
       dropdownFiles: 'Список файлів (за абеткою)'
     },
     en: {
+      brand: '🌵 Cactusarium',
       searchPlaceholder: 'Cactus name…',
       searchBtn: 'Search',
       navLabel: 'Cactus navigator',
@@ -85,6 +87,7 @@
       dropdownFiles: 'File list (A–Z)'
     },
     es: {
+      brand: '🌵 Cactusarium',
       searchPlaceholder: 'Nombre del cactus…',
       searchBtn: 'Buscar',
       navLabel: 'Navegador de cactus',
@@ -131,6 +134,7 @@
       if (el && text !== undefined) el.placeholder = text;
     };
 
+    if (ui.brand !== undefined) set('header-brand', ui.brand);
     setPlaceholder('nav-search', ui.searchPlaceholder);
     set('header-search-btn', ui.searchBtn);
     set('header-nav-label', ui.navLabel);

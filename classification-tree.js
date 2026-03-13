@@ -35,7 +35,10 @@
       rank: { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' },
       genusPlaceholder: ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.',
       speciesPlaceholder: ' — вид рода %s. Подробное описание будет добавлено позже.',
-      photoSource: 'Фото: '
+      photoSource: 'Фото: ',
+      pageTitle: 'Классификация кактусов',
+      pageIntro: 'Семейство Cactaceae: подсемейства, трибы, роды и виды. Раскройте уровень по клику. Клик по роду — карточка и список видов, подвидов и разновидностей.',
+      cornerLabel: 'Кактусы'
     },
     uk: {
       back: '← Назад',
@@ -51,7 +54,10 @@
       rank: { subspecies: 'Підвид', variety: 'Різновид', form: 'Форма' },
       genusPlaceholder: ' — рід кактусів родини Cactaceae. Детальний опис буде додано пізніше.',
       speciesPlaceholder: ' — вид роду %s. Детальний опис буде додано пізніше.',
-      photoSource: 'Фото: '
+      photoSource: 'Фото: ',
+      pageTitle: 'Класифікація кактусів',
+      pageIntro: 'Родина Cactaceae: підродини, триби, роди та види. Розгорніть рівень кліком. Клік по роду — картка та список видів, підвидів і різновидів.',
+      cornerLabel: 'Кактуси'
     },
     en: {
       back: '← Back',
@@ -67,7 +73,10 @@
       rank: { subspecies: 'Subspecies', variety: 'Variety', form: 'Form' },
       genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
       speciesPlaceholder: ' — species of genus %s. Description to be added.',
-      photoSource: 'Photo: '
+      photoSource: 'Photo: ',
+      pageTitle: 'Cactus classification',
+      pageIntro: 'Family Cactaceae: subfamilies, tribes, genera and species. Expand a level by click. Click on a genus for the card and list of species, subspecies and varieties.',
+      cornerLabel: 'Cacti'
     },
     es: {
       back: '← Atrás',
@@ -83,7 +92,10 @@
       rank: { subspecies: 'Subespecie', variety: 'Variedad', form: 'Forma' },
       genusPlaceholder: ' — género de cactus, familia Cactaceae. Descripción pendiente.',
       speciesPlaceholder: ' — especie del género %s. Descripción pendiente.',
-      photoSource: 'Foto: '
+      photoSource: 'Foto: ',
+      pageTitle: 'Clasificación de cactus',
+      pageIntro: 'Familia Cactaceae: subfamilias, tribus, géneros y especies. Expanda el nivel con un clic. Clic en un género — ficha y lista de especies, subespecies y variedades.',
+      cornerLabel: 'Cactus'
     }
   };
 
@@ -659,6 +671,12 @@
       if (seeAlsoTitle) seeAlsoTitle.textContent = ui.seeAlso;
       var infraspecificTitle = document.getElementById('card-infraspecific-title');
       if (infraspecificTitle) infraspecificTitle.textContent = ui.infraspecific;
+      var pageTitleEl = document.querySelector('.classification-header h1');
+      if (pageTitleEl && ui.pageTitle) pageTitleEl.textContent = ui.pageTitle;
+      var pageIntroEl = document.querySelector('.classification-intro');
+      if (pageIntroEl && ui.pageIntro) pageIntroEl.textContent = ui.pageIntro;
+      var cornerEl = document.querySelector('.classification-corner');
+      if (cornerEl && ui.cornerLabel) cornerEl.textContent = ui.cornerLabel;
     }
 
     // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки
