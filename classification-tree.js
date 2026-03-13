@@ -446,10 +446,11 @@
     if (morphWrap && morphList) {
       var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
       var morphLang = lang.indexOf('uk') === 0 ? 'uk' : (lang.indexOf('ru') === 0 ? 'ru' : 'en');
-      var stemText = speciesNode['morphology_stem_' + morphLang] || speciesNode.morphology_stem_ru || speciesNode.morphology_stem;
-      var spinesText = speciesNode['morphology_spines_' + morphLang] || speciesNode.morphology_spines_ru || speciesNode.morphology_spines;
-      var flowerText = speciesNode['morphology_flower_' + morphLang] || speciesNode.morphology_flower_ru || speciesNode.morphology_flower;
-      var fruitText = speciesNode['morphology_fruit_' + morphLang] || speciesNode.morphology_fruit_ru || speciesNode.morphology_fruit;
+      // Для английского — только базовые поля (англ. из Вики). Для ru — русский или английский. Для uk — украинский, иначе русский, иначе английский.
+      var stemText = morphLang === 'en' ? (speciesNode.morphology_stem) : (speciesNode['morphology_stem_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_stem_ru : null) || speciesNode.morphology_stem);
+      var spinesText = morphLang === 'en' ? (speciesNode.morphology_spines) : (speciesNode['morphology_spines_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_spines_ru : null) || speciesNode.morphology_spines);
+      var flowerText = morphLang === 'en' ? (speciesNode.morphology_flower) : (speciesNode['morphology_flower_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_flower_ru : null) || speciesNode.morphology_flower);
+      var fruitText = morphLang === 'en' ? (speciesNode.morphology_fruit) : (speciesNode['morphology_fruit_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_fruit_ru : null) || speciesNode.morphology_fruit);
       var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : (morphLang === 'ru' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' } : { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' });
       var morphParts = [];
       if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
