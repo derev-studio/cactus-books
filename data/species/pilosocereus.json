@@ -51,7 +51,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cereus_senilis_%283%29.jpg/330px-Cereus_senilis_%283%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Pilosocereus leucocephalus, called old man cactus, old man of Mexico, tuno, and woolly torch, is a species of cactus in the genus Pilosocereus, native to Mexico and Central America. It has gained the Royal Horticultural Society's Award of Garden Merit. Pilosocereus leucocephalus functions as a keystone species in dry landscapes found in Mesoamerica. The fruit this cactus produces is relied upon as a source of hydration and sugar in arid areas by frugivores such as birds, bats, and even some reptiles.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS"
   },
   {
     "id": "pilocereus-purpusii-britton-rose-fmknuth",
@@ -141,6 +142,7 @@
       "Pilosocereus royenii"
     ],
     "morphology_stem": "\nPilosocereus royenii is a name which has been used in different senses for a species of cactus. In the past, it has been treated as a distinct species with a wide distribution in the Caribbean and Mexico. As of June 2025, it is not accepted by Plants of the World Online.Populations in Puerto Rico and the Virgin Islands that have been treated as the variety armatus of Pilosocereus royenii are considered to be Pilosocereus armatus (Otto ex Pfeiff.) A.R.Franck.\nPopulations in southeast Cuba that have been treated as the variety brooksianus of Pilosocereus royenii are considered to be Pilosocereus brooksianus (Britton & Rose) Byles & G.D.Rowley\nPopulations in Mexico that have been called by this name are considered to be Pilosocereus gaumeri (Britton & Rose) Backeb.\nPilosocereus royenii has been treated as a possible synonym of Pilosocereus polygonus (Lam.) Byles & G.D.Rowley, e.g. by Plants of the World Online.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS"
   }
 ]

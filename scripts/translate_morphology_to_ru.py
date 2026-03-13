@@ -18,7 +18,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT = SCRIPT_DIR.parent
 SPECIES_DIR = PROJECT / "data" / "species"
-PAUSE_SEC = 2.5
+PAUSE_SEC = 1.2
 USER_AGENT = "CactusBooks/1.0 (educational; taxonomy)"
 MYMEMORY_URL = "https://api.mymemory.translated.net/get"
 

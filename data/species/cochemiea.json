@@ -348,7 +348,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Mammillaria_multidigitata_13951.jpg/330px-Mammillaria_multidigitata_13951.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cochemiea multidigitata is a species of flowering plant in the family Cactaceae that is endemic to San Pedro Nolasco Island in Mexico, growing on steep slopes. Cochemiea multidigitata sprouts a white to cream-colored flower from spring to early summer.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cochemiea multidigitata - вид цветковых растений семейства кактусовых, эндемичных для острова Сан-Педро-Ноласко в Мексике, произрастающих на крутых склонах. Cochemiea multidigitata прорастает белым или кремовым цветом с весны до начала лета."
   },
   {
     "id": "mammillaria-guelzowiana-werderm",
@@ -358,7 +359,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mammillaria_guelzowiana.jpg/330px-Mammillaria_guelzowiana.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cochemiea guelzowiana is a species of plant belonging to the family Cactaceae.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cochemiea guelzowiana - вид растений, принадлежащий к семейству кактусовых."
   },
   {
     "id": "mammillaria-neopalmeri-rtcraig",
@@ -374,7 +376,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cochemiea_barbata.png/330px-Cochemiea_barbata.png",
     "photo_source": "wikipedia",
     "morphology_stem": "Cochemiea barbata is a small cactus native to Chihuahua, Sonora, and Durango, with the common name greenflower nipple cactus.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cochemiea barbata - это небольшой кактус, родом из чихуахуа, соноры и дуранго, с общим названием кактус с сосками зеленых цветов."
   },
   {
     "id": "mammillaria-tetrancistra-engelm",
@@ -384,6 +387,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Cochemiea_tetrancistra_15.jpg/330px-Cochemiea_tetrancistra_15.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cochemiea tetrancistra is a species of fishhook cactus known by the common name common fishhook cactus. It is native to the Mojave and Sonoran Deserts of northern Mexico and the southwestern United States, where it grows in a variety of desert habitat types.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cochemiea tetrancistra - вид кактуса с рыбным крючком, известный под общим названием кактус с рыбным крючком. Он произрастает в пустынях Мохаве и Сонора на севере Мексики и юго-западе Соединенных Штатов, где произрастает в различных типах пустынных сред обитания."
   }
 ]
