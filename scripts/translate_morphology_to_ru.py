@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
 Перевод морфологии на русский (morphology_* → morphology_*_ru).
-Как советовал Google Gemini: deep_translator (Google + MyMemory), умная пауза, один проход по всей базе.
+Только встроенный Python — никаких библиотек ставить не нужно.
 
-Если deep_translator установлен — используем его (надёжнее). Иначе — только MyMemory по urllib (часто лимит).
-
-Установка библиотеки (один раз, БЕЗ venv — флаг --user):
-  pip3 install --user deep-translator
+Два бесплатных API по очереди (оба через urllib):
+  1) Free Translate API (ftapi) — без ключа
+  2) MyMemory — запасной
+Умная пауза, таймаут 10 сек (не зависает). Один запуск обходит всю базу.
 
 Запуск:
   cd /Users/alexanderermolovich/Documents/cactus
@@ -25,26 +25,46 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT = SCRIPT_DIR.parent
 SPECIES_DIR = PROJECT / "data" / "species"
 MORPH_FIELDS = ["morphology_stem", "morphology_spines", "morphology_flower", "morphology_fruit"]
-MAX_TEXT_LEN = 4500
-PAUSE_MIN, PAUSE_MAX = 1.2, 2.2
-LONG_PAUSE_EVERY = 35
-LONG_PAUSE_MIN, LONG_PAUSE_MAX = 30, 50
-RETRIES = 3
-RETRY_PAUSE = 12
-
-# MyMemory (запасной вариант, только urllib)
-MYMEMORY_URL = "https://api.mymemory.translated.net/get"
+MAX_TEXT_LEN = 2000
+PAUSE_MIN, PAUSE_MAX = 2.5, 4.0
+LONG_PAUSE_EVERY = 25
+LONG_PAUSE_SEC = 60
+RETRIES = 2
+RETRY_PAUSE = 15
+REQUEST_TIMEOUT = 10
 USER_AGENT = "CactusBooks/1.0 (educational; taxonomy)"
+
+# 1) Free Translate API — без ключа, GET
+FTAPI_URL = "https://ftapi.pythonanywhere.com/translate"
+# 2) MyMemory — запасной
+MYMEMORY_URL = "https://api.mymemory.translated.net/get"
+
+
+def _translate_ftapi(text: str) -> str | None:
+    if not text or not (text := text.strip()):
+        return None
+    text = text[:1000]
+    try:
+        url = FTAPI_URL + "?" + urllib.parse.urlencode({"sl": "en", "dl": "ru", "text": text})
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+            data = json.loads(resp.read().decode())
+        out = data.get("destination-text")
+        if out and out.strip():
+            return out.strip()
+    except Exception:
+        pass
+    return None
 
 
 def _translate_mymemory(text: str) -> str | None:
     if not text or not (text := text.strip()):
         return None
-    text = text[:2500]
+    text = text[:MAX_TEXT_LEN]
     try:
         url = MYMEMORY_URL + "?" + urllib.parse.urlencode({"q": text, "langpair": "en|ru"})
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=12) as resp:
+        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
             data = json.loads(resp.read().decode())
         out = (data.get("responseData") or {}).get("translatedText")
         if out and out.strip():
@@ -54,53 +74,23 @@ def _translate_mymemory(text: str) -> str | None:
     return None
 
 
-def _translate_deeptranslator(text: str) -> str | None:
-    if not text or not (text := text.strip()):
-        return None
-    text = text[:MAX_TEXT_LEN]
-    try:
-        from deep_translator import GoogleTranslator
-        out = GoogleTranslator(source="en", target="ru").translate(text)
-        if out and out.strip():
-            return out.strip()
-    except Exception:
-        pass
-    try:
-        from deep_translator import MyMemoryTranslator
-        out = MyMemoryTranslator(source="en", target="ru").translate(text)
-        if out and out.strip():
-            return out.strip()
-    except Exception:
-        pass
-    return None
-
-
-def translate_en_ru(text: str, use_deeptranslator: bool) -> str | None:
-    if use_deeptranslator:
-        return _translate_deeptranslator(text)
+def translate_en_ru(text: str) -> str | None:
+    out = _translate_ftapi(text)
+    if out:
+        return out
     return _translate_mymemory(text)
 
 
 def main(limit: int | None = None, only_genera: list[str] | None = None):
     import sys
-    use_dt = False
-    try:
-        from deep_translator import GoogleTranslator
-        use_dt = True
-    except ImportError:
-        pass
-
     only_set = {g.strip().lower().replace(".json", "") for g in (only_genera or [])}
     total_done = 0
     genera_saved = 0
     request_count = 0
 
-    print("Скрипт перевода запущен. Ждите…", flush=True)
-    if use_dt:
-        print("Используется deep_translator (Google + MyMemory) — как советовал Gemini.", flush=True)
-    else:
-        print("Используется только MyMemory (urllib). Установи для лучшего результата: pip3 install --user deep-translator", flush=True)
-    print("Умная пауза: 1.2–2.2 сек, каждые 35 запросов — длинная пауза.", flush=True)
+    print("Скрипт перевода запущен. Без установки библиотек.", flush=True)
+    print("API: Free Translate + MyMemory (оба без ключа).", flush=True)
+    print("Пауза 2.5–4 сек, каждые 25 запросов — 60 сек. Таймаут 10 сек.", flush=True)
     if limit:
         print("Ограничение: не более", limit, "полей.")
     if only_set:
@@ -132,16 +122,15 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
                 print("  Перевожу:", name, "…", flush=True)
                 request_count += 1
                 if request_count > 0 and request_count % LONG_PAUSE_EVERY == 0:
-                    long_pause = random.uniform(LONG_PAUSE_MIN, LONG_PAUSE_MAX)
-                    print("  [пауза", round(long_pause), "сек]", flush=True)
-                    time.sleep(long_pause)
+                    print("  [пауза", LONG_PAUSE_SEC, "сек]", flush=True)
+                    time.sleep(LONG_PAUSE_SEC)
                 else:
                     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
                 ru_val = None
                 for attempt in range(RETRIES):
                     if attempt > 0:
                         print("    повтор…", flush=True)
-                    ru_val = translate_en_ru(en_val, use_dt)
+                    ru_val = translate_en_ru(en_val)
                     if ru_val:
                         break
                     time.sleep(RETRY_PAUSE)
@@ -150,6 +139,8 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
                     changed = True
                     total_done += 1
                     print("    ✓", name, "—", field, flush=True)
+                else:
+                    print("    (нет ответа)", flush=True)
                 if limit is not None and total_done >= limit:
                     break
         if changed:
@@ -160,7 +151,7 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
     print()
     print("Готово. Переведено полей:", total_done, ", обновлено родов:", genera_saved, flush=True)
     if total_done == 0 and (limit is None or limit > 0):
-        print("(Переводы не получены. Если без deep_translator — установи: pip3 install --user deep-translator)", flush=True)
+        print("(Сегодня оба API не ответили. Запусти завтра — скрипт продолжит с того же места.)", flush=True)
 
 
 if __name__ == "__main__":

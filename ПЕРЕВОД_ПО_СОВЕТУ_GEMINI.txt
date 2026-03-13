@@ -1,14 +1,8 @@
-# Перевод морфологии по совету Google Gemini
+# Перевод морфологии
 
-Скрипт теперь как у Gemini: deep_translator (Google + MyMemory), умная пауза. Если библиотека не установлена — работает запасной вариант (MyMemory по urllib), но он часто даёт 0 из‑за лимитов.
-
-Чтобы получить нормальные переводы, установи библиотеку ОДНОЙ командой (без venv):
-
-  pip3 install --user deep-translator
-
-Потом в терминале:
+Скрипт работает без установки библиотек: только встроенный Python, два API по очереди (Free Translate API + MyMemory). Запуск:
 
   cd /Users/alexanderermolovich/Documents/cactus
   python3 -u scripts/translate_morphology_to_ru.py
 
-При запуске скрипт напишет: «Используется deep_translator (Google + MyMemory) — как советовал Gemini.» Тогда всё настроено верно.
+Если захочешь спросить у Gemini про другие варианты, можно спросить так: «Какой бесплатный API перевода с английского на русский можно вызывать из Python без ключа и без установки библиотек (только urllib)?»
