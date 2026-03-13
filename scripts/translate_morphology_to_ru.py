@@ -64,6 +64,7 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
             continue
         if not isinstance(species_list, list):
             continue
+        print("Род:", genus_file.stem, "— проверяю", len(species_list), "видов …", flush=True)
         changed = False
         for sp in species_list:
             if limit is not None and total_done >= limit:
@@ -73,13 +74,15 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
                 ru_field = field + "_ru"
                 if not en_val or not (en_val := str(en_val).strip()) or sp.get(ru_field):
                     continue
+                name = sp.get("name") or sp.get("id") or "?"
+                print("  Перевожу:", name, "…", flush=True)
                 time.sleep(PAUSE_SEC)
                 ru_val = translate_en_ru(en_val)
                 if ru_val:
                     sp[ru_field] = ru_val
                     changed = True
                     total_done += 1
-                    print("  ", sp.get("name") or sp.get("id"), "—", field)
+                    print("    ✓", name, "—", field, flush=True)
                 if limit is not None and total_done >= limit:
                     break
         if changed:
