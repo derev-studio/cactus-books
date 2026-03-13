@@ -49,25 +49,25 @@
 
   <main class="identifier-main">
     <section class="identifier-hero">
-      <h1 class="identifier-hero__title">🌵 Опознать кактус</h1>
-      <p class="identifier-hero__subtitle">Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать</p>
+      <h1 class="identifier-hero__title" data-i18n="identifier_title">🌵 Опознать кактус</h1>
+      <p class="identifier-hero__subtitle" data-i18n="identifier_subtitle">Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать</p>
     </section>
 
     <section class="identifier-upload" id="identifier-upload">
-      <div class="identifier-upload__zone" id="upload-zone" role="button" tabindex="0" aria-label="Нажмите или перетащите фото кактуса">
-        <input type="file" id="upload-input" accept="image/jpeg,image/png,image/webp" class="identifier-upload__input" aria-label="Выбрать файл" />
+      <div class="identifier-upload__zone" id="upload-zone" role="button" tabindex="0" aria-label="" data-i18n-attr="aria-label" data-i18n="identifier_upload_aria">
+        <input type="file" id="upload-input" accept="image/jpeg,image/png,image/webp" class="identifier-upload__input" aria-label="" data-i18n-attr="aria-label" data-i18n="identifier_select_file_aria" />
         <div class="identifier-upload__placeholder" id="upload-placeholder">
           <span class="identifier-upload__icon">📷</span>
-          <span>Нажмите или перетащите фото кактуса сюда</span>
+          <span data-i18n="identifier_upload_hint">Нажмите или перетащите фото кактуса сюда</span>
         </div>
         <div class="identifier-upload__preview" id="upload-preview" hidden>
-          <img id="preview-img" src="" alt="Предпросмотр загруженного фото" />
-          <button type="button" class="identifier-upload__clear" id="upload-clear" aria-label="Убрать фото">✕</button>
+          <img id="preview-img" src="" alt="" data-i18n-attr="alt" data-i18n="identifier_preview_alt" />
+          <button type="button" class="identifier-upload__clear" id="upload-clear" aria-label="" data-i18n-attr="aria-label" data-i18n="identifier_clear_aria">✕</button>
         </div>
       </div>
       <button type="button" class="identifier-upload__btn identifier-upload__btn--primary" id="identify-btn" disabled>
-        <span class="identifier-upload__btn-text">Определить кактус</span>
-        <span class="identifier-upload__btn-loading" aria-hidden="true">Определяю…</span>
+        <span class="identifier-upload__btn-text" data-i18n="identifier_btn">Определить кактус</span>
+        <span class="identifier-upload__btn-loading" aria-hidden="true" data-i18n="identifier_btn_loading">Определяю…</span>
       </button>
     </section>
 
@@ -75,16 +75,16 @@
       <div class="identifier-result__error" id="result-error" hidden></div>
       <div class="identifier-result__cards" id="result-cards"></div>
       <p class="identifier-result__clear-hint" id="result-clear-hint" hidden>
-        <button type="button" class="identifier-result__clear-btn" id="result-clear-btn">Очистить историю</button>
+        <button type="button" class="identifier-result__clear-btn" id="result-clear-btn" data-i18n="identifier_clear_history">Очистить историю</button>
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn">Кактусярий ©</a>
+    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
     <nav class="site-footer__sources" aria-label="Источники">
       <details>
-        <summary>Источники</summary>
+        <summary data-i18n="sources_summary">Источники</summary>
         <div class="site-footer__sources-panel">
           <p class="site-footer__sources-list">
             <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
