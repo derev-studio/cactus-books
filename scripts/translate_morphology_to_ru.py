@@ -41,12 +41,14 @@ def translate_en_ru(text: str) -> str | None:
 
 
 def main(limit: int | None = None, only_genera: list[str] | None = None):
+    import sys
     only_set = {g.strip().lower().replace(".json", "") for g in (only_genera or [])}
     total_done = 0
     genera_saved = 0
     morph_fields = ["morphology_stem", "morphology_spines", "morphology_flower", "morphology_fruit"]
 
-    print("Перевод морфологии на русский (не спеша, пауза", PAUSE_SEC, "сек между запросами).")
+    print("Перевод морфологии на русский (не спеша, пауза", PAUSE_SEC, "сек между запросами).", flush=True)
+    print("Обхожу роды по очереди — ниже будут строки «Род: …» и «Перевожу: …». Ждите.", flush=True)
     if limit:
         print("Ограничение: не более", limit, "видов.")
     if only_set:
@@ -58,13 +60,13 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
             continue
         if limit is not None and total_done >= limit:
             break
+        print("  Род:", genus_file.stem, flush=True)
         try:
             species_list = json.loads(genus_file.read_text(encoding="utf-8"))
         except Exception:
             continue
         if not isinstance(species_list, list):
             continue
-        print("Род:", genus_file.stem, "— проверяю", len(species_list), "видов …", flush=True)
         changed = False
         for sp in species_list:
             if limit is not None and total_done >= limit:
