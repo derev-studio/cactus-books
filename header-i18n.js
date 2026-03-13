@@ -83,6 +83,32 @@
       dropdownCaution: 'Caution',
       startLink: '← Start',
       dropdownFiles: 'File list (A–Z)'
+    },
+    es: {
+      searchPlaceholder: 'Nombre del cactus…',
+      searchBtn: 'Buscar',
+      navLabel: 'Navegador de cactus',
+      linkOrigin: 'Origen de las especies',
+      linkGeography: 'Hábitats',
+      linkCare: 'Cuidado del cactus',
+      linkIdentifier: 'Identificar cactus',
+      linkGuardian: 'Compañero espinoso',
+      moreSummary: 'Más',
+      dropdownHome: 'Inicio',
+      dropdownNav: 'Navegador de cactus',
+      dropdownBook: 'Cactología',
+      dropdownGreat: 'Grandes cactólogos',
+      dropdownGallery: 'Galería',
+      dropdownStories: 'Relatos',
+      dropdownRelax: 'Relax',
+      dropdownDraw: 'Dibujo',
+      dropdownSucculents: 'Suculentas',
+      dropdownEdible: 'Cactus comestibles',
+      dropdownRarities: 'Rarezas',
+      dropdownFacts: 'Datos curiosos',
+      dropdownCaution: 'Precaución',
+      startLink: '← Inicio',
+      dropdownFiles: 'Lista de archivos (A–Z)'
     }
   };
 
@@ -90,6 +116,7 @@
     var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
     if (lang.indexOf('uk') === 0) return 'uk';
     if (lang.indexOf('ru') === 0) return 'ru';
+    if (lang.indexOf('es') === 0) return 'es';
     return 'en';
   }
 

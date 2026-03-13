@@ -68,6 +68,22 @@
       genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
       speciesPlaceholder: ' — species of genus %s. Description to be added.',
       photoSource: 'Photo: '
+    },
+    es: {
+      back: '← Atrás',
+      backAria: 'Atrás',
+      close: 'Cerrar',
+      species: 'Especies',
+      seeAlso: 'Ver también',
+      loading: 'Cargando…',
+      noSpeciesData: 'Sin datos de especies.',
+      infraspecific: 'Subespecies, variedades y formas',
+      treeError: 'Error al cargar el árbol. Compruebe que existe <code>data/taxonomy.json</code>.',
+      level: { subfamily: 'subfamilia', tribe: 'tribu', genus: 'género', species: 'especie' },
+      rank: { subspecies: 'Subespecie', variety: 'Variedad', form: 'Forma' },
+      genusPlaceholder: ' — género de cactus, familia Cactaceae. Descripción pendiente.',
+      speciesPlaceholder: ' — especie del género %s. Descripción pendiente.',
+      photoSource: 'Foto: '
     }
   };
 
@@ -75,6 +91,7 @@
     var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
     if (lang.indexOf('uk') === 0) return 'uk';
     if (lang.indexOf('ru') === 0) return 'ru';
+    if (lang.indexOf('es') === 0) return 'es';
     return 'en';
   }
 
@@ -445,13 +462,13 @@
     var morphTranslateEl = document.getElementById('card-morphology-translate');
     if (morphWrap && morphList) {
       var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-      var morphLang = lang.indexOf('uk') === 0 ? 'uk' : (lang.indexOf('ru') === 0 ? 'ru' : 'en');
-      // Для английского — только базовые поля (англ. из Вики). Для ru — русский или английский. Для uk — украинский, иначе русский, иначе английский.
+      var morphLang = lang.indexOf('uk') === 0 ? 'uk' : (lang.indexOf('ru') === 0 ? 'ru' : (lang.indexOf('es') === 0 ? 'es' : 'en'));
+      // Для en — только базовые поля. Для es — _es или базовые. Для ru — _ru или базовые. Для uk — _uk или _ru или базовые.
       var stemText = morphLang === 'en' ? (speciesNode.morphology_stem) : (speciesNode['morphology_stem_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_stem_ru : null) || speciesNode.morphology_stem);
       var spinesText = morphLang === 'en' ? (speciesNode.morphology_spines) : (speciesNode['morphology_spines_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_spines_ru : null) || speciesNode.morphology_spines);
       var flowerText = morphLang === 'en' ? (speciesNode.morphology_flower) : (speciesNode['morphology_flower_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_flower_ru : null) || speciesNode.morphology_flower);
       var fruitText = morphLang === 'en' ? (speciesNode.morphology_fruit) : (speciesNode['morphology_fruit_' + morphLang] || (morphLang === 'uk' ? speciesNode.morphology_fruit_ru : null) || speciesNode.morphology_fruit);
-      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : (morphLang === 'ru' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' } : { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' });
+      var morphLabels = morphLang === 'uk' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' } : (morphLang === 'ru' ? { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' } : (morphLang === 'es' ? { stem: 'Tallo', spines: 'Espinas', flower: 'Flor', fruit: 'Fruto' } : { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' }));
       var morphParts = [];
       if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
       if (spinesText) morphParts.push({ label: morphLabels.spines, text: spinesText });
@@ -459,7 +476,7 @@
       if (fruitText) morphParts.push({ label: morphLabels.fruit, text: fruitText });
       if (morphParts.length > 0) {
         var morphTitleEl = document.getElementById('card-morphology-title');
-        if (morphTitleEl) morphTitleEl.textContent = morphLang === 'en' ? 'Morphology' : (morphLang === 'uk' ? 'Морфологія' : 'Морфология');
+        if (morphTitleEl) morphTitleEl.textContent = morphLang === 'en' ? 'Morphology' : (morphLang === 'uk' ? 'Морфологія' : (morphLang === 'es' ? 'Morfología' : 'Морфология'));
         morphList.innerHTML = '';
         morphParts.forEach(function (p) {
           var li = document.createElement('li');
@@ -474,6 +491,8 @@
             var wikiUrl = wikiArticleUrl(speciesNode.name);
             if (morphLang === 'en') {
               morphSource.innerHTML = 'Source: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a>. License: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
+            } else if (morphLang === 'es') {
+              morphSource.innerHTML = 'Fuente: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a>. Licencia: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
             } else {
               morphSource.innerHTML = 'Источник: <a href="' + wikiUrl + '" target="_blank" rel="noopener">Wikipedia</a> (статья). Лицензия: <a href="' + CC_BY_SA_URL + '" target="_blank" rel="noopener">CC BY-SA 4.0</a>.';
             }
