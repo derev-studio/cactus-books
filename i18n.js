@@ -198,7 +198,14 @@
   function getStoredLang() {
     try {
       const v = localStorage.getItem(LANG_STORAGE_KEY);
-      if (v && SUPPORTED.some(function (s) { return s.code === v; })) return v;
+      if (v && SUPPORTED.some(function (s) { return s.code === v; })) {
+        var detected = detectBrowserLang();
+        if (v === "ru" && detected === "es") {
+          setStoredLang("es");
+          return "es";
+        }
+        return v;
+      }
       var detected = detectBrowserLang();
       setStoredLang(detected);
       return detected;
