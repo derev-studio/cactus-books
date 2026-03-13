@@ -1,0 +1,2 @@
+# Для скрипта перевода морфологии на русский (один раз: pip install -r requirements.txt)
+deep-translator>=1.11.0
