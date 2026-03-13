@@ -20,7 +20,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Neobuxbaumia_polylopha_%283644603939%29.jpg/330px-Neobuxbaumia_polylopha_%283644603939%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus polylophus is a species of cactus endemic to Mexico. Often grown under the synonym Neobuxbaumia polylopha, it is popular with cactus growers and reproduces well in cultivation.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus polylophus - эндемичный для Мексики вид кактусов. Часто выращивается под синонимом Neobuxbaumia polylopha, пользуется популярностью у производителей кактусов и хорошо размножается при выращивании."
   },
   {
     "id": "neobuxbaumia-macrocephala-facweber-ex-kschum-eydawson",
@@ -30,7 +31,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Neobuxbaumia_macrocephala_%285754203358%29.jpg/330px-Neobuxbaumia_macrocephala_%285754203358%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus macrocephalus, synonym Neobuxbaumia macrocephala, is a species of cactus endemic to Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus macrocephalus, синоним Neobuxbaumia macrocephala, является эндемичным для Мексики видом кактусов."
   },
   {
     "id": "neobuxbaumia-scoparia-poselg-backeb",
@@ -88,7 +90,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cephalocereus_apicicephalium_5.jpg/330px-Cephalocereus_apicicephalium_5.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus apicicephalium is a species of cactus from Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus apicicephalium - вид кактусов из Мексики."
   },
   {
     "id": "neobuxbaumia-tetetzo-facweber-ex-jmcoult-backeb",
@@ -108,7 +111,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Neobuxbaumia_tetezo_%285758807588%29.jpg/330px-Neobuxbaumia_tetezo_%285758807588%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus tetetzo is a species of cactus from Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus tetetzo - вид кактусов из Мексики."
   },
   {
     "id": "cephalocereus-columna-trajani-karw-ex-pfeiff-kschum",
@@ -139,7 +143,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cephalocereus_columna-trajani_%285753639979%29.jpg/330px-Cephalocereus_columna-trajani_%285753639979%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus columna-trajani is a species of cactus from Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus columna-trajani - вид кактусов из Мексики."
   },
   {
     "id": "neobuxbaumia-laui-pvheath-drhunt",
@@ -168,6 +173,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Cephalocereus_senilis.jpg/330px-Cephalocereus_senilis.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Cephalocereus senilis, the old man cactus, is a species of cactus native to Hidalgo and Veracruz in central Mexico. It is threatened in the wild, but widespread propagation and popularity in cultivation have reduced the demand on wild populations.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Cephalocereus senilis, кактус старика, является видом кактуса, произрастающим в Идальго и Веракрусе в центральной Мексике. Он находится под угрозой в дикой природе, но широкое распространение и популярность в культивировании снизили спрос на дикие популяции."
   }
 ]

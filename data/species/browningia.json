@@ -7,7 +7,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Browningia_altissma.jpg/330px-Browningia_altissma.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Browningia altissima is a species of cactus from northern Peru.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Browningia altissima - вид кактусов из северного Перу."
   },
   {
     "id": "browningia-candelaris",
@@ -17,7 +18,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Browningia_candelaris_%281%29.jpg/330px-Browningia_candelaris_%281%29.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Browningia candelaris is a species of cactus from northern Chile and southern Peru. It has a distinctive growth habit, with a straight spiny trunk topped by more-or-less spineless thinner branches. In some places, the long-term survival of local populations may be threatened by grazing, which destroys seedlings.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Browningia candelaris - вид кактусов из северного Чили и южного Перу. Он имеет характерную привычку роста, с прямым колючим стволом, увенчанным более или менее бесхребетными более тонкими ветвями. В некоторых местах долгосрочному выживанию местных популяций может угрожать выпас скота, который уничтожает саженцы."
   },
   {
     "id": "browningia-microsperma",
@@ -33,7 +35,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Browningia_hertlingiana_9.jpg/330px-Browningia_hertlingiana_9.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Browningia hertlingiana is a species of Browningia found in Peru.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Browningia hertlingiana - вид Browningia, обитающий в Перу."
   },
   {
     "id": "browningia-chlorocarpa",
@@ -43,6 +46,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Browningia_chlorocarpa_2020-02-08_7666.jpg/330px-Browningia_chlorocarpa_2020-02-08_7666.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Browningia chlorocarpa is a species of Browningia found in Peru.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Browningia chlorocarpa - вид Browningia, обитающий в Перу."
   }
 ]

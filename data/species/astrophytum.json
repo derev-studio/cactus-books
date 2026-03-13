@@ -26,7 +26,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Astrophytum_myriostigma_Lem.png/330px-Astrophytum_myriostigma_Lem.png",
     "photo_source": "wikipedia",
     "morphology_stem": "Astrophytum myriostigma, the bishop's cap cactus, bishop's hat or bishop's miter cactus, is a species of cactus native to the highlands of northeastern and central Mexico.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Astrophytum myriostigma, кактус шапки епископа, шляпа епископа или кактус митры епископа, является видом кактуса, произрастающим в высокогорьях северо-восточной и центральной Мексики."
   },
   {
     "id": "astrophytum-ornatum-dc-britton-rose",
@@ -50,7 +51,8 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Astrophytum_ornatum5.jpg/330px-Astrophytum_ornatum5.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Astrophytum ornatum, the bishop's cap or monk's hood cactus, is a flowering plant of the family Cactaceae, endemic to the Central Plateau of Mexico. It is the largest and tallest species of Astrophytum.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Astrophytum ornatum, шапка епископа или кактус монашеского капюшона, является цветущим растением семейства кактусовых, эндемичным для Центрального плато Мексики. Это самый крупный и высокий вид Astrophytum."
   },
   {
     "id": "astrophytum-asterias-zucc-lem",
@@ -64,6 +66,7 @@
     "photo_main_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Astrophytum_asterias1.jpg/330px-Astrophytum_asterias1.jpg",
     "photo_source": "wikipedia",
     "morphology_stem": "Astrophytum asterias is a species of cactus in the genus Astrophytum, and is native to small parts of Texas in the United States and Mexico. Common names include sand dollar cactus, sea urchin cactus, star cactus and star peyote.",
-    "morphology_source": "wikipedia"
+    "morphology_source": "wikipedia",
+    "morphology_stem_ru": "Astrophytum asterias - вид кактусов рода Astrophytum, обитающий в небольших частях Техаса в США и Мексике. Общие названия включают кактус песчаного доллара, кактус морского ежа, звездчатый кактус и звездчатый пейот."
   }
 ]
