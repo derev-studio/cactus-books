@@ -33,20 +33,21 @@ RETRIES = 2
 RETRY_PAUSE = 20
 
 
-def translate_en_ru(text: str) -> str | None:
+def translate_en_ru(text: str, log_wait: bool = False) -> str | None:
     if not text or not (text := text.strip()):
         return None
     text = text[:MAX_TEXT_LEN]
     try:
         url = MYMEMORY_URL + "?" + urllib.parse.urlencode({"q": text, "langpair": "en|ru"})
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=20) as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode())
         out = (data.get("responseData") or {}).get("translatedText")
         if out and out.strip():
             return out.strip()
     except (OSError, urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, TimeoutError):
-        pass
+        if log_wait:
+            print("    (нет ответа от API)", flush=True)
     return None
 
 
@@ -97,8 +98,10 @@ def main(limit: int | None = None, only_genera: list[str] | None = None):
                 else:
                     time.sleep(random.uniform(PAUSE_MIN, PAUSE_MAX))
                 ru_val = None
-                for _ in range(RETRIES):
-                    ru_val = translate_en_ru(en_val)
+                for attempt in range(RETRIES):
+                    if attempt > 0:
+                        print("    повтор…", flush=True)
+                    ru_val = translate_en_ru(en_val, log_wait=(attempt == RETRIES - 1))
                     if ru_val:
                         break
                     time.sleep(RETRY_PAUSE)
