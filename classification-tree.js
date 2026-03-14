@@ -19,187 +19,29 @@
     species: 'вид'
   };
 
-  /** Строки интерфейса по языку браузера (ru / uk / en) */
-  var UI_STRINGS = {
-    ru: {
-      back: '← Назад',
-      backAria: 'Назад',
-      close: 'Закрыть',
-      species: 'Виды',
-      seeAlso: 'Смотрите также',
-      loading: 'Загрузка…',
-      noSpeciesData: 'Нет данных о видах.',
-      infraspecific: 'Подвиды, разновидности и формы',
-      treeError: 'Не удалось загрузить дерево. Проверьте наличие <code>data/taxonomy.json</code>.',
-      level: { subfamily: 'подсемейство', tribe: 'триба', genus: 'род', species: 'вид' },
-      rank: { subspecies: 'Подвид', variety: 'Разновидность', form: 'Форма' },
-      genusPlaceholder: ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.',
-      speciesPlaceholder: ' — вид рода %s. Подробное описание будет добавлено позже.',
-      photoSource: 'Фото: ',
-      morphologyTitle: 'Морфология',
-      pageTitle: 'Классификация кактусов',
-      pageIntro: 'Семейство Cactaceae: подсемейства, трибы, роды и виды. Раскройте уровень по клику. Клик по роду — карточка и список видов, подвидов и разновидностей.',
-      cornerLabel: 'Кактусы',
-      prevSynonyms: 'Ранее / синонимы: ',
-      previouslyCalled: 'Ранее назывался: ',
-      synonymsLabel: 'Синонимы: ',
-      synonymsBasionym: 'Синонимы / базионим: ',
-      descGbifPlaceholder: 'По данным GBIF (коллекция UNAM). Морфология и синонимы будут добавлены.',
-      descNcbiPlaceholder: 'По данным NCBI. Морфология и синонимы будут добавлены.',
-      morphLabels: { stem: 'Стебель', spines: 'Колючки', flower: 'Цветок', fruit: 'Плод' },
-      morphSourceLabel: 'Источник: ',
-      morphLicenseLabel: 'Лицензия: ',
-      expandAria: 'Развернуть',
-      collapseAria: 'Свернуть'
-    },
-    uk: {
-      back: '← Назад',
-      backAria: 'Назад',
-      close: 'Закрити',
-      species: 'Види',
-      seeAlso: 'Дивіться також',
-      loading: 'Завантаження…',
-      noSpeciesData: 'Немає даних про види.',
-      infraspecific: 'Підвиди, різновиди та форми',
-      treeError: 'Не вдалося завантажити дерево. Перевірте наявність <code>data/taxonomy.json</code>.',
-      level: { subfamily: 'підродина', tribe: 'триба', genus: 'рід', species: 'вид' },
-      rank: { subspecies: 'Підвид', variety: 'Різновид', form: 'Форма' },
-      genusPlaceholder: ' — рід кактусів родини Cactaceae. Детальний опис буде додано пізніше.',
-      speciesPlaceholder: ' — вид роду %s. Детальний опис буде додано пізніше.',
-      photoSource: 'Фото: ',
-      morphologyTitle: 'Морфологія',
-      pageTitle: 'Класифікація кактусів',
-      pageIntro: 'Родина Cactaceae: підродини, триби, роди та види. Розгорніть рівень кліком. Клік по роду — картка та список видів, підвидів і різновидів.',
-      cornerLabel: 'Кактуси',
-      prevSynonyms: 'Раніше / синоніми: ',
-      previouslyCalled: 'Раніше називався: ',
-      synonymsLabel: 'Синоніми: ',
-      synonymsBasionym: 'Синоніми / базіонім: ',
-      descGbifPlaceholder: 'За даними GBIF (колекція UNAM). Морфологія та синоніми будуть додані.',
-      descNcbiPlaceholder: 'За даними NCBI. Морфологія та синоніми будуть додані.',
-      morphLabels: { stem: 'Стебель', spines: 'Колючки', flower: 'Квітка', fruit: 'Плід' },
-      morphSourceLabel: 'Джерело: ',
-      morphLicenseLabel: 'Ліцензія: ',
-      expandAria: 'Розгорнути',
-      collapseAria: 'Згорнути'
-    },
-    be: {
-      back: '← Назад',
-      backAria: 'Назад',
-      close: 'Закрыць',
-      species: 'Віды',
-      seeAlso: 'Глядзіце таксама',
-      loading: 'Загрузка…',
-      noSpeciesData: 'Няма даных пра віды.',
-      infraspecific: 'Падвіды, разнавіднасці і формы',
-      treeError: 'Не ўдалося загрузіць дрэва. Праверце наяўнасць <code>data/taxonomy.json</code>.',
-      level: { subfamily: 'падсямейства', tribe: 'трыба', genus: 'род', species: 'від' },
-      rank: { subspecies: 'Падвид', variety: 'Разнавіднасць', form: 'Форма' },
-      genusPlaceholder: ' — род кактусаў сямейства Cactaceae. Апісанне будзе дадана.',
-      speciesPlaceholder: ' — від роду %s. Апісанне будзе дадана.',
-      photoSource: 'Фота: ',
-      morphologyTitle: 'Марфалогія',
-      pageTitle: 'Класіфікацыя кактусаў',
-      pageIntro: 'Сямейства Cactaceae: падсямействы, трыбы, роды і віды. Разгарніце ўзровень клікам. Клік па роду — картка і спіс відаў.',
-      cornerLabel: 'Кактусы',
-      prevSynonyms: 'Раней / сінонімы: ',
-      previouslyCalled: 'Раней называўся: ',
-      synonymsLabel: 'Синонимы: ',
-      synonymsBasionym: 'Синонимы / базіонім: ',
-      descGbifPlaceholder: 'Па даных GBIF. Марфалогія і сінонімы будуць даданы.',
-      descNcbiPlaceholder: 'Па даных NCBI. Марфалогія і сінонімы будуць даданы.',
-      morphLabels: { stem: 'Сцебель', spines: 'Калючкі', flower: 'Кветка', fruit: 'Плод' },
-      morphSourceLabel: 'Крыніца: ',
-      morphLicenseLabel: 'Ліцэнзія: ',
-      expandAria: 'Разгарнуць',
-      collapseAria: 'Згарнуць'
-    },
-    en: {
-      back: '← Back',
-      backAria: 'Back',
-      close: 'Close',
-      species: 'Species',
-      seeAlso: 'See also',
-      loading: 'Loading…',
-      noSpeciesData: 'No species data.',
-      infraspecific: 'Subspecies, varieties and forms',
-      treeError: 'Failed to load tree. Check that <code>data/taxonomy.json</code> exists.',
-      level: { subfamily: 'subfamily', tribe: 'tribe', genus: 'genus', species: 'species' },
-      rank: { subspecies: 'Subspecies', variety: 'Variety', form: 'Form' },
-      genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
-      speciesPlaceholder: ' — species of genus %s. Description to be added.',
-      photoSource: 'Photo: ',
-      morphologyTitle: 'Morphology',
-      pageTitle: 'Cactus classification',
-      pageIntro: 'Family Cactaceae: subfamilies, tribes, genera and species. Expand a level by click. Click on a genus for the card and list of species, subspecies and varieties.',
-      cornerLabel: 'Cacti',
-      prevSynonyms: 'Previously / synonyms: ',
-      previouslyCalled: 'Previously called: ',
-      synonymsLabel: 'Synonyms: ',
-      synonymsBasionym: 'Synonyms / basionym: ',
-      descGbifPlaceholder: 'According to GBIF (UNAM collection). Morphology and synonyms to be added.',
-      descNcbiPlaceholder: 'According to NCBI. Morphology and synonyms to be added.',
-      morphLabels: { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' },
-      morphSourceLabel: 'Source: ',
-      morphLicenseLabel: 'License: ',
-      expandAria: 'Expand',
-      collapseAria: 'Collapse'
-    },
-    es: {
-      back: '← Atrás',
-      backAria: 'Atrás',
-      close: 'Cerrar',
-      species: 'Especies',
-      seeAlso: 'Ver también',
-      loading: 'Cargando…',
-      noSpeciesData: 'Sin datos de especies.',
-      infraspecific: 'Subespecies, variedades y formas',
-      treeError: 'Error al cargar el árbol. Compruebe que existe <code>data/taxonomy.json</code>.',
-      level: { subfamily: 'subfamilia', tribe: 'tribu', genus: 'género', species: 'especie' },
-      rank: { subspecies: 'Subespecie', variety: 'Variedad', form: 'Forma' },
-      genusPlaceholder: ' — género de cactus, familia Cactaceae. Descripción pendiente.',
-      speciesPlaceholder: ' — especie del género %s. Descripción pendiente.',
-      photoSource: 'Foto: ',
-      morphologyTitle: 'Morfología',
-      pageTitle: 'Clasificación de cactus',
-      pageIntro: 'Familia Cactaceae: subfamilias, tribus, géneros y especies. Expanda el nivel con un clic. Clic en un género — ficha y lista de especies, subespecies y variedades.',
-      cornerLabel: 'Cactus',
-      prevSynonyms: 'Antes / sinónimos: ',
-      previouslyCalled: 'Antes llamado: ',
-      synonymsLabel: 'Sinónimos: ',
-      synonymsBasionym: 'Sinónimos / basiónimo: ',
-      descGbifPlaceholder: 'Según GBIF (colección UNAM). Morfología y sinónimos se añadirán.',
-      descNcbiPlaceholder: 'Según NCBI. Morfología y sinónimos se añadirán.',
-      morphLabels: { stem: 'Tallo', spines: 'Espinas', flower: 'Flor', fruit: 'Fruto' },
-      morphSourceLabel: 'Fuente: ',
-      morphLicenseLabel: 'Licencia: ',
-      expandAria: 'Expandir',
-      collapseAria: 'Contraer'
-    },
-    he: {
-      back: '← אחורה', backAria: 'אחורה', close: 'סגור', species: 'מינים', seeAlso: 'ראה גם', loading: 'טוען…', noSpeciesData: 'אין נתוני מינים.', infraspecific: 'תת-מינים, זנים וצורות', treeError: 'טעינת העץ נכשלה.', level: { subfamily: 'תת-משפחה', tribe: 'שבט', genus: 'סוג', species: 'מין' }, rank: { subspecies: 'תת-מין', variety: 'זן', form: 'צורה' }, genusPlaceholder: ' — סוג קקטי, משפחת Cactaceae. תיאור יתווסף.', speciesPlaceholder: ' — מין של סוג %s. תיאור יתווסף.', photoSource: 'תמונה: ', morphologyTitle: 'מורפולוגיה', pageTitle: 'סיווג קקטי', pageIntro: 'משפחת Cactaceae: תת-משפחות, שבטים, סוגים ומינים.', cornerLabel: 'קקטי', prevSynonyms: 'לשעבר / synonyms: ', previouslyCalled: 'לשעבר נקרא: ', synonymsLabel: 'Synonyms: ', synonymsBasionym: 'Synonyms / basionym: ', descGbifPlaceholder: 'לפי GBIF. מורפולוגיה ו-synonyms יתווספו.', descNcbiPlaceholder: 'לפי NCBI. מורפולוגיה ו-synonyms יתווספו.', morphLabels: { stem: 'גזע', spines: 'קוצים', flower: 'פרח', fruit: 'פרי' }, morphSourceLabel: 'מקור: ', morphLicenseLabel: 'רישיון: ', expandAria: 'הרחב', collapseAria: 'כווץ'
-    },
-    zh: {
-      back: '← 返回', backAria: '返回', close: '关闭', species: '物种', seeAlso: '另见', loading: '加载中…', noSpeciesData: '暂无物种数据。', infraspecific: '亚种、变种与变型', treeError: '加载分类树失败。', level: { subfamily: '亚科', tribe: '族', genus: '属', species: '种' }, rank: { subspecies: '亚种', variety: '变种', form: '变型' }, genusPlaceholder: ' — 仙人掌科一属。描述待补充。', speciesPlaceholder: ' — %s 属物种。描述待补充。', photoSource: '照片：', morphologyTitle: '形态', pageTitle: '仙人掌分类', pageIntro: '仙人掌科：亚科、族、属与种。', cornerLabel: '仙人掌', prevSynonyms: '曾用名 / 同义：', previouslyCalled: '曾称：', synonymsLabel: '同义：', synonymsBasionym: '同义 / 基名：', descGbifPlaceholder: '据 GBIF。形态与同义待补充。', descNcbiPlaceholder: '据 NCBI。形态与同义待补充。', morphLabels: { stem: '茎', spines: '刺', flower: '花', fruit: '果实' }, morphSourceLabel: '来源：', morphLicenseLabel: '许可：', expandAria: '展开', collapseAria: '收起'
-    }
-  };
+  /** Строки интерфейса из data/languages.json (секция classification) */
+  function getClassificationStrings() {
+    return (window.__LANGUAGES__ && window.__LANGUAGES__.classification) || {};
+  }
 
   function getUILocale() {
+    var data = getClassificationStrings();
     if (window.I18n && typeof window.I18n.getLang === 'function') {
       var lang = window.I18n.getLang();
-      if (UI_STRINGS[lang]) return lang;
+      if (data[lang]) return lang;
     }
     var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
     for (var i = 0; i < list.length; i++) {
       var tag = (list[i] || '').split('-')[0].toLowerCase();
       if (tag === 'ja') tag = 'jp';
-      if (UI_STRINGS[tag]) return tag;
+      if (data[tag]) return tag;
     }
     return 'en';
   }
 
   function getUIStrings() {
-    return UI_STRINGS[getUILocale()] || UI_STRINGS.en;
+    var data = getClassificationStrings();
+    return data[getUILocale()] || data.en || {};
   }
 
   var treeRoot = null;
@@ -871,8 +713,19 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', runWhenClassificationReady);
   } else {
-    init();
+    runWhenClassificationReady();
+  }
+
+  function runWhenClassificationReady() {
+    function doInit() {
+      if (window.__LANGUAGES__ && window.__LANGUAGES__.classification) init();
+    }
+    if (window.__LANGUAGES__ && window.__LANGUAGES__.classification) {
+      doInit();
+    } else {
+      window.addEventListener('cactusbooks-languages-loaded', doInit, { once: true });
+    }
   }
 })();

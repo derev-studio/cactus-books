@@ -8,197 +8,10 @@
   var LANG_STORAGE_KEY = 'cactusbooks_lang';
   var HEADER_LANGS = { ar: true, hy: true, be: true, bn: true, bg: true, zh: true, hr: true, cs: true, nl: true, en: true, es: true, fr: true, ka: true, de: true, el: true, he: true, hi: true, hu: true, id: true, it: true, jp: true, kk: true, ko: true, ky: true, pl: true, pt: true, ro: true, ru: true, sr: true, sk: true, sl: true, sv: true, th: true, tr: true, uk: true, uz: true, vi: true };
 
-  var HEADER_STRINGS = {
-    ru: {
-      brand: '🌵 Кактусярий',
-      searchPlaceholder: 'Название кактуса…',
-      searchBtn: 'Найти',
-      navLabel: 'Навигатор по кактусам',
-      linkOrigin: 'Происхождение видов',
-      linkGeography: 'Места обитания',
-      linkCare: 'Здоровье кактуса',
-      linkIdentifier: 'Опознать кактус',
-      linkGuardian: 'Колючий Собеседник',
-      moreSummary: 'Ещё',
-      dropdownHome: 'Главная',
-      dropdownNav: 'Навигатор по кактусам',
-      dropdownBook: 'Кактусология',
-      dropdownGreat: 'Великие кактусоводы',
-      dropdownGallery: 'Галерея',
-      dropdownStories: 'Рассказы',
-      dropdownRelax: 'Отдых',
-      dropdownDraw: 'Рисование',
-      dropdownSucculents: 'Суккуленты',
-      dropdownEdible: 'Съедобные кактусы',
-      dropdownRarities: 'Редкости',
-      dropdownFacts: 'Интересные факты',
-      dropdownCaution: 'Осторожно',
-      startLink: '← Стартовая',
-      dropdownFiles: 'Список файлов (по алфавиту)'
-    },
-    uk: {
-      brand: '🌵 Кактусярий',
-      searchPlaceholder: 'Назва кактуса…',
-      searchBtn: 'Знайти',
-      navLabel: 'Навігатор по кактусах',
-      linkOrigin: 'Походження видів',
-      linkGeography: 'Місця проживання',
-      linkCare: "Здоров'я кактуса",
-      linkIdentifier: 'Впізнати кактус',
-      linkGuardian: 'Колючий Співбесідник',
-      moreSummary: 'Ще',
-      dropdownHome: 'Головна',
-      dropdownNav: 'Навігатор по кактусах',
-      dropdownBook: 'Кактусологія',
-      dropdownGreat: 'Великі кактусоводи',
-      dropdownGallery: 'Галерея',
-      dropdownStories: 'Оповідання',
-      dropdownRelax: 'Відпочинок',
-      dropdownDraw: 'Малювання',
-      dropdownSucculents: 'Сукуленти',
-      dropdownEdible: 'Їстівні кактуси',
-      dropdownRarities: 'Рідкості',
-      dropdownFacts: 'Цікаві факти',
-      dropdownCaution: 'Обережно',
-      startLink: '← Стартова',
-      dropdownFiles: 'Список файлів (за абеткою)'
-    },
-    be: {
-      brand: '🌵 Кактусярий',
-      searchPlaceholder: 'Назва кактуса…',
-      searchBtn: 'Знайсці',
-      navLabel: 'Навігатар па кактусах',
-      linkOrigin: 'Паходжанне відаў',
-      linkGeography: 'Месцы пражывання',
-      linkCare: 'Здароўе кактуса',
-      linkIdentifier: 'Распазнаць кактус',
-      linkGuardian: 'Калючы Суразмоўнік',
-      moreSummary: 'Яшчэ',
-      dropdownHome: 'Галоўная',
-      dropdownNav: 'Навігатар па кактусах',
-      dropdownBook: 'Кактусалогія',
-      dropdownGreat: 'Вялікія кактусоводы',
-      dropdownGallery: 'Галерэя',
-      dropdownStories: 'Апавяданні',
-      dropdownRelax: 'Адпачынак',
-      dropdownDraw: 'Рысаванне',
-      dropdownSucculents: 'Сукуленты',
-      dropdownEdible: 'Ядомыя кактусы',
-      dropdownRarities: 'Рэдкасці',
-      dropdownFacts: 'Цікавыя факты',
-      dropdownCaution: 'Асцярожна',
-      startLink: '← Стартавая',
-      dropdownFiles: 'Спіс файлаў (па алфавіце)'
-    },
-    en: {
-      brand: '🌵 Cactusarium',
-      searchPlaceholder: 'Cactus name…',
-      searchBtn: 'Search',
-      navLabel: 'Cactus navigator',
-      linkOrigin: 'Origin of species',
-      linkGeography: 'Habitats',
-      linkCare: 'Cactus care',
-      linkIdentifier: 'Identify cactus',
-      linkGuardian: 'Prickly Companion',
-      moreSummary: 'More',
-      dropdownHome: 'Home',
-      dropdownNav: 'Cactus navigator',
-      dropdownBook: 'Cactology',
-      dropdownGreat: 'Great cactologists',
-      dropdownGallery: 'Gallery',
-      dropdownStories: 'Stories',
-      dropdownRelax: 'Relax',
-      dropdownDraw: 'Drawing',
-      dropdownSucculents: 'Succulents',
-      dropdownEdible: 'Edible cacti',
-      dropdownRarities: 'Rarities',
-      dropdownFacts: 'Interesting facts',
-      dropdownCaution: 'Caution',
-      startLink: '← Start',
-      dropdownFiles: 'File list (A–Z)'
-    },
-    es: {
-      brand: '🌵 Cactusarium',
-      searchPlaceholder: 'Nombre del cactus…',
-      searchBtn: 'Buscar',
-      navLabel: 'Navegador de cactus',
-      linkOrigin: 'Origen de las especies',
-      linkGeography: 'Hábitats',
-      linkCare: 'Cuidado del cactus',
-      linkIdentifier: 'Identificar cactus',
-      linkGuardian: 'Compañero espinoso',
-      moreSummary: 'Más',
-      dropdownHome: 'Inicio',
-      dropdownNav: 'Navegador de cactus',
-      dropdownBook: 'Cactología',
-      dropdownGreat: 'Grandes cactólogos',
-      dropdownGallery: 'Galería',
-      dropdownStories: 'Relatos',
-      dropdownRelax: 'Relax',
-      dropdownDraw: 'Dibujo',
-      dropdownSucculents: 'Suculentas',
-      dropdownEdible: 'Cactus comestibles',
-      dropdownRarities: 'Rarezas',
-      dropdownFacts: 'Datos curiosos',
-      dropdownCaution: 'Precaución',
-      startLink: '← Inicio',
-      dropdownFiles: 'Lista de archivos (A–Z)'
-    },
-    he: {
-      brand: '🌵 קקטוסריום',
-      searchPlaceholder: 'שם קקטוס…',
-      searchBtn: 'חפש',
-      navLabel: 'ניווט קקטי',
-      linkOrigin: 'מוצא המינים',
-      linkGeography: 'סביבות מחיה',
-      linkCare: 'טיפול בקקטוס',
-      linkIdentifier: 'זיהוי קקטוס',
-      linkGuardian: 'שומר קוצני',
-      moreSummary: 'עוד',
-      dropdownHome: 'עמוד ראשי',
-      dropdownNav: 'ניווט קקטי',
-      dropdownBook: 'קטולוגיה',
-      dropdownGreat: 'חוקרי קקטי דגולים',
-      dropdownGallery: 'גלריה',
-      dropdownStories: 'סיפורים',
-      dropdownRelax: 'מנוחה',
-      dropdownDraw: 'ציור',
-      dropdownSucculents: 'סוקולנטים',
-      dropdownEdible: 'קקטי אכילים',
-      dropdownRarities: 'נדירים',
-      dropdownFacts: 'עובדות מעניינות',
-      dropdownCaution: 'זהירות',
-      startLink: '← התחל',
-      dropdownFiles: 'רשימת קבצים'
-    },
-    zh: {
-      brand: '🌵 仙人掌园',
-      searchPlaceholder: '仙人掌名称…',
-      searchBtn: '查找',
-      navLabel: '仙人掌导航',
-      linkOrigin: '物种起源',
-      linkGeography: '生境',
-      linkCare: '仙人掌养护',
-      linkIdentifier: '识别仙人掌',
-      linkGuardian: '守护者',
-      moreSummary: '更多',
-      dropdownHome: '首页',
-      dropdownNav: '仙人掌导航',
-      dropdownBook: '仙人掌学',
-      dropdownGreat: '著名仙人掌学者',
-      dropdownGallery: '画廊',
-      dropdownStories: '故事',
-      dropdownRelax: '休息',
-      dropdownDraw: '绘画',
-      dropdownSucculents: '多肉植物',
-      dropdownEdible: '可食仙人掌',
-      dropdownRarities: '珍品',
-      dropdownFacts: '趣闻',
-      dropdownCaution: '注意',
-      startLink: '← 首页',
-      dropdownFiles: '文件列表'
-    }
-  };
+  function getHeaderStrings() {
+    var data = window.__LANGUAGES__ && window.__LANGUAGES__.header;
+    return data || {};
+  }
 
   function getStoredLang() {
     try {
@@ -226,7 +39,8 @@
 
   function applyHeaderLocale() {
     var lang = getHeaderLocale();
-    var ui = HEADER_STRINGS[lang] || HEADER_STRINGS.en;
+    var headerData = getHeaderStrings();
+    var ui = headerData[lang] || headerData.en;
     var set = function (id, text) {
       var el = document.getElementById(id);
       if (el && text !== undefined) el.textContent = text;
@@ -270,10 +84,21 @@
     }
   }
 
+  function runWhenHeaderReady(fn) {
+    if (window.__LANGUAGES__ && window.__LANGUAGES__.header) {
+      fn();
+    } else {
+      window.addEventListener('cactusbooks-languages-loaded', fn, { once: true });
+    }
+  }
+  function tryApplyHeader() {
+    if (window.__LANGUAGES__ && window.__LANGUAGES__.header) applyHeaderLocale();
+  }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyHeaderLocale);
+    document.addEventListener('DOMContentLoaded', function () { runWhenHeaderReady(applyHeaderLocale); });
   } else {
-    applyHeaderLocale();
+    runWhenHeaderReady(applyHeaderLocale);
   }
   window.addEventListener('cactusbooks-lang-applied', applyHeaderLocale);
+  window.addEventListener('cactusbooks-languages-loaded', tryApplyHeader);
 })();
