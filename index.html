@@ -127,6 +127,7 @@
     <script src="./main.js" defer></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        if (window.I18n) window.I18n.init();
         document.querySelectorAll('.intro__lang-btn').forEach(function(btn) {
           btn.addEventListener('click', function() {
             var code = this.getAttribute('data-lang');

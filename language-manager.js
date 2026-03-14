@@ -1,14 +1,13 @@
 /**
  * Единая система языка сайта.
- * Определяет язык по navigator.language и localStorage (cactusbooks_lang).
- * Поддерживаемые: ru, en, uk, es, he (иврит), zh (китайский).
- * Для he автоматически включается dir="rtl".
+ * Определяет язык по navigator.language при первом заходе; выбор пользователя хранится в localStorage (cactusbooks_lang).
+ * Список кодов совпадает с i18n.js. Для he автоматически включается dir="rtl".
  */
 (function () {
   'use strict';
 
   var LANG_STORAGE_KEY = 'cactusbooks_lang';
-  var SUPPORTED = ['ru', 'en', 'uk', 'es', 'he', 'zh'];
+  var SUPPORTED = ['ar', 'hy', 'be', 'bn', 'bg', 'zh', 'hr', 'cs', 'nl', 'en', 'es', 'fr', 'ka', 'de', 'el', 'he', 'hi', 'hu', 'id', 'it', 'jp', 'kk', 'ko', 'ky', 'pl', 'pt', 'ro', 'ru', 'sr', 'sk', 'sl', 'sv', 'th', 'tr', 'uk', 'uz', 'vi'];
   var DEFAULT_LANG = 'ru';
 
   function getStored() {
@@ -27,7 +26,6 @@
         if (!tag) continue;
         if (tag === 'ja') tag = 'jp';
         if (SUPPORTED.indexOf(tag) !== -1) return tag;
-        if (tag === 'jp') return 'en';
       }
     } catch (_) {}
     return DEFAULT_LANG;

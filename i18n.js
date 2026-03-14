@@ -263,11 +263,6 @@
       }
       const v = localStorage.getItem(LANG_STORAGE_KEY);
       if (v && SUPPORTED.some(function (s) { return s.code === v; })) {
-        var detected = detectBrowserLang();
-        if (v === "ru" && detected === "es") {
-          setStoredLang("es");
-          return "es";
-        }
         return v;
       }
       var detected = detectBrowserLang();
@@ -299,7 +294,10 @@
   function t(key) {
     const row = I18N[key];
     if (!row) return key;
-    return row[currentLang] != null ? row[currentLang] : (row[DEFAULT_LANG] || key);
+    if (row[currentLang] != null && row[currentLang] !== "") return row[currentLang];
+    if (row.en != null && row.en !== "") return row.en;
+    if (row[DEFAULT_LANG] != null && row[DEFAULT_LANG] !== "") return row[DEFAULT_LANG];
+    return key;
   }
 
   function getLang() {
@@ -314,6 +312,13 @@
       window.LanguageManager.setLang(code);
     } else {
       try { localStorage.setItem(LANG_STORAGE_KEY, code); } catch (_) {}
+    }
+    if (window.LanguageManager && window.LanguageManager.applyRtl) {
+      window.LanguageManager.applyRtl(code);
+    } else {
+      document.documentElement.lang = code === "zh" ? "zh-Hans" : code;
+      if (code === "he") document.documentElement.setAttribute("dir", "rtl");
+      else document.documentElement.removeAttribute("dir");
     }
     applyToPage();
     try {
@@ -367,10 +372,12 @@
   }
 
   function init() {
-    if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
-      currentLang = window.LanguageManager.getLang();
-      if (window.LanguageManager.applyRtl) window.LanguageManager.applyRtl(currentLang);
+    currentLang = getStoredLang();
+    if (window.LanguageManager && window.LanguageManager.applyRtl) {
+      window.LanguageManager.applyRtl(currentLang);
     }
+    document.documentElement.lang = currentLang === "zh" ? "zh-Hans" : currentLang;
+    if (currentLang === "he") document.documentElement.setAttribute("dir", "rtl");
     applyToPage();
     setTimeout(function () { applyToPage(); }, 50);
     try {

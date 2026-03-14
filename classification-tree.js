@@ -132,19 +132,19 @@
   function getUILocale() {
     if (window.I18n && typeof window.I18n.getLang === 'function') {
       var lang = window.I18n.getLang();
-      if (lang === 'uk' || lang === 'ru' || lang === 'es' || lang === 'en' || lang === 'he' || lang === 'zh') return lang;
+      if (UI_STRINGS[lang]) return lang;
     }
-    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (lang.indexOf('uk') === 0) return 'uk';
-    if (lang.indexOf('ru') === 0) return 'ru';
-    if (lang.indexOf('es') === 0) return 'es';
-    if (lang.indexOf('he') === 0) return 'he';
-    if (lang.indexOf('zh') === 0) return 'zh';
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) {
+      var tag = (list[i] || '').split('-')[0].toLowerCase();
+      if (tag === 'ja') tag = 'jp';
+      if (UI_STRINGS[tag]) return tag;
+    }
     return 'en';
   }
 
   function getUIStrings() {
-    return UI_STRINGS[getUILocale()] || UI_STRINGS.ru;
+    return UI_STRINGS[getUILocale()] || UI_STRINGS.en;
   }
 
   var treeRoot = null;

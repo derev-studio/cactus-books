@@ -6,7 +6,7 @@
   'use strict';
 
   var LANG_STORAGE_KEY = 'cactusbooks_lang';
-  var HEADER_LANGS = { ru: true, uk: true, en: true, es: true, he: true, zh: true };
+  var HEADER_LANGS = { ar: true, hy: true, be: true, bn: true, bg: true, zh: true, hr: true, cs: true, nl: true, en: true, es: true, fr: true, ka: true, de: true, el: true, he: true, hi: true, hu: true, id: true, it: true, jp: true, kk: true, ko: true, ky: true, pl: true, pt: true, ro: true, ru: true, sr: true, sk: true, sl: true, sv: true, th: true, tr: true, uk: true, uz: true, vi: true };
 
   var HEADER_STRINGS = {
     ru: {
@@ -182,26 +182,24 @@
   }
 
   function getBrowserLocale() {
-    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (lang.indexOf('uk') === 0) return 'uk';
-    if (lang.indexOf('ru') === 0) return 'ru';
-    if (lang.indexOf('es') === 0) return 'es';
-    if (lang.indexOf('he') === 0) return 'he';
-    if (lang.indexOf('zh') === 0) return 'zh';
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < list.length; i++) {
+      var tag = (list[i] || '').split('-')[0].toLowerCase();
+      if (tag === 'ja') tag = 'jp';
+      if (HEADER_LANGS[tag]) return tag;
+    }
     return 'en';
   }
 
   function getHeaderLocale() {
-    if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') {
-      var lang = window.LanguageManager.getLang();
-      if (HEADER_LANGS[lang]) return lang;
-    }
+    if (window.I18n && typeof window.I18n.getLang === 'function') return window.I18n.getLang();
+    if (window.LanguageManager && typeof window.LanguageManager.getLang === 'function') return window.LanguageManager.getLang();
     return getStoredLang() || getBrowserLocale();
   }
 
   function applyHeaderLocale() {
     var lang = getHeaderLocale();
-    var ui = HEADER_STRINGS[lang] || HEADER_STRINGS.ru;
+    var ui = HEADER_STRINGS[lang] || HEADER_STRINGS.en;
     var set = function (id, text) {
       var el = document.getElementById(id);
       if (el && text !== undefined) el.textContent = text;
