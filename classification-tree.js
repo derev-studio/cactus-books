@@ -36,6 +36,7 @@
       genusPlaceholder: ' — род кактусов семейства Cactaceae. Подробное описание будет добавлено позже.',
       speciesPlaceholder: ' — вид рода %s. Подробное описание будет добавлено позже.',
       photoSource: 'Фото: ',
+      morphologyTitle: 'Морфология',
       pageTitle: 'Классификация кактусов',
       pageIntro: 'Семейство Cactaceae: подсемейства, трибы, роды и виды. Раскройте уровень по клику. Клик по роду — карточка и список видов, подвидов и разновидностей.',
       cornerLabel: 'Кактусы',
@@ -61,6 +62,7 @@
       genusPlaceholder: ' — рід кактусів родини Cactaceae. Детальний опис буде додано пізніше.',
       speciesPlaceholder: ' — вид роду %s. Детальний опис буде додано пізніше.',
       photoSource: 'Фото: ',
+      morphologyTitle: 'Морфологія',
       pageTitle: 'Класифікація кактусів',
       pageIntro: 'Родина Cactaceae: підродини, триби, роди та види. Розгорніть рівень кліком. Клік по роду — картка та список видів, підвидів і різновидів.',
       cornerLabel: 'Кактуси',
@@ -86,6 +88,7 @@
       genusPlaceholder: ' — a genus of cacti, family Cactaceae. Description to be added.',
       speciesPlaceholder: ' — species of genus %s. Description to be added.',
       photoSource: 'Photo: ',
+      morphologyTitle: 'Morphology',
       pageTitle: 'Cactus classification',
       pageIntro: 'Family Cactaceae: subfamilies, tribes, genera and species. Expand a level by click. Click on a genus for the card and list of species, subspecies and varieties.',
       cornerLabel: 'Cacti',
@@ -111,6 +114,7 @@
       genusPlaceholder: ' — género de cactus, familia Cactaceae. Descripción pendiente.',
       speciesPlaceholder: ' — especie del género %s. Descripción pendiente.',
       photoSource: 'Foto: ',
+      morphologyTitle: 'Morfología',
       pageTitle: 'Clasificación de cactus',
       pageIntro: 'Familia Cactaceae: subfamilias, tribus, géneros y especies. Expanda el nivel con un clic. Clic en un género — ficha y lista de especies, subespecies y variedades.',
       cornerLabel: 'Cactus',
@@ -122,10 +126,10 @@
       descNcbiPlaceholder: 'Según NCBI. Morfología y sinónimos se añadirán.'
     },
     he: {
-      back: '← אחורה', backAria: 'אחורה', close: 'סגור', species: 'מינים', seeAlso: 'ראה גם', loading: 'טוען…', noSpeciesData: 'אין נתוני מינים.', infraspecific: 'תת-מינים, זנים וצורות', treeError: 'טעינת העץ נכשלה.', level: { subfamily: 'תת-משפחה', tribe: 'שבט', genus: 'סוג', species: 'מין' }, rank: { subspecies: 'תת-מין', variety: 'זן', form: 'צורה' }, genusPlaceholder: ' — סוג קקטי, משפחת Cactaceae. תיאור יתווסף.', speciesPlaceholder: ' — מין של סוג %s. תיאור יתווסף.', photoSource: 'תמונה: ', pageTitle: 'סיווג קקטי', pageIntro: 'משפחת Cactaceae: תת-משפחות, שבטים, סוגים ומינים.', cornerLabel: 'קקטי', prevSynonyms: 'לשעבר / synonyms: ', previouslyCalled: 'לשעבר נקרא: ', synonymsLabel: 'Synonyms: ', synonymsBasionym: 'Synonyms / basionym: ', descGbifPlaceholder: 'לפי GBIF. מורפולוגיה ו-synonyms יתווספו.', descNcbiPlaceholder: 'לפי NCBI. מורפולוגיה ו-synonyms יתווספו.'
+      back: '← אחורה', backAria: 'אחורה', close: 'סגור', species: 'מינים', seeAlso: 'ראה גם', loading: 'טוען…', noSpeciesData: 'אין נתוני מינים.', infraspecific: 'תת-מינים, זנים וצורות', treeError: 'טעינת העץ נכשלה.', level: { subfamily: 'תת-משפחה', tribe: 'שבט', genus: 'סוג', species: 'מין' }, rank: { subspecies: 'תת-מין', variety: 'זן', form: 'צורה' }, genusPlaceholder: ' — סוג קקטי, משפחת Cactaceae. תיאור יתווסף.', speciesPlaceholder: ' — מין של סוג %s. תיאור יתווסף.', photoSource: 'תמונה: ', morphologyTitle: 'מורפולוגיה', pageTitle: 'סיווג קקטי', pageIntro: 'משפחת Cactaceae: תת-משפחות, שבטים, סוגים ומינים.', cornerLabel: 'קקטי', prevSynonyms: 'לשעבר / synonyms: ', previouslyCalled: 'לשעבר נקרא: ', synonymsLabel: 'Synonyms: ', synonymsBasionym: 'Synonyms / basionym: ', descGbifPlaceholder: 'לפי GBIF. מורפולוגיה ו-synonyms יתווספו.', descNcbiPlaceholder: 'לפי NCBI. מורפולוגיה ו-synonyms יתווספו.'
     },
     zh: {
-      back: '← 返回', backAria: '返回', close: '关闭', species: '物种', seeAlso: '另见', loading: '加载中…', noSpeciesData: '暂无物种数据。', infraspecific: '亚种、变种与变型', treeError: '加载分类树失败。', level: { subfamily: '亚科', tribe: '族', genus: '属', species: '种' }, rank: { subspecies: '亚种', variety: '变种', form: '变型' }, genusPlaceholder: ' — 仙人掌科一属。描述待补充。', speciesPlaceholder: ' — %s 属物种。描述待补充。', photoSource: '照片：', pageTitle: '仙人掌分类', pageIntro: '仙人掌科：亚科、族、属与种。', cornerLabel: '仙人掌', prevSynonyms: '曾用名 / 同义：', previouslyCalled: '曾称：', synonymsLabel: '同义：', synonymsBasionym: '同义 / 基名：', descGbifPlaceholder: '据 GBIF。形态与同义待补充。', descNcbiPlaceholder: '据 NCBI。形态与同义待补充。'
+      back: '← 返回', backAria: '返回', close: '关闭', species: '物种', seeAlso: '另见', loading: '加载中…', noSpeciesData: '暂无物种数据。', infraspecific: '亚种、变种与变型', treeError: '加载分类树失败。', level: { subfamily: '亚科', tribe: '族', genus: '属', species: '种' }, rank: { subspecies: '亚种', variety: '变种', form: '变型' }, genusPlaceholder: ' — 仙人掌科一属。描述待补充。', speciesPlaceholder: ' — %s 属物种。描述待补充。', photoSource: '照片：', morphologyTitle: '形态', pageTitle: '仙人掌分类', pageIntro: '仙人掌科：亚科、族、属与种。', cornerLabel: '仙人掌', prevSynonyms: '曾用名 / 同义：', previouslyCalled: '曾称：', synonymsLabel: '同义：', synonymsBasionym: '同义 / 基名：', descGbifPlaceholder: '据 GBIF。形态与同义待补充。', descNcbiPlaceholder: '据 NCBI。形态与同义待补充。'
     }
   };
 
@@ -585,7 +589,7 @@
       if (fruitText) morphParts.push({ label: morphLabels.fruit, text: fruitText });
       if (morphParts.length > 0) {
         var morphTitleEl = document.getElementById('card-morphology-title');
-        if (morphTitleEl) morphTitleEl.textContent = morphLang === 'en' ? 'Morphology' : (morphLang === 'uk' ? 'Морфологія' : (morphLang === 'es' ? 'Morfología' : 'Морфология'));
+        if (morphTitleEl) morphTitleEl.textContent = (getUIStrings().morphologyTitle || 'Morphology');
         morphList.innerHTML = '';
         morphParts.forEach(function (p) {
           var li = document.createElement('li');
@@ -724,6 +728,35 @@
     renderTiles();
   }
 
+  function applyUILocale() {
+    var ui = getUIStrings();
+    if (backBtn) {
+      backBtn.textContent = ui.back;
+      backBtn.setAttribute('aria-label', ui.backAria || ui.back.replace(/^\s*←\s*/, ''));
+    }
+    if (cardClose) {
+      cardClose.setAttribute('aria-label', ui.close);
+    }
+    var treeLoadingEl = document.getElementById('tree-loading');
+    if (treeLoadingEl) treeLoadingEl.textContent = ui.loading;
+    var treeErrorEl = document.getElementById('tree-error');
+    if (treeErrorEl) treeErrorEl.innerHTML = ui.treeError;
+    var speciesTitle = document.getElementById('card-species-title');
+    if (speciesTitle) speciesTitle.textContent = ui.species;
+    var seeAlsoTitle = document.getElementById('card-see-also-title');
+    if (seeAlsoTitle) seeAlsoTitle.textContent = ui.seeAlso;
+    var infraspecificTitle = document.getElementById('card-infraspecific-title');
+    if (infraspecificTitle) infraspecificTitle.textContent = ui.infraspecific;
+    var morphTitleEl = document.getElementById('card-morphology-title');
+    if (morphTitleEl && ui.morphologyTitle) morphTitleEl.textContent = ui.morphologyTitle;
+    var pageTitleEl = document.querySelector('.classification-header h1');
+    if (pageTitleEl && ui.pageTitle) pageTitleEl.textContent = ui.pageTitle;
+    var pageIntroEl = document.querySelector('.classification-intro');
+    if (pageIntroEl && ui.pageIntro) pageIntroEl.textContent = ui.pageIntro;
+    var cornerEl = document.querySelector('.classification-corner');
+    if (cornerEl && ui.cornerLabel) cornerEl.textContent = ui.cornerLabel;
+  }
+
   function init() {
     treeRoot = document.getElementById('tree-root');
     treeLoading = document.getElementById('tree-loading');
@@ -747,34 +780,7 @@
     cardSeeAlsoList = document.getElementById('card-see-also-list');
 
     applyUILocale();
-
-    // Применяем язык интерфейса (кнопки, заголовки, сообщения) по языку браузера
-    function applyUILocale() {
-      var ui = getUIStrings();
-      if (backBtn) {
-        backBtn.textContent = ui.back;
-        backBtn.setAttribute('aria-label', ui.backAria || ui.back.replace(/^\s*←\s*/, ''));
-      }
-      if (cardClose) {
-        cardClose.setAttribute('aria-label', ui.close);
-      }
-      var treeLoadingEl = document.getElementById('tree-loading');
-      if (treeLoadingEl) treeLoadingEl.textContent = ui.loading;
-      var treeErrorEl = document.getElementById('tree-error');
-      if (treeErrorEl) treeErrorEl.innerHTML = ui.treeError;
-      var speciesTitle = document.getElementById('card-species-title');
-      if (speciesTitle) speciesTitle.textContent = ui.species;
-      var seeAlsoTitle = document.getElementById('card-see-also-title');
-      if (seeAlsoTitle) seeAlsoTitle.textContent = ui.seeAlso;
-      var infraspecificTitle = document.getElementById('card-infraspecific-title');
-      if (infraspecificTitle) infraspecificTitle.textContent = ui.infraspecific;
-      var pageTitleEl = document.querySelector('.classification-header h1');
-      if (pageTitleEl && ui.pageTitle) pageTitleEl.textContent = ui.pageTitle;
-      var pageIntroEl = document.querySelector('.classification-intro');
-      if (pageIntroEl && ui.pageIntro) pageIntroEl.textContent = ui.pageIntro;
-      var cornerEl = document.querySelector('.classification-corner');
-      if (cornerEl && ui.cornerLabel) cornerEl.textContent = ui.cornerLabel;
-    }
+    document.addEventListener('cactusbooks-lang-applied', applyUILocale);
 
     // Разбираем адрес: ?genus=...&species=... — для прямых ссылок на карточки
     try {
