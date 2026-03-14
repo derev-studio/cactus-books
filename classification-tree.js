@@ -398,8 +398,9 @@
     var uiLocale = getUILocale();
     var desc = (speciesNode.description || '').trim();
     var descUi = getUIStrings();
-    if (desc === UI_STRINGS.ru.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
-    if (desc === UI_STRINGS.ru.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
+    var ruUi = getClassificationStrings().ru;
+    if (ruUi && desc === ruUi.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
+    if (ruUi && desc === ruUi.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
     if (uiLocale !== 'ru' && desc && hasCyrillic(desc)) desc = '';
     if (uiLocale !== 'en' && desc && !hasCyrillic(desc) && !/[\u0590-\u05FF\u0400-\u04FF]/.test(desc)) desc = '';
     if (!desc) {
@@ -517,6 +518,7 @@
     var photoSource = document.getElementById('card-photo-source');
     if (photoWrap && photoImg) {
       var url = speciesNode.photo_main_url || speciesNode.photo_flower_url || '';
+      console.log('Image URL:', url, '(species:', speciesNode.name || speciesNode.id, ')');
       if (url) {
         photoImg.src = url;
         photoImg.alt = speciesNode.name || ((getUIStrings().photoSource || 'Photo: ').replace(/\s*:?\s*$/, '') || 'Photo');
