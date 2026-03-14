@@ -186,6 +186,43 @@ body,
   overflow: hidden;
 }
 
+/* Переключатель языка на стартовом экране */
+.intro__lang-bar {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+.intro__lang-label {
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 4px;
+}
+.intro__lang-btn {
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.intro__lang-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.intro__lang-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
 .intro__hero-wrap.intro__content--hidden {
   opacity: 0;
   pointer-events: none;
