@@ -18,20 +18,7 @@
 <link rel="stylesheet" href="../page-common.css" />
 <style>
 body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: inherit; padding: 0 1rem 1rem; padding-top: 0; }
-.book-header { position: sticky; top: 0; z-index: 50; background: var(--cactus-bg-soft); border-bottom: 1px solid var(--cactus-border); box-shadow: 0 1px 0 rgba(0,0,0,0.15); padding: 0.6rem max(1rem, env(safe-area-inset-left)) 0.75rem max(1rem, env(safe-area-inset-right)); padding-top: max(0.6rem, env(safe-area-inset-top)); }
-.book-toolbar { display: flex; flex-wrap: nowrap; align-items: center; gap: 0.75rem 1rem; max-width: 52rem; margin: 0 auto; }
-.book-toolbar__back { flex-shrink: 0; }
-.book-toolbar__langs { flex-shrink: 0; font-size: 0.95rem; white-space: nowrap; }
-.book-toolbar__langs a { color: #b8e0ff; text-decoration: none; }
-.book-toolbar__langs a:hover { text-decoration: underline; }
-.book-toolbar .book-btn { display: inline-flex; align-items: center; min-height: 34px; padding: 0.2rem 0.5rem; font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); background: linear-gradient(180deg, #b8d0e0 0%, #dce4e8 50%, #e6e2da 100%); color: #2c3e50; text-decoration: none; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,0.15); transition: background 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; white-space: nowrap; }
-.book-toolbar .book-btn:hover { background: linear-gradient(180deg, #c4dae8 0%, #e4ecf4 50%, #eee8e0 100%); box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-.book-toolbar .globe-in-row { position: relative; right: auto; top: auto; flex-shrink: 0; display: flex; align-items: center; justify-content: center; margin-left: auto; }
-.book-toolbar .globe-in-row .globe-wrap { display: flex; align-items: center; }
-.book-toolbar .globe-in-row .globe-btn { width: 38px; height: 38px; min-width: 38px; min-height: 38px; border-radius: 50%; font-size: 1.3rem; line-height: 1; background: #fff; border: 2px solid rgba(255,255,255,0.9); box-shadow: 0 2px 10px rgba(0,0,0,0.3); animation: none !important; display: flex; align-items: center; justify-content: center; padding: 0; }
-.book-toolbar .globe-in-row .globe-btn:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.35); }
-.book-toolbar .globe-in-row .globe-btn__icon { font-size: 1.3rem; }
-.book-title-block { max-width: 52rem; margin: 0 auto; padding: 0.5rem max(1rem, env(safe-area-inset-left)) 0.75rem; }
+.book-title-block { max-width: 52rem; margin: 0 auto; padding: 0.5rem max(1rem, env(safe-area-inset-left)) 0.75rem; background: var(--cactus-bg-soft); border-bottom: 1px solid var(--cactus-border); }
 .book-title-block h1 { margin: 0 0 0.35rem; font-size: 1.95rem; font-weight: 800; color: var(--cactus-text-on-dark); line-height: 1.2; letter-spacing: 0.01em; }
 .book-title-block .book-subtitle { margin: 0; font-size: 1.1rem; font-weight: 500; color: var(--cactus-text-on-dark); opacity: 0.95; line-height: 1.4; }
 .page-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem; background: var(--cactus-reading-bg); color: var(--cactus-reading-text); box-shadow: var(--cactus-reading-shadow); border-radius: var(--cactus-reading-radius); }
@@ -40,17 +27,45 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 </style>
 </head>
 <body class="book-reader-page">
-<header class="book-header">
-  <div class="book-toolbar">
-    <a href="../home.html" class="book-toolbar__back book-btn">← На главную</a>
-    <a href="https://derev-studio.github.io/cactus-books/home.html?lang=ru" class="book-toolbar__back book-btn" title="Сайт без перевода Google">На сайт</a>
-    <span class="book-toolbar__langs"><a href="book-read.html">UA</a> · <span style="opacity:0.9;">RU</span> · <a href="book-read-en.html">EN</a></span>
-  </div>
-  <div class="book-title-block">
-    <h1>Кактусология</h1>
-    <p class="book-subtitle">История открытий и великих учёных от Колумба до наших дней</p>
-  </div>
+<header class="site-header">
+  <a href="../index.html" class="site-header__start-link" id="header-start-link" data-i18n="stories_nav_start">← Стартовая</a>
+  <a href="../home.html" class="site-header__brand" id="header-brand" data-i18n="brand">🌵 Кактусярий</a>
+  <form class="site-header__navigator" action="../navigator.html" method="get" role="search">
+    <label for="nav-search" class="visually-hidden" id="header-nav-label" data-i18n="nav_navigator">Навигатор по кактусам</label>
+    <input type="search" name="q" id="nav-search" class="site-header__navigator-input" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+    <button type="submit" class="site-header__navigator-btn" id="header-search-btn" data-i18n="search_btn">Найти</button>
+  </form>
+  <nav class="site-header__nav">
+    <a href="../systematics.html" class="site-header__link" id="header-link-origin" data-i18n="nav_systematics">Происхождение видов</a>
+    <a href="../geography.html" class="site-header__link" id="header-link-geography" data-i18n="nav_geography">Места обитания</a>
+    <a href="../care.html" class="site-header__link" id="header-link-care" data-i18n="nav_care">Здоровье кактуса</a>
+    <a href="../identifier.html" class="site-header__link" id="header-link-identifier" data-i18n="nav_identify">Опознать кактус</a>
+    <a href="../guardian.html" class="site-header__link" id="header-link-guardian" data-i18n="nav_guardian">Колючий Собеседник</a>
+    <details class="site-header__more">
+      <summary id="header-more-summary" data-i18n="more_btn">Ещё</summary>
+      <div class="site-header__dropdown">
+        <a href="../home.html" id="header-dropdown-home" data-i18n="nav_main">Главная</a>
+        <a href="../navigator.html" id="header-dropdown-nav" data-i18n="nav_navigator">Навигатор по кактусам</a>
+        <a href="book-read-ru.html" id="header-dropdown-book" data-i18n="nav_book">Кактусология</a>
+        <a href="../great-cactus.html" id="header-dropdown-great" data-i18n="nav_great">Великие кактусоводы</a>
+        <a href="../index.html" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
+        <a href="../stories.html" id="header-dropdown-stories" data-i18n="nav_stories">Рассказы</a>
+        <a href="../relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
+        <a href="../draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
+        <a href="../succulents.html" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
+        <a href="../edible.html" id="header-dropdown-edible" data-i18n="nav_edible">Съедобные кактусы</a>
+        <a href="../rarities.html" id="header-dropdown-rarities" data-i18n="nav_rarities">Редкости</a>
+        <a href="../facts.html" id="header-dropdown-facts" data-i18n="nav_facts">Интересные факты</a>
+        <a href="../caution.html" id="header-dropdown-caution" data-i18n="nav_caution">Осторожно</a>
+      </div>
+    </details>
+  </nav>
+  <div id="header-lang-dropdown" class="header-lang-dropdown"></div>
 </header>
+<div class="book-title-block">
+  <h1>Кактусология</h1>
+  <p class="book-subtitle">История открытий и великих учёных от Колумба до наших дней</p>
+</div>
 <div class="page-main">
 <div class="page-content">
 
@@ -1134,9 +1149,16 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <script src="../config.js"></script>
 <script src="../language-manager.js"></script>
 <script src="../i18n.js"></script>
+<script src="../header-i18n.js"></script>
+<script src="../header-lang-dropdown.js"></script>
 <script>
 (function () {
   if (window.I18n) window.I18n.init();
+  window.addEventListener('cactusbooks-lang-applied', function (e) {
+    var lang = e.detail && e.detail.lang;
+    if (lang === 'uk') window.location.href = 'book-read.html' + (window.location.hash || '');
+    else if (lang === 'en') window.location.href = 'book-read-en.html' + (window.location.hash || '');
+  });
 })();
 </script>
 </body>
