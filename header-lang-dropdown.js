@@ -56,7 +56,8 @@
             window.location.href = BOOK_FILES[c] + (window.location.hash || '');
             return;
           }
-          if (window.I18n && typeof window.I18n.setLang === 'function') window.I18n.setLang(c);
+          try { localStorage.setItem(LANG_STORAGE_KEY, c); } catch (_) {}
+          window.location.reload();
         };
       })(code));
       panel.appendChild(btn);

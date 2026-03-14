@@ -556,6 +556,7 @@
     if (desc === UI_STRINGS.ru.descGbifPlaceholder) desc = descUi.descGbifPlaceholder || desc;
     if (desc === UI_STRINGS.ru.descNcbiPlaceholder) desc = descUi.descNcbiPlaceholder || desc;
     if (uiLocale !== 'ru' && desc && hasCyrillic(desc)) desc = '';
+    if (uiLocale !== 'en' && desc && !hasCyrillic(desc) && !/[\u0590-\u05FF\u0400-\u04FF]/.test(desc)) desc = '';
     if (!desc) {
       var lmLang = null;
       try {
@@ -567,10 +568,16 @@
       } catch (_) {}
       if (!lmLang) lmLang = uiLocale;
       var dataLang = (lmLang === 'be') ? 'ru' : ((lmLang === 'uk' || lmLang === 'ru' || lmLang === 'es' || lmLang === 'he' || lmLang === 'zh') ? lmLang : 'en');
-      var stem = dataLang === 'en' ? (speciesNode.morphology_stem || '') : (speciesNode['morphology_stem_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_stem_ru : '') || speciesNode.morphology_stem || '');
-      var spines = dataLang === 'en' ? (speciesNode.morphology_spines || '') : (speciesNode['morphology_spines_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_spines_ru : '') || speciesNode.morphology_spines || '');
-      var flower = dataLang === 'en' ? (speciesNode.morphology_flower || '') : (speciesNode['morphology_flower_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_flower_ru : '') || speciesNode.morphology_flower || '');
-      var fruit = dataLang === 'en' ? (speciesNode.morphology_fruit || '') : (speciesNode['morphology_fruit_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_fruit_ru : '') || speciesNode.morphology_fruit || '');
+      function morphForLang(field) {
+        var val = dataLang === 'en' ? speciesNode['morphology_' + field] : (speciesNode['morphology_' + field + '_' + dataLang] || (dataLang === 'uk' ? speciesNode['morphology_' + field + '_ru'] : null));
+        if (val) return val;
+        if (uiLocale === 'en') return speciesNode['morphology_' + field] || '';
+        return '';
+      }
+      var stem = morphForLang('stem') || '';
+      var spines = morphForLang('spines') || '';
+      var flower = morphForLang('flower') || '';
+      var fruit = morphForLang('fruit') || '';
       var pieces = [];
       if (stem) pieces.push(stem);
       if (spines) pieces.push(spines);
@@ -614,10 +621,17 @@
         langCode = rawLang.split('-')[0];
       }
       var dataLang = (langCode === 'be') ? 'ru' : ((langCode === 'uk' || langCode === 'ru' || langCode === 'es' || langCode === 'he' || langCode === 'zh') ? langCode : 'en');
-      var stemText = dataLang === 'en' ? (speciesNode.morphology_stem) : (speciesNode['morphology_stem_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_stem_ru : null) || speciesNode.morphology_stem);
-      var spinesText = dataLang === 'en' ? (speciesNode.morphology_spines) : (speciesNode['morphology_spines_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_spines_ru : null) || speciesNode.morphology_spines);
-      var flowerText = dataLang === 'en' ? (speciesNode.morphology_flower) : (speciesNode['morphology_flower_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_flower_ru : null) || speciesNode.morphology_flower);
-      var fruitText = dataLang === 'en' ? (speciesNode.morphology_fruit) : (speciesNode['morphology_fruit_' + dataLang] || (dataLang === 'uk' ? speciesNode.morphology_fruit_ru : null) || speciesNode.morphology_fruit);
+      var uiLocaleHere = getUILocale();
+      function morphTextForCard(field) {
+        var val = dataLang === 'en' ? speciesNode['morphology_' + field] : (speciesNode['morphology_' + field + '_' + dataLang] || (dataLang === 'uk' ? speciesNode['morphology_' + field + '_ru'] : null));
+        if (val) return val;
+        if (uiLocaleHere === 'en') return speciesNode['morphology_' + field] || '';
+        return '';
+      }
+      var stemText = morphTextForCard('stem');
+      var spinesText = morphTextForCard('spines');
+      var flowerText = morphTextForCard('flower');
+      var fruitText = morphTextForCard('fruit');
       var morphLabels = (getUIStrings().morphLabels || { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' });
       var morphParts = [];
       if (stemText) morphParts.push({ label: morphLabels.stem, text: stemText });
