@@ -39,9 +39,12 @@
     return 'en';
   }
 
+  var FALLBACK_UI = { back: '← Back', backAria: 'Back', close: 'Close', species: 'Species', seeAlso: 'See also', loading: 'Loading…', noSpeciesData: 'No species data.', infraspecific: 'Subspecies, varieties and forms', treeError: 'Failed to load tree.', level: { subfamily: 'subfamily', tribe: 'tribe', genus: 'genus', species: 'species' }, rank: { subspecies: 'Subspecies', variety: 'Variety', form: 'Form' }, genusPlaceholder: ' — genus of Cactaceae. Description to be added.', speciesPlaceholder: ' — species of genus %s. Description to be added.', photoSource: 'Photo: ', morphologyTitle: 'Morphology', pageTitle: 'Cactus classification', pageIntro: 'Family Cactaceae: subfamilies, tribes, genera and species.', cornerLabel: 'Cacti', prevSynonyms: 'Previously / synonyms: ', previouslyCalled: 'Previously called: ', synonymsLabel: 'Synonyms: ', synonymsBasionym: 'Synonyms / basionym: ', morphSourceLabel: 'Source: ', morphLicenseLabel: 'License: ', expandAria: 'Expand', collapseAria: 'Collapse', morphLabels: { stem: 'Stem', spines: 'Spines', flower: 'Flower', fruit: 'Fruit' } };
   function getUIStrings() {
     var data = getClassificationStrings();
-    return data[getUILocale()] || data.en || {};
+    var ui = data[getUILocale()] || data.en;
+    if (ui && typeof ui === 'object') return ui;
+    return FALLBACK_UI;
   }
 
   var treeRoot = null;
@@ -712,20 +715,18 @@
       });
   }
 
+  /* Дерево и карточки (в т.ч. фото из Wikipedia) запускаем сразу при готовности DOM.
+     Не ждём languages.json — иначе при медленной загрузке картинки в карточках не появятся.
+     Строки UI берутся из __LANGUAGES__.classification с fallback; после загрузки языков обновляем подписи. */
+  function runWhenClassificationReady() {
+    init();
+    window.addEventListener('cactusbooks-languages-loaded', function () {
+      applyUILocale();
+    }, { once: true });
+  }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', runWhenClassificationReady);
   } else {
     runWhenClassificationReady();
-  }
-
-  function runWhenClassificationReady() {
-    function doInit() {
-      if (window.__LANGUAGES__ && window.__LANGUAGES__.classification) init();
-    }
-    if (window.__LANGUAGES__ && window.__LANGUAGES__.classification) {
-      doInit();
-    } else {
-      window.addEventListener('cactusbooks-languages-loaded', doInit, { once: true });
-    }
   }
 })();
