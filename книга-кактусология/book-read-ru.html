@@ -1154,11 +1154,6 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
 <script>
 (function () {
   if (window.I18n) window.I18n.init();
-  window.addEventListener('cactusbooks-lang-applied', function (e) {
-    var lang = e.detail && e.detail.lang;
-    if (lang === 'uk') window.location.href = 'book-read.html' + (window.location.hash || '');
-    else if (lang === 'en') window.location.href = 'book-read-en.html' + (window.location.hash || '');
-  });
 })();
 </script>
 </body>

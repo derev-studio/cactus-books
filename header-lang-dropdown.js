@@ -1,9 +1,18 @@
 /**
  * На страницах кроме главной (index): одна кнопка-глобус справа вверху с выпадающим списком языков.
  * Использует I18n.SUPPORTED и I18n.setLang(); выбор сохраняется в localStorage и действует на всех страницах.
+ * На страницах книги (book-read*.html): при выборе ru/uk/en сразу редирект на нужный файл книги без applyToPage, чтобы не было дёргания.
  */
 (function () {
   'use strict';
+
+  var LANG_STORAGE_KEY = 'cactusbooks_lang';
+  var BOOK_FILES = { ru: 'book-read-ru.html', uk: 'book-read.html', en: 'book-read-en.html' };
+
+  function isBookPage() {
+    var path = window.location.pathname || '';
+    return /book-read(-ru|-en)?\.html$/i.test(path) || path.indexOf('книга-кактусология') !== -1;
+  }
 
   function init() {
     var container = document.getElementById('header-lang-dropdown') || document.querySelector('.header-lang-dropdown');
@@ -41,8 +50,13 @@
       btn.title = name;
       btn.addEventListener('click', (function (c) {
         return function () {
-          if (window.I18n && typeof window.I18n.setLang === 'function') window.I18n.setLang(c);
           details.removeAttribute('open');
+          if (isBookPage() && BOOK_FILES[c]) {
+            try { localStorage.setItem(LANG_STORAGE_KEY, c); } catch (_) {}
+            window.location.href = BOOK_FILES[c] + (window.location.hash || '');
+            return;
+          }
+          if (window.I18n && typeof window.I18n.setLang === 'function') window.I18n.setLang(c);
         };
       })(code));
       panel.appendChild(btn);
