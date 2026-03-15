@@ -5,7 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="google" content="notranslate" />
 <script>
-(function(){var p=window.location.search;if(p.indexOf('lang=uk')===-1){window.location.replace('book-read-ru.html'+window.location.hash);}}());
+(function(){
+  var p=window.location.search;
+  var wantUk=p.indexOf('lang=uk')!==-1;
+  var stored=typeof localStorage!=='undefined'&&localStorage.getItem('cactusbooks_lang');
+  if(!wantUk&&stored!=='uk'){ window.location.replace('book-read-ru.html'+window.location.hash); }
+})();
 </script>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
@@ -66,8 +71,8 @@ body { margin: 0; min-height: 100vh; background: var(--cactus-bg); font-family: 
   <div id="header-lang-dropdown" class="header-lang-dropdown"></div>
 </header>
 <div class="book-title-block">
-  <h1>Кактусология</h1>
-  <p class="book-subtitle">История открытий и великих учёных от Колумба до наших дней</p>
+  <h1>Кактусологія</h1>
+  <p class="book-subtitle">Історія відкриттів та великих вчених від Колумба до наших днів</p>
 </div>
 <div class="page-main">
 <div class="page-content">

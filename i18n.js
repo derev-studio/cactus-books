@@ -204,6 +204,8 @@
         el.placeholder = text;
       } else if (el.getAttribute("data-i18n-linkify") !== null) {
         el.innerHTML = linkify(text);
+      } else if (el.getAttribute("data-i18n-html") !== null) {
+        el.innerHTML = text;
       } else {
         el.textContent = text;
       }

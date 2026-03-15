@@ -17,8 +17,8 @@
   border-radius: var(--cactus-reading-radius);
   border: 1px solid rgba(0, 0, 0, 0.06);
 
-  /* Крупнее шрифт для удобного чтения */
-  font-size: 1.15rem;
+  /* Крупнее шрифт для удобного чтения; на телефонах не меньше 16px — читать без зума */
+  font-size: max(16px, min(1.15rem, 2.5vw + 1rem));
   line-height: 1.75;
 }
 

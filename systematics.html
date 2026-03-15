@@ -16,9 +16,10 @@
   <link rel="stylesheet" href="page-common.css" />
   <style>
     body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
-    .origin-tiles { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
+    .origin-tiles { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem; margin-bottom: 1.5rem; }
     @media (min-width: 600px) { .origin-tiles { grid-template-columns: repeat(3, 1fr); } }
-    .origin-tiles a { display: flex; align-items: center; justify-content: center; min-height: 120px; padding: 1.5rem 1.25rem; background: var(--cactus-surface); color: var(--cactus-text); text-decoration: none; border-radius: 14px; font-weight: 600; font-size: clamp(1rem, 2.2vw, 1.15rem); text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); transition: transform 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; line-height: 1.35; }
+    .origin-tiles a { display: flex; align-items: center; justify-content: center; min-height: 56px; padding: 1rem 1.25rem; background: var(--cactus-surface); color: var(--cactus-text); text-decoration: none; border-radius: 14px; font-weight: 600; font-size: clamp(1rem, 2.2vw, 1.15rem); text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); transition: transform 0.2s, box-shadow 0.2s; -webkit-tap-highlight-color: transparent; line-height: 1.35; width: 100%; box-sizing: border-box; }
+    @media (max-width: 599px) { .origin-tiles a { min-height: 52px; padding: 1rem 1rem; font-size: 1rem; } }
     .origin-tiles a:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2); }
     .origin-tiles a:active { transform: translateY(0); }
   </style>
@@ -62,15 +63,15 @@
   <main class="page-main">
     <h1 data-i18n="systematics_title">Происхождение видов</h1>
 
-    <p class="page-intro" data-i18n="systematics_intro1">Кактусы и другие суккуленты появились на Земле не сразу. Их история — это результат долгой эволюции растений, которые постепенно приспосабливались к жизни в засушливых и суровых условиях.</p>
-    <p class="page-intro" data-i18n="systematics_intro2">Сегодня известно огромное разнообразие кактусов и родственных им растений. Чтобы понять, как они возникли, как связаны между собой и как ботаники их классифицируют, на этой странице собраны основные разделы.</p>
-    <p class="page-intro" data-i18n="systematics_intro3">Выберите один из разделов ниже, чтобы узнать больше о происхождении кактусов, системе их классификации и родственных суккулентах.</p>
-
     <nav class="origin-tiles" aria-label="" data-i18n-attr="aria-label" data-i18n="systematics_aria_tiles">
       <a href="origin-cacti.html" data-i18n="systematics_link_origin">Происхождение кактусов</a>
       <a href="classification-cacti.html" data-i18n="systematics_link_cacti">Классификация кактусов</a>
       <a href="classification-succulents.html" data-i18n="systematics_link_succulents">Классификация суккулентов</a>
     </nav>
+
+    <p class="page-intro" data-i18n="systematics_intro1">Кактусы и другие суккуленты появились на Земле не сразу. Их история — это результат долгой эволюции растений, которые постепенно приспосабливались к жизни в засушливых и суровых условиях.</p>
+    <p class="page-intro" data-i18n="systematics_intro2">Сегодня известно огромное разнообразие кактусов и родственных им растений. Чтобы понять, как они возникли, как связаны между собой и как ботаники их классифицируют, на этой странице собраны основные разделы.</p>
+    <p class="page-intro" data-i18n="systematics_intro3">Выберите один из разделов ниже, чтобы узнать больше о происхождении кактусов, системе их классификации и родственных суккулентах.</p>
   </main>
 
   <footer class="site-footer">
