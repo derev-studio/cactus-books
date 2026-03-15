@@ -10,7 +10,8 @@
       "es": "🌵 Cactusarium",
       "de": "🌵 Kakteenarium",
       "fr": "🌵 Cactusarium",
-      "he": "🌵 קקטוסריום"
+      "he": "🌵 קקטוסריום",
+      "be": "🌵 Кактусярий"
     },
     "intro_btn_zastavka": {
       "ru": "СМОТРЕТЬ ЗАСТАВКУ",
@@ -18,7 +19,8 @@
       "uk": "ДИВИТИСЬ ЗАСТАВКУ",
       "es": "VER SALVAPANTALLAS",
       "zh": "观看屏保",
-      "he": "צפה במסך נעילה"
+      "he": "צפה במסך נעילה",
+      "be": "СМОТРЕТЬ ЗАСТАВКУ"
     },
     "intro_btn_site": {
       "ru": "Войти в Кактусярий",
@@ -26,7 +28,8 @@
       "uk": "Увійти в Кактусярий",
       "es": "Entrar a Cactusarium",
       "zh": "进入仙人掌园",
-      "he": "היכנס לקקטוסריום"
+      "he": "היכנס לקקטוסריום",
+      "be": "Войти в Кактусярий"
     },
     "intro_aria_zastavka": {
       "ru": "Смотреть заставку",
@@ -34,7 +37,8 @@
       "uk": "Дивитися заставку",
       "es": "Ver salvapantallas",
       "zh": "观看屏保",
-      "he": "צפה במסך נעילה"
+      "he": "צפה במסך נעילה",
+      "be": "Смотреть заставку"
     },
     "intro_aria_site": {
       "ru": "Войти в Кактусярий",
@@ -42,7 +46,8 @@
       "uk": "Увійти в Кактусярий",
       "es": "Entrar a Cactusarium",
       "zh": "进入仙人掌园",
-      "he": "היכנס לקקטוסריום"
+      "he": "היכנס לקקטוסריום",
+      "be": "Войти в Кактусярий"
     },
     "intro_lang_label": {
       "ru": "Язык:",
@@ -50,7 +55,8 @@
       "uk": "Мова:",
       "es": "Idioma:",
       "zh": "语言：",
-      "he": "שפה:"
+      "he": "שפה:",
+      "be": "Язык:"
     },
     "nav_gallery": {
       "ru": "Галерея",
@@ -62,7 +68,8 @@
       "es": "Galería",
       "de": "Galerie",
       "fr": "Galerie",
-      "he": "גלריה"
+      "he": "גלריה",
+      "be": "Галерея"
     },
     "nav_stories": {
       "ru": "Рассказы",
@@ -74,11 +81,14 @@
       "es": "Relatos",
       "de": "Geschichten",
       "fr": "Histoires",
-      "he": "סיפורים"
+      "he": "סיפורים",
+      "be": "Рассказы"
     },
     "nav_about": {
       "ru": "Обо мне",
       "en": "About me",
+      "uk": "Про мене",
+      "be": "Пра мяне",
       "jp": "自己紹介",
       "it": "Su di me",
       "zh": "关于我",
@@ -97,11 +107,14 @@
       "es": "Cactusarium ©",
       "de": "Кактусярий ©",
       "fr": "Кактусярий ©",
-      "he": "קקטוסריום ©"
+      "he": "קקטוסריום ©",
+      "be": "Кактусярий ©"
     },
     "footer_derev": {
       "ru": "Сайт сделан в Derev Studio",
       "en": "Site by Derev Studio",
+      "uk": "Сайт зроблено в Derev Studio",
+      "be": "Сайт зроблены ў Derev Studio",
       "jp": "Derev Studio 制作",
       "it": "Sito by Derev Studio",
       "zh": "Derev Studio 制作",
@@ -113,6 +126,8 @@
     "footer_why": {
       "ru": "Почему «Кактусярий»? В детстве у меня была коллекция кактусов, и мама называла её Кактусярий — мы ездили с ней по разным городам, в ботанические сады, к коллекционерам, общались, удивлялись и покупали кактусы.",
       "en": "Why «Кактусярий»? As a child I had a cactus collection, and my mom called it Cactusarium — we traveled with her to different cities, botanical gardens, visited collectors, met people, were amazed and bought cacti.",
+      "uk": "Чому «Кактусярий»? В дитинстві в мене була колекція кактусів, і мама називала її Кактусярий — ми їздили з нею по різних містах, у ботанічні сади, до колекціонерів, спілкувались, дивувались і купували кактуси.",
+      "be": "Чаму «Кактусярий»? У дзяцінстве ў мяне была калекцыя кактусаў, і мама называла яе Кактусярий — мы ездзілі з ёй па розных гарадах, у батанічныя сады, да калекцыянераў, абменьваліся, дзівіліся і куплялі кактусы.",
       "jp": "なぜ「Кактусярий」？子供の頃、サボテンコレクションがあり、母がそう呼んでいました。母と一緒にいろんな街へ、植物園やコレクターを訪ね、交流し、サボテンを買いました。",
       "it": "Perché «Кактусярий»? Da bambino avevo una collezione di cactus e mia mamma la chiamava così — viaggiavamo insieme per città, orti botanici, collezionisti, ci emozionavamo e compravamo cactus.",
       "zh": "为什么叫「Кактусярий」？小时候我有一批仙人掌收藏，妈妈叫它「仙人掌园」——我们一起去过很多城市、植物园、收藏家，交流、惊叹、买仙人掌。",
@@ -124,6 +139,8 @@
     "footer_why_saved": {
       "ru": "Это название я сохранил для сайта.",
       "en": "I kept that name for the site.",
+      "uk": "Цю назву я зберіг для сайту.",
+      "be": "Гэтую назву я захаваў для сайта.",
       "jp": "その名前をサイトに残しました。",
       "it": "Ho conservato questo nome per il sito.",
       "zh": "我把这个名字留给了网站。",
@@ -135,6 +152,8 @@
     "gallery_heading": {
       "ru": "Галерея",
       "en": "Gallery",
+      "uk": "Галерея",
+      "be": "Галерэя",
       "jp": "ギャラリー",
       "it": "Galleria",
       "zh": "画廊",
@@ -146,6 +165,8 @@
     "gallery_heading_accent": {
       "ru": "фото и работы",
       "en": "photos & works",
+      "uk": "фото та роботи",
+      "be": "фота і працы",
       "jp": "写真と作品",
       "it": "foto e opere",
       "zh": "照片与作品",
@@ -157,6 +178,8 @@
     "gallery_empty": {
       "ru": "Пока нет ни одной работы. Как только JSON с рисунками появится в GitHub, этот блок автоматически превратится в интерактивную галерею.",
       "en": "No artworks yet. Once the JSON with drawings appears on GitHub, this block will become an interactive gallery.",
+      "uk": "Поки немає жодної роботи. Як тільки JSON з малюнками з'явиться на GitHub, цей блок перетвориться на інтерактивну галерею.",
+      "be": "Пакуль няма ніводнай працы. Як тольки JSON з малюнкамі з'явіцца на GitHub, гэты блок ператворыцца ў інтерактивную галерэю.",
       "jp": "まだ作品がありません。",
       "it": "Nessuna opera ancora.",
       "zh": "暂无作品。",
@@ -168,6 +191,8 @@
     "gallery_prev": {
       "ru": "Предыдущий рисунок",
       "en": "Previous",
+      "uk": "Попередній малюнок",
+      "be": "Папярэдні малюнак",
       "jp": "前へ",
       "it": "Precedente",
       "zh": "上一张",
@@ -179,6 +204,8 @@
     "gallery_next": {
       "ru": "Следующий рисунок",
       "en": "Next",
+      "uk": "Наступний малюнок",
+      "be": "Наступны малюнак",
       "jp": "次へ",
       "it": "Successivo",
       "zh": "下一张",
@@ -190,6 +217,8 @@
     "lightbox_aria": {
       "ru": "Просмотр в полном размере",
       "en": "Full size view",
+      "uk": "Перегляд у повному розмірі",
+      "be": "Прагляд у поўным памеры",
       "jp": "全画面表示",
       "it": "Vista a grandezza intera",
       "zh": "全屏查看",
@@ -201,6 +230,8 @@
     "lightbox_close": {
       "ru": "Закрыть",
       "en": "Close",
+      "uk": "Закрити",
+      "be": "Закрыць",
       "jp": "閉じる",
       "it": "Chiudi",
       "zh": "关闭",
@@ -212,6 +243,8 @@
     "lightbox_prev": {
       "ru": "Предыдущее",
       "en": "Previous",
+      "uk": "Попереднє",
+      "be": "Папярэдняе",
       "jp": "前へ",
       "it": "Precedente",
       "zh": "上一张",
@@ -223,6 +256,8 @@
     "lightbox_next": {
       "ru": "Следующее",
       "en": "Next",
+      "uk": "Наступне",
+      "be": "Наступнае",
       "jp": "次へ",
       "it": "Successivo",
       "zh": "下一张",
@@ -234,6 +269,8 @@
     "about_title": {
       "ru": "О сайте",
       "en": "About the site",
+      "uk": "Про сайт",
+      "be": "Пра сайт",
       "es": "Sobre el sitio",
       "de": "Über die Seite",
       "fr": "À propos du site",
@@ -245,6 +282,8 @@
     "about_text": {
       "ru": "Кактусы, книги, фотография — то, чем живу. Здесь собраны заметки, снимки и мысли. Пространство для души и творчества.",
       "en": "Cacti, books, photography — what I live by. Here are notes, photos and thoughts. A space for the soul and creativity.",
+      "uk": "Кактуси, книги, фотографія — те, чим живу. Тут зібрані нотатки, знімки й думки. Простір для душі й творчості.",
+      "be": "Кактусы, кнігі, фатаграфія — тое, чым жыву. Тут сабраны нататкі, здымкі і думкі. Прастора для душы і творчасці.",
       "jp": "サボテン、本、写真 — 私の生きがい。",
       "it": "Cactus, libri, fotografia — ciò che amo.",
       "zh": "仙人掌、书籍、摄影——我的生活。",
@@ -262,7 +301,9 @@
       "es": "Pétalos",
       "de": "Blütenblätter",
       "fr": "Pétales",
-      "he": "עלי כותרת"
+      "he": "עלי כותרת",
+      "uk": "Пелюстки",
+      "be": "Пялёсткі"
     },
     "wind_label": {
       "ru": "Ветер",
@@ -273,7 +314,9 @@
       "es": "Viento",
       "de": "Wind",
       "fr": "Vent",
-      "he": "רוח"
+      "he": "רוח",
+      "uk": "Вітер",
+      "be": "Вецер"
     },
     "music_label": {
       "ru": "Музыка",
@@ -284,7 +327,9 @@
       "es": "Música",
       "de": "Musik",
       "fr": "Musique",
-      "he": "מוזיקה"
+      "he": "מוזיקה",
+      "uk": "Музика",
+      "be": "Музыка"
     },
     "track": {
       "ru": "Трек",
@@ -295,7 +340,9 @@
       "es": "Pista",
       "de": "Track",
       "fr": "Piste",
-      "he": "מסלול"
+      "he": "מסלול",
+      "uk": "Трек",
+      "be": "Трек"
     },
     "track_1": {
       "ru": "Трек 1",
@@ -306,7 +353,9 @@
       "es": "Pista 1",
       "de": "Track 1",
       "fr": "Piste 1",
-      "he": "מסלול 1"
+      "he": "מסלול 1",
+      "uk": "Трек 1",
+      "be": "Трек 1"
     },
     "track_2": {
       "ru": "Трек 2",
@@ -317,7 +366,9 @@
       "es": "Pista 2",
       "de": "Track 2",
       "fr": "Piste 2",
-      "he": "מסלול 2"
+      "he": "מסלול 2",
+      "uk": "Трек 2",
+      "be": "Трек 2"
     },
     "sound": {
       "ru": "Звук",
@@ -328,7 +379,9 @@
       "es": "Sonido",
       "de": "Sound",
       "fr": "Son",
-      "he": "צליל"
+      "he": "צליל",
+      "uk": "Звук",
+      "be": "Гук"
     },
     "volume": {
       "ru": "Громкость",
@@ -339,7 +392,9 @@
       "es": "Volumen",
       "de": "Lautstärke",
       "fr": "Volume",
-      "he": "עוצמה"
+      "he": "עוצמה",
+      "uk": "Гучність",
+      "be": "Гучнасць"
     },
     "on": {
       "ru": "Вкл",
@@ -350,7 +405,9 @@
       "es": "On",
       "de": "An",
       "fr": "On",
-      "he": "פעיל"
+      "he": "פעיל",
+      "uk": "Увімк.",
+      "be": "Уключ."
     },
     "off": {
       "ru": "Выкл",
@@ -361,7 +418,9 @@
       "es": "Off",
       "de": "Aus",
       "fr": "Off",
-      "he": "כבוי"
+      "he": "כבוי",
+      "uk": "Вимк.",
+      "be": "Выключ."
     },
     "petals_aria": {
       "ru": "Лепестки и ветер",
@@ -372,7 +431,9 @@
       "es": "Pétalos y viento",
       "de": "Blütenblätter und Wind",
       "fr": "Pétales et vent",
-      "he": "עלי כותרת ורוח"
+      "he": "עלי כותרת ורוח",
+      "uk": "Пелюстки та вітер",
+      "be": "Пялёсткі і вецер"
     },
     "music_aria": {
       "ru": "Музыка",
@@ -383,7 +444,9 @@
       "es": "Música",
       "de": "Musik",
       "fr": "Musique",
-      "he": "מוזיקה"
+      "he": "מוזיקה",
+      "uk": "Музика",
+      "be": "Музыка"
     },
     "volume_wind_aria": {
       "ru": "Громкость ветра",
@@ -394,7 +457,9 @@
       "es": "Volumen del viento",
       "de": "Windlautstärke",
       "fr": "Volume du vent",
-      "he": "עוצמת רוח"
+      "he": "עוצמת רוח",
+      "uk": "Гучність вітру",
+      "be": "Гучнасць ветру"
     },
     "volume_music_aria": {
       "ru": "Громкость музыки",
@@ -405,7 +470,9 @@
       "es": "Volumen de música",
       "de": "Musiklautstärke",
       "fr": "Volume de la musique",
-      "he": "עוצמת מוזיקה"
+      "he": "עוצמת מוזיקה",
+      "uk": "Гучність музики",
+      "be": "Гучнасць музыкі"
     },
     "turn_on_music": {
       "ru": "Включить музыку",
@@ -416,7 +483,9 @@
       "es": "Encender música",
       "de": "Musik einschalten",
       "fr": "Activer la musique",
-      "he": "הפעל מוזיקה"
+      "he": "הפעל מוזיקה",
+      "uk": "Увімкнути музику",
+      "be": "Уключыць музыку"
     },
     "turn_off_music": {
       "ru": "Выключить музыку",
@@ -427,7 +496,9 @@
       "es": "Apagar música",
       "de": "Musik ausschalten",
       "fr": "Désactiver la musique",
-      "he": "כבה מוזיקה"
+      "he": "כבה מוזיקה",
+      "uk": "Вимкнути музику",
+      "be": "Выключыць музыку"
     },
     "more_petals": {
       "ru": "Больше",
@@ -438,7 +509,9 @@
       "es": "Más",
       "de": "Mehr",
       "fr": "Plus",
-      "he": "עוד"
+      "he": "עוד",
+      "uk": "Більше",
+      "be": "Больш"
     },
     "less_petals": {
       "ru": "Меньше",
@@ -449,7 +522,9 @@
       "es": "Menos",
       "de": "Weniger",
       "fr": "Moins",
-      "he": "פחות"
+      "he": "פחות",
+      "uk": "Менше",
+      "be": "Менш"
     },
     "fuji_magic_aria": {
       "ru": "Магия Fuji: лепестки, звуки",
@@ -457,7 +532,8 @@
       "uk": "Магія Fuji: пелюстки, звуки",
       "es": "Magia Fuji: pétalos, sonidos",
       "zh": "富士魔法：花瓣与声音",
-      "he": "קסם פוג'י: עלי כותרת, צלילים"
+      "he": "קסם פוג'י: עלי כותרת, צלילים",
+      "be": "Магія Fuji: пялёсткі, гукі"
     },
     "atmosphere_aria": {
       "ru": "Настройки атмосферы",
@@ -465,7 +541,8 @@
       "uk": "Налаштування атмосфери",
       "es": "Ajustes de atmósfera",
       "zh": "氛围设置",
-      "he": "הגדרות אווירה"
+      "he": "הגדרות אווירה",
+      "be": "Налады атмасферы"
     },
     "video_not_supported": {
       "ru": "Ваш браузер не поддерживает воспроизведение видео.",
@@ -473,7 +550,8 @@
       "uk": "Ваш браузер не підтримує відтворення відео.",
       "es": "Tu navegador no soporta la reproducción de video.",
       "zh": "您的浏览器不支持视频播放。",
-      "he": "הדפדפן שלך לא תומך בהשמעת וידאו."
+      "he": "הדפדפן שלך לא תומך בהשמעת וידאו.",
+      "be": "Ваш браузер не падтрымлівае прайграванне відэа."
     },
     "stories_back": {
       "ru": "← На главную",
@@ -484,7 +562,9 @@
       "es": "← Volver al inicio",
       "de": "← Zur Startseite",
       "fr": "← Retour à l'accueil",
-      "he": "← לדף הראשי"
+      "he": "← לדף הראשי",
+      "uk": "← На головну",
+      "be": "← На галоўную"
     },
     "stories_loading": {
       "ru": "Загрузка рассказов…",
@@ -495,7 +575,9 @@
       "es": "Cargando relatos…",
       "de": "Geschichten werden geladen…",
       "fr": "Chargement des histoires…",
-      "he": "טוען סיפורים…"
+      "he": "טוען סיפורים…",
+      "uk": "Завантаження…",
+      "be": "Загрузка…"
     },
     "stories_no": {
       "ru": "Пока нет рассказов.",
@@ -506,7 +588,9 @@
       "es": "Aún no hay relatos.",
       "de": "Noch keine Geschichten.",
       "fr": "Pas encore d'histoires.",
-      "he": "אין עדיין סיפורים."
+      "he": "אין עדיין סיפורים.",
+      "uk": "Немає оповідань.",
+      "be": "Няма апавяданняў."
     },
     "stories_error": {
       "ru": "Не удалось загрузить рассказы.",
@@ -517,7 +601,9 @@
       "es": "Error al cargar relatos.",
       "de": "Geschichten konnten nicht geladen werden.",
       "fr": "Échec du chargement des histoires.",
-      "he": "טעינת הסיפורים נכשלה."
+      "he": "טעינת הסיפורים נכשלה.",
+      "uk": "Помилка завантаження.",
+      "be": "Памылка загрузкі."
     },
     "stories_nav_main": {
       "ru": "На главную",
@@ -528,7 +614,9 @@
       "es": "Al inicio",
       "de": "Zur Startseite",
       "fr": "À l'accueil",
-      "he": "לדף הראשי"
+      "he": "לדף הראשי",
+      "uk": "Головна",
+      "be": "Галоўная"
     },
     "stories_nav_start": {
       "ru": "На стартовую",
@@ -539,7 +627,9 @@
       "es": "Al inicio",
       "de": "Zur Startseite",
       "fr": "À la page d'accueil",
-      "he": "לעמוד הפתיחה"
+      "he": "לעמוד הפתיחה",
+      "uk": "Почати з початку",
+      "be": "Пачаць з пачатку"
     },
     "derev_p1": {
       "ru": "Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается.",
@@ -550,7 +640,9 @@
       "es": "Aquí está mi espacio: cactus, libros, fotografía.",
       "de": "Hier ist mein Raum: Kakteen, Bücher, Fotografie.",
       "fr": "Ici, mon espace : cactus, livres, photographie.",
-      "he": "כאן המרחב שלי: קקטי, ספרים, צילום."
+      "he": "כאן המרחב שלי: קקטי, ספרים, צילום.",
+      "uk": "Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается.",
+      "be": "Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается."
     },
     "derev_p2": {
       "ru": "Надеюсь, гостям здесь будет уютно. Заходите в галерею, почитайте заметки, отдохните в комнате отдыха или поболтайте с Хранителем.",
@@ -561,7 +653,9 @@
       "es": "Espero que los visitantes se sientan a gusto.",
       "de": "Ich hoffe, Gäste fühlen sich hier wohl.",
       "fr": "J'espère que les visiteurs s'y sentiront bien.",
-      "he": "מקווה שאורחים ירגישו כאן בנוח."
+      "he": "מקווה שאורחים ירגישו כאן בנוח.",
+      "uk": "Надеюсь, гостям здесь будет уютно. Заходите в галерею, почитайте заметки, отдохните в комнате отдыха или поболтайте с Хранителем.",
+      "be": "Надеюсь, гостям здесь будет уютно. Заходите в галерею, почитайте заметки, отдохните в комнате отдыха или поболтайте с Хранителем."
     },
     "derev_sign": {
       "ru": "С благодарностью и уважением,",
@@ -572,7 +666,9 @@
       "es": "Con gratitud y respeto,",
       "de": "Mit Dankbarkeit und Respekt,",
       "fr": "Avec gratitude et respect,",
-      "he": "בתודה ובכבוד,"
+      "he": "בתודה ובכבוד,",
+      "uk": "С благодарностью и уважением,",
+      "be": "С благодарностью и уважением,"
     },
     "derev_back": {
       "ru": "На главную",
@@ -583,7 +679,9 @@
       "es": "Volver al inicio",
       "de": "Zur Startseite",
       "fr": "Retour à l'accueil",
-      "he": "לדף הראשי"
+      "he": "לדף הראשי",
+      "uk": "На главную",
+      "be": "На главную"
     },
     "globe_aria": {
       "ru": "Выбор языка",
@@ -591,7 +689,8 @@
       "uk": "Оберіть мову",
       "zh": "选择语言",
       "es": "Elegir idioma",
-      "he": "בחירת שפה"
+      "he": "בחירת שפה",
+      "be": "Выбор языка"
     },
     "hero_title": {
       "ru": "Кактусярий",
@@ -602,7 +701,9 @@
       "es": "Cactusarium",
       "de": "Kakteenarium",
       "fr": "Cactusarium",
-      "he": "Кактусярий"
+      "he": "Кактусярий",
+      "uk": "Кактусярий",
+      "be": "Кактусярий"
     },
     "hero_subtitle": {
       "ru": "Опознать кактус по фото, уход по регионам, география, легенды. Всё в одном месте.",
@@ -613,7 +714,9 @@
       "es": "Identifica cactus por foto, cuidado por región, geografía, leyendas. Todo en un lugar.",
       "de": "Kakteen anhand von Fotos erkennen, Pflege nach Region, Geografie, Legenden. Alles an einem Ort.",
       "fr": "Identifier les cactus par photo, soins par région, géographie, légendes. Tout en un lieu.",
-      "he": "זיהוי קקטי לפי תמונה, טיפול לפי אזור, גיאוגרפיה, אגדות. הכל במקום אחד."
+      "he": "זיהוי קקטי לפי תמונה, טיפול לפי אזור, גיאוגרפיה, אגדות. הכל במקום אחד.",
+      "uk": "Опознать кактус по фото, уход по регионам, география, легенды. Всё в одном месте.",
+      "be": "Опознать кактус по фото, уход по регионам, география, легенды. Всё в одном месте."
     },
     "nav_systematics": {
       "ru": "Происхождение видов",
@@ -647,7 +750,8 @@
       "es": "Los cactus y otras suculentas no aparecieron en la Tierra de la noche a la mañana. Su historia es el resultado de una larga evolución de plantas que se adaptaron a condiciones áridas y duras.",
       "de": "Kakteen und andere Sukkulenten sind nicht über Nacht entstanden. Ihre Geschichte ist das Ergebnis einer langen Evolution.",
       "fr": "Les cactus et autres succulentes ne sont pas apparus du jour au lendemain. Leur histoire est le résultat d'une longue évolution.",
-      "he": "הקקטיים והסוקולנטים לא הופיעו בין לילה. ההיסטוריה שלהם היא תוצאה של אבולוציה ארוכה."
+      "he": "הקקטיים והסוקולנטים לא הופיעו בין לילה. ההיסטוריה שלהם היא תוצאה של אבולוציה ארוכה.",
+      "uk": "Кактуси та інші сукуленти з'явилися на Землі не одразу. Їхня історія — результат довгої еволюції рослин, які поступово пристосовувалися до життя в посушливих і суворих умовах."
     },
     "systematics_intro2": {
       "ru": "Сегодня известно огромное разнообразие кактусов и родственных им растений. Чтобы понять, как они возникли, как связаны между собой и как ботаники их классифицируют, на этой странице собраны основные разделы.",
@@ -659,7 +763,8 @@
       "es": "Hoy se conoce una gran variedad de cactus y plantas afines. Para entender su origen, parentesco y cómo los botanistas los clasifican, esta página reúne las secciones principales.",
       "de": "Heute ist eine große Vielfalt an Kakteen und verwandten Pflanzen bekannt. Um Herkunft, Verwandtschaft und Klassifikation zu verstehen, bündelt diese Seite die Hauptbereiche.",
       "fr": "Aujourd'hui une grande variété de cactus et plantes apparentées est connue. Pour comprendre leur origine, leurs liens et leur classification, cette page rassemble les sections principales.",
-      "he": "היום ידוע מגוון רחב של קקטיים וצמחים קרובים. כדי להבין את מוצאם, קשריהם והסיווג הבוטני, דף זה מאגד את הסעיפים העיקריים."
+      "he": "היום ידוע מגוון רחב של קקטיים וצמחים קרובים. כדי להבין את מוצאם, קשריהם והסיווג הבוטני, דף זה מאגד את הסעיפים העיקריים.",
+      "uk": "Сьогодні відоме величезне різноманіття кактусів і споріднених із ними рослин. Щоб зрозуміти, як вони виникли, як пов'язані між собою і як ботаніки їх класифікують, на цій сторінці зібрані основні розділи."
     },
     "systematics_intro3": {
       "ru": "Выберите один из разделов ниже, чтобы узнать больше о происхождении кактусов, системе их классификации и родственных суккулентах.",
@@ -671,7 +776,14 @@
       "es": "Elija una de las secciones siguientes para saber más sobre el origen de los cactus, su sistema de clasificación y las suculentas afines.",
       "de": "Wählen Sie einen der folgenden Bereiche, um mehr über Herkunft der Kakteen, Klassifikation und verwandte Sukkulenten zu erfahren.",
       "fr": "Choisissez l'une des sections ci-dessous pour en savoir plus sur l'origine des cactus, leur classification et les succulentes apparentées.",
-      "he": "בחרו אחד מהסעיפים למטה כדי ללמוד עוד על מוצא הקקטיים, מערכת הסיווג והסוקולנטים הקרובים."
+      "he": "בחרו אחד מהסעיפים למטה כדי ללמוד עוד על מוצא הקקטיים, מערכת הסיווג והסוקולנטים הקרובים.",
+      "uk": "Оберіть один із розділів нижче, щоб дізнатися більше про походження кактусів, систему їх класифікації та споріднені сукуленти."
+    },
+    "page_nav_aria": {
+      "ru": "Основные разделы",
+      "en": "Main sections",
+      "uk": "Основні розділи",
+      "be": "Асноўныя раздзелы"
     },
     "systematics_link_origin": {
       "ru": "Происхождение кактусов",
@@ -753,7 +865,8 @@
       "uk": "Джерела та подяки",
       "es": "Fuentes y agradecimientos",
       "zh": "来源与致谢",
-      "he": "מקורות ותודות"
+      "he": "מקורות ותודות",
+      "be": "Источники и благодарности"
     },
     "sources_ack_classification_intro": {
       "ru": "Классификация: Курт Бакеберг (Die Cactaceae)",
@@ -761,7 +874,8 @@
       "uk": "Класифікація: Курт Бакеберг (Die Cactaceae)",
       "es": "Clasificación: Kurt Backeberg (Die Cactaceae)",
       "zh": "分类：库尔特·巴肯贝格 (Die Cactaceae)",
-      "he": "סיווג: קורט באקנברג (Die Cactaceae)"
+      "he": "סיווג: קורט באקנברג (Die Cactaceae)",
+      "be": "Классификация: Курт Бакеберг (Die Cactaceae)"
     },
     "sources_ack_gbif_cite": {
       "ru": "При использовании данных о видах: ",
@@ -769,7 +883,8 @@
       "uk": "При використанні даних про види: ",
       "es": "Al usar datos de especies: ",
       "zh": "使用物种数据时：",
-      "he": "בשימוש בנתוני מינים: "
+      "he": "בשימוש בנתוני מינים: ",
+      "be": "При использовании данных о видах: "
     },
     "sources_ack_basis": {
       "ru": "Основа классификации (дерево подсемейств, триб и родов) — система Курта Бакеберга (Kurt Backeberg), труд «Die Cactaceae». Благодарим за наследие.",
@@ -777,7 +892,8 @@
       "uk": "Основа класифікації — система Курта Бакеберга, «Die Cactaceae». Дякуємо за спадщину.",
       "es": "Base de la clasificación (árbol de subfamilias, tribus y géneros) — sistema de Kurt Backeberg, «Die Cactaceae». Agradecemos su legado.",
       "zh": "分类基础（亚科、族、属）— 库尔特·巴肯贝格《Die Cactaceae》。感谢其贡献。",
-      "he": "בסיס הסיווג — שיטת קורט באקנברג, «Die Cactaceae». תודה על המורשת."
+      "he": "בסיס הסיווג — שיטת קורט באקנברג, «Die Cactaceae». תודה על המורשת.",
+      "be": "Основа классификации (дерево подсемейств, триб и родов) — система Курта Бакеберга (Kurt Backeberg), труд «Die Cactaceae». Благодарим за наследие."
     },
     "sources_ack_species_1": {
       "ru": "Данные о видах частично из выгрузки ",
@@ -785,7 +901,8 @@
       "uk": "Дані про види частково з ",
       "es": "Datos de especies en parte de ",
       "zh": "物种数据部分来自 ",
-      "he": "נתוני מינים חלקית מ-"
+      "he": "נתוני מינים חלקית מ-",
+      "be": "Данные о видах частично из выгрузки "
     },
     "sources_ack_species_2": {
       "ru": " (коллекция UNAM, Мексика) и из ",
@@ -793,7 +910,8 @@
       "uk": " (колекція UNAM) та ",
       "es": " (colección UNAM, México) y ",
       "zh": "（UNAM 收藏）和 ",
-      "he": " (אוסף UNAM) ו-"
+      "he": " (אוסף UNAM) ו-",
+      "be": " (коллекция UNAM, Мексика) и из "
     },
     "sources_ack_species_3": {
       "ru": ". Цитирование GBIF см. выше (DOI). Благодарим GBIF, UNAM и NCBI.",
@@ -801,7 +919,8 @@
       "uk": ". Дякуємо GBIF, UNAM та NCBI.",
       "es": ". Citación GBIF arriba (DOI). Agradecemos a GBIF, UNAM y NCBI.",
       "zh": "。感谢 GBIF、UNAM 和 NCBI。",
-      "he": ". תודה ל-GBIF, UNAM ו-NCBI."
+      "he": ". תודה ל-GBIF, UNAM ו-NCBI.",
+      "be": ". Цитирование GBIF см. выше (DOI). Благодарим GBIF, UNAM и NCBI."
     },
     "sources_ack_morphology_1": {
       "ru": "Морфология и фотографии в карточках взяты из статей ",
@@ -809,7 +928,8 @@
       "uk": "Морфологія та фото з ",
       "es": "Morfología y fotos en las fichas proceden de ",
       "zh": "形态与照片来自 ",
-      "he": "מורפולוגיה ותמונות מ-"
+      "he": "מורפולוגיה ותמונות מ-",
+      "be": "Морфология и фотографии в карточках взяты из статей "
     },
     "sources_ack_morphology_2": {
       "ru": " (en.wikipedia.org). Авторские права — авторам и Wikipedia/Commons; использование в соответствии с ",
@@ -817,7 +937,8 @@
       "uk": " (en.wikipedia.org). Подяка авторам та Wikipedia.",
       "es": " (en.wikipedia.org). Créditos a autores y Wikipedia/Commons. ",
       "zh": "（en.wikipedia.org）。感谢作者与维基百科。",
-      "he": " (en.wikipedia.org). תודה למחברים ול-Wikipedia."
+      "he": " (en.wikipedia.org). תודה למחברים ול-Wikipedia.",
+      "be": " (en.wikipedia.org). Авторские права — авторам и Wikipedia/Commons; использование в соответствии с "
     },
     "sources_ack_morphology_3": {
       "ru": "правилами повторного использования контента Wikipedia",
@@ -825,7 +946,8 @@
       "uk": "правилами повторного використання Wikipedia",
       "es": "normas de reutilización de Wikipedia",
       "zh": "维基百科内容重用规则",
-      "he": "מדיניות השימוש חוזר של Wikipedia"
+      "he": "מדיניות השימוש חוזר של Wikipedia",
+      "be": "правилами повторного использования контента Wikipedia"
     },
     "sources_ack_morphology_4": {
       "ru": ". Благодарим авторов и проект Wikipedia.",
@@ -833,7 +955,8 @@
       "uk": ". Дякуємо авторам та проекту Wikipedia.",
       "es": ". Agradecemos a los autores y a Wikipedia.",
       "zh": "。感谢作者与维基百科项目。",
-      "he": ". תודה למחברים ולמיזם Wikipedia."
+      "he": ". תודה למחברים ולמיזם Wikipedia.",
+      "be": ". Благодарим авторов и проект Wikipedia."
     },
     "sources_ack_names_1": {
       "ru": "Названия и синонимы частично из ",
@@ -841,7 +964,8 @@
       "uk": "Назви та синоніми частково з ",
       "es": "Nombres y sinónimos en parte de ",
       "zh": "名称与同义词部分来自 ",
-      "he": "שמות ומילים נרדפות מ-"
+      "he": "שמות ומילים נרדפות מ-",
+      "be": "Названия и синонимы частично из "
     },
     "sources_ack_names_2": {
       "ru": " (WFO). Цитирование: WFO (2024). World Flora Online. Благодарим WFO и контрибьюторов.",
@@ -849,7 +973,8 @@
       "uk": " (WFO). Дякуємо WFO.",
       "es": " (WFO). Citación: WFO (2024). Agradecemos a WFO y colaboradores.",
       "zh": "（WFO）。感谢 WFO。",
-      "he": " (WFO). תודה ל-WFO."
+      "he": " (WFO). תודה ל-WFO.",
+      "be": " (WFO). Цитирование: WFO (2024). World Flora Online. Благодарим WFO и контрибьюторов."
     },
     "sources_ack_other_1": {
       "ru": "Справочно использованы также ",
@@ -857,7 +982,8 @@
       "uk": "Додатково використано ",
       "es": "También se han usado como referencia ",
       "zh": "参考来源还包括 ",
-      "he": "בנוסף שימוש ב-"
+      "he": "בנוסף שימוש ב-",
+      "be": "Справочно использованы также "
     },
     "sources_ack_other_2": {
       "ru": ", ",
@@ -865,7 +991,8 @@
       "uk": ", ",
       "es": " e ",
       "zh": "、",
-      "he": ", "
+      "he": ", ",
+      "be": ", "
     },
     "sources_ack_other_3": {
       "ru": ". Все перечисленные источники указаны в целях атрибуции и благодарности.",
@@ -873,11 +1000,14 @@
       "uk": ". Усі джерела вказані для атрибуції.",
       "es": ". Todas las fuentes se indican para atribución y agradecimiento.",
       "zh": "。所列来源均用于署名与致谢。",
-      "he": ". כל המקורות לצורך ייחוס ותודה."
+      "he": ". כל המקורות לצורך ייחוס ותודה.",
+      "be": ". Все перечисленные источники указаны в целях атрибуции и благодарности."
     },
     "page_developing": {
       "ru": "Раздел в разработке. Контент появится позже.",
       "en": "Section in progress. Content coming soon.",
+      "uk": "Розділ у розробці. Контент з'явиться пізніше.",
+      "be": "Раздел у распрацоўцы. Кантент з'явіцца пазней.",
       "es": "Sección en desarrollo. El contenido aparecerá más adelante.",
       "de": "Bereich in Arbeit. Inhalt folgt.",
       "fr": "Section en cours. Contenu à venir.",
@@ -889,6 +1019,8 @@
     "geography_intro": {
       "ru": "Где растут кактусы в природе: карты, регионы, особенности местообитаний.",
       "en": "Where cacti grow in the wild: maps, regions, habitat features.",
+      "uk": "Де ростуть кактуси в природі: карти, регіони, особливості місцеобитань.",
+      "be": "Дзе растуць кактусы ў прыродзе: карты, рэгіёны, асаблівасці месцапражыванняў.",
       "es": "Dónde crecen los cactus en la naturaleza: mapas, regiones, hábitats.",
       "de": "Wo Kakteen in der Natur wachsen.",
       "fr": "Où poussent les cactus dans la nature.",
@@ -900,6 +1032,8 @@
     "care_intro": {
       "ru": "Полив, свет, субстрат и календарь ухода — с учётом региона (умеренный климат, Израиль и др.).",
       "en": "Watering, light, substrate and care calendar — by region (temperate, Israel, etc.).",
+      "uk": "Полив, світло, субстрат і календар догляду — з урахуванням регіону (помірний клімат, Ізраїль тощо).",
+      "be": "Паліў, святло, субстрат і каляндар догляду — з улікам рэгіёну (умераны клімат, Ізраіль і інш.).",
       "es": "Riego, luz, sustrato y calendario de cuidados según la región.",
       "de": "Gießen, Licht, Substrat und Pflegekalender.",
       "fr": "Arrosage, lumière, substrat et calendrier selon la région.",
@@ -911,6 +1045,8 @@
     "succulents_intro": {
       "ru": "Алоэ, хавортии, эхеверии, крассулы и другие растения с запасающими тканями — не только кактусы.",
       "en": "Aloe, haworthias, echeverias, crassulas and other succulent plants — not just cacti.",
+      "uk": "Алое, гаворції, ехеверії, красули та інші рослини з запасаючими тканинами — не лише кактуси.",
+      "be": "Алоэ, гаворцыі, эхеверыі, красулы і іншыя расліны з запасальнымі тканінамі — не толькі кактусы.",
       "es": "Aloe, haworthias, echeverias, crasuláceas y otras plantas suculentas.",
       "de": "Aloe, Haworthien, Echeverien, Crassula — nicht nur Kakteen.",
       "fr": "Aloès, haworthias, echeverias, crassulas et autres succulentes.",
@@ -922,6 +1058,8 @@
     "rarities_intro": {
       "ru": "Редкие, эндемичные и охраняемые виды: что стоит знать коллекционерам.",
       "en": "Rare, endemic and protected species: what collectors should know.",
+      "uk": "Рідкісні, ендемічні та охоронювані види: що варто знати колекціонерам.",
+      "be": "Рэдкія, эндэмічныя і ахоўныя віды: што варта ведаць калекцыянерам.",
       "es": "Especies raras, endémicas y protegidas para coleccionistas.",
       "de": "Seltene, endemische und geschützte Arten.",
       "fr": "Espèces rares, endémiques et protégées.",
@@ -933,6 +1071,8 @@
     "edible_intro": {
       "ru": "Опунция, питахайя (драконий фрукт) и другие виды: плоды и побеги в кулинарии.",
       "en": "Opuntia, dragon fruit and others: fruits and pads in cooking.",
+      "uk": "Опунція, пітайя (драконів фрукт) та інші види: плоди й пагони в кулінарії.",
+      "be": "Апунцыя, пітайя (драконі фрукт) і іншыя віды: плады і парасткі ў кулінарыі.",
       "es": "Opuntia, pitaya y otros: frutos y cladodios en la cocina.",
       "de": "Opuntie, Drachenfrucht und andere in der Küche.",
       "fr": "Opuntia, pitaya et autres en cuisine.",
@@ -944,6 +1084,8 @@
     "facts_intro": {
       "ru": "Удивительные факты, мифы и малоизвестное о кактусах и суккулентах.",
       "en": "Amazing facts, myths and little-known info about cacti and succulents.",
+      "uk": "Дивовижні факти, міфи й маловідоме про кактуси та сукуленти.",
+      "be": "Дзіўныя факты, міфы і малавядомае пра кактусы і сукуленты.",
       "es": "Datos curiosos, mitos y lo menos conocido sobre cactus y suculentas.",
       "de": "Faszinierende Fakten und Mythen über Kakteen.",
       "fr": "Faits étonnants et mythes sur les cactus.",
@@ -955,6 +1097,8 @@
     "great_cactus_intro": {
       "ru": "История исследований, коллекционеры и учёные, внёсшие вклад в изучение кактусов.",
       "en": "History of research, collectors and scientists who contributed to cacti study.",
+      "uk": "Історія досліджень, колекціонери та вчені, які внесли внесок у вивчення кактусів.",
+      "be": "Гісторыя даследаванняў, калекцыянеры і вучоныя, якія ўнеслі ўклад у вывучэнне кактусаў.",
       "es": "Historia de la investigación y grandes cactólogos.",
       "de": "Geschichte der Kakteenforschung und -sammler.",
       "fr": "Histoire des recherches et des grands cactophiles.",
@@ -973,7 +1117,8 @@
       "it": "Attenzione: cactus e succulente pericolosi",
       "jp": "注意：危険なサボテン",
       "zh": "注意：危险仙人掌与多肉",
-      "he": "זהירות: קקטי ומסוכנים"
+      "he": "זהירות: קקטי ומסוכנים",
+      "be": "Осторожно: опасные кактусы и суккуленты"
     },
     "caution_intro": {
       "ru": "Колючки-«гарпуны», глохидии (мельчайшие шипы), плоды опунции перед едой, ядовитые виды — как не пораниться и что делать, если впилось.",
@@ -985,24 +1130,105 @@
       "it": "Spine uncinate, glochidi, specie tossiche.",
       "jp": "かぎ状のとげ、 glochid、有毒種。",
       "zh": "钩刺、刚毛、食用前注意、有毒种类。",
-      "he": "קוצים, גלוכידים, מינים רעילים."
+      "he": "קוצים, גלוכידים, מינים רעילים.",
+      "be": "Колючки-«гарпуны», глохидии (мельчайшие шипы), плоды опунции перед едой, ядовитые виды — как не пораниться и что делать, если впилось."
     },
-    "caution_h2_spines": { "ru": "Колючки с зазубринами — как гарпун, вырывает с мясом", "en": "Barbed spines — like a harpoon, tears out with flesh", "uk": "Колючки із зазубринами — як гарпун, вириває з м'ясом" },
-    "caution_h2_glochids": { "ru": "Глохидии: мельчайшие шипы, как стекловата", "en": "Glochids: tiny spines like fiberglass", "uk": "Глохідії: найменші шипи, як скловата" },
-    "caution_h2_fruits": { "ru": "Плоды опунции: перед едой — обязательно чистить", "en": "Opuntia fruits: clean thoroughly before eating", "uk": "Плоди опунції: перед їжею — обов'язково чистити" },
-    "caution_h2_poison": { "ru": "Ядовитые: молочаи и другие суккуленты", "en": "Poisonous: euphorbias and other succulents", "uk": "Отруйні: молочаї та інші сукуленти" },
-    "caution_h2_examples": { "ru": "Как выглядят: примеры (фото)", "en": "What they look like: examples (photos)", "uk": "Як виглядають: приклади (фото)" },
-    "caution_p_spines1": { "ru": "У опунций и цилиндропунций (чойя) идёт обычная колючка, но на самой колючке — мелкие зазубрины, как у гарпуна. В палец входит легко, а при выдёргивании вырывает с мясом: сидят очень крепко. Вытаскивать только плоскогубцами: взять и резко выдернуть. Возможно, сейчас есть и другие методы — но я, автор сайта, всегда так делал. Бывает, что колючка впилась кошке или собаке (в нос, лапу): животное терпит, но вытаскивать всё равно нужно — иначе нагноение. Один раз моему коту такие колючки впились в нос; пришлось держать и выдёргивать плоскогубцами — котик сидел терпеливо, но это было неприятно и для него, и для меня. С такими кактусами работать в перчатках и не ставить их там, где до них легко дотянется ребёнок или питомец.", "en": "In opuntias and cylindropuntias (cholla) the spine is ordinary, but the spine itself has small barbs like a harpoon. It goes in easily, and when pulled out it tears flesh: they hold very tight. Remove only with pliers: grip and pull sharply. There may be other methods now — but I, the site author, have always done it this way. Sometimes a spine gets stuck in a cat or dog (nose, paw): the animal endures, but it still needs to be removed — otherwise infection. Once such spines got into my cat's nose; I had to hold him and pull with pliers — the cat sat patiently, but it was unpleasant for both of us. Work with such cacti in gloves and do not place them where a child or pet can easily reach.", "uk": "У опунцій і циліндропунцій (чойя) звичайна колючка, але на самій колючці — дрібні зазубрини, як у гарпуна. В палець входить легко, а при видергуванні вириває з м'ясом: сидять дуже міцно. Витягувати лише плоскогубцями: взяти і різко видерти. Можливо, зараз є й інші методи — але я, автор сайту, завжди так робив. Буває, що колючка встромилась киці чи собаці (в ніс, лапу): тварина терпить, але витягувати все одно потрібно — інакше нагноєння. З такими кактусами працювати в рукавичках і не ставити їх там, де до них легко дістане дитина чи улюбленець." },
-    "caution_p_spines2": { "ru": "Виды с особенно «злыми» такими колючками — как пишет автор сайта от своего опыта: опунция туниката (Cylindropuntia tunicata), многие чойи (цилиндропунции). При пересадке и уходе — максимум осторожности.", "en": "Species with especially \"mean\" such spines — from the site author's experience: cylindropuntia tunicata (cholla), many cylindropuntias. When repotting and caring — maximum caution.", "uk": "Види з особливо «злими» такими колючками — як пише автор сайту з власного досвіду: опунція туніката (Cylindropuntia tunicata), багато чой (циліндропунції). При пересадці та догляді — максимум обережності." },
-    "caution_p_glochids1": { "ru": "Глохидии — это крошечные, почти невидимые колючки на ареолах опунций. На ощупь — как стекловата: впиваются в кожу десятками, болят, чешутся, плохо вытаскиваются. Выглядят при этом безобидно и даже мило: опунция микродазис (Opuntia microdasys), например, усеяна такими мелкими пучками — кажется бархатной, «пушистой». На самом деле трогать её голыми руками нельзя: глохидии останутся в пальцах и будут долго напоминать о себе.", "en": "Glochids are tiny, almost invisible spines on opuntia areoles. To the touch — like fiberglass: they stick into the skin by the dozen, hurt, itch, and are hard to remove. They look harmless and even cute: bunny ears (Opuntia microdasys), for example, is covered in such small tufts — it seems velvety, \"fluffy\". In fact you must not touch it with bare hands: glochids will stay in your fingers and remind you for a long time.", "uk": "Глохідії — це крихітні, майже непомітні колючки на ареолах опунцій. На дотик — як скловата: встромлюються в шкіру десятками, болять, сверблять, погано витягуються. Виглядають при цьому нешкідливо і навіть мило: опунція мікродазис (Opuntia microdasys), наприклад, всипана такими дрібними пучками — здається оксамитовою, «пухнастою». Насправді чіпати її голими руками не можна: глохідії залишаться в пальцях і довго нагадуватимуть про себе." },
-    "caution_p_glochids2": { "ru": "Что делать, если набил глохидии: не тереть, не чесать. Можно аккуратно снять часть липкой лентой (скотч, пластырь) или пинцетом под лупой; мелкие лучше размочить тёплой водой с мылом и потихоньку счищать. В тяжёлых случаях — к врачу.", "en": "What to do if you got glochids: do not rub or scratch. You can gently remove some with sticky tape (tape, bandage) or tweezers under a magnifier; small ones are better soaked in warm soapy water and gently scrubbed off. In severe cases — see a doctor.", "uk": "Що робити, якщо набив глохідії: не терти, не чухати. Можна акуратно зняти частину липкою стрічкою (скотч, пластир) або пінцетом під лупою; дрібні краще розмочити теплою водою з милом і потихеньку зчищати. У важких випадках — до лікаря." },
-    "caution_p_fruits": { "ru": "Плоды опунции (туны, «колючие груши») вкусные и полезные, но на кожуре и в ней сидят глохидии. Если есть неочищенными — они попадут в губы, язык, руки. Перед едой плоды надо тщательно очистить: срезать концы, надрезать кожуру вдоль и снять её (в перчатках или под струёй воды, чтобы смыть обломки). Либо покупать уже очищенные. То же касается нопалеса (молодых кладодий опунции), если готовите сами — убрать ареолы с глохидиями.", "en": "Opuntia fruits (tunas, \"prickly pears\") are tasty and healthy, but glochids sit on and in the skin. If eaten unpeeled — they will get on lips, tongue, hands. Before eating, fruits must be thoroughly cleaned: cut off the ends, slice the skin lengthwise and remove it (in gloves or under running water to rinse debris). Or buy already peeled. Same for nopales (young opuntia pads) if you cook them yourself — remove areoles with glochids.", "uk": "Плоди опунції (туни, «колючі груші») смачні й корисні, але на шкірці й у ній сидять глохідії. Якщо їсти неочищеними — потраплять на губи, язик, руки. Перед їжею плоди треба ретельно очистити: зрізати кінці, надрізати шкірку вздовж і зняти її (у рукавичках або під струменем води, щоб змити уламки). Або купувати вже очищені. Те саме стосується нопалесу (молодих кладодій опунції), якщо готуєте самі — прибрати ареоли з глохідіями." },
-    "caution_p_poison": { "ru": "У многих молочаев (эуфорбий) при надрезе выделяется млечный сок — он ядовит, раздражает кожу и слизистые. В глаза не попадать, в рот не брать; после контакта мыть руки. Держать молочаи подальше от детей и животных. Другие суккуленты (например адениум) тоже могут быть токсичны — перед покупкой стоит уточнить. Кактусы в целом не ядовиты, но колючки и глохидии — их главная «опасность».", "en": "Many euphorbias exude milky sap when cut — it is poisonous, irritates skin and mucous membranes. Do not get in eyes or mouth; wash hands after contact. Keep euphorbias away from children and animals. Other succulents (e.g. adenium) can also be toxic — worth checking before buying. Cacti are generally not poisonous, but spines and glochids are their main \"danger\".", "uk": "У багатьох молочаїв (еуфорбій) при надрізі виділяється молочний сік — він отруйний, подразнює шкіру та слизові. В очі не потрапляти, в рот не брати; після контакту мити руки. Тримати молочаї подалі від дітей та тварин. Інші сукуленти (наприклад адениум) теж можуть бути токсичні — перед покупкою варто уточнити. Кактуси загалом не отруйні, але колючки та глохідії — їхня головна «небезпека»." },
-    "caution_p_examples": { "ru": "Ниже — растения с колючками или соком, с которыми лучше не контактировать без осторожности. Подписи даны на латинском и по типу опасности.", "en": "Below — plants with spines or sap that are best not contacted without caution. Captions are in Latin and by type of hazard.", "uk": "Нижче — рослини з колючками або соком, з якими краще не контактувати без обережності. Підписи дано латиною та за типом небезпеки." },
-    "caution_fig1_caption": { "ru": "Opuntia microdasys — опунция микродазис. Глохидии (мелкие колючки, как стекловата). Опасность: механическая.", "en": "Opuntia microdasys — bunny ears. Glochids (tiny spines like fiberglass). Hazard: mechanical.", "uk": "Opuntia microdasys — опунція мікродазис. Глохідії (дрібні колючки, як скловата). Небезпека: механічна." },
-    "caution_fig2_caption": { "ru": "Cylindropuntia tunicata — цилиндропунция туниката (чойя). Колючки с зазубринами, вырывает с мясом. Опасность: механическая.", "en": "Cylindropuntia tunicata — cylindropuntia tunicata (cholla). Barbed spines, tears out flesh. Hazard: mechanical.", "uk": "Cylindropuntia tunicata — циліндропунція туніката (чойя). Колючки із зазубринами, вириває з м'ясом. Небезпека: механічна." },
-    "caution_fig3_caption": { "ru": "Adenium obesum — адениум тучный, пустынная роза (с розовыми цветами). Ядовит: кардиогликозиды, сок опасен. Опасность: химическая.", "en": "Adenium obesum — desert rose (pink flowers). Poisonous: cardenolides, sap dangerous. Hazard: chemical.", "uk": "Adenium obesum — адениум тучний, пустельна троянда (з рожевими квітами). Отруйний: кардіоглікозиди, сік небезпечний. Небезпека: хімічна." },
-    "caution_fig4_caption": { "ru": "Euphorbia obesa — эуфорбия обеса (часто продаётся как «какктус милк» или «baseball plant»). Это не кактус, а суккулент из семейства молочайных; белый млечный сок токсичен. Опасность: химическая (при попадании в глаза или рот, при проглатывании).", "en": "Euphorbia obesa — baseball plant (often sold as \"cactus milk\"). Not a cactus but a succulent in the spurge family; white milky sap is toxic. Hazard: chemical (if in eyes or mouth, if swallowed).", "uk": "Euphorbia obesa — еуфорбія обеса (часто продається як «кактус мілк» або «baseball plant»). Це не кактус, а сукулент з родини молочайних; білий молочний сік токсичний. Небезпека: хімічна (при потраплянні в очі чи рот, при ковтанні)." },
+    "caution_h2_spines": {
+      "ru": "Колючки с зазубринами — как гарпун, вырывает с мясом",
+      "en": "Barbed spines — like a harpoon, tears out with flesh",
+      "uk": "Колючки із зазубринами — як гарпун, вириває з м'ясом",
+      "be": "Колючки с зазубринами — как гарпун, вырывает с мясом"
+    },
+    "caution_h2_glochids": {
+      "ru": "Глохидии: мельчайшие шипы, как стекловата",
+      "en": "Glochids: tiny spines like fiberglass",
+      "uk": "Глохідії: найменші шипи, як скловата",
+      "be": "Глохидии: мельчайшие шипы, как стекловата"
+    },
+    "caution_h2_fruits": {
+      "ru": "Плоды опунции: перед едой — обязательно чистить",
+      "en": "Opuntia fruits: clean thoroughly before eating",
+      "uk": "Плоди опунції: перед їжею — обов'язково чистити",
+      "be": "Плоды опунции: перед едой — обязательно чистить"
+    },
+    "caution_h2_poison": {
+      "ru": "Ядовитые: молочаи и другие суккуленты",
+      "en": "Poisonous: euphorbias and other succulents",
+      "uk": "Отруйні: молочаї та інші сукуленти",
+      "be": "Ядовитые: молочаи и другие суккуленты"
+    },
+    "caution_h2_examples": {
+      "ru": "Как выглядят: примеры (фото)",
+      "en": "What they look like: examples (photos)",
+      "uk": "Як виглядають: приклади (фото)",
+      "be": "Как выглядят: примеры (фото)"
+    },
+    "caution_p_spines1": {
+      "ru": "У опунций и цилиндропунций (чойя) идёт обычная колючка, но на самой колючке — мелкие зазубрины, как у гарпуна. В палец входит легко, а при выдёргивании вырывает с мясом: сидят очень крепко. Вытаскивать только плоскогубцами: взять и резко выдернуть. Возможно, сейчас есть и другие методы — но я, автор сайта, всегда так делал. Бывает, что колючка впилась кошке или собаке (в нос, лапу): животное терпит, но вытаскивать всё равно нужно — иначе нагноение. Один раз моему коту такие колючки впились в нос; пришлось держать и выдёргивать плоскогубцами — котик сидел терпеливо, но это было неприятно и для него, и для меня. С такими кактусами работать в перчатках и не ставить их там, где до них легко дотянется ребёнок или питомец.",
+      "en": "In opuntias and cylindropuntias (cholla) the spine is ordinary, but the spine itself has small barbs like a harpoon. It goes in easily, and when pulled out it tears flesh: they hold very tight. Remove only with pliers: grip and pull sharply. There may be other methods now — but I, the site author, have always done it this way. Sometimes a spine gets stuck in a cat or dog (nose, paw): the animal endures, but it still needs to be removed — otherwise infection. Once such spines got into my cat's nose; I had to hold him and pull with pliers — the cat sat patiently, but it was unpleasant for both of us. Work with such cacti in gloves and do not place them where a child or pet can easily reach.",
+      "uk": "У опунцій і циліндропунцій (чойя) звичайна колючка, але на самій колючці — дрібні зазубрини, як у гарпуна. В палець входить легко, а при видергуванні вириває з м'ясом: сидять дуже міцно. Витягувати лише плоскогубцями: взяти і різко видерти. Можливо, зараз є й інші методи — але я, автор сайту, завжди так робив. Буває, що колючка встромилась киці чи собаці (в ніс, лапу): тварина терпить, але витягувати все одно потрібно — інакше нагноєння. З такими кактусами працювати в рукавичках і не ставити їх там, де до них легко дістане дитина чи улюбленець.",
+      "be": "У опунций и цилиндропунций (чойя) идёт обычная колючка, но на самой колючке — мелкие зазубрины, как у гарпуна. В палец входит легко, а при выдёргивании вырывает с мясом: сидят очень крепко. Вытаскивать только плоскогубцами: взять и резко выдернуть. Возможно, сейчас есть и другие методы — но я, автор сайта, всегда так делал. Бывает, что колючка впилась кошке или собаке (в нос, лапу): животное терпит, но вытаскивать всё равно нужно — иначе нагноение. Один раз моему коту такие колючки впились в нос; пришлось держать и выдёргивать плоскогубцами — котик сидел терпеливо, но это было неприятно и для него, и для меня. С такими кактусами работать в перчатках и не ставить их там, где до них легко дотянется ребёнок или питомец."
+    },
+    "caution_p_spines2": {
+      "ru": "Виды с особенно «злыми» такими колючками — как пишет автор сайта от своего опыта: опунция туниката (Cylindropuntia tunicata), многие чойи (цилиндропунции). При пересадке и уходе — максимум осторожности.",
+      "en": "Species with especially \"mean\" such spines — from the site author's experience: cylindropuntia tunicata (cholla), many cylindropuntias. When repotting and caring — maximum caution.",
+      "uk": "Види з особливо «злими» такими колючками — як пише автор сайту з власного досвіду: опунція туніката (Cylindropuntia tunicata), багато чой (циліндропунції). При пересадці та догляді — максимум обережності.",
+      "be": "Виды с особенно «злыми» такими колючками — как пишет автор сайта от своего опыта: опунция туниката (Cylindropuntia tunicata), многие чойи (цилиндропунции). При пересадке и уходе — максимум осторожности."
+    },
+    "caution_p_glochids1": {
+      "ru": "Глохидии — это крошечные, почти невидимые колючки на ареолах опунций. На ощупь — как стекловата: впиваются в кожу десятками, болят, чешутся, плохо вытаскиваются. Выглядят при этом безобидно и даже мило: опунция микродазис (Opuntia microdasys), например, усеяна такими мелкими пучками — кажется бархатной, «пушистой». На самом деле трогать её голыми руками нельзя: глохидии останутся в пальцах и будут долго напоминать о себе.",
+      "en": "Glochids are tiny, almost invisible spines on opuntia areoles. To the touch — like fiberglass: they stick into the skin by the dozen, hurt, itch, and are hard to remove. They look harmless and even cute: bunny ears (Opuntia microdasys), for example, is covered in such small tufts — it seems velvety, \"fluffy\". In fact you must not touch it with bare hands: glochids will stay in your fingers and remind you for a long time.",
+      "uk": "Глохідії — це крихітні, майже непомітні колючки на ареолах опунцій. На дотик — як скловата: встромлюються в шкіру десятками, болять, сверблять, погано витягуються. Виглядають при цьому нешкідливо і навіть мило: опунція мікродазис (Opuntia microdasys), наприклад, всипана такими дрібними пучками — здається оксамитовою, «пухнастою». Насправді чіпати її голими руками не можна: глохідії залишаться в пальцях і довго нагадуватимуть про себе.",
+      "be": "Глохидии — это крошечные, почти невидимые колючки на ареолах опунций. На ощупь — как стекловата: впиваются в кожу десятками, болят, чешутся, плохо вытаскиваются. Выглядят при этом безобидно и даже мило: опунция микродазис (Opuntia microdasys), например, усеяна такими мелкими пучками — кажется бархатной, «пушистой». На самом деле трогать её голыми руками нельзя: глохидии останутся в пальцах и будут долго напоминать о себе."
+    },
+    "caution_p_glochids2": {
+      "ru": "Что делать, если набил глохидии: не тереть, не чесать. Можно аккуратно снять часть липкой лентой (скотч, пластырь) или пинцетом под лупой; мелкие лучше размочить тёплой водой с мылом и потихоньку счищать. В тяжёлых случаях — к врачу.",
+      "en": "What to do if you got glochids: do not rub or scratch. You can gently remove some with sticky tape (tape, bandage) or tweezers under a magnifier; small ones are better soaked in warm soapy water and gently scrubbed off. In severe cases — see a doctor.",
+      "uk": "Що робити, якщо набив глохідії: не терти, не чухати. Можна акуратно зняти частину липкою стрічкою (скотч, пластир) або пінцетом під лупою; дрібні краще розмочити теплою водою з милом і потихеньку зчищати. У важких випадках — до лікаря.",
+      "be": "Что делать, если набил глохидии: не тереть, не чесать. Можно аккуратно снять часть липкой лентой (скотч, пластырь) или пинцетом под лупой; мелкие лучше размочить тёплой водой с мылом и потихоньку счищать. В тяжёлых случаях — к врачу."
+    },
+    "caution_p_fruits": {
+      "ru": "Плоды опунции (туны, «колючие груши») вкусные и полезные, но на кожуре и в ней сидят глохидии. Если есть неочищенными — они попадут в губы, язык, руки. Перед едой плоды надо тщательно очистить: срезать концы, надрезать кожуру вдоль и снять её (в перчатках или под струёй воды, чтобы смыть обломки). Либо покупать уже очищенные. То же касается нопалеса (молодых кладодий опунции), если готовите сами — убрать ареолы с глохидиями.",
+      "en": "Opuntia fruits (tunas, \"prickly pears\") are tasty and healthy, but glochids sit on and in the skin. If eaten unpeeled — they will get on lips, tongue, hands. Before eating, fruits must be thoroughly cleaned: cut off the ends, slice the skin lengthwise and remove it (in gloves or under running water to rinse debris). Or buy already peeled. Same for nopales (young opuntia pads) if you cook them yourself — remove areoles with glochids.",
+      "uk": "Плоди опунції (туни, «колючі груші») смачні й корисні, але на шкірці й у ній сидять глохідії. Якщо їсти неочищеними — потраплять на губи, язик, руки. Перед їжею плоди треба ретельно очистити: зрізати кінці, надрізати шкірку вздовж і зняти її (у рукавичках або під струменем води, щоб змити уламки). Або купувати вже очищені. Те саме стосується нопалесу (молодих кладодій опунції), якщо готуєте самі — прибрати ареоли з глохідіями.",
+      "be": "Плоды опунции (туны, «колючие груши») вкусные и полезные, но на кожуре и в ней сидят глохидии. Если есть неочищенными — они попадут в губы, язык, руки. Перед едой плоды надо тщательно очистить: срезать концы, надрезать кожуру вдоль и снять её (в перчатках или под струёй воды, чтобы смыть обломки). Либо покупать уже очищенные. То же касается нопалеса (молодых кладодий опунции), если готовите сами — убрать ареолы с глохидиями."
+    },
+    "caution_p_poison": {
+      "ru": "У многих молочаев (эуфорбий) при надрезе выделяется млечный сок — он ядовит, раздражает кожу и слизистые. В глаза не попадать, в рот не брать; после контакта мыть руки. Держать молочаи подальше от детей и животных. Другие суккуленты (например адениум) тоже могут быть токсичны — перед покупкой стоит уточнить. Кактусы в целом не ядовиты, но колючки и глохидии — их главная «опасность».",
+      "en": "Many euphorbias exude milky sap when cut — it is poisonous, irritates skin and mucous membranes. Do not get in eyes or mouth; wash hands after contact. Keep euphorbias away from children and animals. Other succulents (e.g. adenium) can also be toxic — worth checking before buying. Cacti are generally not poisonous, but spines and glochids are their main \"danger\".",
+      "uk": "У багатьох молочаїв (еуфорбій) при надрізі виділяється молочний сік — він отруйний, подразнює шкіру та слизові. В очі не потрапляти, в рот не брати; після контакту мити руки. Тримати молочаї подалі від дітей та тварин. Інші сукуленти (наприклад адениум) теж можуть бути токсичні — перед покупкою варто уточнити. Кактуси загалом не отруйні, але колючки та глохідії — їхня головна «небезпека».",
+      "be": "У многих молочаев (эуфорбий) при надрезе выделяется млечный сок — он ядовит, раздражает кожу и слизистые. В глаза не попадать, в рот не брать; после контакта мыть руки. Держать молочаи подальше от детей и животных. Другие суккуленты (например адениум) тоже могут быть токсичны — перед покупкой стоит уточнить. Кактусы в целом не ядовиты, но колючки и глохидии — их главная «опасность»."
+    },
+    "caution_p_examples": {
+      "ru": "Ниже — растения с колючками или соком, с которыми лучше не контактировать без осторожности. Подписи даны на латинском и по типу опасности.",
+      "en": "Below — plants with spines or sap that are best not contacted without caution. Captions are in Latin and by type of hazard.",
+      "uk": "Нижче — рослини з колючками або соком, з якими краще не контактувати без обережності. Підписи дано латиною та за типом небезпеки.",
+      "be": "Ниже — растения с колючками или соком, с которыми лучше не контактировать без осторожности. Подписи даны на латинском и по типу опасности."
+    },
+    "caution_fig1_caption": {
+      "ru": "Opuntia microdasys — опунция микродазис. Глохидии (мелкие колючки, как стекловата). Опасность: механическая.",
+      "en": "Opuntia microdasys — bunny ears. Glochids (tiny spines like fiberglass). Hazard: mechanical.",
+      "uk": "Opuntia microdasys — опунція мікродазис. Глохідії (дрібні колючки, як скловата). Небезпека: механічна.",
+      "be": "Opuntia microdasys — опунция микродазис. Глохидии (мелкие колючки, как стекловата). Опасность: механическая."
+    },
+    "caution_fig2_caption": {
+      "ru": "Cylindropuntia tunicata — цилиндропунция туниката (чойя). Колючки с зазубринами, вырывает с мясом. Опасность: механическая.",
+      "en": "Cylindropuntia tunicata — cylindropuntia tunicata (cholla). Barbed spines, tears out flesh. Hazard: mechanical.",
+      "uk": "Cylindropuntia tunicata — циліндропунція туніката (чойя). Колючки із зазубринами, вириває з м'ясом. Небезпека: механічна.",
+      "be": "Cylindropuntia tunicata — цилиндропунция туниката (чойя). Колючки с зазубринами, вырывает с мясом. Опасность: механическая."
+    },
+    "caution_fig3_caption": {
+      "ru": "Adenium obesum — адениум тучный, пустынная роза (с розовыми цветами). Ядовит: кардиогликозиды, сок опасен. Опасность: химическая.",
+      "en": "Adenium obesum — desert rose (pink flowers). Poisonous: cardenolides, sap dangerous. Hazard: chemical.",
+      "uk": "Adenium obesum — адениум тучний, пустельна троянда (з рожевими квітами). Отруйний: кардіоглікозиди, сік небезпечний. Небезпека: хімічна.",
+      "be": "Adenium obesum — адениум тучный, пустынная роза (с розовыми цветами). Ядовит: кардиогликозиды, сок опасен. Опасность: химическая."
+    },
+    "caution_fig4_caption": {
+      "ru": "Euphorbia obesa — эуфорбия обеса (часто продаётся как «какктус милк» или «baseball plant»). Это не кактус, а суккулент из семейства молочайных; белый млечный сок токсичен. Опасность: химическая (при попадании в глаза или рот, при проглатывании).",
+      "en": "Euphorbia obesa — baseball plant (often sold as \"cactus milk\"). Not a cactus but a succulent in the spurge family; white milky sap is toxic. Hazard: chemical (if in eyes or mouth, if swallowed).",
+      "uk": "Euphorbia obesa — еуфорбія обеса (часто продається як «кактус мілк» або «baseball plant»). Це не кактус, а сукулент з родини молочайних; білий молочний сік токсичний. Небезпека: хімічна (при потраплянні в очі чи рот, при ковтанні).",
+      "be": "Euphorbia obesa — эуфорбия обеса (часто продаётся как «какктус милк» или «baseball plant»). Это не кактус, а суккулент из семейства молочайных; белый млечный сок токсичен. Опасность: химическая (при попадании в глаза или рот, при проглатывании)."
+    },
     "about_intro": {
       "ru": "Почему «Кактусярий», кто сделал сайт и что здесь найдёте.",
       "en": "Why Cactusarium, who made the site and what you'll find here.",
@@ -1012,7 +1238,9 @@
       "it": "Perché Cactusarium e cosa trovate qui.",
       "jp": "なぜこのサイト、誰が作ったか。",
       "zh": "为何叫仙人掌园、谁建站、内容概览。",
-      "he": "למה קקטוסריום ומה תמצאו כאן."
+      "he": "למה קקטוסריום ומה תמצאו כאן.",
+      "uk": "Почему «Кактусярий», кто сделал сайт и что здесь найдёте.",
+      "be": "Почему «Кактусярий», кто сделал сайт и что здесь найдёте."
     },
     "origin_cacti_title": {
       "ru": "Происхождение кактусов",
@@ -1023,7 +1251,9 @@
       "it": "Origine dei cactus",
       "jp": "サボテンの起源",
       "zh": "仙人掌的起源",
-      "he": "מוצא הקקטיים"
+      "he": "מוצא הקקטיים",
+      "uk": "Происхождение кактусов",
+      "be": "Происхождение кактусов"
     },
     "class_succulents_intro": {
       "ru": "Суккуленты — это не только кактусы. К суккулентным относят множество семейств и родов растений из разных частей света.",
@@ -1034,7 +1264,9 @@
       "it": "Le succulente non sono solo cactus.",
       "jp": "多肉植物はサボテンだけではありません。",
       "zh": "多肉植物不只有仙人掌。",
-      "he": "סוקולנטים הם לא רק קקטי."
+      "he": "סוקולנטים הם לא רק קקטי.",
+      "uk": "Суккуленты — это не только кактусы. К суккулентным относят множество семейств и родов растений из разных частей света.",
+      "be": "Суккуленты — это не только кактусы. К суккулентным относят множество семейств и родов растений из разных частей света."
     },
     "page_developing_succulents": {
       "ru": "Раздел в разработке. Скоро здесь появится обзор классификации суккулентов. Пока можно перейти в раздел «Суккуленты».",
@@ -1045,7 +1277,9 @@
       "it": "Sezione in lavorazione. Presto la classificazione delle succulente.",
       "jp": "準備中。多肉の分類は近日公開。",
       "zh": "本节建设中。可先查看「多肉植物」板块。",
-      "he": "המדור בהכנה. בקרוב סיווג סוקולנטים."
+      "he": "המדור בהכנה. בקרוב סיווג סוקולנטים.",
+      "uk": "Раздел в разработке. Скоро здесь появится обзор классификации суккулентов. Пока можно перейти в раздел «Суккуленты».",
+      "be": "Раздел в разработке. Скоро здесь появится обзор классификации суккулентов. Пока можно перейти в раздел «Суккуленты»."
     },
     "identifier_title": {
       "ru": "🌵 Опознать кактус",
@@ -1056,7 +1290,9 @@
       "it": "🌵 Identifica cactus",
       "jp": "🌵 サボテンを同定",
       "zh": "🌵 识别仙人掌",
-      "he": "🌵 זיהוי קקטוס"
+      "he": "🌵 זיהוי קקטוס",
+      "uk": "🌵 Опознать кактус",
+      "be": "🌵 Опознать кактус"
     },
     "identifier_subtitle": {
       "ru": "Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать",
@@ -1067,7 +1303,9 @@
       "it": "Carica una foto — specie, dove cresce, curiosità e cure",
       "jp": "写真をアップロード — 種類、自生地、豆知識、手入れ",
       "zh": "上传照片 — 识别种类、产地、趣闻与养护",
-      "he": "העלה תמונה — מין, תפוצה, עובדות וטיפול"
+      "he": "העלה תמונה — מין, תפוצה, עובדות וטיפול",
+      "uk": "Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать",
+      "be": "Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать"
     },
     "identifier_upload_hint": {
       "ru": "Нажмите или перетащите фото кактуса сюда",
@@ -1078,7 +1316,9 @@
       "it": "Clicca o trascina una foto di cactus qui",
       "jp": "クリックまたは写真をここにドラッグ",
       "zh": "点击或拖拽仙人掌照片到此处",
-      "he": "לחץ או גרור תמונת קקטוס לכאן"
+      "he": "לחץ או גרור תמונת קקטוס לכאן",
+      "uk": "Нажмите или перетащите фото кактуса сюда",
+      "be": "Нажмите или перетащите фото кактуса сюда"
     },
     "identifier_btn": {
       "ru": "Определить кактус",
@@ -1089,7 +1329,9 @@
       "it": "Identifica cactus",
       "jp": "同定する",
       "zh": "识别仙人掌",
-      "he": "זהה קקטוס"
+      "he": "זהה קקטוס",
+      "uk": "Определить кактус",
+      "be": "Определить кактус"
     },
     "identifier_btn_loading": {
       "ru": "Определяю…",
@@ -1100,7 +1342,9 @@
       "it": "Identificazione…",
       "jp": "同定中…",
       "zh": "识别中…",
-      "he": "מזהה…"
+      "he": "מזהה…",
+      "uk": "Определяю…",
+      "be": "Определяю…"
     },
     "identifier_upload_aria": {
       "ru": "Нажмите или перетащите фото кактуса",
@@ -1111,7 +1355,9 @@
       "it": "Clicca o trascina foto",
       "jp": "クリックまたはドラッグ",
       "zh": "点击或拖拽照片",
-      "he": "לחץ או גרור תמונה"
+      "he": "לחץ או גרור תמונה",
+      "uk": "Нажмите или перетащите фото кактуса",
+      "be": "Нажмите или перетащите фото кактуса"
     },
     "identifier_select_file_aria": {
       "ru": "Выбрать файл",
@@ -1122,7 +1368,9 @@
       "it": "Seleziona file",
       "jp": "ファイルを選択",
       "zh": "选择文件",
-      "he": "בחר קובץ"
+      "he": "בחר קובץ",
+      "uk": "Выбрать файл",
+      "be": "Выбрать файл"
     },
     "identifier_clear_aria": {
       "ru": "Убрать фото",
@@ -1133,7 +1381,9 @@
       "it": "Rimuovi foto",
       "jp": "写真を削除",
       "zh": "移除照片",
-      "he": "הסר תמונה"
+      "he": "הסר תמונה",
+      "uk": "Убрать фото",
+      "be": "Убрать фото"
     },
     "identifier_preview_alt": {
       "ru": "Предпросмотр загруженного фото",
@@ -1144,7 +1394,9 @@
       "it": "Anteprima foto",
       "jp": "アップロード写真のプレビュー",
       "zh": "上传照片预览",
-      "he": "תצוגה מקדימה"
+      "he": "תצוגה מקדימה",
+      "uk": "Предпросмотр загруженного фото",
+      "be": "Предпросмотр загруженного фото"
     },
     "identifier_clear_history": {
       "ru": "Очистить историю",
@@ -1155,7 +1407,9 @@
       "it": "Cancella cronologia",
       "jp": "履歴をクリア",
       "zh": "清除记录",
-      "he": "נקה היסטוריה"
+      "he": "נקה היסטוריה",
+      "uk": "Очистить историю",
+      "be": "Очистить историю"
     },
     "nav_geography": {
       "ru": "Места обитания",
@@ -1163,7 +1417,8 @@
       "uk": "Місця проживання",
       "zh": "生境",
       "es": "Hábitats",
-      "he": "סביבות מחיה"
+      "he": "סביבות מחיה",
+      "be": "Места обитания"
     },
     "nav_care": {
       "ru": "Здоровье кактуса",
@@ -1171,7 +1426,8 @@
       "uk": "Здоров'я кактуса",
       "zh": "仙人掌养护",
       "es": "Cuidado del cactus",
-      "he": "טיפול בקקטוס"
+      "he": "טיפול בקקטוס",
+      "be": "Здоровье кактуса"
     },
     "nav_identify": {
       "ru": "Опознать кактус",
@@ -1179,7 +1435,8 @@
       "uk": "Впізнати кактус",
       "zh": "识别仙人掌",
       "es": "Identificar cactus",
-      "he": "זיהוי קקטוס"
+      "he": "זיהוי קקטוס",
+      "be": "Опознать кактус"
     },
     "nav_guardian": {
       "ru": "✦ Колючий Собеседник",
@@ -1187,7 +1444,8 @@
       "uk": "✦ Колючий Співбесідник",
       "zh": "✦ 守护者",
       "es": "✦ Compañero",
-      "he": "✦ שומר"
+      "he": "✦ שומר",
+      "be": "✦ Колючий Собеседник"
     },
     "nav_main": {
       "ru": "Главная",
@@ -1195,7 +1453,8 @@
       "uk": "Головна",
       "zh": "首页",
       "es": "Inicio",
-      "he": "עמוד ראשי"
+      "he": "עמוד ראשי",
+      "be": "Главная"
     },
     "nav_navigator": {
       "ru": "Навигатор по кактусам",
@@ -1203,7 +1462,8 @@
       "uk": "Навігатор по кактусах",
       "zh": "仙人掌导航",
       "es": "Navegador de cactus",
-      "he": "ניווט קקטי"
+      "he": "ניווט קקטי",
+      "be": "Навигатор по кактусам"
     },
     "nav_book": {
       "ru": "Кактусология",
@@ -1211,7 +1471,8 @@
       "uk": "Кактусологія",
       "zh": "仙人掌学",
       "es": "Cactología",
-      "he": "קטולוגיה"
+      "he": "קטולוגיה",
+      "be": "Кактусология"
     },
     "nav_great": {
       "ru": "Великие кактусоводы",
@@ -1219,7 +1480,8 @@
       "uk": "Великі кактусоводи",
       "zh": "著名仙人掌学者",
       "es": "Grandes cactólogos",
-      "he": "חוקרי קקטי דגולים"
+      "he": "חוקרי קקטי דגולים",
+      "be": "Великие кактусоводы"
     },
     "nav_relax": {
       "ru": "Отдых",
@@ -1227,7 +1489,8 @@
       "uk": "Відпочинок",
       "zh": "休息",
       "es": "Descanso",
-      "he": "מנוחה"
+      "he": "מנוחה",
+      "be": "Отдых"
     },
     "nav_draw": {
       "ru": "Рисование",
@@ -1235,7 +1498,8 @@
       "uk": "Малювання",
       "zh": "绘画",
       "es": "Dibujo",
-      "he": "ציור"
+      "he": "ציור",
+      "be": "Рисование"
     },
     "nav_succulents": {
       "ru": "Суккуленты",
@@ -1243,7 +1507,8 @@
       "uk": "Сукуленти",
       "zh": "多肉植物",
       "es": "Suculentas",
-      "he": "סוקולנטים"
+      "he": "סוקולנטים",
+      "be": "Суккуленты"
     },
     "nav_edible": {
       "ru": "Съедобные кактусы",
@@ -1251,7 +1516,8 @@
       "uk": "Їстівні кактуси",
       "zh": "可食仙人掌",
       "es": "Cactus comestibles",
-      "he": "קקטי אכילים"
+      "he": "קקטי אכילים",
+      "be": "Съедобные кактусы"
     },
     "nav_rarities": {
       "ru": "Редкости",
@@ -1259,7 +1525,8 @@
       "uk": "Рідкості",
       "zh": "珍品",
       "es": "Rarezas",
-      "he": "נדירים"
+      "he": "נדירים",
+      "be": "Редкости"
     },
     "nav_facts": {
       "ru": "Интересные факты",
@@ -1267,7 +1534,8 @@
       "uk": "Цікаві факти",
       "zh": "趣闻",
       "es": "Datos curiosos",
-      "he": "עובדות מעניינות"
+      "he": "עובדות מעניינות",
+      "be": "Интересные факты"
     },
     "nav_caution": {
       "ru": "Осторожно",
@@ -1275,7 +1543,8 @@
       "uk": "Обережно",
       "zh": "注意",
       "es": "Precaución",
-      "he": "זהירות"
+      "he": "זהירות",
+      "be": "Осторожно"
     },
     "nav_files": {
       "ru": "Список файлов (по алфавиту)",
@@ -1286,7 +1555,9 @@
       "es": "Lista de archivos",
       "de": "Dateiliste",
       "fr": "Liste des fichiers",
-      "he": "רשימת קבצים"
+      "he": "רשימת קבצים",
+      "uk": "Список файлов (по алфавиту)",
+      "be": "Список файлов (по алфавиту)"
     },
     "search_placeholder": {
       "ru": "Название кактуса…",
@@ -1294,7 +1565,8 @@
       "uk": "Назва кактуса…",
       "zh": "仙人掌名称…",
       "es": "Nombre del cactus…",
-      "he": "שם קקטוס…"
+      "he": "שם קקטוס…",
+      "be": "Название кактуса…"
     },
     "search_btn": {
       "ru": "Найти",
@@ -1302,7 +1574,8 @@
       "uk": "Знайти",
       "zh": "查找",
       "es": "Buscar",
-      "he": "חפש"
+      "he": "חפש",
+      "be": "Найти"
     },
     "more_btn": {
       "ru": "Ещё",
@@ -1310,7 +1583,8 @@
       "uk": "Ще",
       "zh": "更多",
       "es": "Más",
-      "he": "עוד"
+      "he": "עוד",
+      "be": "Ещё"
     },
     "navigator_title": {
       "ru": "Навигатор по кактусам",
@@ -1321,7 +1595,9 @@
       "es": "Navegador de cactus",
       "de": "Kakteen-Navigator",
       "fr": "Navigateur cactus",
-      "he": "ניווט קקטי"
+      "he": "ניווט קקטי",
+      "uk": "Навигатор по кактусам",
+      "be": "Навигатор по кактусам"
     },
     "navigator_intro": {
       "ru": "Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.",
@@ -1332,7 +1608,9 @@
       "es": "Introduce el nombre de un cactus o suculenta arriba — enlaces a cuidado, área, sistemática o preguntar a la IA.",
       "de": "Kakteen- oder Sukkulentenname oben eingeben — Links zu Pflege, Verbreitung, Systematik oder KI fragen.",
       "fr": "Entrez un nom de cactus ou succulente ci-dessus — liens vers soins, répartition, systématique ou demander à l'IA.",
-      "he": "הזן שם קקטוס או סוקולנט למעלה — קישורים לטיפול, תפוצה, סיסטמטיקה או לשאול את ה-AI."
+      "he": "הזן שם קקטוס או סוקולנט למעלה — קישורים לטיפול, תפוצה, סיסטמטיקה או לשאול את ה-AI.",
+      "uk": "Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.",
+      "be": "Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ."
     },
     "navigator_desc_care": {
       "ru": "Уход для этого вида",
@@ -1340,7 +1618,8 @@
       "es": "Cuidado para esta especie",
       "uk": "Догляд для цього виду",
       "zh": "该物种养护",
-      "he": "טיפול למין זה"
+      "he": "טיפול למין זה",
+      "be": "Уход для этого вида"
     },
     "navigator_desc_geography": {
       "ru": "Ареал на карте",
@@ -1348,7 +1627,8 @@
       "es": "Área en el mapa",
       "uk": "Ареал на карті",
       "zh": "分布地图",
-      "he": "תפוצה על המפה"
+      "he": "תפוצה על המפה",
+      "be": "Ареал на карте"
     },
     "navigator_desc_systematics": {
       "ru": "Систематика, названия",
@@ -1356,7 +1636,8 @@
       "es": "Sistemática, nombres",
       "uk": "Систематика, назви",
       "zh": "分类与名称",
-      "he": "סיסטמטיקה, שמות"
+      "he": "סיסטמטיקה, שמות",
+      "be": "Систематика, названия"
     },
     "navigator_desc_identifier": {
       "ru": "Определить по фото",
@@ -1364,7 +1645,8 @@
       "es": "Identificar por foto",
       "uk": "Визначити за фото",
       "zh": "按照片识别",
-      "he": "זיהוי לפי תמונה"
+      "he": "זיהוי לפי תמונה",
+      "be": "Определить по фото"
     },
     "navigator_desc_guardian": {
       "ru": "Колючий Собеседник ответит на вопрос",
@@ -1372,7 +1654,8 @@
       "es": "El compañero responderá tu pregunta",
       "uk": "Колючий Співбесідник відповість на питання",
       "zh": "守护者回答您的问题",
-      "he": "השומר יענה על שאלתך"
+      "he": "השומר יענה על שאלתך",
+      "be": "Колючий Собеседник ответит на вопрос"
     },
     "navigator_results_title": {
       "ru": "Результаты по запросу",
@@ -1380,7 +1663,8 @@
       "es": "Resultados para la búsqueda",
       "uk": "Результати за запитом",
       "zh": "搜索结果",
-      "he": "תוצאות לחיפוש"
+      "he": "תוצאות לחיפוש",
+      "be": "Результаты по запросу"
     },
     "navigator_results_intro": {
       "ru": "Перейдите в нужный раздел — там будет учтён ваш запрос (разделы дорабатываются).",
@@ -1388,7 +1672,8 @@
       "es": "Ve a la sección que necesites — allí se tendrá en cuenta tu búsqueda.",
       "uk": "Перейдіть у потрібний розділ — там буде враховано ваш запит.",
       "zh": "进入相应板块 — 将根据您的搜索显示内容。",
-      "he": "עבור לסעיף המתאים — השאילתה תילקח בחשבון."
+      "he": "עבור לסעיף המתאים — השאילתה תילקח בחשבון.",
+      "be": "Перейдите в нужный раздел — там будет учтён ваш запрос (разделы дорабатываются)."
     },
     "navigator_empty_hint": {
       "ru": "Введите запрос в поле поиска в шапке и нажмите «Найти».",
@@ -1396,7 +1681,8 @@
       "es": "Introduce tu búsqueda en el campo de la cabecera y pulsa «Buscar».",
       "uk": "Введіть запит у поле пошуку в шапці та натисніть «Знайти».",
       "zh": "在顶部搜索框输入并点击「查找」。",
-      "he": "הזן את החיפוש בשדה בכותרת ולחץ «חפש»."
+      "he": "הזן את החיפוש בשדה בכותרת ולחץ «חפש».",
+      "be": "Введите запрос в поле поиска в шапке и нажмите «Найти»."
     },
     "guardian_back": {
       "ru": "← На главную",
@@ -1407,7 +1693,9 @@
       "es": "← Volver al inicio",
       "de": "← Zur Startseite",
       "fr": "← Retour à l'accueil",
-      "he": "← לדף הראשי"
+      "he": "← לדף הראשי",
+      "uk": "← На главную",
+      "be": "← На главную"
     },
     "guardian_title": {
       "ru": "Колючий Собеседник",
@@ -1418,7 +1706,9 @@
       "es": "Compañero cactus",
       "de": "Kaktus-Begleiter",
       "fr": "Compagnon cactus",
-      "he": "שומר"
+      "he": "שומר",
+      "uk": "Колючий Собеседник",
+      "be": "Колючий Собеседник"
     },
     "guardian_subtitle": {
       "ru": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве.",
@@ -1429,7 +1719,9 @@
       "es": "El compañero conoce el libro Cactología, especies y área. Charla sobre cactus, idiomas, creatividad.",
       "de": "Der Begleiter kennt das Buch Kaktologie, Arten und Verbreitung. Gespräch über Kakteen, Sprachen, Kreativität.",
       "fr": "Le compagnon connaît le livre Cactologie, espèces et aire. Conversation sur les cactus, langues, créativité.",
-      "he": "השומר מכיר את הסיפורים והספר באתר."
+      "he": "השומר מכיר את הסיפורים והספר באתר.",
+      "uk": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве.",
+      "be": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве."
     },
     "guardian_mode": {
       "ru": "Режим:",
@@ -1440,7 +1732,9 @@
       "es": "Modo:",
       "de": "Modus:",
       "fr": "Mode :",
-      "he": "מצב:"
+      "he": "מצב:",
+      "uk": "Режим:",
+      "be": "Режим:"
     },
     "guardian_mode_assistant": {
       "ru": "Разговор",
@@ -1451,7 +1745,9 @@
       "es": "Charla",
       "de": "Gespräch",
       "fr": "Conversation",
-      "he": "שיחה"
+      "he": "שיחה",
+      "uk": "Разговор",
+      "be": "Разговор"
     },
     "guardian_mode_children": {
       "ru": "Для детей",
@@ -1462,7 +1758,9 @@
       "es": "Para niños",
       "de": "Für Kinder",
       "fr": "Pour enfants",
-      "he": "לילדים"
+      "he": "לילדים",
+      "uk": "Для детей",
+      "be": "Для детей"
     },
     "guardian_mode_language": {
       "ru": "Языки",
@@ -1473,7 +1771,9 @@
       "es": "Idiomas",
       "de": "Sprachen",
       "fr": "Langues",
-      "he": "שפות"
+      "he": "שפות",
+      "uk": "Языки",
+      "be": "Языки"
     },
     "guardian_mode_art": {
       "ru": "Рисование",
@@ -1484,7 +1784,9 @@
       "es": "Dibujo",
       "de": "Zeichnen",
       "fr": "Dessin",
-      "he": "ציור"
+      "he": "ציור",
+      "uk": "Рисование",
+      "be": "Рисование"
     },
     "guardian_mode_psychology": {
       "ru": "Душа",
@@ -1495,7 +1797,9 @@
       "es": "Alma",
       "de": "Seele",
       "fr": "Âme",
-      "he": "נשמה"
+      "he": "נשמה",
+      "uk": "Душа",
+      "be": "Душа"
     },
     "guardian_role_lang": {
       "ru": "Языки",
@@ -1506,7 +1810,9 @@
       "es": "Idiomas",
       "de": "Sprachen",
       "fr": "Langues",
-      "he": "שפות"
+      "he": "שפות",
+      "uk": "Языки",
+      "be": "Языки"
     },
     "guardian_role_art": {
       "ru": "Рисование",
@@ -1517,7 +1823,9 @@
       "es": "Arte",
       "de": "Kunst",
       "fr": "Art",
-      "he": "ציור"
+      "he": "ציור",
+      "uk": "Рисование",
+      "be": "Рисование"
     },
     "guardian_role_soul": {
       "ru": "Душа",
@@ -1528,7 +1836,9 @@
       "es": "Alma",
       "de": "Seele",
       "fr": "Âme",
-      "he": "נשמה"
+      "he": "נשמה",
+      "uk": "Душа",
+      "be": "Душа"
     },
     "guardian_welcome": {
       "ru": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь.",
@@ -1539,7 +1849,9 @@
       "es": "Hola. Soy el Compañero cactus. Conozco el libro Cactología. Hablemos de cactus, idiomas, creatividad. Escribe — estoy aquí.",
       "de": "Hallo. Ich bin der Kaktus-Begleiter. Kenn das Buch Kaktologie. Sprechen über Kakteen, Sprachen, Kreativität. Schreib — ich bin hier.",
       "fr": "Bonjour. Je suis le Compagnon cactus. Je connais le livre Cactologie. Parlons cactus, langues, créativité. Écris — je suis là.",
-      "he": "שלום. אני השומר. מכיר את הספר והסיפורים. כתבי — אני כאן."
+      "he": "שלום. אני השומר. מכיר את הספר והסיפורים. כתבי — אני כאן.",
+      "uk": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь.",
+      "be": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь."
     },
     "guardian_placeholder": {
       "ru": "Напиши Собеседнику…",
@@ -1550,7 +1862,9 @@
       "es": "Escribe al Compañero…",
       "de": "Schreib dem Begleiter…",
       "fr": "Écris au Compagnon…",
-      "he": "כתוב לשומר…"
+      "he": "כתוב לשומר…",
+      "uk": "Напиши Собеседнику…",
+      "be": "Напиши Собеседнику…"
     },
     "guardian_hint": {
       "ru": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты.",
@@ -1561,7 +1875,9 @@
       "es": "El Compañero recuerda la conversación y el libro Cactología.",
       "de": "Der Begleiter erinnert sich an das Gespräch und das Buch Kaktologie.",
       "fr": "Le Compagnon se souvient de la conversation et du livre Cactologie.",
-      "he": "השומר זוכר את השיחה והספר."
+      "he": "השומר זוכר את השיחה והספר.",
+      "uk": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты.",
+      "be": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты."
     },
     "story_s1771904883169_title": {
       "ru": "Зелёный вечер",
@@ -1572,7 +1888,9 @@
       "es": "Atardecer verde",
       "de": "Grüner Abend",
       "fr": "Soirée verte",
-      "he": "ערב ירוק"
+      "he": "ערב ירוק",
+      "uk": "Зелёный вечер",
+      "be": "Зелёный вечер"
     },
     "story_s1771904883169_content": {
       "ru": "Бывают мгновения, когда мир вокруг затихает, и остаётся только шепот воды, крик улетающих птиц и мягкое тепло уходящего солнца. В такие часы природа раскрывается по-особому.\n\n«Зелёный вечер» — не просто пейзаж, это застывшее мгновение гармонии. Солнечные блики на воде, прохладный воздух, высокое небо. Каждый такой вечер напоминает о красоте нашего мира и о том, как важно иногда остановиться и просто смотреть вокруг.\n\nПусть вдохновение будет безграничным, как небо на закате. Путь созидания и красоты — он для каждого, кто умеет видеть.",
@@ -1583,7 +1901,9 @@
       "es": "Hay momentos en que el mundo enmudece, y solo quedan el susurro del agua, el grito de los pájaros y el suave calor del sol que se va. En esas horas la naturaleza se abre de un modo especial.\n\n«Atardecer verde» no es solo un paisaje; es un instante detenido de armonía. Destellos en el agua, aire fresco, cielo alto. Cada tarde así recuerda la belleza del mundo y lo importante que es a veces parar y mirar alrededor.\n\nQue la inspiración sea tan ilimitada como el cielo al atardecer.",
       "de": "Es gibt Momente, in denen die Welt verstummt und nur noch das Flüstern des Wassers, der Ruf der Vögel und die sanfte Wärme der untergehenden Sonne bleiben. In solchen Stunden zeigt sich die Natur auf besondere Weise.\n\n«Grüner Abend» ist nicht nur eine Landschaft; es ist ein eingefrorener Augenblick der Harmonie. Sonnenlicht auf dem Wasser, kühle Luft, hoher Himmel. Jeder solche Abend erinnert an die Schönheit der Welt und daran, wie wichtig es ist, manchmal innezuhalten und zu schauen.\n\nMöge die Inspiration so grenzenlos sein wie der Himmel bei Sonnenuntergang.",
       "fr": "Il est des instants où le monde se tait, et il ne reste que le chuchotement de l'eau, le cri des oiseaux et la douce chaleur du soleil qui décline. À ces heures, la nature se révèle d'une façon particulière.\n\n« Soirée verte » n'est pas qu'un paysage ; c'est un instant figé d'harmonie. Reflets sur l'eau, air frais, ciel haut. Chaque soir ainsi rappelle la beauté du monde et l'importance de s'arrêter parfois pour regarder autour de soi.\n\nQue l'inspiration soit aussi sans limites que le ciel au coucher du soleil.",
-      "he": "יש רגעים שבהם העולם נופל לשקט, ונותרים רק לחש המים, קריאת הציפורים והחום הרך של השמש השוקעת. בשעות כאלה הטבע נפתח באופן מיוחד.\n\n«ערב ירוק» אינו רק נוף; זה רגע קפוא של הרמוניה. אור על המים, אוויר צונן, שמיים גבוהים. כל ערב כזה מזכיר את יופיו של העולם ואת חשיבות העצירה והמבט מסביב.\n\nהשאיפה תהיה ללא גבול כמו השמיים בשקיעה."
+      "he": "יש רגעים שבהם העולם נופל לשקט, ונותרים רק לחש המים, קריאת הציפורים והחום הרך של השמש השוקעת. בשעות כאלה הטבע נפתח באופן מיוחד.\n\n«ערב ירוק» אינו רק נוף; זה רגע קפוא של הרמוניה. אור על המים, אוויר צונן, שמיים גבוהים. כל ערב כזה מזכיר את יופיו של העולם ואת חשיבות העצירה והמבט מסביב.\n\nהשאיפה תהיה ללא גבול כמו השמיים בשקיעה.",
+      "uk": "Бывают мгновения, когда мир вокруг затихает, и остаётся только шепот воды, крик улетающих птиц и мягкое тепло уходящего солнца. В такие часы природа раскрывается по-особому.\n\n«Зелёный вечер» — не просто пейзаж, это застывшее мгновение гармонии. Солнечные блики на воде, прохладный воздух, высокое небо. Каждый такой вечер напоминает о красоте нашего мира и о том, как важно иногда остановиться и просто смотреть вокруг.\n\nПусть вдохновение будет безграничным, как небо на закате. Путь созидания и красоты — он для каждого, кто умеет видеть.",
+      "be": "Бывают мгновения, когда мир вокруг затихает, и остаётся только шепот воды, крик улетающих птиц и мягкое тепло уходящего солнца. В такие часы природа раскрывается по-особому.\n\n«Зелёный вечер» — не просто пейзаж, это застывшее мгновение гармонии. Солнечные блики на воде, прохладный воздух, высокое небо. Каждый такой вечер напоминает о красоте нашего мира и о том, как важно иногда остановиться и просто смотреть вокруг.\n\nПусть вдохновение будет безграничным, как небо на закате. Путь созидания и красоты — он для каждого, кто умеет видеть."
     },
     "story_s1771907766592_title": {
       "ru": "Спящие друзья",
@@ -1594,7 +1914,9 @@
       "es": "Amigos dormidos",
       "de": "Schlafende Freunde",
       "fr": "Amis endormis",
-      "he": "חברים ישנים"
+      "he": "חברים ישנים",
+      "uk": "Спящие друзья",
+      "be": "Спящие друзья"
     },
     "relax_back": {
       "ru": "← Главная",
@@ -1605,7 +1927,9 @@
       "es": "← Inicio",
       "de": "← Start",
       "fr": "← Accueil",
-      "he": "← לדף הראשי"
+      "he": "← לדף הראשי",
+      "uk": "← Главная",
+      "be": "← Главная"
     },
     "relax_title": {
       "ru": "✦ Комната отдыха",
@@ -1616,7 +1940,9 @@
       "es": "✦ Sala de descanso",
       "de": "✦ Ruheraum",
       "fr": "✦ Salle de repos",
-      "he": "✦ חדר מנוחה"
+      "he": "✦ חדר מנוחה",
+      "uk": "✦ Комната отдыха",
+      "be": "✦ Комната отдыха"
     },
     "relax_sound": {
       "ru": "♪ Звук",
@@ -1627,7 +1953,9 @@
       "es": "♪ Sonido",
       "de": "♪ Sound",
       "fr": "♪ Son",
-      "he": "♪ צליל"
+      "he": "♪ צליל",
+      "uk": "♪ Звук",
+      "be": "♪ Звук"
     },
     "relax_silence": {
       "ru": "♪ Тишина",
@@ -1638,7 +1966,9 @@
       "es": "♪ Silencio",
       "de": "♪ Stille",
       "fr": "♪ Silence",
-      "he": "♪ שקט"
+      "he": "♪ שקט",
+      "uk": "♪ Тишина",
+      "be": "♪ Тишина"
     },
     "relax_breathe_in": {
       "ru": "вдыхай...",
@@ -1649,7 +1979,9 @@
       "es": "inspira...",
       "de": "einatmen...",
       "fr": "inspire...",
-      "he": "שאפי..."
+      "he": "שאפי...",
+      "uk": "вдыхай...",
+      "be": "вдыхай..."
     },
     "relax_breathe_hold": {
       "ru": "задержи...",
@@ -1660,7 +1992,9 @@
       "es": "mantén...",
       "de": "halten...",
       "fr": "retenir...",
-      "he": "החזיקי..."
+      "he": "החזיקי...",
+      "uk": "задержи...",
+      "be": "задержи..."
     },
     "relax_breathe_out": {
       "ru": "выдыхай...",
@@ -1671,7 +2005,9 @@
       "es": "espira...",
       "de": "ausatmen...",
       "fr": "expire...",
-      "he": "נשפי..."
+      "he": "נשפי...",
+      "uk": "выдыхай...",
+      "be": "выдыхай..."
     },
     "relax_pause": {
       "ru": "· пауза ·",
@@ -1682,7 +2018,9 @@
       "es": "· pausa ·",
       "de": "· Pause ·",
       "fr": "· pause ·",
-      "he": "· השהייה ·"
+      "he": "· השהייה ·",
+      "uk": "· пауза ·",
+      "be": "· пауза ·"
     },
     "relax_timer_5": {
       "ru": "⏱ 5 мин",
@@ -1693,7 +2031,9 @@
       "es": "⏱ 5 min",
       "de": "⏱ 5 Min",
       "fr": "⏱ 5 min",
-      "he": "⏱ 5 דק'"
+      "he": "⏱ 5 דק'",
+      "uk": "⏱ 5 мин",
+      "be": "⏱ 5 мин"
     },
     "relax_timer_10": {
       "ru": "⏱ 10 мин",
@@ -1704,7 +2044,9 @@
       "es": "⏱ 10 min",
       "de": "⏱ 10 Min",
       "fr": "⏱ 10 min",
-      "he": "⏱ 10 דק'"
+      "he": "⏱ 10 דק'",
+      "uk": "⏱ 10 мин",
+      "be": "⏱ 10 мин"
     },
     "relax_timer_15": {
       "ru": "⏱ 15 мин",
@@ -1715,7 +2057,9 @@
       "es": "⏱ 15 min",
       "de": "⏱ 15 Min",
       "fr": "⏱ 15 min",
-      "he": "⏱ 15 דק'"
+      "he": "⏱ 15 דק'",
+      "uk": "⏱ 15 мин",
+      "be": "⏱ 15 мин"
     },
     "relax_draw": {
       "ru": "🎨 Рисовать",
@@ -1726,7 +2070,9 @@
       "es": "🎨 Dibujar",
       "de": "🎨 Zeichnen",
       "fr": "🎨 Dessiner",
-      "he": "🎨 ציירי"
+      "he": "🎨 ציירי",
+      "uk": "🎨 Рисовать",
+      "be": "🎨 Рисовать"
     },
     "relax_meditation_done": {
       "ru": "🔔 Медитация завершена",
@@ -1737,7 +2083,9 @@
       "es": "🔔 Meditación completada",
       "de": "🔔 Meditation beendet",
       "fr": "🔔 Méditation terminée",
-      "he": "🔔 מדיטציה הושלמה"
+      "he": "🔔 מדיטציה הושלמה",
+      "uk": "🔔 Медитация завершена",
+      "be": "🔔 Медитация завершена"
     },
     "relax_done": {
       "ru": "✓ Готово",
@@ -1748,7 +2096,9 @@
       "es": "✓ Listo",
       "de": "✓ Fertig",
       "fr": "✓ Terminé",
-      "he": "✓ הושלם"
+      "he": "✓ הושלם",
+      "uk": "✓ Готово",
+      "be": "✓ Готово"
     },
     "draw_back": {
       "ru": "← На главную",
@@ -1759,7 +2109,9 @@
       "es": "← Inicio",
       "de": "← Start",
       "fr": "← Accueil",
-      "he": "← לדף הראשי"
+      "he": "← לדף הראשי",
+      "uk": "← На главную",
+      "be": "← На главную"
     },
     "draw_title": {
       "ru": "✦ Творческая комната",
@@ -1770,7 +2122,9 @@
       "es": "✦ Sala creativa",
       "de": "✦ Kreativraum",
       "fr": "✦ Salle créative",
-      "he": "✦ חדר יצירה"
+      "he": "✦ חדר יצירה",
+      "uk": "✦ Творческая комната",
+      "be": "✦ Творческая комната"
     },
     "draw_nav_relax": {
       "ru": "🌙 Отдых",
@@ -1781,7 +2135,9 @@
       "es": "🌙 Descanso",
       "de": "🌙 Ruhe",
       "fr": "🌙 Repos",
-      "he": "🌙 מנוחה"
+      "he": "🌙 מנוחה",
+      "uk": "🌙 Отдых",
+      "be": "🌙 Отдых"
     },
     "draw_nav_guardian": {
       "ru": "Колючий Собеседник →",
@@ -1792,7 +2148,9 @@
       "es": "Compañero →",
       "de": "Begleiter →",
       "fr": "Compagnon →",
-      "he": "שומר →"
+      "he": "שומר →",
+      "uk": "Колючий Собеседник →",
+      "be": "Колючий Собеседник →"
     },
     "draw_welcome_title": {
       "ru": "🎨 Творческая комната",
@@ -1803,7 +2161,9 @@
       "es": "🎨 Sala creativa",
       "de": "🎨 Kreativraum",
       "fr": "🎨 Salle créative",
-      "he": "🎨 חדר יצירה"
+      "he": "🎨 חדר יצירה",
+      "uk": "🎨 Творческая комната",
+      "be": "🎨 Творческая комната"
     },
     "draw_welcome_step1": {
       "ru": "🖌 Выбери цвет внизу",
@@ -1814,7 +2174,9 @@
       "es": "🖌 Elige un color abajo",
       "de": "🖌 Wähle unten eine Farbe",
       "fr": "🖌 Choisis une couleur en bas",
-      "he": "🖌 בחרי צבע למטה"
+      "he": "🖌 בחרי צבע למטה",
+      "uk": "🖌 Выбери цвет внизу",
+      "be": "🖌 Выбери цвет внизу"
     },
     "draw_welcome_step2": {
       "ru": "📏 Размер кисти — ползунок",
@@ -1825,7 +2187,9 @@
       "es": "📏 Tamaño del pincel — deslizador",
       "de": "📏 Pinselgröße — Schieber",
       "fr": "📏 Taille du pinceau — curseur",
-      "he": "📏 גודל מכחול — מחוון"
+      "he": "📏 גודל מכחול — מחוון",
+      "uk": "📏 Размер кисти — ползунок",
+      "be": "📏 Размер кисти — ползунок"
     },
     "draw_welcome_step3": {
       "ru": "✏ Рисуй по белому холсту",
@@ -1836,7 +2200,9 @@
       "es": "✏ Dibuja en el lienzo blanco",
       "de": "✏ Zeichne auf die weiße Leinwand",
       "fr": "✏ Dessine sur la toile blanche",
-      "he": "✏ ציירי על הבד הלבן"
+      "he": "✏ ציירי על הבד הלבן",
+      "uk": "✏ Рисуй по белому холсту",
+      "be": "✏ Рисуй по белому холсту"
     },
     "draw_welcome_step4": {
       "ru": "↩ Ctrl+Z — отменить",
@@ -1847,7 +2213,9 @@
       "es": "↩ Ctrl+Z — deshacer",
       "de": "↩ Strg+Z — rückgängig",
       "fr": "↩ Ctrl+Z — annuler",
-      "he": "↩ Ctrl+Z — בטל"
+      "he": "↩ Ctrl+Z — בטל",
+      "uk": "↩ Ctrl+Z — отменить",
+      "be": "↩ Ctrl+Z — отменить"
     },
     "draw_welcome_step5": {
       "ru": "⬇ Сохранить — кнопка справа",
@@ -1858,7 +2226,9 @@
       "es": "⬇ Guardar — botón a la derecha",
       "de": "⬇ Speichern — Button rechts",
       "fr": "⬇ Enregistrer — bouton à droite",
-      "he": "⬇ שמור — כפתור מימין"
+      "he": "⬇ שמור — כפתור מימין",
+      "uk": "⬇ Сохранить — кнопка справа",
+      "be": "⬇ Сохранить — кнопка справа"
     },
     "draw_welcome_btn": {
       "ru": "Понятно, начинаю!",
@@ -1869,7 +2239,9 @@
       "es": "¡Entendido, vamos!",
       "de": "Alles klar, los!",
       "fr": "Compris, c'est parti !",
-      "he": "הבנתי, בואי נתחיל!"
+      "he": "הבנתי, בואי נתחיל!",
+      "uk": "Понятно, начинаю!",
+      "be": "Понятно, начинаю!"
     },
     "draw_hint": {
       "ru": "выбери цвет и рисуй!",
@@ -1880,7 +2252,9 @@
       "es": "¡elige un color y dibuja!",
       "de": "wähle eine Farbe und zeichne!",
       "fr": "choisis une couleur et dessine !",
-      "he": "בחרי צבע וציירי!"
+      "he": "בחרי צבע וציירי!",
+      "uk": "выбери цвет и рисуй!",
+      "be": "выбери цвет и рисуй!"
     },
     "draw_brush": {
       "ru": "Кисть",
@@ -1891,7 +2265,9 @@
       "es": "Pincel",
       "de": "Pinsel",
       "fr": "Pinceau",
-      "he": "מכחול"
+      "he": "מכחול",
+      "uk": "Кисть",
+      "be": "Кисть"
     },
     "draw_eraser": {
       "ru": "Ластик",
@@ -1902,7 +2278,9 @@
       "es": "Goma",
       "de": "Radierer",
       "fr": "Gomme",
-      "he": "מחק"
+      "he": "מחק",
+      "uk": "Ластик",
+      "be": "Ластик"
     },
     "draw_undo": {
       "ru": "Отменить (Ctrl+Z)",
@@ -1913,7 +2291,9 @@
       "es": "Deshacer (Ctrl+Z)",
       "de": "Rückgängig (Strg+Z)",
       "fr": "Annuler (Ctrl+Z)",
-      "he": "בטל (Ctrl+Z)"
+      "he": "בטל (Ctrl+Z)",
+      "uk": "Отменить (Ctrl+Z)",
+      "be": "Отменить (Ctrl+Z)"
     },
     "draw_clear": {
       "ru": "Очистить всё",
@@ -1924,7 +2304,9 @@
       "es": "Borrar todo",
       "de": "Alles löschen",
       "fr": "Tout effacer",
-      "he": "נקה הכל"
+      "he": "נקה הכל",
+      "uk": "Очистить всё",
+      "be": "Очистить всё"
     },
     "draw_save": {
       "ru": "Скачать рисунок",
@@ -1935,7 +2317,9 @@
       "es": "Descargar dibujo",
       "de": "Zeichnung herunterladen",
       "fr": "Télécharger le dessin",
-      "he": "הורדי ציור"
+      "he": "הורדי ציור",
+      "uk": "Скачать рисунок",
+      "be": "Скачать рисунок"
     },
     "story_s1771907766592_content": {
       "ru": "На берегу тихого озера, где туман мягко стелется над водой, нашли покой два маленьких сердца. Пушистый щенок и рыжий котенок, устав от дневных игр, уснули в высокой траве, согретые последними лучами уходящего солнца.\n\nВ этом мире нет места вражде, когда рядом верный друг, а над головой — бескрайнее небо, окрашенное в золотые тона. Эта картина напоминает нам о самом главном: истинная гармония рождается в тишине и искренности. Пусть этот теплый вечер останется в памяти как символ доброты, которая не требует слов.\n\nА это видео про них  https://www.youtube.com/watch?v=FjS6o9yL16o",
@@ -1946,7 +2330,9 @@
       "es": "En la orilla de un lago tranquilo, donde la niebla se extiende suavemente sobre el agua, dos pequeños corazones encontraron paz. Un cachorro esponjoso y un gatito pelirrojo, cansados de los juegos del día, se durmieron en la hierba alta, calentados por los últimos rayos del sol.\n\nEn este mundo no hay lugar para la hostilidad cuando un amigo fiel está a tu lado y sobre ti un cielo infinito teñido de tonos dorados. Esta pintura nos recuerda lo esencial: la verdadera armonía nace en el silencio y la sinceridad. Que esta tarde cálida quede en la memoria como símbolo de una bondad que no necesita palabras.\n\nY este es un video sobre ellos  https://www.youtube.com/watch?v=FjS6o9yL16o",
       "de": "Am Ufer eines stillen Sees, wo Nebel weich über das Wasser zieht, haben zwei kleine Herzen Ruhe gefunden. Ein flauschiges Welpen und ein roter Kater, müde vom Spiel des Tages, schlafen im hohen Gras, gewärmt von den letzten Strahlen der untergehenden Sonne.\n\nIn dieser Welt ist kein Platz für Feindseligkeit, wenn ein treuer Freund an deiner Seite ist und ein endloser Himmel in Goldtönen über dir. Dieses Bild erinnert uns an das Wichtigste: wahre Harmonie entsteht in Stille und Aufrichtigkeit. Möge dieser warme Abend als Symbol einer Güte, die keine Worte braucht, in Erinnerung bleiben.\n\nUnd hier ist ein Video über sie  https://www.youtube.com/watch?v=FjS6o9yL16o",
       "fr": "Sur le rivage d'un lac tranquille, où la brume s'étend doucement sur l'eau, deux petits cœurs ont trouvé la paix. Un chiot tout doux et un chaton roux, fatigués des jeux de la journée, se sont endormis dans les hautes herbes, réchauffés par les derniers rayons du soleil.\n\nDans ce monde, il n'y a pas de place pour l'hostilité quand un ami fidèle est à côté de soi et qu'un ciel infini teinté d'or s'étend au-dessus. Ce tableau nous rappelle l'essentiel : la vraie harmonie naît dans le silence et la sincérité. Que cette soirée douce reste en mémoire comme le symbole d'une bonté qui n'a pas besoin de mots.\n\nEt voici une vidéo sur eux  https://www.youtube.com/watch?v=FjS6o9yL16o",
-      "he": "על שפת אגם שקט, שם הערפל נפרש בעדינות על המים, שני לבבות קטנים מצאו שלווה. גור פרוותי וגור חתול ג'ינג'י, עייפים ממשחקי היום, נרדמו בעשב הגבוה, מחוממים מקרני השמש האחרונות.\n\nבעולם הזה אין מקום לעוינות כאשר חבר נאמן לצדך ושמיים אינסופיים צבועים בגווני זהב מעל. ציור זה מזכיר לנו את מה שחשוב באמת: הרמוניה אמיתית נולדת בדממה ובכנות. הלוואי שהערב החם הזה יישאר בזיכרון כסמל לחמלה שאינה צריכה מילים.\n\nוהנה סרטון עליהם  https://www.youtube.com/watch?v=FjS6o9yL16o"
+      "he": "על שפת אגם שקט, שם הערפל נפרש בעדינות על המים, שני לבבות קטנים מצאו שלווה. גור פרוותי וגור חתול ג'ינג'י, עייפים ממשחקי היום, נרדמו בעשב הגבוה, מחוממים מקרני השמש האחרונות.\n\nבעולם הזה אין מקום לעוינות כאשר חבר נאמן לצדך ושמיים אינסופיים צבועים בגווני זהב מעל. ציור זה מזכיר לנו את מה שחשוב באמת: הרמוניה אמיתית נולדת בדממה ובכנות. הלוואי שהערב החם הזה יישאר בזיכרון כסמל לחמלה שאינה צריכה מילים.\n\nוהנה סרטון עליהם  https://www.youtube.com/watch?v=FjS6o9yL16o",
+      "uk": "На берегу тихого озера, где туман мягко стелется над водой, нашли покой два маленьких сердца. Пушистый щенок и рыжий котенок, устав от дневных игр, уснули в высокой траве, согретые последними лучами уходящего солнца.\n\nВ этом мире нет места вражде, когда рядом верный друг, а над головой — бескрайнее небо, окрашенное в золотые тона. Эта картина напоминает нам о самом главном: истинная гармония рождается в тишине и искренности. Пусть этот теплый вечер останется в памяти как символ доброты, которая не требует слов.\n\nА это видео про них  https://www.youtube.com/watch?v=FjS6o9yL16o",
+      "be": "На берегу тихого озера, где туман мягко стелется над водой, нашли покой два маленьких сердца. Пушистый щенок и рыжий котенок, устав от дневных игр, уснули в высокой траве, согретые последними лучами уходящего солнца.\n\nВ этом мире нет места вражде, когда рядом верный друг, а над головой — бескрайнее небо, окрашенное в золотые тона. Эта картина напоминает нам о самом главном: истинная гармония рождается в тишине и искренности. Пусть этот теплый вечер останется в памяти как символ доброты, которая не требует слов.\n\nА это видео про них  https://www.youtube.com/watch?v=FjS6o9yL16o"
     }
   },
   "header": {
