@@ -51,7 +51,16 @@
       border-radius: 8px;
       overflow: hidden;
       background: #eee;
-      border: 1px solid #ddd;
+      border: 2px solid #2d5a3d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .preview-wrap .preview-placeholder {
+      color: #666;
+      font-size: 0.9rem;
+      padding: 1rem;
+      text-align: center;
     }
     .preview-wrap img {
       width: 100%;
@@ -59,8 +68,6 @@
       object-fit: cover;
       display: block;
     }
-    .preview-wrap:empty { display: none; }
-    .preview-wrap:not(:empty) { display: block; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -96,8 +103,28 @@
       gap: 0.75rem;
     }
     .stories-list li:last-child { border-bottom: none; }
-    .stories-list .title { flex: 1; font-weight: 500; }
-    .stories-list .id { font-size: 0.85rem; color: #666; }
+    .stories-list .thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #eee;
+    }
+    .stories-list .thumb-none {
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      background: #eee;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 0.75rem;
+    }
+    .stories-list .title { flex: 1; font-weight: 500; min-width: 0; }
+    .stories-list .id { font-size: 0.85rem; color: #666; flex-shrink: 0; }
     .msg { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
     .msg.success { background: #e8f5e9; color: #1b5e20; }
     .msg.error { background: #ffebee; color: #b71c1c; }
@@ -128,7 +155,9 @@
     <div class="field">
       <label>Изображение</label>
       <input type="file" id="image" accept="image/*" />
-      <div class="preview-wrap" id="preview" aria-hidden="true"></div>
+      <div class="preview-wrap" id="preview">
+        <span class="preview-placeholder" id="preview-placeholder">Выберите фото — здесь появится миниатюра</span>
+      </div>
     </div>
     <button type="button" class="btn btn-primary btn-block" id="publish">Опубликовать</button>
     <div class="msg" id="msg" role="status"></div>
@@ -178,12 +207,18 @@
   }
   function clearMsg() { msgEl.textContent = ""; msgEl.className = "msg"; }
 
+  var previewPlaceholder = document.getElementById("preview-placeholder");
   imageInput.addEventListener("change", function() {
     var file = this.files && this.files[0];
-    previewEl.innerHTML = "";
-    if (!file || !file.type.startsWith("image/")) return;
+    if (previewPlaceholder) previewPlaceholder.style.display = "none";
+    var oldImg = previewEl.querySelector("img");
+    if (oldImg && oldImg.src) URL.revokeObjectURL(oldImg.src);
+    if (!file || !file.type.startsWith("image/")) {
+      if (previewPlaceholder) previewPlaceholder.style.display = "";
+      return;
+    }
     var img = new Image();
-    img.alt = "";
+    img.alt = "Предпросмотр";
     img.onload = function() { previewEl.appendChild(img); };
     img.src = URL.createObjectURL(file);
   });
@@ -289,13 +324,27 @@
     });
   }
 
+  function b64ToUtf8(b64) {
+    var bin = atob(b64.replace(/\s/g, ""));
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    return new TextDecoder("utf-8").decode(bytes);
+  }
+
   function loadStoriesFromApi() {
     return githubGet(STORIES_PATH).then(function(data) {
       if (!data || !data.content) return { json: { stories: [] }, sha: null };
-      var decoded = atob(data.content.replace(/\s/g, ""));
-      var json = JSON.parse(decoded);
+      var jsonStr = b64ToUtf8(data.content);
+      var json = JSON.parse(jsonStr);
       return { data: data, json: json, sha: data.sha };
     });
+  }
+
+  function storyImageUrl(coverUrl) {
+    if (!coverUrl) return "";
+    var base = window.location.href.replace(/\/[^/]*$/, "/");
+    var path = coverUrl.replace(/^\.\//, "");
+    return base + path;
   }
 
   function renderStoriesList(items) {
@@ -307,16 +356,27 @@
     }
     items.forEach(function(s) {
       var li = document.createElement("li");
-      li.innerHTML = "<span class=\"title\">" + escapeHtml(s.title || s.id) + "</span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
+      var title = (s.title || s.id || "").toString();
+      var thumbSrc = storyImageUrl(s.coverUrl);
+      var thumbHtml = thumbSrc
+        ? "<img class=\"thumb\" src=\"" + escapeAttr(thumbSrc) + "\" alt=\"\" loading=\"lazy\" />"
+        : "<div class=\"thumb-none\">нет фото</div>";
+      li.innerHTML = thumbHtml + "<span class=\"title\">" + escapeHtml(title) + "</span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
       var delBtn = document.createElement("button");
       delBtn.type = "button";
       delBtn.className = "btn btn-ghost";
       delBtn.textContent = "Удалить";
-      delBtn.dataset.id = s.id;
       delBtn.addEventListener("click", function() { deleteStory(s.id); });
       li.appendChild(delBtn);
       storiesList.appendChild(li);
     });
+  }
+
+  function escapeAttr(s) {
+    if (s == null) return "";
+    var div = document.createElement("div");
+    div.textContent = s;
+    return div.innerHTML.replace(/"/g, "&quot;");
   }
 
   function escapeHtml(s) {
@@ -412,7 +472,13 @@
         titleInput.value = "";
         contentInput.value = "";
         imageInput.value = "";
+        var oldImg = previewEl.querySelector("img");
+        if (oldImg && oldImg.src) URL.revokeObjectURL(oldImg.src);
         previewEl.innerHTML = "";
+        if (previewPlaceholder) {
+          previewEl.appendChild(previewPlaceholder);
+          previewPlaceholder.style.display = "";
+        }
         refreshList();
       }).catch(function(e) {
         showMsg(e.message || "Ошибка публикации", true);
