@@ -1,18 +1,436 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Админка — загрузка контента</title>
-    <script>
-      // Сразу перенаправляем на главную страницу с открытой админкой (комната загрузки фото)
-      var path = window.location.pathname.replace(/\/admin\.html?\/?$/i, "") || "/";
-      if (!path.endsWith("/")) path += "/";
-      window.location.replace(path + "index.html#admin");
-    </script>
-  </head>
-  <body>
-    <p>Переход в админку…</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Админка — загрузка рассказов</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      min-height: 100vh;
+    }
+    .admin {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1 { margin: 0 0 1.25rem; font-size: 1.5rem; font-weight: 600; }
+    .field { margin-bottom: 1rem; }
+    .field label { display: block; margin-bottom: 0.35rem; font-weight: 500; color: #333; }
+    .field input[type="text"],
+    .field input[type="password"],
+    .field textarea {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font: inherit;
+    }
+    .field textarea { min-height: 140px; resize: vertical; }
+    .field input:focus, .field textarea:focus {
+      outline: none;
+      border-color: #2d5a3d;
+      box-shadow: 0 0 0 2px rgba(45,90,61,0.2);
+    }
+    .preview-wrap {
+      margin-top: 0.5rem;
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 4/3;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #eee;
+      border: 1px solid #ddd;
+    }
+    .preview-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .preview-wrap:empty { display: none; }
+    .preview-wrap:not(:empty) { display: block; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem 1.25rem;
+      border: none;
+      border-radius: 8px;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.05s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-primary { background: #2d5a3d; color: #fff; }
+    .btn-primary:hover { background: #244a30; }
+    .btn-primary:disabled { background: #8a9a8e; cursor: not-allowed; }
+    .btn-ghost {
+      background: transparent;
+      color: #c00;
+      border: 1px solid #e0a0a0;
+    }
+    .btn-ghost:hover { background: #fff0f0; }
+    .btn-block { width: 100%; margin-top: 0.5rem; }
+    .section { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #eee; }
+    .section h2 { margin: 0 0 1rem; font-size: 1.15rem; font-weight: 600; }
+    .stories-list { list-style: none; margin: 0; padding: 0; }
+    .stories-list li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      gap: 0.75rem;
+    }
+    .stories-list li:last-child { border-bottom: none; }
+    .stories-list .title { flex: 1; font-weight: 500; }
+    .stories-list .id { font-size: 0.85rem; color: #666; }
+    .msg { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
+    .msg.success { background: #e8f5e9; color: #1b5e20; }
+    .msg.error { background: #ffebee; color: #b71c1c; }
+    .msg:empty { display: none; }
+    .loading { color: #666; }
+  </style>
+</head>
+<body>
+  <div class="admin">
+    <h1>Загрузчик рассказов</h1>
+
+    <div class="field">
+      <label for="repo">Репозиторий (owner/repo)</label>
+      <input type="text" id="repo" value="derev-studio/cactus-books" placeholder="derev-studio/cactus-books" />
+    </div>
+    <div class="field">
+      <label for="token">GitHub Token</label>
+      <input type="password" id="token" placeholder="ghp_..." autocomplete="off" />
+    </div>
+    <div class="field">
+      <label for="title">Заголовок</label>
+      <input type="text" id="title" placeholder="Название рассказа" />
+    </div>
+    <div class="field">
+      <label for="content">Текст</label>
+      <textarea id="content" placeholder="Текст рассказа…"></textarea>
+    </div>
+    <div class="field">
+      <label>Изображение</label>
+      <input type="file" id="image" accept="image/*" />
+      <div class="preview-wrap" id="preview" aria-hidden="true"></div>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" id="publish">Опубликовать</button>
+    <div class="msg" id="msg" role="status"></div>
+
+    <section class="section" aria-labelledby="current-stories-heading">
+      <h2 id="current-stories-heading">Текущие рассказы</h2>
+      <p class="loading" id="list-hint">Введите токен и нажмите «Обновить список».</p>
+      <ul class="stories-list" id="stories-list"></ul>
+      <button type="button" class="btn btn-ghost" id="refresh-list" style="margin-top: 0.75rem;">Обновить список</button>
+    </section>
+  </div>
+
+  <script>
+(function() {
+  var GITHUB_API = "https://api.github.com";
+  var STORIES_PATH = "data/stories.json";
+  var IMAGES_PATH_PREFIX = "assets/images/";
+  var MAX_IMAGE_WIDTH = 1200;
+  var JPEG_QUALITY = 0.88;
+
+  var tokenInput = document.getElementById("token");
+  var repoInput = document.getElementById("repo");
+  var titleInput = document.getElementById("title");
+  var contentInput = document.getElementById("content");
+  var imageInput = document.getElementById("image");
+  var previewEl = document.getElementById("preview");
+  var publishBtn = document.getElementById("publish");
+  var msgEl = document.getElementById("msg");
+  var listHint = document.getElementById("list-hint");
+  var storiesList = document.getElementById("stories-list");
+  var refreshBtn = document.getElementById("refresh-list");
+
+  try {
+    var saved = localStorage.getItem("cactus_admin_token");
+    if (saved) tokenInput.value = saved;
+  } catch (e) {}
+
+  function saveToken() {
+    try { localStorage.setItem("cactus_admin_token", tokenInput.value); } catch (e) {}
+  }
+  tokenInput.addEventListener("input", saveToken);
+  tokenInput.addEventListener("change", saveToken);
+
+  function showMsg(text, isError) {
+    msgEl.textContent = text;
+    msgEl.className = "msg " + (isError ? "error" : "success");
+  }
+  function clearMsg() { msgEl.textContent = ""; msgEl.className = "msg"; }
+
+  imageInput.addEventListener("change", function() {
+    var file = this.files && this.files[0];
+    previewEl.innerHTML = "";
+    if (!file || !file.type.startsWith("image/")) return;
+    var img = new Image();
+    img.alt = "";
+    img.onload = function() { previewEl.appendChild(img); };
+    img.src = URL.createObjectURL(file);
+  });
+
+  function slugify(title) {
+    var map = { "а":"a","б":"b","в":"v","г":"g","д":"d","е":"e","ё":"e","ж":"zh","з":"z","и":"i","й":"j","к":"k","л":"l","м":"m","н":"n","о":"o","п":"p","р":"r","с":"s","т":"t","у":"u","ф":"f","х":"h","ц":"c","ч":"ch","ш":"sh","щ":"sh","ъ":"","ы":"y","ь":"","э":"e","ю":"yu","я":"ya" };
+    var s = (title || "").toLowerCase().trim();
+    var out = "";
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      if (map[c]) out += map[c];
+      else if (/[a-z0-9]/.test(c)) out += c;
+      else if (c === " " || c === "-") out += "-";
+    }
+    return out.replace(/-+/g, "-").replace(/^-|-$/g, "") || "story-" + Date.now();
+  }
+
+  function getAuthHeaders() {
+    var token = (tokenInput.value || "").trim();
+    if (!token) throw new Error("Введите GitHub Token");
+    return {
+      "Authorization": "token " + token,
+      "Accept": "application/vnd.github.v3+json"
+    };
+  }
+
+  function apiUrl(path) {
+    var repo = (repoInput.value || "").trim();
+    if (!repo) throw new Error("Введите репозиторий");
+    return GITHUB_API + "/repos/" + repo + "/contents/" + path;
+  }
+
+  function githubGet(path) {
+    return fetch(apiUrl(path), { headers: getAuthHeaders() })
+      .then(function(r) {
+        if (r.status === 404) return null;
+        if (!r.ok) return r.json().then(function(j) { throw new Error(j.message || "Ошибка " + r.status); });
+        return r.json();
+      });
+  }
+
+  function githubPut(path, contentBase64, sha, message) {
+    var body = { message: message, content: contentBase64 };
+    if (sha) body.sha = sha;
+    return fetch(apiUrl(path), {
+      method: "PUT",
+      headers: Object.assign({ "Content-Type": "application/json" }, getAuthHeaders()),
+      body: JSON.stringify(body)
+    }).then(function(r) {
+      if (!r.ok) return r.json().then(function(j) { throw new Error(j.message || "Ошибка " + r.status); });
+      return r.json();
+    });
+  }
+
+  function compressImage(file) {
+    return new Promise(function(resolve, reject) {
+      var img = new Image();
+      img.onload = function() {
+        var w = img.naturalWidth, h = img.naturalHeight;
+        if (w <= MAX_IMAGE_WIDTH && h <= MAX_IMAGE_WIDTH) {
+          w = img.naturalWidth;
+          h = img.naturalHeight;
+        } else {
+          if (w > h) {
+            h = Math.round(h * MAX_IMAGE_WIDTH / w);
+            w = MAX_IMAGE_WIDTH;
+          } else {
+            w = Math.round(w * MAX_IMAGE_WIDTH / h);
+            h = MAX_IMAGE_WIDTH;
+          }
+        }
+        var canvas = document.createElement("canvas");
+        canvas.width = w;
+        canvas.height = h;
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, w, h);
+        canvas.toBlob(function(blob) {
+          if (!blob) return reject(new Error("Не удалось сжать изображение"));
+          var fr = new FileReader();
+          fr.onload = function() {
+            var b64 = fr.result.split(",")[1];
+            resolve(b64);
+          };
+          fr.onerror = function() { reject(new Error("Чтение файла")); };
+          fr.readAsDataURL(blob);
+        }, "image/jpeg", JPEG_QUALITY);
+      };
+      img.onerror = function() { reject(new Error("Не удалось загрузить изображение")); };
+      img.src = URL.createObjectURL(file);
+    });
+  }
+
+  function fileToBase64(file) {
+    return new Promise(function(resolve, reject) {
+      var fr = new FileReader();
+      fr.onload = function() {
+        var b64 = fr.result.split(",")[1];
+        if (!b64) reject(new Error("Неверный формат файла"));
+        else resolve(b64);
+      };
+      fr.onerror = function() { reject(new Error("Чтение файла")); };
+      fr.readAsDataURL(file);
+    });
+  }
+
+  function loadStoriesFromApi() {
+    return githubGet(STORIES_PATH).then(function(data) {
+      if (!data || !data.content) return { json: { stories: [] }, sha: null };
+      var decoded = atob(data.content.replace(/\s/g, ""));
+      var json = JSON.parse(decoded);
+      return { data: data, json: json, sha: data.sha };
+    });
+  }
+
+  function renderStoriesList(items) {
+    listHint.style.display = "none";
+    storiesList.innerHTML = "";
+    if (!items || items.length === 0) {
+      storiesList.innerHTML = "<li class=\"id\">Нет рассказов</li>";
+      return;
+    }
+    items.forEach(function(s) {
+      var li = document.createElement("li");
+      li.innerHTML = "<span class=\"title\">" + escapeHtml(s.title || s.id) + "</span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
+      var delBtn = document.createElement("button");
+      delBtn.type = "button";
+      delBtn.className = "btn btn-ghost";
+      delBtn.textContent = "Удалить";
+      delBtn.dataset.id = s.id;
+      delBtn.addEventListener("click", function() { deleteStory(s.id); });
+      li.appendChild(delBtn);
+      storiesList.appendChild(li);
+    });
+  }
+
+  function escapeHtml(s) {
+    if (s == null) return "";
+    var div = document.createElement("div");
+    div.textContent = s;
+    return div.innerHTML;
+  }
+
+  function refreshList() {
+    var token = (tokenInput.value || "").trim();
+    if (!token) { showMsg("Введите GitHub Token", true); return; }
+    listHint.textContent = "Загрузка…";
+    listHint.style.display = "block";
+    storiesList.innerHTML = "";
+    loadStoriesFromApi()
+      .then(function(r) {
+        var list = (r.json && r.json.stories) ? r.json.stories : [];
+        renderStoriesList(list);
+      })
+      .catch(function(e) {
+        listHint.textContent = "Ошибка: " + (e.message || "не удалось загрузить список");
+        showMsg(e.message || "Ошибка загрузки списка", true);
+      });
+  }
+
+  refreshBtn.addEventListener("click", refreshList);
+
+  function deleteStory(id) {
+    if (!confirm("Удалить рассказ «" + id + "»?")) return;
+    var token = (tokenInput.value || "").trim();
+    if (!token) { showMsg("Введите GitHub Token", true); return; }
+    clearMsg();
+    loadStoriesFromApi()
+      .then(function(r) {
+        var list = (r.json && r.json.stories) ? r.json.stories : [];
+        var filtered = list.filter(function(s) { return s.id !== id; });
+        if (filtered.length === list.length) throw new Error("Рассказ не найден");
+        var newJson = { stories: filtered };
+        var str = JSON.stringify(newJson, null, 2);
+        var b64 = btoa(unescape(encodeURIComponent(str)));
+        return githubPut(STORIES_PATH, b64, r.sha, "Удалён рассказ: " + id);
+      })
+      .then(function() {
+        showMsg("Рассказ удалён.");
+        refreshList();
+      })
+      .catch(function(e) {
+        showMsg(e.message || "Ошибка удаления", true);
+      });
+  }
+
+  publishBtn.addEventListener("click", function() {
+    clearMsg();
+    var title = (titleInput.value || "").trim();
+    var content = (contentInput.value || "").trim();
+    if (!title) { showMsg("Введите заголовок", true); return; }
+    if (!content) { showMsg("Введите текст", true); return; }
+    var file = imageInput.files && imageInput.files[0];
+    publishBtn.disabled = true;
+
+    var id = slugify(title);
+    var coverUrl = "";
+
+    function doPublish(imageBase64) {
+      var putImage = Promise.resolve();
+      if (imageBase64) {
+        var imagePath = IMAGES_PATH_PREFIX + id + ".jpg";
+        coverUrl = "./assets/images/" + id + ".jpg";
+        putImage = githubGet(imagePath).then(function(existing) {
+          return githubPut(imagePath, imageBase64, existing ? existing.sha : null, "Фото для рассказа: " + id);
+        });
+      }
+
+      putImage.then(function() {
+        return loadStoriesFromApi();
+      }).then(function(r) {
+        var list = (r.json && r.json.stories) ? r.json.stories : [];
+        if (list.some(function(s) { return s.id === id; })) {
+          list = list.map(function(s) {
+            if (s.id === id) return { id: id, title: title, coverUrl: coverUrl || s.coverUrl, content: content };
+            return s;
+          });
+        } else {
+          list.push({ id: id, title: title, coverUrl: coverUrl, content: content });
+        }
+        var newJson = { stories: list };
+        var str = JSON.stringify(newJson, null, 2);
+        var b64 = btoa(unescape(encodeURIComponent(str)));
+        return githubPut(STORIES_PATH, b64, r.sha, "Добавлен/обновлён рассказ: " + id);
+      }).then(function() {
+        showMsg("Опубликовано: «" + title + "»");
+        titleInput.value = "";
+        contentInput.value = "";
+        imageInput.value = "";
+        previewEl.innerHTML = "";
+        refreshList();
+      }).catch(function(e) {
+        showMsg(e.message || "Ошибка публикации", true);
+      }).finally(function() {
+        publishBtn.disabled = false;
+      });
+    }
+
+    if (file && file.type.startsWith("image/")) {
+      compressImage(file).then(doPublish).catch(function(e) {
+        showMsg(e.message || "Ошибка изображения", true);
+        publishBtn.disabled = false;
+      });
+    } else {
+      doPublish(null);
+    }
+  });
+})();
+  </script>
+</body>
 </html>
