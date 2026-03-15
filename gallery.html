@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>Галерея | Кактусярий</title>
+  <meta name="description" content="Галерея фото и работ. Кактусярий." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page-common.css" />
+  <style>
+    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    .gallery-page__main { max-width: 56rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 2.5rem) 1rem 3rem; }
+    .gallery-page__title { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 0.5rem; color: var(--cactus-text-on-dark); }
+    .gallery-page__intro { color: var(--cactus-muted-on-dark); margin: 0 0 2rem; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
+    .gallery-tile { margin: 0; }
+    .gallery-tile__link { display: block; border-radius: 12px; overflow: hidden; background: var(--cactus-surface); box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; }
+    .gallery-tile__link:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.22); }
+    .gallery-tile__img-wrap { aspect-ratio: 1; overflow: hidden; background: var(--cactus-surface-soft); }
+    .gallery-tile__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .gallery-tile__caption { padding: 0.85rem 1rem; }
+    .gallery-tile__title { font-weight: 600; font-size: 0.95rem; margin: 0 0 0.2rem; }
+    .gallery-tile__sub { font-size: 0.8rem; color: var(--cactus-muted-on-dark); margin: 0; }
+    .gallery-empty { text-align: center; padding: 3rem 1rem; color: var(--cactus-muted-on-dark); }
+    .gallery-loading { text-align: center; padding: 2rem; color: var(--cactus-muted-on-dark); }
+    .lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.9); display: none; align-items: center; justify-content: center; padding: 2rem; box-sizing: border-box; }
+    .lightbox.is-open { display: flex; }
+    .lightbox__inner { max-width: 100%; max-height: 100%; text-align: center; }
+    .lightbox__img { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 8px; }
+    .lightbox__caption { color: #fff; margin-top: 1rem; font-size: 1.1rem; }
+    .lightbox__close { position: absolute; top: 1rem; right: 1rem; width: 48px; height: 48px; border: none; background: rgba(255,255,255,0.15); color: #fff; font-size: 1.5rem; border-radius: 50%; cursor: pointer; line-height: 1; }
+    .lightbox__close:hover { background: rgba(255,255,255,0.25); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand" id="header-brand" data-i18n="brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden" id="header-nav-label" data-i18n="nav_navigator">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn" id="header-search-btn" data-i18n="search_btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link" id="header-link-origin" data-i18n="nav_systematics">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link" id="header-link-geography" data-i18n="nav_geography">Места обитания</a>
+      <a href="care.html" class="site-header__link" id="header-link-care" data-i18n="nav_care">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link" id="header-link-identifier" data-i18n="nav_identify">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link" id="header-link-guardian" data-i18n="nav_guardian">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary id="header-more-summary" data-i18n="more_btn">Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html" id="header-dropdown-home" data-i18n="nav_main">Главная</a>
+          <a href="navigator.html" id="header-dropdown-nav" data-i18n="nav_navigator">Навигатор по кактусам</a>
+          <a href="книга-кактусология/book-read.html" id="header-dropdown-book" data-i18n="nav_book">Кактусология</a>
+          <a href="great-cactus.html" id="header-dropdown-great" data-i18n="nav_great">Великие кактусоводы</a>
+          <a href="gallery.html" class="site-header__link--active" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="stories.html" id="header-dropdown-stories" data-i18n="nav_stories">Рассказы</a>
+          <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
+          <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
+          <a href="succulents.html" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
+          <a href="edible.html" id="header-dropdown-edible" data-i18n="nav_edible">Съедобные кактусы</a>
+          <a href="rarities.html" id="header-dropdown-rarities" data-i18n="nav_rarities">Редкости</a>
+          <a href="facts.html" id="header-dropdown-facts" data-i18n="nav_facts">Интересные факты</a>
+          <a href="caution.html" id="header-dropdown-caution" data-i18n="nav_caution">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+    <div id="header-lang-dropdown" class="header-lang-dropdown"></div>
+  </header>
+
+  <main class="gallery-page__main">
+    <h1 class="gallery-page__title" data-i18n="gallery_heading">Галерея</h1>
+    <p class="gallery-page__intro" data-i18n="gallery_heading_accent">фото и работы</p>
+    <div id="gallery-root" class="gallery-loading" data-i18n="stories_loading">Загрузка…</div>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Закрыть">×</button>
+    <div class="lightbox__inner">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
+      <details>
+        <summary data-i18n="sources_summary">Источники</summary>
+        <div class="site-footer__sources-panel">
+          <p class="site-footer__sources-list">
+            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
+            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
+            <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
+          </p>
+        </div>
+      </details>
+    </nav>
+  </footer>
+
+  <script src="language-manager.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="header-i18n.js" defer></script>
+  <script src="header-lang-dropdown.js" defer></script>
+  <script>
+(function () {
+  var root = document.getElementById("gallery-root");
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightbox-img");
+  var lightboxCaption = document.getElementById("lightbox-caption");
+  var lightboxClose = document.getElementById("lightbox-close");
+
+  function resolveUrl(url) {
+    if (!url || url.indexOf("http") === 0) return url;
+    var path = url.replace(/^\.\/?/, "").replace(/^\//, "");
+    return (path.indexOf("./") === 0 ? path : "./" + path);
+  }
+
+  function fetchArtworks(cb) {
+    var urls = ["./data/gallery.json", "./data/artworks.json"];
+    var i = 0;
+    function tryNext() {
+      if (i >= urls.length) {
+        cb([{ id: "cactus", title: "Кактусы", subtitle: "Коллекция", imageUrl: "./img/derevya.jpeg" }, { id: "nature", title: "Природа", subtitle: "Фото", imageUrl: "./relax-hut.jpg" }]);
+        return;
+      }
+      fetch(urls[i] + "?t=" + Date.now(), { cache: "no-store" })
+        .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function(data) {
+          if (Array.isArray(data.artworks) && data.artworks.length > 0) {
+            cb(data.artworks);
+            return;
+          }
+          i++;
+          tryNext();
+        })
+        .catch(function() { i++; tryNext(); });
+    }
+    tryNext();
+  }
+
+  function openLightbox(art) {
+    var src = resolveUrl(art.imageUrl);
+    lightboxImg.src = src;
+    lightboxImg.alt = art.title;
+    lightboxCaption.textContent = art.subtitle ? art.title + " — " + art.subtitle : art.title;
+    lightbox.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+
+  if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+  if (lightbox) lightbox.addEventListener("click", function(e) { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeLightbox(); });
+
+  fetchArtworks(function(artworks) {
+    if (!artworks || artworks.length === 0) {
+      root.className = "gallery-empty";
+      root.innerHTML = window.I18n ? window.I18n.t("gallery_empty") : "Пока нет работ.";
+      if (window.I18n) window.I18n.applyToPage();
+      return;
+    }
+    root.className = "";
+    root.innerHTML = "";
+    var ul = document.createElement("ul");
+    ul.className = "gallery-grid";
+    artworks.forEach(function(art) {
+      var li = document.createElement("li");
+      li.className = "gallery-tile";
+      var imgUrl = resolveUrl(art.imageUrl);
+      li.innerHTML = '<a href="#" class="gallery-tile__link" data-index="' + artworks.indexOf(art) + '">' +
+        '<div class="gallery-tile__img-wrap"><img class="gallery-tile__img" src="' + imgUrl.replace(/"/g, "&quot;") + '" alt="' + (art.title || "").replace(/"/g, "&quot;") + '" loading="lazy" /></div>' +
+        '<div class="gallery-tile__caption"><p class="gallery-tile__title">' + (art.title || "").replace(/</g, "&lt;") + '</p>' +
+        (art.subtitle ? '<p class="gallery-tile__sub">' + (art.subtitle || "").replace(/</g, "&lt;") + '</p>' : "") + "</div></a>";
+      var a = li.querySelector("a");
+      a.addEventListener("click", function(e) {
+        e.preventDefault();
+        openLightbox(art);
+      });
+      ul.appendChild(li);
+    });
+    root.appendChild(ul);
+  });
+})();
+  </script>
+  <script>
+(function() {
+  if (window.I18n) window.I18n.init();
+  var navSearch = document.getElementById("nav-search");
+  if (navSearch) {
+    var p = new URLSearchParams(window.location.search);
+    var q = p.get("q");
+    if (q) navSearch.value = q;
+  }
+})();
+  </script>
+</body>
+</html>

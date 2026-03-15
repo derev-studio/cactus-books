@@ -1,0 +1,23 @@
+# Конфигурация для Prose.io (редактирование статей на GitHub).
+# В Prose.io выберите репозиторий — папка articles будет доступна для редактирования.
+# У каждого рассказа можно указать title, image и content.
+
+prose:
+  rooturl: 'articles'
+  metadata:
+    articles:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Заголовок"
+          placeholder: "Название рассказа"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Картинка"
+          placeholder: "Путь к фото, например ./img/my-photo.jpg"
+      - name: "content"
+        field:
+          element: "textarea"
+          label: "Текст"
+          placeholder: "Текст рассказа"

@@ -59,6 +59,17 @@
     .story-content a.story-link:hover { color: #1d4ed8; }
     .loading { text-align: center; padding: 3rem; color: var(--cactus-muted-on-dark); }
     .error { color: #f0a0a0; padding: 1rem; }
+    .stories-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+    .stories-card { margin: 0; }
+    .stories-card__link { display: block; border-radius: 12px; overflow: hidden; background: var(--cactus-surface); box-shadow: 0 4px 20px rgba(0,0,0,0.12); text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; }
+    .stories-card__link:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.18); }
+    .stories-card__img-wrap { aspect-ratio: 4/3; overflow: hidden; background: var(--cactus-surface-soft); }
+    .stories-card__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .stories-card__body { padding: 1rem 1.25rem; }
+    .stories-card__title { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.5rem; }
+    .stories-card__excerpt { font-size: 0.9rem; color: var(--cactus-muted-on-dark); margin: 0 0 1rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .stories-card__btn { display: inline-block; padding: 0.5rem 1rem; background: var(--cactus-accent, #2d5a3d); color: #fff; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
+    .stories-back { margin-bottom: 1.5rem; }
   </style>
 </head>
 <body>
@@ -82,7 +93,7 @@
           <a href="navigator.html" id="header-dropdown-nav" data-i18n="nav_navigator">Навигатор по кактусам</a>
           <a href="книга-кактусология/book-read.html" id="header-dropdown-book" data-i18n="nav_book">Кактусология</a>
           <a href="great-cactus.html" id="header-dropdown-great" data-i18n="nav_great">Великие кактусоводы</a>
-          <a href="index.html" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="gallery.html" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
           <a href="stories.html" class="site-header__link--active" id="header-dropdown-stories" data-i18n="nav_stories">Рассказы</a>
           <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
           <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
@@ -101,6 +112,7 @@
   </div>
   <nav class="stories-nav" aria-label="Быстрые ссылки">
     <a class="stories-nav__btn" href="home.html" id="stories-btn-main" data-i18n="stories_nav_main">На главную</a>
+    <a class="stories-nav__btn" href="stories.html" id="stories-btn-list">Все рассказы</a>
     <a class="stories-nav__btn" href="index.html" id="stories-btn-start" data-i18n="stories_nav_start">Стартовая</a>
   </nav>
   <footer class="site-footer">
@@ -173,30 +185,56 @@
     return String(field);
   }
 
-  function renderStories(stories) {
+  function excerpt(text, maxLen) {
+    if (!text) return "";
+    var s = String(text).replace(/\s+/g, " ").trim();
+    return s.length <= maxLen ? s : s.slice(0, maxLen) + "…";
+  }
+
+  function renderList(stories) {
     if (!stories || stories.length === 0) {
       root.innerHTML = "<p class=\"loading\" data-i18n=\"stories_no\">" + (window.I18n ? window.I18n.t("stories_no") : "Пока нет рассказов.") + "</p>";
       if (window.I18n) window.I18n.applyToPage();
       return;
     }
-    root.innerHTML = stories.map(function(s) {
-      var cover = s.coverUrl ? "<img class=\"story-cover\" src=\"" + escapeAttr(s.coverUrl) + "\" alt=\"\" loading=\"lazy\" />" : "";
-      var titleKey = "story_" + s.id + "_title";
-      var contentKey = "story_" + s.id + "_content";
-      var fallbackTitle = getStoryText(s.title);
-      var fallbackContent = getStoryText(s.content);
-      return "<article>" + cover + "<h1 class=\"story-title\" data-i18n=\"" + escapeAttr(titleKey) + "\">" + escapeHtml(fallbackTitle) + "</h1><div class=\"story-content\" data-i18n=\"" + escapeAttr(contentKey) + "\" data-i18n-linkify=\"true\">" + linkify(fallbackContent) + "</div></article>";
-    }).join("");
+    var readLabel = window.I18n ? window.I18n.t("stories_read_more") : "Читать рассказ";
+    root.innerHTML = "<ul class=\"stories-cards\">" + stories.map(function(s) {
+      var title = getStoryText(s.title);
+      var content = getStoryText(s.content);
+      var cover = s.coverUrl ? "<img class=\"stories-card__img\" src=\"" + escapeAttr(s.coverUrl) + "\" alt=\"\" loading=\"lazy\" />" : "";
+      var storyUrl = "stories.html?story=" + encodeURIComponent(s.id);
+      return "<li class=\"stories-card\"><a href=\"" + escapeAttr(storyUrl) + "\" class=\"stories-card__link\"><div class=\"stories-card__img-wrap\">" + cover + "</div><div class=\"stories-card__body\"><h2 class=\"stories-card__title\">" + escapeHtml(title) + "</h2><p class=\"stories-card__excerpt\">" + escapeHtml(excerpt(content, 120)) + "</p><span class=\"stories-card__btn\">" + escapeHtml(readLabel) + "</span></div></a></li>";
+    }).join("") + "</ul>";
+    if (window.I18n) window.I18n.applyToPage();
+  }
+
+  function renderSingle(story) {
+    if (!story) {
+      root.innerHTML = "<p class=\"error\">Рассказ не найден.</p><p><a href=\"stories.html\">← Все рассказы</a></p>";
+      return;
+    }
+    var title = getStoryText(story.title);
+    var content = getStoryText(story.content);
+    var cover = story.coverUrl ? "<img class=\"story-cover\" src=\"" + escapeAttr(story.coverUrl) + "\" alt=\"\" loading=\"lazy\" />" : "";
+    var backLabel = window.I18n ? window.I18n.t("stories_nav_list") : "← Все рассказы";
+    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article>" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div></article>";
     if (window.I18n) window.I18n.applyToPage();
   }
 
   function loadAndShowStories() {
+    var params = new URLSearchParams(window.location.search);
+    var storyId = params.get("story");
     fetch("./data/stories.json", { cache: "no-store" })
       .then(function(r) { return r.ok ? r.text() : Promise.reject(new Error("Не удалось загрузить")); })
       .then(function(text) {
         var data = JSON.parse(text);
         loadedStories = Array.isArray(data.stories) ? data.stories : [];
-        renderStories(loadedStories);
+        if (storyId) {
+          var one = loadedStories.filter(function(s) { return s.id === storyId; })[0];
+          renderSingle(one);
+        } else {
+          renderList(loadedStories);
+        }
       })
       .catch(function() {
         root.innerHTML = "<p class=\"error\" data-i18n=\"stories_error\">" + (window.I18n ? window.I18n.t("stories_error") : "Не удалось загрузить рассказы.") + "</p>";
@@ -206,7 +244,14 @@
 
   loadAndShowStories();
   window.addEventListener("soulart-language-change", function() {
-    if (loadedStories.length) renderStories(loadedStories);
+    var params = new URLSearchParams(window.location.search);
+    var storyId = params.get("story");
+    if (storyId && loadedStories.length) {
+      var one = loadedStories.filter(function(s) { return s.id === storyId; })[0];
+      renderSingle(one);
+    } else if (loadedStories.length) {
+      renderList(loadedStories);
+    }
   });
 
   function playPapyrusClick(variant) {
@@ -233,9 +278,11 @@
     } catch (_) {}
   }
   var btnMain = document.getElementById("stories-btn-main");
+  var btnList = document.getElementById("stories-btn-list");
   var btnStart = document.getElementById("stories-btn-start");
   var backTop = document.getElementById("stories-back-top");
   if (btnMain) btnMain.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(4); setTimeout(function() { window.location.href = btnMain.getAttribute("href"); }, 120); });
+  if (btnList) btnList.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(4); setTimeout(function() { window.location.href = "stories.html"; }, 120); });
   if (btnStart) btnStart.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(5); setTimeout(function() { window.location.href = btnStart.getAttribute("href"); }, 120); });
   if (backTop) backTop.addEventListener("click", function(e) { e.preventDefault(); playPapyrusClick(4); setTimeout(function() { window.location.href = backTop.getAttribute("href"); }, 120); });
 })();
