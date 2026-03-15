@@ -266,6 +266,12 @@
       "fr": "Suivant",
       "he": "הבא"
     },
+    "about_independent": {
+      "ru": "Кактусярий — самостоятельный проект.",
+      "en": "Cactusarium is an independent project.",
+      "uk": "Кактусярий — незалежний проєкт.",
+      "be": "Кактусярий — самастойны праект."
+    },
     "about_title": {
       "ru": "О сайте",
       "en": "About the site",
@@ -1687,41 +1693,41 @@
     "guardian_back": {
       "ru": "← На главную",
       "en": "← Back to main",
+      "uk": "← На головну",
+      "be": "← На галоўную",
       "jp": "← メインへ",
       "it": "← Torna alla home",
       "zh": "← 返回主页",
       "es": "← Volver al inicio",
       "de": "← Zur Startseite",
       "fr": "← Retour à l'accueil",
-      "he": "← לדף הראשי",
-      "uk": "← На главную",
-      "be": "← На главную"
+      "he": "← לדף הראשי"
     },
     "guardian_title": {
       "ru": "Колючий Собеседник",
       "en": "Cactus Companion",
+      "uk": "Колючий Співбесідник",
+      "be": "Калючы Суразмоўнік",
       "jp": "守護者",
       "it": "Compagno cactus",
       "zh": "守护者",
       "es": "Compañero cactus",
       "de": "Kaktus-Begleiter",
       "fr": "Compagnon cactus",
-      "he": "שומר",
-      "uk": "Колючий Собеседник",
-      "be": "Колючий Собеседник"
+      "he": "שומר"
     },
     "guardian_subtitle": {
       "ru": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве.",
       "en": "The companion knows the Cactology book, can suggest species and range, route to habitat. Chat about cacti, languages, creativity.",
+      "uk": "Співбесідник знає книгу Кактусологія, підкаже вид і ареал, маршрут до місця зростання. Розмова про кактуси, мови, творчість.",
+      "be": "Суразмоўнік ведае кнігу Кактусологія, падкажа від і арэал, маршрут да месца праростання. Размова пра кактусы, мовы, творчасць.",
       "jp": "サポート、アドバイス、会話。守護者はサイトのストーリーと本を知り、創作・言語をサポートします。",
       "it": "Il compagno conosce il libro Cactologia, specie e areali. Conversazione su cactus, lingue, creatività.",
       "zh": "守护者了解网站故事和书籍，支持创作、语言。",
       "es": "El compañero conoce el libro Cactología, especies y área. Charla sobre cactus, idiomas, creatividad.",
       "de": "Der Begleiter kennt das Buch Kaktologie, Arten und Verbreitung. Gespräch über Kakteen, Sprachen, Kreativität.",
       "fr": "Le compagnon connaît le livre Cactologie, espèces et aire. Conversation sur les cactus, langues, créativité.",
-      "he": "השומר מכיר את הסיפורים והספר באתר.",
-      "uk": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве.",
-      "be": "Собеседник знает книгу Кактусология, подскажет вид и ареал, маршрут до места произрастания. Разговор о кактусах, языках, творчестве."
+      "he": "השומר מכיר את הסיפורים והספר באתר."
     },
     "guardian_mode": {
       "ru": "Режим:",
@@ -1739,15 +1745,15 @@
     "guardian_mode_assistant": {
       "ru": "Разговор",
       "en": "Chat",
+      "uk": "Розмова",
+      "be": "Размова",
       "jp": "会話",
       "it": "Chat",
       "zh": "聊天",
       "es": "Charla",
       "de": "Gespräch",
       "fr": "Conversation",
-      "he": "שיחה",
-      "uk": "Разговор",
-      "be": "Разговор"
+      "he": "שיחה"
     },
     "guardian_mode_children": {
       "ru": "Для детей",
@@ -1765,119 +1771,227 @@
     "guardian_mode_language": {
       "ru": "Языки",
       "en": "Languages",
+      "uk": "Мови",
+      "be": "Мовы",
       "jp": "言語",
       "it": "Lingue",
       "zh": "语言",
       "es": "Idiomas",
       "de": "Sprachen",
       "fr": "Langues",
-      "he": "שפות",
-      "uk": "Языки",
-      "be": "Языки"
+      "he": "שפות"
     },
     "guardian_mode_art": {
       "ru": "Рисование",
       "en": "Drawing",
+      "uk": "Малювання",
+      "be": "Малюванне",
       "jp": "絵",
       "it": "Disegno",
       "zh": "绘画",
       "es": "Dibujo",
       "de": "Zeichnen",
       "fr": "Dessin",
-      "he": "ציור",
-      "uk": "Рисование",
-      "be": "Рисование"
+      "he": "ציור"
     },
     "guardian_mode_psychology": {
       "ru": "Душа",
       "en": "Soul",
+      "uk": "Душа",
+      "be": "Душа",
       "jp": "心",
       "it": "Anima",
       "zh": "心灵",
       "es": "Alma",
       "de": "Seele",
       "fr": "Âme",
-      "he": "נשמה",
-      "uk": "Душа",
-      "be": "Душа"
+      "he": "נשמה"
     },
     "guardian_role_lang": {
       "ru": "Языки",
       "en": "Languages",
+      "uk": "Мови",
+      "be": "Мовы",
       "jp": "言語",
       "it": "Lingue",
       "zh": "语言",
       "es": "Idiomas",
       "de": "Sprachen",
       "fr": "Langues",
-      "he": "שפות",
-      "uk": "Языки",
-      "be": "Языки"
+      "he": "שפות"
     },
     "guardian_role_art": {
       "ru": "Рисование",
       "en": "Drawing",
+      "uk": "Малювання",
+      "be": "Малюванне",
       "jp": "絵",
       "it": "Arte",
       "zh": "绘画",
       "es": "Arte",
       "de": "Kunst",
       "fr": "Art",
-      "he": "ציור",
-      "uk": "Рисование",
-      "be": "Рисование"
+      "he": "ציור"
     },
     "guardian_role_soul": {
       "ru": "Душа",
       "en": "Soul",
+      "uk": "Душа",
+      "be": "Душа",
       "jp": "心",
       "it": "Anima",
       "zh": "心灵",
       "es": "Alma",
       "de": "Seele",
       "fr": "Âme",
-      "he": "נשמה",
-      "uk": "Душа",
-      "be": "Душа"
+      "he": "נשמה"
     },
     "guardian_welcome": {
       "ru": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь.",
       "en": "Hello. I am the Cactus Companion. I know the Cactology book, can suggest species, range, route to habitat. Let's talk about cacti, languages, creativity. Just write — I'm here.",
+      "uk": "Привіт. Я — Колючий Співбесідник. Знаю книгу Кактусологія, підкажу вид, ареал, маршрут до місця зростання. Поговоримо про кактуси, мови, творчість. Просто напиши — я тут.",
+      "be": "Прывітанне. Я — Калючы Суразмоўнік. Ведаю кнігу Кактусологія, падкажу від, арэал, маршрут да месца праростання. Пагаворым пра кактусы, мовы, творчасць. Проста напішы — я тут.",
       "jp": "こんにちは。守護者です。サイトの本とストーリーを知っています。書いてください。",
       "it": "Salve. Sono il Compagno cactus. Conosco il libro Cactologia. Parliamo di cactus, lingue, creatività. Scrivi — sono qui.",
       "zh": "你好。我是守护者。了解网站书籍。我们可以聊创作、语言。写信给我。",
       "es": "Hola. Soy el Compañero cactus. Conozco el libro Cactología. Hablemos de cactus, idiomas, creatividad. Escribe — estoy aquí.",
       "de": "Hallo. Ich bin der Kaktus-Begleiter. Kenn das Buch Kaktologie. Sprechen über Kakteen, Sprachen, Kreativität. Schreib — ich bin hier.",
       "fr": "Bonjour. Je suis le Compagnon cactus. Je connais le livre Cactologie. Parlons cactus, langues, créativité. Écris — je suis là.",
-      "he": "שלום. אני השומר. מכיר את הספר והסיפורים. כתבי — אני כאן.",
-      "uk": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь.",
-      "be": "Здравствуй. Я — Колючий Собеседник. Знаю книгу Кактусология, подскажу вид, ареал, маршрут до места произрастания. Поговорим о кактусах, языках, творчестве. Просто напиши — я здесь."
+      "he": "שלום. אני השומר. מכיר את הספר והסיפורים. כתבי — אני כאן."
     },
     "guardian_placeholder": {
       "ru": "Напиши Собеседнику…",
       "en": "Write to the Companion…",
+      "uk": "Напиши Співбесіднику…",
+      "be": "Напішы Суразмоўніку…",
       "jp": "守護者へ書く…",
       "it": "Scrivi al Compagno…",
       "zh": "写信给守护者…",
       "es": "Escribe al Compañero…",
       "de": "Schreib dem Begleiter…",
       "fr": "Écris au Compagnon…",
-      "he": "כתוב לשומר…",
-      "uk": "Напиши Собеседнику…",
-      "be": "Напиши Собеседнику…"
+      "he": "כתוב לשומר…"
     },
     "guardian_hint": {
       "ru": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты.",
       "en": "The Companion remembers the conversation and knows the Cactology book. Images: cacti and succulents only.",
+      "uk": "Співбесідник пам'ятає контекст, знає книгу Кактусологія. Зображення — лише кактуси та сукуленти.",
+      "be": "Суразмоўнік памятае кантэкст, ведае кнігу Кактусологія. Выявы — толькі кактусы і сукуленты.",
       "jp": "守護者は会話と本を覚えています。",
       "it": "Il Compagno ricorda la conversazione e il libro Cactologia.",
       "zh": "守护者记得对话和书籍内容。",
       "es": "El Compañero recuerda la conversación y el libro Cactología.",
       "de": "Der Begleiter erinnert sich an das Gespräch und das Buch Kaktologie.",
       "fr": "Le Compagnon se souvient de la conversation et du livre Cactologie.",
-      "he": "השומר זוכר את השיחה והספר.",
-      "uk": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты.",
-      "be": "Собеседник помнит контекст, знает книгу Кактусология. Картинки — только кактусы и суккуленты."
+      "he": "השומר זוכר את השיחה והספר."
+    },
+    "guardian_more_summary": {
+      "ru": "Ещё",
+      "en": "More",
+      "uk": "Ще",
+      "be": "Яшчэ"
+    },
+    "guardian_mode_psychologist": {
+      "ru": "♥ Психолог",
+      "en": "♥ Psychologist",
+      "uk": "♥ Психолог",
+      "be": "♥ Псіхолаг"
+    },
+    "guardian_mode_duo": {
+      "ru": "✦語 Дуэт",
+      "en": "✦語 Duo",
+      "uk": "✦語 Дует",
+      "be": "✦語 Дуэт"
+    },
+    "guardian_mode_trio": {
+      "ru": "✦語♥ Трио",
+      "en": "✦語♥ Trio",
+      "uk": "✦語♥ Тріо",
+      "be": "✦語♥ Трыо"
+    },
+    "guardian_mode_group_aria": {
+      "ru": "Режим разговора",
+      "en": "Conversation mode",
+      "uk": "Режим розмови",
+      "be": "Рэжым размовы"
+    },
+    "guardian_send_btn": {
+      "ru": "Отправить",
+      "en": "Send",
+      "uk": "Надіслати",
+      "be": "Адправіць"
+    },
+    "guardian_message_aria": {
+      "ru": "Сообщение Собеседнику",
+      "en": "Message to Companion",
+      "uk": "Повідомлення Співбесіднику",
+      "be": "Паведамленне Суразмоўніку"
+    },
+    "guardian_attach_aria": {
+      "ru": "Прикрепить фото",
+      "en": "Attach photo",
+      "uk": "Прикріпити фото",
+      "be": "Далучыць фота"
+    },
+    "guardian_mic_aria": {
+      "ru": "Говорить голосом",
+      "en": "Speak with voice",
+      "uk": "Говорити голосом",
+      "be": "Гаварыць голасам"
+    },
+    "guardian_send_aria": {
+      "ru": "Отправить сообщение",
+      "en": "Send message",
+      "uk": "Надіслати повідомлення",
+      "be": "Адправіць паведамленне"
+    },
+    "guardian_opts_aria": {
+      "ru": "Опции: голос и картинки",
+      "en": "Options: voice and images",
+      "uk": "Опції: голос і зображення",
+      "be": "Опцыі: голас і выявы"
+    },
+    "guardian_voice_aria": {
+      "ru": "Голос в ответах",
+      "en": "Voice in replies",
+      "uk": "Голос у відповідях",
+      "be": "Голас у адказах"
+    },
+    "guardian_images_aria": {
+      "ru": "Картинки в ответах",
+      "en": "Images in replies",
+      "uk": "Зображення у відповідях",
+      "be": "Выявы ў адказах"
+    },
+    "guardian_atmosphere_aria": {
+      "ru": "Настройки атмосферы",
+      "en": "Atmosphere settings",
+      "uk": "Налаштування атмосфери",
+      "be": "Налады атмасферы"
+    },
+    "sources_aria": {
+      "ru": "Источники",
+      "en": "Sources",
+      "uk": "Джерела",
+      "be": "Крыніцы"
+    },
+    "link_title": {
+      "ru": "Откройте эту ссылку на телефоне",
+      "en": "Open this link on your phone",
+      "uk": "Відкрийте це посилання на телефоні",
+      "be": "Адкрыйце гэту спасылку на тэлефоне"
+    },
+    "link_hint": {
+      "ru": "Скопируйте ссылку ниже или отсканируйте QR-код камерой телефона",
+      "en": "Copy the link below or scan the QR code with your phone camera",
+      "uk": "Скопіюйте посилання нижче або відскануйте QR-код камерою телефону",
+      "be": "Скапіюйце спасылку ніж або адскануйце QR-код камерай тэлефона"
+    },
+    "link_main": {
+      "ru": "На главную сайта",
+      "en": "To site home",
+      "uk": "На головну сайту",
+      "be": "На галоўную сайта"
     },
     "story_s1771904883169_title": {
       "ru": "Зелёный вечер",

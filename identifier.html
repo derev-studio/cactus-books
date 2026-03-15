@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="site-header.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="page-common.css" />
   <link rel="stylesheet" href="identifier.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
@@ -51,6 +52,13 @@
   <main class="identifier-main">
     <section class="identifier-hero">
       <h1 class="identifier-hero__title" data-i18n="identifier_title">🌵 Опознать кактус</h1>
+      <nav class="page-nav-tiles" aria-label="" data-i18n-attr="aria-label" data-i18n="page_nav_aria">
+        <a href="systematics.html" data-i18n="nav_systematics">Происхождение видов</a>
+        <a href="geography.html" data-i18n="nav_geography">Места обитания</a>
+        <a href="care.html" data-i18n="nav_care">Здоровье кактуса</a>
+        <a href="identifier.html" class="site-nav-active" data-i18n="nav_identify">Опознать кактус</a>
+        <a href="guardian.html" data-i18n="nav_guardian">Колючий Собеседник</a>
+      </nav>
       <p class="identifier-hero__subtitle" data-i18n="identifier_subtitle">Загрузите фото — узнайте вид, где растёт в природе, интересные факты и как ухаживать</p>
     </section>
 
@@ -83,7 +91,7 @@
 
   <footer class="site-footer">
     <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="Источники">
+    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
       <details>
         <summary data-i18n="sources_summary">Источники</summary>
         <div class="site-footer__sources-panel">
@@ -93,7 +101,7 @@
             <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
             <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
             <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="книга-кактусология/book-read.html">Кактусология</a>
+            <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
           </p>
         </div>
       </details>

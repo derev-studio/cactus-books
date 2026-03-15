@@ -36,15 +36,22 @@
   </style>
 </head>
 <body>
-  <h1>Откройте эту ссылку на телефоне</h1>
-  <p class="hint">Скопируйте ссылку ниже или отсканируйте QR-код камерой телефона</p>
+  <h1 data-i18n="link_title">Откройте эту ссылку на телефоне</h1>
+  <p class="hint" data-i18n="link_hint">Скопируйте ссылку ниже или отсканируйте QR-код камерой телефона</p>
   <div class="url" id="url">—</div>
   <div class="qr" id="qr"></div>
-  <p class="hint"><a href="index.html">На главную сайта</a></p>
+  <p class="hint"><a href="index.html" data-i18n="link_main">На главную сайта</a></p>
+  <script src="language-manager.js"></script>
+  <script src="i18n.js"></script>
   <script>
-    var base = window.location.origin;
-    document.getElementById('url').textContent = base;
-    document.getElementById('qr').innerHTML = '<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' + encodeURIComponent(base) + '" width="220" height="220" alt="QR" />';
+    (function() {
+      var base = window.location.origin;
+      document.getElementById('url').textContent = base;
+      document.getElementById('qr').innerHTML = '<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' + encodeURIComponent(base) + '" width="220" height="220" alt="QR" />';
+      function applyLang() { if (window.I18n) window.I18n.init(); }
+      if (window.__LANGUAGES__) applyLang();
+      else window.addEventListener('cactusbooks-languages-loaded', applyLang, { once: true });
+    })();
   </script>
 </body>
 </html>

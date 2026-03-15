@@ -92,7 +92,7 @@
     <div class="chat-inner">
 
       <!-- Режимы: основные на виду, остальные в «Ещё» -->
-      <div class="guardian-mode" role="group" aria-label="Режим разговора">
+      <div class="guardian-mode" role="group" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_mode_group_aria">
         <button type="button" class="guardian-mode__btn guardian-mode__btn--active"
           data-mode="assistant" data-i18n="guardian_mode_assistant">Разговор</button>
         <button type="button" class="guardian-mode__btn"
@@ -100,14 +100,14 @@
         <button type="button" class="guardian-mode__btn"
           data-mode="art" data-i18n="guardian_mode_art">Рисование</button>
         <details class="guardian-mode-more">
-          <summary class="guardian-mode__btn guardian-mode__btn--more">Ещё</summary>
+          <summary class="guardian-mode__btn guardian-mode__btn--more" data-i18n="guardian_more_summary">Ещё</summary>
           <div class="guardian-mode-more__list">
             <button type="button" class="guardian-mode__btn guardian-mode__btn--psychologist"
-              data-mode="psychology">♥ Психолог</button>
+              data-mode="psychology" data-i18n="guardian_mode_psychologist">♥ Психолог</button>
             <button type="button" class="guardian-mode__btn guardian-mode__btn--duo"
-              data-mode="duo">✦語 Дуэт</button>
+              data-mode="duo" data-i18n="guardian_mode_duo">✦語 Дуэт</button>
             <button type="button" class="guardian-mode__btn guardian-mode__btn--trio"
-              data-mode="trio">✦語♥ Трио</button>
+              data-mode="trio" data-i18n="guardian_mode_trio">✦語♥ Трио</button>
           </div>
         </details>
       </div>
@@ -129,25 +129,27 @@
           id="guardian-input"
           class="guardian-chat__input"
           rows="3"
-          placeholder="Напиши или скажи Хранителю… Можно прикрепить фото 📷"
+          placeholder=""
           data-i18n-placeholder="guardian_placeholder"
-          aria-label="Сообщение Хранителю"
+          aria-label=""
+          data-i18n-attr="aria-label"
+          data-i18n="guardian_message_aria"
         ></textarea>
         <input type="file" id="guardian-attach-image" accept="image/*" class="guardian-chat__file-input" aria-hidden="true" />
         <div class="guardian-chat__actions">
-          <button type="button" id="guardian-attach-photo" class="guardian-chat__attach" aria-label="Прикрепить фото" title="Отправить фото Собеседнику">📷</button>
-          <button type="button" id="guardian-mic" class="guardian-chat__mic" aria-label="Говорить голосом" title="Говорить голосом">🎤</button>
-          <button type="button" id="guardian-send" class="guardian-chat__send" aria-label="Отправить сообщение" title="Отправить сообщение (рисование бесплатно)">
-            <span aria-hidden="true">Отправить</span>
+          <button type="button" id="guardian-attach-photo" class="guardian-chat__attach" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_attach_aria" title="">📷</button>
+          <button type="button" id="guardian-mic" class="guardian-chat__mic" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_mic_aria" title="">🎤</button>
+          <button type="button" id="guardian-send" class="guardian-chat__send" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_send_aria" title="">
+            <span aria-hidden="true" data-i18n="guardian_send_btn">Отправить</span>
           </button>
           <details class="guardian-chat__opts">
-            <summary class="guardian-chat__opts-btn" aria-label="Опции" title="Голос и картинки">⋯</summary>
+            <summary class="guardian-chat__opts-btn" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_opts_aria" title="">⋯</summary>
             <div class="guardian-chat__opts-menu">
-              <button type="button" id="guardian-voice-toggle" class="guardian-chat__opt-item" aria-label="Голос Хранителя" title="Включить / выключить голос в ответах">
-                <span class="voice-icon">🔊</span> Голос ответов
+              <button type="button" id="guardian-voice-toggle" class="guardian-chat__opt-item" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_voice_aria" title="">
+                <span class="voice-icon">🔊</span> <span data-i18n="guardian_voice_aria">Голос ответов</span>
               </button>
-              <button type="button" id="guardian-images-toggle" class="guardian-chat__opt-item" aria-label="Картинки" title="Картинки в ответах">
-                <span class="images-icon">🖼</span> Картинки
+              <button type="button" id="guardian-images-toggle" class="guardian-chat__opt-item" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_images_aria" title="">
+                <span class="images-icon">🖼</span> <span data-i18n="guardian_images_aria">Картинки</span>
               </button>
             </div>
           </details>
@@ -158,10 +160,10 @@
   </div>
 
   <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="Источники">
+    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
+    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
       <details>
-        <summary>Источники</summary>
+        <summary data-i18n="sources_summary">Источники</summary>
         <div class="site-footer__sources-panel">
           <p class="site-footer__sources-list">
             <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
@@ -169,14 +171,14 @@
             <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
             <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
             <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="книга-кактусология/book-read.html">Кактусология</a>
+            <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
           </p>
         </div>
       </details>
     </nav>
   </footer>
 
-  <div id="atmosphere-widget" class="atmosphere-widget" aria-label="Настройки атмосферы"></div>
+  <div id="atmosphere-widget" class="atmosphere-widget" aria-label="" data-i18n-attr="aria-label" data-i18n="guardian_atmosphere_aria"></div>
 
   <script src="config.js"></script>
   <script src="language-manager.js" defer></script>
