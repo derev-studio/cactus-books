@@ -30,13 +30,15 @@
     .field label { display: block; margin-bottom: 0.35rem; font-weight: 500; color: #333; }
     .field input[type="text"],
     .field input[type="password"],
-    .field textarea {
+    .field textarea,
+    .field select {
       width: 100%;
       padding: 0.6rem 0.75rem;
       border: 1px solid #ccc;
       border-radius: 8px;
       font: inherit;
     }
+    .field select { cursor: pointer; max-width: 20rem; }
     .field textarea { min-height: 140px; resize: vertical; }
     .field input:focus, .field textarea:focus {
       outline: none;
@@ -125,6 +127,7 @@
     }
     .stories-list .title { flex: 1; font-weight: 500; min-width: 0; }
     .stories-list .id { font-size: 0.85rem; color: #666; flex-shrink: 0; }
+    .stories-list .cat-badge { font-size: 0.75rem; color: #666; font-weight: normal; margin-left: 0.35rem; }
     .msg { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
     .msg.success { background: #e8f5e9; color: #1b5e20; }
     .msg.error { background: #ffebee; color: #b71c1c; }
@@ -151,6 +154,14 @@
     <div class="field">
       <label for="content">Текст</label>
       <textarea id="content" placeholder="Текст рассказа…"></textarea>
+    </div>
+    <div class="field">
+      <label for="category">Категория в галерее</label>
+      <select id="category">
+        <option value="cactus">Кактусы</option>
+        <option value="succulent">Суккуленты</option>
+        <option value="caudex">Каудексы</option>
+      </select>
     </div>
     <div class="field">
       <label>Изображение</label>
@@ -182,6 +193,7 @@
   var repoInput = document.getElementById("repo");
   var titleInput = document.getElementById("title");
   var contentInput = document.getElementById("content");
+  var categorySelect = document.getElementById("category");
   var imageInput = document.getElementById("image");
   var previewEl = document.getElementById("preview");
   var publishBtn = document.getElementById("publish");
@@ -357,11 +369,13 @@
     items.forEach(function(s) {
       var li = document.createElement("li");
       var title = (s.title || s.id || "").toString();
+      var cat = (s.category || "").toString().toLowerCase();
+      var catLabel = cat === "succulent" ? "Суккуленты" : (cat === "caudex" ? "Каудексы" : "Кактусы");
       var thumbSrc = storyImageUrl(s.coverUrl);
       var thumbHtml = thumbSrc
         ? "<img class=\"thumb\" src=\"" + escapeAttr(thumbSrc) + "\" alt=\"\" loading=\"lazy\" />"
         : "<div class=\"thumb-none\">нет фото</div>";
-      li.innerHTML = thumbHtml + "<span class=\"title\">" + escapeHtml(title) + "</span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
+      li.innerHTML = thumbHtml + "<span class=\"title\">" + escapeHtml(title) + " <span class=\"cat-badge\">" + escapeHtml(catLabel) + "</span></span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
       var delBtn = document.createElement("button");
       delBtn.type = "button";
       delBtn.className = "btn btn-ghost";
@@ -455,13 +469,14 @@
         return loadStoriesFromApi();
       }).then(function(r) {
         var list = (r.json && r.json.stories) ? r.json.stories : [];
+        var category = (categorySelect && categorySelect.value) ? categorySelect.value : "cactus";
         if (list.some(function(s) { return s.id === id; })) {
           list = list.map(function(s) {
-            if (s.id === id) return { id: id, title: title, coverUrl: coverUrl || s.coverUrl, content: content };
+            if (s.id === id) return { id: id, title: title, coverUrl: coverUrl || s.coverUrl, content: content, category: category };
             return s;
           });
         } else {
-          list.push({ id: id, title: title, coverUrl: coverUrl, content: content });
+          list.push({ id: id, title: title, coverUrl: coverUrl, content: content, category: category });
         }
         var newJson = { stories: list };
         var str = JSON.stringify(newJson, null, 2);
