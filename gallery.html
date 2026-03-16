@@ -116,6 +116,7 @@
       <button type="button" class="gallery-filter-btn" data-filter="cactus">Кактусы</button>
       <button type="button" class="gallery-filter-btn" data-filter="succulent">Суккуленты</button>
       <button type="button" class="gallery-filter-btn" data-filter="caudex">Каудексы</button>
+      <button type="button" class="gallery-filter-btn" data-filter="other">Другие растения</button>
     </div>
     <div id="gallery-root" class="gallery-loading" data-i18n="stories_loading">Загрузка…</div>
   </main>
@@ -176,9 +177,8 @@
         firstLine = firstLine.slice(0, 117) + "…";
       }
       var cat = (s.category || s.kind || "").toString().toLowerCase();
-      if (cat !== "cactus" && cat !== "succulent" && cat !== "caudex") {
-        // По умолчанию считаем, что это кактус,
-        // чтобы фото не терялись и были в разделе «Кактусы»
+      if (cat !== "cactus" && cat !== "succulent" && cat !== "caudex" && cat !== "other") {
+        // Старые записи без категории показываем в «Кактусы» и «Все»
         cat = "cactus";
       }
       return {

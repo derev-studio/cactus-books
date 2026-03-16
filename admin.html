@@ -161,6 +161,7 @@
         <option value="cactus">Кактусы</option>
         <option value="succulent">Суккуленты</option>
         <option value="caudex">Каудексы</option>
+        <option value="other">Другие растения</option>
       </select>
     </div>
     <div class="field">
@@ -370,7 +371,7 @@
       var li = document.createElement("li");
       var title = (s.title || s.id || "").toString();
       var cat = (s.category || "").toString().toLowerCase();
-      var catLabel = cat === "succulent" ? "Суккуленты" : (cat === "caudex" ? "Каудексы" : "Кактусы");
+      var catLabel = cat === "succulent" ? "Суккуленты" : (cat === "caudex" ? "Каудексы" : (cat === "other" ? "Другие растения" : "Кактусы"));
       var thumbSrc = storyImageUrl(s.coverUrl);
       var thumbHtml = thumbSrc
         ? "<img class=\"thumb\" src=\"" + escapeAttr(thumbSrc) + "\" alt=\"\" loading=\"lazy\" />"
