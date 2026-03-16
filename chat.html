@@ -4,15 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="google" content="notranslate" />
-  <title>Места обитания | Кактусярий</title>
-  <meta name="description" content="Ареалы, карты распространения, природные местообитания кактусов." />
+  <title>Беседа | Кактусярий</title>
+  <meta name="description" content="Чат Сашки Деревяшкина. Живое общение без чинов и официоза." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="site-header.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="page-common.css" />
   <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #e8dfd4;
+      background-image: radial-gradient(ellipse at 30% 20%, rgba(220,200,180,0.4) 0%, transparent 50%),
+        linear-gradient(180deg, #e8dfd4 0%, #ddd4c8 50%, #d4c9bc 100%);
+      color: #3d352b;
+      font-family: Georgia, "Times New Roman", serif;
+      padding: clamp(1.5rem, 4vw, 3rem) max(1rem, env(safe-area-inset-left)) clamp(3rem, 6vw, 4rem) max(1rem, env(safe-area-inset-right));
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .chat-page { max-width: 42rem; margin: 0 auto; }
+    .chat-page__title {
+      font-size: clamp(1.85rem, 5vw, 2.5rem);
+      font-weight: 700;
+      color: #2c2419;
+      margin: 0 0 1.25rem;
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+    }
+    .chat-page__intro {
+      font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+      line-height: 1.7;
+      color: #4a4035;
+      margin: 0 0 2rem;
+      padding: 1.25rem 1.5rem;
+      background: rgba(255,248,240,0.6);
+      border-radius: 12px;
+      border-left: 4px solid #a08060;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .chat-page__foot {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #6b5d4f;
+    }
   </style>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="930d03b8-7ffa-4647-9c18-95a19664c468";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 <body>
   <header class="site-header">
@@ -24,7 +60,7 @@
     </form>
     <nav class="site-header__nav">
       <a href="systematics.html" class="site-header__link" id="header-link-origin" data-i18n="nav_systematics">Происхождение видов</a>
-      <a href="geography.html" class="site-header__link site-header__link--active" id="header-link-geography" data-i18n="nav_geography">Места обитания</a>
+      <a href="geography.html" class="site-header__link" id="header-link-geography" data-i18n="nav_geography">Места обитания</a>
       <a href="care.html" class="site-header__link" id="header-link-care" data-i18n="nav_care">Здоровье кактуса</a>
       <a href="identifier.html" class="site-header__link" id="header-link-identifier" data-i18n="nav_identify">Опознать кактус</a>
       <a href="guardian.html" class="site-header__link" id="header-link-guardian" data-i18n="nav_guardian">Колючий Собеседник</a>
@@ -37,7 +73,7 @@
           <a href="great-cactus.html" id="header-dropdown-great" data-i18n="nav_great">Великие кактусоводы</a>
           <a href="gallery.html" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
           <a href="stories.html" id="header-dropdown-stories" data-i18n="nav_stories">Рассказы</a>
-          <a href="chat.html" id="header-dropdown-chat">Беседа</a>
+          <a href="chat.html" class="site-header__link--active" id="header-dropdown-chat">Беседа</a>
           <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
           <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
           <a href="succulents.html" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
@@ -51,55 +87,19 @@
     <div id="header-lang-dropdown" class="header-lang-dropdown"></div>
   </header>
 
-  <main class="page-main">
-    <h1 data-i18n="nav_geography">Места обитания</h1>
-    <nav class="page-nav-tiles" aria-label="Основные разделы" data-i18n-attr="aria-label" data-i18n="page_nav_aria">
-      <a href="systematics.html" data-i18n="nav_systematics">Происхождение видов</a>
-      <a href="geography.html" class="site-nav-active" data-i18n="nav_geography">Места обитания</a>
-      <a href="care.html" data-i18n="nav_care">Здоровье кактуса</a>
-      <a href="identifier.html" data-i18n="nav_identify">Опознать кактус</a>
-      <a href="guardian.html" data-i18n="nav_guardian">Колючий Собеседник</a>
-    </nav>
-    <p class="page-intro" data-i18n="geography_intro">Где растут кактусы в природе: карты, регионы, особенности местообитаний.</p>
-    <section class="page-content">
-      <p class="notice" data-i18n="page_developing">Раздел в разработке. Контент появится позже.</p>
-    </section>
+  <main class="chat-page">
+    <h1 class="chat-page__title">Чат Сашки Деревяшкина</h1>
+    <p class="chat-page__intro">Заходите, присаживайтесь. Здесь нет чинов и официоза — только живое общение. Пишите, о чём думаете, а я отвечу, как только отложу перо.</p>
+    <p class="chat-page__foot">Окно чата обычно внизу справа. Если не видно — обновите страницу.</p>
   </main>
 
   <footer class="site-footer">
     <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
-      <details>
-        <summary data-i18n="sources_summary">Источники</summary>
-        <div class="site-footer__sources-panel">
-          <p class="site-footer__sources-list">
-            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
-          </p>
-        </div>
-      </details>
-    </nav>
   </footer>
+
   <script src="language-manager.js" defer></script>
   <script src="i18n.js" defer></script>
   <script src="header-i18n.js" defer></script>
   <script src="header-lang-dropdown.js" defer></script>
-  <script>
-    (function () {
-      function init() {
-        if (window.I18n) {
-          window.I18n.init();
-        }
-        var navSearch = document.getElementById("nav-search");
-        if (navSearch) { var p = new URLSearchParams(window.location.search); var q = p.get("q"); if (q) navSearch.value = q; }
-      }
-      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-      else init();
-    })();
-  </script>
 </body>
 </html>
