@@ -20,7 +20,7 @@
 
     var supported = window.I18n.SUPPORTED;
     var current = window.I18n.getLang();
-    var ariaLabel = (typeof window.I18n.t === 'function' ? window.I18n.t('globe_aria') : 'Choose language') || 'Choose language';
+    var ariaLabel = (typeof window.I18n.t === 'function' ? window.I18n.t('globe_aria') : 'Выбор языка') || 'Выбор языка';
 
     var details = document.createElement('details');
     details.className = 'site-header__globe header-lang-details';
@@ -67,9 +67,15 @@
     details.appendChild(panel);
     container.appendChild(details);
 
+    function updateSummaryLabel() {
+      var lbl = (typeof window.I18n !== 'undefined' && typeof window.I18n.t === 'function' ? window.I18n.t('globe_aria') : 'Выбор языка') || 'Выбор языка';
+      summary.setAttribute('aria-label', lbl);
+      summary.title = lbl;
+    }
     window.addEventListener('cactusbooks-lang-applied', function (e) {
       var lang = e.detail && e.detail.lang;
       if (!lang) return;
+      updateSummaryLabel();
       panel.querySelectorAll('.header-lang-option').forEach(function (opt) {
         var isCurrent = opt.getAttribute('data-lang') === lang;
         opt.classList.toggle('header-lang-option--current', isCurrent);
