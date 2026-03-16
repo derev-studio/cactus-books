@@ -130,6 +130,7 @@
     .stories-list .cat-badge { font-size: 0.75rem; color: #666; font-weight: normal; margin-left: 0.35rem; }
     .stories-list .cat-change { margin-left: 0.5rem; font-size: 0.8rem; padding: 0.2rem 0.4rem; border-radius: 6px; border: 1px solid #ccc; background: #f8f8f8; cursor: pointer; }
     .stories-list .cat-change:hover { background: #eee; }
+    .field-hint { display: block; font-size: 0.85rem; color: #666; margin-top: 0.25rem; }
     .msg { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
     .msg.success { background: #e8f5e9; color: #1b5e20; }
     .msg.error { background: #ffebee; color: #b71c1c; }
@@ -173,6 +174,11 @@
         <span class="preview-placeholder" id="preview-placeholder">Выберите фото — здесь появится миниатюра</span>
       </div>
     </div>
+    <div class="field">
+      <label for="image-long">Дополнительное фото (длинное, внизу рассказа — можно прокрутить)</label>
+      <input type="file" id="image-long" accept="image/*" />
+      <span class="field-hint">Необязательно. Будет показано под текстом целиком, с прокруткой.</span>
+    </div>
     <button type="button" class="btn btn-primary btn-block" id="publish">Опубликовать</button>
     <div class="msg" id="msg" role="status"></div>
 
@@ -198,6 +204,7 @@
   var contentInput = document.getElementById("content");
   var categorySelect = document.getElementById("category");
   var imageInput = document.getElementById("image");
+  var imageLongInput = document.getElementById("image-long");
   var previewEl = document.getElementById("preview");
   var publishBtn = document.getElementById("publish");
   var msgEl = document.getElementById("msg");
@@ -509,13 +516,23 @@
     var id = slugify(title);
     var coverUrl = "";
 
-    function doPublish(imageBase64) {
+    function doPublish(imageBase64, longImageBase64) {
       var putImage = Promise.resolve();
       if (imageBase64) {
         var imagePath = IMAGES_PATH_PREFIX + id + ".jpg";
         coverUrl = "./assets/images/" + id + ".jpg";
         putImage = githubGet(imagePath).then(function(existing) {
           return githubPut(imagePath, imageBase64, existing ? existing.sha : null, "Фото для рассказа: " + id);
+        });
+      }
+      var longImageUrl = "";
+      if (longImageBase64) {
+        longImageUrl = "./assets/images/" + id + "-long.jpg";
+        var longPath = IMAGES_PATH_PREFIX + id + "-long.jpg";
+        putImage = putImage.then(function() {
+          return githubGet(longPath).then(function(existing) {
+            return githubPut(longPath, longImageBase64, existing ? existing.sha : null, "Длинное фото для рассказа: " + id);
+          });
         });
       }
 
@@ -526,11 +543,17 @@
         var category = (categorySelect && categorySelect.value) ? categorySelect.value : "cactus";
         if (list.some(function(s) { return s.id === id; })) {
           list = list.map(function(s) {
-            if (s.id === id) return { id: id, title: title, coverUrl: coverUrl || s.coverUrl, content: content, category: category };
+            if (s.id === id) {
+              var out = { id: id, title: title, coverUrl: coverUrl || s.coverUrl, content: content, category: category };
+              if (longImageUrl) out.longImage = longImageUrl; else if (s.longImage) out.longImage = s.longImage;
+              return out;
+            }
             return s;
           });
         } else {
-          list.push({ id: id, title: title, coverUrl: coverUrl, content: content, category: category });
+          var newStory = { id: id, title: title, coverUrl: coverUrl, content: content, category: category };
+          if (longImageUrl) newStory.longImage = longImageUrl;
+          list.push(newStory);
         }
         var newJson = { stories: list };
         var str = JSON.stringify(newJson, null, 2);
@@ -541,6 +564,7 @@
         titleInput.value = "";
         contentInput.value = "";
         imageInput.value = "";
+        if (imageLongInput) imageLongInput.value = "";
         var oldImg = previewEl.querySelector("img");
         if (oldImg && oldImg.src) URL.revokeObjectURL(oldImg.src);
         previewEl.innerHTML = "";
@@ -556,13 +580,31 @@
       });
     }
 
+    function runPublish(coverB64, longB64) {
+      doPublish(coverB64 || null, longB64 || null);
+    }
+    var fileLong = imageLongInput && imageLongInput.files && imageLongInput.files[0];
     if (file && file.type.startsWith("image/")) {
-      compressImage(file).then(doPublish).catch(function(e) {
+      compressImage(file).then(function(coverB64) {
+        if (fileLong && fileLong.type.startsWith("image/")) {
+          compressImage(fileLong).then(function(longB64) { runPublish(coverB64, longB64); }).catch(function(e) {
+            showMsg(e.message || "Ошибка длинного фото", true);
+            publishBtn.disabled = false;
+          });
+        } else {
+          runPublish(coverB64, null);
+        }
+      }).catch(function(e) {
         showMsg(e.message || "Ошибка изображения", true);
         publishBtn.disabled = false;
       });
+    } else if (fileLong && fileLong.type.startsWith("image/")) {
+      compressImage(fileLong).then(function(longB64) { runPublish(null, longB64); }).catch(function(e) {
+        showMsg(e.message || "Ошибка длинного фото", true);
+        publishBtn.disabled = false;
+      });
     } else {
-      doPublish(null);
+      doPublish(null, null);
     }
   });
 })();

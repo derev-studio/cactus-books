@@ -67,17 +67,25 @@
       border-radius: 0;
       box-shadow: none;
     }
+    .story-article .story-cover-wrap {
+      width: 100%;
+      margin-bottom: 0;
+      cursor: pointer;
+      display: block;
+      border: 3px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    }
+    .story-article .story-cover-wrap:hover { border-color: rgba(255,255,255,0.4); box-shadow: 0 6px 32px rgba(0,0,0,0.4); }
     .story-article .story-cover {
       width: 100%;
-      max-height: 70vh;
-      object-fit: contain;
-      object-position: center top;
-      background: #1a2740;
-      border-radius: 0;
-      margin-bottom: 0;
+      height: auto;
       display: block;
       vertical-align: top;
     }
+    .story-article .story-long-photo { width: 100%; margin-top: 2rem; }
+    .story-article .story-long-photo img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
     .story-article .story-title,
     .story-article .story-content {
       padding-left: max(1.25rem, 5vw);
@@ -110,9 +118,18 @@
     .stories-card__excerpt { font-size: 0.9rem; color: var(--cactus-muted-on-dark); margin: 0 0 1rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .stories-card__btn { display: inline-block; padding: 0.5rem 1rem; background: var(--cactus-accent, #2d5a3d); color: #fff; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
     .stories-back { margin-bottom: 1.5rem; }
+    .story-lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }
+    .story-lightbox.is-open { display: flex; }
+    .story-lightbox__img { max-width: 100%; max-height: 95vh; width: auto; height: auto; object-fit: contain; border-radius: 8px; }
+    .story-lightbox__close { position: absolute; top: 1rem; right: 1rem; width: 48px; height: 48px; border: none; background: rgba(255,255,255,0.15); color: #fff; font-size: 1.5rem; border-radius: 50%; cursor: pointer; line-height: 1; }
+    .story-lightbox__close:hover { background: rgba(255,255,255,0.25); }
   </style>
 </head>
 <body>
+  <div id="story-lightbox" class="story-lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+    <button type="button" class="story-lightbox__close" id="story-lightbox-close" aria-label="Закрыть">×</button>
+    <img class="story-lightbox__img" id="story-lightbox-img" src="" alt="" />
+  </div>
   <header class="site-header">
     <a href="home.html" class="site-header__brand" id="header-brand" data-i18n="brand">🌵 Кактусярий</a>
     <form class="site-header__navigator" action="navigator.html" method="get" role="search">
@@ -258,10 +275,20 @@
     }
     var title = getStoryText(story.title);
     var content = getStoryText(story.content);
-    var cover = story.coverUrl ? "<img class=\"story-cover\" src=\"" + escapeAttr(story.coverUrl) + "\" alt=\"\" loading=\"lazy\" />" : "";
+    var coverSrc = story.coverUrl ? escapeAttr(story.coverUrl) : "";
+    var cover = coverSrc ? "<button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + coverSrc + "\" aria-label=\"Открыть фото\"><img class=\"story-cover\" src=\"" + coverSrc + "\" alt=\"\" loading=\"eager\" /></button>" : "";
+    var longImg = (story.longImage && story.longImage.trim()) ? "<div class=\"story-long-photo\"><img src=\"" + escapeAttr(story.longImage) + "\" alt=\"\" loading=\"lazy\" /></div>" : "";
     var backLabel = window.I18n ? window.I18n.t("stories_nav_list") : "← Все рассказы";
-    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div></article>";
+    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + longImg + "</article>";
     if (window.I18n) window.I18n.applyToPage();
+    var lb = document.getElementById("story-lightbox");
+    var lbImg = document.getElementById("story-lightbox-img");
+    root.querySelectorAll(".story-cover-wrap").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var src = btn.getAttribute("data-cover-src");
+        if (src && lbImg) { lbImg.src = src; if (lb) lb.classList.add("is-open"); document.body.style.overflow = "hidden"; }
+      });
+    });
   }
 
   function loadAndShowStories() {
@@ -284,6 +311,15 @@
         if (window.I18n) window.I18n.applyToPage();
       });
   }
+
+  (function setupStoryLightbox() {
+    var lb = document.getElementById("story-lightbox");
+    var lbClose = document.getElementById("story-lightbox-close");
+    function closeLb() { if (lb) lb.classList.remove("is-open"); document.body.style.overflow = ""; }
+    if (lbClose) lbClose.addEventListener("click", closeLb);
+    if (lb) lb.addEventListener("click", function(e) { if (e.target === lb) closeLb(); });
+    document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeLb(); });
+  })();
 
   loadAndShowStories();
   window.addEventListener("soulart-language-change", function() {
