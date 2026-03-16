@@ -111,6 +111,10 @@
       if (!window.$crisp) return;
       window.$crisp.push(["set", "chat:title", ["Я сейчас с вами, друзья!"]]);
       window.$crisp.push(["set", "chat:welcome_message", ["Чат Александра Деревяшкина приветствует вас! Хорошего дня!"]]);
+      window.$crisp.push(["on", "session:loaded", function() {
+        window.$crisp.push(["set", "chat:title", ["Я сейчас с вами, друзья!"]]);
+        window.$crisp.push(["set", "chat:welcome_message", ["Чат Александра Деревяшкина приветствует вас! Хорошего дня!"]]);
+      }]);
       setTimeout(function() { window.$crisp.push(["do", "chat:open"]); }, 1400);
     })();
   </script>
