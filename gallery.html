@@ -15,7 +15,32 @@
     body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
     .gallery-page__main { max-width: 56rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 2.5rem) 1rem 3rem; }
     .gallery-page__title { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 0.5rem; color: var(--cactus-text-on-dark); }
-    .gallery-page__intro { color: var(--cactus-muted-on-dark); margin: 0 0 2rem; }
+    .gallery-page__intro { color: var(--cactus-muted-on-dark); margin: 0 0 1.5rem; }
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-filter-btn {
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: transparent;
+      color: var(--cactus-text-on-dark);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.05s;
+    }
+    .gallery-filter-btn:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-1px);
+    }
+    .gallery-filter-btn--active {
+      background: #f5f5f5;
+      color: #111827;
+      border-color: #f5f5f5;
+    }
     .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
     .gallery-tile { margin: 0; }
     .gallery-tile__link { display: block; border-radius: 12px; overflow: hidden; background: var(--cactus-surface); box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; }
@@ -75,6 +100,12 @@
   <main class="gallery-page__main">
     <h1 class="gallery-page__title" data-i18n="gallery_heading">Галерея</h1>
     <p class="gallery-page__intro" data-i18n="gallery_heading_accent">фото и работы</p>
+    <div class="gallery-filters" id="gallery-filters">
+      <button type="button" class="gallery-filter-btn gallery-filter-btn--active" data-filter="all">Все</button>
+      <button type="button" class="gallery-filter-btn" data-filter="cactus">Кактусы</button>
+      <button type="button" class="gallery-filter-btn" data-filter="succulent">Суккуленты</button>
+      <button type="button" class="gallery-filter-btn" data-filter="caudex">Каудексы</button>
+    </div>
     <div id="gallery-root" class="gallery-loading" data-i18n="stories_loading">Загрузка…</div>
   </main>
 
@@ -109,45 +140,54 @@
   <script>
 (function () {
   var root = document.getElementById("gallery-root");
+  var filtersRoot = document.getElementById("gallery-filters");
   var lightbox = document.getElementById("lightbox");
   var lightboxImg = document.getElementById("lightbox-img");
   var lightboxCaption = document.getElementById("lightbox-caption");
   var lightboxClose = document.getElementById("lightbox-close");
 
+  var allItems = [];
+  var currentFilter = "all";
+
   function resolveUrl(url) {
     if (!url || url.indexOf("http") === 0) return url;
-    var path = url.replace(/^\.\/?/, "").replace(/^\//, "");
-    return (path.indexOf("./") === 0 ? path : "./" + path);
+    var path = (url || "").replace(/^\.\/?/, "").replace(/^\//, "");
+    return "./" + path;
   }
 
-  function fetchArtworks(cb) {
-    var urls = ["./data/gallery.json", "./data/artworks.json"];
-    var i = 0;
-    function tryNext() {
-      if (i >= urls.length) {
-        cb([{ id: "cactus", title: "Кактусы", subtitle: "Коллекция", imageUrl: "./img/derevya.jpeg" }, { id: "nature", title: "Природа", subtitle: "Фото", imageUrl: "./relax-hut.jpg" }]);
-        return;
+  function normalizeStories(data) {
+    var raw = data && Array.isArray(data.stories) ? data.stories : [];
+    return raw.map(function (s) {
+      var title = typeof s.title === "string" ? s.title : (s.id || "");
+      var content = typeof s.content === "string" ? s.content : "";
+      var firstLine = content.split(/\n+/)[0].trim();
+      if (firstLine.length > 120) {
+        firstLine = firstLine.slice(0, 117) + "…";
       }
-      fetch(urls[i] + "?t=" + Date.now(), { cache: "no-store" })
-        .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
-        .then(function(data) {
-          if (Array.isArray(data.artworks) && data.artworks.length > 0) {
-            cb(data.artworks);
-            return;
-          }
-          i++;
-          tryNext();
-        })
-        .catch(function() { i++; tryNext(); });
-    }
-    tryNext();
+      var cat = (s.category || s.kind || "").toString().toLowerCase();
+      if (cat !== "cactus" && cat !== "succulent" && cat !== "caudex") {
+        cat = "";
+      }
+      return {
+        id: s.id || "",
+        title: title,
+        subtitle: firstLine,
+        imageUrl: s.coverUrl || "",
+        category: cat
+      };
+    });
   }
 
-  function openLightbox(art) {
-    var src = resolveUrl(art.imageUrl);
-    lightboxImg.src = src;
-    lightboxImg.alt = art.title;
-    lightboxCaption.textContent = art.subtitle ? art.title + " — " + art.subtitle : art.title;
+  function applyFilter(items) {
+    if (currentFilter === "all") return items;
+    return items.filter(function (item) { return item.category === currentFilter; });
+  }
+
+  function openLightbox(item) {
+    var src = resolveUrl(item.imageUrl);
+    lightboxImg.src = src || "";
+    lightboxImg.alt = item.title || "";
+    lightboxCaption.textContent = item.subtitle ? item.title + " — " + item.subtitle : (item.title || "");
     lightbox.classList.add("is-open");
     document.body.style.overflow = "hidden";
   }
@@ -161,34 +201,72 @@
   if (lightbox) lightbox.addEventListener("click", function(e) { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeLightbox(); });
 
-  fetchArtworks(function(artworks) {
-    if (!artworks || artworks.length === 0) {
+  if (filtersRoot) {
+    filtersRoot.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-filter]");
+      if (!btn) return;
+      currentFilter = btn.getAttribute("data-filter") || "all";
+      var buttons = filtersRoot.querySelectorAll(".gallery-filter-btn");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.toggle("gallery-filter-btn--active", buttons[i] === btn);
+      }
+      renderGrid();
+    });
+  }
+
+  function renderGrid() {
+    if (!allItems || allItems.length === 0) {
       root.className = "gallery-empty";
       root.innerHTML = window.I18n ? window.I18n.t("gallery_empty") : "Пока нет работ.";
       if (window.I18n) window.I18n.applyToPage();
       return;
     }
+    var items = applyFilter(allItems);
     root.className = "";
     root.innerHTML = "";
     var ul = document.createElement("ul");
     ul.className = "gallery-grid";
-    artworks.forEach(function(art) {
+    if (!items.length) {
+      var empty = document.createElement("p");
+      empty.className = "gallery-empty";
+      empty.textContent = "В этой категории пока нет фото.";
+      root.appendChild(empty);
+      return;
+    }
+    items.forEach(function (item) {
       var li = document.createElement("li");
       li.className = "gallery-tile";
-      var imgUrl = resolveUrl(art.imageUrl);
-      li.innerHTML = '<a href="#" class="gallery-tile__link" data-index="' + artworks.indexOf(art) + '">' +
-        '<div class="gallery-tile__img-wrap"><img class="gallery-tile__img" src="' + imgUrl.replace(/"/g, "&quot;") + '" alt="' + (art.title || "").replace(/"/g, "&quot;") + '" loading="lazy" /></div>' +
-        '<div class="gallery-tile__caption"><p class="gallery-tile__title">' + (art.title || "").replace(/</g, "&lt;") + '</p>' +
-        (art.subtitle ? '<p class="gallery-tile__sub">' + (art.subtitle || "").replace(/</g, "&lt;") + '</p>' : "") + "</div></a>";
+      var imgUrl = resolveUrl(item.imageUrl);
+      var safeTitle = (item.title || "").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+      var safeSub = (item.subtitle || "").replace(/</g, "&lt;");
+      li.innerHTML =
+        '<a href="#" class="gallery-tile__link">' +
+        '<div class="gallery-tile__img-wrap"><img class="gallery-tile__img" src="' + imgUrl.replace(/"/g, "&quot;") + '" alt="' + safeTitle + '" loading="lazy" /></div>' +
+        '<div class="gallery-tile__caption"><p class="gallery-tile__title">' + safeTitle + '</p>' +
+        (safeSub ? '<p class="gallery-tile__sub">' + safeSub + '</p>' : "") +
+        "</div></a>";
       var a = li.querySelector("a");
-      a.addEventListener("click", function(e) {
+      a.addEventListener("click", function (e) {
         e.preventDefault();
-        openLightbox(art);
+        openLightbox(item);
       });
       ul.appendChild(li);
     });
     root.appendChild(ul);
-  });
+    if (window.I18n) window.I18n.applyToPage();
+  }
+
+  fetch("./data/stories.json", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("Не удалось загрузить данные галереи")); })
+    .then(function (json) {
+      allItems = normalizeStories(json);
+      renderGrid();
+    })
+    .catch(function () {
+      root.className = "gallery-empty";
+      root.innerHTML = window.I18n ? window.I18n.t("gallery_empty") : "Пока нет работ.";
+      if (window.I18n) window.I18n.applyToPage();
+    });
 })();
   </script>
   <script>
