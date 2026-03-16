@@ -128,6 +128,8 @@
     .stories-list .title { flex: 1; font-weight: 500; min-width: 0; }
     .stories-list .id { font-size: 0.85rem; color: #666; flex-shrink: 0; }
     .stories-list .cat-badge { font-size: 0.75rem; color: #666; font-weight: normal; margin-left: 0.35rem; }
+    .stories-list .cat-change { margin-left: 0.5rem; font-size: 0.8rem; padding: 0.2rem 0.4rem; border-radius: 6px; border: 1px solid #ccc; background: #f8f8f8; cursor: pointer; }
+    .stories-list .cat-change:hover { background: #eee; }
     .msg { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
     .msg.success { background: #e8f5e9; color: #1b5e20; }
     .msg.error { background: #ffebee; color: #b71c1c; }
@@ -360,6 +362,33 @@
     return base + path;
   }
 
+  function setStoryCategory(id, newCategory) {
+    var token = (tokenInput.value || "").trim();
+    if (!token) { showMsg("Введите GitHub Token", true); return; }
+    clearMsg();
+    loadStoriesFromApi()
+      .then(function(r) {
+        var list = (r.json && r.json.stories) ? r.json.stories : [];
+        var found = false;
+        list = list.map(function(s) {
+          if (s.id === id) { found = true; var out = {}; for (var k in s) out[k] = s[k]; out.category = newCategory; return out; }
+          return s;
+        });
+        if (!found) throw new Error("Рассказ не найден");
+        var newJson = { stories: list };
+        var str = JSON.stringify(newJson, null, 2);
+        var b64 = btoa(unescape(encodeURIComponent(str)));
+        return githubPut(STORIES_PATH, b64, r.sha, "Категория изменена: " + id);
+      })
+      .then(function() {
+        showMsg("Категория изменена.");
+        refreshList();
+      })
+      .catch(function(e) {
+        showMsg(e.message || "Ошибка", true);
+      });
+  }
+
   function renderStoriesList(items) {
     listHint.style.display = "none";
     storiesList.innerHTML = "";
@@ -367,22 +396,46 @@
       storiesList.innerHTML = "<li class=\"id\">Нет рассказов</li>";
       return;
     }
+    var catLabels = { cactus: "Кактусы", succulent: "Суккуленты", caudex: "Каудексы", other: "Другие растения" };
     items.forEach(function(s) {
       var li = document.createElement("li");
       var title = (s.title || s.id || "").toString();
       var cat = (s.category || "").toString().toLowerCase();
-      var catLabel = cat === "succulent" ? "Суккуленты" : (cat === "caudex" ? "Каудексы" : (cat === "other" ? "Другие растения" : "Кактусы"));
+      if (cat !== "cactus" && cat !== "succulent" && cat !== "caudex" && cat !== "other") cat = "cactus";
+      var catLabel = catLabels[cat] || "Кактусы";
       var thumbSrc = storyImageUrl(s.coverUrl);
       var thumbHtml = thumbSrc
         ? "<img class=\"thumb\" src=\"" + escapeAttr(thumbSrc) + "\" alt=\"\" loading=\"lazy\" />"
         : "<div class=\"thumb-none\">нет фото</div>";
       li.innerHTML = thumbHtml + "<span class=\"title\">" + escapeHtml(title) + " <span class=\"cat-badge\">" + escapeHtml(catLabel) + "</span></span><span class=\"id\">" + escapeHtml(s.id) + "</span>";
+      var wrap = document.createElement("span");
+      wrap.style.display = "flex";
+      wrap.style.alignItems = "center";
+      wrap.style.gap = "0.35rem";
+      wrap.style.flexShrink = "0";
+      var catSelect = document.createElement("select");
+      catSelect.className = "cat-change";
+      catSelect.title = "Изменить категорию";
+      ["cactus", "succulent", "caudex", "other"].forEach(function(code) {
+        var opt = document.createElement("option");
+        opt.value = code;
+        opt.textContent = catLabels[code];
+        if (code === cat) opt.selected = true;
+        catSelect.appendChild(opt);
+      });
+      catSelect.addEventListener("change", function() {
+        var newCat = catSelect.value;
+        if (newCat === cat) return;
+        setStoryCategory(s.id, newCat);
+      });
+      wrap.appendChild(catSelect);
       var delBtn = document.createElement("button");
       delBtn.type = "button";
       delBtn.className = "btn btn-ghost";
       delBtn.textContent = "Удалить";
       delBtn.addEventListener("click", function() { deleteStory(s.id); });
-      li.appendChild(delBtn);
+      wrap.appendChild(delBtn);
+      li.appendChild(wrap);
       storiesList.appendChild(li);
     });
   }
