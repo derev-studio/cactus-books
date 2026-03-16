@@ -108,16 +108,10 @@
   <script src="header-lang-dropdown.js" defer></script>
   <script>
     (function() {
-      function openChat() {
-        if (window.$crisp) window.$crisp.push(["do", "chat:open"]);
-      }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", function() {
-          setTimeout(openChat, 1400);
-        });
-      } else {
-        setTimeout(openChat, 1400);
-      }
+      if (!window.$crisp) return;
+      window.$crisp.push(["set", "chat:title", ["Я сейчас с вами, друзья!"]]);
+      window.$crisp.push(["set", "chat:welcome_message", ["Чат Александра Деревяшкина приветствует вас! Хорошего дня!"]]);
+      setTimeout(function() { window.$crisp.push(["do", "chat:open"]); }, 1400);
     })();
   </script>
 </body>
