@@ -211,10 +211,10 @@
   }
 
   function renderGrid() {
+    root.removeAttribute("data-i18n");
     if (!allItems || allItems.length === 0) {
       root.className = "gallery-empty";
       root.innerHTML = window.I18n ? window.I18n.t("gallery_empty") : "Пока нет работ.";
-      if (window.I18n) window.I18n.applyToPage();
       return;
     }
     var items = applyFilter(allItems);
@@ -250,7 +250,6 @@
       ul.appendChild(li);
     });
     root.appendChild(ul);
-    if (window.I18n) window.I18n.applyToPage();
   }
 
   fetch("./data/stories.json", { cache: "no-store" })
@@ -261,9 +260,9 @@
       renderGrid();
     })
     .catch(function () {
+      root.removeAttribute("data-i18n");
       root.className = "gallery-empty";
       root.innerHTML = window.I18n ? window.I18n.t("gallery_empty") : "Пока нет работ.";
-      if (window.I18n) window.I18n.applyToPage();
     });
 })();
   </script>
