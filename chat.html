@@ -13,15 +13,16 @@
     body {
       margin: 0;
       min-height: 100vh;
+      min-height: 100dvh;
       background: #e8dfd4;
       background-image: radial-gradient(ellipse at 30% 20%, rgba(220,200,180,0.4) 0%, transparent 50%),
         linear-gradient(180deg, #e8dfd4 0%, #ddd4c8 50%, #d4c9bc 100%);
       color: #3d352b;
       font-family: Georgia, "Times New Roman", serif;
-      padding: clamp(1.5rem, 4vw, 3rem) max(1rem, env(safe-area-inset-left)) clamp(3rem, 6vw, 4rem) max(1rem, env(safe-area-inset-right));
-      padding-bottom: env(safe-area-inset-bottom);
+      padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) clamp(3rem, 6vw, 4rem) max(1rem, env(safe-area-inset-left));
+      padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
-    .chat-page { max-width: 42rem; margin: 0 auto; }
+    .chat-page { max-width: 42rem; margin: 0 auto; padding-top: 0.5rem; }
     .chat-page__title {
       font-size: clamp(1.85rem, 5vw, 2.5rem);
       font-weight: 700;
@@ -43,9 +44,13 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
     .chat-page__foot {
-      margin-top: 2rem;
-      font-size: 0.95rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
       color: #6b5d4f;
+    }
+    @media (max-width: 480px) {
+      .chat-page__title { margin-bottom: 1rem; }
+      .chat-page__intro { margin-bottom: 1.5rem; padding: 1rem 1.25rem; }
     }
   </style>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="930d03b8-7ffa-4647-9c18-95a19664c468";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -90,7 +95,7 @@
   <main class="chat-page">
     <h1 class="chat-page__title">Чат Сашки Деревяшкина</h1>
     <p class="chat-page__intro">Заходите, присаживайтесь. Здесь нет чинов и официоза — только живое общение. Пишите, о чём думаете, а я отвечу, как только отложу перо.</p>
-    <p class="chat-page__foot">Окно чата обычно внизу справа. Если не видно — обновите страницу.</p>
+    <p class="chat-page__foot">Чат откроется под этим текстом. На iPhone окно беседы — внизу экрана.</p>
   </main>
 
   <footer class="site-footer">
@@ -101,5 +106,19 @@
   <script src="i18n.js" defer></script>
   <script src="header-i18n.js" defer></script>
   <script src="header-lang-dropdown.js" defer></script>
+  <script>
+    (function() {
+      function openChat() {
+        if (window.$crisp) window.$crisp.push(["do", "chat:open"]);
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(openChat, 1400);
+        });
+      } else {
+        setTimeout(openChat, 1400);
+      }
+    })();
+  </script>
 </body>
 </html>
