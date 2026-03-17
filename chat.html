@@ -49,7 +49,7 @@
     }
     .chat-page__photo img {
       width: 100%;
-      max-width: 280px;
+      max-width: 360px;
       height: auto;
       border-radius: 14px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.12);
@@ -151,8 +151,8 @@
         min-width: 0;
         margin-right: 0.5rem;
       }
-      .chat-page__photo { margin-top: 0.25rem; }
-      .chat-page__photo img { max-width: 260px; }
+      .chat-page__photo { margin-top: 0.35rem; }
+      .chat-page__photo img { max-width: 360px; }
     }
     @media (min-width: 1300px) {
       .chat-page { grid-template-columns: minmax(52rem, 1fr) var(--crisp-reserved); }
@@ -212,6 +212,9 @@
     <div class="chat-page__content">
       <h1 class="chat-page__title">Чат Сашки Деревяшкина</h1>
       <div class="chat-page__row">
+      <figure class="chat-page__photo" aria-label="Фото автора">
+        <img src="assets/images/author-chat.png" alt="Александр Деревяшкин" width="360" height="360" loading="lazy" />
+      </figure>
       <section class="chat-page__intro" aria-label="О чате">
         <h2>🛡 Прямая связь и доброе общение</h2>
         <div class="chat-page__intro-grid">
@@ -231,9 +234,6 @@
           </div>
         </div>
       </section>
-      <figure class="chat-page__photo" aria-label="Фото автора">
-        <img src="assets/images/author-chat.png" alt="Александр Деревяшкин" width="280" height="280" loading="lazy" />
-      </figure>
       </div>
       <p class="chat-page__foot">Чат откроется под этим текстом. На iPhone окно беседы — внизу экрана.</p>
     </div>
