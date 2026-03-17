@@ -95,26 +95,31 @@
       font-size: 0.9rem;
       color: #6b5d4f;
     }
-    /* Ограничиваем высоту окна Crisp — всё на один экран, без длинной прокрутки */
-    .crisp-client,
-    div:has(iframe[src*="crisp.chat"]) {
-      max-height: 72vh !important;
-      height: 72vh !important;
-      overflow: hidden !important;
-    }
-    .crisp-client { transform: translateY(72px); }
-    .crisp-client > div,
-    div:has(iframe[src*="crisp.chat"]) > div { max-height: 100% !important; }
     @media (min-width: 980px) {
+      /* На десктопе делаем страницу "в один экран": скролл только внутри текста */
+      body { height: 100dvh; overflow: hidden; }
       .chat-page {
         display: grid;
         grid-template-columns: minmax(44rem, 1fr) var(--crisp-reserved);
         gap: 1.5rem;
         align-items: start;
+        height: calc(100dvh - 8.5rem);
+        overflow: hidden;
       }
-      .chat-page__content { max-width: none; }
+      .chat-page__content {
+        max-width: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+      }
+      .chat-page__intro {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
       .chat-page__intro-grid { grid-template-columns: 1.1fr 0.9fr; }
-      .crisp-client { transform: translateY(72px) !important; }
     }
     @media (min-width: 1300px) {
       .chat-page { grid-template-columns: minmax(52rem, 1fr) var(--crisp-reserved); }
@@ -123,6 +128,12 @@
       .chat-page__title { margin-bottom: 1rem; }
       .chat-page__intro { margin-bottom: 1.5rem; padding: 1.1rem 1.25rem; }
       .chat-page__intro-part { padding: 0.95rem 1rem; }
+    }
+    @media (max-width: 979px) {
+      body { height: auto; overflow: auto; }
+      .chat-page { display: block; height: auto; overflow: visible; }
+      .chat-page__content { height: auto; display: block; }
+      .chat-page__intro { overflow: visible; }
     }
   </style>
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="930d03b8-7ffa-4647-9c18-95a19664c468";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
