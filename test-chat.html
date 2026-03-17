@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="google" content="notranslate" />
+  <title>Беседа | Кактусярий</title>
+  <meta name="description" content="Чат Сашки Деревяшкина. Живое общение без чинов и официоза." />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="site-header.css" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background: #e8dfd4;
+      background-image: radial-gradient(ellipse at 30% 20%, rgba(220,200,180,0.4) 0%, transparent 50%),
+        linear-gradient(180deg, #e8dfd4 0%, #ddd4c8 50%, #d4c9bc 100%);
+      color: #3d352b;
+      font-family: Georgia, "Times New Roman", serif;
+      padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) clamp(3rem, 6vw, 4rem) max(1rem, env(safe-area-inset-left));
+      padding-bottom: max(2rem, env(safe-area-inset-bottom));
+    }
+    .chat-page {
+      max-width: 92rem;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+    }
+    .chat-page__content { max-width: 72rem; }
+    .chat-page__title {
+      font-size: clamp(2.05rem, 3.2vw, 2.8rem);
+      font-weight: 700;
+      color: #2c2419;
+      margin: 0.75rem 0 1.25rem;
+      letter-spacing: 0.02em;
+      line-height: 1.25;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.4);
+    }
+    .chat-page__cta {
+      margin: 0 0 1rem;
+      padding: 1rem 1.15rem;
+      background: rgba(255,248,240,0.6);
+      border-radius: 14px;
+      border: 1px solid rgba(160,128,96,0.14);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: grid;
+      gap: 0.65rem;
+      max-width: 44rem;
+    }
+    .chat-page__cta-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2c2419;
+      line-height: 1.25;
+    }
+    .chat-page__cta-text {
+      margin: 0;
+      color: #4a4035;
+      line-height: 1.65;
+      font-size: 0.98rem;
+    }
+    .chat-page__cta-btn {
+      justify-self: start;
+      padding: 0.7rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(44, 36, 25, 0.18);
+      background: rgba(255, 255, 255, 0.75);
+      color: #2c2419;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .chat-page__cta-btn:hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transform: translateY(-1px);
+    }
+    .chat-page__cta-btn:active { transform: translateY(0); }
+    .chat-page__cta-btn:focus-visible { outline: 2px solid rgba(44,36,25,0.55); outline-offset: 3px; }
+    .chat-page__row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .chat-page__left {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 0;
+    }
+    .chat-page__photo {
+      margin: 0;
+      flex-shrink: 0;
+    }
+    .chat-page__photo img {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      object-fit: cover;
+      display: block;
+    }
+    .chat-page__aside {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #4a4035;
+      padding: 1rem 1.05rem;
+      background: rgba(255,248,240,0.6);
+      border-radius: 14px;
+      border-left: 4px solid #a08060;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .chat-page__aside h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.02em;
+      line-height: 1.25;
+      color: #2c2419;
+    }
+    .chat-page__aside p { margin: 0.55rem 0; }
+    .chat-page__aside p:first-of-type { margin-top: 0; }
+    .chat-page__aside p:last-of-type { margin-bottom: 0; }
+    .chat-page__intro {
+      font-size: clamp(1.18rem, 1.1vw + 0.95rem, 1.42rem);
+      line-height: 1.78;
+      color: #4a4035;
+      margin: 0 0 1.25rem;
+      padding: 1.2rem 1.5rem;
+      background: rgba(255,248,240,0.6);
+      border-radius: 14px;
+      border-left: 4px solid #a08060;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .chat-page__intro-grid {
+      display: grid;
+      gap: 0.9rem;
+    }
+    .chat-page__intro-part {
+      background: rgba(255,255,255,0.22);
+      border: 1px solid rgba(160,128,96,0.14);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+    }
+    .chat-page__intro h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.02em;
+      line-height: 1.25;
+      color: #2c2419;
+    }
+    .chat-page__intro h2 {
+      margin: 0 0 0.85rem;
+      font-size: 1.18em;
+      line-height: 1.25;
+      color: #2c2419;
+    }
+    .chat-page__intro p { margin: 0.5rem 0; }
+    .chat-page__intro p:first-of-type { margin-top: 0; }
+    .chat-page__intro p:last-of-type { margin-bottom: 0; }
+    .chat-page__intro ul {
+      margin: 0.5rem 0 0.15rem;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .chat-page__intro li {
+      margin: 0;
+      padding: 0.65rem 0.85rem;
+      background: rgba(255,255,255,0.5);
+      border: 1px solid rgba(160,128,96,0.18);
+      border-radius: 10px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+    }
+    .chat-page__intro strong { color: #2c2419; }
+    .chat-page__foot {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: #6b5d4f;
+    }
+
+    @media (min-width: 980px) {
+      body {
+        height: auto;
+        overflow: auto;
+        padding-right: max(1rem, env(safe-area-inset-right));
+      }
+
+      .chat-page__intro-grid { grid-template-columns: 1fr; }
+
+      .chat-page__row {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1.5rem;
+        min-height: 0;
+        overflow: visible;
+      }
+      .chat-page__left {
+        flex: 0 0 clamp(380px, 34vw, 520px);
+        max-width: 520px;
+      }
+      .chat-page__intro {
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-right: 0.5rem;
+      }
+      .chat-page__photo { margin-top: 0.35rem; }
+      .chat-page__photo img { max-width: none; }
+    }
+    @media (min-width: 1300px) {
+      .chat-page__content { max-width: 78rem; }
+    }
+    @media (max-width: 480px) {
+      .chat-page__title { margin-bottom: 1rem; }
+      .chat-page__intro { margin-bottom: 1.5rem; padding: 1.1rem 1.25rem; }
+      .chat-page__intro-part { padding: 0.95rem 1rem; }
+    }
+    @media (max-width: 979px) {
+      body { height: auto; overflow: auto; }
+      .chat-page { display: block; height: auto; overflow: visible; }
+      .chat-page__content { height: auto; display: block; }
+      .chat-page__intro { overflow: visible; }
+      .chat-page__cta { max-width: none; }
+    }
+  </style>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69b9b2788b3f101c37855055/1jjum29rf';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</head>
+<body>
+  <header class="site-header">
+    <a href="home.html" class="site-header__brand" id="header-brand" data-i18n="brand">🌵 Кактусярий</a>
+    <form class="site-header__navigator" action="navigator.html" method="get" role="search">
+      <label for="nav-search" class="visually-hidden" id="header-nav-label" data-i18n="nav_navigator">Навигатор по кактусам</label>
+      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+      <button type="submit" class="site-header__navigator-btn" id="header-search-btn" data-i18n="search_btn">Найти</button>
+    </form>
+    <nav class="site-header__nav">
+      <a href="systematics.html" class="site-header__link" id="header-link-origin" data-i18n="nav_systematics">Происхождение видов</a>
+      <a href="geography.html" class="site-header__link" id="header-link-geography" data-i18n="nav_geography">Места обитания</a>
+      <a href="care.html" class="site-header__link" id="header-link-care" data-i18n="nav_care">Здоровье кактуса</a>
+      <a href="identifier.html" class="site-header__link" id="header-link-identifier" data-i18n="nav_identify">Опознать кактус</a>
+      <a href="guardian.html" class="site-header__link" id="header-link-guardian" data-i18n="nav_guardian">Колючий Собеседник</a>
+      <details class="site-header__more">
+        <summary id="header-more-summary" data-i18n="more_btn">Ещё</summary>
+        <div class="site-header__dropdown">
+          <a href="home.html" id="header-dropdown-home" data-i18n="nav_main">Главная</a>
+          <a href="navigator.html" id="header-dropdown-nav" data-i18n="nav_navigator">Навигатор по кактусам</a>
+          <a href="книга-кактусология/book-read.html" id="header-dropdown-book" data-i18n="nav_book">Кактусология</a>
+          <a href="great-cactus.html" id="header-dropdown-great" data-i18n="nav_great">Великие кактусоводы</a>
+          <a href="gallery.html" id="header-dropdown-gallery" data-i18n="nav_gallery">Галерея</a>
+          <a href="stories.html" id="header-dropdown-stories" data-i18n="nav_stories">Рассказы</a>
+          <a href="chat.html" class="site-header__link--active" id="header-dropdown-chat">Беседа</a>
+          <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
+          <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
+          <a href="succulents.html" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
+          <a href="edible.html" id="header-dropdown-edible" data-i18n="nav_edible">Съедобные кактусы</a>
+          <a href="rarities.html" id="header-dropdown-rarities" data-i18n="nav_rarities">Редкости</a>
+          <a href="facts.html" id="header-dropdown-facts" data-i18n="nav_facts">Интересные факты</a>
+          <a href="caution.html" id="header-dropdown-caution" data-i18n="nav_caution">Осторожно</a>
+        </div>
+      </details>
+    </nav>
+    <div id="header-lang-dropdown" class="header-lang-dropdown"></div>
+  </header>
+
+  <main class="chat-page">
+    <div class="chat-page__content">
+      <h1 class="chat-page__title">Чат Сашки Деревяшкина</h1>
+      <section class="chat-page__cta" aria-label="Открыть чат">
+        <p class="chat-page__cta-title">Сначала — чат</p>
+        <p class="chat-page__cta-text">Нажмите кнопку, чтобы открыть окно беседы. Вся информация о чате — ниже на странице.</p>
+        <button class="chat-page__cta-btn" type="button" id="open-chat-btn">Открыть чат</button>
+      </section>
+      <div class="chat-page__row">
+      <div class="chat-page__left" aria-label="Фото и краткое вступление">
+        <figure class="chat-page__photo" aria-label="Фото автора">
+          <img src="assets/images/author-chat.png" alt="Александр Деревяшкин" width="480" height="480" loading="lazy" />
+        </figure>
+        <section class="chat-page__aside" aria-label="Коротко о чате">
+          <h3>Зачем этот чат</h3>
+          <p>Дорогие друзья! Я настроил этот чат прямо на своём кактусовом сайте. Он оказался отличным подспорьем для создания мессенджера здесь, чтобы мы всегда могли быть в контакте.</p>
+          <p>Сейчас Telegram и WhatsApp часто тормозят и зависают, а я хотел, чтобы мой чат работал чётко и быстро.</p>
+        </section>
+      </div>
+      <section class="chat-page__intro" aria-label="О чате">
+        <h2>🛡 Прямая связь и доброе общение</h2>
+        <div class="chat-page__intro-grid">
+          <div class="chat-page__intro-part">
+            <h3>Почему это надёжно:</h3>
+            <ul>
+              <li><strong>Защищенный туннель:</strong> Общение идет через «защищенный туннель» (TLS-шифрование). Я немного разбираюсь в программировании, поэтому выбрал этот способ. Для любых внешних систем это просто нечитаемый поток символов, так что всё реально защищено.</li>
+              <li><strong>Ваша приватность:</strong> То, что вы здесь пишете, не видит никто другой. Любой другой человек, открывший эту страницу, увидит просто голый пустой чат. Это наш личный зашифрованный коридор.</li>
+              <li><strong>Простота и удобство:</strong> Чат выглядит просто, но в него можно добавлять текст, любые смайлики и картинки. Всё сделано для людей.</li>
+            </ul>
+          </div>
+          <div class="chat-page__intro-part">
+            <h3>О моих недоработках:</h3>
+            <p>К сожалению, я пока не могу сделать чат для нескольких людей сразу, поэтому получается, что общаюсь только с каждым из вас по отдельности. Я просто недавно поставил чат, а интерфейс я поправлю.</p>
+            <p>Если увидите надписи «активен», «не активен», «в данный момент мы не в сети, вы получите ответ по имейл» или «спасибо, мы ответим через пару минут» — не обращайте на это внимания. Постепенно я всё исправлю и лишнее уберу. Просто пишите в чат, я увижу ваше сообщение у себя на телефоне и отвечу вам. Главное, что это удобно, защищено и работает без тормозов!»</p>
+          </div>
+        </div>
+      </section>
+      </div>
+      <p class="chat-page__foot">Чат откроется под этим текстом. На iPhone окно беседы — внизу экрана.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
+  </footer>
+
+  <script src="language-manager.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="header-i18n.js" defer></script>
+  <script src="header-lang-dropdown.js" defer></script>
+  <script>
+    (function() {
+      var btn = document.getElementById("open-chat-btn");
+      if (btn) {
+        btn.addEventListener("click", function() {
+          if (typeof Tawk_API !== "undefined" && Tawk_API.maximize) Tawk_API.maximize();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
