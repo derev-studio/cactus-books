@@ -185,12 +185,13 @@
     }
 
     /* Crisp: не даём окну чата подниматься до шапки и перекрывать меню */
+    body .crisp-client { z-index: 90 !important; } /* шапка = 100 */
     body .crisp-client .crisp-app {
-      max-height: calc(100dvh - 7.5rem) !important;
+      max-height: calc(100dvh - 11rem) !important;
     }
     @media (max-width: 979px) {
       body .crisp-client .crisp-app {
-        max-height: calc(100dvh - 9rem) !important;
+        max-height: calc(100dvh - 12rem) !important;
       }
     }
     @media (min-width: 980px) {
