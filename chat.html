@@ -23,7 +23,6 @@
       padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
     .chat-page {
-      --crisp-reserved: clamp(18rem, 26vw, 24rem);
       max-width: 92rem;
       margin: 0 auto;
       padding-top: 1.5rem;
@@ -184,25 +183,13 @@
       color: #6b5d4f;
     }
 
-    /* Crisp: не даём окну чата подниматься до шапки и перекрывать меню */
-    body .crisp-client { z-index: 90 !important; } /* шапка = 100 */
-    body .crisp-client .crisp-app {
-      max-height: calc(100dvh - 11rem) !important;
-    }
-    @media (max-width: 979px) {
-      body .crisp-client .crisp-app {
-        max-height: calc(100dvh - 12rem) !important;
-      }
-    }
     @media (min-width: 980px) {
-      /* На десктопе: обычная прокрутка страницы, но оставляем справа место под Crisp */
       body {
         height: auto;
         overflow: auto;
-        padding-right: max(1rem, env(safe-area-inset-right), var(--crisp-reserved));
+        padding-right: max(1rem, env(safe-area-inset-right));
       }
 
-      /* Текст в одну колонку — так он не сжимается и не "режется" */
       .chat-page__intro-grid { grid-template-columns: 1fr; }
 
       .chat-page__row {
@@ -212,7 +199,6 @@
         min-height: 0;
         overflow: visible;
       }
-      /* Левая колонка с фото не должна "схлопываться" */
       .chat-page__left {
         flex: 0 0 clamp(380px, 34vw, 520px);
         max-width: 520px;
@@ -241,7 +227,19 @@
       .chat-page__cta { max-width: none; }
     }
   </style>
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="930d03b8-7ffa-4647-9c18-95a19664c468";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69b9b2788b3f101c37855055/1jjum29rf';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </head>
 <body>
   <header class="site-header">
@@ -332,16 +330,15 @@
   <script src="header-lang-dropdown.js" defer></script>
   <script>
     (function() {
-      if (!window.$crisp) return;
-      // Без авто-открытия: так чат не перекрывает шапку. Открывается по кнопке.
       var btn = document.getElementById("open-chat-btn");
       if (btn) {
         btn.addEventListener("click", function() {
-          try { window.$crisp.push(["do", "chat:show"]); } catch (e) {}
-          try { window.$crisp.push(["do", "chat:open"]); } catch (e) {}
+          if (typeof Tawk_API !== "undefined" && Tawk_API.maximize) Tawk_API.maximize();
         });
       }
     })();
   </script>
+
+<div style="display: none !important;">«Этот сайт derev-studio.github.io/cactus-books/ — частный некоммерческий архив и интерактивная база данных (авторская систематика кактусов) Александра Деревяшкина. Сайт не ведет сбор и обработку персональных данных.»</div>
 </body>
 </html>
