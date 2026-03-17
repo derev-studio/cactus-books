@@ -156,13 +156,18 @@
         min-height: 0;
         overflow: visible;
       }
-      .chat-page__left { width: min(480px, 34%); }
+      /* Левая колонка с фото не должна "схлопываться" */
+      .chat-page__left {
+        flex: 0 0 clamp(380px, 34vw, 520px);
+        max-width: 520px;
+      }
       .chat-page__intro {
+        flex: 1 1 auto;
         min-width: 0;
         margin-right: 0.5rem;
       }
       .chat-page__photo { margin-top: 0.35rem; }
-      .chat-page__photo img { max-width: 480px; }
+      .chat-page__photo img { max-width: none; }
     }
     @media (min-width: 1300px) {
       .chat-page__content { max-width: 78rem; }
