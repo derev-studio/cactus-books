@@ -86,6 +86,31 @@
     }
     .story-article .story-long-photo { width: 100%; margin-top: 2rem; }
     .story-article .story-long-photo img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .story-article .story-video {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .story-article .story-video__frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #0b0b0b;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.28);
+      border: 1px solid rgba(0,0,0,0.12);
+    }
+    .story-article .story-video__iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .story-article .story-video__caption {
+      margin: 0.75rem 0 0;
+      color: rgba(26, 26, 26, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
     .story-article .story-title,
     .story-article .story-content {
       padding-left: max(1.25rem, 5vw);
@@ -210,6 +235,13 @@
   }
   const root = document.getElementById("root");
   let loadedStories = [];
+  const STORY_VIDEOS = {
+    "budet-laskovyj-dozhd": {
+      type: "youtube",
+      id: "lOSR4UEKe5Y",
+      caption: "Видео к рассказу"
+    }
+  };
   // Stories: title/content can be string (one lang) or { ru: "...", en: "...", ... } for translation.
 
   function escapeHtml(s) {
@@ -279,8 +311,14 @@
     var coverSrc = story.coverUrl ? escapeAttr(story.coverUrl) : "";
     var cover = coverSrc ? "<button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + coverSrc + "\" aria-label=\"Открыть фото\"><img class=\"story-cover\" src=\"" + coverSrc + "\" alt=\"\" loading=\"eager\" /></button>" : "";
     var longImg = (story.longImage && story.longImage.trim()) ? "<div class=\"story-long-photo\"><img src=\"" + escapeAttr(story.longImage) + "\" alt=\"\" loading=\"lazy\" /></div>" : "";
+    var video = "";
+    var cfg = STORY_VIDEOS[story.id];
+    if (cfg && cfg.type === "youtube" && cfg.id) {
+      var src = "https://www.youtube.com/embed/" + encodeURIComponent(cfg.id) + "?rel=0&modestbranding=1";
+      video = "<div class=\"story-video\" aria-label=\"Видео\"><div class=\"story-video__frame\"><iframe class=\"story-video__iframe\" src=\"" + src + "\" title=\"YouTube video\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen loading=\"lazy\"></iframe></div>" + (cfg.caption ? "<p class=\"story-video__caption\">" + escapeHtml(cfg.caption) + "</p>" : "") + "</div>";
+    }
     var backLabel = window.I18n ? window.I18n.t("stories_nav_list") : "← Все рассказы";
-    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + longImg + "</article>";
+    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + video + longImg + "</article>";
     if (window.I18n) window.I18n.applyToPage();
     var lb = document.getElementById("story-lightbox");
     var lbImg = document.getElementById("story-lightbox-img");
