@@ -325,10 +325,51 @@
   <script src="header-lang-dropdown.js" defer></script>
   <script>
     (function() {
+      function clearLocalTawkState() {
+        try {
+          if (window.localStorage) {
+            Object.keys(localStorage).forEach(function(k) {
+              if (/tawk/i.test(k)) localStorage.removeItem(k);
+            });
+          }
+          if (window.sessionStorage) {
+            Object.keys(sessionStorage).forEach(function(k) {
+              if (/tawk/i.test(k)) sessionStorage.removeItem(k);
+            });
+          }
+        } catch (e) {}
+      }
+
+      function forceFreshChatOpen() {
+        var attempts = 0;
+        var maxAttempts = 20;
+        var timer = setInterval(function() {
+          attempts += 1;
+          if (typeof window.Tawk_API === "undefined") {
+            if (attempts >= maxAttempts) clearInterval(timer);
+            return;
+          }
+          clearInterval(timer);
+          try {
+            if (typeof window.Tawk_API.endChat === "function") {
+              window.Tawk_API.endChat();
+            }
+          } catch (e) {}
+          clearLocalTawkState();
+          setTimeout(function() {
+            try {
+              if (typeof window.Tawk_API.maximize === "function") {
+                window.Tawk_API.maximize();
+              }
+            } catch (e) {}
+          }, 260);
+        }, 120);
+      }
+
       var btn = document.getElementById("open-chat-btn");
       if (btn) {
         btn.addEventListener("click", function() {
-          if (typeof Tawk_API !== "undefined" && Tawk_API.maximize) Tawk_API.maximize();
+          forceFreshChatOpen();
         });
       }
     })();
