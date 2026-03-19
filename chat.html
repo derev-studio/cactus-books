@@ -231,23 +231,9 @@
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
-var resetVersion = "tawk-reset-20260319-1";
-try {
-  if (window.localStorage && localStorage.getItem(resetVersion) !== "done") {
-    Object.keys(localStorage).forEach(function(k){
-      if (/tawk/i.test(k)) localStorage.removeItem(k);
-    });
-    if (window.sessionStorage) {
-      Object.keys(sessionStorage).forEach(function(k){
-        if (/tawk/i.test(k)) sessionStorage.removeItem(k);
-      });
-    }
-    localStorage.setItem(resetVersion, "done");
-  }
-} catch(e) {}
   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
   s1.async=true;
-s1.src='https://embed.tawk.to/69b9b2788b3f101c37855055/1jjum29rf?v=20260319-2';
+  s1.src='https://embed.tawk.to/69b9b2788b3f101c37855055/1jjum29rf';
   s1.charset='UTF-8';
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
