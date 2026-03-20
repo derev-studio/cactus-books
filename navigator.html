@@ -21,6 +21,36 @@
     .navigator-links a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
     .navigator-links .navigator-link-desc { font-weight: 400; font-size: 0.85rem; opacity: 0.9; margin-top: 0.2rem; }
     .navigator-empty { color: var(--cactus-muted-on-dark); padding: 2rem 0; }
+    .navigator-genus {
+      margin: 0 0 1.25rem;
+      padding: 1rem 1rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    }
+    .navigator-genus__title {
+      margin: 0 0 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--cactus-accent);
+    }
+    .navigator-genus__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: var(--cactus-surface);
+      color: var(--cactus-text);
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .navigator-genus__link:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
   </style>
 </head>
 <body>
@@ -64,6 +94,10 @@
     <div class="navigator-results">
       <h1 id="navigator-title" data-i18n="navigator_title">Навигатор по кактусам</h1>
       <p class="intro" id="navigator-intro" data-i18n="navigator_intro">Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.</p>
+      <div class="navigator-genus" id="navigator-genus" hidden>
+        <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
+        <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
+      </div>
       <ul class="navigator-links" id="navigator-links" hidden>
         <li><a href="" id="link-care" data-base="care.html" data-i18n="nav_care">Здоровье кактуса</a><span class="navigator-link-desc" id="desc-care" data-i18n="navigator_desc_care">Уход для этого вида</span></li>
         <li><a href="" id="link-geography" data-base="geography.html" data-i18n="nav_geography">Места обитания</a><span class="navigator-link-desc" id="desc-geography" data-i18n="navigator_desc_geography">Ареал на карте</span></li>
@@ -118,6 +152,8 @@
         var linksEl = document.getElementById('navigator-links');
         var emptyEl = document.getElementById('navigator-empty');
         var searchInput = document.getElementById('nav-search');
+        var genusWrap = document.getElementById('navigator-genus');
+        var genusLink = document.getElementById('navigator-genus-link');
         if (searchInput) searchInput.value = q;
         var t = window.I18n && window.I18n.t ? function (k) { return window.I18n.t(k); } : function (k) { return k; };
 
@@ -132,6 +168,59 @@
           document.getElementById('link-guardian').href = 'guardian.html?q=' + enc;
           linksEl.hidden = false;
           emptyEl.hidden = true;
+
+          // Быстрый поиск по роду в систематике по имени/запросу.
+          // Это не заменяет полную базу, но даёт понятный переход на нужную карточку.
+          if (genusWrap) genusWrap.hidden = true;
+          if (genusLink) genusLink.href = '';
+
+          function normalizeQueryToLatin(s) {
+            if (!s) return '';
+            var str = String(s).toLowerCase();
+            var map = {
+              'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z','и':'i','й':'i','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'h','ц':'c','ч':'ch','ш':'sh','щ':'shch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya'
+            };
+            var out = '';
+            for (var i = 0; i < str.length; i++) {
+              var ch = str[i];
+              out += (map.hasOwnProperty(ch)) ? map[ch] : ch;
+            }
+            return out.replace(/[^a-z0-9]/g, '').trim();
+          }
+
+          function findGenusInTaxonomy(taxNode, norm) {
+            if (!taxNode) return null;
+            if (taxNode.type === 'genus') {
+              var id = (taxNode.id || '').toLowerCase();
+              var name = (taxNode.name || '').toLowerCase();
+              var idNorm = id.replace(/[^a-z0-9]/g, '');
+              var nameNorm = name.replace(/[^a-z0-9]/g, '');
+              if (norm && (idNorm === norm || nameNorm === norm || idNorm.indexOf(norm) !== -1 || nameNorm.indexOf(norm) !== -1)) {
+                return { id: taxNode.id, name: taxNode.name };
+              }
+            }
+            var children = taxNode.children || [];
+            for (var i = 0; i < children.length; i++) {
+              var found = findGenusInTaxonomy(children[i], norm);
+              if (found) return found;
+            }
+            return null;
+          }
+
+          var norm = normalizeQueryToLatin(q);
+          if (norm) {
+            fetch('./data/taxonomy.json', { cache: 'no-store' })
+              .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
+              .then(function (data) {
+                var found = findGenusInTaxonomy(data, norm);
+                if (found && genusWrap && genusLink) {
+                  genusWrap.hidden = false;
+                  genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '');
+                  genusLink.textContent = 'Открыть «' + (found.name || found.id || 'род') + '»';
+                }
+              })
+              .catch(function () { /* ignore */ });
+          }
         } else {
           emptyEl.hidden = false;
           linksEl.hidden = true;
