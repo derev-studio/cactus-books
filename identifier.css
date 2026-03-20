@@ -328,6 +328,18 @@ body.identifier-page {
   line-height: 1.25;
 }
 
+.identifier-result__name-link {
+  color: var(--identifier-text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+}
+
+.identifier-result__name-link:hover {
+  color: #dbe7ff;
+}
+
 .identifier-result__latin {
   margin: 0;
   font-style: italic;

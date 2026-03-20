@@ -163,7 +163,38 @@
     head.className = "identifier-result__head";
     var nameH = document.createElement("h2");
     nameH.className = "identifier-result__name";
-    nameH.textContent = data.name_ru || "Кактус";
+    var nameRu = data.name_ru || "Кактус";
+    var latinName = data.name_latin || "";
+
+    // Переход по названию вида в классификацию:
+    // classification-cacti.html?genus=...&species=genus-epithet
+    function buildSpeciesHrefFromLatin(latin) {
+      if (!latin || typeof latin !== "string") return "";
+      // Убираем лишнее после запятых/скобок, чтобы получить чистый биноминальный латинский вид.
+      var s = latin.replace(/\s*[,].*$/, "").replace(/\(.*?\)/g, " ").trim();
+      // Иногда встречаются форматы вида "Genus × epithet".
+      s = s.replace(/×/g, " ");
+      var parts = s.split(/\s+/).filter(Boolean);
+      if (parts.length < 2) return "";
+      var genus = (parts[0] || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+      var epithet = (parts[1] || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+      if (!genus || !epithet) return "";
+      var speciesId = genus + "-" + epithet;
+      return "classification-cacti.html?genus=" + encodeURIComponent(genus) + "&species=" + encodeURIComponent(speciesId);
+    }
+
+    var href = buildSpeciesHrefFromLatin(latinName);
+    if (href) {
+      var nameLink = document.createElement("a");
+      nameLink.className = "identifier-result__name-link";
+      nameLink.href = href;
+      nameLink.rel = "noopener noreferrer";
+      nameLink.target = "_self";
+      nameLink.textContent = nameRu;
+      nameH.appendChild(nameLink);
+    } else {
+      nameH.textContent = nameRu;
+    }
     var latinP = document.createElement("p");
     latinP.className = "identifier-result__latin";
     latinP.textContent = data.name_latin || "";
