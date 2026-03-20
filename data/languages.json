@@ -624,6 +624,19 @@
       "uk": "Головна",
       "be": "Галоўная"
     },
+    "stories_nav_list": {
+      "ru": "Все рассказы",
+      "en": "All stories",
+      "jp": "すべての物語",
+      "it": "Tutti i racconti",
+      "zh": "全部故事",
+      "es": "Todos los relatos",
+      "de": "Alle Geschichten",
+      "fr": "Tous les récits",
+      "he": "כל הסיפורים",
+      "uk": "Усі оповідання",
+      "be": "Усе апавяданні"
+    },
     "stories_nav_start": {
       "ru": "На стартовую",
       "en": "To start",
