@@ -101,6 +101,11 @@
       font-weight: 700;
       color: var(--cactus-accent);
     }
+    .navigator-genus__meta {
+      margin: 0 0 0.6rem;
+      color: var(--cactus-muted-on-dark);
+      font-size: 0.85rem;
+    }
     .navigator-genus__link {
       display: inline-flex;
       align-items: center;
@@ -217,6 +222,7 @@
       </section>
       <div class="navigator-genus" id="navigator-genus" hidden>
         <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
+        <p class="navigator-genus__meta" id="navigator-genus-meta" hidden></p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
         <ul class="navigator-genus__list" id="navigator-genus-list"></ul>
       </div>
@@ -280,6 +286,7 @@
         var searchInput = document.getElementById('nav-search');
         var genusWrap = document.getElementById('navigator-genus');
         var genusLink = document.getElementById('navigator-genus-link');
+        var genusMeta = document.getElementById('navigator-genus-meta');
         var genusList = document.getElementById('navigator-genus-list');
         var directWrap = document.getElementById('navigator-direct');
         var directList = document.getElementById('navigator-direct-list');
@@ -304,6 +311,7 @@
           // Это не заменяет полную базу, но даёт понятный переход на нужную карточку.
           if (genusWrap) genusWrap.hidden = true;
           if (genusLink) genusLink.href = '';
+          if (genusMeta) { genusMeta.hidden = true; genusMeta.textContent = ''; }
           if (genusList) genusList.innerHTML = '';
           if (googleWrap) googleWrap.hidden = false;
           if (googleLink) googleLink.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
@@ -403,7 +411,10 @@
               if (bestScore >= 300) all.push({ taxon: item, score: bestScore });
             }
             all.sort(function (a, b) { return b.score - a.score; });
-            return all.slice(0, 8).map(function (x) { return x.taxon; });
+            return {
+              total: all.length,
+              top: all.slice(0, 30).map(function (x) { return x.taxon; })
+            };
           }
 
           var norm = normalizeQueryToLatin(q);
@@ -432,10 +443,15 @@
               .then(function (data) {
                 var taxa = [];
                 collectTaxa(data, taxa, null);
-                var foundList = findTopTaxonomyMatches(taxa, variants);
+                var foundData = findTopTaxonomyMatches(taxa, variants);
+                var foundList = foundData.top || [];
                 if (foundList.length && genusWrap && genusLink) {
                   var best = foundList[0];
                   genusWrap.hidden = false;
+                  if (genusMeta) {
+                    genusMeta.hidden = false;
+                    genusMeta.textContent = 'Совпадений в систематике: ' + String(foundData.total || foundList.length) + '. Показаны первые ' + String(foundList.length) + '.';
+                  }
                   genusLink.href = taxonHref(best);
                   genusLink.textContent = 'Открыть «' + (buildTaxonLabel(best) || 'результат') + '»';
                   prependDirectResult({
