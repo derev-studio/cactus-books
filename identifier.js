@@ -44,7 +44,24 @@
     parodia: ["Parodia magnifica", "Parodia leninghausii", "Parodia warasii", "Parodia scopa", "Parodia ottonis"],
     opuntia: ["Opuntia microdasys", "Opuntia ficus-indica", "Opuntia robusta", "Opuntia monacantha", "Opuntia stricta"],
     melocactus: ["Melocactus matanzanus", "Melocactus azureus", "Melocactus bahiensis", "Melocactus zehntneri", "Melocactus curvispinus"],
-    notocactus: ["Notocactus magnificus", "Notocactus leninghausii", "Notocactus roseoluteus", "Notocactus schlosseri", "Notocactus uebelmannianus"]
+    notocactus: ["Notocactus magnificus", "Notocactus leninghausii", "Notocactus roseoluteus", "Notocactus schlosseri", "Notocactus uebelmannianus"],
+    coryphantha: ["Coryphantha elephantidens", "Coryphantha sulcata", "Coryphantha clavata", "Coryphantha radians", "Coryphantha robustispina"],
+    escobaria: ["Escobaria vivipara", "Escobaria minima", "Escobaria missouriensis", "Escobaria sneedii", "Escobaria dasyacantha"],
+    thelocactus: ["Thelocactus bicolor", "Thelocactus hexaedrophorus", "Thelocactus setispinus", "Thelocactus leucacanthus", "Thelocactus rinconensis"],
+    copiapoa: ["Copiapoa cinerea", "Copiapoa hypogaea", "Copiapoa humilis", "Copiapoa dealbata", "Copiapoa columna-alba"],
+    turbinicarpus: ["Turbinicarpus valdezianus", "Turbinicarpus pseudopectinatus", "Turbinicarpus schmiedickeanus", "Turbinicarpus alonsoi", "Turbinicarpus lophophoroides"],
+    lophophora: ["Lophophora williamsii", "Lophophora diffusa", "Lophophora fricii", "Lophophora koehresii", "Lophophora alberto-vojtechii"],
+    stenocactus: ["Stenocactus multicostatus", "Stenocactus crispatus", "Stenocactus coptonogonus", "Stenocactus vaupelianus", "Stenocactus phyllacanthus"],
+    echinocereus: ["Echinocereus rigidissimus", "Echinocereus reichenbachii", "Echinocereus pectinatus", "Echinocereus triglochidiatus", "Echinocereus viridiflorus"],
+    cereus: ["Cereus repandus", "Cereus peruvianus", "Cereus jamacaru", "Cereus hildmannianus", "Cereus forbesii"],
+    trichocereus: ["Trichocereus pachanoi", "Trichocereus peruvianus", "Trichocereus bridgesii", "Trichocereus terscheckii", "Trichocereus candicans"],
+    lobivia: ["Lobivia arachnacantha", "Lobivia haematantha", "Lobivia famatimensis", "Lobivia tiegeliana", "Lobivia jajoiana"],
+    sulcorebutia: ["Sulcorebutia rauschii", "Sulcorebutia arenacea", "Sulcorebutia canigueralii", "Sulcorebutia steinbachii", "Sulcorebutia langeri"],
+    frailea: ["Frailea castanea", "Frailea grahliana", "Frailea asterioides", "Frailea pumila", "Frailea phaeodisca"],
+    epiphyllum: ["Epiphyllum oxypetalum", "Epiphyllum anguliger", "Epiphyllum crenatum", "Epiphyllum hookeri", "Epiphyllum pumilum"],
+    schlumbergera: ["Schlumbergera truncata", "Schlumbergera russelliana", "Schlumbergera x buckleyi", "Schlumbergera orssichiana", "Schlumbergera opuntioides"],
+    rhipsalis: ["Rhipsalis baccifera", "Rhipsalis cereuscula", "Rhipsalis pilocarpa", "Rhipsalis paradoxa", "Rhipsalis elliptica"],
+    aylostera: ["Aylostera heliosa", "Aylostera fiebrigii", "Aylostera muscula", "Aylostera narvaecensis", "Aylostera albipilosa"]
   };
 
   function loadHistory() {
