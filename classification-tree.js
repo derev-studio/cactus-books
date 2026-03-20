@@ -73,6 +73,17 @@
   var breadcrumbEl = null;
   var initialTarget = null;
 
+  // Атлас/карта ареала (на этой же странице систематики)
+  var atlasAuto = false;
+  var atlasToggleBtn = null;
+  var atlasPanel = null;
+  var atlasMapEl = null;
+  var atlasStatusEl = null;
+  var atlasMapInstance = null;
+  var atlasCache = {}; // name -> occurrences[]
+  var atlasReqId = 0;
+  var currentAtlasTaxonName = '';
+
   function getChildren(node) {
     return node && node.children ? node.children : [];
   }
@@ -134,6 +145,161 @@
     if (s == null) return '';
     var t = String(s);
     return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function getAtlasAutoFlag() {
+    try {
+      var params = new URLSearchParams(window.location.search || '');
+      var raw = (params.get('atlas') || '').toLowerCase();
+      return raw === '1' || raw === 'true' || raw === 'yes';
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function atlasSetStatus(text, isHidden) {
+    if (!atlasStatusEl) return;
+    if (isHidden) {
+      atlasStatusEl.hidden = true;
+    } else {
+      atlasStatusEl.hidden = false;
+      atlasStatusEl.textContent = text || '';
+    }
+  }
+
+  function atlasShowPanelAndLoad(taxonName) {
+    if (!atlasToggleBtn || !atlasPanel) return;
+    atlasPanel.hidden = false;
+    atlasToggleBtn.setAttribute('aria-expanded', 'true');
+    if (atlasAuto && taxonName) atlasUpdateAtlas(taxonName);
+  }
+
+  function atlasTogglePanel() {
+    if (!atlasToggleBtn || !atlasPanel) return;
+    var open = atlasPanel.hidden;
+    atlasPanel.hidden = !open;
+    atlasToggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open && currentAtlasTaxonName) {
+      atlasUpdateAtlas(currentAtlasTaxonName);
+    }
+  }
+
+  function atlasClearMap() {
+    if (atlasMapInstance) {
+      try { atlasMapInstance.remove(); } catch (_) {}
+    }
+    atlasMapInstance = null;
+  }
+
+  function atlasRenderMap(results, centerLat, centerLon) {
+    if (typeof L === 'undefined' || !atlasMapEl) return;
+    atlasClearMap();
+    atlasMapEl.innerHTML = '';
+
+    atlasMapInstance = L.map(atlasMapEl, {
+      center: [centerLat, centerLon],
+      zoom: 3,
+      zoomControl: true,
+      scrollWheelZoom: true,
+      doubleClickZoom: true,
+      touchZoom: true,
+    });
+
+    L.control.zoom({ position: "topright" }).addTo(atlasMapInstance);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: "© OpenStreetMap © CARTO",
+      maxZoom: 19,
+      subdomains: "abcd",
+    }).addTo(atlasMapInstance);
+
+    var maxMarkers = Math.min(15, results.length || 0);
+    for (var i = 0; i < maxMarkers; i++) {
+      var it = results[i];
+      var lat = (it && typeof it.decimalLatitude === 'number') ? it.decimalLatitude : null;
+      var lon = (it && typeof it.decimalLongitude === 'number') ? it.decimalLongitude : null;
+      if (lat == null || lon == null) continue;
+      var popupParts = [];
+      if (it.locality) popupParts.push(String(it.locality));
+      var cc = it.country || it.countryCode || '';
+      if (cc) popupParts.push(String(cc));
+      if (it.year) popupParts.push('(' + String(it.year) + ')');
+      var popupHtml = popupParts.length ? popupParts.join('<br/>') : "Метка ареала";
+      var marker = L.marker([lat, lon], {
+        icon: L.divIcon({
+          className: "identifier-marker",
+          html: "<span aria-hidden=\"true\">🌵</span>",
+          iconSize: [32, 32],
+          iconAnchor: [16, 32],
+        })
+      }).addTo(atlasMapInstance);
+      marker.bindPopup(popupHtml, { closeButton: true, autoClose: false });
+    }
+  }
+
+  function atlasUpdateAtlas(taxonName) {
+    if (!taxonName || !atlasMapEl) return;
+    if (typeof L === 'undefined') {
+      atlasSetStatus("Карта временно недоступна (Leaflet не загрузился).");
+      return;
+    }
+    atlasSetStatus("Загружаю ареал по данным GBIF…");
+
+    var cacheKey = String(taxonName).trim().toLowerCase();
+    if (!cacheKey) return;
+
+    atlasReqId += 1;
+    var myReq = atlasReqId;
+
+    function useResults(res) {
+      if (myReq !== atlasReqId) return;
+      var list = Array.isArray(res) ? res : [];
+      if (!list.length) {
+        atlasSetStatus("Координаты не найдены для этого названия.");
+        atlasRenderMap([], 20, 0);
+        return;
+      }
+      var sumLat = 0, sumLon = 0, cnt = 0;
+      for (var i = 0; i < list.length; i++) {
+        var a = list[i];
+        if (a && typeof a.decimalLatitude === 'number' && typeof a.decimalLongitude === 'number') {
+          sumLat += a.decimalLatitude;
+          sumLon += a.decimalLongitude;
+          cnt += 1;
+        }
+        if (cnt >= 10) break;
+      }
+      var centerLat = cnt ? (sumLat / cnt) : 20;
+      var centerLon = cnt ? (sumLon / cnt) : 0;
+      atlasSetStatus("Готово: показаны точки ареала (примерно).");
+      atlasRenderMap(list, centerLat, centerLon);
+    }
+
+    if (atlasCache[cacheKey]) {
+      useResults(atlasCache[cacheKey]);
+      return;
+    }
+
+    // 1) match species name → usageKey
+    fetch("https://api.gbif.org/v1/species/match?name=" + encodeURIComponent(taxonName))
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-match")); })
+      .then(function (sp) {
+        var key = sp && (sp.usageKey || sp.key);
+        if (!key) throw new Error("gbif-key");
+        // 2) occurrence search
+        return fetch(
+          "https://api.gbif.org/v1/occurrence/search?taxonKey=" + encodeURIComponent(String(key)) +
+          "&limit=25&hasCoordinate=true&fields=decimalLatitude,decimalLongitude,locality,country,year,countryCode"
+        ).then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-occ")); });
+      })
+      .then(function (occ) {
+        var results = occ && Array.isArray(occ.results) ? occ.results : [];
+        atlasCache[cacheKey] = results;
+        useResults(results);
+      })
+      .catch(function () {
+        if (myReq !== atlasReqId) return;
+        atlasSetStatus("Не удалось загрузить карту ареала. Попробуйте позже.");
+      });
   }
 
   function updateUrl(genusId, speciesId) {
@@ -346,6 +512,11 @@
     if (getUILocale() !== 'ru' && info && hasCyrillic(info)) info = '';
     cardDesc.textContent = info ? info : genusPlaceholder(genusNode.name);
 
+    currentAtlasTaxonName = genusNode.name || '';
+    if (atlasAuto && currentAtlasTaxonName) {
+      atlasShowPanelAndLoad(currentAtlasTaxonName);
+    }
+
     if (cardInfraspecificWrap) cardInfraspecificWrap.hidden = true;
     if (cardSeeAlsoWrap) cardSeeAlsoWrap.hidden = true;
     var morphWrap = document.getElementById('card-morphology-wrap');
@@ -434,6 +605,11 @@
       }
     }
     cardDesc.textContent = desc ? desc : speciesPlaceholder(speciesNode.name || '', genusName);
+
+    currentAtlasTaxonName = speciesNode.name || '';
+    if (atlasAuto && currentAtlasTaxonName) {
+      atlasShowPanelAndLoad(currentAtlasTaxonName);
+    }
     var infras = speciesNode.infraspecific;
     if (cardInfraspecificWrap && cardInfraspecificList) {
       if (infras && infras.length > 0) {
@@ -673,6 +849,15 @@
     cardInfraspecificList = document.getElementById('card-infraspecific-list');
     cardSeeAlsoWrap = document.getElementById('card-see-also-wrap');
     cardSeeAlsoList = document.getElementById('card-see-also-list');
+
+    atlasToggleBtn = document.getElementById('atlas-toggle-btn');
+    atlasPanel = document.getElementById('atlas-panel');
+    atlasMapEl = document.getElementById('atlas-map');
+    atlasStatusEl = document.getElementById('atlas-status');
+    atlasAuto = getAtlasAutoFlag();
+    if (atlasToggleBtn) {
+      atlasToggleBtn.addEventListener('click', function () { atlasTogglePanel(); });
+    }
 
     applyUILocale();
     document.addEventListener('cactusbooks-lang-applied', applyUILocale);

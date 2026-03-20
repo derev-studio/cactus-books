@@ -109,7 +109,7 @@
     identifyBtn.disabled = true;
   }
 
-  function initMapInContainer(lat, lon, containerId, regionText) {
+  function initMapInContainer(lat, lon, containerId, regionText, popupLinkHref, popupLinkText) {
     var container = document.getElementById(containerId);
     if (!container || typeof L === "undefined") return;
     if (mapInstances[containerId]) {
@@ -133,6 +133,12 @@
     }).addTo(map);
     map.setView([lat, lon], 4);
     var popupText = (regionText && regionText.trim()) ? regionText.trim() : "Примерный ареал в природе";
+    var popupHtml = "<strong>" + popupText.replace(/</g, "&lt;") + "</strong>";
+    if (popupLinkHref && popupLinkHref.trim()) {
+      var safeText = (popupLinkText && popupLinkText.trim()) ? popupLinkText.trim() : "Открыть в систематике";
+      popupHtml += "<br/><a href=\"" + popupLinkHref.replace(/"/g, "&quot;") + "\" target=\"_self\" rel=\"noopener noreferrer\" style=\"color:#2d6cdf; text-decoration: underline;\">"
+        + safeText.replace(/</g, "&lt;") + "</a>";
+    }
     var marker = L.marker([lat, lon], {
       icon: L.divIcon({
         className: "identifier-marker",
@@ -141,7 +147,7 @@
         iconAnchor: [16, 32],
       }),
     }).addTo(map);
-    marker.bindPopup("<strong>" + popupText.replace(/</g, "&lt;") + "</strong>", { closeButton: true, autoClose: false });
+    marker.bindPopup(popupHtml, { closeButton: true, autoClose: false });
     mapInstances[containerId] = map;
   }
 
@@ -195,10 +201,22 @@
     } else {
       nameH.textContent = nameRu;
     }
+
+    // Явная кнопка, чтобы вы быстрее находили карту ареала
+    // (люди часто не понимают, где именно “Ареал в природе” на карточке).
+    var mapJumpBtn = document.createElement("button");
+    mapJumpBtn.type = "button";
+    mapJumpBtn.className = "identifier-result__map-jump";
+    mapJumpBtn.textContent = "Показать карту ареала";
+    mapJumpBtn.addEventListener("click", function () {
+      var el = document.getElementById(mapId);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
     var latinP = document.createElement("p");
     latinP.className = "identifier-result__latin";
     latinP.textContent = data.name_latin || "";
     head.appendChild(nameH);
+    head.appendChild(mapJumpBtn);
     head.appendChild(latinP);
     card.appendChild(head);
 
@@ -278,7 +296,27 @@
       resultCards.appendChild(card);
       var lat = typeof data.lat === "number" ? data.lat : 25;
       var lon = typeof data.lon === "number" ? data.lon : -102;
-      setTimeout(function () { initMapInContainer(lat, lon, mapId, data.region); }, 50 * index);
+      // Переход из popup карты в классификацию (если у AI вернулся латинский вид).
+      var popupHref = "";
+      try {
+        if (data && data.name_latin) {
+          // Повторяем логику buildSpeciesHrefFromLatin, чтобы popup работал без доступа к внутренней функции.
+          var latin = String(data.name_latin);
+          var s = latin.replace(/\s*[,].*$/, "").replace(/\(.*?\)/g, " ").trim();
+          s = s.replace(/×/g, " ");
+          var parts = s.split(/\s+/).filter(Boolean);
+          if (parts.length >= 2) {
+            var genus = (parts[0] || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+            var epithet = (parts[1] || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+            if (genus && epithet) {
+              var speciesId = genus + "-" + epithet;
+              popupHref = "classification-cacti.html?genus=" + encodeURIComponent(genus) + "&species=" + encodeURIComponent(speciesId);
+            }
+          }
+        }
+      } catch (_) {}
+
+      setTimeout(function () { initMapInContainer(lat, lon, mapId, data.region, popupHref, "Открыть в систематике"); }, 50 * index);
     });
 
     if (resultClearHint) resultClearHint.hidden = false;

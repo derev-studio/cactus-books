@@ -347,6 +347,34 @@ body.identifier-page {
   font-size: clamp(0.95rem, 2.2vw, 1.05rem);
 }
 
+/* Кнопка-ссылка, чтобы пользователи сразу находили блок карты */
+.identifier-result__map-jump {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0.5rem;
+  width: 100%;
+  min-height: 40px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid var(--identifier-border);
+  background: rgba(74, 143, 217, 0.10);
+  color: var(--identifier-text);
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.identifier-result__map-jump:hover {
+  border-color: rgba(74, 143, 217, 0.55);
+  background: rgba(74, 143, 217, 0.16);
+}
+
+.identifier-result__map-jump:active {
+  transform: scale(0.99);
+}
+
 .identifier-result__map-wrap {
   margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
 }

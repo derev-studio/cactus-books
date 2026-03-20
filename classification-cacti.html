@@ -15,6 +15,50 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="page-common.css" />
   <link rel="stylesheet" href="classification-tree.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <style>
+    .card-panel__atlas-btn {
+      width: 100%;
+      margin: 0.5rem 0 0.75rem;
+      min-height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(74, 143, 217, 0.10);
+      color: var(--cactus-text);
+      cursor: pointer;
+      font-weight: 800;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .card-panel__atlas-btn:hover {
+      border-color: rgba(74, 143, 217, 0.65);
+      background: rgba(74, 143, 217, 0.16);
+    }
+    .card-panel__atlas-btn:active { transform: scale(0.99); }
+    .card-panel__atlas-panel {
+      margin: 0 0 0.25rem;
+    }
+    .card-panel__atlas-map {
+      height: clamp(220px, 45vw, 320px);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .card-panel__atlas-status {
+      margin: 0.5rem 0 0;
+      color: var(--cactus-muted-on-dark);
+      font-size: 0.95rem;
+    }
+    .card-panel__atlas-panel .leaflet-control-zoom a {
+      background: var(--cactus-surface, #fff) !important;
+    }
+    .card-panel__atlas-map .identifier-marker {
+      background: none !important;
+      border: none !important;
+      font-size: 28px;
+      line-height: 1;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -82,6 +126,11 @@
           </div>
           <p id="card-level" class="card-panel__level"></p>
           <div id="card-desc" class="card-panel__desc"></div>
+          <button type="button" class="card-panel__atlas-btn" id="atlas-toggle-btn" aria-expanded="false">Ареал на карте</button>
+          <div id="atlas-panel" class="card-panel__atlas-panel" hidden>
+            <div id="atlas-map" class="card-panel__atlas-map" aria-label="Карта ареала"></div>
+            <p id="atlas-status" class="card-panel__atlas-status" hidden></p>
+          </div>
           <div id="card-morphology-wrap" class="card-panel__morphology-wrap" hidden>
             <h3 id="card-morphology-title" class="card-panel__morphology-title">Морфология</h3>
             <ul id="card-morphology-list" class="card-panel__morphology-list"></ul>
@@ -142,6 +191,7 @@
   <script src="i18n.js" defer></script>
   <script src="header-i18n.js" defer></script>
   <script src="header-lang-dropdown.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="classification-tree.js" defer></script>
   <script>
     (function () {

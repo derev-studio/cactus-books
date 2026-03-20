@@ -226,7 +226,7 @@
                 var found = findGenusInTaxonomy(data, norm);
                 if (found && genusWrap && genusLink) {
                   genusWrap.hidden = false;
-                  genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '');
+                  genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '') + '&atlas=1';
                   genusLink.textContent = 'Открыть «' + (found.name || found.id || 'род') + '»';
                 }
               })
