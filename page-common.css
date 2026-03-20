@@ -110,11 +110,41 @@
 
 .page-content .dev-next-links ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
 }
 
 .page-content .dev-next-links li {
-  margin-bottom: 0.3rem;
+  margin: 0;
+}
+
+.page-content .dev-next-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: var(--cactus-surface);
+  color: var(--cactus-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.25;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page-content .dev-next-links li a:hover {
+  background: var(--cactus-surface-soft);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 .page-content .dev-feature-media {
