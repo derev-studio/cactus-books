@@ -316,6 +316,17 @@ body.identifier-page {
   color: var(--identifier-text);
 }
 
+.identifier-result__warning {
+  margin: 0 0 0.9rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  background: rgba(196, 92, 92, 0.14);
+  border: 1px solid rgba(196, 92, 92, 0.35);
+  color: #ffd8d8;
+  font-size: clamp(0.88rem, 2.1vw, 0.98rem);
+  line-height: 1.45;
+}
+
 .identifier-result__head {
   margin-bottom: clamp(1rem, 3vw, 1.5rem);
 }

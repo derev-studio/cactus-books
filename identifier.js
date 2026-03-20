@@ -29,6 +29,8 @@
   var currentFile = null;
   var currentDataUrl = null;
   var mapInstances = {};
+  var expectedGenusFromQuery = "";
+  var taxonomyGenusListPromise = null;
 
   function loadHistory() {
     try {
@@ -151,6 +153,109 @@
     mapInstances[containerId] = map;
   }
 
+  function normalizeQueryToLatin(s) {
+    if (!s) return "";
+    var str = String(s).toLowerCase();
+    var map = {
+      'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z','и':'i','й':'i','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'h','ц':'c','ч':'ch','ш':'sh','щ':'shch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya'
+    };
+    var out = "";
+    for (var i = 0; i < str.length; i++) {
+      var ch = str[i];
+      out += map.hasOwnProperty(ch) ? map[ch] : ch;
+    }
+    out = out.replace(/[^a-z0-9]/g, "").trim();
+    out = out.replace(/kaktus/g, "cactus").replace(/kactus/g, "cactus");
+    out = out.replace(/llya/g, "lla");
+    out = out.replace(/arii$/i, "aria");
+    return out;
+  }
+
+  function levenshtein(a, b) {
+    if (a === b) return 0;
+    if (!a.length) return b.length;
+    if (!b.length) return a.length;
+    var i, j;
+    var dp = [];
+    for (i = 0; i <= a.length; i++) dp[i] = [i];
+    for (j = 1; j <= b.length; j++) dp[0][j] = j;
+    for (i = 1; i <= a.length; i++) {
+      for (j = 1; j <= b.length; j++) {
+        var cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+      }
+    }
+    return dp[a.length][b.length];
+  }
+
+  function scoreMatch(queryNorm, candidateNorm) {
+    if (!queryNorm || !candidateNorm) return -1;
+    if (candidateNorm === queryNorm) return 1000;
+    if (candidateNorm.indexOf(queryNorm) === 0 || queryNorm.indexOf(candidateNorm) === 0) return 800;
+    if (candidateNorm.indexOf(queryNorm) !== -1 || queryNorm.indexOf(candidateNorm) !== -1) return 650;
+    var dist = levenshtein(queryNorm, candidateNorm);
+    if (dist <= 1) return 500;
+    if (dist <= 2) return 420;
+    if (dist <= 3 && queryNorm.length >= 8) return 300;
+    return -1;
+  }
+
+  function collectGenera(node, out) {
+    if (!node) return;
+    if (node.type === "genus") out.push({ id: node.id || "", name: node.name || "" });
+    var children = node.children || [];
+    for (var i = 0; i < children.length; i++) collectGenera(children[i], out);
+  }
+
+  function getGenusList() {
+    if (!taxonomyGenusListPromise) {
+      taxonomyGenusListPromise = fetch("./data/taxonomy.json", { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("taxonomy")); })
+        .then(function (tree) {
+          var arr = [];
+          collectGenera(tree, arr);
+          return arr;
+        })
+        .catch(function () { return []; });
+    }
+    return taxonomyGenusListPromise;
+  }
+
+  function resolveExpectedGenusFromUrl() {
+    try {
+      var p = new URLSearchParams(window.location.search || "");
+      var q = (p.get("q") || "").trim();
+      if (!q) return Promise.resolve("");
+      var norm = normalizeQueryToLatin(q);
+      if (!norm) return Promise.resolve("");
+      return getGenusList().then(function (genera) {
+        var best = "";
+        var bestScore = -1;
+        for (var i = 0; i < genera.length; i++) {
+          var g = genera[i];
+          var idNorm = String(g.id || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+          var nameNorm = String(g.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+          var score = Math.max(scoreMatch(norm, idNorm), scoreMatch(norm, nameNorm));
+          if (score > bestScore) {
+            bestScore = score;
+            best = g.name || g.id || "";
+          }
+        }
+        return bestScore >= 300 ? String(best) : "";
+      });
+    } catch (_) {
+      return Promise.resolve("");
+    }
+  }
+
+  function extractLatinGenus(nameLatin) {
+    if (!nameLatin || typeof nameLatin !== "string") return "";
+    var s = nameLatin.replace(/\s*[,].*$/, "").replace(/\(.*?\)/g, " ").trim();
+    s = s.replace(/×/g, " ");
+    var parts = s.split(/\s+/).filter(Boolean);
+    return parts.length ? parts[0] : "";
+  }
+
   function buildCard(data, mapId) {
     var card = document.createElement("article");
     card.className = "identifier-result__card";
@@ -163,6 +268,13 @@
       msgP.textContent = data.message.trim();
       msgWrap.appendChild(msgP);
       card.appendChild(msgWrap);
+    }
+    var detectedGenus = extractLatinGenus(data.name_latin || "");
+    if (expectedGenusFromQuery && detectedGenus && expectedGenusFromQuery.toLowerCase() !== detectedGenus.toLowerCase()) {
+      var warn = document.createElement("p");
+      warn.className = "identifier-result__warning";
+      warn.textContent = "Внимание: вы искали «" + expectedGenusFromQuery + "», а ИИ распознал «" + detectedGenus + "». Проверьте фото и сравните с систематикой.";
+      card.appendChild(warn);
     }
 
     var head = document.createElement("div");
@@ -410,11 +522,17 @@
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function () {
+      resolveExpectedGenusFromUrl().then(function (g) {
+        expectedGenusFromQuery = g || "";
+        var list = loadHistory();
+        if (list.length > 0) renderAllCards();
+      });
+    });
+  } else {
+    resolveExpectedGenusFromUrl().then(function (g) {
+      expectedGenusFromQuery = g || "";
       var list = loadHistory();
       if (list.length > 0) renderAllCards();
     });
-  } else {
-    var list = loadHistory();
-    if (list.length > 0) renderAllCards();
   }
 })();

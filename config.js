@@ -9,7 +9,7 @@
  */
 window.APP_CONFIG = window.APP_CONFIG || {
   workerUrl: "https://cactus-openrouter.qerevv.workers.dev",
-  identifierPreface: "Я только обучаюсь, могу ошибиться. По моим данным это возможно [название]. А как вы считаете, как он называется?",
+  identifierPreface: "Определи кактус аккуратно и без фантазии. Если уверенность низкая, так и напиши: \"Низкая уверенность\". Не подменяй роды. Отвечай строго валидным JSON по схеме сервиса: name_ru, name_latin, lat, lon, region, description, facts, care, message.",
 
   // Твой GitHub: галерея и админка работают с этим репо. Оставь пустым — только локальные data/.
   githubOwner: "",           // например: alexanderermolovich
