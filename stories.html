@@ -399,9 +399,12 @@
     var backLabel = window.I18n ? window.I18n.t("stories_nav_list") : "← Все рассказы";
     root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + video + longImg + "</article>";
     if (window.I18n) window.I18n.applyToPage();
+    // Самый простой и устойчивый вариант: берём фото прямо из кнопок на странице.
     currentGallerySources = [];
-    if (coverRaw) currentGallerySources.push(coverRaw);
-    if (longRaw && currentGallerySources.indexOf(longRaw) === -1) currentGallerySources.push(longRaw);
+    root.querySelectorAll(".story-cover-wrap[data-cover-src]").forEach(function(btn) {
+      var src = btn.getAttribute("data-cover-src");
+      if (src && currentGallerySources.indexOf(src) === -1) currentGallerySources.push(src);
+    });
     currentGalleryIndex = -1;
     var lb = document.getElementById("story-lightbox");
     var lbImg = document.getElementById("story-lightbox-img");
@@ -414,12 +417,8 @@
           if (currentGalleryIndex < 0) currentGalleryIndex = 0;
           lbImg.src = src;
           if (lbCounter) {
-            if (currentGallerySources.length > 1) {
-              lbCounter.hidden = false;
-              lbCounter.textContent = (currentGalleryIndex + 1) + " / " + currentGallerySources.length;
-            } else {
-              lbCounter.hidden = true;
-            }
+            lbCounter.hidden = false;
+            lbCounter.textContent = (currentGalleryIndex + 1) + " / " + currentGallerySources.length;
           }
           if (lb) lb.classList.add("is-open");
           document.body.style.overflow = "hidden";
@@ -461,8 +460,11 @@
       if (currentGalleryIndex >= 0 && currentGalleryIndex < currentGallerySources.length) {
         lbImg.src = currentGallerySources[currentGalleryIndex];
       }
+      var many = currentGallerySources.length > 1;
+      if (lbPrev) lbPrev.style.display = many ? "inline-flex" : "none";
+      if (lbNext) lbNext.style.display = many ? "inline-flex" : "none";
       if (lbCounter) {
-        if (currentGallerySources.length > 1 && currentGalleryIndex >= 0) {
+        if (currentGallerySources.length >= 1 && currentGalleryIndex >= 0) {
           lbCounter.hidden = false;
           lbCounter.textContent = (currentGalleryIndex + 1) + " / " + currentGallerySources.length;
         } else {
@@ -472,12 +474,12 @@
     }
     function closeLb() { if (lb) lb.classList.remove("is-open"); document.body.style.overflow = ""; }
     function prevLb() {
-      if (!currentGallerySources.length) return;
+      if (currentGallerySources.length <= 1) return;
       currentGalleryIndex = (currentGalleryIndex - 1 + currentGallerySources.length) % currentGallerySources.length;
       renderLbState();
     }
     function nextLb() {
-      if (!currentGallerySources.length) return;
+      if (currentGallerySources.length <= 1) return;
       currentGalleryIndex = (currentGalleryIndex + 1) % currentGallerySources.length;
       renderLbState();
     }
