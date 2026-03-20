@@ -279,6 +279,7 @@
       <section class="navigator-jump" id="navigator-jump" hidden>
         <h2 class="navigator-jump__title">Где ещё смотреть этот кактус</h2>
         <div class="navigator-jump__grid">
+          <a id="navigator-jump-identifier" href="identifier.html">Опознать кактус</a>
           <a id="navigator-jump-gallery" href="gallery.html">Галерея</a>
           <a id="navigator-jump-stories" href="stories.html">Рассказы</a>
           <a id="navigator-jump-book" href="книга-кактусология/book-read.html">Книга</a>
@@ -361,6 +362,7 @@
         var genusMoreBtn = document.getElementById('navigator-genus-more');
         var suggestList = document.getElementById('nav-search-suggest');
         var jumpWrap = document.getElementById('navigator-jump');
+        var jumpIdentifier = document.getElementById('navigator-jump-identifier');
         var jumpGallery = document.getElementById('navigator-jump-gallery');
         var jumpStories = document.getElementById('navigator-jump-stories');
         var jumpBook = document.getElementById('navigator-jump-book');
@@ -411,6 +413,7 @@
           linksEl.hidden = true;
           emptyEl.hidden = true;
           if (jumpWrap) jumpWrap.hidden = false;
+          if (jumpIdentifier) jumpIdentifier.href = 'identifier.html?q=' + enc;
           if (jumpGallery) jumpGallery.href = 'gallery.html?q=' + enc;
           if (jumpStories) jumpStories.href = 'stories.html?q=' + enc;
           if (jumpBook) jumpBook.href = 'книга-кактусология/book-read.html?q=' + enc;
