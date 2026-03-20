@@ -31,6 +31,7 @@
   var mapInstances = {};
   var expectedGenusFromQuery = "";
   var taxonomyGenusListPromise = null;
+  var taxonomyGeneraSet = null;
 
   function loadHistory() {
     try {
@@ -221,6 +222,19 @@
     return taxonomyGenusListPromise;
   }
 
+  function getTaxonomyGeneraSet() {
+    if (taxonomyGeneraSet) return Promise.resolve(taxonomyGeneraSet);
+    return getGenusList().then(function (genera) {
+      var set = {};
+      for (var i = 0; i < genera.length; i++) {
+        var name = String(genera[i].name || genera[i].id || "").trim();
+        if (name) set[name.toLowerCase()] = true;
+      }
+      taxonomyGeneraSet = set;
+      return taxonomyGeneraSet;
+    });
+  }
+
   function resolveExpectedGenusFromUrl() {
     try {
       var p = new URLSearchParams(window.location.search || "");
@@ -275,6 +289,12 @@
       warn.className = "identifier-result__warning";
       warn.textContent = "Внимание: вы искали «" + expectedGenusFromQuery + "», а ИИ распознал «" + detectedGenus + "». Проверьте фото и сравните с систематикой.";
       card.appendChild(warn);
+    }
+    if (detectedGenus && taxonomyGeneraSet && !taxonomyGeneraSet[detectedGenus.toLowerCase()]) {
+      var warnOut = document.createElement("p");
+      warnOut.className = "identifier-result__warning";
+      warnOut.textContent = "Род «" + detectedGenus + "» пока не найден в вашей систематике. Проверьте фото, либо откройте систематику вручную.";
+      card.appendChild(warnOut);
     }
 
     var head = document.createElement("div");
@@ -462,14 +482,20 @@
         return;
       }
       var mime = dataUrl.indexOf("image/png") !== -1 ? "image/png" : "image/jpeg";
-      var body = { image: base64, mime: mime };
-      if (prefaceText) body.preface = prefaceText;
+      getGenusList().then(function (genera) {
+        var genusNames = genera.map(function (g) { return g.name || g.id || ""; }).filter(Boolean).slice(0, 200);
+        var dynamicPreface = prefaceText || "";
+        dynamicPreface += (dynamicPreface ? " " : "") +
+          "Определяй только кактусы из каталога родов систематики сайта. " +
+          "Если не уверен — пиши 'Низкая уверенность'. " +
+          "Каталог родов (" + String(genusNames.length) + "): " + genusNames.join(", ") + ".";
+        var body = { image: base64, mime: mime, preface: dynamicPreface };
 
-      fetch(VISION_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      })
+        fetch(VISION_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        })
         .then(function (res) { return res.json().then(function (b) { if (!res.ok) throw new Error(b.error || "Ошибка сервера"); return b; }); })
         .then(function (body) {
           var content = body.choices && body.choices[0] && body.choices[0].message && body.choices[0].message.content;
@@ -488,6 +514,11 @@
           identifyBtn.classList.remove("loading");
           identifyBtn.disabled = false;
         });
+      }).catch(function () {
+        identifyBtn.classList.remove("loading");
+        identifyBtn.disabled = false;
+        showError("Не удалось загрузить каталог родов для проверки.");
+      });
     });
   }
 
