@@ -58,6 +58,37 @@
       font-size: 28px;
       line-height: 1;
     }
+    .card-panel__explore {
+      margin: 0.75rem 0 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+    .card-panel__explore-title {
+      margin: 0 0 0.45rem;
+      font-size: 0.92rem;
+      color: var(--cactus-muted-on-dark);
+      font-weight: 700;
+    }
+    .card-panel__explore-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.45rem;
+    }
+    .card-panel__explore-links a {
+      display: block;
+      text-decoration: none;
+      border-radius: 9px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.82);
+      color: var(--cactus-text);
+      padding: 0.45rem 0.55rem;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .card-panel__explore-links a:hover {
+      background: #fff;
+    }
   </style>
 </head>
 <body>
@@ -152,6 +183,15 @@
           <div id="card-see-also-wrap" class="card-panel__see-also-wrap" hidden>
             <h3 id="card-see-also-title" class="card-panel__see-also-title">Смотрите также</h3>
             <ul id="card-see-also-list" class="card-panel__see-also-list"></ul>
+          </div>
+          <div id="card-explore-wrap" class="card-panel__explore" hidden>
+            <h3 class="card-panel__explore-title">Где ещё смотреть этот кактус</h3>
+            <div class="card-panel__explore-links">
+              <a id="card-explore-gallery" href="gallery.html">Галерея</a>
+              <a id="card-explore-stories" href="stories.html">Рассказы</a>
+              <a id="card-explore-book" href="книга-кактусология/book-read.html">Книга</a>
+              <a id="card-explore-google" href="#" target="_blank" rel="noopener">Поиск по сайту</a>
+            </div>
           </div>
         </div>
       </aside>
