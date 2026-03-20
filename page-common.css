@@ -87,6 +87,36 @@
   transform: translateY(-1px);
 }
 
+.page-content .dev-next-links {
+  margin: 1rem 0 1.1rem;
+  padding: 1rem 1rem;
+  background: rgba(22, 90, 158, 0.08);
+  border: 1px solid rgba(22, 90, 158, 0.18);
+  border-radius: 12px;
+}
+
+.page-content .dev-next-links h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.05rem;
+  color: var(--cactus-reading-text);
+}
+
+.page-content .dev-next-links p {
+  margin: 0 0 0.6rem;
+  color: var(--cactus-reading-muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.page-content .dev-next-links ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.page-content .dev-next-links li {
+  margin-bottom: 0.3rem;
+}
+
 .page-content .dev-feature-media {
   margin: 1.2rem 0 0;
   display: flex;
