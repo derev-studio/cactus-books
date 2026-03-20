@@ -87,6 +87,32 @@
   transform: translateY(-1px);
 }
 
+.page-content .dev-feature-media {
+  margin: 1.2rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-content .dev-feature-media img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+.page-content .dev-feature-media figcaption {
+  margin-top: 0.65rem;
+  color: var(--cactus-reading-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
 .page-content h2 {
   font-size: 1.35rem;
   font-weight: 700;
