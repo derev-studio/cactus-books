@@ -212,6 +212,12 @@
           // Чтобы «Ферокактус» находил `ferocactus` в taxonomy.json.
           if (norm) {
             norm = norm.replace(/kaktus/g, 'cactus').replace(/kactus/g, 'cactus');
+            // “-лля-” в подобных русских формах часто даёт латинское “-лла-”
+            // (пример: маммиллярии -> mammillaria).
+            norm = norm.replace(/llya/g, 'lla');
+            // Русские формы с мн.ч. типа «маммиллярии» часто соответствуют
+            // латинскому «mammillaria» (нормализуем *-arii -> *-aria на конце).
+            norm = norm.replace(/arii$/i, 'aria');
           }
           if (norm) {
             fetch('./data/taxonomy.json', { cache: 'no-store' })
