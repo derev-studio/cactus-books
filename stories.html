@@ -85,7 +85,7 @@
       display: block;
       vertical-align: top;
       object-fit: contain;
-      background: #111;
+      background: var(--cactus-bg-soft);
     }
     .story-article .story-long-photo { width: 100%; margin-top: 2rem; }
     .story-article .story-long-photo .story-cover-wrap {
@@ -100,7 +100,7 @@
       height: auto;
       display: block;
       object-fit: contain;
-      background: #111;
+      background: var(--cactus-bg-soft);
     }
     .story-article .story-video {
       width: 100%;
@@ -159,9 +159,28 @@
     .stories-card__excerpt { font-size: 0.9rem; color: var(--cactus-muted-on-dark); margin: 0 0 1rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .stories-card__btn { display: inline-block; padding: 0.5rem 1rem; background: var(--cactus-accent, #2d5a3d); color: #fff; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
     .stories-back { margin-bottom: 1.5rem; }
-    .story-lightbox { position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }
-    .story-lightbox.is-open { display: flex; }
-    .story-lightbox__img { max-width: 100%; max-height: 95vh; width: auto; height: auto; object-fit: contain; border-radius: 8px; }
+    .story-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(26, 39, 68, 0.96);
+      display: none;
+      padding: 1rem;
+      box-sizing: border-box;
+      overflow: auto;
+      text-align: center;
+    }
+    .story-lightbox.is-open { display: block; }
+    .story-lightbox__img {
+      width: min(96vw, 1600px);
+      max-width: none;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      margin: max(4.25rem, env(safe-area-inset-top)) auto 2rem;
+      box-shadow: 0 10px 34px rgba(0,0,0,0.35);
+      display: block;
+    }
     .story-lightbox__close { position: absolute; top: 1rem; right: 1rem; width: 48px; height: 48px; border: none; background: rgba(255,255,255,0.15); color: #fff; font-size: 1.5rem; border-radius: 50%; cursor: pointer; line-height: 1; }
     .story-lightbox__close:hover { background: rgba(255,255,255,0.25); }
     .story-lightbox__nav {
