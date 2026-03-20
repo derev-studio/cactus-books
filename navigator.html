@@ -16,6 +16,28 @@
     .navigator-results h1 { font-size: 1.35rem; margin: 0 0 0.5rem; color: var(--cactus-text-on-dark); }
     .navigator-results .navigator-query { color: var(--cactus-accent); font-weight: 600; }
     .navigator-results p.intro { color: var(--cactus-muted-on-dark); font-size: 0.95rem; margin: 0 0 1.5rem; }
+    .navigator-results .dev-feature-media {
+      margin: 0 0 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navigator-results .dev-feature-media img {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 6px 26px rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+    }
+    .navigator-results .dev-feature-media figcaption {
+      margin-top: 0.65rem;
+      color: var(--cactus-muted-on-dark);
+      font-size: 0.95rem;
+      line-height: 1.55;
+      text-align: center;
+    }
     .navigator-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; }
     .navigator-links a { display: block; padding: 0.85rem 1rem; background: var(--cactus-surface); color: var(--cactus-text); text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 16px rgba(0,0,0,0.12); transition: transform 0.2s, box-shadow 0.2s; }
     .navigator-links a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
@@ -94,6 +116,10 @@
     <div class="navigator-results">
       <h1 id="navigator-title" data-i18n="navigator_title">Навигатор по кактусам</h1>
       <p class="intro" id="navigator-intro" data-i18n="navigator_intro">Введите название кактуса или суккулента в поле выше — откроются ссылки на разделы: уход, ареал, систематика, можно спросить ИИ.</p>
+      <figure class="dev-feature-media" aria-label="Атласная иллюстрация ареалов кактусов">
+        <img src="assets/images/geography-cactus-atlas.png" alt="Атласная иллюстрация ареалов кактусов" loading="lazy" />
+        <figcaption>Атлас ареалов помогает понять “где в природе живёт кактус” — и почему у разных видов отличаются условия роста.</figcaption>
+      </figure>
       <div class="navigator-genus" id="navigator-genus" hidden>
         <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
