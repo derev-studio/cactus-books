@@ -451,7 +451,7 @@
             all.sort(function (a, b) { return b.score - a.score; });
             return {
               total: all.length,
-              all: all.map(function (x) { return x.taxon; })
+              ranked: all
             };
           }
 
@@ -479,9 +479,17 @@
             getTaxaList()
               .then(function (taxa) {
                 var foundData = findTopTaxonomyMatches(taxa, variants);
-                var foundList = foundData.all || [];
+                var ranked = foundData.ranked || [];
+                var foundList = ranked.map(function (x) { return x.taxon; });
                 if (foundList.length && genusWrap && genusLink) {
                   var best = foundList[0];
+                  var bestScore = ranked[0] ? ranked[0].score : 0;
+                  // Если совпадение сильное (точно/почти точно), ведём сразу в карточку,
+                  // чтобы не заставлять пользователя проходить промежуточный экран.
+                  if (bestScore >= 800) {
+                    window.location.href = taxonHref(best);
+                    return;
+                  }
                   genusWrap.hidden = false;
                   currentMatches = foundList;
                   currentLimit = pageSize;
