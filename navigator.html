@@ -208,6 +208,11 @@
           }
 
           var norm = normalizeQueryToLatin(q);
+          // Русское «кактус/как-тус» часто соответствует латинскому «cactus».
+          // Чтобы «Ферокактус» находил `ferocactus` в taxonomy.json.
+          if (norm) {
+            norm = norm.replace(/kaktus/g, 'cactus').replace(/kactus/g, 'cactus');
+          }
           if (norm) {
             fetch('./data/taxonomy.json', { cache: 'no-store' })
               .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
