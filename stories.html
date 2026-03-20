@@ -180,11 +180,13 @@
       margin: max(4.25rem, env(safe-area-inset-top)) auto 2rem;
       box-shadow: 0 10px 34px rgba(0,0,0,0.35);
       display: block;
+      position: relative;
+      z-index: 1;
     }
     .story-lightbox__close { position: absolute; top: 1rem; right: 1rem; width: 48px; height: 48px; border: none; background: rgba(255,255,255,0.15); color: #fff; font-size: 1.5rem; border-radius: 50%; cursor: pointer; line-height: 1; }
     .story-lightbox__close:hover { background: rgba(255,255,255,0.25); }
     .story-lightbox__nav {
-      position: absolute;
+      position: fixed;
       top: 50%;
       transform: translateY(-50%);
       width: 52px;
@@ -200,12 +202,13 @@
       align-items: center;
       justify-content: center;
       -webkit-tap-highlight-color: transparent;
+      z-index: 3;
     }
     .story-lightbox__nav:hover { background: rgba(255,255,255,0.28); }
     .story-lightbox__nav--prev { left: 1rem; }
     .story-lightbox__nav--next { right: 1rem; }
     .story-lightbox__counter {
-      position: absolute;
+      position: fixed;
       left: 50%;
       bottom: 1rem;
       transform: translateX(-50%);
@@ -214,6 +217,7 @@
       background: rgba(0,0,0,0.35);
       border-radius: 999px;
       padding: 0.3rem 0.65rem;
+      z-index: 3;
     }
   </style>
 </head>
@@ -380,9 +384,11 @@
     }
     var title = getStoryText(story.title);
     var content = getStoryText(story.content);
-    var coverSrc = story.coverUrl ? escapeAttr(story.coverUrl) : "";
+    var coverRaw = story.coverUrl ? String(story.coverUrl) : "";
+    var coverSrc = coverRaw ? escapeAttr(coverRaw) : "";
     var cover = coverSrc ? "<button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + coverSrc + "\" aria-label=\"Открыть фото\"><img class=\"story-cover\" src=\"" + coverSrc + "\" alt=\"\" loading=\"eager\" /></button>" : "";
-    var longImgSrc = (story.longImage && story.longImage.trim()) ? escapeAttr(story.longImage) : "";
+    var longRaw = (story.longImage && story.longImage.trim()) ? String(story.longImage).trim() : "";
+    var longImgSrc = longRaw ? escapeAttr(longRaw) : "";
     var longImg = longImgSrc ? "<div class=\"story-long-photo\"><button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + longImgSrc + "\" aria-label=\"Открыть фото\"><img src=\"" + longImgSrc + "\" alt=\"\" loading=\"lazy\" /></button></div>" : "";
     var video = "";
     var cfg = STORY_VIDEOS[story.id];
@@ -394,8 +400,8 @@
     root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + video + longImg + "</article>";
     if (window.I18n) window.I18n.applyToPage();
     currentGallerySources = [];
-    if (coverSrc) currentGallerySources.push(coverSrc);
-    if (longImgSrc && currentGallerySources.indexOf(longImgSrc) === -1) currentGallerySources.push(longImgSrc);
+    if (coverRaw) currentGallerySources.push(coverRaw);
+    if (longRaw && currentGallerySources.indexOf(longRaw) === -1) currentGallerySources.push(longRaw);
     currentGalleryIndex = -1;
     var lb = document.getElementById("story-lightbox");
     var lbImg = document.getElementById("story-lightbox-img");
@@ -405,6 +411,7 @@
         var src = btn.getAttribute("data-cover-src");
         if (src && lbImg) {
           currentGalleryIndex = Math.max(0, currentGallerySources.indexOf(src));
+          if (currentGalleryIndex < 0) currentGalleryIndex = 0;
           lbImg.src = src;
           if (lbCounter) {
             if (currentGallerySources.length > 1) {
