@@ -159,6 +159,18 @@
     .stories-card__excerpt { font-size: 0.9rem; color: var(--cactus-muted-on-dark); margin: 0 0 1rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
     .stories-card__btn { display: inline-block; padding: 0.5rem 1rem; background: var(--cactus-accent, #2d5a3d); color: #fff; border-radius: 8px; font-size: 0.9rem; font-weight: 600; }
     .stories-back { margin-bottom: 1.5rem; }
+    .story-switch {
+      max-width: min(92vw, 1100px);
+      margin: 0 auto 1rem;
+      display: flex;
+      gap: 0.75rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .story-switch .stories-nav__btn {
+      flex: 1 1 220px;
+      margin: 0;
+    }
     .story-lightbox {
       position: fixed;
       inset: 0;
@@ -419,7 +431,22 @@
       video = "<div class=\"story-video\" aria-label=\"Видео\"><div class=\"story-video__frame\"><iframe class=\"story-video__iframe\" src=\"" + src + "\" title=\"YouTube video\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen loading=\"lazy\"></iframe></div>" + (cfg.caption ? "<p class=\"story-video__caption\">" + escapeHtml(cfg.caption) + "</p>" : "") + "</div>";
     }
     var backLabel = window.I18n ? window.I18n.t("stories_nav_list") : "← Все рассказы";
-    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p><article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + video + longImg + "</article>";
+    var idx = loadedStories.findIndex(function(s) { return s.id === currentStoryId; });
+    var prevStory = idx > 0 ? loadedStories[idx - 1] : null;
+    var nextStory = idx >= 0 && idx < loadedStories.length - 1 ? loadedStories[idx + 1] : null;
+    var prevLabel = window.I18n ? window.I18n.t("stories_prev_story") : "← Предыдущий рассказ";
+    var nextLabel = window.I18n ? window.I18n.t("stories_next_story") : "Следующий рассказ →";
+    var switchTop =
+      "<nav class=\"story-switch\" aria-label=\"Переключение рассказов\">" +
+      (prevStory ? "<a class=\"stories-nav__btn\" href=\"stories.html?story=" + encodeURIComponent(prevStory.id) + "\">" + escapeHtml(prevLabel) + "</a>" : "<span></span>") +
+      (nextStory ? "<a class=\"stories-nav__btn\" href=\"stories.html?story=" + encodeURIComponent(nextStory.id) + "\">" + escapeHtml(nextLabel) + "</a>" : "") +
+      "</nav>";
+    var switchBottom =
+      "<nav class=\"story-switch\" aria-label=\"Переключение рассказов\">" +
+      (prevStory ? "<a class=\"stories-nav__btn\" href=\"stories.html?story=" + encodeURIComponent(prevStory.id) + "\">" + escapeHtml(prevLabel) + "</a>" : "<span></span>") +
+      (nextStory ? "<a class=\"stories-nav__btn\" href=\"stories.html?story=" + encodeURIComponent(nextStory.id) + "\">" + escapeHtml(nextLabel) + "</a>" : "") +
+      "</nav>";
+    root.innerHTML = "<p class=\"stories-back\"><a href=\"stories.html\" class=\"back\">" + escapeHtml(backLabel) + "</a></p>" + switchTop + "<article class=\"story-article\">" + cover + "<h1 class=\"story-title\">" + escapeHtml(title) + "</h1><div class=\"story-content\">" + linkify(content) + "</div>" + video + longImg + "</article>" + switchBottom;
     if (window.I18n) window.I18n.applyToPage();
     // Самый простой и устойчивый вариант: берём фото прямо из кнопок на странице.
     currentGallerySources = [];
@@ -499,7 +526,8 @@
         var src = currentGallerySources[currentGalleryIndex];
         lbImg.src = src;
         if (lbCaption) {
-          var cap = currentGalleryLabels[src] || "Фото";
+          var capPrefix = window.I18n ? window.I18n.t("stories_plant_label") : "Растение";
+          var cap = (capPrefix ? (capPrefix + ": ") : "") + (currentGalleryLabels[src] || "Фото");
           lbCaption.hidden = false;
           lbCaption.textContent = cap;
         }

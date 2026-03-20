@@ -650,6 +650,21 @@
       "uk": "Почати з початку",
       "be": "Пачаць з пачатку"
     },
+    "stories_prev_story": {
+      "ru": "← Предыдущий рассказ",
+      "en": "← Previous story",
+      "uk": "← Попереднє оповідання"
+    },
+    "stories_next_story": {
+      "ru": "Следующий рассказ →",
+      "en": "Next story →",
+      "uk": "Наступне оповідання →"
+    },
+    "stories_plant_label": {
+      "ru": "Растение",
+      "en": "Plant",
+      "uk": "Рослина"
+    },
     "derev_p1": {
       "ru": "Здесь — моё пространство: кактусы, книги, фотография. Всю жизнь увлекаюсь коллекционированием и съёмкой. Пишу книги, снимаю природу и людей. Этот сайт — место, где всё это встречается.",
       "en": "This is my space: cacti, books, photography. I've been collecting and shooting all my life. I write books, photograph nature and people. This site is where it all comes together.",
