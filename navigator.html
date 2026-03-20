@@ -142,6 +142,23 @@
     .navigator-genus__list a:hover {
       background: rgba(255,255,255,0.12);
     }
+    .navigator-genus__more {
+      margin-top: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.08);
+      color: var(--cactus-text-on-dark);
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .navigator-genus__more:hover {
+      background: rgba(255,255,255,0.15);
+    }
     .navigator-google {
       margin: 0 0 1.25rem;
       padding: 0.9rem 1rem;
@@ -176,7 +193,8 @@
     <a href="home.html" class="site-header__brand" id="header-brand" data-i18n="brand">🌵 Кактусярий</a>
     <form class="site-header__navigator" action="navigator.html" method="get" role="search">
       <label for="nav-search" class="visually-hidden" id="header-nav-label" data-i18n="nav_navigator">Навигатор по кактусам</label>
-      <input type="search" name="q" id="nav-search" class="site-header__navigator-input" data-i18n="search_placeholder" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+      <input type="search" name="q" id="nav-search" list="nav-search-suggest" class="site-header__navigator-input" data-i18n="search_placeholder" data-i18n-placeholder="search_placeholder" placeholder="Название кактуса…" autocomplete="off" />
+      <datalist id="nav-search-suggest"></datalist>
       <button type="submit" class="site-header__navigator-btn" id="header-search-btn" data-i18n="search_btn">Найти</button>
     </form>
     <nav class="site-header__nav">
@@ -225,6 +243,7 @@
         <p class="navigator-genus__meta" id="navigator-genus-meta" hidden></p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
         <ul class="navigator-genus__list" id="navigator-genus-list"></ul>
+        <button type="button" class="navigator-genus__more" id="navigator-genus-more" hidden>Показать ещё</button>
       </div>
       <div class="navigator-google" id="navigator-google" hidden>
         <p class="navigator-google__title">Если не нашли с первого раза, можно быстро проверить весь сайт:</p>
@@ -288,12 +307,50 @@
         var genusLink = document.getElementById('navigator-genus-link');
         var genusMeta = document.getElementById('navigator-genus-meta');
         var genusList = document.getElementById('navigator-genus-list');
+        var genusMoreBtn = document.getElementById('navigator-genus-more');
+        var suggestList = document.getElementById('nav-search-suggest');
         var directWrap = document.getElementById('navigator-direct');
         var directList = document.getElementById('navigator-direct-list');
         var googleWrap = document.getElementById('navigator-google');
         var googleLink = document.getElementById('navigator-google-link');
+        var taxonomyPromise = null;
+        var pageSize = 30;
+        var currentLimit = pageSize;
+        var currentMatches = [];
         if (searchInput) searchInput.value = q;
         var t = window.I18n && window.I18n.t ? function (k) { return window.I18n.t(k); } : function (k) { return k; };
+
+        function collectTaxa(taxNode, out, currentGenus) {
+          if (!taxNode) return;
+          var nextGenus = currentGenus;
+          if (taxNode.type === 'genus') {
+            nextGenus = { id: taxNode.id || '', name: taxNode.name || '' };
+            out.push({ type: 'genus', id: nextGenus.id, name: nextGenus.name, genusId: nextGenus.id, genusName: nextGenus.name });
+          } else if (taxNode.type === 'species') {
+            out.push({
+              type: 'species',
+              id: taxNode.id || '',
+              name: taxNode.name || '',
+              genusId: (currentGenus && currentGenus.id) || '',
+              genusName: (currentGenus && currentGenus.name) || ''
+            });
+          }
+          var children = taxNode.children || [];
+          for (var i = 0; i < children.length; i++) collectTaxa(children[i], out, nextGenus);
+        }
+
+        function getTaxaList() {
+          if (!taxonomyPromise) {
+            taxonomyPromise = fetch('./data/taxonomy.json', { cache: 'no-store' })
+              .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
+              .then(function (data) {
+                var taxa = [];
+                collectTaxa(data, taxa, null);
+                return taxa;
+              });
+          }
+          return taxonomyPromise;
+        }
 
         if (q) {
           titleEl.innerHTML = t('navigator_results_title') + ' <span class="navigator-query">«' + escapeHtml(q) + '»</span>';
@@ -329,25 +386,6 @@
               out += (map.hasOwnProperty(ch)) ? map[ch] : ch;
             }
             return out.replace(/[^a-z0-9]/g, '').trim();
-          }
-
-          function collectTaxa(taxNode, out, currentGenus) {
-            if (!taxNode) return;
-            var nextGenus = currentGenus;
-            if (taxNode.type === 'genus') {
-              nextGenus = { id: taxNode.id || '', name: taxNode.name || '' };
-              out.push({ type: 'genus', id: nextGenus.id, name: nextGenus.name, genusId: nextGenus.id, genusName: nextGenus.name });
-            } else if (taxNode.type === 'species') {
-              out.push({
-                type: 'species',
-                id: taxNode.id || '',
-                name: taxNode.name || '',
-                genusId: (currentGenus && currentGenus.id) || '',
-                genusName: (currentGenus && currentGenus.name) || ''
-              });
-            }
-            var children = taxNode.children || [];
-            for (var i = 0; i < children.length; i++) collectTaxa(children[i], out, nextGenus);
           }
 
           function levenshtein(a, b) {
@@ -413,7 +451,7 @@
             all.sort(function (a, b) { return b.score - a.score; });
             return {
               total: all.length,
-              top: all.slice(0, 30).map(function (x) { return x.taxon; })
+              all: all.map(function (x) { return x.taxon; })
             };
           }
 
@@ -438,20 +476,15 @@
           if (norm && norm.indexOf('ii') !== -1) variants.push(norm.replace(/ii/g, 'i'));
           variants = variants.filter(Boolean).filter(function (v, idx, arr) { return arr.indexOf(v) === idx; });
           if (norm) {
-            fetch('./data/taxonomy.json', { cache: 'no-store' })
-              .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
-              .then(function (data) {
-                var taxa = [];
-                collectTaxa(data, taxa, null);
+            getTaxaList()
+              .then(function (taxa) {
                 var foundData = findTopTaxonomyMatches(taxa, variants);
-                var foundList = foundData.top || [];
+                var foundList = foundData.all || [];
                 if (foundList.length && genusWrap && genusLink) {
                   var best = foundList[0];
                   genusWrap.hidden = false;
-                  if (genusMeta) {
-                    genusMeta.hidden = false;
-                    genusMeta.textContent = 'Совпадений в систематике: ' + String(foundData.total || foundList.length) + '. Показаны первые ' + String(foundList.length) + '.';
-                  }
+                  currentMatches = foundList;
+                  currentLimit = pageSize;
                   genusLink.href = taxonHref(best);
                   genusLink.textContent = 'Открыть «' + (buildTaxonLabel(best) || 'результат') + '»';
                   prependDirectResult({
@@ -459,13 +492,7 @@
                     title: 'Систематика: ' + (buildTaxonLabel(best) || 'результат'),
                     desc: 'Открыть карточку и сразу карту ареала'
                   });
-                  if (genusList) {
-                    genusList.innerHTML = foundList.map(function (item) {
-                      var label = buildTaxonLabel(item);
-                      var prefix = item.type === 'species' ? 'Вид' : 'Род';
-                      return '<li><a href="' + taxonHref(item) + '">' + prefix + ': ' + escapeHtml(label) + '</a></li>';
-                    }).join('');
-                  }
+                  renderGenusMatches(foundData.total || foundList.length);
                 }
               })
               .catch(function () { /* ignore */ });
@@ -475,6 +502,7 @@
           linksEl.hidden = true;
           if (directWrap) directWrap.hidden = true;
           if (googleWrap) googleWrap.hidden = true;
+          if (genusMoreBtn) genusMoreBtn.hidden = true;
         }
 
         function normalizeSimple(s) {
@@ -535,6 +563,60 @@
             '</a></li>';
           directList.insertAdjacentHTML('afterbegin', first);
           directWrap.hidden = false;
+        }
+        function renderGenusMatches(totalCount) {
+          if (!genusList) return;
+          var shown = currentMatches.slice(0, currentLimit);
+          genusList.innerHTML = shown.map(function (item) {
+            var label = buildTaxonLabel(item);
+            var prefix = item.type === 'species' ? 'Вид' : 'Род';
+            return '<li><a href="' + taxonHref(item) + '">' + prefix + ': ' + escapeHtml(label) + '</a></li>';
+          }).join('');
+          if (genusMeta) {
+            genusMeta.hidden = false;
+            genusMeta.textContent = 'Совпадений в систематике: ' + String(totalCount || currentMatches.length) + '. Показаны: ' + String(shown.length) + '.';
+          }
+          if (genusMoreBtn) {
+            genusMoreBtn.hidden = shown.length >= currentMatches.length;
+            genusMoreBtn.textContent = 'Показать ещё (' + String(Math.max(0, currentMatches.length - shown.length)) + ')';
+          }
+        }
+        if (genusMoreBtn) {
+          genusMoreBtn.addEventListener('click', function () {
+            currentLimit += pageSize;
+            renderGenusMatches(currentMatches.length);
+          });
+        }
+        if (searchInput && suggestList) {
+          var suggestTimer = null;
+          searchInput.addEventListener('input', function () {
+            var text = (searchInput.value || '').trim();
+            if (suggestTimer) clearTimeout(suggestTimer);
+            suggestTimer = setTimeout(function () {
+              if (text.length < 2) {
+                suggestList.innerHTML = '';
+                return;
+              }
+              var qNorm = normalizeSimple(text);
+              getTaxaList()
+                .then(function (taxa) {
+                  var options = [];
+                  for (var i = 0; i < taxa.length; i++) {
+                    var label = buildTaxonLabel(taxa[i]);
+                    var lNorm = normalizeSimple(label);
+                    if (lNorm.indexOf(qNorm) !== -1 || qNorm.indexOf(lNorm) !== -1) {
+                      options.push(label);
+                    }
+                    if (options.length >= 20) break;
+                  }
+                  var uniq = options.filter(function (x, idx, arr) { return arr.indexOf(x) === idx; });
+                  suggestList.innerHTML = uniq.map(function (name) {
+                    return '<option value="' + escapeHtml(name) + '"></option>';
+                  }).join('');
+                })
+                .catch(function () { suggestList.innerHTML = ''; });
+            }, 120);
+          });
         }
       }
       function escapeHtml(s) {
