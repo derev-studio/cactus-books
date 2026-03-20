@@ -222,6 +222,12 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
     .navigator-google__link:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+    /* Убираем перегруженные блоки, оставляем компактный сценарий поиска */
+    .navigator-direct,
+    .navigator-google,
+    .navigator-links {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -276,7 +282,7 @@
           <a id="navigator-jump-gallery" href="gallery.html">Галерея</a>
           <a id="navigator-jump-stories" href="stories.html">Рассказы</a>
           <a id="navigator-jump-book" href="книга-кактусология/book-read.html">Книга</a>
-          <a id="navigator-jump-google" href="#" target="_blank" rel="noopener">Поиск по сайту</a>
+          <a id="navigator-jump-guardian" href="guardian.html">Колючий Собеседник</a>
         </div>
       </section>
       <section class="navigator-direct" id="navigator-direct" hidden>
@@ -354,15 +360,11 @@
         var genusList = document.getElementById('navigator-genus-list');
         var genusMoreBtn = document.getElementById('navigator-genus-more');
         var suggestList = document.getElementById('nav-search-suggest');
-        var directWrap = document.getElementById('navigator-direct');
-        var directList = document.getElementById('navigator-direct-list');
         var jumpWrap = document.getElementById('navigator-jump');
         var jumpGallery = document.getElementById('navigator-jump-gallery');
         var jumpStories = document.getElementById('navigator-jump-stories');
         var jumpBook = document.getElementById('navigator-jump-book');
-        var jumpGoogle = document.getElementById('navigator-jump-google');
-        var googleWrap = document.getElementById('navigator-google');
-        var googleLink = document.getElementById('navigator-google-link');
+        var jumpGuardian = document.getElementById('navigator-jump-guardian');
         var taxonomyPromise = null;
         var pageSize = 30;
         var currentLimit = pageSize;
@@ -406,18 +408,13 @@
           titleEl.innerHTML = t('navigator_results_title') + ' <span class="navigator-query">«' + escapeHtml(q) + '»</span>';
           introEl.textContent = t('navigator_results_intro');
           var enc = encodeURIComponent(q);
-          document.getElementById('link-care').href = 'care.html?q=' + enc;
-          document.getElementById('link-geography').href = 'geography.html?q=' + enc;
-          document.getElementById('link-systematics').href = 'systematics.html?q=' + enc;
-          document.getElementById('link-identifier').href = 'identifier.html';
-          document.getElementById('link-guardian').href = 'guardian.html?q=' + enc;
-          linksEl.hidden = false;
+          linksEl.hidden = true;
           emptyEl.hidden = true;
           if (jumpWrap) jumpWrap.hidden = false;
           if (jumpGallery) jumpGallery.href = 'gallery.html?q=' + enc;
           if (jumpStories) jumpStories.href = 'stories.html?q=' + enc;
           if (jumpBook) jumpBook.href = 'книга-кактусология/book-read.html?q=' + enc;
-          if (jumpGoogle) jumpGoogle.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
+          if (jumpGuardian) jumpGuardian.href = 'guardian.html?q=' + enc;
 
           // Быстрый поиск по роду в систематике по имени/запросу.
           // Это не заменяет полную базу, но даёт понятный переход на нужную карточку.
@@ -425,9 +422,6 @@
           if (genusLink) genusLink.href = '';
           if (genusMeta) { genusMeta.hidden = true; genusMeta.textContent = ''; }
           if (genusList) genusList.innerHTML = '';
-          if (googleWrap) googleWrap.hidden = false;
-          if (googleLink) googleLink.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
-          renderDirectResults(q);
 
           function normalizeQueryToLatin(s) {
             if (!s) return '';
@@ -564,8 +558,6 @@
           emptyEl.hidden = false;
           linksEl.hidden = true;
           if (jumpWrap) jumpWrap.hidden = true;
-          if (directWrap) directWrap.hidden = true;
-          if (googleWrap) googleWrap.hidden = true;
           if (genusMoreBtn) genusMoreBtn.hidden = true;
         }
 
@@ -587,50 +579,8 @@
           }
           return score;
         }
-        function renderDirectResults(query) {
-          if (!directWrap || !directList) return;
-          var candidates = [
-            { href: 'classification-cacti.html', title: 'Классификация кактусов', desc: 'Роды и виды, карточки и карта ареала', keywords: ['систематика','род','вид','кактус','cactus'] },
-            { href: 'identifier.html', title: 'Определитель кактусов', desc: 'Определение вида по фото + карта', keywords: ['определить','опознать','фото','вид'] },
-            { href: 'geography.html', title: 'География кактусов', desc: 'Где растут кактусы в природе', keywords: ['ареал','карта','места','страны'] },
-            { href: 'care.html', title: 'Уход за кактусами', desc: 'Полив, свет, сезонность и здоровье', keywords: ['полив','уход','болезни','пересадка'] },
-            { href: 'succulents.html', title: 'Суккуленты', desc: 'Литопсы, алоэ, хавортии и особенности ухода', keywords: ['суккуленты','литопсы','алоэ','хавортия'] },
-            { href: 'classification-succulents.html', title: 'Классификация суккулентов', desc: 'Базовая структура раздела и приоритетные группы', keywords: ['классификация','aizoaceae','супер-суккуленты'] },
-            { href: 'edible.html', title: 'Съедобные кактусы', desc: 'Безопасность и практические заметки', keywords: ['опунция','съедобные','плоды'] },
-            { href: 'stories.html', title: 'Рассказы о растениях', desc: 'Истории, фотографии и галерея', keywords: ['истории','фото','рассказы'] },
-            { href: 'gallery.html', title: 'Галерея', desc: 'Фото кактусов и сортов', keywords: ['галерея','фото'] },
-            { href: 'guardian.html', title: 'Колючий Собеседник (ИИ)', desc: 'Задать вопрос о виде, уходе и ареале', keywords: ['ии','чат','вопрос'] }
-          ];
-          var scored = candidates.map(function (c) {
-            return { item: c, score: scoreItem(query, c) };
-          }).filter(function (x) { return x.score > 0; })
-            .sort(function (a, b) { return b.score - a.score; })
-            .slice(0, 6)
-            .map(function (x) { return x.item; });
-
-          if (!scored.length) {
-            scored = candidates.slice(0, 4);
-          }
-          directList.innerHTML = scored.map(function (item) {
-            return '<li class="navigator-direct__item"><a href="' + item.href + '">' +
-              '<span class="navigator-direct__name">' + escapeHtml(item.title) + '</span>' +
-              '<span class="navigator-direct__desc">' + escapeHtml(item.desc) + '</span>' +
-              '</a></li>';
-          }).join('');
-          directWrap.hidden = false;
-        }
         function prependDirectResult(item) {
-          if (!directWrap || !directList || !item || !item.href) return;
-          var links = directList.querySelectorAll('a');
-          for (var i = 0; i < links.length; i++) {
-            if ((links[i].getAttribute('href') || '') === item.href) return;
-          }
-          var first = '<li class="navigator-direct__item"><a href="' + item.href + '">' +
-            '<span class="navigator-direct__name">' + escapeHtml(item.title || 'Результат') + '</span>' +
-            '<span class="navigator-direct__desc">' + escapeHtml(item.desc || '') + '</span>' +
-            '</a></li>';
-          directList.insertAdjacentHTML('afterbegin', first);
-          directWrap.hidden = false;
+          return item;
         }
         function renderGenusMatches(totalCount) {
           if (!genusList) return;
