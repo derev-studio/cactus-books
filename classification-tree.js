@@ -288,7 +288,7 @@
         // 2) occurrence search
         return fetch(
           "https://api.gbif.org/v1/occurrence/search?taxonKey=" + encodeURIComponent(String(key)) +
-          "&limit=25&hasCoordinate=true&fields=decimalLatitude,decimalLongitude,locality,country,year,countryCode"
+          "&limit=25&hasCoordinate=true"
         ).then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-occ")); });
       })
       .then(function (occ) {

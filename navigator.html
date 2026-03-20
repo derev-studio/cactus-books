@@ -548,7 +548,7 @@
             scored = candidates.slice(0, 4);
           }
           directList.innerHTML = scored.map(function (item) {
-            return '<li class="navigator-direct__item"><a href="' + item.href + '?q=' + encodeURIComponent(query) + '">' +
+            return '<li class="navigator-direct__item"><a href="' + item.href + '">' +
               '<span class="navigator-direct__name">' + escapeHtml(item.title) + '</span>' +
               '<span class="navigator-direct__desc">' + escapeHtml(item.desc) + '</span>' +
               '</a></li>';
@@ -557,6 +557,10 @@
         }
         function prependDirectResult(item) {
           if (!directWrap || !directList || !item || !item.href) return;
+          var links = directList.querySelectorAll('a');
+          for (var i = 0; i < links.length; i++) {
+            if ((links[i].getAttribute('href') || '') === item.href) return;
+          }
           var first = '<li class="navigator-direct__item"><a href="' + item.href + '">' +
             '<span class="navigator-direct__name">' + escapeHtml(item.title || 'Результат') + '</span>' +
             '<span class="navigator-direct__desc">' + escapeHtml(item.desc || '') + '</span>' +
