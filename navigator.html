@@ -73,6 +73,33 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .navigator-genus__link:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+    .navigator-google {
+      margin: 0 0 1.25rem;
+      padding: 0.9rem 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+    }
+    .navigator-google__title {
+      margin: 0 0 0.5rem;
+      color: var(--cactus-muted-on-dark);
+      font-size: 0.92rem;
+    }
+    .navigator-google__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 0.95rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: var(--cactus-surface);
+      color: var(--cactus-text);
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .navigator-google__link:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
   </style>
 </head>
 <body>
@@ -123,6 +150,10 @@
       <div class="navigator-genus" id="navigator-genus" hidden>
         <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
+      </div>
+      <div class="navigator-google" id="navigator-google" hidden>
+        <p class="navigator-google__title">Если не нашли с первого раза, можно быстро проверить весь сайт:</p>
+        <a class="navigator-google__link" id="navigator-google-link" href="" target="_blank" rel="noopener">Искать по сайту</a>
       </div>
       <ul class="navigator-links" id="navigator-links" hidden>
         <li><a href="" id="link-care" data-base="care.html" data-i18n="nav_care">Здоровье кактуса</a><span class="navigator-link-desc" id="desc-care" data-i18n="navigator_desc_care">Уход для этого вида</span></li>
@@ -180,6 +211,8 @@
         var searchInput = document.getElementById('nav-search');
         var genusWrap = document.getElementById('navigator-genus');
         var genusLink = document.getElementById('navigator-genus-link');
+        var googleWrap = document.getElementById('navigator-google');
+        var googleLink = document.getElementById('navigator-google-link');
         if (searchInput) searchInput.value = q;
         var t = window.I18n && window.I18n.t ? function (k) { return window.I18n.t(k); } : function (k) { return k; };
 
@@ -199,6 +232,8 @@
           // Это не заменяет полную базу, но даёт понятный переход на нужную карточку.
           if (genusWrap) genusWrap.hidden = true;
           if (genusLink) genusLink.href = '';
+          if (googleWrap) googleWrap.hidden = false;
+          if (googleLink) googleLink.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
 
           function normalizeQueryToLatin(s) {
             if (!s) return '';
@@ -214,23 +249,59 @@
             return out.replace(/[^a-z0-9]/g, '').trim();
           }
 
-          function findGenusInTaxonomy(taxNode, norm) {
-            if (!taxNode) return null;
-            if (taxNode.type === 'genus') {
-              var id = (taxNode.id || '').toLowerCase();
-              var name = (taxNode.name || '').toLowerCase();
-              var idNorm = id.replace(/[^a-z0-9]/g, '');
-              var nameNorm = name.replace(/[^a-z0-9]/g, '');
-              if (norm && (idNorm === norm || nameNorm === norm || idNorm.indexOf(norm) !== -1 || nameNorm.indexOf(norm) !== -1)) {
-                return { id: taxNode.id, name: taxNode.name };
+          function collectGenera(taxNode, out) {
+            if (!taxNode) return;
+            if (taxNode.type === 'genus') out.push({ id: taxNode.id || '', name: taxNode.name || '' });
+            var children = taxNode.children || [];
+            for (var i = 0; i < children.length; i++) collectGenera(children[i], out);
+          }
+
+          function levenshtein(a, b) {
+            if (a === b) return 0;
+            if (!a.length) return b.length;
+            if (!b.length) return a.length;
+            var i, j;
+            var dp = [];
+            for (i = 0; i <= a.length; i++) dp[i] = [i];
+            for (j = 1; j <= b.length; j++) dp[0][j] = j;
+            for (i = 1; i <= a.length; i++) {
+              for (j = 1; j <= b.length; j++) {
+                var cost = a[i - 1] === b[j - 1] ? 0 : 1;
+                dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
               }
             }
-            var children = taxNode.children || [];
-            for (var i = 0; i < children.length; i++) {
-              var found = findGenusInTaxonomy(children[i], norm);
-              if (found) return found;
+            return dp[a.length][b.length];
+          }
+
+          function scoreCandidate(queryNorm, candidateNorm) {
+            if (!queryNorm || !candidateNorm) return -1;
+            if (candidateNorm === queryNorm) return 1000;
+            if (candidateNorm.indexOf(queryNorm) === 0 || queryNorm.indexOf(candidateNorm) === 0) return 800;
+            if (candidateNorm.indexOf(queryNorm) !== -1 || queryNorm.indexOf(candidateNorm) !== -1) return 650;
+            var dist = levenshtein(queryNorm, candidateNorm);
+            if (dist <= 1) return 500;
+            if (dist <= 2) return 420;
+            if (dist <= 3 && queryNorm.length >= 8) return 300;
+            return -1;
+          }
+
+          function findBestGenus(genera, variants) {
+            var best = null;
+            var bestScore = -1;
+            for (var i = 0; i < genera.length; i++) {
+              var g = genera[i];
+              var idNorm = String(g.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+              var nameNorm = String(g.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+              for (var v = 0; v < variants.length; v++) {
+                var qv = variants[v];
+                var score = Math.max(scoreCandidate(qv, idNorm), scoreCandidate(qv, nameNorm));
+                if (score > bestScore) {
+                  bestScore = score;
+                  best = g;
+                }
+              }
             }
-            return null;
+            return bestScore >= 300 ? best : null;
           }
 
           var norm = normalizeQueryToLatin(q);
@@ -245,11 +316,21 @@
             // латинскому «mammillaria» (нормализуем *-arii -> *-aria на конце).
             norm = norm.replace(/arii$/i, 'aria');
           }
+          var variants = [];
+          if (norm) variants.push(norm);
+          if (norm && norm.indexOf('ph') !== -1) variants.push(norm.replace(/ph/g, 'f'));
+          if (norm && norm.indexOf('f') !== -1) variants.push(norm.replace(/f/g, 'ph'));
+          if (norm && norm.indexOf('iya') !== -1) variants.push(norm.replace(/iya/g, 'ia'));
+          if (norm && norm.indexOf('ya') !== -1) variants.push(norm.replace(/ya/g, 'ia'));
+          if (norm && norm.indexOf('ii') !== -1) variants.push(norm.replace(/ii/g, 'i'));
+          variants = variants.filter(Boolean).filter(function (v, idx, arr) { return arr.indexOf(v) === idx; });
           if (norm) {
             fetch('./data/taxonomy.json', { cache: 'no-store' })
               .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
               .then(function (data) {
-                var found = findGenusInTaxonomy(data, norm);
+                var genera = [];
+                collectGenera(data, genera);
+                var found = findBestGenus(genera, variants);
                 if (found && genusWrap && genusLink) {
                   genusWrap.hidden = false;
                   genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '') + '&atlas=1';
@@ -261,6 +342,7 @@
         } else {
           emptyEl.hidden = false;
           linksEl.hidden = true;
+          if (googleWrap) googleWrap.hidden = true;
         }
       }
       function escapeHtml(s) {
