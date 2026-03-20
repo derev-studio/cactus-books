@@ -65,6 +65,7 @@
   var cardSeeAlsoWrap = null;
   var cardSeeAlsoList = null;
   var cardExploreWrap = null;
+  var cardExploreIdentifier = null;
   var cardExploreGallery = null;
   var cardExploreStories = null;
   var cardExploreBook = null;
@@ -547,6 +548,7 @@
     if (!cardExploreWrap) return;
     var q = String(taxonName || '').trim();
     var enc = encodeURIComponent(q);
+    if (cardExploreIdentifier) cardExploreIdentifier.href = q ? ('identifier.html?q=' + enc) : 'identifier.html';
     if (cardExploreGallery) cardExploreGallery.href = q ? ('gallery.html?q=' + enc) : 'gallery.html';
     if (cardExploreStories) cardExploreStories.href = q ? ('stories.html?q=' + enc) : 'stories.html';
     if (cardExploreBook) cardExploreBook.href = q ? ('книга-кактусология/book-read.html?q=' + enc) : 'книга-кактусология/book-read.html';
@@ -910,6 +912,7 @@
     cardSeeAlsoWrap = document.getElementById('card-see-also-wrap');
     cardSeeAlsoList = document.getElementById('card-see-also-list');
     cardExploreWrap = document.getElementById('card-explore-wrap');
+    cardExploreIdentifier = document.getElementById('card-explore-identifier');
     cardExploreGallery = document.getElementById('card-explore-gallery');
     cardExploreStories = document.getElementById('card-explore-stories');
     cardExploreBook = document.getElementById('card-explore-book');
