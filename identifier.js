@@ -32,6 +32,20 @@
   var expectedGenusFromQuery = "";
   var taxonomyGenusListPromise = null;
   var taxonomyGeneraSet = null;
+  var POPULAR_SPECIES_BY_GENUS = {
+    mammillaria: ["Mammillaria elongata", "Mammillaria spinosissima", "Mammillaria bombycina", "Mammillaria hahniana", "Mammillaria gracilis"],
+    rebutia: ["Rebutia minuscula", "Rebutia heliosa", "Rebutia muscula", "Rebutia fiebrigii", "Rebutia albiflora"],
+    gymnocalycium: ["Gymnocalycium mihanovichii", "Gymnocalycium baldianum", "Gymnocalycium anisitsii", "Gymnocalycium saglionis", "Gymnocalycium damsii"],
+    astrophytum: ["Astrophytum asterias", "Astrophytum myriostigma", "Astrophytum capricorne", "Astrophytum ornatum", "Astrophytum coahuilense"],
+    ariocarpus: ["Ariocarpus fissuratus", "Ariocarpus retusus", "Ariocarpus trigonus", "Ariocarpus kotschoubeyanus", "Ariocarpus agavoides"],
+    ferocactus: ["Ferocactus latispinus", "Ferocactus glaucescens", "Ferocactus emoryi", "Ferocactus wislizeni", "Ferocactus herrerae"],
+    echinopsis: ["Echinopsis subdenudata", "Echinopsis oxygona", "Echinopsis eyriesii", "Echinopsis chamaecereus", "Echinopsis ancistrophora"],
+    echinocactus: ["Echinocactus grusonii", "Echinocactus platyacanthus", "Echinocactus horizonthalonius", "Echinocactus polycephalus", "Echinocactus texensis"],
+    parodia: ["Parodia magnifica", "Parodia leninghausii", "Parodia warasii", "Parodia scopa", "Parodia ottonis"],
+    opuntia: ["Opuntia microdasys", "Opuntia ficus-indica", "Opuntia robusta", "Opuntia monacantha", "Opuntia stricta"],
+    melocactus: ["Melocactus matanzanus", "Melocactus azureus", "Melocactus bahiensis", "Melocactus zehntneri", "Melocactus curvispinus"],
+    notocactus: ["Notocactus magnificus", "Notocactus leninghausii", "Notocactus roseoluteus", "Notocactus schlosseri", "Notocactus uebelmannianus"]
+  };
 
   function loadHistory() {
     try {
@@ -295,6 +309,21 @@
       warnOut.className = "identifier-result__warning";
       warnOut.textContent = "Род «" + detectedGenus + "» пока не найден в вашей систематике. Проверьте фото, либо откройте систематику вручную.";
       card.appendChild(warnOut);
+    }
+    var popular = detectedGenus ? POPULAR_SPECIES_BY_GENUS[detectedGenus.toLowerCase()] : null;
+    if (popular && popular.length) {
+      var secPopular = document.createElement("div");
+      secPopular.className = "identifier-result__section";
+      secPopular.innerHTML = "<h3>Основные виды для коллекции</h3>";
+      var popUl = document.createElement("ul");
+      popUl.className = "identifier-result__facts";
+      for (var iPop = 0; iPop < popular.length; iPop++) {
+        var liPop = document.createElement("li");
+        liPop.textContent = popular[iPop];
+        popUl.appendChild(liPop);
+      }
+      secPopular.appendChild(popUl);
+      card.appendChild(secPopular);
     }
 
     var head = document.createElement("div");
