@@ -219,6 +219,24 @@
       padding: 0.3rem 0.65rem;
       z-index: 3;
     }
+    .story-lightbox__caption {
+      position: fixed;
+      left: 50%;
+      top: max(0.9rem, env(safe-area-inset-top));
+      transform: translateX(-50%);
+      max-width: min(92vw, 860px);
+      color: #f8f8f8;
+      font-size: 1rem;
+      line-height: 1.35;
+      text-align: center;
+      background: rgba(0,0,0,0.35);
+      border-radius: 999px;
+      padding: 0.35rem 0.8rem;
+      z-index: 3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   </style>
 </head>
 <body>
@@ -227,6 +245,7 @@
     <button type="button" class="story-lightbox__nav story-lightbox__nav--prev" id="story-lightbox-prev" aria-label="Предыдущее фото">‹</button>
     <button type="button" class="story-lightbox__nav story-lightbox__nav--next" id="story-lightbox-next" aria-label="Следующее фото">›</button>
     <img class="story-lightbox__img" id="story-lightbox-img" src="" alt="" />
+    <div class="story-lightbox__caption" id="story-lightbox-caption" hidden></div>
     <div class="story-lightbox__counter" id="story-lightbox-counter" hidden></div>
   </div>
   <header class="site-header">
@@ -310,6 +329,7 @@
   const root = document.getElementById("root");
   let loadedStories = [];
   let currentGallerySources = [];
+  let currentGalleryLabels = {};
   let currentGalleryIndex = -1;
   let currentStoryId = "";
   const STORY_VIDEOS = {
@@ -403,9 +423,13 @@
     if (window.I18n) window.I18n.applyToPage();
     // Самый простой и устойчивый вариант: берём фото прямо из кнопок на странице.
     currentGallerySources = [];
+    currentGalleryLabels = {};
     root.querySelectorAll(".story-cover-wrap[data-cover-src]").forEach(function(btn) {
       var src = btn.getAttribute("data-cover-src");
-      if (src && currentGallerySources.indexOf(src) === -1) currentGallerySources.push(src);
+      if (src && currentGallerySources.indexOf(src) === -1) {
+        currentGallerySources.push(src);
+        currentGalleryLabels[src] = title || "Фото рассказа";
+      }
     });
     // Если в текущем рассказе мало картинок, добавляем обложки других рассказов,
     // чтобы стрелки всегда могли листать галерею.
@@ -415,6 +439,7 @@
         var cover = String(s.coverUrl);
         if (!cover || currentGallerySources.indexOf(cover) !== -1) return;
         currentGallerySources.push(cover);
+        currentGalleryLabels[cover] = (getStoryText(s.title) || "Обложка рассказа");
       });
     }
     currentGalleryIndex = -1;
@@ -467,10 +492,17 @@
     var lbNext = document.getElementById("story-lightbox-next");
     var lbImg = document.getElementById("story-lightbox-img");
     var lbCounter = document.getElementById("story-lightbox-counter");
+    var lbCaption = document.getElementById("story-lightbox-caption");
     function renderLbState() {
       if (!lbImg) return;
       if (currentGalleryIndex >= 0 && currentGalleryIndex < currentGallerySources.length) {
-        lbImg.src = currentGallerySources[currentGalleryIndex];
+        var src = currentGallerySources[currentGalleryIndex];
+        lbImg.src = src;
+        if (lbCaption) {
+          var cap = currentGalleryLabels[src] || "Фото";
+          lbCaption.hidden = false;
+          lbCaption.textContent = cap;
+        }
       }
       var many = currentGallerySources.length > 1;
       if (lbPrev) lbPrev.style.display = many ? "inline-flex" : "none";
