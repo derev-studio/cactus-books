@@ -43,6 +43,50 @@
     .navigator-links a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
     .navigator-links .navigator-link-desc { font-weight: 400; font-size: 0.85rem; opacity: 0.9; margin-top: 0.2rem; }
     .navigator-empty { color: var(--cactus-muted-on-dark); padding: 2rem 0; }
+    .navigator-direct {
+      margin: 0 0 1.25rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+    }
+    .navigator-direct__title {
+      margin: 0 0 0.7rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--cactus-accent);
+    }
+    .navigator-direct__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+    }
+    .navigator-direct__item a {
+      display: block;
+      padding: 0.75rem 0.85rem;
+      background: var(--cactus-surface);
+      color: var(--cactus-text);
+      text-decoration: none;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .navigator-direct__item a:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+    .navigator-direct__name {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .navigator-direct__desc {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.84rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
     .navigator-genus {
       margin: 0 0 1.25rem;
       padding: 1rem 1rem;
@@ -147,6 +191,10 @@
         <img src="assets/images/geography-cactus-atlas.png" alt="Атласная иллюстрация ареалов кактусов" loading="lazy" />
         <figcaption>Атлас ареалов помогает понять “где в природе живёт кактус” — и почему у разных видов отличаются условия роста.</figcaption>
       </figure>
+      <section class="navigator-direct" id="navigator-direct" hidden>
+        <h2 class="navigator-direct__title">Быстрые результаты по сайту</h2>
+        <ul class="navigator-direct__list" id="navigator-direct-list"></ul>
+      </section>
       <div class="navigator-genus" id="navigator-genus" hidden>
         <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
@@ -211,6 +259,8 @@
         var searchInput = document.getElementById('nav-search');
         var genusWrap = document.getElementById('navigator-genus');
         var genusLink = document.getElementById('navigator-genus-link');
+        var directWrap = document.getElementById('navigator-direct');
+        var directList = document.getElementById('navigator-direct-list');
         var googleWrap = document.getElementById('navigator-google');
         var googleLink = document.getElementById('navigator-google-link');
         if (searchInput) searchInput.value = q;
@@ -234,6 +284,7 @@
           if (genusLink) genusLink.href = '';
           if (googleWrap) googleWrap.hidden = false;
           if (googleLink) googleLink.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
+          renderDirectResults(q);
 
           function normalizeQueryToLatin(s) {
             if (!s) return '';
@@ -335,6 +386,11 @@
                   genusWrap.hidden = false;
                   genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '') + '&atlas=1';
                   genusLink.textContent = 'Открыть «' + (found.name || found.id || 'род') + '»';
+                  prependDirectResult({
+                    href: genusLink.href,
+                    title: 'Систематика: ' + (found.name || found.id || 'род'),
+                    desc: 'Открыть карточку рода и сразу карту ареала'
+                  });
                 }
               })
               .catch(function () { /* ignore */ });
@@ -342,7 +398,68 @@
         } else {
           emptyEl.hidden = false;
           linksEl.hidden = true;
+          if (directWrap) directWrap.hidden = true;
           if (googleWrap) googleWrap.hidden = true;
+        }
+
+        function normalizeSimple(s) {
+          return String(s || '').toLowerCase().replace(/[^a-zа-яё0-9]+/gi, ' ').trim();
+        }
+        function tokenize(s) {
+          return normalizeSimple(s).split(/\s+/).filter(Boolean);
+        }
+        function scoreItem(query, item) {
+          var qn = normalizeSimple(query);
+          var text = normalizeSimple((item.title || '') + ' ' + (item.desc || '') + ' ' + (item.keywords || '').join(' '));
+          if (!qn || !text) return 0;
+          if (text.indexOf(qn) !== -1) return 100;
+          var qTokens = tokenize(qn);
+          var score = 0;
+          for (var i = 0; i < qTokens.length; i++) {
+            if (text.indexOf(qTokens[i]) !== -1) score += 20;
+          }
+          return score;
+        }
+        function renderDirectResults(query) {
+          if (!directWrap || !directList) return;
+          var candidates = [
+            { href: 'classification-cacti.html', title: 'Классификация кактусов', desc: 'Роды и виды, карточки и карта ареала', keywords: ['систематика','род','вид','кактус','cactus'] },
+            { href: 'identifier.html', title: 'Определитель кактусов', desc: 'Определение вида по фото + карта', keywords: ['определить','опознать','фото','вид'] },
+            { href: 'geography.html', title: 'География кактусов', desc: 'Где растут кактусы в природе', keywords: ['ареал','карта','места','страны'] },
+            { href: 'care.html', title: 'Уход за кактусами', desc: 'Полив, свет, сезонность и здоровье', keywords: ['полив','уход','болезни','пересадка'] },
+            { href: 'succulents.html', title: 'Суккуленты', desc: 'Литопсы, алоэ, хавортии и особенности ухода', keywords: ['суккуленты','литопсы','алоэ','хавортия'] },
+            { href: 'classification-succulents.html', title: 'Классификация суккулентов', desc: 'Базовая структура раздела и приоритетные группы', keywords: ['классификация','aizoaceae','супер-суккуленты'] },
+            { href: 'edible.html', title: 'Съедобные кактусы', desc: 'Безопасность и практические заметки', keywords: ['опунция','съедобные','плоды'] },
+            { href: 'stories.html', title: 'Рассказы о растениях', desc: 'Истории, фотографии и галерея', keywords: ['истории','фото','рассказы'] },
+            { href: 'gallery.html', title: 'Галерея', desc: 'Фото кактусов и сортов', keywords: ['галерея','фото'] },
+            { href: 'guardian.html', title: 'Колючий Собеседник (ИИ)', desc: 'Задать вопрос о виде, уходе и ареале', keywords: ['ии','чат','вопрос'] }
+          ];
+          var scored = candidates.map(function (c) {
+            return { item: c, score: scoreItem(query, c) };
+          }).filter(function (x) { return x.score > 0; })
+            .sort(function (a, b) { return b.score - a.score; })
+            .slice(0, 6)
+            .map(function (x) { return x.item; });
+
+          if (!scored.length) {
+            scored = candidates.slice(0, 4);
+          }
+          directList.innerHTML = scored.map(function (item) {
+            return '<li class="navigator-direct__item"><a href="' + item.href + '?q=' + encodeURIComponent(query) + '">' +
+              '<span class="navigator-direct__name">' + escapeHtml(item.title) + '</span>' +
+              '<span class="navigator-direct__desc">' + escapeHtml(item.desc) + '</span>' +
+              '</a></li>';
+          }).join('');
+          directWrap.hidden = false;
+        }
+        function prependDirectResult(item) {
+          if (!directWrap || !directList || !item || !item.href) return;
+          var first = '<li class="navigator-direct__item"><a href="' + item.href + '">' +
+            '<span class="navigator-direct__name">' + escapeHtml(item.title || 'Результат') + '</span>' +
+            '<span class="navigator-direct__desc">' + escapeHtml(item.desc || '') + '</span>' +
+            '</a></li>';
+          directList.insertAdjacentHTML('afterbegin', first);
+          directWrap.hidden = false;
         }
       }
       function escapeHtml(s) {
