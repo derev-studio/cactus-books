@@ -117,6 +117,26 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .navigator-genus__link:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.16); }
+    .navigator-genus__list {
+      margin: 0.65rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .navigator-genus__list a {
+      display: block;
+      text-decoration: none;
+      color: var(--cactus-text-on-dark);
+      font-size: 0.9rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .navigator-genus__list a:hover {
+      background: rgba(255,255,255,0.12);
+    }
     .navigator-google {
       margin: 0 0 1.25rem;
       padding: 0.9rem 1rem;
@@ -198,6 +218,7 @@
       <div class="navigator-genus" id="navigator-genus" hidden>
         <p class="navigator-genus__title" id="navigator-genus-title">Найдено в систематике</p>
         <a class="navigator-genus__link" id="navigator-genus-link" href="">Открыть карточку рода</a>
+        <ul class="navigator-genus__list" id="navigator-genus-list"></ul>
       </div>
       <div class="navigator-google" id="navigator-google" hidden>
         <p class="navigator-google__title">Если не нашли с первого раза, можно быстро проверить весь сайт:</p>
@@ -259,6 +280,7 @@
         var searchInput = document.getElementById('nav-search');
         var genusWrap = document.getElementById('navigator-genus');
         var genusLink = document.getElementById('navigator-genus-link');
+        var genusList = document.getElementById('navigator-genus-list');
         var directWrap = document.getElementById('navigator-direct');
         var directList = document.getElementById('navigator-direct-list');
         var googleWrap = document.getElementById('navigator-google');
@@ -282,6 +304,7 @@
           // Это не заменяет полную базу, но даёт понятный переход на нужную карточку.
           if (genusWrap) genusWrap.hidden = true;
           if (genusLink) genusLink.href = '';
+          if (genusList) genusList.innerHTML = '';
           if (googleWrap) googleWrap.hidden = false;
           if (googleLink) googleLink.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:derev-studio.github.io/cactus-books ' + q);
           renderDirectResults(q);
@@ -300,11 +323,23 @@
             return out.replace(/[^a-z0-9]/g, '').trim();
           }
 
-          function collectGenera(taxNode, out) {
+          function collectTaxa(taxNode, out, currentGenus) {
             if (!taxNode) return;
-            if (taxNode.type === 'genus') out.push({ id: taxNode.id || '', name: taxNode.name || '' });
+            var nextGenus = currentGenus;
+            if (taxNode.type === 'genus') {
+              nextGenus = { id: taxNode.id || '', name: taxNode.name || '' };
+              out.push({ type: 'genus', id: nextGenus.id, name: nextGenus.name, genusId: nextGenus.id, genusName: nextGenus.name });
+            } else if (taxNode.type === 'species') {
+              out.push({
+                type: 'species',
+                id: taxNode.id || '',
+                name: taxNode.name || '',
+                genusId: (currentGenus && currentGenus.id) || '',
+                genusName: (currentGenus && currentGenus.name) || ''
+              });
+            }
             var children = taxNode.children || [];
-            for (var i = 0; i < children.length; i++) collectGenera(children[i], out);
+            for (var i = 0; i < children.length; i++) collectTaxa(children[i], out, nextGenus);
           }
 
           function levenshtein(a, b) {
@@ -336,23 +371,39 @@
             return -1;
           }
 
-          function findBestGenus(genera, variants) {
-            var best = null;
-            var bestScore = -1;
-            for (var i = 0; i < genera.length; i++) {
-              var g = genera[i];
-              var idNorm = String(g.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-              var nameNorm = String(g.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+          function buildTaxonLabel(taxon) {
+            if (!taxon) return '';
+            if (taxon.type === 'species' && taxon.genusName) return taxon.genusName + ' ' + (taxon.name || taxon.id || '');
+            return taxon.name || taxon.id || '';
+          }
+
+          function taxonHref(taxon) {
+            if (!taxon) return 'classification-cacti.html';
+            if (taxon.type === 'species' && taxon.genusId && taxon.id) {
+              return 'classification-cacti.html?genus=' + encodeURIComponent(taxon.genusId) + '&species=' + encodeURIComponent(taxon.id) + '&atlas=1';
+            }
+            if (taxon.genusId || taxon.id) {
+              return 'classification-cacti.html?genus=' + encodeURIComponent(taxon.genusId || taxon.id) + '&atlas=1';
+            }
+            return 'classification-cacti.html';
+          }
+
+          function findTopTaxonomyMatches(taxa, variants) {
+            var all = [];
+            for (var i = 0; i < taxa.length; i++) {
+              var item = taxa[i];
+              var idNorm = String(item.id || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+              var nameNorm = String(buildTaxonLabel(item) || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+              var bestScore = -1;
               for (var v = 0; v < variants.length; v++) {
                 var qv = variants[v];
                 var score = Math.max(scoreCandidate(qv, idNorm), scoreCandidate(qv, nameNorm));
-                if (score > bestScore) {
-                  bestScore = score;
-                  best = g;
-                }
+                if (score > bestScore) bestScore = score;
               }
+              if (bestScore >= 300) all.push({ taxon: item, score: bestScore });
             }
-            return bestScore >= 300 ? best : null;
+            all.sort(function (a, b) { return b.score - a.score; });
+            return all.slice(0, 8).map(function (x) { return x.taxon; });
           }
 
           var norm = normalizeQueryToLatin(q);
@@ -379,18 +430,26 @@
             fetch('./data/taxonomy.json', { cache: 'no-store' })
               .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error('taxonomy')); })
               .then(function (data) {
-                var genera = [];
-                collectGenera(data, genera);
-                var found = findBestGenus(genera, variants);
-                if (found && genusWrap && genusLink) {
+                var taxa = [];
+                collectTaxa(data, taxa, null);
+                var foundList = findTopTaxonomyMatches(taxa, variants);
+                if (foundList.length && genusWrap && genusLink) {
+                  var best = foundList[0];
                   genusWrap.hidden = false;
-                  genusLink.href = 'classification-cacti.html?genus=' + encodeURIComponent(found.id || '') + '&atlas=1';
-                  genusLink.textContent = 'Открыть «' + (found.name || found.id || 'род') + '»';
+                  genusLink.href = taxonHref(best);
+                  genusLink.textContent = 'Открыть «' + (buildTaxonLabel(best) || 'результат') + '»';
                   prependDirectResult({
                     href: genusLink.href,
-                    title: 'Систематика: ' + (found.name || found.id || 'род'),
-                    desc: 'Открыть карточку рода и сразу карту ареала'
+                    title: 'Систематика: ' + (buildTaxonLabel(best) || 'результат'),
+                    desc: 'Открыть карточку и сразу карту ареала'
                   });
+                  if (genusList) {
+                    genusList.innerHTML = foundList.map(function (item) {
+                      var label = buildTaxonLabel(item);
+                      var prefix = item.type === 'species' ? 'Вид' : 'Род';
+                      return '<li><a href="' + taxonHref(item) + '">' + prefix + ': ' + escapeHtml(label) + '</a></li>';
+                    }).join('');
+                  }
                 }
               })
               .catch(function () { /* ignore */ });
