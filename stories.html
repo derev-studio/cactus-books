@@ -311,6 +311,7 @@
   let loadedStories = [];
   let currentGallerySources = [];
   let currentGalleryIndex = -1;
+  let currentStoryId = "";
   const STORY_VIDEOS = {
     "budet-laskovyj-dozhd": {
       type: "youtube",
@@ -384,6 +385,7 @@
     }
     var title = getStoryText(story.title);
     var content = getStoryText(story.content);
+    currentStoryId = story.id || "";
     var coverRaw = story.coverUrl ? String(story.coverUrl) : "";
     var coverSrc = coverRaw ? escapeAttr(coverRaw) : "";
     var cover = coverSrc ? "<button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + coverSrc + "\" aria-label=\"Открыть фото\"><img class=\"story-cover\" src=\"" + coverSrc + "\" alt=\"\" loading=\"eager\" /></button>" : "";
@@ -405,6 +407,16 @@
       var src = btn.getAttribute("data-cover-src");
       if (src && currentGallerySources.indexOf(src) === -1) currentGallerySources.push(src);
     });
+    // Если в текущем рассказе мало картинок, добавляем обложки других рассказов,
+    // чтобы стрелки всегда могли листать галерею.
+    if (currentGallerySources.length <= 1 && Array.isArray(loadedStories) && loadedStories.length > 1) {
+      loadedStories.forEach(function(s) {
+        if (!s || !s.coverUrl) return;
+        var cover = String(s.coverUrl);
+        if (!cover || currentGallerySources.indexOf(cover) !== -1) return;
+        currentGallerySources.push(cover);
+      });
+    }
     currentGalleryIndex = -1;
     var lb = document.getElementById("story-lightbox");
     var lbImg = document.getElementById("story-lightbox-img");
