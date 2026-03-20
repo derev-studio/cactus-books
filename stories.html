@@ -80,12 +80,28 @@
     .story-article .story-cover-wrap:hover { border-color: rgba(255,255,255,0.4); box-shadow: 0 6px 32px rgba(0,0,0,0.4); }
     .story-article .story-cover {
       width: 100%;
+      max-height: min(82vh, 980px);
       height: auto;
       display: block;
       vertical-align: top;
+      object-fit: contain;
+      background: #111;
     }
     .story-article .story-long-photo { width: 100%; margin-top: 2rem; }
-    .story-article .story-long-photo img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+    .story-article .story-long-photo .story-cover-wrap {
+      margin: 0;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.2);
+    }
+    .story-article .story-long-photo img {
+      width: 100%;
+      max-height: min(85vh, 1200px);
+      height: auto;
+      display: block;
+      object-fit: contain;
+      background: #111;
+    }
     .story-article .story-video {
       width: 100%;
       margin-top: 2rem;
@@ -125,7 +141,7 @@
     @media (max-width: 480px) {
       .story-article .story-title, .story-article .story-content { padding-left: max(1rem, env(safe-area-inset-left)); padding-right: max(1rem, env(safe-area-inset-right)); }
     }
-    .story-cover { width: 100%; max-height: 65vh; object-fit: cover; border-radius: 12px; margin-bottom: 1.5rem; display: block; }
+    .story-cover { width: 100%; border-radius: 12px; margin-bottom: 1.5rem; display: block; }
     .story-title { font-size: clamp(1.5rem, 4vw, 2.2rem); margin: 0 0 0.75em; font-weight: 600; color: var(--cactus-text-on-dark); }
     .story-content { white-space: pre-wrap; word-wrap: break-word; }
     .story-content a.story-link { color: #2563eb; text-decoration: underline; }
@@ -310,7 +326,8 @@
     var content = getStoryText(story.content);
     var coverSrc = story.coverUrl ? escapeAttr(story.coverUrl) : "";
     var cover = coverSrc ? "<button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + coverSrc + "\" aria-label=\"Открыть фото\"><img class=\"story-cover\" src=\"" + coverSrc + "\" alt=\"\" loading=\"eager\" /></button>" : "";
-    var longImg = (story.longImage && story.longImage.trim()) ? "<div class=\"story-long-photo\"><img src=\"" + escapeAttr(story.longImage) + "\" alt=\"\" loading=\"lazy\" /></div>" : "";
+    var longImgSrc = (story.longImage && story.longImage.trim()) ? escapeAttr(story.longImage) : "";
+    var longImg = longImgSrc ? "<div class=\"story-long-photo\"><button type=\"button\" class=\"story-cover-wrap\" data-cover-src=\"" + longImgSrc + "\" aria-label=\"Открыть фото\"><img src=\"" + longImgSrc + "\" alt=\"\" loading=\"lazy\" /></button></div>" : "";
     var video = "";
     var cfg = STORY_VIDEOS[story.id];
     if (cfg && cfg.type === "youtube" && cfg.id) {
