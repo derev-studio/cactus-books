@@ -191,7 +191,7 @@
     atlasMapInstance = null;
   }
 
-  function atlasRenderMap(results, centerLat, centerLon) {
+  function atlasRenderMap(results, centerLat, centerLon, taxonLabel) {
     if (typeof L === 'undefined' || !atlasMapEl) return;
     atlasClearMap();
     atlasMapEl.innerHTML = '';
@@ -227,9 +227,9 @@
       var marker = L.marker([lat, lon], {
         icon: L.divIcon({
           className: "identifier-marker",
-          html: "<span aria-hidden=\"true\">🌵</span>",
-          iconSize: [32, 32],
-          iconAnchor: [16, 32],
+          html: "<span aria-hidden=\"true\" style=\"display:inline-block;max-width:120px;padding:2px 6px;border-radius:999px;background:#f2f5ff;border:1px solid rgba(26,39,68,0.2);color:#1a2744;font-weight:700;font-size:11px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;\">" + escapeHtml(String(taxonLabel || 'Ареал')) + "</span>",
+          iconSize: [120, 24],
+          iconAnchor: [60, 22],
         })
       }).addTo(atlasMapInstance);
       marker.bindPopup(popupHtml, { closeButton: true, autoClose: false });
@@ -250,12 +250,12 @@
     atlasReqId += 1;
     var myReq = atlasReqId;
 
-    function useResults(res) {
+    function useResults(res, usedName) {
       if (myReq !== atlasReqId) return;
       var list = Array.isArray(res) ? res : [];
       if (!list.length) {
         atlasSetStatus("Координаты не найдены для этого названия.");
-        atlasRenderMap([], 20, 0);
+        atlasRenderMap([], 20, 0, usedName || taxonName);
         return;
       }
       var sumLat = 0, sumLon = 0, cnt = 0;
@@ -271,30 +271,69 @@
       var centerLat = cnt ? (sumLat / cnt) : 20;
       var centerLon = cnt ? (sumLon / cnt) : 0;
       atlasSetStatus("Готово: показаны точки ареала (примерно).");
-      atlasRenderMap(list, centerLat, centerLon);
+      atlasRenderMap(list, centerLat, centerLon, usedName || taxonName);
     }
 
     if (atlasCache[cacheKey]) {
-      useResults(atlasCache[cacheKey]);
+      useResults(atlasCache[cacheKey], taxonName);
       return;
     }
 
-    // 1) match species name → usageKey
-    fetch("https://api.gbif.org/v1/species/match?name=" + encodeURIComponent(taxonName))
-      .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-match")); })
-      .then(function (sp) {
-        var key = sp && (sp.usageKey || sp.key);
-        if (!key) throw new Error("gbif-key");
-        // 2) occurrence search
-        return fetch(
-          "https://api.gbif.org/v1/occurrence/search?taxonKey=" + encodeURIComponent(String(key)) +
-          "&limit=25&hasCoordinate=true"
-        ).then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-occ")); });
+    function fetchOccByKey(key) {
+      if (!key) return Promise.resolve([]);
+      return fetch(
+        "https://api.gbif.org/v1/occurrence/search?taxonKey=" + encodeURIComponent(String(key)) +
+        "&limit=25&hasCoordinate=true"
+      )
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-occ")); })
+        .then(function (occ) { return occ && Array.isArray(occ.results) ? occ.results : []; });
+    }
+
+    function tryByName(name) {
+      return fetch("https://api.gbif.org/v1/species/match?name=" + encodeURIComponent(name))
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-match")); })
+        .then(function (sp) {
+          var key = sp && (sp.usageKey || sp.key);
+          return fetchOccByKey(key).then(function (res) { return { results: res, usedName: name }; });
+        });
+    }
+
+    function tryBySuggest(name) {
+      return fetch("https://api.gbif.org/v1/species/suggest?q=" + encodeURIComponent(name) + "&limit=8")
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error("gbif-suggest")); })
+        .then(function (arr) {
+          var list = Array.isArray(arr) ? arr : [];
+          var p = Promise.resolve({ results: [], usedName: name });
+          list.forEach(function (cand) {
+            p = p.then(function (state) {
+              if (state.results && state.results.length) return state;
+              var key = cand && (cand.usageKey || cand.key);
+              var label = (cand && (cand.canonicalName || cand.scientificName)) || name;
+              return fetchOccByKey(key).then(function (res) { return { results: res, usedName: label }; });
+            });
+          });
+          return p;
+        });
+    }
+
+    tryByName(taxonName)
+      .catch(function () { return { results: [], usedName: taxonName }; })
+      .then(function (state) {
+        if (state.results && state.results.length) return state;
+        var genusOnly = String(taxonName).trim().split(/\s+/)[0] || taxonName;
+        if (genusOnly && genusOnly.toLowerCase() !== String(taxonName).trim().toLowerCase()) {
+          return tryByName(genusOnly).catch(function () { return { results: [], usedName: genusOnly }; });
+        }
+        return state;
       })
-      .then(function (occ) {
-        var results = occ && Array.isArray(occ.results) ? occ.results : [];
+      .then(function (state) {
+        if (state.results && state.results.length) return state;
+        return tryBySuggest(taxonName).catch(function () { return { results: [], usedName: taxonName }; });
+      })
+      .then(function (state) {
+        var results = state && Array.isArray(state.results) ? state.results : [];
         atlasCache[cacheKey] = results;
-        useResults(results);
+        useResults(results, state && state.usedName ? state.usedName : taxonName);
       })
       .catch(function () {
         if (myReq !== atlasReqId) return;
