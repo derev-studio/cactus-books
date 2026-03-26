@@ -3,7 +3,13 @@
  * Палитра: спокойный синий фон, светлые блоки, тёплый жёлтый/песочный акцент
  */
 
+/* Глобальные переменные шрифтов для унификации */
 :root {
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  
   /* Фон — тёмно-синий, не чёрный: приятный спокойный тон */
   --cactus-bg: #1a2744;
   --cactus-bg-soft: #223050;
@@ -36,6 +42,24 @@
   --cactus-reading-muted: #444;
   --cactus-reading-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.12);
   --cactus-reading-radius: 12px;
+}
+
+/* Базовые стили текста — унифицированный системный шрифт */
+body, p, li, span, div {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+}
+
+button, .btn, .cactus-btn, .site-header__link {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-medium);
 }
 
 /* Базовые кнопки — минимум 44px по высоте для касаний */

@@ -1,6 +1,35 @@
 /**
  * Общие стили для контентных страниц — «лист для чтения»: бумажный фон, тень, крупный шрифт
+ * Унифицированная системная шрифтовая система
  */
+
+/* Глобальные переменные шрифтов */
+:root {
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+}
+
+/* Базовые текстовые элементы */
+body, p, li, span, div {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+}
+
+/* Заголовки — выразительные, тот же шрифт */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+}
+
+/* Кнопки и интерактивные элементы */
+button, .btn, .cactus-btn, .site-header__link {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-medium);
+}
 
 .page-main {
   max-width: 52rem;
@@ -9,7 +38,8 @@
   padding-left: max(1.25rem, env(safe-area-inset-left));
   padding-right: max(1.25rem, env(safe-area-inset-right));
   padding-bottom: clamp(2.5rem, 6vw, 3.5rem);
-
+  font-family: var(--font-system);
+  
   /* Лист как книга: светлый фон, тень, скруглённые углы */
   background: var(--cactus-reading-bg);
   color: var(--cactus-reading-text);
@@ -23,8 +53,9 @@
 }
 
 .page-main h1 {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-bold);
   font-size: clamp(1.75rem, 4vw, 2.25rem);
-  font-weight: 700;
   margin: 0 0 0.85rem;
   color: var(--cactus-reading-text);
   line-height: 1.3;
@@ -96,9 +127,12 @@
 }
 
 .page-content .dev-next-links h3 {
+  font-family: var(--font-system);
+  font-weight: var(--font-weight-bold);
   margin: 0 0 0.55rem;
   font-size: 1.05rem;
   color: var(--cactus-reading-text);
+  line-height: 1.3;
 }
 
 .page-content .dev-next-links p {

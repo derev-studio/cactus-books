@@ -1313,9 +1313,34 @@ window.addEventListener("DOMContentLoaded", () => {
     window.I18n.init();
     window.addEventListener("soulart-language-change", () => { buildFujiMagicPanel(); });
   }
+  
+  // Инициализация языков с умной логикой
+  if (window.LanguageManager) {
+    const currentLang = window.LanguageManager.getLang();
+    // Применяем язык и обновляем UI
+    window.LanguageManager.setLang(currentLang);
+    
+    // Назначаем обработчики для кнопок языков на стартовой странице
+    document.querySelectorAll('.intro__lang-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const lang = this.getAttribute('data-lang');
+        if (lang && window.LanguageManager) {
+          window.LanguageManager.setLang(lang);
+          // Перезагружаем страницу с новым языком
+          setTimeout(() => {
+            window.location.reload();
+          }, 200);
+        }
+      });
+    });
+  }
+  
   setupIntroScene();
   setupTopNav();
   setupFujiMagic();
+  
+  // Инициализация глобуса
+  setupGlobeMenu();
 
   const intro = document.getElementById("intro-layer");
   const appShell = document.getElementById("app-shell");
@@ -1337,4 +1362,56 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// ---------- ИНИЦИАЛИЗАЦИЯ ГЛОБУСА ----------
+function setupGlobeMenu() {
+  const globeBtn = document.querySelector('.globe-btn');
+  const globeMenu = document.querySelector('.globe-menu');
+  
+  if (!globeBtn || !globeMenu) return;
+  
+  // Заполняем меню языками
+  if (window.I18n && window.I18n.getLanguages) {
+    const languages = window.I18n.getLanguages();
+    globeMenu.innerHTML = '';
+    
+    languages.forEach(function(lang) {
+      const item = document.createElement('button');
+      item.className = 'globe-menu__item';
+      item.setAttribute('data-lang', lang.code);
+      item.setAttribute('type', 'button');
+      item.innerHTML = '<span class="globe-menu__flag">' + lang.flag + '</span><span class="globe-menu__label">' + lang.name + '</span>';
+      
+      item.addEventListener('click', function() {
+        if (window.I18n && window.I18n.setLang) {
+          window.I18n.setLang(lang.code);
+          setTimeout(() => {
+            window.location.reload();
+          }, 200);
+        }
+      });
+      
+      globeMenu.appendChild(item);
+    });
+  }
+  
+  // Обработчик открытия/закрытия меню
+  globeBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    globeMenu.classList.toggle('globe-menu--open');
+  });
+  
+  // Закрытие при клике вне меню
+  document.addEventListener('click', function(e) {
+    if (!globeBtn.contains(e.target) && !globeMenu.contains(e.target)) {
+      globeMenu.classList.remove('globe-menu--open');
+    }
+  });
+  
+  // Обновляем подсветку активного языка
+  if (window.LanguageManager) {
+    const currentLang = window.LanguageManager.getLang();
+    updateActiveLanguageUI(currentLang);
+  }
+}
 
