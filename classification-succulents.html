@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="google" content="notranslate" />
   <title>Классификация суккулентов | Кактусярий</title>
-  <meta name="description" content="Классификация суккулентов: семейства и роды растений, родственных кактусам." />
+  <meta name="description" content="Систематика суккулентов: семейства Euphorbiaceae, Crassulaceae, Asphodelaceae. Раскрывающееся дерево классификации." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="icon-180.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
@@ -14,8 +14,41 @@
   <link rel="stylesheet" href="site-header.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="page-common.css" />
+  <link rel="stylesheet" href="classification-tree.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    .card-panel__atlas-btn {
+      width: 100%;
+      margin: 0.5rem 0 0.75rem;
+      min-height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(74, 143, 217, 0.10);
+      color: var(--cactus-text);
+      cursor: pointer;
+      font-weight: 800;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+    .card-panel__atlas-btn:hover {
+      border-color: rgba(74, 143, 217, 0.65);
+      background: rgba(74, 143, 217, 0.16);
+    }
+    .card-panel__atlas-btn:active { transform: scale(0.99); }
+    .card-panel__atlas-panel {
+      margin: 0 0 0.25rem;
+    }
+    .card-panel__atlas-map {
+      height: clamp(220px, 45vw, 320px);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .card-panel__atlas-status {
+      margin: 0.5rem 0 0;
+      color: var(--cactus-muted-on-dark);
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
@@ -45,6 +78,7 @@
           <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
           <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
           <a href="succulents.html" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
+          <a href="classification-succulents.html" class="site-header__link--active" id="header-dropdown-classification-succulents" data-i18n="nav_classification_succulents">Классификация суккулентов</a>
           <a href="edible.html" id="header-dropdown-edible" data-i18n="nav_edible">Съедобные кактусы</a>
           <a href="rarities.html" id="header-dropdown-rarities" data-i18n="nav_rarities">Редкости</a>
           <a href="facts.html" id="header-dropdown-facts" data-i18n="nav_facts">Интересные факты</a>
@@ -56,72 +90,290 @@
   </header>
 
   <main class="page-main">
-    <h1 data-i18n="systematics_link_succulents">Классификация суккулентов</h1>
-    <p class="page-intro" data-i18n="class_succulents_intro">Суккуленты — это не только кактусы. К суккулентным относят множество семейств и родов растений из разных частей света.</p>
-    <section class="page-content">
-      <p class="notice">Раздел в разработке.</p>
-      <div class="dev-next-links" aria-label="Полезные переходы">
-        <h3>Что открыть уже сейчас</h3>
-        <p>Пока дерево суккулентов готовится, удобно перейти в разделы:</p>
-        <ul>
-          <li><a href="succulents.html">Суккуленты</a></li>
-          <li><a href="classification-cacti.html">Классификация кактусов</a></li>
-          <li><a href="systematics.html">Происхождение видов</a></li>
-          <li><a href="guardian.html">Колючий Собеседник</a></li>
-        </ul>
-      </div>
-      <figure class="dev-feature-media" aria-label="Разнообразие суккулентов и формы роста">
-        <img src="assets/images/geography-desert-cacti.png" alt="Иллюстрация засушливых условий и устойчивых форм растений" loading="lazy" />
-        <figcaption>Суккуленты объединяет логика выживания: запас воды + приспособления к сухому климату. Поэтому в “карточках” мы будем смотреть не только на внешность, но и на то, как растение сохраняет влагу.</figcaption>
-      </figure>
-      <p class="dev-soon-note">Классификация нужна, чтобы уверенно понимать “кто есть кто”: какие растения близки, какие у них общие признаки и как по ним угадывать уход.</p>
-      <p>В биологии классификация строится по иерархии: <strong>семейство</strong> → <strong>род</strong> → <strong>вид</strong>. Для практики кактусиста/коллекционера важны два момента: во‑первых, у близких групп часто похожие условия, во‑вторых, названия могут меняться по мере обновления научных данных.</p>
-      <p>Какие подсказки искать при чтении описаний суккулентов:</p>
-      <ul>
-        <li>тип запасания воды (листья, стебель, каудекс);</li>
-        <li>строение цветков и плодов;</li>
-        <li>особенности роста (розетка, стебли, разветвление);</li>
-        <li>наличие характерных “маркерных” признаков (например, млечный сок у некоторых групп).</li>
-      </ul>
-      <p>Дальше на странице появятся примеры семейств, а пока ниже — стартовые ориентиры: суккуленты встречаются и среди кактусовидных по форме растений, и среди совершенно разных семейств, и именно поэтому важны признаки, а не только привычный “внешний вид”.</p>
-      <h2>Приоритетный блок классификации</h2>
-      <p>Отдельным приоритетом будет любимая практическая группа: литопсы (“живые камни”), хавортии и алоэ. Для неё мы сделаем понятную схему: кто к какой группе относится, какие признаки самые важные и чем отличается уход в жарком климате и в умеренной полосе.</p>
-      <p>Это поможет не путать растения с похожим внешним видом и сразу понимать, почему, например, режим полива для литопсов во время линьки совсем другой, чем для большинства алоэ.</p>
-      <a class="dev-home-btn" href="home.html">На главную</a>
-    </section>
-  </main>
+    <div class="classification-header">
+      <h1>Классификация суккулентов</h1>
+      <p class="classification-credit--footer">
+        <strong>Суккуленты</strong> — растения, способные накапливать воду в своих органах. Кроме кактусов, существует множество других суккулентных семейств.
+      </p>
+    </div>
 
-  <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
-    <a href="systematics.html" class="site-footer__btn" data-i18n="systematics_back">← Происхождение видов</a>
-    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
-      <details>
-        <summary data-i18n="sources_summary">Источники</summary>
-        <div class="site-footer__sources-panel">
-          <p class="site-footer__sources-list">
-            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
-            <a href="succulents.html" data-i18n="nav_succulents">Суккуленты</a>
+    <div class="classification-tree">
+      <!-- Семейство Молочайные (Euphorbiaceae) -->
+      <div class="family-card" data-family="euphorbiaceae">
+        <div class="family-header">
+          <h2>Семейство Молочайные (Euphorbiaceae)</h2>
+          <p class="family-description">
+            Крупное семейство двудольных растений, включающее около 300 родов и 7500 видов. Многие виды являются суккулентами, особенно в засушливых регионах Африки.
           </p>
         </div>
-      </details>
-    </nav>
-  </footer>
+        
+        <div class="genus-list">
+          <!-- Род Эуфорбия (Euphorbia) -->
+          <div class="genus-card" data-genus="euphorbia">
+            <div class="genus-header">
+              <h3>Род Эуфорбия (Euphorbia)</h3>
+              <p class="genus-description">
+                Крупнейший род семейства, включающий около 2000 видов. Многие виды — суккуленты, похожие на кактусы, но с отличным строением цветков.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="euphorbia-milii">
+                <h4>Эуфорбия Миля (Euphorbia milii)</h4>
+                <p>Популярное комнатное растение с колючками и яркими прицветниками. Родина — Мадагаскар.</p>
+              </div>
+              
+              <div class="species-item" data-species="euphorbia-trigona">
+                <h4>Эуфорбия треугольная (Euphorbia trigona)</h4>
+                <p>Высокий суккулент с трехгранными стеблями. Популярна в комнатном цветоводстве.</p>
+              </div>
+              
+              <div class="species-item" data-species="euphorbia-splendens">
+                <h4>Эуфорбия блестящая (Euphorbia splendens)</h4>
+                <p>Декоративный вид с яркими цветками. Родина — Южная Африка.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Ятрофа (Jatropha) -->
+          <div class="genus-card" data-genus="jatropha">
+            <div class="genus-header">
+              <h3>Род Ятрофа (Jatropha)</h3>
+              <p class="genus-description">
+                Включает около 170 видов. Некоторые виды являются суккулентами и используются в декоративных целях.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="jatropha-podagrica">
+                <h4>Ятрофа подагрическая (Jatropha podagrica)</h4>
+                <p>Суккулент с утолщенным стволом и крупными листьями. Родина — Центральная Америка.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Семейство Толстянковые (Crassulaceae) -->
+      <div class="family-card" data-family="crassulaceae">
+        <div class="family-header">
+          <h2>Семейство Толстянковые (Crassulaceae)</h2>
+          <p class="family-description">
+            Семейство суккулентных растений, включающее около 35 родов и 1400 видов. Характеризуется сочными листьями и CAM-фотосинтезом.
+          </p>
+        </div>
+        
+        <div class="genus-list">
+          <!-- Род Эхеверия (Echeveria) -->
+          <div class="genus-card" data-genus="echeveria">
+            <div class="genus-header">
+              <h3>Род Эхеверия (Echeveria)</h3>
+              <p class="genus-description">
+                Включает около 150 видов. Популярные комнатные суккуленты с розетками из сочных листьев.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="echeveria-elegans">
+                <h4>Эхеверия изящная (Echeveria elegans)</h4>
+                <p>Популярный вид с голубовато-зелеными листьями, образующими плотную розетку.</p>
+              </div>
+              
+              <div class="species-item" data-species="echeveria-laui">
+                <h4>Эхеверия Лау (Echeveria laui)</h4>
+                <p>Декоративный вид с толстыми порошковыми листьями. Родина — Мексика.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Крассула (Crassula) -->
+          <div class="genus-card" data-genus="crassula">
+            <div class="genus-header">
+              <h3>Род Крассула (Crassula)</h3>
+              <p class="genus-description">
+                Включает около 200 видов. Самый известный вид — денежное дерево (Crassula ovata).
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="crassula-ovata">
+                <h4>Крассула овальная (Crassula ovata)</h4>
+                <p>Популярное комнатное растение "денежное дерево" с толстыми мясистыми листьями.</p>
+              </div>
+              
+              <div class="species-item" data-species="crassula-perforata">
+                <h4>Крассула прободенная (Crassula perforata)</h4>
+                <p>Вид с попарно сросшимися листьями, образующими "струну".</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Каланхоэ (Kalanchoe) -->
+          <div class="genus-card" data-genus="kalanchoe">
+            <div class="genus-header">
+              <h3>Род Каланхоэ (Kalanchoe)</h3>
+              <p class="genus-description">
+                Включает около 125 видов. Популярные декоративные растения с яркими цветками.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="kalanchoe-blossfeldiana">
+                <h4>Каланхоэ Блоссфельда (Kalanchoe blossfeldiana)</h4>
+                <p>Самый популярный вид для комнатного выращивания с яркими соцветиями.</p>
+              </div>
+              
+              <div class="species-item" data-species="kalanchoe-daigremontiana">
+                <h4>Каланхоэ Дайгремонта (Kalanchoe daigremontiana)</h4>
+                <p>Известен как "бриофиллум" — образует детки на краях листьев.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Очиток (Sedum) -->
+          <div class="genus-card" data-genus="sedum">
+            <div class="genus-header">
+              <h3>Род Очиток (Sedum)</h3>
+              <p class="genus-description">
+                Крупный род, включающий около 400-500 видов. Многие виды используются в садоводстве.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="sedum-morganianum">
+                <h4>Очиток Моргана (Sedum morganianum)</h4>
+                <p>Ампельный вид с длинными свисающими стеблями, известен как "ослиный хвост".</p>
+              </div>
+              
+              <div class="species-item" data-species="sedum-rubrotinctum">
+                <h4>Очиток красноокрашенный (Sedum rubrotinctum)</h4>
+                <p>Компактный вид с краснеющими на солнце листьями.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Семейство Асфоделовые (Asphodelaceae) -->
+      <div class="family-card" data-family="asphodelaceae">
+        <div class="family-header">
+          <h2>Семейство Асфоделовые (Asphodelaceae)</h2>
+          <p class="family-description">
+            Семейство, включающее около 40 родов и 900 видов. Многие роды содержат суккулентные виды.
+          </p>
+        </div>
+        
+        <div class="genus-list">
+          <!-- Род Алоэ (Aloe) -->
+          <div class="genus-card" data-genus="aloe">
+            <div class="genus-header">
+              <h3>Род Алоэ (Aloe)</h3>
+              <p class="genus-description">
+                Включает более 550 видов суккулентных растений. Родина — Африка и Аравийский полуостров.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="aloe-vera">
+                <h4>Алоэ вера (Aloe vera)</h4>
+                <p>Самый известный вид, используемый в медицине и косметике.</p>
+              </div>
+              
+              <div class="species-item" data-species="aloe-arborescens">
+                <h4>Алоэ древовидное (Aloe arborescens)</h4>
+                <p>Популярный комнатный вид с древовидным стволом.</p>
+              </div>
+              
+              <div class="species-item" data-species="aloe-ferox">
+                <h4>Алоэ свирепое (Aloe ferox)</h4>
+                <p>Крупный вид с колючками на листьях. Родина — Южная Африка.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Хавортия (Haworthia) -->
+          <div class="genus-card" data-genus="haworthia">
+            <div class="genus-header">
+              <h3>Род Хавортия (Haworthia)</h3>
+              <p class="genus-description">
+                Включает около 150 видов маленьких суккулентов. Родина — Южная Африка.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="haworthia-attenuata">
+                <h4>Хавортия заостренная (Haworthia attenuata)</h4>
+                <p>Популярный вид с полосатыми листьями, образующими розетки.</p>
+              </div>
+              
+              <div class="species-item" data-species="haworthia-cooperi">
+                <h4>Хавортия Купера (Haworthia cooperi)</h4>
+                <p>Вид с полупрозрачными кончиками листьев.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Род Гастерия (Gasteria) -->
+          <div class="genus-card" data-genus="gasteria">
+            <div class="genus-header">
+              <h3>Род Гастерия (Gasteria)</h3>
+              <p class="genus-description">
+                Включает около 20 видов. Название происходит от латинского "gaster" — живот, из-за формы цветков.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="gasteria-bicolor">
+                <h4>Гастерия двухцветная (Gasteria bicolor)</h4>
+                <p>Вид с пятнистыми листьями, образующими розетки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="classification-see-also">
+      <h3>Где ещё смотреть суккуленты</h3>
+      <ul class="card-panel__see-also-list">
+        <li><a href="classification-cacti.html">Классификация кактусов</a></li>
+        <li><a href="succulents.html">Общая информация о суккулентах</a></li>
+        <li><a href="identifier.html">Опознать растение</a></li>
+      </ul>
+    </div>
+
+    <div class="classification-sources">
+      <h3>Источники и благодарности</h3>
+      <p class="classification-sources-text">
+        Данные о классификации взяты из открытых источников: Википедия, POWO (Plants of the World Online), таксономические базы данных.
+      </p>
+    </div>
+  </main>
+
+  <!-- Глобус для выбора языка -->
+  <div class="globe-fixed">
+    <button class="globe-btn" type="button" aria-label="Выбор языка" title="Выбор языка">
+      <span class="globe-btn__icon">🌍</span>
+    </button>
+    <div class="globe-menu">
+      <!-- Меню языков будет заполнено через JavaScript -->
+    </div>
+  </div>
+
   <script src="language-manager.js" defer></script>
   <script src="i18n.js" defer></script>
   <script src="header-i18n.js" defer></script>
   <script src="header-lang-dropdown.js" defer></script>
+  <script src="classification-succulents.js" defer></script>
   <script>
     (function () {
       function init() {
-        if (window.I18n) { window.I18n.init(); }
-        var navSearch = document.getElementById("nav-search");
-        if (navSearch) { var p = new URLSearchParams(window.location.search); var q = p.get("q"); if (q) navSearch.value = q; }
+        if (window.I18n) window.I18n.init();
+        if (window.ClassificationSucculents) window.ClassificationSucculents.init();
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();
     })();
   </script>
-
-<div style="display: none !important;">«Этот сайт derev-studio.github.io/cactus-books/ — частный некоммерческий архив и интерактивная база данных (авторская систематика кактусов) Александра Деревяшкина. Сайт не ведет сбор и обработку персональных данных.»</div>
 </body>
 </html>

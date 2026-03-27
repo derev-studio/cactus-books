@@ -4,18 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="google" content="notranslate" />
+  <title>Суккуленты | Кактусярий</title>
+  <meta name="description" content="Не кактусы: алоэ, хавортии, эхеверии и другие суккуленты. Классификация и описание." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" href="icon-180.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
-  <title>Суккуленты</title>
-  <meta name="description" content="Не кактусы: алоэ, хавортии, эхеверии и другие суккуленты." />
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="site-header.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="page-common.css" />
   <style>
-    body { margin: 0; min-height: 100vh; background: var(--cactus-bg); color: var(--cactus-text-on-dark); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding-bottom: env(safe-area-inset-bottom); }
+    .succulents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .succulent-card {
+      background: var(--cactus-surface);
+      border-radius: 16px;
+      padding: 1.5rem;
+      border: 1px solid var(--cactus-border-light);
+      box-shadow: var(--cactus-shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .succulent-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--cactus-shadow-card);
+    }
+    
+    .succulent-card h3 {
+      color: var(--cactus-accent);
+      margin: 0 0 0.5rem 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    
+    .succulent-card .latin-name {
+      color: var(--cactus-muted-color);
+      font-style: italic;
+      margin: 0 0 1rem 0;
+      font-size: 0.95rem;
+    }
+    
+    .succulent-card p {
+      margin: 0 0 1rem 0;
+      line-height: 1.6;
+    }
+    
+    .succulent-card .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--cactus-accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    
+    .succulent-card .btn:hover {
+      background: var(--cactus-accent-hover);
+    }
+    
+    .succulents-hero {
+      text-align: center;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    .succulents-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 0 0 1rem 0;
+      color: var(--cactus-text-on-dark);
+    }
+    
+    .succulents-hero p {
+      font-size: 1.2rem;
+      color: var(--cactus-muted-on-dark);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
@@ -45,6 +118,7 @@
           <a href="relax.html" id="header-dropdown-relax" data-i18n="nav_relax">Отдых</a>
           <a href="draw.html" id="header-dropdown-draw" data-i18n="nav_draw">Рисование</a>
           <a href="succulents.html" class="site-header__link--active" id="header-dropdown-succulents" data-i18n="nav_succulents">Суккуленты</a>
+          <a href="classification-succulents.html" id="header-dropdown-classification-succulents" data-i18n="nav_classification_succulents">Классификация суккулентов</a>
           <a href="edible.html" id="header-dropdown-edible" data-i18n="nav_edible">Съедобные кактусы</a>
           <a href="rarities.html" id="header-dropdown-rarities" data-i18n="nav_rarities">Редкости</a>
           <a href="facts.html" id="header-dropdown-facts" data-i18n="nav_facts">Интересные факты</a>
@@ -56,74 +130,128 @@
   </header>
 
   <main class="page-main">
-    <h1 data-i18n="nav_succulents">Суккуленты</h1>
-    <nav class="page-nav-tiles" aria-label="Основные разделы" data-i18n-attr="aria-label" data-i18n="page_nav_aria">
-      <a href="systematics.html" data-i18n="nav_systematics">Происхождение видов</a>
-      <a href="geography.html" data-i18n="nav_geography">Места обитания</a>
-      <a href="care.html" data-i18n="nav_care">Здоровье кактуса</a>
-      <a href="identifier.html" data-i18n="nav_identify">Опознать кактус</a>
-      <a href="guardian.html" data-i18n="nav_guardian">Колючий Собеседник</a>
-    </nav>
-    <p class="page-intro" data-i18n="succulents_intro">Алоэ, хавортии, эхеверии, крассулы и другие растения с запасающими тканями — не только кактусы.</p>
-    <section class="page-content">
-      <p class="notice">Раздел в разработке.</p>
-      <div class="dev-next-links" aria-label="Вступление и участие">
-        <h3>Дорогие друзья, развиваем страницу вместе</h3>
-        <p>Раздел развивается постепенно. Поддержите развитие сайта и следите за обновлениями.</p>
+    <div class="succulents-hero">
+      <h1>Суккуленты</h1>
+      <p>
+        Суккуленты — удивительные растения, способные накапливать воду в своих органах. 
+        Кроме кактусов, существует множество других суккулентных семейств, 
+        каждое со своими уникальными представителями.
+      </p>
+    </div>
+
+    <div class="succulents-grid">
+      <!-- Молочайные -->
+      <div class="succulent-card">
+        <h3>🌵 Молочайные</h3>
+        <p class="latin-name">Euphorbiaceae</p>
+        <p>
+          Крупное семейство, включающее около 300 родов и 7500 видов. 
+          Многие виды являются суккулентами, особенно в засушливых регионах Африки. 
+          Самый известный род — <strong>Эуфорбия</strong> с около 2000 видов.
+        </p>
+        <a href="classification-succulents.html?family=euphorbiaceae" class="btn">
+          Изучить семейство
+        </a>
       </div>
-      <figure class="dev-feature-media" aria-label="Литопсы — живые камни">
-        <img src="assets/images/succulents-lithops-yellow.png" alt="Литопсы с жёлтым цветением — живые камни" loading="lazy" />
-        <figcaption>Литопсы (“живые камни”) удивительно маскируются под цвет камней и почвы. Во время линьки их обычно не поливают: старые листья должны отдать влагу новой паре.</figcaption>
-      </figure>
-      <figure class="dev-feature-media" aria-label="Литопсы с белыми цветами">
-        <img src="assets/images/succulents-lithops-white.png" alt="Литопсы с белыми цветами в минеральном субстрате" loading="lazy" />
-        <figcaption>Цветение литопсов — один из самых красивых моментов коллекции. Главное правило остаётся тем же: точный режим влаги по фазе роста, без «лишней заботы».</figcaption>
-      </figure>
-      <figure class="dev-feature-media" aria-label="Хавортия в полутени">
-        <img src="assets/images/succulents-haworthia-shade.png" alt="Хавортия в полутени среди других растений" loading="lazy" />
-        <figcaption>Хавортии часто лучше чувствуют себя в мягком свете и полутени, несмотря на суккулентную природу. В этом их сила: они умеют жить «в тени», не теряя декоративности.</figcaption>
-      </figure>
-      <figure class="dev-feature-media" aria-label="Цветение алоэ">
-        <img src="assets/images/succulents-aloe-bloom-red.png" alt="Яркое красное цветение алоэ" loading="lazy" />
-        <figcaption>Алоэ в тёплом климате, как в Израиле, часто цветут ярко и мощно: на взрослом растении может быть много цветоносов. В средней полосе при недостатке света такое цветение обычно редкость.</figcaption>
-      </figure>
-      <h2>Любимая группа: Аизовые и друзья</h2>
-      <p>Важное уточнение: “живые камни” относятся не к отдельной группе “литопсы”, а к большой группе <strong>Аизовые (Aizoaceae)</strong>. Литопсы — один из самых ярких родов внутри неё.</p>
+
+      <!-- Толстянковые -->
+      <div class="succulent-card">
+        <h3>🌿 Толстянковые</h3>
+        <p class="latin-name">Crassulaceae</p>
+        <p>
+          Семейство суккулентных растений, включающее около 35 родов и 1400 видов. 
+          Характеризуется сочными листьями и CAM-фотосинтезом. 
+          Популярные роды: <strong>Эхеверия</strong>, <strong>Крассула</strong>, <strong>Каланхоэ</strong>.
+        </p>
+        <a href="classification-succulents.html?family=crassulaceae" class="btn">
+          Изучить семейство
+        </a>
+      </div>
+
+      <!-- Асфоделовые -->
+      <div class="succulent-card">
+        <h3>🌺 Асфоделовые</h3>
+        <p class="latin-name">Asphodelaceae</p>
+        <p>
+          Семейство, включающее около 40 родов и 900 видов. 
+          Многие роды содержат суккулентные виды. 
+          Самые известные: <strong>Алоэ</strong>, <strong>Хавортия</strong>, <strong>Гастерия</strong>.
+        </p>
+        <a href="classification-succulents.html?family=asphodelaceae" class="btn">
+          Изучить семейство
+        </a>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <h2>Популярные виды суккулентов</h2>
+      <p>
+        Среди многообразия суккулентов особенно популярны комнатные виды, 
+        которые отлично подходят для выращивания в домашних условиях:
+      </p>
+      
+      <h3>🌵 Эуфорбия Миля</h3>
+      <p>
+        <em>Euphorbia milii</em> — популярное комнатное растение с колючками и яркими прицветниками. 
+        Родина — Мадагаскар. Часто называют "терновым венцом Христа".
+      </p>
+      
+      <h3>🌿 Эхеверия изящная</h3>
+      <p>
+        <em>Echeveria elegans</em> — популярный вид с голубовато-зелеными листьями, 
+        образующими плотную розетку. Родина — Мексика.
+      </p>
+      
+      <h3>💰 Крассула овальная</h3>
+      <p>
+        <em>Crassula ovata</em> — известное как "денежное дерево". 
+        Популярное комнатное растение с толстыми мясистыми листьями.
+      </p>
+      
+      <h3>🌺 Алоэ вера</h3>
+      <p>
+        <em>Aloe vera</em> — самый известный вид, используемый в медицине и косметике. 
+        Родина — Северная Африка, Аравийский полуостров.
+      </p>
+      
+      <h3>🌼 Хавортия заостренная</h3>
+      <p>
+        <em>Haworthia attenuata</em> — популярный вид с полосатыми листьями, 
+        образующими розетки. Родина — Южная Африка.
+      </p>
+      
+      <h2>Уход за суккулентами</h2>
+      <p>
+        Суккуленты, как и кактусы, требуют особого подхода к уходу:
+      </p>
       <ul>
-        <li><strong>Литопсы (живые камни)</strong>: удивительно мимикрируют под цвет камней и почвы. При стабильном режиме могут выдерживать очень долгие сухие периоды. Во время линьки старой пары листьев полив обычно резко сокращают или временно прекращают — иначе растение теряет форму и может загнить.</li>
-        <li><strong>Алоэ</strong>: в тёплом и солнечном климате (например, в Израиле) часто цветут обильно и эффектно. В средней полосе и в более холодных условиях цветение гораздо реже, потому что не всегда хватает света и теплового режима.</li>
-        <li><strong>Хавортии</strong>: хотя это суккуленты, многим видам комфортнее в мягком рассеянном свете и даже в полутени. В природе часть хавортий действительно “прячется” среди камней, травы или под защитой других растений.</li>
+        <li><strong>Полив:</strong> умеренный, только после полного высыхания почвы</li>
+        <li><strong>Освещение:</strong> яркое рассеянное, большинство видов любят солнце</li>
+        <li><strong>Температура:</strong> большинство видов теплолюбивы</li>
+        <li><strong>Почва:</strong> рыхлая, хорошо дренированная</li>
+        <li><strong>Размножение:</strong> черенками, листьями, семенами</li>
       </ul>
-      <p>Дорогие друзья, участвуйте в развитии страницы — вместе сделаем этот раздел более полезным и удобным.</p>
-      <p>Ниже — куда перейти дальше (маленькие белые плитки):</p>
-      <nav class="page-nav-tiles" aria-label="Куда перейти дальше">
-        <a href="classification-succulents.html">Классификация суккулентов</a>
-        <a href="care.html">Здоровье кактуса</a>
-        <a href="geography.html">Места обитания</a>
-        <a href="guardian.html">Колючий Собеседник</a>
-      </nav>
-      <a class="dev-home-btn" href="home.html">На главную</a>
-    </section>
+      
+      <h2>Где ещё смотреть</h2>
+      <ul>
+        <li><a href="classification-succulents.html">Классификация суккулентов</a></li>
+        <li><a href="classification-cacti.html">Классификация кактусов</a></li>
+        <li><a href="identifier.html">Опознать растение</a></li>
+        <li><a href="care.html">Уход за растениями</a></li>
+      </ul>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <a href="about.html" class="site-footer__btn" data-i18n="footer_studio">Кактусярий ©</a>
-    <nav class="site-footer__sources" aria-label="" data-i18n-attr="aria-label" data-i18n="sources_aria">
-      <details>
-        <summary data-i18n="sources_summary">Источники</summary>
-        <div class="site-footer__sources-panel">
-          <p class="site-footer__sources-list">
-            <a href="https://llifle.com" target="_blank" rel="noopener">LLIFLE</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://www.itis.gov" target="_blank" rel="noopener">ITIS</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://caryophyllales.org" target="_blank" rel="noopener">Caryophyllales.org</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://tropicos.org" target="_blank" rel="noopener">Tropicos</a><span class="site-footer__sources-sep"> · </span>
-            <a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank" rel="noopener">Wikipedia</a><span class="site-footer__sources-sep"> · </span>
-            <a href="книга-кактусология/book-read.html" data-i18n="nav_book">Кактусология</a>
-          </p>
-        </div>
-      </details>
-    </nav>
-  </footer>
+  <!-- Глобус для выбора языка -->
+  <div class="globe-fixed">
+    <button class="globe-btn" type="button" aria-label="Выбор языка" title="Выбор языка">
+      <span class="globe-btn__icon">🌍</span>
+    </button>
+    <div class="globe-menu">
+      <!-- Меню языков будет заполнено через JavaScript -->
+    </div>
+  </div>
+
   <script src="language-manager.js" defer></script>
   <script src="i18n.js" defer></script>
   <script src="header-i18n.js" defer></script>
@@ -131,14 +259,11 @@
   <script>
     (function () {
       function init() {
-        if (!window.I18n) return;
-        window.I18n.init();
+        if (window.I18n) window.I18n.init();
       }
       if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
       else init();
     })();
   </script>
-
-<div style="display: none !important;">«Этот сайт derev-studio.github.io/cactus-books/ — частный некоммерческий архив и интерактивная база данных (авторская систематика кактусов) Александра Деревяшкина. Сайт не ведет сбор и обработку персональных данных.»</div>
 </body>
 </html>
