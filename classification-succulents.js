@@ -24,7 +24,8 @@
                 description: 'Популярное комнатное растение с колючками и яркими прицветниками. Родина — Мадагаскар.',
                 distribution: 'Мадагаскар',
                 habitat: 'Сухие регионы, каменистые почвы',
-                uses: 'Декоративное растение, популярное в комнатном цветоводстве'
+                uses: 'Декоративное растение, популярное в комнатном цветоводстве',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Euphorbia_milii_002.JPG/800px-Euphorbia_milii_002.JPG'
               },
               'euphorbia-trigona': {
                 name: 'Эуфорбия треугольная',
@@ -77,7 +78,8 @@
                 description: 'Популярный вид с голубовато-зелеными листьями, образующими плотную розетку.',
                 distribution: 'Мексика',
                 habitat: 'Высокогорные районы, скалистые почвы',
-                uses: 'Комнатное растение, рокарии, альпинарии'
+                uses: 'Комнатное растение, рокарии, альпинарии',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Echeveria_elegans,_Jard%C3%ADn_Bot%C3%A1nico_de_M%C3%BAnich,_Alemania,_2013-01-27,_DD_01.JPG/800px-Echeveria_elegans,_Jard%C3%ADn_Bot%C3%A1nico_de_M%C3%BAnich,_Alemania,_2013-01-27,_DD_01.JPG'
               },
               'echeveria-laui': {
                 name: 'Эхеверия Лау',
@@ -160,6 +162,47 @@
           }
         }
       },
+      aizoaceae: {
+        name: 'Аизовые',
+        latin: 'Aizoaceae',
+        description: 'Семейство суккулентных растений, включающее около 130 родов и 2000+ видов. Центры разнообразия — юго-западная Африка. Многие виды известны как "живые камни".',
+        genera: {
+          lithops: {
+            name: 'Литопс',
+            latin: 'Lithops',
+            description: 'Род "живых камней", включающий 39 видов. Растения мимикрируют под камни, что защищает их от поедания животными.',
+            species: {
+              'lithops-aucampiae': {
+                name: 'Литопс Аукампа',
+                latin: 'Lithops aucampiae',
+                description: 'Вид с серо-зелеными листьями, напоминающими камни. Цветки белые или желтые.',
+                distribution: 'ЮАР, Капская провинция',
+                habitat: 'Каменистые пустыни',
+                uses: 'Коллекционное растение, декоративное',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Lithops_spp._in_Sakuya_Konohana_Kan,_Osaka.jpg/800px-Lithops_spp._in_Sakuya_Konohana_Kan,_Osaka.jpg'
+              },
+              'lithops-lesliei': {
+                name: 'Литопс Лесли',
+                latin: 'Lithops lesliei',
+                description: 'Популярный вид с коричнево-серыми листьями. Один из самых распространенных в культуре.',
+                distribution: 'ЮАР',
+                habitat: 'Каменистые равнины',
+                uses: 'Коллекционное растение, популярное у collectors',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Cactus_piedra.jpg/800px-Cactus_piedra.jpg'
+              },
+              'lithops-karasmontana': {
+                name: 'Литопс Карасмонтана',
+                latin: 'Lithops karasmontana',
+                description: 'Вид с разнообразной окраской от серой до коричневой. Хорошо мимикрирует под камни.',
+                distribution: 'Намибия',
+                habitat: 'Сухие каменистые пустыни',
+                uses: 'Коллекционное растение',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Lithops_karasmontana_v._lericheana_C330.JPG/800px-Lithops_karasmontana_v._lericheana_C330.JPG'
+              }
+            }
+          }
+        }
+      },
       asphodelaceae: {
         name: 'Асфоделовые',
         latin: 'Asphodelaceae',
@@ -207,7 +250,8 @@
                 description: 'Популярный вид с полосатыми листьями, образующими розетки.',
                 distribution: 'Южная Африка',
                 habitat: 'Теневые места под камнями',
-                uses: 'Комнатное растение, коллекционные виды'
+                uses: 'Комнатное растение, коллекционные виды',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/Zebra_Plant_(Haworthia_attenuata)_(3103281225)_(2).jpg/800px-Zebra_Plant_(Haworthia_attenuata)_(3103281225)_(2).jpg'
               },
               'haworthia-cooperi': {
                 name: 'Хавортия Купера',
@@ -343,6 +387,20 @@
 
   // Настройка элемента вида
   function setupSpeciesItem(item, speciesData) {
+    // Добавляем изображение если есть
+    if (speciesData.image) {
+      var img = document.createElement('img');
+      img.className = 'species-image';
+      img.src = speciesData.image;
+      img.alt = speciesData.name;
+      img.style.width = '100%';
+      img.style.maxWidth = '300px';
+      img.style.height = 'auto';
+      img.style.borderRadius = '8px';
+      img.style.marginBottom = '1rem';
+      item.insertBefore(img, item.firstChild);
+    }
+    
     // Добавляем детальную информацию
     var detailsDiv = document.createElement('div');
     detailsDiv.className = 'species-details';

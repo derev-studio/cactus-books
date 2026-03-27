@@ -49,6 +49,40 @@
       color: var(--cactus-muted-on-dark);
       font-size: 0.95rem;
     }
+    
+    /* Стили для изображений видов */
+    .species-image {
+      display: block;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .species-image:hover {
+      transform: scale(1.02);
+    }
+    
+    /* Стили для детальной информации */
+    .species-details {
+      background: var(--cactus-surface);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid var(--cactus-border-light);
+    }
+    .species-info h5 {
+      margin: 0 0 0.5rem 0;
+      color: var(--cactus-accent);
+      font-style: italic;
+    }
+    .species-info p {
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .species-detail-btn {
+      display: none; /* Скрываем кнопку "Подробнее" */
+    }
   </style>
 </head>
 <body>
@@ -326,6 +360,45 @@
               <div class="species-item" data-species="gasteria-bicolor">
                 <h4>Гастерия двухцветная (Gasteria bicolor)</h4>
                 <p>Вид с пятнистыми листьями, образующими розетки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Семейство Аизовые (Aizoaceae) -->
+      <div class="family-card" data-family="aizoaceae">
+        <div class="family-header">
+          <h2>Семейство Аизовые (Aizoaceae)</h2>
+          <p class="family-description">
+            Семейство суккулентных растений, включающее около 130 родов и 2000+ видов. Центры разнообразия — юго-западная Африка. Многие виды известны как "живые камни".
+          </p>
+        </div>
+        
+        <div class="genus-list">
+          <!-- Род Литопс (Lithops) -->
+          <div class="genus-card" data-genus="lithops">
+            <div class="genus-header">
+              <h3>Род Литопс (Lithops)</h3>
+              <p class="genus-description">
+                Род "живых камней", включающий 39 видов. Растения мимикрируют под камни, что защищает их от поедания животными.
+              </p>
+            </div>
+            
+            <div class="species-list">
+              <div class="species-item" data-species="lithops-aucampiae">
+                <h4>Литопс Аукампа (Lithops aucampiae)</h4>
+                <p>Вид с серо-зелеными листьями, напоминающими камни. Цветки белые или желтые.</p>
+              </div>
+              
+              <div class="species-item" data-species="lithops-lesliei">
+                <h4>Литопс Лесли (Lithops lesliei)</h4>
+                <p>Популярный вид с коричнево-серыми листьями. Один из самых распространенных в культуре.</p>
+              </div>
+              
+              <div class="species-item" data-species="lithops-karasmontana">
+                <h4>Литопс Карасмонтана (Lithops karasmontana)</h4>
+                <p>Вид с разнообразной окраской от серой до коричневой. Хорошо мимикрирует под камни.</p>
               </div>
             </div>
           </div>
